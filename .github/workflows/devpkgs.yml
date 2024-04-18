@@ -65,4 +65,4 @@ jobs:
           -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
           -I $PWD
     - name: dev nix packages
-      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ./tests/dev.ci -A cacheDevOutputs -vv -build-flags '-v -L --keep-going'
+      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ./tests/dev.nix -A cacheDevOutputs -vv -build-flags '-v -L --keep-going'
