@@ -45,7 +45,10 @@ with builtins; let
           (attrNames nurAttrs))));
   devPkgs =
     flattenPkgs {
-      mihomo = nurAttrs.mihomo;
+      qbittorrent = nurAttrs.qbittorrent-enhanced;
+      qbittorrent-nox = nurAttrs.qbittorrent-enhanced.override {
+        guiSupport = false;
+      };
     };
 
 in rec {
