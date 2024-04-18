@@ -45,10 +45,7 @@ with builtins; let
           (attrNames nurAttrs))));
   devPkgs =
     flattenPkgs {
-      qbittorrent = nurAttrs.qbittorrent-enhanced;
-      qbittorrent-nox = nurAttrs.qbittorrent-enhanced.override {
-        guiSupport = false;
-      };
+      yabai = if pkgs.stdenvNoCC.isDarwin then nurAttrs.darwinApps.yabai else null;
     };
 
 in rec {
