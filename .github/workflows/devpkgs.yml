@@ -3,13 +3,9 @@ on:
   pull_request:
   push:
     branches:
-      - main
-      - master
-  schedule:
-    # rebuild everyday at 2:51
-    # TIP: Choose a random time here so not all repositories are build at once:
-    # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-    - cron:  '51 2 * * *'
+      - dev
+    paths:
+      - "tests/dev.nix"
 jobs:
   tests:
     strategy:
@@ -34,9 +30,7 @@ jobs:
         cachixName:
           - shanyouli
         nixPath:
-          # - nixpkgs=channel:nixos-unstable
           - nixpkgs=channel:nixpkgs-unstable
-          # - nixpkgs=channel:nixos-23.11
         os:
           - ubuntu-latest
           - flyci-macos-large-latest-m1
@@ -70,14 +64,5 @@ jobs:
           --drv-path --show-trace \
           -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
           -I $PWD
-    - name: Build nix packages
-      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs -vv -build-flags '-v -L --keep-going'
-    - name: Build FirefoxAddons packages
-      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A firefoxAddonsOutputs -vv -build-flags '-v -L --keep-going'
-    - name: Build darwinApps packages
-      if: ${{ matrix.os == 'flyci-macos-large-latest-m1' }}
-      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A darwinOutputs -vv -build-flags '-v -L --keep-going'
-    # - name: Trigger NUR update
-    #   # Don't replace <YOUR_REPO_NAME> here!
-    #   if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
-    #   run: curl -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}"
+    - name: dev nix packages
+      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ./tests/dev.ci -A cacheDevOutputs -vv -build-flags '-v -L --keep-going'
