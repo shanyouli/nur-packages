@@ -66,8 +66,7 @@ jobs:
     - name: Check evaluation
       run: nix flake show
     - name: Build nix packages
-      run: nix run .#bbdownDeps
-      # run: nix run .#ci
+      run: nix run .#ci
       timeout-minutes: 240
     - name: pull
       run: |

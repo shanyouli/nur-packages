@@ -56,6 +56,10 @@
         set -euo pipefail
         nix-build ./tests/ci.nix -A bbdownDeps -v
         ./result ./pkgs/common/bbdown/deps.nix
+        if [[ $(git diff) != "" ]]; then
+          git add ./pkgs/common/bbdown/deps.nix
+          git commit -m "update bbdown deps"
+        fi
       '';
     };
 

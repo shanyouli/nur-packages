@@ -46,6 +46,8 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
           nix run .#nvfetcher
+      - name: update bbdown src
+        run: nix run .#bbdownDeps
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
