@@ -52,6 +52,11 @@
         export PYTHONPATH=${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages:''${PYTHONPATH:-}
         ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $keys_args -r 10  --keep-going -j 3 --commit-changes
       '';
+      bbdownDeps = ''
+        set -euo pipefail
+        nix-build ./tests/ci.nix -A bbdownDeps -v
+        ./result ./pkgs/common/bbdown/deps.nix
+      '';
     };
 
     makeAppsShell = pkgs.callPackage ../../lib/make-apps-shell.nix {};

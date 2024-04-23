@@ -33,9 +33,9 @@ with builtins; let
       (map (n: nameValuePair n nurAttrs.${n})
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
-
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
   cachePkgs = filter isCacheable buildPkgs;
   cacheOutputs = concatMap outputsOf cachePkgs;
+  bbdownDeps = nurAttrs.bbdown.fetch-deps;
 }

@@ -57,6 +57,5 @@ buildDotnetModule rec {
     homepage = "https://github.com/nilaoda/BBDown";
     description = "Bilibili Downloader. 一款命令行式哔哩哔哩下载器.";
     license = licenses.mit;
-    broken = true;
   };
 }
