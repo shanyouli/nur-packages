@@ -68,6 +68,8 @@ jobs:
     - name: Build nix packages
       run: nix run .#ci
       timeout-minutes: 240
+    - name: pull
+      run: git pull
     - name: Commit back to repository
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
