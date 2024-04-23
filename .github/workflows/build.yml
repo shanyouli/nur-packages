@@ -68,6 +68,11 @@ jobs:
     - name: Build nix packages
       run: nix run .#ci
       timeout-minutes: 240
+    - name: Commit back to repository
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: 'auto: update package hashes'
+
     # - name: Trigger NUR update
     #   # Don't replace <YOUR_REPO_NAME> here!
     #   if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
