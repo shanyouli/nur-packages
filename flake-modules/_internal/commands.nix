@@ -70,6 +70,10 @@
             ${py}/bin/python3 "$f" 1
           done
       '';
+      upFlake = ''
+        set -euo pipefail
+        nix flake update
+      '';
     };
 
     makeAppsShell = pkgs.callPackage ../../lib/make-apps-shell.nix {};
