@@ -4,7 +4,8 @@
   source,
 }:
 buildGoModule rec {
-  inherit (source) pname src vendorHash;
+  inherit (source) pname src;
+  vendorHash = "sha256-k4xB/jO78VGD+n9HtuoWXoXB+kZCEyPKJTTwj32nGIw=";
   version =
     if (builtins.hasAttr "date" source)
     then source.date

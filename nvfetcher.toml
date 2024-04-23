@@ -69,7 +69,6 @@ git.fetchSubmodules = false
 [deeplx]
 src.github = "OwO-Network/DeepLX"
 fetch.github = "OwO-Network/DeepLX"
-passthru = { vendorHash = "sha256-kTSMY4K07hpy/ry5/kxTP3RcR5ewMzj/BDJxxYRdxYI=" }
 
 # [codicons]
 # src.git = "https://github.com/microsoft/vscode-codicons"
@@ -78,18 +77,15 @@ passthru = { vendorHash = "sha256-kTSMY4K07hpy/ry5/kxTP3RcR5ewMzj/BDJxxYRdxYI=" 
 [clash2singbox]
 src.github = "xmdhs/clash2singbox"
 fetch.github = "xmdhs/clash2singbox"
-passthru = { vendorHash = "sha256-+trt7BLgy1d1ENrqf/J0mf8ECnKfYl3P/KibQQxNRN4=" }
 
 
 [mihomo]
 src.github = "MetaCubeX/mihomo"
 fetch.github = "MetaCubeX/mihomo"
-passthru = { vendorHash = "sha256-k4xB/jO78VGD+n9HtuoWXoXB+kZCEyPKJTTwj32nGIw=" }
 
 [musicn]
 src.github = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
-passthru = { npmDepsHash = "sha256-Yr0zgQBP/ocJ/ThbFhidPnkP4C8/lWufxkd3sJnqErA=" }
 
 [firefox-utils]
 src.git = "https://github.com/xiaoxiaoflood/firefox-scripts"
@@ -113,7 +109,6 @@ fetch.github = "nilaoda/BBDown"
 [alist]
 src.github = "alist-org/alist"
 fetch.github = "alist-org/alist"
-passthru = { vendorHash = "sha256-1VZwBbpc1dH7kyCAAcidY8phIKTwZBJNH1TIdIWqiyc=" }
 
 [alist-web]
 src.github = "alist-org/alist-web"
@@ -131,7 +126,6 @@ fetch.github = "jcsalterego/pngpaste"
 [dutis]
 src.git = "https://github.com/tsonglew/dutis"
 fetch.github = "tsonglew/dutis"
-passthru = { vendorHash = "sha256-FD9WC754G/t8BJEyNBzokZePSyduR/ELnG3Dh7boGWs=" }
 git.fetchSubmodules = false
 
 [emacsclient]
@@ -141,7 +135,6 @@ fetch.url = "https://github.com/nashamri/spacemacs-logo/raw/$ver/spacemacs.icns"
 [lporg]
 src.github = "blacktop/lporg"
 fetch.github = "blacktop/lporg"
-passthru = { vendorHash = "sha256-GQaIfUtM3iDQ9jmrSMqYvcPysigdu7w10xGDIYv4OY8=" }
 
 [switchaudio-osx]
 src.github_tag = "deweller/switchaudio-osx"
