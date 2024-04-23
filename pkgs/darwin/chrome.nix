@@ -7,10 +7,10 @@
   ...
 }: let
   pname = "google-chrome";
-  source =
-    if stdenv.isAarch64
-    then sources."chrome.arm64"
-    else sources."chrome.x64";
+  source = sources."chrome.arm64";
+    # if stdenv.isAarch64
+    # then sources."chrome.arm64"
+    # else sources."chrome.x64";
 in
   mkDarwinApp rec {
     inherit pname;

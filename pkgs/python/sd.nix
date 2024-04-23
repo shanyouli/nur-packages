@@ -24,5 +24,6 @@ in
       description = "My system command line";
       platforms = platforms.all;
       license = licenses.mit;
+      broken = true;
     };
   }

@@ -1,4 +1,4 @@
-{pkgs}: let
+let
   hasNixSuffix = str: let
     sLen = builtins.stringLength str;
   in (sLen > 4 && builtins.substring (sLen - 4) sLen str == ".nix");
@@ -34,55 +34,82 @@
 
   mapPkgs = dir: callFn: mapPackages dir (name: callFn dir name);
   mapPkgs' = dir: callFn: namefn: mapPackages' dir (name: callFn dir name) namefn;
+in rec {
+  overlay = final: prev: let
+    sources = (import ../_sources/generated.nix) {inherit (final) fetchurl fetchFromGitHub fetchgit dockerTools;};
+    fsources = builtins.fromJSON (builtins.readFile ./firefox-addons/sources.json);
 
-  darwinNameFn = name: (removeNixSuffix name) + "-app";
-
-  sources = (import ../_sources/generated.nix) {inherit (pkgs) fetchurl fetchFromGitHub fetchgit dockerTools;};
-  fsources = builtins.fromJSON (builtins.readFile ./firefox-addons/sources.json);
-  mkScope = f:
-    builtins.removeAttrs
-    (pkgs.lib.makeScope pkgs.newScope (
-      self: let
-        pkg = self.newScope {
-          inherit mkScope;
-          sources = self.callPackage ../_sources/generated.nix {};
-        };
+    callPkg = dir: name: let
+      package = import "${builtins.toString dir}/${name}";
+      source = let
+        basename = removeNixSuffix name;
+        bsource = getAttr basename sources;
       in
-        f self pkg
-    ))
-    [
-      "newScope"
-      "callPackage"
-      "overrideScope"
-      "overrideScope'"
-      "packages"
-    ];
-in
-  mkScope (
-    self: pkg: let
-      callPkg = dir: name: let
+        if bsource == null
+        then (getAttr basename fsources)
+        else bsource;
+      args = builtins.intersectAttrs (builtins.functionArgs package) {
+        inherit sources source;
+      };
+    in
+      final.callPackage package args;
+
+    packageOverrides = pfinal: pprev: let
+      callPyPkg = dir: name: let
         package = import "${builtins.toString dir}/${name}";
-        source = let
-          basename = removeNixSuffix name;
-          bsource = getAttr basename sources;
-        in
-          if bsource == null
-          then (getAttr basename fsources)
-          else bsource;
         args = builtins.intersectAttrs (builtins.functionArgs package) {
-          inherit source;
+          inherit sources;
+          source = getAttr (removeNixSuffix name) sources;
+          python3Packages = pfinal;
         };
       in
-        pkg package args;
+        pfinal.toPythonModule (final.callPackage package args);
+    in
+      {
+        # httpx = pprev.httpx.overrideAttrs (old: {
+        #   inherit (sources.httpx) pname version src;
+        # });
+        dict2xml = pprev.dict2xml.overrideAttrs (old: {
+          inherit (sources.dict2xml) pname version src;
+        });
+        # nvfetcher-bin neeed packaging
+        nvchecker = pprev.nvchecker.overrideAttrs (old: {
+          propagatedBuildInputs = (old.propagatedBuildInputs or []) ++ [pfinal.packaging];
+        });
+      }
+      // mapPkgs ./python callPyPkg;
+  in
+    rec
+    {
+      python3 = prev.python3.override {inherit packageOverrides;};
+      python3Packages = python3.pkgs;
 
-      darwinApps =
+      pypy3 = prev.python3.override {inherit packageOverrides;};
+      pypy3Packages = pypy3.pkgs;
+
+      python39 = prev.python39.override {inherit packageOverrides;};
+      python39Packages = python39.pkgs;
+
+      python310 = prev.python310.override {inherit packageOverrides;};
+      python310Packages = python310.pkgs;
+    }
+    // (mapPkgs ./build-support callPkg)
+    // (mapPkgs ./common callPkg)
+    // {
+      firefox-addons = mapPkgs ./firefox-addons callPkg;
+      darwinapps = mapPkgs ./darwin callPkg;
+    };
+
+  packages = pkgs: (
+    let
+      darwinPkgs =
         if pkgs.stdenvNoCC.isDarwin
-        then {darwinApps = mapPkgs ./darwin callPkg;}
+        then (mapPackages ./darwin (n: pkgs.darwinapps.${removeNixSuffix n}))
         else {};
     in
-      rec {}
-      // (mapPkgs ./build-support callPkg)
-      // (mapPkgs ./common callPkg)
-      // {firefox-addons = mapPkgs ./firefox-addons callPkg;}
-      // darwinApps
-  )
+      (mapPackages ./common (n: pkgs.${removeNixSuffix n}))
+      // (mapPackages ./python (n: pkgs.python3.pkgs.${removeNixSuffix n}))
+      // (mapPackages ./firefox-addons (n: pkgs.firefox-addons.${removeNixSuffix n}))
+      // darwinPkgs
+  );
+}
