@@ -70,9 +70,13 @@ jobs:
       timeout-minutes: 240
     - name: pull
       run: |
-        git stash && git pull
-        if [[ $(git diff --name-only stash@{0} HEAD) != "" ]]; then
-          git stash apply
+        if git status | grep "modified" ; then
+          git stash && git pull
+          if [[ $(git diff --name-only stash@{0} HEAD) != "" ]]; then
+            git stash apply
+          fi
+        else
+          git pull
         fi
     - name: Commit back to repository
       uses: stefanzweifel/git-auto-commit-action@v5
