@@ -56,10 +56,19 @@
         set -euo pipefail
         nix-build ./tests/ci.nix -A bbdownDeps -v
         ./result ./pkgs/common/bbdown/deps.nix
-        if [[ $(git diff) != "" ]]; then
+        if [[ $(git diff ./pkgs/common/bbdown/deps.nix) != "" ]]; then
           git add ./pkgs/common/bbdown/deps.nix
           git commit -m "update bbdown deps"
         fi
+      '';
+
+      updatePy = let
+        py = pkgs.python3.withPackages (p: with p; [requests beautifulsoup4]);
+        in ''
+          find ./pkgs -iname "update.py" | while read -r f; do
+            echo "update $(echo "$f" | rev | cut -d'/' -f2 | rev) ..."
+            ${py}/bin/python3 "$f" 1
+          done
       '';
     };
 

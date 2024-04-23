@@ -48,6 +48,8 @@ jobs:
           nix run .#nvfetcher
       - name: update bbdown src
         run: nix run .#bbdownDeps
+      - name: update src by update.py
+        run: nix run .#updatePy
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
