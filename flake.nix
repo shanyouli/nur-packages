@@ -12,7 +12,7 @@
     nixpkgs,
     flake-parts,
     ...
-  } @ inputs: let
+  }@inputs: let
     this = import ./pkgs;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {

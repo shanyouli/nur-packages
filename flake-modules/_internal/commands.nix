@@ -1,6 +1,7 @@
 {
   self,
   lib,
+  inputs,
   ...
 }: {
   perSystem = {
@@ -47,7 +48,7 @@
         set -euo pipefail
         keys_args=""
         [[ -f $HOME/.config/nvfetcher.toml ]] && keys_args="-k $HOME/.config/nvfetcher.toml"
-        export NIX_PATH="nixpkgs=${inputs'.nixpkgs}:''${NIX_PATH:-}"
+        export NIX_PATH="nixpkgs=${inputs.nixpkgs}:''${NIX_PATH:-}"
         export PYTHONPATH=${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages:''${PYTHONPATH:-}
         ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $keys_args -r 10  --keep-going -j 3 --commit-changes
       '';
