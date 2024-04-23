@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.9.2-Beta";
+    version = "0.10.0-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.9.2-Beta/AeroSpace-v0.9.2-Beta.zip";
-      sha256 = "sha256-ASZfCv9MRyme1+Qx3J+ucOdFXlusWx108hRCKnkjr2c=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.10.0-Beta/AeroSpace-v0.10.0-Beta.zip";
+      sha256 = "sha256-7EOQzmxRJGKHymfOzbGZMwkgQet8qkAGT9lRGdzqgpw=";
     };
   };
   alexandria = {
@@ -67,18 +67,18 @@
   };
   calibre = {
     pname = "calibre";
-    version = "7.8.0";
+    version = "7.9.0";
     src = fetchurl {
-      url = "https://download.calibre-ebook.com/7.8.0/calibre-7.8.0.dmg";
-      sha256 = "sha256-ugA+ekCx/fyIeb11DTDumC4iREkhgz2Wcs14P+TMSe4=";
+      url = "https://download.calibre-ebook.com/7.9.0/calibre-7.9.0.dmg";
+      sha256 = "sha256-1gdTsAdYUKBgltlarblZ/6fPwe+CGGVeFT0b9LOatw0=";
     };
   };
   calibrepath = {
     pname = "calibrepath";
-    version = "7.8.0";
+    version = "7.9.0";
     src = fetchurl {
-      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.8.0/mac-patch-backend+update-v7.8.0.zip";
-      sha256 = "sha256-F4Ci5wwmSDQ7U3K/tm5Fz//SEpEAYuL0DgR9YYEba/8=";
+      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.9.0/mac-patch-backend+update-v7.9.0.zip";
+      sha256 = "sha256-uIXBwR1lz52L77yGKOhgw+mqKuQ5Q8RrMbkWNOdAdEE=";
     };
   };
   chatgpt = {
@@ -91,10 +91,10 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "123.0.6312.122";
+    version = "124.0.6367.60";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/123.0.6312.122/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-i0DLRofwnPYk+3hLXDeMFeIwQZ6c0KDGspdbBPMmTo8=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.60/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-I9CRe1eW4NNwhF7I3VE51/qMMT0O5Fhnx9jAuqbmPbA=";
     };
   };
   "chromium.arm64" = {
@@ -143,13 +143,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v0.9.2";
+    version = "v0.9.4";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v0.9.2";
+      rev = "v0.9.4";
       fetchSubmodules = false;
-      sha256 = "sha256-j3ANFRW8tMBvd1L7THrU79b2yEb7DaElbbSBo2cfxBg=";
+      sha256 = "sha256-3kjDqPBOcyUSoionpA8a0n3LnAXU0tU5BVYnED2Sz/0=";
     };
     vendorHash = "sha256-kTSMY4K07hpy/ry5/kxTP3RcR5ewMzj/BDJxxYRdxYI=";
   };
@@ -447,10 +447,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1279";
+    version = "1.1.1291";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1279/ryujinx-1.1.1279-macos_universal.app.tar.gz";
-      sha256 = "sha256-AXRKOjvABUSLbx1f4BO6zvWQp8Ye0mGSRYYnGd6WWdM=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1291/ryujinx-1.1.1291-macos_universal.app.tar.gz";
+      sha256 = "sha256-RtjRE5k9QgXi9uoX4Ufh1OMxydTiuHwBGHN4kirfmKo=";
     };
   };
   ryusak = {
@@ -463,13 +463,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1";
+    version = "v0.1.0.1";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1";
+      rev = "v0.1.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-WrrkUiNOGfe8CwKnsKpV142qY56MLudnSF/9HWuWSZs=";
+      sha256 = "sha256-9rHZt744sLkr2rkR6NZGpWJ4aZxRr54Feqt2Kt7NnfQ=";
     };
   };
   seam = {
@@ -502,10 +502,10 @@
   };
   spotube = {
     pname = "spotube";
-    version = "3.5.0";
+    version = "3.6.0";
     src = fetchurl {
-      url = "https://github.com/KRTirtho/spotube/releases/download/v3.5.0/Spotube-macos-universal.dmg";
-      sha256 = "sha256-omXhiH/hVxFef03GqmpYf65SfdLjLyeMyuAWuvSpYiI=";
+      url = "https://github.com/KRTirtho/spotube/releases/download/v3.6.0/Spotube-macos-universal.dmg";
+      sha256 = "sha256-Qsr+66ToyLCCUwirj/7V6vzSNmx7BZ3O34liLx6AdlI=";
     };
   };
   switchaudio-osx = {
@@ -549,6 +549,17 @@
     src = fetchurl {
       url = "https://github.com/xfangfang/wiliwili/releases/download/v1.3.0/wiliwili-macOS-AppleSilicon.dmg";
       sha256 = "sha256-mo23N8UMUWXBrLFXqa0FGDqBwSPy7CMVPel1iPLF/nk=";
+    };
+  };
+  xbydriver = {
+    pname = "xbydriver";
+    version = "v3.24.41217";
+    src = fetchFromGitHub {
+      owner = "odomu";
+      repo = "aliyunpan";
+      rev = "v3.24.41217";
+      fetchSubmodules = false;
+      sha256 = "sha256-1Y4aiAKopOVstn9Pr44X/46vv8edK8bB6SWoE1pY1Lg=";
     };
   };
   yabai = {
