@@ -33,7 +33,6 @@ let
   mapPackages = dir: fn: mapPackages' dir fn removeNixSuffix;
 
   mapPkgs = dir: callFn: mapPackages dir (name: callFn dir name);
-  mapPkgs' = dir: callFn: namefn: mapPackages' dir (name: callFn dir name) namefn;
 in rec {
   overlay = final: prev: let
     sources = (import ../_sources/generated.nix) {inherit (final) fetchurl fetchFromGitHub fetchgit dockerTools;};
