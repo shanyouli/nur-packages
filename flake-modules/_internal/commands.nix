@@ -42,6 +42,10 @@
 
         exit 1
       '';
+      devci = ''
+        set -euo pipefail
+        ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/dev.nix -A cacheDevOutputs -vv -build-flags '-v -L' --show-trace 2>&1
+      '';
       nvfetcher = ''
         set -euo pipefail
         keys_args=""

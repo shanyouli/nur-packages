@@ -1,15 +1,6 @@
-# This file provides all the buildable and cacheable packages and
-# package outputs in your package set. These are what gets built by CI,
-# so if you correctly mark packages as
-#
-# - broken (using `meta.broken`),
-# - unfree (using `meta.license.free`), and
-# - locally built (using `preferLocalBuild`)
-#
-# then your CI will be able to build and cache only those packages for
-# which this is possible.
-{pkgs ? import <nixpkgs> {}}:
 with builtins; let
+  flake = builtins.getFlake (toString ../.);
+
   isReserved = n: n == "lib" || n == "overlays" || n == "modules";
   isDerivation = p: isAttrs p && p ? type && p.type == "derivation";
   isBuildable = p: !(p.meta.broken or false) && p.meta.license.free or true;
@@ -35,28 +26,27 @@ with builtins; let
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 
-  nurAttrs = import ../default.nix {inherit pkgs;};
-
+  nurAttrs = flake.currentSystem.packages;
   nurPkgs =
     flattenPkgs
     (listToAttrs
       (map (n: nameValuePair n nurAttrs.${n})
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
-  devPkgs =
-    flattenPkgs {
-      yabai = if pkgs.stdenvNoCC.isDarwin then nurAttrs.darwinApps.yabai else null;
-    };
-
+  isPkg' = name: p:
+    if builtins.hasAttr name p
+    then p.${name}
+    else null;
+  isPkg = name: isPkg' name nurAttrs;
+  devPkgs = flattenPkgs {
+    zyplayer = isPkg "zyplayer";
+  };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
   cachePkgs = filter isCacheable buildPkgs;
-
-  buildOutputs = concatMap outputsOf buildPkgs;
   cacheOutputs = concatMap outputsOf cachePkgs;
-
+  bbdownDeps = nurAttrs.bbdown.fetch-deps;
   buildDevPkgs = filter isBuildable devPkgs;
   cacheDevPkgs = filter isCacheable buildDevPkgs;
-
-  cacheDevOutputs = concatMap outputsOf cacheDevPkgs;
+  cacheDevOutputs = concatMap outputsOf devPkgs;
 }
