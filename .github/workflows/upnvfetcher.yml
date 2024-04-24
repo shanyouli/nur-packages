@@ -1,15 +1,16 @@
-name: Update src and lock
-
+name: Update src by nvfetcher
 on:
-  schedule:
-    # run this daily at 8am UTC, or roughly 4am eastern
-    - cron: '0 0 * * 6'
+  push:
+    branches:
+      - master
+      - dev
+    paths:
+      - 'nvfetcher.toml'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       # - uses: styfle/cancel-workflow-action@0.7.0
@@ -24,14 +25,10 @@ jobs:
           # FIXME: https://github.com/NixOS/nix/issues/9889
           extra_nix_config: |
             experimental-features = nix-command flakes configurable-impure-env auto-allocate-uids
-      - name: Prepare flakebot branch
+      - name: Prepare github bot
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
-          git checkout -B flakebot
-      - name: Update and commit lockfile
-        run: nix flake update --commit-lock-file
-      #   run: nix flake lock --update-input darwin --update-input devenv --update-input emacs-overlay --update-input flake-utils --update-input home-manager --update-input nix-index-database --update-input nixos-hardware --update-input nixpkgs --update-input nur --update-input treefmt-nix --update-input nvfetcher --commit-lock-file
       - name: Update nvfetcher src
         run: |
           cat > secrets.toml <<EOF
@@ -41,22 +38,9 @@ jobs:
           nix run .#nvfetcher
       - name: update bbdown src
         run: nix run .#bbdownDeps
-      - name: update src by update.py
-        run: nix run .#updatePy
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: flakebot
+          branch: ${{ github.ref }}
           force: true
-      - name: pull-request-action
-        uses: vsoch/pull-request-action@1.1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST_FROM_BRANCH: 'flakebot'
-          PULL_REQUEST_BRANCH: 'master'
-          MAINTAINER_CANT_MODIFY: true
-          PASS_IF_EXISTS: true
-          PASS_ON_ERROR: true
-          PULL_REQUEST_UPDATE: true
-          PULL_REQUEST_TITLE: 'Update Flake Inputs and src'
