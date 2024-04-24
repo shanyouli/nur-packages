@@ -1,7 +1,19 @@
-{mkShell, lib, writeShellScriptBin, ...}:
-apps:
+{
+  mkShell,
+  lib,
+  writeShellScriptBin,
+  ...
+}: {
+  apps,
+  shellHook ? "",
+  nativeBuildInputs ? [],
+  ...
+}:
 mkShell {
-  buildInputs = lib.mapAttrsToList (n: v: writeShellScriptBin n ''
-    exec nix run .#{n} -- "$@"
-  '') apps;
+  inherit nativeBuildInputs shellHook;
+  buildInputs = lib.mapAttrsToList (n: v:
+    writeShellScriptBin n ''
+      exec nix run .#{n} -- "$@"
+    '')
+  apps;
 }

@@ -15,13 +15,14 @@
     nixpkgs,
     flake-parts,
     ...
-  }@inputs: let
+  } @ inputs: let
     this = import ./pkgs;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
         inputs.pre-commit-hooks-nix.flakeModule
         ./flake-modules/_internal/commands.nix
+        ./flake-modules/_internal/fmt.nix
       ];
       debug = true;
       systems = [
@@ -39,7 +40,6 @@
       perSystem = {
         system,
         pkgs,
-        lib,
         ...
       }: rec {
         _module.args.pkgs = import inputs.nixpkgs {

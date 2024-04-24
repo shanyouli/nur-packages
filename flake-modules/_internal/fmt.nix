@@ -1,19 +1,8 @@
 {
-  self,
-  lib,
-  inputs,
-  ...
-}: {
-  perSystem = {
-    config,
-    system,
-    pkgs,
-    inputs',
-    ...
-  }: {
+  perSystem = {...}: {
     pre-commit.check.enable = true;
-    pre-commit.excludes = ["generated.nix"];
-    pre-commit.hooks = {
+    pre-commit.settings.excludes = ["generated.nix"];
+    pre-commit.settings.hooks = {
       alejandra.enable = true;
       deadnix.enable = true;
       ruff.enable = true;

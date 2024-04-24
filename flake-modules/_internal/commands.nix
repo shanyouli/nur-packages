@@ -1,12 +1,10 @@
 {
-  self,
   lib,
   inputs,
   ...
 }: {
   perSystem = {
     config,
-    system,
     pkgs,
     inputs',
     ...
@@ -64,11 +62,11 @@
 
       updatePy = let
         py = pkgs.python3.withPackages (p: with p; [requests beautifulsoup4]);
-        in ''
-          find ./pkgs -iname "update.py" | while read -r f; do
-            echo "update $(echo "$f" | rev | cut -d'/' -f2 | rev) ..."
-            ${py}/bin/python3 "$f" 1
-          done
+      in ''
+        find ./pkgs -iname "update.py" | while read -r f; do
+          echo "update $(echo "$f" | rev | cut -d'/' -f2 | rev) ..."
+          ${py}/bin/python3 "$f" 1
+        done
       '';
       upFlake = ''
         set -euo pipefail
@@ -85,6 +83,10 @@
       })
       commands;
 
-    devShells.default = makeAppsShell apps;
+    devShells.default = makeAppsShell {
+      inherit apps;
+      shellHook = config.pre-commit.installationScript;
+      nativeBuildInputs = [config.pre-commit.settings.package];
+    };
   };
 }
