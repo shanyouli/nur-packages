@@ -7,7 +7,6 @@ in
     appname ? pname,
     version,
     meta ? {},
-    postInstall ? "",
     nativeBuildInputs ? [],
     sourceRoot ? ".",
     ...
@@ -60,12 +59,12 @@ in
             find . -maxdepth 1 ! -iname "*.app"  -exec rm -rf {} \;
           '';
           phases = ["unpackPhase" "installPhase"];
-          installPhase =
-            ''
-              mkdir -p "$out/Applications/${appname}.app"
-              cp -a *.app/. "$out/Applications/${appname}.app"
-            ''
-            + postInstall;
+          installPhase = ''
+            runHook preInstall
+            mkdir -p "$out/Applications/${appname}.app"
+            cp -a *.app/. "$out/Applications/${appname}.app"
+            runHook postInstall
+          '';
         }
         // (builtins.removeAttrs args ["appname" "sourceRoot"])
         // {

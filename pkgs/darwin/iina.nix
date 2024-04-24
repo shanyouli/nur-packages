@@ -18,6 +18,7 @@ mkDarwinApp rec {
   };
   nativeBuildInputs = [makeWrapper];
   postInstall = ''
+    mkdir -p $out/bin
     makeWrapper $out/Applications/IINA.app/Contents/MacOS/iina-cli $out/bin/iina
   '';
 }

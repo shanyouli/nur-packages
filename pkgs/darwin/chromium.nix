@@ -3,14 +3,13 @@
   makeWrapper,
   sources,
   lib,
-  stdenv,
   ...
 }: let
   pname = "Chromium";
-  source =
-    if stdenv.isAarch64
-    then sources."chromium.arm64"
-    else sources."chromium.x64";
+  source = sources."chromium.arm64";
+  # if stdenv.isAarch64
+  # then sources."chromium.arm64"
+  # else sources."chromium.x64";
 in
   mkDarwinApp rec {
     inherit pname;

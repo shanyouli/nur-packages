@@ -43,7 +43,7 @@
         else lib.removePrefix "v" source.version;
       pnpmDepsHash =
         {
-          # x86_64-linux = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+          x86_64-linux = "sha256-SIVqQXxtsKAujbAXlVuZy65g3kyJh8lwuB233QBwImk=";
           # aarch64-linux = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
           # x86_64-darwin = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
           aarch64-darwin = "sha256-/z8WFwpV+mRolAsWemL9RCiFN2VeT6ftYHPjvqgcINU=";

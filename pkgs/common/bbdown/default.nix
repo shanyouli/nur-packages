@@ -39,8 +39,8 @@ buildDotnetModule rec {
     ''
     # BUGS: see @  https://github.com/NixOS/nixpkgs/issues/280923
     + lib.optionalString stdenv.isLinux ''
-      TOOLS="$HOME/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/8.0.3/tools/"
-      TOOLS="$TOOLS:$HOME/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.3/tools/"
+      TOOLS="$HOME/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/${dotnetCorePackages.runtime_8_0.version}/tools/"
+      TOOLS="$TOOLS:$HOME/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/${dotnetCorePackages.runtime_8_0.version}/tools/"
       export LD_LIBRARY_PATH="$LDLIBRARY_PATH:$TOOLS"
     '';
   preBuild = ''

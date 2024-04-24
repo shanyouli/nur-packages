@@ -4,11 +4,9 @@
   go,
   fuse,
   installShellFiles,
-  withBashCompletion ? false,
-  withZshCompletion ? false,
-  withFishCompletion ? false,
   source,
   sources,
+  ...
 }: let
   version =
     if (builtins.hasAttr "date" source)
@@ -43,15 +41,9 @@ in
           rm -rf $i
         fi
       done
-      ${lib.optionalString withBashCompletion ''
-        installShellCompletion --cmd alist --bash <($out/bin/alist completion bash)
-      ''}
-      ${lib.optionalString withZshCompletion ''
-        installShellCompletion --cmd alist --zsh <($out/bin/alist completion zsh)
-      ''}
-      ${lib.optionalString withFishCompletion ''
-        installShellCompletion --cmd alist --fish <($out/bin/alist completion fish)
-      ''}
+      installShellCompletion --cmd alist --bash <($out/bin/alist completion bash)
+      installShellCompletion --cmd alist --zsh <($out/bin/alist completion zsh)
+      installShellCompletion --cmd alist --fish <($out/bin/alist completion fish)
     '';
     checkFlags = let
       # Skip tests that require network access
