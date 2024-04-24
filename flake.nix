@@ -9,6 +9,9 @@
 
     pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
     pre-commit-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    emacs-overlay.url = "github:nix-community/emacs-overlay/master";
+    emacs-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
@@ -20,9 +23,9 @@
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
-        inputs.pre-commit-hooks-nix.flakeModule
         ./flake-modules/_internal/commands.nix
         ./flake-modules/_internal/fmt.nix
+        ./flake-modules/_internal/emacs.nix
       ];
       debug = true;
       systems = [

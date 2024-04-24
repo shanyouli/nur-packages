@@ -39,7 +39,9 @@ with builtins; let
     else null;
   isPkg = name: isPkg' name nurAttrs;
   devPkgs = flattenPkgs {
-    zyplayer = isPkg "zyplayer";
+    # zyplayer = isPkg "zyplayer";
+    emacsGit = isPkg "emacsGit";
+    emacs = isPkg "emacs";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

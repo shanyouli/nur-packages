@@ -1,4 +1,5 @@
-{
+{inputs, ...}: {
+  imports = [inputs.pre-commit-hooks-nix.flakeModule];
   perSystem = {...}: {
     pre-commit.check.enable = true;
     pre-commit.settings.excludes = ["generated.nix"];
