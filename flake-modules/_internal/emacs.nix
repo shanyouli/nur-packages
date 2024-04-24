@@ -32,10 +32,12 @@
           (old.patches or [])
           ++ lib.optionals pkgs.stdenvNoCC.isDarwin [
             srcs."emacs${version}.role-patch".src
-            srcs."emacs${version}.no-frame-refocus-cocoa".src
             srcs."emacs${version}.system-appearance".src
             srcs."emacs${version}.round-undecorated-frame".src
             srcs."emacs${version}.poll".src
+          ]
+          ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
+            srcs."emacs${version}.no-frame-refocus-cocoa".src
           ];
         buildInputs = (old.buildInputs or []) ++ lib.optionals pkgs.stdenvNoCC.isDarwin [pkgs.darwin.apple_sdk.frameworks.WebKit];
         configureFlags = (old.configureFlags or []) ++ ["--enable-check-lisp-object-type"] ++ lib.optionals pkgs.stdenvNoCC.isDarwin ["--with-xwidgets"];
