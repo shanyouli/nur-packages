@@ -6,6 +6,9 @@
 
     nvfetcher.url = "github:berberman/nvfetcher";
     nvfetcher.inputs.nixpkgs.follows = "nixpkgs";
+
+    pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
+    pre-commit-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
@@ -16,7 +19,10 @@
     this = import ./pkgs;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
-      imports = [ ./flake-modules/_internal/commands.nix ];
+      imports = [
+        inputs.pre-commit-hooks-nix.flakeModule
+        ./flake-modules/_internal/commands.nix
+      ];
       debug = true;
       systems = [
         "x86_64-linux"

@@ -2,3 +2,7 @@ result
 result-*
 
 nix-build-uncached.log
+/.direnv/
+.DS_STORE
+__pycache__
+.pre-commit-config.yaml
