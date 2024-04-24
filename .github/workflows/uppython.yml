@@ -1,0 +1,39 @@
+name: Update src by python script
+on:
+  push:
+    branches:
+      - master
+      - dev
+    paths:
+      - 'pkgs/**/update.py'
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - uses: styfle/cancel-workflow-action@0.7.0
+      #   with:
+      #     access_token: ${{ github.token }}
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - uses: cachix/install-nix-action@v25
+        with:
+          # FIXME: https://github.com/NixOS/nix/issues/9889
+          extra_nix_config: |
+            experimental-features = nix-command flakes configurable-impure-env auto-allocate-uids
+      - name: Prepare github bot
+        run: |
+          git config --local user.email "flakebot@users.noreply.github.com"
+          git config --local user.name "flakebot"
+      - name: update src by update.py
+        run: nix run .#updatePy
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          force: true
