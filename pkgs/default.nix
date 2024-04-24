@@ -98,6 +98,7 @@ in rec {
     // {
       firefox-addons = mapPkgs ./firefox-addons callPkg;
       darwinapps = mapPkgs ./darwin callPkg;
+      qbittorrent-enhanced-nox = final.qbittorrent-enhanced.override {guiSupport = false;};
     };
 
   packages = pkgs: (
@@ -111,5 +112,8 @@ in rec {
       // (mapPackages ./python (n: pkgs.python3.pkgs.${removeNixSuffix n}))
       // (mapPackages ./firefox-addons (n: pkgs.firefox-addons.${removeNixSuffix n}))
       // darwinPkgs
+      // {
+        qbittorrent-enhanced-nox = pkgs.qbittorrent-enhanced-nox;
+      }
   );
 }
