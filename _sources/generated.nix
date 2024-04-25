@@ -563,10 +563,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.6.3271.61";
+    version = "6.7.3329.17";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.6.3271.61.universal.dmg";
-      sha256 = "sha256-cj9cej+T/KgFL1mn2UGEInlk7s45xAOhgt7kpg6jrbU=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.17.universal.dmg";
+      sha256 = "sha256-nwzJPslbfD/1HBvwp0cN9qr8lgtuaz1fzBV1OxLDgeY=";
     };
   };
   websocket-bridge-python = {
@@ -587,13 +587,13 @@
   };
   xbydriver = {
     pname = "xbydriver";
-    version = "v3.24.41217";
+    version = "v3.24.42510";
     src = fetchFromGitHub {
       owner = "odomu";
       repo = "aliyunpan";
-      rev = "v3.24.41217";
+      rev = "v3.24.42510";
       fetchSubmodules = false;
-      sha256 = "sha256-1Y4aiAKopOVstn9Pr44X/46vv8edK8bB6SWoE1pY1Lg=";
+      sha256 = "sha256-ITvOSMIlirM25Yt7DSnLg1WAcXBwPpv1+9BpJCQMy2k=";
     };
   };
   yabai = {
