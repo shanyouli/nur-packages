@@ -143,6 +143,12 @@ fetch.github = "deweller/switchaudio-osx"
 
 ### DarwinAPP
 
+[tmexclude]
+src.github = "PhotonQuantum/tmexclude"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v$ver/TimeMachine.Exclude_$ver_universal.dmg"
+
 [chatgpt]
 src.github="lencx/ChatGPT"
 src.from_pattern = "v(.*)"
