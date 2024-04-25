@@ -29,6 +29,7 @@ jobs:
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
+
       - name: Update nvfetcher src
         run: |
           cat > secrets.toml <<EOF
@@ -37,7 +38,11 @@ jobs:
           EOF
           nix run .#nvfetcher
       - name: update bbdown src
-        run: nix run .#bbdownDeps
+        run: |
+          if git diff HEAD^1 _sources/generated.nix | grep -A2 bbdown | grep "+" ; then
+            nix run .#bbdownDeps
+          fi
+          echo "update bbdown deps success."
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

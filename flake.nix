@@ -12,6 +12,9 @@
 
     emacs-overlay.url = "github:nix-community/emacs-overlay/master";
     emacs-overlay.inputs.nixpkgs.follows = "nixpkgs";
+    # @see https://github.com/nix-community/emacs-overlay/issues/275
+    # emacs-src.url = "github:emacs-mirror/emacs/emacs-29";
+    # emacs-src.flake = false;
   };
   outputs = {
     self,
