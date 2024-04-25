@@ -11,15 +11,15 @@ on:
       - '!pkgs/**/update.sh'
       - '_sources/**'
       - 'flake.lock'
-  # schedule:
-  #   # rebuild everyday at 2:51
-  #   # TIP: Choose a random time here so not all repositories are build at once:
-  #   # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-  #   - cron:  '51 2 * * *'
+  schedule:
+    # rebuild everyday at 2:51
+    # TIP: Choose a random time here so not all repositories are build at once:
+    # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
+    - cron: '30 0 * * 6'
   workflow_dispatch:
 
 jobs:
-  tests:
+  build-packages:
     strategy:
       fail-fast: false
       matrix:
@@ -82,8 +82,28 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: 'auto: update package hashes'
-
     # - name: Trigger NUR update
     #   # Don't replace <YOUR_REPO_NAME> here!
     #   if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
     #   run: curl -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}"
+
+  test-nur-eval:
+    runs-on: ubuntu-latest
+    needs:
+      - build-packages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: Prepare flakebot branch
+        run: |
+          git config --local user.email "flakebot@users.noreply.github.com"
+          git config --local user.name "flakebot"
+          git checkout -B stable
+      - name: Push stable
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'stable'
+          force: true
