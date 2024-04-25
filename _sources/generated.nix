@@ -553,6 +553,14 @@
       sha256 = "sha256-AZJn5kHK/al94ONfIHcG+W0jyMfgdJkIngN+PVj+I44=";
     };
   };
+  tmexclude = {
+    pname = "tmexclude";
+    version = "0.2.2";
+    src = fetchurl {
+      url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v0.2.2/TimeMachine.Exclude_0.2.2_universal.dmg";
+      sha256 = "sha256-KIRSb/W6Bulmkj0VVYIrr3tubepc5msk3uL/L112Gak=";
+    };
+  };
   upic = {
     pname = "upic";
     version = "0.21.1";

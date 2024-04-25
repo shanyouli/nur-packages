@@ -979,6 +979,21 @@
         },
         "version": "1.2.2"
     },
+    "tmexclude": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tmexclude",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-KIRSb/W6Bulmkj0VVYIrr3tubepc5msk3uL/L112Gak=",
+            "type": "url",
+            "url": "https://github.com/PhotonQuantum/tmexclude/releases/download/v0.2.2/TimeMachine.Exclude_0.2.2_universal.dmg"
+        },
+        "version": "0.2.2"
+    },
     "upic": {
         "cargoLocks": null,
         "date": null,
