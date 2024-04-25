@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4266049/download_with_aria2-4.9.0.2629.xpi",
-    "version": "4.9.0.2629",
-    "sha256": "0dsw28bv62vi3yfbipg8krbq167glplr4z8z639spp560f8pa9xa",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4269417/download_with_aria2-4.10.0.xpi",
+    "version": "4.10.0",
+    "sha256": "1dpf442q08w9yhrhpx0jl8dcfqmd571w6gc40qzjdbn004yrls5r",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
