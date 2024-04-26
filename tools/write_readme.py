@@ -217,6 +217,10 @@ def main(f):
         f.write(apps_msg)
         f.write("\n\n")
         f.write(packages_msg)
+    os.chdir(f)
+    if subprocess.run(["git", "diff", "HEAD^1", "README.md", "|", "grep", "-"]).returncode == 0:
+        subprocess.run("git add README.md", shell=True)
+        subprocess.run(f"git commit -m 'update README.md {time.strftime('%Y-%m-%d %H:%M:%S %Z')}'", shell=True)
 
 def get_flake(dir: str = None) -> str:
     if dir is not None and os.path.isdir(dir):
