@@ -2,6 +2,7 @@
   mkDarwinApp,
   source,
   lib,
+  stdenv,
   ...
 }:
 mkDarwinApp rec {
@@ -14,5 +15,6 @@ mkDarwinApp rec {
   meta = {
     description = "ChatGPT Desktop Application (Mac, Windows and Linux) ";
     homepage = "https://app.nofwl.com/chatgpt";
+    broken = stdenv.isx86_64;
   };
 }

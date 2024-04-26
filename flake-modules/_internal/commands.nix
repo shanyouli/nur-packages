@@ -75,6 +75,9 @@
         set -euo pipefail
         nix flake update
       '';
+      readme = ''
+        ${pkgs.python3}/bin/python3 ./tools/write_readme.py
+      '';
     };
 
     makeAppsShell = pkgs.callPackage ../../lib/make-apps-shell.nix {};

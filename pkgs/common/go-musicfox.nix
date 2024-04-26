@@ -27,10 +27,7 @@ buildGo121Module rec {
 
   nativeBuildInputs = [pkg-config];
   meta = with lib; {
-    description = ''
-      go-musicfox是用Go写的又一款网易云音乐命令行客户端，支持UnblockNeteaseMusic、
-      各种音质级别、lastfm、MPRIS、MacOS交互响应（睡眠暂停、蓝牙耳机连接断开响应、菜单栏控制等）.
-    '';
+    description = "go-musicfox是用Go写的又一款网易云音乐命令行客户端";
     homepage = "https://github.com/go-musicfox/go-musicfox";
     platforms = platforms.unix;
     license = licenses.mit;

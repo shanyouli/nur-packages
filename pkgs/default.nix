@@ -108,8 +108,8 @@ in rec {
         else {};
     in
       (mapPackages ./common (n: pkgs.${removeNixSuffix n}))
-      // (mapPackages ./python (n: pkgs.python3.pkgs.${removeNixSuffix n}))
-      // (mapPackages ./firefox-addons (n: pkgs.firefox-addons.${removeNixSuffix n}))
+      // (mapPackages' ./python (n: pkgs.python3.pkgs.${removeNixSuffix n}) (n: "python-apps-${removeNixSuffix n}"))
+      // (mapPackages' ./firefox-addons (n: pkgs.firefox-addons.${removeNixSuffix n}) (n: "firefox-addons-${removeNixSuffix n}"))
       // darwinPkgs
       // {
         qbittorrent-enhanced-nox = pkgs.qbittorrent-enhanced-nox;
