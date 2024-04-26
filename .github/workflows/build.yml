@@ -101,7 +101,16 @@ jobs:
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
-          git checkout -B stable
+      - name: update README.md
+        run: nix run .#readme
+      - name: Push stable
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'master'
+          force: true
+      - name: switch stable
+        run: git checkout -B stable
       - name: Push stable
         uses: ad-m/github-push-action@master
         with:
