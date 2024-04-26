@@ -13,57 +13,32 @@ def get_app_shows():
 - `bbdownDeps`: Updating bbdown's dependencies using bbdown's own update scripts
 - `updatePy`: Updating the source code of certain packages using python scripts
 - `upFlake`: Automatic `inputs` source
+- `readme`: Automatic generation of readme.md files using python
 """
-
-
-def get_packages_only_system(data: dict, system: str) -> bool:
-    if len(data) > 2:
-        return False
-    if system == "darwin":
-        return "aarch64-darwin" in data and "x86_64-darwin" in data
-    else:
-        return "aarch64-linux" in data and "x86_64-linux" in data
-
-
-def pkg_is_broken(path, name, systems):
-    systems_str = " ".join([f'"{i}"' for i in systems])
-    nix_script = f"""let flake = builtins.getFlake "{os.path.abspath(path)}";
-packages = flake.packages;
-isBuildable = p: !(p.meta.broken or false);
-packagename = "{name}";
-
-fn = systems: (builtins.listToAttrs (builtins.filter (n: n.value)
-      (builtins.map (n: {{name = n; value = ! isBuildable packages."${{n}}"."${{packagename}}";}}) systems)));
-result = builtins.attrNames (fn [{systems_str}]);
-in builtins.concatStringsSep " " result
-"""
-    result = subprocess.run(
-        f"nix eval --expr '{nix_script}' --impure", capture_output=True, shell=True
-    )
-    if result.returncode != 0:
-        return
-    output = result.stdout.decode("utf-8").strip()
-    return output if output != '""' else ""
 
 
 def get_packages_info(p):
     os.chdir(p)
     result = subprocess.run(
-        "nix flake show --all-systems --json".split(), capture_output=True
+        "nix eval -f tests/pkgmeta.nix --json", capture_output=True, shell=True
     )
     if result.returncode != 0:
         return
-    packages = json.loads(result.stdout.decode("utf-8"))["packages"]
+    os.chdir(CURRENT_DIR)
+    packages = json.loads(result.stdout.decode().strip())
     results = {}
     for k, v in packages.items():
         for n, p in v.items():
             if n in results:
                 results[n]["system"].append(k)
+                if p["broken"]:
+                    results[n]["broken"].append(f"**{k}**")
             else:
-                results[n] = {
-                    "desc": p["description"] if "description" in p else "None",
-                    "system": [k],
-                }
+                results[n] = p
+                results[n]["system"] = [k]
+                results[n]["broken"] = [f"**{k}**"] if p["broken"] else []
+                results[n]["version"] = p["version"] if p["version"] else ""
+    total_pkgs = len(results.keys())
     firefox_addons = {}
     linux_apps = {}
     darwin_apps = {}
@@ -74,84 +49,88 @@ def get_packages_info(p):
             firefox_addons[k] = v
         elif k.startswith("python-apps"):
             py_apps[k] = v
+        elif k.startswith("darwin-apps"):
+            darwin_apps[k] = v
+        elif k.startswith("linux-apps"):
+            linux_apps[k] = v
         else:
-            systems = v["system"]
-            if get_packages_only_system(systems, "linux"):
-                linux_apps[k] = v
-            elif get_packages_only_system(systems, "darwin"):
-                darwin_apps[k] = v
-            else:
-                common[k] = v
-    return common, linux_apps, darwin_apps, firefox_addons, py_apps
+            common[k] = v
+    return total_pkgs, common, linux_apps, darwin_apps, firefox_addons, py_apps
 
 
-def show_pacakges(data: dict, typology: str, is_broken: bool) -> str:
-    msg = f"### {typology}\n"
-    if typology == "common":
-        msg += "\nDefault support for *aarch64-linux,aarch64-darwin,x86_64-linux and x86_64-darwin*\n"
-    elif typology == "firefox-addons":
-        msg += "\n*firefox extension*, default support for all systems that support firefox\n"
-    elif typology == "python3-apps":
-        msg += "\nInstalling python programs with nix\n"
-    elif typology == "linux":
-        msg += "\nOnly support for *aarch64-linux*, *x86_64-linux*\n"
-    elif typology == "darwin":
-        msg += "\nOnly support for *aarch64-darwin*, *x86_64-darwin*, Most gui packages only support aarch64-darwin\n"
-    if is_broken:
-        msg += """
-|name|broken system| description|
-|:---|:---|:---|
-"""
-        msg += "\n".join(
-            [
-                rf"|`{k.removeprefix('firefox-addons-').removeprefix('python-apps-')}`|{pkg_is_broken(DIR, k, v['system'])}|{v['desc']}|"
-                for k, v in data.items()
-            ]
-        )
+def pname_fn(name, data, prefix=""):
+    msg = data["pname"] if "pname" in data else name
+    msg = msg.removeprefix(prefix)
+    if "url" in data:
+        return f'[**{msg}**]({data["url"]})'
     else:
-        msg += """
-|name| description|
-|:---|:---|
-"""
-        msg += "\n".join(
-            [
-                rf"|`{k.removeprefix('firefox-addons-').removeprefix('python-apps-')}`|{v['desc']}|"
-                for k, v in data.items()
-            ]
-        )
+        return msg
 
+
+def show_pacakges(data: dict, typology: str) -> str:
+    msg = f"### {typology}\n"
+    info = "\n<details>"
+    if typology == "firefox-addons":
+        sum_msg = "<b>firefox extension</b>, default support for all systems that support firefox. "
+        prefix = "firefox-addons-"
+    elif typology == "python3-apps":
+        sum_msg = "Installing <b>python programs</b> with nix. "
+        prefix = "python-apps-"
+    elif typology == "linux":
+        sum_msg = "Only support for <b>aarch64-linux</b>, <b>x86_64-linux</b>. "
+        prefix = "linux-apps-"
+    elif typology == "darwin":
+        sum_msg = "Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. "
+        prefix = "darwin-addons-"
+    else:
+        sum_msg= "Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. "
+        prefix = ""
+    info += f"\n<summary>{sum_msg}, Total: <b>{len(data.keys())}</b> packages </summary>"
+    msg += f"""{info}
+
+|name|broken system|version|description|
+|:---|:---|:---|:---|
+"""
+    msg += "\n".join(
+        [
+            rf"|{pname_fn(k, v, prefix)}|{' '.join(v['broken'])}|{v['version']}|{v['description']}|"
+            for k, v in data.items()
+        ]
+    )
+
+    msg += "\n</details>"
     return msg
 
 
 def get_package_show(p) -> str:
-    msg = """## packages
+    total_pkgs, common, linux_apps, darwin_apps, firefox_addons, python3_apps = get_packages_info(p)
+    msg = f"""## packages
 
-Currently only builds on aarch64-darwin and x86_64-linux
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **{total_pkgs}** packages.
 
 """
-    common, linux_apps, darwin_apps, firefox_addons, python3_apps = get_packages_info(p)
     if common:
-        msg += show_pacakges(common, typology="common", is_broken=True)
+        msg += show_pacakges(common, typology="common")
         msg += "\n\n"
     if linux_apps:
-        msg += show_pacakges(linux_apps, typology="linux", is_broken=True)
+        msg += show_pacakges(linux_apps, typology="linux")
         msg += "\n\n"
 
     if darwin_apps:
-        msg += show_pacakges(darwin_apps, typology="darwin", is_broken=True)
+        msg += show_pacakges(darwin_apps, typology="darwin")
         msg += "\n\n"
 
     if firefox_addons:
-        msg += show_pacakges(firefox_addons, typology="firefox-addons", is_broken=False)
+        msg += show_pacakges(firefox_addons, typology="firefox-addons")
         msg += "\n\n"
     if python3_apps:
-        msg += show_pacakges(python3_apps, typology="python3-apps", is_broken=False)
+        msg += show_pacakges(python3_apps, typology="python3-apps")
         msg += "\n\n"
 
     return msg
 
 
-def main(f):
+def main(p):
     title = "# Shanyouli NUR PACKAGES"
     title_info = f"""
 
@@ -202,11 +181,9 @@ def main(f):
 ```
 """
     apps_msg = get_app_shows()
-    packages_msg = get_package_show(f)
+    packages_msg = get_package_show(p)
 
-    with open(
-        os.path.join(f, "README.md"), mode="w+", encoding="utf-8"
-    ) as f:
+    with open(os.path.join(p, "README.md"), mode="w+", encoding="utf-8") as f:
         f.write(title)
         f.write(title_info)
         f.write("\n\n")
@@ -217,23 +194,41 @@ def main(f):
         f.write(apps_msg)
         f.write("\n\n")
         f.write(packages_msg)
-    os.chdir(f)
-    if subprocess.run(["git", "diff", "HEAD^1", "README.md", "|", "grep", "-"]).returncode == 0:
+    os.chdir(p)
+    if (
+        subprocess.run(
+            'git diff HEAD^1 README.md | grep "-"', shell=True, capture_output=True
+        ).returncode
+        == 0 and IS_COMMIT
+    ):
         subprocess.run("git add README.md", shell=True)
-        subprocess.run(f"git commit -m 'update README.md {time.strftime('%Y-%m-%d %H:%M:%S %Z')}'", shell=True)
+        subprocess.run(
+            f"git commit -m 'update README.md {time.strftime('%Y-%m-%d %H:%M:%S %Z')}'",
+            shell=True,
+        )
+    os.chdir(CURRENT_DIR)
+
 
 def get_flake(dir: str = None) -> str:
     if dir is not None and os.path.isdir(dir):
         return dir
     else:
-        result = subprocess.run(['git', 'rev-parse', '--show-toplevel'], capture_output=True)
+        result = subprocess.run(
+            ["git", "rev-parse", "--show-toplevel"], capture_output=True
+        )
         if result.returncode == 0:
             flake_dir = os.path.abspath(result.stdout.decode().strip())
-            return  flake_dir if os.path.isfile(os.path.join(flake_dir, 'flake.nix')) else None
+            return (
+                flake_dir
+                if os.path.isfile(os.path.join(flake_dir, "flake.nix"))
+                else None
+            )
+
 
 if __name__ == "__main__":
-    DIR=get_flake()
-    # print(DIR)
+    CURRENT_DIR = os.getcwd()
+    IS_COMMIT=True
+    DIR = get_flake()
+    # IS_COMMIT = os.getenv("_IS_COMMIT")
+    # DIR = get_flake(os.path.abspath(os.path.expanduser("~/Workspace/nur-packages")))
     main(DIR)
-    # a= pkg_is_broken(NIX_FLAKE_DIR, "mihomo", ["aarch64-darwin", "aarch64-linux", "x86_64-linux", "x86_64-darwin"])
-    # print(a)

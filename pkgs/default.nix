@@ -104,7 +104,7 @@ in rec {
     let
       darwinPkgs =
         if pkgs.stdenvNoCC.isDarwin
-        then (mapPackages ./darwin (n: pkgs.darwinapps.${removeNixSuffix n}))
+        then (mapPackages' ./darwin (n: pkgs.darwinapps.${removeNixSuffix n}) (n: "darwin-apps-${removeNixSuffix n}"))
         else {};
     in
       (mapPackages ./common (n: pkgs.${removeNixSuffix n}))
