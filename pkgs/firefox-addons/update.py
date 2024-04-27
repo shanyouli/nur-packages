@@ -128,7 +128,6 @@ if __name__ == "__main__":
             "auto-tab-discard",
             "user-agent-string-switcher",
             "violentmonkey",
-            "switchyomega",
             "styl-us",
             "privacy-pass",
             "ublock-origin"
