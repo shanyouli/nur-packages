@@ -90,10 +90,10 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "124.0.6367.78";
+    version = "124.0.6367.91";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.78/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-Olq/rfMxNgSXsIPoi7hMjZqmXwb4wPv4ma/itI4iMhk=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.91/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-iv6PiW2TK6HLKi4A62Gr5G4JrbcvdmTmnsxR1qP+acE=";
     };
   };
   "chromium.arm64" = {
@@ -133,10 +133,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.83";
+    version = "4.9.84";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.83/darkreader-firefox.xpi";
-      sha256 = "sha256-9xYYIaxkROLb6mEnOce+gORtezWf2pffzgCPS6Ts9+8=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.84/darkreader-firefox.xpi";
+      sha256 = "sha256-dmutarayoyczptfnRUaJLez82m8h5y/ykheSDXbETg8=";
     };
   };
   deeplx = {
@@ -273,16 +273,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.13";
+    version = "v0.2.14";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.13";
+      rev = "v0.2.14";
       fetchSubmodules = false;
-      sha256 = "sha256-8mFHigCelox9VHr1KR4et/HOVCRLuYJN/mkh30bt/oE=";
+      sha256 = "sha256-lzTaaoA1pphPM6GHK2LgGE1quhhcFaTpJSAQq3rTN5c=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.13/Cargo.lock;
+      lockFile = ./fav-v0.2.14/Cargo.lock;
       outputHashes = {
         
       };
