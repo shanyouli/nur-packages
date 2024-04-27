@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-04-26 20:43:12 CST
+- LAST_MODIFY: 2024-04-27 05:06:59 UTC
 
 
 ## How to use
@@ -57,108 +57,116 @@
 - `bbdownDeps`: Updating bbdown's dependencies using bbdown's own update scripts
 - `updatePy`: Updating the source code of certain packages using python scripts
 - `upFlake`: Automatic `inputs` source
+- `readme`: Automatic generation of readme.md files using python
 
 
 ## packages
 
-Currently only builds on aarch64-darwin and x86_64-linux
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
 
 ### common
 
-Default support for *aarch64-linux,aarch64-darwin,x86_64-linux and x86_64-darwin*
+<details>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
 
-|name|broken system| description|
-|:---|:---|:---|
-|`alist`||A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
-|`bbdown`||Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
-|`clash2singbox`||将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|`deeplx`||DeepL Free API (No TOKEN required|
-|`emacs`||The extensible, customizable GNU text editor|
-|`emacsGit`||The extensible, customizable GNU text editor|
-|`fav`||Back up your favorite bilibili resources with CLI|
-|`firefox-utils`||Firefox scripts |
-|`go-musicfox`||go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|`lazyvim-star`||LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
-|`maple-mono`||Open source monospace/Nerd Font |
-|`maple-sc-nf`||Open source monospace/Nerd Font |
-|`mihomo`||A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API|
-|`musicn`||🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
-|`qbittorrent-enhanced`||Featureful free software BitTorrent client|
-|`qbittorrent-enhanced-nox`||Featureful free software BitTorrent client|
-|`seam`||获取多直播平台的直播源|
-|`xbydriver`||小白羊网盘 - Powered by 阿里云盘。|
-|`zpmod`||Zsh module transparently and automatically compiles sourced scripts|
+|name|broken system|version|description|
+|:---|:---|:---|:---|
+|[**alist**](https://github.com/alist-org/alist)||3.33.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||2023-11-13|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
+|[**emacs**](https://www.gnu.org/software/emacs/)||29.3|The extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240426.0|The extensible, customizable GNU text editor|
+|[**fav**](https://github.com/kingwingfly/fav)||0.2.14|Back up your favorite bilibili resources with CLI|
+|[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
+|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.3.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
+|[**lazyvim-star**](https://www.lazyvim.org/)||2024-03-29|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
+|[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
+|[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
+|[**mihomo**](https://github.com/MetaCubeX/mihomo)||1.18.3|A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API|
+|[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
+|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
+|[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
+|[**xbydriver**](https://github.com/gaozhangmin/aliyunpan)||3.24.41217|小白羊网盘 - Powered by 阿里云盘。|
+|[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
+</details>
 
 ### darwin
 
-Only support for *aarch64-darwin*, *x86_64-darwin*, Most gui packages only support aarch64-darwin
+<details>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>33</b> packages </summary>
 
-|name|broken system| description|
-|:---|:---|:---|
-|`alexandria`||A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
-|`calibre`||ebook management|
-|`chatgpt`|"x86_64-darwin"|ChatGPT Desktop Application (Mac, Windows and Linux) |
-|`chrome`||Google Chrome stable|
-|`chromium`||Open source version of Google-chrome|
-|`clash-nyanpasu`||Clash Nyanpasu! (∠・ω< )⌒☆​|
-|`clash-verge`||A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
-|`downkyi`|| 哔哩下载姬(跨平台版)downkyi，哔哩哔哩网站视频下载工具，支持批量下载，支持8K、HDR、杜比视界，提供工具箱（音视频提取、去水印等）|
-|`dutis`||A command-line tool to select default applications, based on duti|
-|`emacsclient`||None|
-|`firefox`||Mozilla Firefox, free web browser (binary package)|
-|`iina`||IINA mplayer|
-|`iinaplus`||Extra danmaku support for iina (iina 弹幕支持)|
-|`localsend`||Share files to nearby devices. Free, open source, cross-platform|
-|`lporg`||Organize Your macOS Launchpad Apps|
-|`lyricx`||🎶 Ultimate lyrics app for macOS. |
-|`neovide`||No Nonsense Neovim Client in Rust|
-|`next-chat`||ChatGpt Next Web|
-|`pngpaste`||Paste PNG into files, much like pbpaste does for text. |
-|`qutebrowser`||Keyboard-driven, vim-like browser based on PyQt5|
-|`rpcs3`||rpcs3|
-|`ryujinx`||A simple, experimental Nintendo Switch emulator|
-|`ryusak`||Color finder for switch emulator|
-|`simple-live`||Simple Live 简简单单的看直播 |
-|`spotube`||Open source Spotify client|
-|`switchaudio-osx`||Change the audio source for Mac OS X from the command line|
-|`tmexclude`||Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
-|`upic`||upic 图床管理|
-|`vivaldi`||Vivaldi Browser|
-|`wiliwili`||第三方B站客户端|
-|`yabai`||A tiling window manager for macOS based on binary space partitioning|
-|`yabai-zsh-completions`||zsh completions for yabai, the tiling window manager|
-|`zy-player`||跨平台视频资源播放器, 简洁免费无广告.|
+|name|broken system|version|description|
+|:---|:---|:---|:---|
+|[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
+|[**calibre**](https://calibre-ebook.com/)||7.9.0|ebook management|
+|[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
+|[**google-chrome**](https://www.google.com/chrome/)||124.0.6367.91|Google Chrome stable|
+|[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||123.0.6312.105-1.1|Open source version of Google-chrome|
+|[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
+|[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.3.8|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
+|[**downkyi**](https://github.com/yaobiao131/downkyicore)||1.0.9| 哔哩下载姬(跨平台版)downkyi，哔哩哔哩网站视频下载工具，支持批量下载，支持8K、HDR、杜比视界，提供工具箱（音视频提取、去水印等）|
+|[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
+|[**EmacsClient**](None)||29.2|None|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.10.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**iina**](http://iina.io/)||1.3.4|IINA mplayer|
+|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.23|Extra danmaku support for iina (iina 弹幕支持)|
+|[**localsend**](https://localsend.org/#/)||1.14.0|Share files to nearby devices. Free, open source, cross-platform|
+|[**lporg**](https://github.com/blacktop/lporg)||20.4.31|Organize Your macOS Launchpad Apps|
+|[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
+|[**neovide**](https://neovide.dev/)||0.12.2|No Nonsense Neovim Client in Rust|
+|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.11.3|ChatGpt Next Web|
+|[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
+|[**qutebrowser**](https://www.qutebrowser.org/)||3.1.0|Keyboard-driven, vim-like browser based on PyQt5|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.31-16380|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1291|A simple, experimental Nintendo Switch emulator|
+|[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
+|[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.5.3|Simple Live 简简单单的看直播 |
+|[**spotube**](https://github.com/KRTirtho/spotube)||3.6.0|Open source Spotify client|
+|[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
+|[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
+|[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
+|[**vivaldi**](https://vivaldi.com/)||6.7.3329.17|Vivaldi Browser|
+|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.3.0|第三方B站客户端|
+|[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.0|A tiling window manager for macOS based on binary space partitioning|
+|[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
+|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.3|跨平台视频资源播放器, 简洁免费无广告.|
+</details>
 
 ### firefox-addons
 
-*firefox extension*, default support for all systems that support firefox
+<details>
+<summary><b>firefox extension</b>, default support for all systems that support firefox. , Total: <b>12</b> packages </summary>
 
-|name| description|
-|:---|:---|
-|`auto-tab-discard`|Dark Reader Chrome and Firefox extension|
-|`browserpass-ce`|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
-|`darkreader`|Dark Reader Chrome and Firefox extension|
-|`download-with-aria2`|Browser extension for aria2c json-rpc |
-|`noscript`|NoScript Security Suite|
-|`privacy-pass`|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
-|`sidebery`|Firefox extension for managing tabs and bookmarks in sidebar|
-|`styl-us`|Stylus - Userstyles Manager|
-|`surfingkeys_ff`|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|`switchyomega`|Manage and switch between multiple proxies quickly & easily.|
-|`ublock-origin`|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
-|`user-agent-string-switcher`|User-Agent Switcher and Manager|
-|`violentmonkey`|An open source userscript manager.|
+|name|broken system|version|description|
+|:---|:---|:---|:---|
+|[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
+|[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
+|[**darkreader**](https://darkreader.org/)||4.9.84|Dark Reader Chrome and Firefox extension|
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2669|Browser extension for aria2c json-rpc |
+|[**noscript**](https://noscript.net/)||11.4.29|NoScript Security Suite|
+|[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
+|[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
+|[**styl-us**](https://add0n.com/stylus.html)||1.5.46|Stylus - Userstyles Manager|
+|[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.57.2|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.18.0|An open source userscript manager.|
+</details>
 
 ### python3-apps
 
-Installing python programs with nix
+<details>
+<summary>Installing <b>python programs</b> with nix. , Total: <b>6</b> packages </summary>
 
-|name| description|
-|:---|:---|
-|`about-time`|None|
-|`alive-progress`|None|
-|`musicdl`|A lightweight music downloader written in pure python.|
-|`sd`|My system command line|
-|`websocket-bridge-python`|None|
-|`yutto`|Ice_cube: 一个可爱且任性的 B 站视频下载器（bilili V2|
+|name|broken system|version|description|
+|:---|:---|:---|:---|
+|[**about-time**](None)||4.2.1|None|
+|[**alive-progress**](None)||3.1.5|None|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
+|[**sd**](None)||0.1.0.1|My system command line|
+|[**websocket-bridge-python**](None)||0.0.2|None|
+|[**yutto**](https://github.com/yutto-dev/yutto)||2.0.0-beta.37|Ice_cube: 一个可爱且任性的 B 站视频下载器（bilili V2|
+</details>
 
