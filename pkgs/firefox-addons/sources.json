@@ -41,12 +41,6 @@
     "sha256": "1wdh9k8zg8lbi88lj1y2d47zzprmlk3dw4b0khvnaadq8alfxfsa",
     "pname": "violentmonkey"
   },
-  "switchyomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4272197/switchyomega-2.5.20resigned1.xpi",
-    "version": null,
-    "sha256": "0lm73l1wvv3pcnyba5ja8pmdcrsp1wxi8dqnn9v9z6n4f9rzk23m",
-    "pname": "switchyomega"
-  },
   "styl-us": {
     "url": "https://addons.mozilla.org/firefox/downloads/file/4232144/styl_us-1.5.46.xpi",
     "version": "1.5.46",
