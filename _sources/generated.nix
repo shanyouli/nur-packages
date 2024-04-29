@@ -98,10 +98,10 @@
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "123.0.6312.105-1.1";
+    version = "124.0.6367.91-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/123.0.6312.105-1.1/ungoogled-chromium_123.0.6312.105-1.1_arm64-macos.dmg";
-      sha256 = "sha256-5S2ig7og3LZWtyHIljrxOH5frUwhS8ib6wxvusQJ5Sg=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.91-1.1/ungoogled-chromium_124.0.6367.91-1.1_arm64-macos.dmg";
+      sha256 = "sha256-nTfG9szAxPjiUPKblqCtGSesGKYxrADycQE6+krYstw=";
     };
   };
   clash-nyanpasu = {
@@ -401,13 +401,13 @@
   };
   mihomo = {
     pname = "mihomo";
-    version = "v1.18.3";
+    version = "v1.18.4";
     src = fetchFromGitHub {
       owner = "MetaCubeX";
       repo = "mihomo";
-      rev = "v1.18.3";
+      rev = "v1.18.4";
       fetchSubmodules = false;
-      sha256 = "sha256-/fFVUI++OhOer5DrvcXO+R+4whtb5+3Qg3e4+ikJr1Y=";
+      sha256 = "sha256-mqNcMB2nb8+e9XEGKqwaBE/nC4+jRaEFxE17e0JTo8Y=";
     };
   };
   musicdl = {
@@ -481,10 +481,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1291";
+    version = "1.1.1294";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1291/ryujinx-1.1.1291-macos_universal.app.tar.gz";
-      sha256 = "sha256-RtjRE5k9QgXi9uoX4Ufh1OMxydTiuHwBGHN4kirfmKo=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1294/ryujinx-1.1.1294-macos_universal.app.tar.gz";
+      sha256 = "sha256-/377QzuuwHi8r9xwPkNVqP4fm2jNTsYsIREZ4GRINng=";
     };
   };
   ryusak = {
@@ -571,10 +571,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.17";
+    version = "6.7.3329.21";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.17.universal.dmg";
-      sha256 = "sha256-nwzJPslbfD/1HBvwp0cN9qr8lgtuaz1fzBV1OxLDgeY=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.21.universal.dmg";
+      sha256 = "sha256-Lq+GVikBjXbxTNloVop3gmNTVmrbiG/f1KK/0BF9jjU=";
     };
   };
   websocket-bridge-python = {
@@ -595,13 +595,13 @@
   };
   xbydriver = {
     pname = "xbydriver";
-    version = "v3.24.42510";
+    version = "v3.24.42910";
     src = fetchFromGitHub {
       owner = "odomu";
       repo = "aliyunpan";
-      rev = "v3.24.42510";
+      rev = "v3.24.42910";
       fetchSubmodules = false;
-      sha256 = "sha256-ITvOSMIlirM25Yt7DSnLg1WAcXBwPpv1+9BpJCQMy2k=";
+      sha256 = "sha256-yPC+AYIkCT403GoOUfKKnAl4TW6Bsco3NTYSoEySq9c=";
     };
   };
   yabai = {
@@ -651,10 +651,10 @@
   };
   zy-player = {
     pname = "zy-player";
-    version = "3.3.3";
+    version = "3.3.4";
     src = fetchurl {
-      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.3/zyplayer-mac-3.3.3-arm64.dmg";
-      sha256 = "sha256-WWooOgoPfZyZIr4YKCR4iafakZ8RqizoEopdevpBu1c=";
+      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.4/zyplayer-mac-3.3.4-arm64.dmg";
+      sha256 = "sha256-bxgEKJiNKxV80HwJJam7NSgVGfy4FUtG9SNL/E69mgk=";
     };
   };
 }
