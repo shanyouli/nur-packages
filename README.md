@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-04-29 16:37:53 UTC
+- LAST_MODIFY: 2024-04-30 03:41:33 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>18</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -88,7 +88,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**xbydriver**](https://github.com/gaozhangmin/aliyunpan)||3.24.41217|小白羊网盘 - Powered by 阿里云盘。|
 |[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
