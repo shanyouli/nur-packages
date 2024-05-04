@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-04-30 03:41:33 UTC
+- LAST_MODIFY: 2024-05-04 01:56:33 UTC
 
 
 ## How to use
@@ -71,12 +71,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.33.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.34.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||2023-11-13|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.3|The extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240429.0|The extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240503.0|The extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.14|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.3.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
@@ -99,7 +99,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
-|[**calibre**](https://calibre-ebook.com/)||7.9.0|ebook management|
+|[**calibre**](https://calibre-ebook.com/)||7.10.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
 |[**google-chrome**](https://www.google.com/chrome/)||124.0.6367.91|Google Chrome stable|
 |[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||124.0.6367.91-1.1|Open source version of Google-chrome|
@@ -115,19 +115,19 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.31|Organize Your macOS Launchpad Apps|
 |[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
 |[**neovide**](https://neovide.dev/)||0.12.2|No Nonsense Neovim Client in Rust|
-|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.11.3|ChatGpt Next Web|
+|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.2|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**qutebrowser**](https://www.qutebrowser.org/)||3.1.0|Keyboard-driven, vim-like browser based on PyQt5|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.31-16390|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1294|A simple, experimental Nintendo Switch emulator|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16396|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1297|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.5.3|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.6.0|Open source Spotify client|
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
 |[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
-|[**vivaldi**](https://vivaldi.com/)||6.7.3329.21|Vivaldi Browser|
-|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.3.0|第三方B站客户端|
+|[**vivaldi**](https://vivaldi.com/)||6.7.3329.24|Vivaldi Browser|
+|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.0|第三方B站客户端|
 |[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.0|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 |[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.4|跨平台视频资源播放器, 简洁免费无广告.|
@@ -143,7 +143,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**darkreader**](https://darkreader.org/)||4.9.84|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2669|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2674|Browser extension for aria2c json-rpc |
 |[**noscript**](https://noscript.net/)||11.4.29|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
