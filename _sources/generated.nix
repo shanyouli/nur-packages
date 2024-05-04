@@ -27,21 +27,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.33.0";
+    version = "v3.34.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.33.0";
+      rev = "v3.34.0";
       fetchSubmodules = false;
-      sha256 = "sha256-/Os8DndNtWvwIHQ1us7TPg16+WOpMFcntZv9wv4O1fU=";
+      sha256 = "sha256-LHkUqOpZk8GZPUis+oX077w8LY7lLwrLu4AO/NvLVeg=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.33.0";
+    version = "3.34.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.33.0/dist.tar.gz";
-      sha256 = "sha256-UK4FOXILznxHCsa8RyFrDhA+c2Nu46m0uTZOK1LKk/Y=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.34.0/dist.tar.gz";
+      sha256 = "sha256-gqY0wg34iwzjhdAp0KI6gEe4JSc2IdCMJ2Iy+zMJRCw=";
     };
   };
   alive-progress = {
@@ -66,18 +66,18 @@
   };
   calibre = {
     pname = "calibre";
-    version = "7.9.0";
+    version = "7.10.0";
     src = fetchurl {
-      url = "https://download.calibre-ebook.com/7.9.0/calibre-7.9.0.dmg";
-      sha256 = "sha256-1gdTsAdYUKBgltlarblZ/6fPwe+CGGVeFT0b9LOatw0=";
+      url = "https://download.calibre-ebook.com/7.10.0/calibre-7.10.0.dmg";
+      sha256 = "sha256-djdLVnxY2U71b9xu1jIucm0FQ0UfvGdU7C4NnhFCFbQ=";
     };
   };
   calibrepath = {
     pname = "calibrepath";
-    version = "7.9.0";
+    version = "7.10.0";
     src = fetchurl {
-      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.9.0/mac-patch-backend+update-v7.9.0.zip";
-      sha256 = "sha256-uIXBwR1lz52L77yGKOhgw+mqKuQ5Q8RrMbkWNOdAdEE=";
+      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.10.0/mac-patch-backend+update-v7.10.0.zip";
+      sha256 = "sha256-dXKe7ij8SreHpEXOK21r62iWiCNN/KV341m6gP3CeHQ=";
     };
   };
   chatgpt = {
@@ -443,10 +443,10 @@
   };
   next-chat = {
     pname = "next-chat";
-    version = "2.11.3";
+    version = "2.12.2";
     src = fetchurl {
-      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.11.3/NextChat_2.11.3_universal.dmg";
-      sha256 = "sha256-A8Zn2b0KatwGSIVYPP+uyxIrPPRh6gtJ97+/fOgZQ5c=";
+      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.2/NextChat_2.12.2_universal.dmg";
+      sha256 = "sha256-VKV5Sqeb5zUW75Pr2hvT2X3bLQYlrqXh0DHNxzxZ7CU=";
     };
   };
   pngpaste = {
@@ -481,10 +481,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1294";
+    version = "1.1.1297";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1294/ryujinx-1.1.1294-macos_universal.app.tar.gz";
-      sha256 = "sha256-/377QzuuwHi8r9xwPkNVqP4fm2jNTsYsIREZ4GRINng=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1297/ryujinx-1.1.1297-macos_universal.app.tar.gz";
+      sha256 = "sha256-QIv1bvH/xkh2tnQEEPxajerIVHI7q7JJ24mbczEnLvk=";
     };
   };
   ryusak = {
@@ -571,10 +571,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.21";
+    version = "6.7.3329.24";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.21.universal.dmg";
-      sha256 = "sha256-Lq+GVikBjXbxTNloVop3gmNTVmrbiG/f1KK/0BF9jjU=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.24.universal.dmg";
+      sha256 = "sha256-eB0vPJcrb52W7kT8vQuD6MboACqabfxH4jcs4uimatw=";
     };
   };
   websocket-bridge-python = {
@@ -587,21 +587,10 @@
   };
   wiliwili = {
     pname = "wiliwili";
-    version = "1.3.0";
+    version = "1.4.0";
     src = fetchurl {
-      url = "https://github.com/xfangfang/wiliwili/releases/download/v1.3.0/wiliwili-macOS-AppleSilicon.dmg";
-      sha256 = "sha256-mo23N8UMUWXBrLFXqa0FGDqBwSPy7CMVPel1iPLF/nk=";
-    };
-  };
-  xbydriver = {
-    pname = "xbydriver";
-    version = "v3.24.42910";
-    src = fetchFromGitHub {
-      owner = "odomu";
-      repo = "aliyunpan";
-      rev = "v3.24.42910";
-      fetchSubmodules = false;
-      sha256 = "sha256-yPC+AYIkCT403GoOUfKKnAl4TW6Bsco3NTYSoEySq9c=";
+      url = "https://github.com/xfangfang/wiliwili/releases/download/v1.4.0/wiliwili-macOS-AppleSilicon.dmg";
+      sha256 = "sha256-ndowJFu/Bdx9TWZNFNdediyq/NZdkwXjq9b1SO587Kc=";
     };
   };
   yabai = {

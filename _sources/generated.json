@@ -58,11 +58,11 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.33.0",
-            "sha256": "sha256-/Os8DndNtWvwIHQ1us7TPg16+WOpMFcntZv9wv4O1fU=",
+            "rev": "v3.34.0",
+            "sha256": "sha256-LHkUqOpZk8GZPUis+oX077w8LY7lLwrLu4AO/NvLVeg=",
             "type": "github"
         },
-        "version": "v3.33.0"
+        "version": "v3.34.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -73,11 +73,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UK4FOXILznxHCsa8RyFrDhA+c2Nu46m0uTZOK1LKk/Y=",
+            "sha256": "sha256-gqY0wg34iwzjhdAp0KI6gEe4JSc2IdCMJ2Iy+zMJRCw=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.33.0/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.34.0/dist.tar.gz"
         },
-        "version": "3.33.0"
+        "version": "3.34.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -123,11 +123,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1gdTsAdYUKBgltlarblZ/6fPwe+CGGVeFT0b9LOatw0=",
+            "sha256": "sha256-djdLVnxY2U71b9xu1jIucm0FQ0UfvGdU7C4NnhFCFbQ=",
             "type": "url",
-            "url": "https://download.calibre-ebook.com/7.9.0/calibre-7.9.0.dmg"
+            "url": "https://download.calibre-ebook.com/7.10.0/calibre-7.10.0.dmg"
         },
-        "version": "7.9.0"
+        "version": "7.10.0"
     },
     "calibrepath": {
         "cargoLocks": null,
@@ -138,11 +138,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uIXBwR1lz52L77yGKOhgw+mqKuQ5Q8RrMbkWNOdAdEE=",
+            "sha256": "sha256-dXKe7ij8SreHpEXOK21r62iWiCNN/KV341m6gP3CeHQ=",
             "type": "url",
-            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.9.0/mac-patch-backend+update-v7.9.0.zip"
+            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.10.0/mac-patch-backend+update-v7.10.0.zip"
         },
-        "version": "7.9.0"
+        "version": "7.10.0"
     },
     "chatgpt": {
         "cargoLocks": null,
@@ -788,11 +788,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-A8Zn2b0KatwGSIVYPP+uyxIrPPRh6gtJ97+/fOgZQ5c=",
+            "sha256": "sha256-VKV5Sqeb5zUW75Pr2hvT2X3bLQYlrqXh0DHNxzxZ7CU=",
             "type": "url",
-            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.11.3/NextChat_2.11.3_universal.dmg"
+            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.2/NextChat_2.12.2_universal.dmg"
         },
-        "version": "2.11.3"
+        "version": "2.12.2"
     },
     "pngpaste": {
         "cargoLocks": null,
@@ -858,11 +858,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/377QzuuwHi8r9xwPkNVqP4fm2jNTsYsIREZ4GRINng=",
+            "sha256": "sha256-QIv1bvH/xkh2tnQEEPxajerIVHI7q7JJ24mbczEnLvk=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1294/ryujinx-1.1.1294-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1297/ryujinx-1.1.1297-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1294"
+        "version": "1.1.1297"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -1018,11 +1018,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Lq+GVikBjXbxTNloVop3gmNTVmrbiG/f1KK/0BF9jjU=",
+            "sha256": "sha256-eB0vPJcrb52W7kT8vQuD6MboACqabfxH4jcs4uimatw=",
             "type": "url",
-            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.21.universal.dmg"
+            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.24.universal.dmg"
         },
-        "version": "6.7.3329.21"
+        "version": "6.7.3329.24"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,
@@ -1048,31 +1048,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mo23N8UMUWXBrLFXqa0FGDqBwSPy7CMVPel1iPLF/nk=",
+            "sha256": "sha256-ndowJFu/Bdx9TWZNFNdediyq/NZdkwXjq9b1SO587Kc=",
             "type": "url",
-            "url": "https://github.com/xfangfang/wiliwili/releases/download/v1.3.0/wiliwili-macOS-AppleSilicon.dmg"
+            "url": "https://github.com/xfangfang/wiliwili/releases/download/v1.4.0/wiliwili-macOS-AppleSilicon.dmg"
         },
-        "version": "1.3.0"
-    },
-    "xbydriver": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "xbydriver",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "odomu",
-            "repo": "aliyunpan",
-            "rev": "v3.24.42910",
-            "sha256": "sha256-yPC+AYIkCT403GoOUfKKnAl4TW6Bsco3NTYSoEySq9c=",
-            "type": "github"
-        },
-        "version": "v3.24.42910"
+        "version": "1.4.0"
     },
     "yabai": {
         "cargoLocks": null,
