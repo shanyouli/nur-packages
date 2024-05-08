@@ -90,18 +90,18 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "124.0.6367.91";
+    version = "124.0.6367.155";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.91/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-iv6PiW2TK6HLKi4A62Gr5G4JrbcvdmTmnsxR1qP+acE=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.155/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-opX+0TwAVZWrvNxANErx7TlHOhsUjRAwTi93cx54DFQ=";
     };
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "124.0.6367.91-1.1";
+    version = "124.0.6367.118-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.91-1.1/ungoogled-chromium_124.0.6367.91-1.1_arm64-macos.dmg";
-      sha256 = "sha256-nTfG9szAxPjiUPKblqCtGSesGKYxrADycQE6+krYstw=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.118-1.1/ungoogled-chromium_124.0.6367.118-1.1_arm64-macos.dmg";
+      sha256 = "sha256-dv5eg7mPQfqBQSfjYsYJb2xoYDKmE2G0G7S4ceQlyW4=";
     };
   };
   clash-nyanpasu = {
@@ -163,10 +163,10 @@
   };
   downkyi = {
     pname = "downkyi";
-    version = "1.0.9";
+    version = "1.0.10";
     src = fetchurl {
-      url = "https://github.com/yaobiao131/downkyicore/releases/download/v1.0.9/DownKyi-1.0.9-osx-arm64.dmg";
-      sha256 = "sha256-/OyqHpFlZs2nA3xqjHLEOV2xrL9NlQtaa0oEIYGEfxI=";
+      url = "https://github.com/yaobiao131/downkyicore/releases/download/v1.0.10/DownKyi-1.0.10-osx-arm64.dmg";
+      sha256 = "sha256-PiAWcc7q7nuRYY4okbCKSKNMGA1/kXDbrYHoXo/G4R4=";
     };
   };
   dutis = {
@@ -273,16 +273,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.14";
+    version = "v0.2.15";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.14";
+      rev = "v0.2.15";
       fetchSubmodules = false;
-      sha256 = "sha256-lzTaaoA1pphPM6GHK2LgGE1quhhcFaTpJSAQq3rTN5c=";
+      sha256 = "sha256-oYDmXHETqeU6W6TiQRFN0Y228WcaPYmDad2JvLheetM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.14/Cargo.lock;
+      lockFile = ./fav-v0.2.15/Cargo.lock;
       outputHashes = {
         
       };
@@ -481,10 +481,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1297";
+    version = "1.1.1298";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1297/ryujinx-1.1.1297-macos_universal.app.tar.gz";
-      sha256 = "sha256-QIv1bvH/xkh2tnQEEPxajerIVHI7q7JJ24mbczEnLvk=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1298/ryujinx-1.1.1298-macos_universal.app.tar.gz";
+      sha256 = "sha256-MAKdSTK0sDgOnuAiyo8gk8psSOVUL/qVJvlZqBm4XOY=";
     };
   };
   ryusak = {
@@ -497,13 +497,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.0.1";
+    version = "v0.1.2";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.0.1";
+      rev = "v0.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-9rHZt744sLkr2rkR6NZGpWJ4aZxRr54Feqt2Kt7NnfQ=";
+      sha256 = "sha256-KrflRa1+El17c3OIb3knKLvFjpL1z7JazM6RfaT8Wa4=";
     };
   };
   seam = {
@@ -571,10 +571,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.24";
+    version = "6.7.3329.26";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.24.universal.dmg";
-      sha256 = "sha256-eB0vPJcrb52W7kT8vQuD6MboACqabfxH4jcs4uimatw=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.26.universal.dmg";
+      sha256 = "sha256-s5qjn8WgDLK2TOfQpCryc/9NkpR7pGZmZ6eFzrbxe/A=";
     };
   };
   websocket-bridge-python = {
