@@ -893,11 +893,11 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "v0.1.2.1",
-            "sha256": "sha256-LvIK9T8EPBAGxZJr3fg4iNN3kTxboUttjYqOVam+dq0=",
+            "rev": "v0.1.2.2",
+            "sha256": "sha256-KrYjSoEdNuSnxv3HkNa+BdaBRQKSLghpygVkmyJTVN0=",
             "type": "github"
         },
-        "version": "v0.1.2.1"
+        "version": "v0.1.2.2"
     },
     "seam": {
         "cargoLocks": {
