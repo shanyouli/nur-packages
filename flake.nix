@@ -15,6 +15,8 @@
     # @see https://github.com/nix-community/emacs-overlay/issues/275
     # emacs-src.url = "github:emacs-mirror/emacs/emacs-29";
     # emacs-src.flake = false;
+    nix-index-database.url = "github:Mic92/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
@@ -29,6 +31,7 @@
         ./flake-modules/_internal/commands.nix
         ./flake-modules/_internal/fmt.nix
         ./flake-modules/_internal/emacs.nix
+        ./flake-modules/_internal/nix-index.nix
       ];
       debug = true;
       systems = [
