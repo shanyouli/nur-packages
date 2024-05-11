@@ -6,6 +6,7 @@ on:
       - dev
     paths:
       - "tests/dev.nix"
+  workflow_dispatch:
 jobs:
   dev-pacakges:
     strategy:
