@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-09 10:08:26 UTC
+- LAST_MODIFY: 2024-05-11 01:49:46 UTC
 
 
 ## How to use
@@ -76,8 +76,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.3|The extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240508.0|The extensible, customizable GNU text editor|
-|[**fav**](https://github.com/kingwingfly/fav)||0.2.15|Back up your favorite bilibili resources with CLI|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240510.0|The extensible, customizable GNU text editor|
+|[**fav**](https://github.com/kingwingfly/fav)||0.2.16|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.3.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**lazyvim-star**](https://www.lazyvim.org/)||2024-03-29|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
@@ -101,7 +101,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.10.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
-|[**google-chrome**](https://www.google.com/chrome/)||124.0.6367.155|Google Chrome stable|
+|[**google-chrome**](https://www.google.com/chrome/)||124.0.6367.201|Google Chrome stable|
 |[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||124.0.6367.118-1.1|Open source version of Google-chrome|
 |[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
 |[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.3.8|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
@@ -118,7 +118,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.2|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**qutebrowser**](https://www.qutebrowser.org/)||3.1.0|Keyboard-driven, vim-like browser based on PyQt5|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16430|rpcs3|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16434|rpcs3|
 |[**ryujinx**](https://ryujinx.org)||1.1.1298|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.5.3|Simple Live 简简单单的看直播 |
@@ -164,7 +164,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.1.5|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
-|[**sd**](None)||0.1.2.2|My system command line|
+|[**sd**](None)||0.1.2.4|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 |[**yutto**](https://github.com/yutto-dev/yutto)||2.0.0-beta.37|Ice_cube: 一个可爱且任性的 B 站视频下载器（bilili V2|
 </details>
