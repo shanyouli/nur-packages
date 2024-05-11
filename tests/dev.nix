@@ -39,8 +39,9 @@ with builtins; let
     else null;
   isPkg = name: isPkg' name nurAttrs;
   devPkgs = flattenPkgs {
-    # zyplayer = isPkg "zyplayer";
-    # tmexclude = isPkg "tmexclude";
+    # darwin file --> darwin-apps-xx
+    # python file --> python-apps-xx
+    # firefox-addons --> firefox-addons-xx
     vimmotion = isPkg "darwin-apps-vimmotion";
   };
 in rec {
