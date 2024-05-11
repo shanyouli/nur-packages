@@ -90,10 +90,10 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "124.0.6367.155";
+    version = "124.0.6367.201";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.155/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-opX+0TwAVZWrvNxANErx7TlHOhsUjRAwTi93cx54DFQ=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.201/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-SLQKrV6GlXFP3VG6LiaANuoqqQosM8/h8nP1Hh5uVFg=";
     };
   };
   "chromium.arm64" = {
@@ -273,16 +273,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.15";
+    version = "v0.2.16";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.15";
+      rev = "v0.2.16";
       fetchSubmodules = false;
-      sha256 = "sha256-oYDmXHETqeU6W6TiQRFN0Y228WcaPYmDad2JvLheetM=";
+      sha256 = "sha256-GGgRAW6r0ollfDIFHWBwE2GU9DG3HAevJTWaI6iNsOU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.15/Cargo.lock;
+      lockFile = ./fav-v0.2.16/Cargo.lock;
       outputHashes = {
         
       };
@@ -399,17 +399,6 @@
       sha256 = "sha256-SbXWkrpLJUrq+Jt1h3GBP9md5TbYpPchdiR0oEDMAgY=";
     };
   };
-  mihomo = {
-    pname = "mihomo";
-    version = "v1.18.4";
-    src = fetchFromGitHub {
-      owner = "MetaCubeX";
-      repo = "mihomo";
-      rev = "v1.18.4";
-      fetchSubmodules = false;
-      sha256 = "sha256-mqNcMB2nb8+e9XEGKqwaBE/nC4+jRaEFxE17e0JTo8Y=";
-    };
-  };
   musicdl = {
     pname = "musicdl";
     version = "ae213b2e5867fa12a6fa2789e24ea792aab38540";
@@ -497,13 +486,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.2.2";
+    version = "v0.1.2.4";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.2.2";
+      rev = "v0.1.2.4";
       fetchSubmodules = false;
-      sha256 = "sha256-KrYjSoEdNuSnxv3HkNa+BdaBRQKSLghpygVkmyJTVN0=";
+      sha256 = "sha256-mvgMNha2AuLVVKPoLSDdgTFhISOKr0Jba+ir35t4cn0=";
     };
   };
   seam = {
