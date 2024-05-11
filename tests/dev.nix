@@ -40,7 +40,8 @@ with builtins; let
   isPkg = name: isPkg' name nurAttrs;
   devPkgs = flattenPkgs {
     # zyplayer = isPkg "zyplayer";
-    tmexclude = isPkg "tmexclude";
+    # tmexclude = isPkg "tmexclude";
+    vimmotion = isPkg "darwin-apps-vimmotion";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

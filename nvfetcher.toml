@@ -132,6 +132,11 @@ fetch.github = "deweller/switchaudio-osx"
 
 
 ### DarwinAPP
+[vimmotion]
+src.github = "dwarvesf/VimMotionApp"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/dwarvesf/VimMotionApp/releases/download/v$ver/VimMotion.$ver.dmg"
 
 [tmexclude]
 src.github = "PhotonQuantum/tmexclude"
