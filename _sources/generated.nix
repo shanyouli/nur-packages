@@ -558,6 +558,14 @@
       sha256 = "sha256-EVLi85lcwz0W12Q0hhinCp+wZ/Kxf1SKgTZGgJqhFUw=";
     };
   };
+  vimmotion = {
+    pname = "vimmotion";
+    version = "1.2.3";
+    src = fetchurl {
+      url = "https://github.com/dwarvesf/VimMotionApp/releases/download/v1.2.3/VimMotion.1.2.3.dmg";
+      sha256 = "sha256-wUu5NVtRkdFaXHIkxIdjvxZ8qSavOSBtMIsc+aygDAA=";
+    };
+  };
   vivaldi = {
     pname = "vivaldi";
     version = "6.7.3329.26";

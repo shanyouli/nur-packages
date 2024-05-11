@@ -989,6 +989,21 @@
         },
         "version": "0.21.1"
     },
+    "vimmotion": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vimmotion",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-wUu5NVtRkdFaXHIkxIdjvxZ8qSavOSBtMIsc+aygDAA=",
+            "type": "url",
+            "url": "https://github.com/dwarvesf/VimMotionApp/releases/download/v1.2.3/VimMotion.1.2.3.dmg"
+        },
+        "version": "1.2.3"
+    },
     "vivaldi": {
         "cargoLocks": null,
         "date": null,
