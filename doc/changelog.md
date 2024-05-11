@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-05-11 21:23:18
+
++ 增加: immersive-translate firefox-addons
+
 ## 2024-05-09 00:23:33
 
 - 移除: mihomo

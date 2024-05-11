@@ -42,7 +42,7 @@ with builtins; let
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
-    vimmotion = isPkg "darwin-apps-vimmotion";
+    immersive-translate = isPkg "firefox-addons-immersive-translate";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
