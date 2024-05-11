@@ -58,5 +58,11 @@
     "version": "1.57.2",
     "sha256": "12gbs882ynpd27bi1swl1mk2g96pqychdnqz4gx7rkyfaadffa4r",
     "pname": "ublock-origin"
+  },
+  "immersive-translate": {
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4280246/immersive_translate-1.5.1.xpi",
+    "version": "1.5.1",
+    "sha256": "14r7n2dl6x3fn7biwngsykq76nzg8wlqnix0ax7q897csanlm982",
+    "pname": "immersive-translate"
   }
 }
