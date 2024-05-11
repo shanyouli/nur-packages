@@ -130,6 +130,7 @@ if __name__ == "__main__":
             "violentmonkey",
             "styl-us",
             "privacy-pass",
-            "ublock-origin"
+            "ublock-origin",
+            "immersive-translate",
         ]
     )
