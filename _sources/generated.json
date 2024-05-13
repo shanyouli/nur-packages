@@ -96,7 +96,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2023-11-13",
+        "date": "2024-05-13",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -108,11 +108,11 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "1196918e709f883eabfe3122ccad824b8f551381",
-            "sha256": "sha256-foTgCQKzYZc4aDxiAeoXR4jdEytqnkCt1Rwr2ztostM=",
+            "rev": "c31f516f390a0155d98299b3b01190e977419191",
+            "sha256": "sha256-bc9GyA0JA0Y54Rq+znwC2VgvtGxWMK3R6NEE0LUXET0=",
             "type": "github"
         },
-        "version": "1196918e709f883eabfe3122ccad824b8f551381"
+        "version": "c31f516f390a0155d98299b3b01190e977419191"
     },
     "calibre": {
         "cargoLocks": null,
@@ -548,11 +548,11 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.3.3",
-            "sha256": "sha256-J6R3T92cHFUkKwc+GKm612tVjglP2Tc/kDUmzUMhvio=",
+            "rev": "v4.4.1",
+            "sha256": "sha256-pIfQ0ufn8W0opm+N6IPFBPWNxNWMOU7FudPtIFop51c=",
             "type": "github"
         },
-        "version": "v4.3.3"
+        "version": "v4.4.1"
     },
     "httpx": {
         "cargoLocks": null,
@@ -814,6 +814,21 @@
         },
         "version": "release-4.6.4.10"
     },
+    "quickrecorder": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "quickrecorder",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-atCV3RTjxldOAbbUXmM2ITbM4Jiwt47nsUyAgt4x+As=",
+            "type": "url",
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.1/QuickRecorder_v1.2.1.dmg"
+        },
+        "version": "1.2.1"
+    },
     "qutebrowser": {
         "cargoLocks": null,
         "date": null,
@@ -1013,11 +1028,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s5qjn8WgDLK2TOfQpCryc/9NkpR7pGZmZ6eFzrbxe/A=",
+            "sha256": "sha256-bGYnXSU/mAj70Ww+apG0IEy/1TzA1sFrUId08q5JmsQ=",
             "type": "url",
-            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.26.universal.dmg"
+            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.27.universal.dmg"
         },
-        "version": "6.7.3329.26"
+        "version": "6.7.3329.27"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,

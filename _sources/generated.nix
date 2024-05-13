@@ -54,15 +54,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "1196918e709f883eabfe3122ccad824b8f551381";
+    version = "c31f516f390a0155d98299b3b01190e977419191";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "1196918e709f883eabfe3122ccad824b8f551381";
+      rev = "c31f516f390a0155d98299b3b01190e977419191";
       fetchSubmodules = false;
-      sha256 = "sha256-foTgCQKzYZc4aDxiAeoXR4jdEytqnkCt1Rwr2ztostM=";
+      sha256 = "sha256-bc9GyA0JA0Y54Rq+znwC2VgvtGxWMK3R6NEE0LUXET0=";
     };
-    date = "2023-11-13";
+    date = "2024-05-13";
   };
   calibre = {
     pname = "calibre";
@@ -308,13 +308,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.3.3";
+    version = "v4.4.1";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.3.3";
+      rev = "v4.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-J6R3T92cHFUkKwc+GKm612tVjglP2Tc/kDUmzUMhvio=";
+      sha256 = "sha256-pIfQ0ufn8W0opm+N6IPFBPWNxNWMOU7FudPtIFop51c=";
     };
   };
   httpx = {
@@ -460,6 +460,14 @@
       sha256 = "sha256-wrkc11H4t96D6qr9N/2CzG93zeNv7I1g9ieXyc4x5wk=";
     };
   };
+  quickrecorder = {
+    pname = "quickrecorder";
+    version = "1.2.1";
+    src = fetchurl {
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.1/QuickRecorder_v1.2.1.dmg";
+      sha256 = "sha256-atCV3RTjxldOAbbUXmM2ITbM4Jiwt47nsUyAgt4x+As=";
+    };
+  };
   qutebrowser = {
     pname = "qutebrowser";
     version = "3.1.0";
@@ -568,10 +576,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.26";
+    version = "6.7.3329.27";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.26.universal.dmg";
-      sha256 = "sha256-s5qjn8WgDLK2TOfQpCryc/9NkpR7pGZmZ6eFzrbxe/A=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.27.universal.dmg";
+      sha256 = "sha256-bGYnXSU/mAj70Ww+apG0IEy/1TzA1sFrUId08q5JmsQ=";
     };
   };
   websocket-bridge-python = {
