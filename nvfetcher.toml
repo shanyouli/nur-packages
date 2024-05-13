@@ -136,6 +136,10 @@ fetch.github = "deweller/switchaudio-osx"
 src.github = "lihaoyun6/QuickRecorder"
 fetch.url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/$ver/QuickRecorder_v$ver.dmg"
 
+[airbattery]
+src.github = "lihaoyun6/AirBattery"
+fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_v$ver.dmg"
+
 [vimmotion]
 src.github = "dwarvesf/VimMotionApp"
 src.from_pattern = "v(.*)"
