@@ -42,7 +42,7 @@ with builtins; let
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
-    immersive-translate = isPkg "firefox-addons-immersive-translate";
+    quickrecorder = isPkg "darwin-apps-quickrecorder";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

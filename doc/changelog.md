@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-05-13 22:01:38
+
++ 增加: quickrecorder ， macos上录屏工具
+
 ## 2024-05-11 21:23:18
 
 + 增加: immersive-translate firefox-addons
