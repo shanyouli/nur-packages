@@ -17,6 +17,14 @@
       sha256 = "sha256-7EOQzmxRJGKHymfOzbGZMwkgQet8qkAGT9lRGdzqgpw=";
     };
   };
+  airbattery = {
+    pname = "airbattery";
+    version = "1.3.0";
+    src = fetchurl {
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.0/AirBattery_1.3.0.dmg";
+      sha256 = "sha256-YSPENH/i0L1s6OjRJUEKiRNpme5Gn19Gf5886IxgUf0=";
+    };
+  };
   alexandria = {
     pname = "alexandria";
     version = "0.12";

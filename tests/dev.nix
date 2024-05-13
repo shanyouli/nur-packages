@@ -42,6 +42,7 @@ with builtins; let
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
+
     airbattery = isPkg "darwin-apps-airbattery";
   };
 in rec {
