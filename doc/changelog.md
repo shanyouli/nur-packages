@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-05-13 22:15:42
+
++ 增加: AirBattery
+
 ## 2024-05-13 22:01:38
 
 + 增加: quickrecorder ， macos上录屏工具

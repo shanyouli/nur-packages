@@ -42,7 +42,7 @@ with builtins; let
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
-    quickrecorder = isPkg "darwin-apps-quickrecorder";
+    airbattery = isPkg "darwin-apps-airbattery";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

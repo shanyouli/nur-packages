@@ -138,7 +138,7 @@ fetch.url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/$ver/Q
 
 [airbattery]
 src.github = "lihaoyun6/AirBattery"
-fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_v$ver.dmg"
+fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_$ver.dmg"
 
 [vimmotion]
 src.github = "dwarvesf/VimMotionApp"
