@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-18 08:42:28 UTC
+- LAST_MODIFY: 2024-05-18 12:18:24 UTC
 
 
 ## How to use
@@ -131,7 +131,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 |[**vimmotion**](https://github.com/dwarvesf/VimMotionApp)||1.2.3|Access macOS UI elements with your fingers stay on keyboard.|
 |[**vivaldi**](https://vivaldi.com/)||6.7.3329.31|Vivaldi Browser|
 |[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.0|第三方B站客户端|
-|[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.0|A tiling window manager for macOS based on binary space partitioning|
+|[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.1|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 |[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.4|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
