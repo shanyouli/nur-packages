@@ -1093,11 +1093,11 @@
             "name": null,
             "owner": "koekeishiya",
             "repo": "yabai",
-            "rev": "v7.1.0",
-            "sha256": "sha256-5iC1U6tyUYFLjOfnIxCrjCjj2deUZ/rvsJN4jlrr2Tc=",
+            "rev": "v7.1.1",
+            "sha256": "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=",
             "type": "github"
         },
-        "version": "v7.1.0"
+        "version": "v7.1.1"
     },
     "yabai-zsh-completions": {
         "cargoLocks": null,

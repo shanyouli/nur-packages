@@ -608,13 +608,13 @@
   };
   yabai = {
     pname = "yabai";
-    version = "v7.1.0";
+    version = "v7.1.1";
     src = fetchFromGitHub {
       owner = "koekeishiya";
       repo = "yabai";
-      rev = "v7.1.0";
+      rev = "v7.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-5iC1U6tyUYFLjOfnIxCrjCjj2deUZ/rvsJN4jlrr2Tc=";
+      sha256 = "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=";
     };
   };
   yabai-zsh-completions = {
