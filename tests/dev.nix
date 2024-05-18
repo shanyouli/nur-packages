@@ -43,7 +43,8 @@ with builtins; let
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
 
-    airbattery = isPkg "darwin-apps-airbattery";
+    # airbattery = isPkg "darwin-apps-airbattery";
+    musicn = isPkg "musicn";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
