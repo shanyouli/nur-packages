@@ -36,7 +36,6 @@ buildDotnetModule rec {
     + lib.optionalString stdenv.isDarwin ''
       export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
       export LIBRARY_PATH=$LIBRARY_PATH:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib/swift:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib
-      export LDFLAGS="-Wl,-no_classic,$LDFLAGS"
     ''
     # BUGS: see @  https://github.com/NixOS/nixpkgs/issues/280923
     + lib.optionalString stdenv.isLinux ''
@@ -58,5 +57,7 @@ buildDotnetModule rec {
     homepage = "https://github.com/nilaoda/BBDown";
     description = "Bilibili Downloader. 一款命令行式哔哩哔哩下载器.";
     license = licenses.mit;
+    broken = stdenv.isDarwin;
+    # platforms = platforms.linux;
   };
 }
