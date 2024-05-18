@@ -98,18 +98,18 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "124.0.6367.201";
+    version = "125.0.6422.60";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.201/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-SLQKrV6GlXFP3VG6LiaANuoqqQosM8/h8nP1Hh5uVFg=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.60/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-XsGb9u6P19i2PEtR4yQXJ/GENt5t6iV2zBK4MjnmCJI=";
     };
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "124.0.6367.118-1.1";
+    version = "124.0.6367.207-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.118-1.1/ungoogled-chromium_124.0.6367.118-1.1_arm64-macos.dmg";
-      sha256 = "sha256-dv5eg7mPQfqBQSfjYsYJb2xoYDKmE2G0G7S4ceQlyW4=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.207-1.1/ungoogled-chromium_124.0.6367.207-1.1_arm64-macos.dmg";
+      sha256 = "sha256-0ghJmEw2iPtbg8PvENNdG7s1pRIB2pZDCfnyucsuhms=";
     };
   };
   clash-nyanpasu = {
@@ -141,10 +141,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.84";
+    version = "4.9.85";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.84/darkreader-firefox.xpi";
-      sha256 = "sha256-dmutarayoyczptfnRUaJLez82m8h5y/ykheSDXbETg8=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.85/darkreader-firefox.xpi";
+      sha256 = "sha256-yQqUOLGprCKFhM0GHxR24C37PHzDsM/V/kkpOM89Rko=";
     };
   };
   deeplx = {
@@ -281,16 +281,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.16";
+    version = "v0.2.17";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.16";
+      rev = "v0.2.17";
       fetchSubmodules = false;
-      sha256 = "sha256-GGgRAW6r0ollfDIFHWBwE2GU9DG3HAevJTWaI6iNsOU=";
+      sha256 = "sha256-gZ54OdT6gXkB3qynvfLS0tLUyHzMnqYeAmeO83tEU9c=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.16/Cargo.lock;
+      lockFile = ./fav-v0.2.17/Cargo.lock;
       outputHashes = {
         
       };
@@ -432,18 +432,18 @@
   };
   neovide = {
     pname = "neovide";
-    version = "0.12.2";
+    version = "0.13.0";
     src = fetchurl {
-      url = "https://github.com/neovide/neovide/releases/download/0.12.2/neovide.dmg.zip";
-      sha256 = "sha256-cCLswmyKXMwG0RTJWMFFcgdfWyaU9saTgrsZwJuFA1A=";
+      url = "https://github.com/neovide/neovide/releases/download/0.13.0/neovide.dmg.zip";
+      sha256 = "sha256-Mzk0J4O9jDwPA/47Nhc0jYAMtSsTwNDorAREFux4Hdg=";
     };
   };
   next-chat = {
     pname = "next-chat";
-    version = "2.12.2";
+    version = "2.12.3";
     src = fetchurl {
-      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.2/NextChat_2.12.2_universal.dmg";
-      sha256 = "sha256-VKV5Sqeb5zUW75Pr2hvT2X3bLQYlrqXh0DHNxzxZ7CU=";
+      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.3/NextChat_2.12.3_universal.dmg";
+      sha256 = "sha256-JR5Wb+nzeRFD0NbGNz8ETkbx+PFZO6yC+SoxjojwaHc=";
     };
   };
   pngpaste = {
@@ -470,10 +470,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.1";
+    version = "1.2.3";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.1/QuickRecorder_v1.2.1.dmg";
-      sha256 = "sha256-atCV3RTjxldOAbbUXmM2ITbM4Jiwt47nsUyAgt4x+As=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.3/QuickRecorder_v1.2.3.dmg";
+      sha256 = "sha256-3xEcMfm9GfLj7mWWuSED4bCa+klvc4twnqxX35jlKms=";
     };
   };
   qutebrowser = {
@@ -486,10 +486,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1298";
+    version = "1.1.1316";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1298/ryujinx-1.1.1298-macos_universal.app.tar.gz";
-      sha256 = "sha256-MAKdSTK0sDgOnuAiyo8gk8psSOVUL/qVJvlZqBm4XOY=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1316/ryujinx-1.1.1316-macos_universal.app.tar.gz";
+      sha256 = "sha256-ukTV2diocSrBuZMl7CadHqQ6uuALU8fFCr8dLVJ6Zq8=";
     };
   };
   ryusak = {
@@ -584,10 +584,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.27";
+    version = "6.7.3329.31";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.27.universal.dmg";
-      sha256 = "sha256-bGYnXSU/mAj70Ww+apG0IEy/1TzA1sFrUId08q5JmsQ=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.31.universal.dmg";
+      sha256 = "sha256-7VfKB+jFA2xCqEJGm4Y7ciEuhLKMoeJjsimDt8GpMaA=";
     };
   };
   websocket-bridge-python = {

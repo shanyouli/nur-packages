@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SLQKrV6GlXFP3VG6LiaANuoqqQosM8/h8nP1Hh5uVFg=",
+            "sha256": "sha256-XsGb9u6P19i2PEtR4yQXJ/GENt5t6iV2zBK4MjnmCJI=",
             "type": "url",
-            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/124.0.6367.201/mac-arm64/chrome-mac-arm64.zip"
+            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.60/mac-arm64/chrome-mac-arm64.zip"
         },
-        "version": "124.0.6367.201"
+        "version": "125.0.6422.60"
     },
     "chromium.arm64": {
         "cargoLocks": null,
@@ -198,11 +198,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dv5eg7mPQfqBQSfjYsYJb2xoYDKmE2G0G7S4ceQlyW4=",
+            "sha256": "sha256-0ghJmEw2iPtbg8PvENNdG7s1pRIB2pZDCfnyucsuhms=",
             "type": "url",
-            "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.118-1.1/ungoogled-chromium_124.0.6367.118-1.1_arm64-macos.dmg"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.207-1.1/ungoogled-chromium_124.0.6367.207-1.1_arm64-macos.dmg"
         },
-        "version": "124.0.6367.118-1.1"
+        "version": "124.0.6367.207-1.1"
     },
     "clash-nyanpasu": {
         "cargoLocks": null,
@@ -263,11 +263,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dmutarayoyczptfnRUaJLez82m8h5y/ykheSDXbETg8=",
+            "sha256": "sha256-yQqUOLGprCKFhM0GHxR24C37PHzDsM/V/kkpOM89Rko=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.84/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.85/darkreader-firefox.xpi"
         },
-        "version": "4.9.84"
+        "version": "4.9.85"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -497,7 +497,7 @@
     "fav": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./fav-v0.2.16/Cargo.lock",
+                "./fav-v0.2.17/Cargo.lock",
                 {}
             ]
         },
@@ -513,11 +513,11 @@
             "name": null,
             "owner": "kingwingfly",
             "repo": "fav",
-            "rev": "v0.2.16",
-            "sha256": "sha256-GGgRAW6r0ollfDIFHWBwE2GU9DG3HAevJTWaI6iNsOU=",
+            "rev": "v0.2.17",
+            "sha256": "sha256-gZ54OdT6gXkB3qynvfLS0tLUyHzMnqYeAmeO83tEU9c=",
             "type": "github"
         },
-        "version": "v0.2.16"
+        "version": "v0.2.17"
     },
     "firefox-utils": {
         "cargoLocks": null,
@@ -768,11 +768,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-cCLswmyKXMwG0RTJWMFFcgdfWyaU9saTgrsZwJuFA1A=",
+            "sha256": "sha256-Mzk0J4O9jDwPA/47Nhc0jYAMtSsTwNDorAREFux4Hdg=",
             "type": "url",
-            "url": "https://github.com/neovide/neovide/releases/download/0.12.2/neovide.dmg.zip"
+            "url": "https://github.com/neovide/neovide/releases/download/0.13.0/neovide.dmg.zip"
         },
-        "version": "0.12.2"
+        "version": "0.13.0"
     },
     "next-chat": {
         "cargoLocks": null,
@@ -783,11 +783,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-VKV5Sqeb5zUW75Pr2hvT2X3bLQYlrqXh0DHNxzxZ7CU=",
+            "sha256": "sha256-JR5Wb+nzeRFD0NbGNz8ETkbx+PFZO6yC+SoxjojwaHc=",
             "type": "url",
-            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.2/NextChat_2.12.2_universal.dmg"
+            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.3/NextChat_2.12.3_universal.dmg"
         },
-        "version": "2.12.2"
+        "version": "2.12.3"
     },
     "pngpaste": {
         "cargoLocks": null,
@@ -838,11 +838,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-atCV3RTjxldOAbbUXmM2ITbM4Jiwt47nsUyAgt4x+As=",
+            "sha256": "sha256-3xEcMfm9GfLj7mWWuSED4bCa+klvc4twnqxX35jlKms=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.1/QuickRecorder_v1.2.1.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.3/QuickRecorder_v1.2.3.dmg"
         },
-        "version": "1.2.1"
+        "version": "1.2.3"
     },
     "qutebrowser": {
         "cargoLocks": null,
@@ -868,11 +868,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MAKdSTK0sDgOnuAiyo8gk8psSOVUL/qVJvlZqBm4XOY=",
+            "sha256": "sha256-ukTV2diocSrBuZMl7CadHqQ6uuALU8fFCr8dLVJ6Zq8=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1298/ryujinx-1.1.1298-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1316/ryujinx-1.1.1316-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1298"
+        "version": "1.1.1316"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -1043,11 +1043,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-bGYnXSU/mAj70Ww+apG0IEy/1TzA1sFrUId08q5JmsQ=",
+            "sha256": "sha256-7VfKB+jFA2xCqEJGm4Y7ciEuhLKMoeJjsimDt8GpMaA=",
             "type": "url",
-            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.27.universal.dmg"
+            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.31.universal.dmg"
         },
-        "version": "6.7.3329.27"
+        "version": "6.7.3329.31"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,
