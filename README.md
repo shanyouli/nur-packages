@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-18 08:25:22 UTC
+- LAST_MODIFY: 2024-05-18 08:42:28 UTC
 
 
 ## How to use
@@ -76,7 +76,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.3|The extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240517.0|The extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240518.0|The extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.17|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.4.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
