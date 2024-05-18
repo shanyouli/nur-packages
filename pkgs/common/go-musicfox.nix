@@ -2,14 +2,14 @@
 {
   lib,
   stdenv,
-  buildGo121Module,
+  buildGoModule,
   darwin,
   alsa-lib,
   flac,
   pkg-config,
   source,
 }:
-buildGo121Module rec {
+buildGoModule rec {
   inherit (source) pname src;
   version =
     if (builtins.hasAttr "date" source)

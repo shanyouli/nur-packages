@@ -36,6 +36,7 @@ buildDotnetModule rec {
     + lib.optionalString stdenv.isDarwin ''
       export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
       export LIBRARY_PATH=$LIBRARY_PATH:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib/swift:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib
+      export LDFLAGS="-Wl,-no_classic,$LDFLAGS"
     ''
     # BUGS: see @  https://github.com/NixOS/nixpkgs/issues/280923
     + lib.optionalString stdenv.isLinux ''

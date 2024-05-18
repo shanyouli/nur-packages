@@ -45,6 +45,7 @@ with builtins; let
 
     # airbattery = isPkg "darwin-apps-airbattery";
     musicn = isPkg "bbdown";
+    go-musicfox = isPkg "go-musicfox";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
