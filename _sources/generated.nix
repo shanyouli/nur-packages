@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.10.0-Beta";
+    version = "0.11.0-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.10.0-Beta/AeroSpace-v0.10.0-Beta.zip";
-      sha256 = "sha256-7EOQzmxRJGKHymfOzbGZMwkgQet8qkAGT9lRGdzqgpw=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.0-Beta/AeroSpace-v0.11.0-Beta.zip";
+      sha256 = "sha256-4LhRjhwiNMpPoNt/0LVXpaIoVjQUfdAzYNhwsGj8kbs=";
     };
   };
   airbattery = {
@@ -106,10 +106,10 @@
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "124.0.6367.207-1.1";
+    version = "125.0.6422.60-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/124.0.6367.207-1.1/ungoogled-chromium_124.0.6367.207-1.1_arm64-macos.dmg";
-      sha256 = "sha256-0ghJmEw2iPtbg8PvENNdG7s1pRIB2pZDCfnyucsuhms=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.60-1.1/ungoogled-chromium_125.0.6422.60-1.1_arm64-macos.dmg";
+      sha256 = "sha256-d8fW3yK0jz0buLNDO52zjxngDS3ZnfcCwRV6cG1F7YI=";
     };
   };
   clash-nyanpasu = {
@@ -346,23 +346,23 @@
   };
   iinaplus = {
     pname = "iinaplus";
-    version = "0.7.23";
+    version = "0.7.25";
     src = fetchurl {
-      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.23/IINA+.0.7.23.dmg";
-      sha256 = "sha256-Qf2GUNMwpvcVlMmeL3TGOvZB213fOXU8VNbAM+pY3Hc=";
+      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.25/IINA+.0.7.25.dmg";
+      sha256 = "sha256-3C6D5eeO5TDhuofnITa23jQOIKaOphvgG4ZimwaAPnk=";
     };
   };
   lazyvim-star = {
     pname = "lazyvim-star";
-    version = "75625b29e8891938218043a7d619d67f79666a8d";
+    version = "b59e7c315b668182320702fd2944eda9f74a3314";
     src = fetchFromGitHub {
       owner = "LazyVim";
       repo = "starter";
-      rev = "75625b29e8891938218043a7d619d67f79666a8d";
+      rev = "b59e7c315b668182320702fd2944eda9f74a3314";
       fetchSubmodules = false;
-      sha256 = "sha256-mZbQVDh6T3GylIPvMGFV9Sp4Oc6TMiqUYW8nPATs+dE=";
+      sha256 = "sha256-/ph0Xxjxf8kB1Jhq5znKxkD3zkIlQAvOuP73zVDcefQ=";
     };
-    date = "2024-03-29";
+    date = "2024-05-19";
   };
   localsend = {
     pname = "localsend";
@@ -405,6 +405,17 @@
     src = fetchurl {
       url = "https://github.com/subframe7536/Maple-font/releases/download/v6.4/MapleMono-SC-NF.zip";
       sha256 = "sha256-SbXWkrpLJUrq+Jt1h3GBP9md5TbYpPchdiR0oEDMAgY=";
+    };
+  };
+  mpvc = {
+    pname = "mpvc";
+    version = "1.5-jukebox";
+    src = fetchFromGitHub {
+      owner = "gmt4";
+      repo = "mpvc";
+      rev = "1.5-jukebox";
+      fetchSubmodules = false;
+      sha256 = "sha256-KAns7WR9xPvSk7zA4zBs5TEbpl5pE9r+qkLWDeNiqbc=";
     };
   };
   musicdl = {
@@ -470,10 +481,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.3";
+    version = "1.2.5";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.3/QuickRecorder_v1.2.3.dmg";
-      sha256 = "sha256-3xEcMfm9GfLj7mWWuSED4bCa+klvc4twnqxX35jlKms=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.5/QuickRecorder_v1.2.5.dmg";
+      sha256 = "sha256-VAKEySi8m27m5pEz9pQx0F5biVwmzeOLY+QrziHcVHE=";
     };
   };
   qutebrowser = {
@@ -486,10 +497,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1316";
+    version = "1.1.1318";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1316/ryujinx-1.1.1316-macos_universal.app.tar.gz";
-      sha256 = "sha256-ukTV2diocSrBuZMl7CadHqQ6uuALU8fFCr8dLVJ6Zq8=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1318/ryujinx-1.1.1318-macos_universal.app.tar.gz";
+      sha256 = "sha256-Bn//ghPCH9rvtBiN8X6W2uUnxZdUZ7F6IRUUlg/0tlE=";
     };
   };
   ryusak = {
@@ -631,13 +642,13 @@
   };
   yutto = {
     pname = "yutto";
-    version = "v2.0.0-beta.37";
+    version = "v2.0.0-beta.38";
     src = fetchFromGitHub {
       owner = "yutto-dev";
       repo = "yutto";
-      rev = "v2.0.0-beta.37";
+      rev = "v2.0.0-beta.38";
       fetchSubmodules = false;
-      sha256 = "sha256-daRuFYfR3FjvhVsQM1FXI19iOH+bukh6WxfH5O+CFk4=";
+      sha256 = "sha256-zYvMbSRiDq4V4nW7d039uf1RoCg6mCemu8/FWd0EqNk=";
     };
   };
   zpmod = {
@@ -653,10 +664,10 @@
   };
   zy-player = {
     pname = "zy-player";
-    version = "3.3.4";
+    version = "3.3.6";
     src = fetchurl {
-      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.4/zyplayer-mac-3.3.4-arm64.dmg";
-      sha256 = "sha256-bxgEKJiNKxV80HwJJam7NSgVGfy4FUtG9SNL/E69mgk=";
+      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.6/zyplayer-mac-3.3.6-arm64.dmg";
+      sha256 = "sha256-wFBGbYXb1sMFSkzs9vWm4BmEqrEjbr+/iASevF5gIk4=";
     };
   };
 }
