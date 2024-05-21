@@ -44,8 +44,14 @@ with builtins; let
     # firefox-addons --> firefox-addons-xx
 
     # airbattery = isPkg "darwin-apps-airbattery";
-    musicn = isPkg "bbdown";
-    go-musicfox = isPkg "go-musicfox";
+    mpvc = isPkg "mpvc";
+    zyplayer = isPkg "darwin-apps-zyplayer";
+    # yutto = isPkg "python-apps-yutto";
+    ryujinx = isPkg "darwin-apps-ryujinx";
+    quickrecoder = isPkg "darwin-apps-quickrecoder";
+    clash-nyanpasu = isPkg "darwin-apps-clash-nyanpasu";
+    chromium = isPkg "darwin-apps-chromium";
+    # aerospace = isPkg "darwin-apps-aerosapce";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

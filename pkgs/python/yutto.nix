@@ -43,5 +43,6 @@ in
       homepage = "https://github.com/yutto-dev/yutto";
       license = licenses.gpl3Only;
       mainProgram = "yutto";
+      broken = true;
     };
   }
