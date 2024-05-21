@@ -35,6 +35,11 @@ fetch.github = "shanyouli/sd"
 
 
 ### common
+
+[mpvc]
+src.github = "gmt4/mpvc"
+fetch.github = "gmt4/mpvc"
+
 [zpmod]
 src.github = "z-shell/zpmod"
 fetch.github = "z-shell/zpmod"
