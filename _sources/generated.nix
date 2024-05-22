@@ -98,10 +98,10 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "125.0.6422.60";
+    version = "125.0.6422.76";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.60/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-XsGb9u6P19i2PEtR4yQXJ/GENt5t6iV2zBK4MjnmCJI=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.76/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-5taOzLgeJOrW0OhTGLUg1Tt9lBjYmVHNWmB1n1vqV4o=";
     };
   };
   "chromium.arm64" = {
@@ -145,6 +145,14 @@
     src = fetchurl {
       url = "https://github.com/darkreader/darkreader/releases/download/v4.9.85/darkreader-firefox.xpi";
       sha256 = "sha256-yQqUOLGprCKFhM0GHxR24C37PHzDsM/V/kkpOM89Rko=";
+    };
+  };
+  dashplayer = {
+    pname = "dashplayer";
+    version = "4.2.0";
+    src = fetchurl {
+      url = "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.0/DashPlayer-4.2.0-arm64.dmg";
+      sha256 = "sha256-LG+rZWwAli+gSPvX+qI/+4Q+Z1mdNsPHV2da22M8Qjo=";
     };
   };
   deeplx = {
@@ -481,10 +489,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.5";
+    version = "1.2.6";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.5/QuickRecorder_v1.2.5.dmg";
-      sha256 = "sha256-VAKEySi8m27m5pEz9pQx0F5biVwmzeOLY+QrziHcVHE=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.6/QuickRecorder_v1.2.6.dmg";
+      sha256 = "sha256-AQHCCOTzCBtSLMT5sOhNBYVLCYgJPQu81OlPLXOIUuI=";
     };
   };
   qutebrowser = {

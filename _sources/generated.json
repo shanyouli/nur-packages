@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XsGb9u6P19i2PEtR4yQXJ/GENt5t6iV2zBK4MjnmCJI=",
+            "sha256": "sha256-5taOzLgeJOrW0OhTGLUg1Tt9lBjYmVHNWmB1n1vqV4o=",
             "type": "url",
-            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.60/mac-arm64/chrome-mac-arm64.zip"
+            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.76/mac-arm64/chrome-mac-arm64.zip"
         },
-        "version": "125.0.6422.60"
+        "version": "125.0.6422.76"
     },
     "chromium.arm64": {
         "cargoLocks": null,
@@ -268,6 +268,21 @@
             "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.85/darkreader-firefox.xpi"
         },
         "version": "4.9.85"
+    },
+    "dashplayer": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "dashplayer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-LG+rZWwAli+gSPvX+qI/+4Q+Z1mdNsPHV2da22M8Qjo=",
+            "type": "url",
+            "url": "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.0/DashPlayer-4.2.0-arm64.dmg"
+        },
+        "version": "4.2.0"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -858,11 +873,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-VAKEySi8m27m5pEz9pQx0F5biVwmzeOLY+QrziHcVHE=",
+            "sha256": "sha256-AQHCCOTzCBtSLMT5sOhNBYVLCYgJPQu81OlPLXOIUuI=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.5/QuickRecorder_v1.2.5.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.6/QuickRecorder_v1.2.6.dmg"
         },
-        "version": "1.2.5"
+        "version": "1.2.6"
     },
     "qutebrowser": {
         "cargoLocks": null,
