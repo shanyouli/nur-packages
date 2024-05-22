@@ -47,10 +47,7 @@ with builtins; let
     mpvc = isPkg "mpvc";
     zyplayer = isPkg "darwin-apps-zyplayer";
     # yutto = isPkg "python-apps-yutto";
-    ryujinx = isPkg "darwin-apps-ryujinx";
-    quickrecoder = isPkg "darwin-apps-quickrecoder";
-    clash-nyanpasu = isPkg "darwin-apps-clash-nyanpasu";
-    chromium = isPkg "darwin-apps-chromium";
+    ryujinx = isPkg "darwin-apps-dashplayer";
     # aerospace = isPkg "darwin-apps-aerosapce";
   };
 in rec {
