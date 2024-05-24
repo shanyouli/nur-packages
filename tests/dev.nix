@@ -33,21 +33,12 @@ with builtins; let
       (map (n: nameValuePair n nurAttrs.${n})
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
-  isPkg' = name: p:
-    if builtins.hasAttr name p
-    then p.${name}
-    else null;
-  isPkg = name: isPkg' name nurAttrs;
   devPkgs = flattenPkgs {
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
 
     # airbattery = isPkg "darwin-apps-airbattery";
-    mpvc = isPkg "mpvc";
-    zyplayer = isPkg "darwin-apps-zyplayer";
-    # yutto = isPkg "python-apps-yutto";
-    ryujinx = isPkg "darwin-apps-dashplayer";
     # aerospace = isPkg "darwin-apps-aerosapce";
   };
 in rec {
