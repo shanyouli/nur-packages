@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-18 12:18:24 UTC
+- LAST_MODIFY: 2024-05-24 05:40:43 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>18</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -80,9 +80,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.17|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.4.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**lazyvim-star**](https://www.lazyvim.org/)||2024-03-29|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
+|[**lazyvim-star**](https://www.lazyvim.org/)||2024-05-19|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
+|[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-jukebox|A mpc-like control interface for mpv|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
@@ -94,34 +95,36 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>36</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>38</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.11.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.3.0|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.10.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
-|[**google-chrome**](https://www.google.com/chrome/)||125.0.6422.60|Google Chrome stable|
-|[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||124.0.6367.207-1.1|Open source version of Google-chrome|
+|[**google-chrome**](https://www.google.com/chrome/)||125.0.6422.76|Google Chrome stable|
+|[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||125.0.6422.60-1.1|Open source version of Google-chrome|
 |[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
 |[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.3.8|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
+|[**dashplayer**](https://solidspoon.xyz/DashPlayer/home.html)|**x86_64-darwin**|4.2.0|video player|
 |[**downkyi**](https://github.com/yaobiao131/downkyicore)||1.0.10| 哔哩下载姬(跨平台版)downkyi，哔哩哔哩网站视频下载工具，支持批量下载，支持8K、HDR、杜比视界，提供工具箱（音视频提取、去水印等）|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.11.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**iina**](http://iina.io/)||1.3.4|IINA mplayer|
-|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.23|Extra danmaku support for iina (iina 弹幕支持)|
+|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.25|Extra danmaku support for iina (iina 弹幕支持)|
 |[**localsend**](https://localsend.org/#/)||1.14.0|Share files to nearby devices. Free, open source, cross-platform|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.31|Organize Your macOS Launchpad Apps|
 |[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
 |[**neovide**](https://neovide.dev/)||0.13.0|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.3|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.2.3|A lightweight screen recorder based on ScreenCapture Kit for macOS|
+|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.2.6|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**qutebrowser**](https://www.qutebrowser.org/)||3.1.0|Keyboard-driven, vim-like browser based on PyQt5|
 |[**rpcs3**](https://github.com/RPCS3)||0.0.32-16476|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1316|A simple, experimental Nintendo Switch emulator|
+|[**ryujinx**](https://ryujinx.org)||1.1.1318|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.5.3|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.6.0|Open source Spotify client|
@@ -133,7 +136,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 |[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.0|第三方B站客户端|
 |[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.1|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
-|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.4|跨平台视频资源播放器, 简洁免费无广告.|
+|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.6|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
 
 ### firefox-addons
@@ -170,6 +173,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **73** 
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
 |[**sd**](None)||0.1.2.4|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
-|[**yutto**](https://github.com/yutto-dev/yutto)||2.0.0-beta.37|Ice_cube: 一个可爱且任性的 B 站视频下载器（bilili V2|
+|[**yutto**](https://github.com/yutto-dev/yutto)|**aarch64-darwin** **aarch64-linux** **x86_64-darwin** **x86_64-linux**|2.0.0-beta.38|Ice_cube: 一个可爱且任性的 B 站视频下载器（bilili V2|
 </details>
 
