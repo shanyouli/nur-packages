@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4220396/violentmonkey-2.18.0.xpi",
-    "version": "2.18.0",
-    "sha256": "1wdh9k8zg8lbi88lj1y2d47zzprmlk3dw4b0khvnaadq8alfxfsa",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4289102/violentmonkey-2.19.0.xpi",
+    "version": "2.19.0",
+    "sha256": "0g6wldp6g5rxbd15vszrdng6v6hq7v0m2wxlz4qk9cw7kvh36m0h",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -54,15 +54,15 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4261710/ublock_origin-1.57.2.xpi",
-    "version": "1.57.2",
-    "sha256": "12gbs882ynpd27bi1swl1mk2g96pqychdnqz4gx7rkyfaadffa4r",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4290466/ublock_origin-1.58.0.xpi",
+    "version": "1.58.0",
+    "sha256": "1sl562yk5ilsi3z5qz68f04xr9aqn6cfbp4aawhxnx3i9acmc327",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4287468/immersive_translate-1.5.5.xpi",
-    "version": "1.5.5",
-    "sha256": "0lz78fy42qxhvv6mmhjl1afa2bgnas47g91w2k3hg8yvhpjh0wfa",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4290557/immersive_translate-1.5.6.xpi",
+    "version": "1.5.6",
+    "sha256": "143qhklf4xjhwsx81asrfrnjrf8hm6rwgxxawzqk89j4g287sz7j",
     "pname": "immersive-translate"
   }
 }
