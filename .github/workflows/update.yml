@@ -3,7 +3,7 @@ name: Update src and lock
 on:
   schedule:
     # run this daily at 8am UTC, or roughly 4am eastern
-    - cron: '0 0 * * 6'
+    - cron: '15 21 * * 5'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
