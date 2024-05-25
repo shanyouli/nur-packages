@@ -338,6 +338,12 @@ fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
 src.github = "koekeishiya/yabai"
 fetch.github = "koekeishiya/yabai"
 
+[yabai-bin]
+src.github = "koekeishiya/yabai"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/koekeishiya/yabai/releases/download/v$ver/yabai-v$ver.tar.gz"
+
 ["emacs29.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
