@@ -73,11 +73,11 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.34.0",
-            "sha256": "sha256-LHkUqOpZk8GZPUis+oX077w8LY7lLwrLu4AO/NvLVeg=",
+            "rev": "v3.35.0",
+            "sha256": "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=",
             "type": "github"
         },
-        "version": "v3.34.0"
+        "version": "v3.35.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -88,11 +88,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gqY0wg34iwzjhdAp0KI6gEe4JSc2IdCMJ2Iy+zMJRCw=",
+            "sha256": "sha256-lAYIwrn2TPWFrU0kFUXl8eWeX25U746iycOimZgxP8c=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.34.0/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.35.0/dist.tar.gz"
         },
-        "version": "3.34.0"
+        "version": "3.35.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -138,11 +138,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-djdLVnxY2U71b9xu1jIucm0FQ0UfvGdU7C4NnhFCFbQ=",
+            "sha256": "sha256-y04Mz09u4KBM0nctf0FkIO/koVWEqKOI6IfnINe5uVs=",
             "type": "url",
-            "url": "https://download.calibre-ebook.com/7.10.0/calibre-7.10.0.dmg"
+            "url": "https://download.calibre-ebook.com/7.11.0/calibre-7.11.0.dmg"
         },
-        "version": "7.10.0"
+        "version": "7.11.0"
     },
     "calibrepath": {
         "cargoLocks": null,
@@ -153,11 +153,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dXKe7ij8SreHpEXOK21r62iWiCNN/KV341m6gP3CeHQ=",
+            "sha256": "sha256-yvqG9Prse4I9cNk8sBaNiFyhiKMyed269ahZKPba4Ig=",
             "type": "url",
-            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.10.0/mac-patch-backend+update-v7.10.0.zip"
+            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.11.0/mac-patch-backend+update-v7.11.0.zip"
         },
-        "version": "7.10.0"
+        "version": "7.11.0"
     },
     "chatgpt": {
         "cargoLocks": null,
@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5taOzLgeJOrW0OhTGLUg1Tt9lBjYmVHNWmB1n1vqV4o=",
+            "sha256": "sha256-roKFco6RxEDODtDREimDm2Yn5cwNROj68S9hb70hFdw=",
             "type": "url",
-            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.76/mac-arm64/chrome-mac-arm64.zip"
+            "url": "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.78/mac-arm64/chrome-mac-arm64.zip"
         },
-        "version": "125.0.6422.76"
+        "version": "125.0.6422.78"
     },
     "chromium.arm64": {
         "cargoLocks": null,
@@ -628,11 +628,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3C6D5eeO5TDhuofnITa23jQOIKaOphvgG4ZimwaAPnk=",
+            "sha256": "sha256-1WKc9zCy8XAnVm/pQYMFguCvGPkk7FRegpd9HhWLhZ0=",
             "type": "url",
-            "url": "https://github.com/xjbeta/iina-plus/releases/download/0.7.25/IINA+.0.7.25.dmg"
+            "url": "https://github.com/xjbeta/iina-plus/releases/download/0.7.26/IINA+.0.7.26.dmg"
         },
-        "version": "0.7.25"
+        "version": "0.7.26"
     },
     "lazyvim-star": {
         "cargoLocks": null,
@@ -803,11 +803,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Mzk0J4O9jDwPA/47Nhc0jYAMtSsTwNDorAREFux4Hdg=",
+            "sha256": "sha256-NPIF9IO1eUlxuLscvgBdMw7V4ZLYGN+Pzqm5uXavDPQ=",
             "type": "url",
-            "url": "https://github.com/neovide/neovide/releases/download/0.13.0/neovide.dmg.zip"
+            "url": "https://github.com/neovide/neovide/releases/download/0.13.1/neovide.dmg.zip"
         },
-        "version": "0.13.0"
+        "version": "0.13.1"
     },
     "next-chat": {
         "cargoLocks": null,
@@ -873,11 +873,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-AQHCCOTzCBtSLMT5sOhNBYVLCYgJPQu81OlPLXOIUuI=",
+            "sha256": "sha256-Hc9k9d5T5lkj/41f/LBNV1nspyHWJ6Dg5REQXK5zdiY=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.6/QuickRecorder_v1.2.6.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.7/QuickRecorder_v1.2.7.dmg"
         },
-        "version": "1.2.6"
+        "version": "1.2.7"
     },
     "qutebrowser": {
         "cargoLocks": null,
@@ -903,11 +903,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Bn//ghPCH9rvtBiN8X6W2uUnxZdUZ7F6IRUUlg/0tlE=",
+            "sha256": "sha256-9ip3q9Y4cXGbHuxIyrQQJxIOSAc6BFOCFaVeaoR2BnI=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1318/ryujinx-1.1.1318-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1321/ryujinx-1.1.1321-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1318"
+        "version": "1.1.1321"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -1078,11 +1078,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7VfKB+jFA2xCqEJGm4Y7ciEuhLKMoeJjsimDt8GpMaA=",
+            "sha256": "sha256-xYm7I46S0VM2VpFCsKlywDKi1TkimF3Gys7T8XSysxg=",
             "type": "url",
-            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.31.universal.dmg"
+            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.35.universal.dmg"
         },
-        "version": "6.7.3329.31"
+        "version": "6.7.3329.35"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,
