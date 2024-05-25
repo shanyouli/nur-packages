@@ -19,7 +19,7 @@ in
     inherit (source) pname src;
     # FIXME:  import lookup disabled by -mod=vendor
     # see @https://github.com/NixOS/nixpkgs/issues/273998
-    vendorHash = "sha256-eRAovuCc7s1jPM/glRiCnm/43rX6OcTCYcNC+tjYSso=";
+    vendorHash = "sha256-XaccbVgvt7qsuacbxqgonOkiRBiRa11ITnyrefvJvwU=";
     proxyVendor = true;
     preBuild = ''
       rm -rf public/dist
