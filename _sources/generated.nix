@@ -505,10 +505,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1321";
+    version = "1.1.1322";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1321/ryujinx-1.1.1321-macos_universal.app.tar.gz";
-      sha256 = "sha256-9ip3q9Y4cXGbHuxIyrQQJxIOSAc6BFOCFaVeaoR2BnI=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1322/ryujinx-1.1.1322-macos_universal.app.tar.gz";
+      sha256 = "sha256-ffugLK0HBcFPvOx31Ol271KdVIK6KdE6iHYKcSmu9IA=";
     };
   };
   ryusak = {
@@ -634,6 +634,14 @@
       rev = "v7.1.1";
       fetchSubmodules = false;
       sha256 = "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=";
+    };
+  };
+  yabai-bin = {
+    pname = "yabai-bin";
+    version = "7.1.1";
+    src = fetchurl {
+      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.1/yabai-v7.1.1.tar.gz";
+      sha256 = "sha256-uqxP7hO4cyZRoA9acOHWMVPmEGQhZcIRGmLar3H+xE8=";
     };
   };
   yabai-zsh-completions = {

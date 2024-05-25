@@ -903,11 +903,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9ip3q9Y4cXGbHuxIyrQQJxIOSAc6BFOCFaVeaoR2BnI=",
+            "sha256": "sha256-ffugLK0HBcFPvOx31Ol271KdVIK6KdE6iHYKcSmu9IA=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1321/ryujinx-1.1.1321-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1322/ryujinx-1.1.1322-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1321"
+        "version": "1.1.1322"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -1133,6 +1133,21 @@
             "type": "github"
         },
         "version": "v7.1.1"
+    },
+    "yabai-bin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "yabai-bin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-uqxP7hO4cyZRoA9acOHWMVPmEGQhZcIRGmLar3H+xE8=",
+            "type": "url",
+            "url": "https://github.com/koekeishiya/yabai/releases/download/v7.1.1/yabai-v7.1.1.tar.gz"
+        },
+        "version": "7.1.1"
     },
     "yabai-zsh-completions": {
         "cargoLocks": null,
