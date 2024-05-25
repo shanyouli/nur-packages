@@ -44,7 +44,7 @@ with builtins; let
     # firefox-addons --> firefox-addons-xx
 
     # airbattery = isPkg "darwin-apps-airbattery";
-    aerospace = isPkg "darwin-apps-yabai";
+    p = isPkg "python-apps-gssapi";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
