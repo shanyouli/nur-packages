@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-05-27 23:23:24
+
++ remove: darwin-localsend
+
 ## 2024-05-25 16:48:36
 
 + add: python-gssapi, 为了修复在 emacs 中使用 lsp-bridge 时，安装依赖报错的问题
