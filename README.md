@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-24 05:40:43 UTC
+- LAST_MODIFY: 2024-05-27 15:38:34 UTC
 
 
 ## How to use
@@ -71,12 +71,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.34.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.35.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **x86_64-darwin**|2024-05-13|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.3|The extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240518.0|The extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240524.0|The extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.17|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.4.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
@@ -95,16 +95,16 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>38</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>37</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.11.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.3.0|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
-|[**calibre**](https://calibre-ebook.com/)||7.10.0|ebook management|
+|[**calibre**](https://calibre-ebook.com/)||7.11.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
-|[**google-chrome**](https://www.google.com/chrome/)||125.0.6422.76|Google Chrome stable|
+|[**google-chrome**](https://www.google.com/chrome/)||125.0.6422.78|Google Chrome stable|
 |[**Chromium**](https://github.com/ungoogled-software/ungoogled-chromium)||125.0.6422.60-1.1|Open source version of Google-chrome|
 |[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
 |[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.3.8|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
@@ -114,17 +114,16 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.11.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**iina**](http://iina.io/)||1.3.4|IINA mplayer|
-|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.25|Extra danmaku support for iina (iina 弹幕支持)|
-|[**localsend**](https://localsend.org/#/)||1.14.0|Share files to nearby devices. Free, open source, cross-platform|
+|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.26|Extra danmaku support for iina (iina 弹幕支持)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.31|Organize Your macOS Launchpad Apps|
 |[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
-|[**neovide**](https://neovide.dev/)||0.13.0|No Nonsense Neovim Client in Rust|
+|[**neovide**](https://neovide.dev/)||0.13.1|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.3|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.2.6|A lightweight screen recorder based on ScreenCapture Kit for macOS|
+|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.2.7|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**qutebrowser**](https://www.qutebrowser.org/)||3.1.0|Keyboard-driven, vim-like browser based on PyQt5|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16476|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1318|A simple, experimental Nintendo Switch emulator|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16534|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1322|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.5.3|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.6.0|Open source Spotify client|
@@ -132,9 +131,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 |[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
 |[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
 |[**vimmotion**](https://github.com/dwarvesf/VimMotionApp)||1.2.3|Access macOS UI elements with your fingers stay on keyboard.|
-|[**vivaldi**](https://vivaldi.com/)||6.7.3329.31|Vivaldi Browser|
+|[**vivaldi**](https://vivaldi.com/)||6.7.3329.35|Vivaldi Browser|
 |[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.0|第三方B站客户端|
-|[**yabai**](https://github.com/koekeishiya/yabai)||v7.1.1|A tiling window manager for macOS based on binary space partitioning|
+|[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.1|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 |[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.6|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
@@ -150,26 +149,27 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**darkreader**](https://darkreader.org/)||4.9.85|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2694|Browser extension for aria2c json-rpc |
-|[**immersive-translate**](https://immersivetranslate.com/)||1.5.5|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.5.6|Immersive Dual Web Page Translation Extension |
 |[**noscript**](https://noscript.net/)||11.4.29|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||1.5.46|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.57.2|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.58.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
-|[**violentmonkey**](https://violentmonkey.github.io)||2.18.0|An open source userscript manager.|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.19.0|An open source userscript manager.|
 </details>
 
 ### python3-apps
 
 <details>
-<summary>Installing <b>python programs</b> with nix. , Total: <b>6</b> packages </summary>
+<summary>Installing <b>python programs</b> with nix. , Total: <b>7</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.1.5|None|
+|[**gssapi**](https://pypi.python.org/pypi/gssapi)||1.8.3|Python GSSAPI Wrapper|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
 |[**sd**](None)||0.1.2.4|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
