@@ -198,11 +198,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-d8fW3yK0jz0buLNDO52zjxngDS3ZnfcCwRV6cG1F7YI=",
+            "sha256": "sha256-zZmVdTRB47PuM77TkrYGTkvSRaKylfVwvyZKqAIrvcA=",
             "type": "url",
-            "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.60-1.1/ungoogled-chromium_125.0.6422.60-1.1_arm64-macos.dmg"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.112-1.1/ungoogled-chromium_125.0.6422.112-1.1_arm64-macos.dmg"
         },
-        "version": "125.0.6422.60-1.1"
+        "version": "125.0.6422.112-1.1"
     },
     "clash-nyanpasu": {
         "cargoLocks": null,
@@ -628,11 +628,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1WKc9zCy8XAnVm/pQYMFguCvGPkk7FRegpd9HhWLhZ0=",
+            "sha256": "sha256-aKAUwkzhxo46v4ikjWtvg1m3h6DvCiU7hCrdO3ye63c=",
             "type": "url",
-            "url": "https://github.com/xjbeta/iina-plus/releases/download/0.7.26/IINA+.0.7.26.dmg"
+            "url": "https://github.com/xjbeta/iina-plus/releases/download/0.7.27/IINA+.0.7.27.dmg"
         },
-        "version": "0.7.26"
+        "version": "0.7.27"
     },
     "lazyvim-star": {
         "cargoLocks": null,
@@ -653,21 +653,6 @@
             "type": "github"
         },
         "version": "b59e7c315b668182320702fd2944eda9f74a3314"
-    },
-    "localsend": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "localsend",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-L7V48QoOA0cjx45n+9Xav/zzCzCsZB3TBip0WGusMXg=",
-            "type": "url",
-            "url": "https://github.com/localsend/localsend/releases/download/v1.14.0/LocalSend-1.14.0.dmg"
-        },
-        "version": "1.14.0"
     },
     "lporg": {
         "cargoLocks": null,
@@ -698,9 +683,9 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xEj0jin2aLQlOcPVITmL14ZVLGKAm1wZf8f4FuLmVB0=",
+            "sha256": "sha256-nPWJBhVkWMQXmHAxNQigVCxkjJ6CStHNF850vN/gW3g=",
             "type": "url",
-            "url": "https://github.com/go-musicfox/LyricsX/releases/download/v1.6.4/LyricsX_1.6.4.zip"
+            "url": "https://github.com/MxIris-Application-Forks/LyricsX/releases/download/v1.6.4/LyricsX.zip"
         },
         "version": "1.6.4"
     },
@@ -873,11 +858,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Hc9k9d5T5lkj/41f/LBNV1nspyHWJ6Dg5REQXK5zdiY=",
+            "sha256": "sha256-htixsydnBbs8MsRL/trIrIv3+UmU0rziY/58pxYPJAk=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.7/QuickRecorder_v1.2.7.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.8/QuickRecorder_v1.2.8.dmg"
         },
-        "version": "1.2.7"
+        "version": "1.2.8"
     },
     "qutebrowser": {
         "cargoLocks": null,
@@ -903,11 +888,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ffugLK0HBcFPvOx31Ol271KdVIK6KdE6iHYKcSmu9IA=",
+            "sha256": "sha256-Pc6daWJvWrFE1t4b8A5EfuFjGpQD8g1pceF5sURhUVQ=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1322/ryujinx-1.1.1322-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1325/ryujinx-1.1.1325-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1322"
+        "version": "1.1.1325"
     },
     "ryusak": {
         "cargoLocks": null,

@@ -106,10 +106,10 @@
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "125.0.6422.60-1.1";
+    version = "125.0.6422.112-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.60-1.1/ungoogled-chromium_125.0.6422.60-1.1_arm64-macos.dmg";
-      sha256 = "sha256-d8fW3yK0jz0buLNDO52zjxngDS3ZnfcCwRV6cG1F7YI=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.112-1.1/ungoogled-chromium_125.0.6422.112-1.1_arm64-macos.dmg";
+      sha256 = "sha256-zZmVdTRB47PuM77TkrYGTkvSRaKylfVwvyZKqAIrvcA=";
     };
   };
   clash-nyanpasu = {
@@ -354,10 +354,10 @@
   };
   iinaplus = {
     pname = "iinaplus";
-    version = "0.7.26";
+    version = "0.7.27";
     src = fetchurl {
-      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.26/IINA+.0.7.26.dmg";
-      sha256 = "sha256-1WKc9zCy8XAnVm/pQYMFguCvGPkk7FRegpd9HhWLhZ0=";
+      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.27/IINA+.0.7.27.dmg";
+      sha256 = "sha256-aKAUwkzhxo46v4ikjWtvg1m3h6DvCiU7hCrdO3ye63c=";
     };
   };
   lazyvim-star = {
@@ -371,14 +371,6 @@
       sha256 = "sha256-/ph0Xxjxf8kB1Jhq5znKxkD3zkIlQAvOuP73zVDcefQ=";
     };
     date = "2024-05-19";
-  };
-  localsend = {
-    pname = "localsend";
-    version = "1.14.0";
-    src = fetchurl {
-      url = "https://github.com/localsend/localsend/releases/download/v1.14.0/LocalSend-1.14.0.dmg";
-      sha256 = "sha256-L7V48QoOA0cjx45n+9Xav/zzCzCsZB3TBip0WGusMXg=";
-    };
   };
   lporg = {
     pname = "lporg";
@@ -395,8 +387,8 @@
     pname = "lyricx";
     version = "1.6.4";
     src = fetchurl {
-      url = "https://github.com/go-musicfox/LyricsX/releases/download/v1.6.4/LyricsX_1.6.4.zip";
-      sha256 = "sha256-xEj0jin2aLQlOcPVITmL14ZVLGKAm1wZf8f4FuLmVB0=";
+      url = "https://github.com/MxIris-Application-Forks/LyricsX/releases/download/v1.6.4/LyricsX.zip";
+      sha256 = "sha256-nPWJBhVkWMQXmHAxNQigVCxkjJ6CStHNF850vN/gW3g=";
     };
   };
   maple-mono = {
@@ -489,10 +481,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.7";
+    version = "1.2.8";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.7/QuickRecorder_v1.2.7.dmg";
-      sha256 = "sha256-Hc9k9d5T5lkj/41f/LBNV1nspyHWJ6Dg5REQXK5zdiY=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.8/QuickRecorder_v1.2.8.dmg";
+      sha256 = "sha256-htixsydnBbs8MsRL/trIrIv3+UmU0rziY/58pxYPJAk=";
     };
   };
   qutebrowser = {
@@ -505,10 +497,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1322";
+    version = "1.1.1325";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1322/ryujinx-1.1.1322-macos_universal.app.tar.gz";
-      sha256 = "sha256-ffugLK0HBcFPvOx31Ol271KdVIK6KdE6iHYKcSmu9IA=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1325/ryujinx-1.1.1325-macos_universal.app.tar.gz";
+      sha256 = "sha256-Pc6daWJvWrFE1t4b8A5EfuFjGpQD8g1pceF5sURhUVQ=";
     };
   };
   ryusak = {
