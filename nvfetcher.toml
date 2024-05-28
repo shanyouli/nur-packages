@@ -200,10 +200,11 @@ src.to_pattern = "\\1"
 fetch.url = "https://github.com/xjbeta/iina-plus/releases/download/$ver/IINA+.$ver.dmg"
 
 [lyricx]
-src.github="go-musicfox/LyricsX"
+src.github="MxIris-Application-Forks/LyricsX"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/go-musicfox/LyricsX/releases/download/v$ver/LyricsX_$ver.zip"
+fetch.url = "https://github.com/MxIris-Application-Forks/LyricsX/releases/download/v$ver/LyricsX.zip"
+# fetch.url = "https://github.com/go-musicfox/LyricsX/releases/download/v$ver/LyricsX_$ver.zip"
 
 [neovide]
 src.github="neovide/neovide"
