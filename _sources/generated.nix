@@ -74,18 +74,18 @@
   };
   calibre = {
     pname = "calibre";
-    version = "7.11.0";
+    version = "7.12.0";
     src = fetchurl {
-      url = "https://download.calibre-ebook.com/7.11.0/calibre-7.11.0.dmg";
-      sha256 = "sha256-y04Mz09u4KBM0nctf0FkIO/koVWEqKOI6IfnINe5uVs=";
+      url = "https://download.calibre-ebook.com/7.12.0/calibre-7.12.0.dmg";
+      sha256 = "sha256-KDiLYhdQgP8BBRDbX72bBFBwKZ9yEd4ecHZoozYe26E=";
     };
   };
   calibrepath = {
     pname = "calibrepath";
-    version = "7.11.0";
+    version = "7.12.0";
     src = fetchurl {
-      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.11.0/mac-patch-backend+update-v7.11.0.zip";
-      sha256 = "sha256-yvqG9Prse4I9cNk8sBaNiFyhiKMyed269ahZKPba4Ig=";
+      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.12.0/mac-patch-backend+update-v7.12.0.zip";
+      sha256 = "sha256-qqWgKxpJjtB9WpbwlV9wO8/Dk9cW4TZfvcs+U4Tr/Vs=";
     };
   };
   chatgpt = {
@@ -98,10 +98,10 @@
   };
   "chrome.arm64" = {
     pname = "chrome.arm64";
-    version = "125.0.6422.78";
+    version = "125.0.6422.141";
     src = fetchurl {
-      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.78/mac-arm64/chrome-mac-arm64.zip";
-      sha256 = "sha256-roKFco6RxEDODtDREimDm2Yn5cwNROj68S9hb70hFdw=";
+      url = "https://registry.npmmirror.com/-/binary/chrome-for-testing/125.0.6422.141/mac-arm64/chrome-mac-arm64.zip";
+      sha256 = "sha256-WaXWGVNEVHbdIg6wY6dtqh5DA15eYXz0TfkIVLtSGa8=";
     };
   };
   "chromium.arm64" = {
@@ -141,18 +141,18 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.85";
+    version = "4.9.86";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.85/darkreader-firefox.xpi";
-      sha256 = "sha256-yQqUOLGprCKFhM0GHxR24C37PHzDsM/V/kkpOM89Rko=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.86/darkreader-firefox.xpi";
+      sha256 = "sha256-qC9CWOkIYE6pPxr277V4+X07zUXFT7+4TNYamVQ/968=";
     };
   };
   dashplayer = {
     pname = "dashplayer";
-    version = "4.2.0";
+    version = "4.2.2";
     src = fetchurl {
-      url = "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.0/DashPlayer-4.2.0-arm64.dmg";
-      sha256 = "sha256-LG+rZWwAli+gSPvX+qI/+4Q+Z1mdNsPHV2da22M8Qjo=";
+      url = "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.2/DashPlayer-4.2.2-arm64.dmg";
+      sha256 = "sha256-u845rNa3l5UIcEtH4/AcwYPdiedd4viQLN28lR4dXDk=";
     };
   };
   deeplx = {
@@ -354,10 +354,10 @@
   };
   iinaplus = {
     pname = "iinaplus";
-    version = "0.7.27";
+    version = "0.7.28";
     src = fetchurl {
-      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.27/IINA+.0.7.27.dmg";
-      sha256 = "sha256-aKAUwkzhxo46v4ikjWtvg1m3h6DvCiU7hCrdO3ye63c=";
+      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.28/IINA+.0.7.28.dmg";
+      sha256 = "sha256-g35fufeQydvMd9RcAfnaSr2swfhBp01If3drCuFEjU8=";
     };
   };
   lazyvim-star = {
@@ -481,10 +481,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.8";
+    version = "1.2.9";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.8/QuickRecorder_v1.2.8.dmg";
-      sha256 = "sha256-htixsydnBbs8MsRL/trIrIv3+UmU0rziY/58pxYPJAk=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.9/QuickRecorder_v1.2.9.dmg";
+      sha256 = "sha256-1FejKOzkeBSsALpIUkUFxd4BuJg0IWs2LCVU/+Vzlfs=";
     };
   };
   qutebrowser = {
@@ -595,10 +595,10 @@
   };
   vivaldi = {
     pname = "vivaldi";
-    version = "6.7.3329.35";
+    version = "6.7.3329.39";
     src = fetchurl {
-      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.35.universal.dmg";
-      sha256 = "sha256-xYm7I46S0VM2VpFCsKlywDKi1TkimF3Gys7T8XSysxg=";
+      url = "https://downloads.vivaldi.com/stable/Vivaldi.6.7.3329.39.universal.dmg";
+      sha256 = "sha256-m5TgEUNr8N1uMguZowt6/9N2UpZZeuM/qzJVQ3XoC6M=";
     };
   };
   websocket-bridge-python = {
