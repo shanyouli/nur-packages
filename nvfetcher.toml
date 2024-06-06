@@ -187,18 +187,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/zzzgydi/clash-verge/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
 
-[iina]
-src.github="iina/iina"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/iina/iina/releases/download/v$ver/IINA.v$ver.dmg"
-
-[iinaplus]
-src.github="xjbeta/iina-plus"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/xjbeta/iina-plus/releases/download/$ver/IINA+.$ver.dmg"
-
 [lyricx]
 src.github="MxIris-Application-Forks/LyricsX"
 src.from_pattern = "v(.*)"
