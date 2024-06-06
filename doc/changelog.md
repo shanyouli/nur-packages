@@ -4,6 +4,7 @@
 ## 2024-06-06 20:32:59
 
 + remove: darwin iina and iina-plus, 使用 brew 控制
++ remove: python-gssapi, 官方已经修复
 
 ## 2024-05-27 23:23:24
 

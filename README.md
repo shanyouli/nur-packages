@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-05-31 22:23:58 UTC
+- LAST_MODIFY: 2024-06-06 12:36:10 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **74** packages.
 
 ### common
 
@@ -95,7 +95,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>37</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>35</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -113,8 +113,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **76** 
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.11.0esr|Mozilla Firefox, free web browser (binary package)|
-|[**iina**](http://iina.io/)||1.3.4|IINA mplayer|
-|[**iinaplus**](https://github.com/xjbeta/iina-plus)||0.7.28|Extra danmaku support for iina (iina 弹幕支持)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.31|Organize Your macOS Launchpad Apps|
 |[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
 |[**neovide**](https://neovide.dev/)||0.13.1|No Nonsense Neovim Client in Rust|

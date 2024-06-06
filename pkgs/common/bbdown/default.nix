@@ -19,6 +19,7 @@ buildDotnetModule rec {
   projectFile = "BBDown.sln";
   nugetDeps = ./deps.nix;
   dotnet-sdk = with dotnetCorePackages; combinePackages [sdk_7_0 sdk_8_0];
+  useDotnetFromEnv = true;
   executables = [];
   nativeBuildInputs =
     [stdenv.cc zlib tree]
