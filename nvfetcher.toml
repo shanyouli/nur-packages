@@ -1,7 +1,4 @@
 #### python packages
-[yutto]
-fetch.github = "yutto-dev/yutto"
-src.github_tag = "yutto-dev/yutto"
 
 # https://discourse.nixos.org/t/installing-a-python-package-from-pypi/24553/2
 # 不使用 fetchPypi，原因见上面链接
