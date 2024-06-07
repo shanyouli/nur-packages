@@ -11,18 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.11.0-Beta";
+    version = "0.11.1-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.0-Beta/AeroSpace-v0.11.0-Beta.zip";
-      sha256 = "sha256-4LhRjhwiNMpPoNt/0LVXpaIoVjQUfdAzYNhwsGj8kbs=";
-    };
-  };
-  airbattery = {
-    pname = "airbattery";
-    version = "1.3.0";
-    src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.0/AirBattery_1.3.0.dmg";
-      sha256 = "sha256-YSPENH/i0L1s6OjRJUEKiRNpme5Gn19Gf5886IxgUf0=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.1-Beta/AeroSpace-v0.11.1-Beta.zip";
+      sha256 = "sha256-HEAHvP3M4UR/pQX/q2nYJZgh3ob5TpIk/TGNQgjD4PY=";
     };
   };
   alexandria = {
@@ -106,10 +98,10 @@
   };
   "chromium.arm64" = {
     pname = "chromium.arm64";
-    version = "125.0.6422.112-1.1";
+    version = "125.0.6422.141-1.1";
     src = fetchurl {
-      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.112-1.1/ungoogled-chromium_125.0.6422.112-1.1_arm64-macos.dmg";
-      sha256 = "sha256-zZmVdTRB47PuM77TkrYGTkvSRaKylfVwvyZKqAIrvcA=";
+      url = "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/125.0.6422.141-1.1/ungoogled-chromium_125.0.6422.141-1.1_arm64-macos.dmg";
+      sha256 = "sha256-GtAOi6jtZU59stKIftzxDQiS0M14bcJqIgNYJ7LldVs=";
     };
   };
   clash-nyanpasu = {
@@ -149,10 +141,10 @@
   };
   dashplayer = {
     pname = "dashplayer";
-    version = "4.2.2";
+    version = "4.2.3";
     src = fetchurl {
-      url = "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.2/DashPlayer-4.2.2-arm64.dmg";
-      sha256 = "sha256-u845rNa3l5UIcEtH4/AcwYPdiedd4viQLN28lR4dXDk=";
+      url = "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.3/DashPlayer-4.2.3-arm64.dmg";
+      sha256 = "sha256-gohfwjxC6l1bM4p/0ph/xXdbWm2cbyiU0K9KTTnC52s=";
     };
   };
   deeplx = {
@@ -289,16 +281,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.17";
+    version = "v0.2.27";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.17";
+      rev = "v0.2.27";
       fetchSubmodules = false;
-      sha256 = "sha256-gZ54OdT6gXkB3qynvfLS0tLUyHzMnqYeAmeO83tEU9c=";
+      sha256 = "sha256-S8XS2MzOprRLBHL1UQsveHZ+9dBmYQV2GEwIvEy+uBE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.17/Cargo.lock;
+      lockFile = ./fav-v0.2.27/Cargo.lock;
       outputHashes = {
         
       };
@@ -344,33 +336,17 @@
       sha256 = "sha256-13EnSzrCkseK6s6Yz9OpLzqo/2PTFiB31m5fAIJLoZg=";
     };
   };
-  iina = {
-    pname = "iina";
-    version = "1.3.4";
-    src = fetchurl {
-      url = "https://github.com/iina/iina/releases/download/v1.3.4/IINA.v1.3.4.dmg";
-      sha256 = "sha256-feUPWtSi/Vsnv1mjGyBgB0wFMxx6r6UzrUratlAo14w=";
-    };
-  };
-  iinaplus = {
-    pname = "iinaplus";
-    version = "0.7.28";
-    src = fetchurl {
-      url = "https://github.com/xjbeta/iina-plus/releases/download/0.7.28/IINA+.0.7.28.dmg";
-      sha256 = "sha256-g35fufeQydvMd9RcAfnaSr2swfhBp01If3drCuFEjU8=";
-    };
-  };
   lazyvim-star = {
     pname = "lazyvim-star";
-    version = "b59e7c315b668182320702fd2944eda9f74a3314";
+    version = "4818e4b72fc24b0fceed88f83e21e908def4c386";
     src = fetchFromGitHub {
       owner = "LazyVim";
       repo = "starter";
-      rev = "b59e7c315b668182320702fd2944eda9f74a3314";
+      rev = "4818e4b72fc24b0fceed88f83e21e908def4c386";
       fetchSubmodules = false;
-      sha256 = "sha256-/ph0Xxjxf8kB1Jhq5znKxkD3zkIlQAvOuP73zVDcefQ=";
+      sha256 = "sha256-Oh/PfbmI5VTfX1SlgnyrwLwhCDJA85Wt4ro2I2z4toY=";
     };
-    date = "2024-05-19";
+    date = "2024-06-02";
   };
   lporg = {
     pname = "lporg";
@@ -481,26 +457,26 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.2.9";
+    version = "1.3.1";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.2.9/QuickRecorder_v1.2.9.dmg";
-      sha256 = "sha256-1FejKOzkeBSsALpIUkUFxd4BuJg0IWs2LCVU/+Vzlfs=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.1/QuickRecorder_v1.3.1.dmg";
+      sha256 = "sha256-c/GMw3Ml4u+bL2kSsaadF22Gyx0zHMGrCr1yi0QE1+8=";
     };
   };
   qutebrowser = {
     pname = "qutebrowser";
-    version = "3.1.0";
+    version = "3.2.0";
     src = fetchurl {
-      url = "https://github.com/qutebrowser/qutebrowser/releases/download/v3.1.0/qutebrowser-3.1.0.dmg";
-      sha256 = "sha256-AvuuwUnxMcr2ekZ/O1FL/4IizV1aTMhXNrbf1SwNY7U=";
+      url = "https://github.com/qutebrowser/qutebrowser/releases/download/v3.2.0/qutebrowser-3.2.0.dmg";
+      sha256 = "sha256-IhCS+bf4FTaSFFpw3knUm+NZUZaJLD9xIMxabf0nFUE=";
     };
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1325";
+    version = "1.1.1330";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1325/ryujinx-1.1.1325-macos_universal.app.tar.gz";
-      sha256 = "sha256-Pc6daWJvWrFE1t4b8A5EfuFjGpQD8g1pceF5sURhUVQ=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1330/ryujinx-1.1.1330-macos_universal.app.tar.gz";
+      sha256 = "sha256-IIngsJdNKI/YhFNaZ2oKMn7H/4+Y1FURFPCM8xbTwqw=";
     };
   };
   ryusak = {
@@ -552,10 +528,10 @@
   };
   spotube = {
     pname = "spotube";
-    version = "3.6.0";
+    version = "3.7.1";
     src = fetchurl {
-      url = "https://github.com/KRTirtho/spotube/releases/download/v3.6.0/Spotube-macos-universal.dmg";
-      sha256 = "sha256-Qsr+66ToyLCCUwirj/7V6vzSNmx7BZ3O34liLx6AdlI=";
+      url = "https://github.com/KRTirtho/spotube/releases/download/v3.7.1/Spotube-macos-universal.dmg";
+      sha256 = "sha256-EYgjVXO/ztIsVYzEHe14YgXbQTclQIht9Qqr8ewHU8w=";
     };
   };
   switchaudio-osx = {
@@ -647,17 +623,6 @@
       sha256 = "sha256-II00E32Pnt7PO+PcTtWp4NzSUDhQJTgAPw9HdlItbhQ=";
     };
     date = "2023-11-13";
-  };
-  yutto = {
-    pname = "yutto";
-    version = "v2.0.0-beta.38";
-    src = fetchFromGitHub {
-      owner = "yutto-dev";
-      repo = "yutto";
-      rev = "v2.0.0-beta.38";
-      fetchSubmodules = false;
-      sha256 = "sha256-zYvMbSRiDq4V4nW7d039uf1RoCg6mCemu8/FWd0EqNk=";
-    };
   };
   zpmod = {
     pname = "zpmod";
