@@ -146,7 +146,7 @@ fetch.url = "https://github.com/solidSpoon/DashPlayer/releases/download/v$ver/Da
 
 [airbattery]
 src.github = "lihaoyun6/AirBattery"
-fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_$ver.dmg"
+fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_v$ver.dmg"
 
 [vimmotion]
 src.github = "dwarvesf/VimMotionApp"
