@@ -39,8 +39,12 @@ def save_current_src(f, sources):
         json.dump(sources, text, indent=2)
 
 
-def get_hash(url: str) -> str:
-    result = subprocess.run(["nix-prefetch-url", url], stdout=subprocess.PIPE)
+def get_hash(url: str, name: str = None) -> str:
+    cmd_list = ['nix-prefetch-url', f'{url}']
+    if name:
+        cmd_list.append('--name')
+        cmd_list.append(f"{name}")
+    result = subprocess.run(cmd_list, stdout=subprocess.PIPE)
     if result.returncode != 0:
         raise RuntimeError(
             "nix-prefetch-url exited with error {}".format(result.returncode)
@@ -91,7 +95,7 @@ def main(
     if latest_info is None or latest_info[pname]["version"] != version:
         url = get_url(info, ext, url_regx)
         cversion = latest_info[pname]["version"] if latest_info else "∅"
-        next_source = {pname: {"version": version, "url": url, "sha256": get_hash(url)}}
+        next_source = {pname: {"version": version, "url": url, "sha256": get_hash(url, f'{pname}-{version}')}}
         save_current_src(source_file, next_source)
         if nth(1, sys.argv):
             commit_source(f"Update {pname} {cversion} -> {version}")
