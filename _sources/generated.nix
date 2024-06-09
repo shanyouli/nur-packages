@@ -11,18 +11,18 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.11.1-Beta";
+    version = "0.11.2-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.1-Beta/AeroSpace-v0.11.1-Beta.zip";
-      sha256 = "sha256-HEAHvP3M4UR/pQX/q2nYJZgh3ob5TpIk/TGNQgjD4PY=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.2-Beta/AeroSpace-v0.11.2-Beta.zip";
+      sha256 = "sha256-mqmi9GXAXYnhmHEOgzcgkEmJxm1nYYdAQ7yoOlPEyhU=";
     };
   };
   airbattery = {
     pname = "airbattery";
-    version = "1.3.3";
+    version = "1.3.5";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.3/AirBattery_v1.3.3.dmg";
-      sha256 = "sha256-kMPjHTqgSMUoHTKc1fabQC8HXzDzdWiUv5G0BRdbmFo=";
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.5/AirBattery_v1.3.5.dmg";
+      sha256 = "sha256-3gt13Hs4FsoSJrAgqk+wEw3dofH0sPqjWAM8GKW8Lkc=";
     };
   };
   alexandria = {
@@ -289,16 +289,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.27";
+    version = "v0.2.28";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.27";
+      rev = "v0.2.28";
       fetchSubmodules = false;
-      sha256 = "sha256-S8XS2MzOprRLBHL1UQsveHZ+9dBmYQV2GEwIvEy+uBE=";
+      sha256 = "sha256-eteoO+rpFWylQszQcLzjJR4u6a62E+KXSkUHovMiOQc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.27/Cargo.lock;
+      lockFile = ./fav-v0.2.28/Cargo.lock;
       outputHashes = {
         
       };
@@ -358,13 +358,13 @@
   };
   lporg = {
     pname = "lporg";
-    version = "v20.4.31";
+    version = "v20.4.32";
     src = fetchFromGitHub {
       owner = "blacktop";
       repo = "lporg";
-      rev = "v20.4.31";
+      rev = "v20.4.32";
       fetchSubmodules = false;
-      sha256 = "sha256-A/OE67qAn9RHSCveiRwG5lPYNTMdrbUWVfQOP3XjkdU=";
+      sha256 = "sha256-g8zZZ/uQeoJQIzpQY3oMUuWMu4/8OnaOLeLvaii+Tmk=";
     };
   };
   lyricx = {
@@ -497,13 +497,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.2.4";
+    version = "v0.1.2.5";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.2.4";
+      rev = "v0.1.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-mvgMNha2AuLVVKPoLSDdgTFhISOKr0Jba+ir35t4cn0=";
+      sha256 = "sha256-vUtRPmXM47VwI0eHhUwMj49HBR95Ulk+Q+X/NjyHtes=";
     };
   };
   seam = {
