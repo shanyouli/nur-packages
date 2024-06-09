@@ -18,7 +18,13 @@ rustPlatform.buildRustPackage rec {
     then source.date
     else lib.removePrefix "v" source.version;
   cargoLock = source.cargoLock."Cargo.lock";
-
+  postConfigure = ''
+    cargo metadata --offline
+  '';
+  # preConfigure = ''
+  #   cargo update --offline
+  # '';
+  # cargoBuildFlags = ["--offline"];
   nativeBuildInputs = [
     pkg-config
   ];
