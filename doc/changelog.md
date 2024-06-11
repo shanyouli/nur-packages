@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 2024-06-11 18:23:50
++ remove chromium chrome, vivaldi
+
 ## 2024-06-07 17:58:52
 
 + remove: yutto, 官方已经存在
