@@ -38,11 +38,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3gt13Hs4FsoSJrAgqk+wEw3dofH0sPqjWAM8GKW8Lkc=",
+            "sha256": "sha256-I7/DW7wAV+VNJVskZi0276TsY4+uWZ9rmNYViy94kq0=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.5/AirBattery_v1.3.5.dmg"
+            "url": "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.8/AirBattery_v1.3.8.dmg"
         },
-        "version": "1.3.5"
+        "version": "1.3.8"
     },
     "alexandria": {
         "cargoLocks": null,
@@ -75,6 +75,7 @@
             "repo": "alist",
             "rev": "v3.35.0",
             "sha256": "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v3.35.0"
@@ -125,6 +126,7 @@
             "repo": "BBDown",
             "rev": "fb3c0b69023055b79645790c25ca18afdec6e3e0",
             "sha256": "sha256-0PY8G4gtKjXdv4H3lMxGW59ozcrZocFSdB2BtmX/oMo=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "fb3c0b69023055b79645790c25ca18afdec6e3e0"
@@ -220,6 +222,7 @@
             "repo": "clash2singbox",
             "rev": "v0.1.4",
             "sha256": "sha256-qEv5lmuu4UWaxmCQ0sb21TMJVhYaW7VscD6O+dOWjgE=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.1.4"
@@ -270,6 +273,7 @@
             "repo": "DeepLX",
             "rev": "v0.9.4",
             "sha256": "sha256-3kjDqPBOcyUSoionpA8a0n3LnAXU0tU5BVYnED2Sz/0=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.9.4"
@@ -290,6 +294,7 @@
             "repo": "python-dict2xml",
             "rev": "release-1.7.5",
             "sha256": "sha256-GNvG1VFz/qkkTrKleMrq8n6kcIYtfhUlQMyCqH9uQzw=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "release-1.7.5"
@@ -325,6 +330,7 @@
             "repo": "dutis",
             "rev": "e1c3f9ba222552350964b51389507ea0be93057c",
             "sha256": "sha256-hPvQ6M+foEzQEcPYYLGzVJ69moAkfMe9boKQ/2ajFtI=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e1c3f9ba222552350964b51389507ea0be93057c"
@@ -500,6 +506,7 @@
             "repo": "fav",
             "rev": "v0.2.28",
             "sha256": "sha256-eteoO+rpFWylQszQcLzjJR4u6a62E+KXSkUHovMiOQc=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.2.28"
@@ -548,11 +555,12 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.4.1",
-            "sha256": "sha256-pIfQ0ufn8W0opm+N6IPFBPWNxNWMOU7FudPtIFop51c=",
+            "rev": "v4.5.3",
+            "sha256": "sha256-qf4XAAfWWlHAnNGhXaYpnjj+2z+/lWOHaTyv8R4UDgQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.4.1"
+        "version": "v4.5.3"
     },
     "httpx": {
         "cargoLocks": null,
@@ -570,13 +578,14 @@
             "repo": "httpx",
             "rev": "0.27.0",
             "sha256": "sha256-13EnSzrCkseK6s6Yz9OpLzqo/2PTFiB31m5fAIJLoZg=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0.27.0"
     },
     "lazyvim-star": {
         "cargoLocks": null,
-        "date": "2024-06-02",
+        "date": "2024-06-14",
         "extract": null,
         "name": "lazyvim-star",
         "passthru": null,
@@ -588,11 +597,12 @@
             "name": null,
             "owner": "LazyVim",
             "repo": "starter",
-            "rev": "4818e4b72fc24b0fceed88f83e21e908def4c386",
-            "sha256": "sha256-Oh/PfbmI5VTfX1SlgnyrwLwhCDJA85Wt4ro2I2z4toY=",
+            "rev": "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba",
+            "sha256": "sha256-xetcg57Lxins683n3eeNkBtygVCWZOm/kwn594um1rA=",
+            "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4818e4b72fc24b0fceed88f83e21e908def4c386"
+        "version": "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba"
     },
     "lporg": {
         "cargoLocks": null,
@@ -610,6 +620,7 @@
             "repo": "lporg",
             "rev": "v20.4.32",
             "sha256": "sha256-g8zZZ/uQeoJQIzpQY3oMUuWMu4/8OnaOLeLvaii+Tmk=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v20.4.32"
@@ -675,6 +686,7 @@
             "repo": "mpvc",
             "rev": "1.5-jukebox",
             "sha256": "sha256-KAns7WR9xPvSk7zA4zBs5TEbpl5pE9r+qkLWDeNiqbc=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.5-jukebox"
@@ -695,6 +707,7 @@
             "repo": "musicdl",
             "rev": "ae213b2e5867fa12a6fa2789e24ea792aab38540",
             "sha256": "sha256-AoMtlyRiceDzNXKz1K/EH5+/yU2B+UlEso5kjL5ojlI=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "ae213b2e5867fa12a6fa2789e24ea792aab38540"
@@ -715,6 +728,7 @@
             "repo": "musicn",
             "rev": "v1.5.0",
             "sha256": "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v1.5.0"
@@ -765,6 +779,7 @@
             "repo": "pngpaste",
             "rev": "0.2.3",
             "sha256": "sha256-uvajxSelk1Wfd5is5kmT2fzDShlufBgC0PDCeabEOSE=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0.2.3"
@@ -785,6 +800,7 @@
             "repo": "qBittorrent-Enhanced-Edition",
             "rev": "release-4.6.4.10",
             "sha256": "sha256-wrkc11H4t96D6qr9N/2CzG93zeNv7I1g9ieXyc4x5wk=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "release-4.6.4.10"
@@ -798,11 +814,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-c/GMw3Ml4u+bL2kSsaadF22Gyx0zHMGrCr1yi0QE1+8=",
+            "sha256": "sha256-avn+h9SRkIDGI5imjtXd/m2sdyukJQUgXWOBFM+11zA=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.1/QuickRecorder_v1.3.1.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.4/QuickRecorder_v1.3.4.dmg"
         },
-        "version": "1.3.1"
+        "version": "1.3.4"
     },
     "qutebrowser": {
         "cargoLocks": null,
@@ -865,6 +881,7 @@
             "repo": "sd",
             "rev": "v0.1.2.5",
             "sha256": "sha256-vUtRPmXM47VwI0eHhUwMj49HBR95Ulk+Q+X/NjyHtes=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.1.2.5"
@@ -890,6 +907,7 @@
             "repo": "seam",
             "rev": "v_cli.0.1.39",
             "sha256": "sha256-rWbswgVQNA006gi9G+Vma+y0NbMDC0/P6SqHwxxvky8=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v_cli.0.1.39"
@@ -910,6 +928,7 @@
             "repo": "sidebery",
             "rev": "v5.2.0",
             "sha256": "sha256-83n0aX5mJYf1yYamuM+DelkpOGLRZqkXpTgQMAmMLXI=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v5.2.0"
@@ -945,6 +964,7 @@
             "repo": "switchaudio-osx",
             "rev": "1.2.2",
             "sha256": "sha256-AZJn5kHK/al94ONfIHcG+W0jyMfgdJkIngN+PVj+I44=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.2.2"
@@ -1040,6 +1060,7 @@
             "repo": "yabai",
             "rev": "v7.1.1",
             "sha256": "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v7.1.1"
@@ -1075,6 +1096,7 @@
             "repo": "yabai-zsh-completions",
             "rev": "6e38681a002e13bdcd43f461f73c53b7c11fd4e5",
             "sha256": "sha256-II00E32Pnt7PO+PcTtWp4NzSUDhQJTgAPw9HdlItbhQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "6e38681a002e13bdcd43f461f73c53b7c11fd4e5"
@@ -1095,6 +1117,7 @@
             "repo": "zpmod",
             "rev": "v1.1.0",
             "sha256": "sha256-vCQOn+8l9DcVJ6XbtHhr7N5IDr2Ht/JRub217ZO96Ok=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v1.1.0"

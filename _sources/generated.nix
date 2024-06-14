@@ -19,10 +19,10 @@
   };
   airbattery = {
     pname = "airbattery";
-    version = "1.3.5";
+    version = "1.3.8";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.5/AirBattery_v1.3.5.dmg";
-      sha256 = "sha256-3gt13Hs4FsoSJrAgqk+wEw3dofH0sPqjWAM8GKW8Lkc=";
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.8/AirBattery_v1.3.8.dmg";
+      sha256 = "sha256-I7/DW7wAV+VNJVskZi0276TsY4+uWZ9rmNYViy94kq0=";
     };
   };
   alexandria = {
@@ -308,13 +308,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.4.1";
+    version = "v4.5.3";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.4.1";
+      rev = "v4.5.3";
       fetchSubmodules = false;
-      sha256 = "sha256-pIfQ0ufn8W0opm+N6IPFBPWNxNWMOU7FudPtIFop51c=";
+      sha256 = "sha256-qf4XAAfWWlHAnNGhXaYpnjj+2z+/lWOHaTyv8R4UDgQ=";
     };
   };
   httpx = {
@@ -330,15 +330,15 @@
   };
   lazyvim-star = {
     pname = "lazyvim-star";
-    version = "4818e4b72fc24b0fceed88f83e21e908def4c386";
+    version = "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba";
     src = fetchFromGitHub {
       owner = "LazyVim";
       repo = "starter";
-      rev = "4818e4b72fc24b0fceed88f83e21e908def4c386";
+      rev = "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba";
       fetchSubmodules = false;
-      sha256 = "sha256-Oh/PfbmI5VTfX1SlgnyrwLwhCDJA85Wt4ro2I2z4toY=";
+      sha256 = "sha256-xetcg57Lxins683n3eeNkBtygVCWZOm/kwn594um1rA=";
     };
-    date = "2024-06-02";
+    date = "2024-06-14";
   };
   lporg = {
     pname = "lporg";
@@ -449,10 +449,10 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.3.1";
+    version = "1.3.4";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.1/QuickRecorder_v1.3.1.dmg";
-      sha256 = "sha256-c/GMw3Ml4u+bL2kSsaadF22Gyx0zHMGrCr1yi0QE1+8=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.4/QuickRecorder_v1.3.4.dmg";
+      sha256 = "sha256-avn+h9SRkIDGI5imjtXd/m2sdyukJQUgXWOBFM+11zA=";
     };
   };
   qutebrowser = {
