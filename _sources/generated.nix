@@ -11,18 +11,18 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.11.2-Beta";
+    version = "0.12.0-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.11.2-Beta/AeroSpace-v0.11.2-Beta.zip";
-      sha256 = "sha256-mqmi9GXAXYnhmHEOgzcgkEmJxm1nYYdAQ7yoOlPEyhU=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.12.0-Beta/AeroSpace-v0.12.0-Beta.zip";
+      sha256 = "sha256-iAEwG16scvqm2uBHl8t2gOsXXf0jyKDNfpChu7WBElc=";
     };
   };
   airbattery = {
     pname = "airbattery";
-    version = "1.3.8";
+    version = "1.3.9";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.8/AirBattery_v1.3.8.dmg";
-      sha256 = "sha256-I7/DW7wAV+VNJVskZi0276TsY4+uWZ9rmNYViy94kq0=";
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.3.9/AirBattery_v1.3.9.dmg";
+      sha256 = "sha256-6YOqElV1Lv4zjwO63StDEAeuPJqv46l1+WWt5f1Zf1I=";
     };
   };
   alexandria = {
@@ -141,13 +141,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v0.9.4";
+    version = "v0.9.5";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v0.9.4";
+      rev = "v0.9.5";
       fetchSubmodules = false;
-      sha256 = "sha256-3kjDqPBOcyUSoionpA8a0n3LnAXU0tU5BVYnED2Sz/0=";
+      sha256 = "sha256-OtdoWFD+QFYH2SzCZZPyhse+vbqfeZ1pSbn+F9wIKxU=";
     };
   };
   dict2xml = {
@@ -273,16 +273,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.28";
+    version = "v0.2.29";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.28";
+      rev = "v0.2.29";
       fetchSubmodules = false;
-      sha256 = "sha256-eteoO+rpFWylQszQcLzjJR4u6a62E+KXSkUHovMiOQc=";
+      sha256 = "sha256-PGqDGYXOplyutYZey8F2o9fCjMVReBvFf6zjY1C/EWI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.28/Cargo.lock;
+      lockFile = ./fav-v0.2.29/Cargo.lock;
       outputHashes = {
         
       };
@@ -330,15 +330,15 @@
   };
   lazyvim-star = {
     pname = "lazyvim-star";
-    version = "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba";
+    version = "0c370f4d5c537e6d41dea31b547accc8d5f70a8a";
     src = fetchFromGitHub {
       owner = "LazyVim";
       repo = "starter";
-      rev = "cb79b0e6a9d0ec81041150dc87fe47352a54a2ba";
+      rev = "0c370f4d5c537e6d41dea31b547accc8d5f70a8a";
       fetchSubmodules = false;
-      sha256 = "sha256-xetcg57Lxins683n3eeNkBtygVCWZOm/kwn594um1rA=";
+      sha256 = "sha256-ze8B6BuvQ2eK2NV6nNSqvYAl/TqbAPefvP3rUPwRg5w=";
     };
-    date = "2024-06-14";
+    date = "2024-06-18";
   };
   lporg = {
     pname = "lporg";
@@ -438,21 +438,21 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-4.6.4.10";
+    version = "release-4.6.5.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-4.6.4.10";
+      rev = "release-4.6.5.10";
       fetchSubmodules = false;
-      sha256 = "sha256-wrkc11H4t96D6qr9N/2CzG93zeNv7I1g9ieXyc4x5wk=";
+      sha256 = "sha256-Yy0DUTz1lWkseh9x1xnHJCI89BKqi/D7zUn/S+qC+kM=";
     };
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.3.4";
+    version = "1.4.0";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.3.4/QuickRecorder_v1.3.4.dmg";
-      sha256 = "sha256-avn+h9SRkIDGI5imjtXd/m2sdyukJQUgXWOBFM+11zA=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.0/QuickRecorder_v1.4.0.dmg";
+      sha256 = "sha256-k/vS3f8gWAJ+9W+Y0ejitU36+RKQg1TvdEVfCN18WhE=";
     };
   };
   qutebrowser = {
@@ -465,10 +465,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1330";
+    version = "1.1.1336";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1330/ryujinx-1.1.1330-macos_universal.app.tar.gz";
-      sha256 = "sha256-IIngsJdNKI/YhFNaZ2oKMn7H/4+Y1FURFPCM8xbTwqw=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1336/ryujinx-1.1.1336-macos_universal.app.tar.gz";
+      sha256 = "sha256-tVvs09HiiC5HKOQL8lpNLRFmhfv23+a51LqQVYxLhuw=";
     };
   };
   ryusak = {
