@@ -5,8 +5,8 @@
     "version": "115.12.0esr"
   },
   "firefox": {
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/127.0/mac/en-US/Firefox%20127.0.dmg",
-    "sha256": "3c30cbc8ae2ad0dc44ac32a266c871bd0866ca2c2876b464c86193ae5ffe6e6d",
-    "version": "127.0"
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/127.0.1/mac/en-US/Firefox%20127.0.1.dmg",
+    "sha256": "b26e36efe95b2cb0c6c01b726587183c6e6e324fd51b5a0b95c1744bf1a54c3d",
+    "version": "127.0.1"
   }
 }
