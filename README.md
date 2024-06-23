@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-06-14 22:55:08 UTC
+- LAST_MODIFY: 2024-06-23 06:36:26 UTC
 
 
 ## How to use
@@ -72,22 +72,22 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alist**](https://github.com/alist-org/alist)||3.35.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
-|[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **x86_64-darwin**|2024-06-10|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **aarch64-linux** **x86_64-darwin** **x86_64-linux**|2024-06-10|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.4|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.3|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240612.0|Extensible, customizable GNU text editor|
-|[**fav**](https://github.com/kingwingfly/fav)||0.2.28|Back up your favorite bilibili resources with CLI|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240621.0|Extensible, customizable GNU text editor|
+|[**fav**](https://github.com/kingwingfly/fav)||0.2.29|Back up your favorite bilibili resources with CLI|
 |[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**lazyvim-star**](https://www.lazyvim.org/)||2024-06-14|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
+|[**lazyvim-star**](https://www.lazyvim.org/)||2024-06-18|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-jukebox|A mpc-like control interface for mpv|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
-|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.4.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
@@ -99,8 +99,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.11.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
-|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.3.8|Get the battery level of all your devices on your Mac.|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.12.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.3.9|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.12.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
@@ -116,10 +116,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**neovide**](https://neovide.dev/)||0.13.1|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.3|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.3.4|A lightweight screen recorder based on ScreenCapture Kit for macOS|
+|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.0|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**qutebrowser**](https://www.qutebrowser.org/)||3.2.0|Keyboard-driven, vim-like browser based on PyQt5|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16611|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1330|A simple, experimental Nintendo Switch emulator|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16618|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1336|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.3|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
