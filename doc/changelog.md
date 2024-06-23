@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-06-22 14:21:00
+
++ broken bbdown
+
 ## 2024-06-11 18:23:50
 + remove chromium chrome, vivaldi
 
