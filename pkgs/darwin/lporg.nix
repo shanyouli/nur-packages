@@ -18,6 +18,7 @@ buildGoModule rec {
     "-X=github.com/blacktop/lporg/cmd.AppBuildTime=1970-01-01T00:00:00Z"
   ];
   doCheck = false;
+  subPackages = ["."];
   meta = with lib; {
     description = "Organize Your macOS Launchpad Apps";
     homepage = "https://github.com/blacktop/lporg";

@@ -33,14 +33,11 @@ in
       "-X github.com/alist-org/alist/conf.GitTag=${version}"
       "-X github.com/alist-org/alist/v3/internal/conf.WebVersion=${version}"
     ];
+    subPackages = ["."];
     # When a Go program depends on C libraries, place those dependencies in buildInputs:
-    buildInputs = [fuse installShellFiles];
+    buildInputs = [fuse];
+    nativeBuildInputs = [installShellFiles];
     postInstall = ''
-      for i in $out/bin/* ; do
-        if [[ $i != $out/bin/alist* ]]; then
-          rm -rf $i
-        fi
-      done
       installShellCompletion --cmd alist --bash <($out/bin/alist completion bash)
       installShellCompletion --cmd alist --zsh <($out/bin/alist completion zsh)
       installShellCompletion --cmd alist --fish <($out/bin/alist completion fish)
