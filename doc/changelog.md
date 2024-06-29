@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-06-29 14:16:49
+
++ remove: qutebrowser
+
 ## 2024-06-22 14:21:00
 
 + broken bbdown

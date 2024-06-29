@@ -197,12 +197,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/neovide/neovide/releases/download/$ver/neovide.dmg.zip"
 
-[qutebrowser]
-src.github="qutebrowser/qutebrowser"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/qutebrowser/qutebrowser/releases/download/v$ver/qutebrowser-$ver.dmg"
-
 [upic]
 src.github="gee1k/uPic"
 src.from_pattern = "v(.*)"
