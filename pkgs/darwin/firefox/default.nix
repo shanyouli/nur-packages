@@ -21,14 +21,11 @@ in
   mkDarwinApp rec {
     inherit pname version src;
     appname = "Firefox";
-    postInstall =
-      ''
-      ''
-      + lib.optionalString withFx ''
-        cp -ar ${fxSrc}/program/config.js $out/Applications/Firefox.app/Contents/Resources/config.js
-        mkdir -p $out/Applications/Firefox.app/Contents/Resources/defaults/pref
-        cp -ar ${fxSrc}/defaults/pref/config-prefs.js $out/Applications/Firefox.app/Contents/Resources/defaults/pref
-      '';
+    postInstall = lib.optionalString withFx ''
+      cp -ar ${fxSrc}/program/config.js $out/Applications/Firefox.app/Contents/Resources/config.js
+      mkdir -p $out/Applications/Firefox.app/Contents/Resources/defaults/pref
+      cp -ar ${fxSrc}/program/defaults/pref/config-prefs.js $out/Applications/Firefox.app/Contents/Resources/defaults/pref
+    '';
     meta = {
       description = "Mozilla Firefox, free web browser (binary package)";
       homepage = "http://www.mozilla.com/en-US/firefox/";
