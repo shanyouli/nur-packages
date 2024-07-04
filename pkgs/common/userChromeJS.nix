@@ -3,7 +3,7 @@
   lib,
   source,
 }:
-runCommand "firefox-utils" {
+runCommand "firefox-userchromejs" {
   inherit (source) pname src;
   version =
     if (builtins.hasAttr "date" source)
@@ -14,6 +14,6 @@ runCommand "firefox-utils" {
     description = "Firefox scripts ";
   };
 } ''
-  mkdir -p $out/share
+  mkdir -p $out
   cp -rv $src/profile/chrome/* $out/
 ''
