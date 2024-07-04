@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-06-29 06:29:11 UTC
+- LAST_MODIFY: 2024-07-04 12:46:38 UTC
 
 
 ## How to use
@@ -78,9 +78,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20240628.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.29|Back up your favorite bilibili resources with CLI|
-|[**firefox-utils**](https://github.com/xiaoxiaoflood/firefox-scripts)||2023-02-24|Firefox scripts |
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**lazyvim-star**](https://www.lazyvim.org/)||2024-06-18|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
+|[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-03|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-jukebox|A mpc-like control interface for mpv|
@@ -89,6 +88,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-06-29|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -100,7 +100,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.12.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
-|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.2|Get the battery level of all your devices on your Mac.|
+|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.4|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.13.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
@@ -116,7 +116,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**neovide**](https://neovide.dev/)||0.13.1|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.4|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.0|A lightweight screen recorder based on ScreenCapture Kit for macOS|
+|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.2|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**rpcs3**](https://github.com/RPCS3)||0.0.32-16648|rpcs3|
 |[**ryujinx**](https://ryujinx.org)||1.1.1340|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
@@ -126,7 +126,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
 |[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
 |[**vimmotion**](https://github.com/dwarvesf/VimMotionApp)||1.2.3|Access macOS UI elements with your fingers stay on keyboard.|
-|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.0|第三方B站客户端|
+|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.1|第三方B站客户端|
 |[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.1|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 |[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.6|跨平台视频资源播放器, 简洁免费无广告.|
