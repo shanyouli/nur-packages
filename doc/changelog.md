@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-07-04 19:47:32
+
++ remove: fx-utils, 使用 benzBrake/userChrome.js-Loader
+
 ## 2024-06-29 14:16:49
 
 + remove: qutebrowser

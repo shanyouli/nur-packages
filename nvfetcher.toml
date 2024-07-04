@@ -79,9 +79,9 @@ fetch.github = "xmdhs/clash2singbox"
 src.github = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
 
-[firefox-utils]
-src.git = "https://github.com/xiaoxiaoflood/firefox-scripts"
-fetch.url = "https://github.com/xiaoxiaoflood/firefox-scripts/raw/$ver/utils.zip"
+[userChromeJS]
+src.git = "https://github.com/benzBrake/userChrome.js-Loader"
+fetch.github = "benzBrake/userChrome.js-Loader"
 
 [seam]
 src.github = "Borber/seam"
@@ -221,9 +221,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://download.calibre-ebook.com/$ver/calibre-$ver.dmg"
 
-[fx-folder]
-src.git = "https://github.com/xiaoxiaoflood/firefox-scripts"
-fetch.url = "https://github.com/xiaoxiaoflood/firefox-scripts/raw/$ver/fx-folder.zip"
 
 # [vivaldi]
 # src.webpage = "https://vivaldi.com/download"
