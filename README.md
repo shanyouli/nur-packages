@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-04 12:55:13 UTC
+- LAST_MODIFY: 2024-07-05 22:39:36 UTC
 
 
 ## How to use
@@ -76,7 +76,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240628.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240705.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.29|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-03|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
@@ -117,7 +117,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.4|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.2|A lightweight screen recorder based on ScreenCapture Kit for macOS|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16648|rpcs3|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16659|rpcs3|
 |[**ryujinx**](https://ryujinx.org)||1.1.1340|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.3|Simple Live 简简单单的看直播 |
@@ -142,12 +142,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**darkreader**](https://darkreader.org/)||4.9.87|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2697|Browser extension for aria2c json-rpc |
-|[**immersive-translate**](https://immersivetranslate.com/)||1.6.2|Immersive Dual Web Page Translation Extension |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2702|Browser extension for aria2c json-rpc |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.7.1|Immersive Dual Web Page Translation Extension |
 |[**noscript**](https://noscript.net/)||11.4.29|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
-|[**styl-us**](https://add0n.com/stylus.html)||1.5.46|Stylus - Userstyles Manager|
+|[**styl-us**](https://add0n.com/stylus.html)||1.5.48|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.58.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
