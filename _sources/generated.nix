@@ -104,6 +104,14 @@
       sha256 = "sha256-ZB61L5Z8bfFAuanAYn6yeHha+gfL4j6fu++w3nEq0yQ=";
     };
   };
+  clash-verge = {
+    pname = "clash-verge";
+    version = "1.7.3";
+    src = fetchurl {
+      url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.3/Clash.Verge_1.7.3_aarch64.dmg";
+      sha256 = "sha256-n6Cd3R3FEQYBH60YIYZ86HKSli3sLD6A1YMevKvLIfE=";
+    };
+  };
   clash2singbox = {
     pname = "clash2singbox";
     version = "v0.1.4";

@@ -191,6 +191,21 @@
         },
         "version": "1.5.1"
     },
+    "clash-verge": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "clash-verge",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-n6Cd3R3FEQYBH60YIYZ86HKSli3sLD6A1YMevKvLIfE=",
+            "type": "url",
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.3/Clash.Verge_1.7.3_aarch64.dmg"
+        },
+        "version": "1.7.3"
+    },
     "clash2singbox": {
         "cargoLocks": null,
         "date": null,
