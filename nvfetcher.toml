@@ -182,7 +182,7 @@ fetch.url = "https://github.com/keiko233/clash-nyanpasu/releases/download/v$ver/
 src.github="clash-verge-rev/clash-verge-rev"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/clash-verge-$ver.aarch64.rpm"
+fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
 
 [lyricx]
 src.github="MxIris-Application-Forks/LyricsX"
