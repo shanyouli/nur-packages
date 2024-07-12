@@ -19,10 +19,10 @@
   };
   airbattery = {
     pname = "airbattery";
-    version = "1.4.4";
+    version = "1.4.7";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.4/AirBattery_v1.4.4.dmg";
-      sha256 = "sha256-uZ38CkN7Iq3Q35e5GAI1i8TC8JKWS4mFtJaH0S+tSC0=";
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.7/AirBattery_v1.4.7.dmg";
+      sha256 = "sha256-thsTONsImhLewtv5RDZOW5A+y1yHuz158qsZfIMTqPE=";
     };
   };
   alexandria = {
@@ -74,18 +74,18 @@
   };
   calibre = {
     pname = "calibre";
-    version = "7.13.0";
+    version = "7.14.0";
     src = fetchurl {
-      url = "https://download.calibre-ebook.com/7.13.0/calibre-7.13.0.dmg";
-      sha256 = "sha256-OxVGEYqFDGBE6iniCQB51VFK1ikWVlEMKWyDnd7eYdw=";
+      url = "https://download.calibre-ebook.com/7.14.0/calibre-7.14.0.dmg";
+      sha256 = "sha256-ogosGCg1Ot/fyoXazSzBoxCApFjUwIpBGhVgcCcFpXw=";
     };
   };
   calibrepath = {
     pname = "calibrepath";
-    version = "7.13.0";
+    version = "7.14.0";
     src = fetchurl {
-      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.13.0/mac-patch-backend+update-v7.13.0.zip";
-      sha256 = "sha256-t9TL+WMMbXAnZxhOyXxjL6q3qt+1VQOr5mWV5kNrpGQ=";
+      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.14.0/mac-patch-backend+update-v7.14.0.zip";
+      sha256 = "sha256-u73Jt338K86gBB/Aok/9CJobPmp3rjKcmGsVUdo50zg=";
     };
   };
   chatgpt = {
@@ -125,10 +125,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.87";
+    version = "4.9.88";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.87/darkreader-firefox.xpi";
-      sha256 = "sha256-/LpO8VwJIQSWZrIssKYgVZ/8yM0JzmHaFW8fHzgM2pA=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.88/darkreader-firefox.xpi";
+      sha256 = "sha256-f9vab5mGDAD6OjffSARHbx0LyAJaZ9J8KfJHr7xv0Gs=";
     };
   };
   dashplayer = {
@@ -431,18 +431,18 @@
   };
   quickrecorder = {
     pname = "quickrecorder";
-    version = "1.4.2";
+    version = "1.4.3";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.2/QuickRecorder_v1.4.2.dmg";
-      sha256 = "sha256-xsGPw8DonxP7vBshg2VRFx8vzC+Q17BSGHUZ8h9qbNM=";
+      url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.3/QuickRecorder_v1.4.3.dmg";
+      sha256 = "sha256-6T6FKO4QIkFpc2RGcXo3Ruzzgx0RVB3JbCBF9v0ZAyQ=";
     };
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1340";
+    version = "1.1.1345";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1340/ryujinx-1.1.1340-macos_universal.app.tar.gz";
-      sha256 = "sha256-oMbHuQYSFQjZIvtE3Uu3S/s8nLDWi53WnzhOfIa6DN4=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1345/ryujinx-1.1.1345-macos_universal.app.tar.gz";
+      sha256 = "sha256-NXWer7Rx/AmVEoUFKIvO6swJbjsqtp/gYXlLGNM0G6E=";
     };
   };
   ryusak = {
@@ -455,13 +455,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.2.5";
+    version = "v0.1.2.7";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.2.5";
+      rev = "v0.1.2.7";
       fetchSubmodules = false;
-      sha256 = "sha256-vUtRPmXM47VwI0eHhUwMj49HBR95Ulk+Q+X/NjyHtes=";
+      sha256 = "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=";
     };
   };
   seam = {
@@ -529,15 +529,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "2bb1cb9618f5c976ee5f3f04f354e6390e26e8c9";
+    version = "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "2bb1cb9618f5c976ee5f3f04f354e6390e26e8c9";
+      rev = "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be";
       fetchSubmodules = false;
-      sha256 = "sha256-caQwe6UJjSFRg75Os2Mc+mZgXNoiqeniSHR3K0sbquw=";
+      sha256 = "sha256-ymblpbySU2iPo+9zOAQSuDatprGvlcd+MECq2d0lguU=";
     };
-    date = "2024-06-29";
+    date = "2024-07-09";
   };
   vimmotion = {
     pname = "vimmotion";

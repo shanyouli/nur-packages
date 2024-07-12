@@ -38,11 +38,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uZ38CkN7Iq3Q35e5GAI1i8TC8JKWS4mFtJaH0S+tSC0=",
+            "sha256": "sha256-thsTONsImhLewtv5RDZOW5A+y1yHuz158qsZfIMTqPE=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.4/AirBattery_v1.4.4.dmg"
+            "url": "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.7/AirBattery_v1.4.7.dmg"
         },
-        "version": "1.4.4"
+        "version": "1.4.7"
     },
     "alexandria": {
         "cargoLocks": null,
@@ -140,11 +140,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-OxVGEYqFDGBE6iniCQB51VFK1ikWVlEMKWyDnd7eYdw=",
+            "sha256": "sha256-ogosGCg1Ot/fyoXazSzBoxCApFjUwIpBGhVgcCcFpXw=",
             "type": "url",
-            "url": "https://download.calibre-ebook.com/7.13.0/calibre-7.13.0.dmg"
+            "url": "https://download.calibre-ebook.com/7.14.0/calibre-7.14.0.dmg"
         },
-        "version": "7.13.0"
+        "version": "7.14.0"
     },
     "calibrepath": {
         "cargoLocks": null,
@@ -155,11 +155,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-t9TL+WMMbXAnZxhOyXxjL6q3qt+1VQOr5mWV5kNrpGQ=",
+            "sha256": "sha256-u73Jt338K86gBB/Aok/9CJobPmp3rjKcmGsVUdo50zg=",
             "type": "url",
-            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.13.0/mac-patch-backend+update-v7.13.0.zip"
+            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.14.0/mac-patch-backend+update-v7.14.0.zip"
         },
-        "version": "7.13.0"
+        "version": "7.14.0"
     },
     "chatgpt": {
         "cargoLocks": null,
@@ -236,11 +236,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/LpO8VwJIQSWZrIssKYgVZ/8yM0JzmHaFW8fHzgM2pA=",
+            "sha256": "sha256-f9vab5mGDAD6OjffSARHbx0LyAJaZ9J8KfJHr7xv0Gs=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.87/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.88/darkreader-firefox.xpi"
         },
-        "version": "4.9.87"
+        "version": "4.9.88"
     },
     "dashplayer": {
         "cargoLocks": null,
@@ -784,11 +784,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xsGPw8DonxP7vBshg2VRFx8vzC+Q17BSGHUZ8h9qbNM=",
+            "sha256": "sha256-6T6FKO4QIkFpc2RGcXo3Ruzzgx0RVB3JbCBF9v0ZAyQ=",
             "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.2/QuickRecorder_v1.4.2.dmg"
+            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.3/QuickRecorder_v1.4.3.dmg"
         },
-        "version": "1.4.2"
+        "version": "1.4.3"
     },
     "ryujinx": {
         "cargoLocks": null,
@@ -799,11 +799,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oMbHuQYSFQjZIvtE3Uu3S/s8nLDWi53WnzhOfIa6DN4=",
+            "sha256": "sha256-NXWer7Rx/AmVEoUFKIvO6swJbjsqtp/gYXlLGNM0G6E=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1340/ryujinx-1.1.1340-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1345/ryujinx-1.1.1345-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1340"
+        "version": "1.1.1345"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -834,12 +834,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "v0.1.2.5",
-            "sha256": "sha256-vUtRPmXM47VwI0eHhUwMj49HBR95Ulk+Q+X/NjyHtes=",
+            "rev": "v0.1.2.7",
+            "sha256": "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.2.5"
+        "version": "v0.1.2.7"
     },
     "seam": {
         "cargoLocks": {
@@ -956,7 +956,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2024-06-29",
+        "date": "2024-07-09",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -968,12 +968,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "2bb1cb9618f5c976ee5f3f04f354e6390e26e8c9",
-            "sha256": "sha256-caQwe6UJjSFRg75Os2Mc+mZgXNoiqeniSHR3K0sbquw=",
+            "rev": "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be",
+            "sha256": "sha256-ymblpbySU2iPo+9zOAQSuDatprGvlcd+MECq2d0lguU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2bb1cb9618f5c976ee5f3f04f354e6390e26e8c9"
+        "version": "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be"
     },
     "vimmotion": {
         "cargoLocks": null,
