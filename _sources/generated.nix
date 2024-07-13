@@ -399,6 +399,14 @@
       sha256 = "sha256-UFZHwsXHsuzeluIuaNUK88fB1Fngu8MIBm4Rhkg40yY=";
     };
   };
+  next-chat = {
+    pname = "next-chat";
+    version = "2.12.4";
+    src = fetchurl {
+      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.4/NextChat_2.12.4_universal.dmg";
+      sha256 = "sha256-3DICA2F//XUAZd19cyVxn6JJ5k3Rbiz23ergkSYI+0k=";
+    };
+  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";
