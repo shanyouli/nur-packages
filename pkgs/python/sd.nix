@@ -3,6 +3,7 @@
   python3,
   installShellFiles,
   source,
+  coreutils,
 }: let
   inherit (python3.pkgs) typer colorama rich buildPythonApplication poetry-core wcwidth; # rich 丰富色彩
 in
@@ -15,6 +16,10 @@ in
     pyproject = true;
     nativeBuildInputs = [poetry-core installShellFiles];
     propagatedBuildInputs = [typer colorama rich wcwidth];
+    postPatch = ''
+      substituteInPlace sd/utils/cmd.py \
+        --replace "/usr/bin/env" "${coreutils}/bin/env"
+    '';
     postInstall = ''
       installShellCompletion --cmd sd \
         --bash <($out/bin/sd --show-completion bash) \

@@ -455,13 +455,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.2.8";
+    version = "v0.1.2.7";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.2.8";
+      rev = "v0.1.2.7";
       fetchSubmodules = false;
-      sha256 = "sha256-mswuhQgsFOEUys5x+6ovIMcCeuaLFaM5cS4fsfjKlA8=";
+      sha256 = "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=";
     };
   };
   seam = {
