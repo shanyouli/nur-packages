@@ -703,36 +703,6 @@
         },
         "version": "v1.5.0"
     },
-    "neovide": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "neovide",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-NPIF9IO1eUlxuLscvgBdMw7V4ZLYGN+Pzqm5uXavDPQ=",
-            "type": "url",
-            "url": "https://github.com/neovide/neovide/releases/download/0.13.1/neovide.dmg.zip"
-        },
-        "version": "0.13.1"
-    },
-    "next-chat": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "next-chat",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-3DICA2F//XUAZd19cyVxn6JJ5k3Rbiz23ergkSYI+0k=",
-            "type": "url",
-            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.4/NextChat_2.12.4_universal.dmg"
-        },
-        "version": "2.12.4"
-    },
     "pngpaste": {
         "cargoLocks": null,
         "date": null,
@@ -834,12 +804,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "v0.1.2.7",
-            "sha256": "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=",
+            "rev": "v0.1.2.8",
+            "sha256": "sha256-mswuhQgsFOEUys5x+6ovIMcCeuaLFaM5cS4fsfjKlA8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.2.7"
+        "version": "v0.1.2.8"
     },
     "seam": {
         "cargoLocks": {

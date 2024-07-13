@@ -391,22 +391,6 @@
       sha256 = "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=";
     };
   };
-  neovide = {
-    pname = "neovide";
-    version = "0.13.1";
-    src = fetchurl {
-      url = "https://github.com/neovide/neovide/releases/download/0.13.1/neovide.dmg.zip";
-      sha256 = "sha256-NPIF9IO1eUlxuLscvgBdMw7V4ZLYGN+Pzqm5uXavDPQ=";
-    };
-  };
-  next-chat = {
-    pname = "next-chat";
-    version = "2.12.4";
-    src = fetchurl {
-      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.12.4/NextChat_2.12.4_universal.dmg";
-      sha256 = "sha256-3DICA2F//XUAZd19cyVxn6JJ5k3Rbiz23ergkSYI+0k=";
-    };
-  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";
@@ -455,13 +439,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.1.2.7";
+    version = "v0.1.2.8";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.1.2.7";
+      rev = "v0.1.2.8";
       fetchSubmodules = false;
-      sha256 = "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=";
+      sha256 = "sha256-mswuhQgsFOEUys5x+6ovIMcCeuaLFaM5cS4fsfjKlA8=";
     };
   };
   seam = {
