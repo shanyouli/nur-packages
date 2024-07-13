@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-05 22:39:36 UTC
+- LAST_MODIFY: 2024-07-13 16:48:20 UTC
 
 
 ## How to use
@@ -76,7 +76,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240705.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240712.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.29|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-03|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
@@ -88,7 +88,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-06-29|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-07-09|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -100,25 +100,25 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.12.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
-|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.4|Get the battery level of all your devices on your Mac.|
+|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.7|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
-|[**calibre**](https://calibre-ebook.com/)||7.13.0|ebook management|
+|[**calibre**](https://calibre-ebook.com/)||7.14.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
 |[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
-|[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.3.8|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
+|[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.7.3|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
 |[**dashplayer**](https://solidspoon.xyz/DashPlayer/home.html)|**x86_64-darwin**|4.2.3|video player|
 |[**downkyi**](https://github.com/yaobiao131/downkyicore)||1.0.10| 哔哩下载姬(跨平台版)downkyi，哔哩哔哩网站视频下载工具，支持批量下载，支持8K、HDR、杜比视界，提供工具箱（音视频提取、去水印等）|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.12.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.13.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
-|[**neovide**](https://neovide.dev/)||0.13.1|No Nonsense Neovim Client in Rust|
+|[**neovide**](https://neovide.dev/)||0.13.2|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.12.4|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.2|A lightweight screen recorder based on ScreenCapture Kit for macOS|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16659|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1340|A simple, experimental Nintendo Switch emulator|
+|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.3|A lightweight screen recorder based on ScreenCapture Kit for macOS|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16682|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1345|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.3|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
@@ -141,17 +141,17 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |:---|:---|:---|:---|
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
-|[**darkreader**](https://darkreader.org/)||4.9.87|Dark Reader Chrome and Firefox extension|
+|[**darkreader**](https://darkreader.org/)||4.9.88|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2702|Browser extension for aria2c json-rpc |
-|[**immersive-translate**](https://immersivetranslate.com/)||1.7.1|Immersive Dual Web Page Translation Extension |
-|[**noscript**](https://noscript.net/)||11.4.29|NoScript Security Suite|
+|[**immersive-translate**](https://immersivetranslate.com/)||1.7.5|Immersive Dual Web Page Translation Extension |
+|[**noscript**](https://noscript.net/)||11.4.30|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||1.5.48|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.58.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
-|[**violentmonkey**](https://violentmonkey.github.io)||2.19.0|An open source userscript manager.|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.20.0|An open source userscript manager.|
 </details>
 
 ### python3-apps
@@ -164,7 +164,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.1.5|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
-|[**sd**](None)||0.1.2.5|My system command line|
+|[**sd**](None)||0.1.2.7|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
