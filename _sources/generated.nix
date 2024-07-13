@@ -391,6 +391,14 @@
       sha256 = "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=";
     };
   };
+  neovide = {
+    pname = "neovide";
+    version = "0.13.2";
+    src = fetchurl {
+      url = "https://github.com/neovide/neovide/releases/download/0.13.2/Neovide-aarch64-apple-darwin.dmg";
+      sha256 = "sha256-UFZHwsXHsuzeluIuaNUK88fB1Fngu8MIBm4Rhkg40yY=";
+    };
+  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";
