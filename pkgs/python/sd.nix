@@ -16,9 +16,10 @@ in
     nativeBuildInputs = [poetry-core installShellFiles];
     propagatedBuildInputs = [typer colorama rich wcwidth];
     postInstall = ''
-      installShellCompletion --cmd sd --bash <($out/bin/sd --show-completion bash)
-      installShellCompletion --cmd sd --zsh <($out/bin/sd --show-completion zsh)
-      installShellCompletion --cmd sd --fish <($out/bin/sd --show-completion fish)
+      installShellCompletion --cmd sd \
+        --bash <($out/bin/sd --show-completion bash) \
+        --zsh <($out/bin/sd --show-completion zsh) \
+        --fish <($out/bin/sd --show-completion fish)
     '';
     meta = with lib; {
       description = "My system command line";
