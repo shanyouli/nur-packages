@@ -834,12 +834,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "v0.1.2.8",
-            "sha256": "sha256-mswuhQgsFOEUys5x+6ovIMcCeuaLFaM5cS4fsfjKlA8=",
+            "rev": "v0.1.2.9",
+            "sha256": "sha256-r2VKVLrUnz9d2/4RDGYjjzX4dEkarsnXRwqHZS0RTmg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.2.8"
+        "version": "v0.1.2.9"
     },
     "seam": {
         "cargoLocks": {
