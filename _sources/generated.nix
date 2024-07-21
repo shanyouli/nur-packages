@@ -273,16 +273,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.29";
+    version = "v0.2.30";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.29";
+      rev = "v0.2.30";
       fetchSubmodules = false;
-      sha256 = "sha256-PGqDGYXOplyutYZey8F2o9fCjMVReBvFf6zjY1C/EWI=";
+      sha256 = "sha256-XfPUlqb/P9cZVqtN4llgnSBWjKnjbOvzAgAcuYFy+L8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.29/Cargo.lock;
+      lockFile = ./fav-v0.2.30/Cargo.lock;
       outputHashes = {
         
       };
@@ -312,15 +312,15 @@
   };
   lazyvim-star = {
     pname = "lazyvim-star";
-    version = "79b3f27f5cea8fe6bbb95ba04f93dffa545c5197";
+    version = "cb6349c8ae922d1c5745574f4d17b44f2731d451";
     src = fetchFromGitHub {
       owner = "LazyVim";
       repo = "starter";
-      rev = "79b3f27f5cea8fe6bbb95ba04f93dffa545c5197";
+      rev = "cb6349c8ae922d1c5745574f4d17b44f2731d451";
       fetchSubmodules = false;
-      sha256 = "sha256-YmEcgCNQ/XCP/9PDaztTo+Kd18LgsmlmXrttCZGWD3k=";
+      sha256 = "sha256-nB63tBRIU9Ma9Sv/9xNCy4563HJ2DYqQshbExN/PUo0=";
     };
-    date = "2024-07-03";
+    date = "2024-07-20";
   };
   lporg = {
     pname = "lporg";
@@ -439,10 +439,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1354";
+    version = "1.1.1357";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1354/ryujinx-1.1.1354-macos_universal.app.tar.gz";
-      sha256 = "sha256-o5P3O16CWZKIbhRL7AFLaCGOkXe4KEfOh2EsqUhh32c=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1357/ryujinx-1.1.1357-macos_universal.app.tar.gz";
+      sha256 = "sha256-pecffgCdFOKm+7JOGePIByvtQMIkaPgQPWLMXzlp5u8=";
     };
   };
   ryusak = {
