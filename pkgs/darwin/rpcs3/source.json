@@ -1,7 +1,7 @@
 {
   "rpcs3": {
-    "version": "0.0.32-16694",
-    "url": "https://github.com/RPCS3/rpcs3-binaries-mac/releases/download/build-7fba56f27b9170c24234e2fa040753b01b7d1156/rpcs3-v0.0.32-16694-7fba56f2_macos.7z",
-    "sha256": "1krh6sflyfgcakz5h7w0bnqd1xyxwvrah61vad4nfsvmgc6d7dn3"
+    "version": "0.0.32-16699",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-mac/releases/download/build-3ab8922143d1f99a386944fefa5ed8eeb69daa94/rpcs3-v0.0.32-16699-3ab89221_macos.7z",
+    "sha256": "04xdf43vcz6q3crn3z8yhyvs68qd0z4zzxnvrvrd9qf3cqgllk2i"
   }
 }
