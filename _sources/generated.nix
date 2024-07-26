@@ -19,10 +19,10 @@
   };
   airbattery = {
     pname = "airbattery";
-    version = "1.4.7";
+    version = "1.4.8";
     src = fetchurl {
-      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.7/AirBattery_v1.4.7.dmg";
-      sha256 = "sha256-thsTONsImhLewtv5RDZOW5A+y1yHuz158qsZfIMTqPE=";
+      url = "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.8/AirBattery_v1.4.8.dmg";
+      sha256 = "sha256-duTLJn9JB4oqveUyvZ8yGT7fLi2Iy6VKrdjvarTMD4c=";
     };
   };
   alexandria = {
@@ -35,21 +35,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.35.0";
+    version = "v3.36.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.35.0";
+      rev = "v3.36.0";
       fetchSubmodules = false;
-      sha256 = "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=";
+      sha256 = "sha256-l0/DS7ZSuto8QHvSf1ae7wy/a7yqp05koWpb+ExvJJk=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.35.0";
+    version = "3.36.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.35.0/dist.tar.gz";
-      sha256 = "sha256-lAYIwrn2TPWFrU0kFUXl8eWeX25U746iycOimZgxP8c=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.36.0/dist.tar.gz";
+      sha256 = "sha256-uZfT7PkvRHzB2sqbGum53D8oRFWJ2z3AVBdOzBWmAKk=";
     };
   };
   alive-progress = {
@@ -62,15 +62,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "fb3c0b69023055b79645790c25ca18afdec6e3e0";
+    version = "9c876ab50abc73992c34fd1d901fea398cfe46b6";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "fb3c0b69023055b79645790c25ca18afdec6e3e0";
+      rev = "9c876ab50abc73992c34fd1d901fea398cfe46b6";
       fetchSubmodules = false;
-      sha256 = "sha256-0PY8G4gtKjXdv4H3lMxGW59ozcrZocFSdB2BtmX/oMo=";
+      sha256 = "sha256-OS3hFZitfMIGCTErtJGZTAvZD9vbwjoFLVxVaEAasB8=";
     };
-    date = "2024-06-10";
+    date = "2024-07-25";
   };
   calibre = {
     pname = "calibre";
@@ -333,14 +333,6 @@
       sha256 = "sha256-g8zZZ/uQeoJQIzpQY3oMUuWMu4/8OnaOLeLvaii+Tmk=";
     };
   };
-  lyricx = {
-    pname = "lyricx";
-    version = "1.6.4";
-    src = fetchurl {
-      url = "https://github.com/MxIris-Application-Forks/LyricsX/releases/download/v1.6.4/LyricsX.zip";
-      sha256 = "sha256-nPWJBhVkWMQXmHAxNQigVCxkjJ6CStHNF850vN/gW3g=";
-    };
-  };
   maple-mono = {
     pname = "maple-mono";
     version = "6.4";
@@ -401,10 +393,10 @@
   };
   next-chat = {
     pname = "next-chat";
-    version = "2.13.1";
+    version = "2.14.0";
     src = fetchurl {
-      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.13.1/NextChat_2.13.1_universal.dmg";
-      sha256 = "sha256-4zkIRUMBgmp8XH9M0OZNm2R/66vrhTSfRvFz38qUiDI=";
+      url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.14.0/NextChat_2.14.0_universal.dmg";
+      sha256 = "sha256-gUuQxmSi2/MM0U5p+INe4R/uJ5G3qYxbAcBXiKcYaPY=";
     };
   };
   pngpaste = {
@@ -439,10 +431,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1357";
+    version = "1.1.1361";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1357/ryujinx-1.1.1357-macos_universal.app.tar.gz";
-      sha256 = "sha256-pecffgCdFOKm+7JOGePIByvtQMIkaPgQPWLMXzlp5u8=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1361/ryujinx-1.1.1361-macos_universal.app.tar.gz";
+      sha256 = "sha256-8AbpIvH4kD0lsevj7yJk2Lze1q4EA2iiZJ7JcrUS1TY=";
     };
   };
   ryusak = {
