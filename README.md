@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-21 10:49:13 UTC
+- LAST_MODIFY: 2024-07-27 04:41:51 UTC
 
 
 ## How to use
@@ -71,12 +71,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.35.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
-|[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **aarch64-linux** **x86_64-darwin** **x86_64-linux**|2024-06-10|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**alist**](https://github.com/alist-org/alist)||3.36.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **aarch64-linux** **x86_64-darwin** **x86_64-linux**|2024-07-25|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240721.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240726.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.30|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-20|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
@@ -100,7 +100,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.12.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
-|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.7|Get the battery level of all your devices on your Mac.|
+|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.8|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.15.0|ebook management|
 |[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
@@ -112,13 +112,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.13.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
-|[**lyricx**](https://github.com/ddddxxx/LyricsX)||1.6.4|🎶 Ultimate lyrics app for macOS. |
+|[**lyricsx**](https://github.com/ddddxxx/LyricsX)||1.6.7|🎶 Ultimate lyrics app for macOS. |
 |[**neovide**](https://neovide.dev/)||0.13.3|No Nonsense Neovim Client in Rust|
-|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.13.1|ChatGpt Next Web|
+|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.14.0|ChatGpt Next Web|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.4|A lightweight screen recorder based on ScreenCapture Kit for macOS|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16699|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1357|A simple, experimental Nintendo Switch emulator|
+|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16711|rpcs3|
+|[**ryujinx**](https://ryujinx.org)||1.1.1361|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.5|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
@@ -143,7 +143,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**darkreader**](https://darkreader.org/)||4.9.88|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.10.0.2702|Browser extension for aria2c json-rpc |
-|[**immersive-translate**](https://immersivetranslate.com/)||1.7.6|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.7.7|Immersive Dual Web Page Translation Extension |
 |[**noscript**](https://noscript.net/)||11.4.31|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
