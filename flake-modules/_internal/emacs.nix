@@ -24,7 +24,7 @@
         withXwidgets = ! pkgs.stdenvNoCC.isDarwin;
         # @see https://emacs-china.org/t/native-compilation/23316/73
         # 目前没有发现明显的提升
-        withNativeCompilation = true;
+        # withNativeCompilation = true;
       };
     in
       basePkg.overrideAttrs (old: {

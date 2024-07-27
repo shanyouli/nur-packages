@@ -85,4 +85,4 @@ def main(owner, repo, pname, ver_key="tag_name", ver_regx=r"v(.*)", ext=".dmg", 
             commit_source(f"Update {pname} {cversion} -> {version}")
 
 if __name__ == '__main__':
-    main("RPCS3", "rpcs3-binaries-mac", "rpcs3",ver_key="name", ext=".7z", url_regx=".*macos.7z")
+    main("MxIris-LyricsX-Project", "LyricsX", "lyricsx",ver_key="name", ext=".zip", url_regx="LyricsX\.\d{4}-\d{2}-\d{2}\.\d{2}-\d{2}-\d{2}.zip")

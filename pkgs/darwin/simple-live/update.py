@@ -30,8 +30,6 @@ def get_current_src(f):
     if os.path.isfile(f):
         with open(f, encoding="utf-8", mode="r") as text:
             return json.load(text)
-    else:
-        return {}
 
 
 def save_current_src(f, sources):
