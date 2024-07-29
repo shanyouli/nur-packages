@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.12.0-Beta";
+    version = "0.13.2-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.12.0-Beta/AeroSpace-v0.12.0-Beta.zip";
-      sha256 = "sha256-iAEwG16scvqm2uBHl8t2gOsXXf0jyKDNfpChu7WBElc=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.2-Beta/AeroSpace-v0.13.2-Beta.zip";
+      sha256 = "sha256-PZsknfFtdRd5/zNVj8ONoU0Qyk+GhWGFs3yAH/XusB8=";
     };
   };
   airbattery = {
@@ -58,6 +58,14 @@
     src = fetchurl {
       url = "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.1.5.tar.gz";
       sha256 = "sha256-QuOZpmyBUNxQdgLf97eVPxBe8R+vl92qbSexy/RcTJg=";
+    };
+  };
+  any-reader = {
+    pname = "any-reader";
+    version = "1.9.7";
+    src = fetchurl {
+      url = "https://github.com/aooiuu/any-reader/releases/download/v1.9.7/AnyReader-mac-arm64-1.9.7.dmg";
+      sha256 = "sha256-L6A93i5O7eV4M0uNhc7fLhRy8Gu9Dyj2jwxNwO401nA=";
     };
   };
   bbdown = {
