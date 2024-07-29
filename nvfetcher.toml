@@ -184,8 +184,11 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
 
-# [lyricx]
-# src.webpage = "https://github.com/MxIris-LyricsX-Project/LyricsX/releases/latest"
+[any-reader]
+src.github = "aooiuu/any-reader"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/aooiuu/any-reader/releases/download/v$ver/AnyReader-mac-arm64-$ver.dmg"
 
 [neovide]
 src.github="neovide/neovide"
