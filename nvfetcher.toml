@@ -184,11 +184,11 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
 
-[any-reader]
-src.github = "aooiuu/any-reader"
+[pearcleaner]
+src.github = "alienator88/Pearcleaner"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/aooiuu/any-reader/releases/download/v$ver/AnyReader-mac-arm64-$ver.dmg"
+fetch.url = "https://github.com/alienator88/Pearcleaner/releases/download/$ver/Pearcleaner.zip"
 
 [neovide]
 src.github="neovide/neovide"
