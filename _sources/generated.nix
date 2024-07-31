@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.13.2-Beta";
+    version = "0.13.3-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.2-Beta/AeroSpace-v0.13.2-Beta.zip";
-      sha256 = "sha256-PZsknfFtdRd5/zNVj8ONoU0Qyk+GhWGFs3yAH/XusB8=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.3-Beta/AeroSpace-v0.13.3-Beta.zip";
+      sha256 = "sha256-NeQHtt0GuFqolRNlUF1C53L3HsYrgqt/oYIZkfZkWBY=";
     };
   };
   airbattery = {
@@ -58,14 +58,6 @@
     src = fetchurl {
       url = "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.1.5.tar.gz";
       sha256 = "sha256-QuOZpmyBUNxQdgLf97eVPxBe8R+vl92qbSexy/RcTJg=";
-    };
-  };
-  any-reader = {
-    pname = "any-reader";
-    version = "1.9.7";
-    src = fetchurl {
-      url = "https://github.com/aooiuu/any-reader/releases/download/v1.9.7/AnyReader-mac-arm64-1.9.7.dmg";
-      sha256 = "sha256-L6A93i5O7eV4M0uNhc7fLhRy8Gu9Dyj2jwxNwO401nA=";
     };
   };
   bbdown = {
@@ -407,6 +399,14 @@
       sha256 = "sha256-gUuQxmSi2/MM0U5p+INe4R/uJ5G3qYxbAcBXiKcYaPY=";
     };
   };
+  pearcleaner = {
+    pname = "pearcleaner";
+    version = "3.8.2";
+    src = fetchurl {
+      url = "https://github.com/alienator88/Pearcleaner/releases/download/3.8.2/Pearcleaner.zip";
+      sha256 = "sha256-oVZHmcHInqez/70dazd+UBPBa52JyPjbw4k9y0tChXQ=";
+    };
+  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";
@@ -439,10 +439,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1361";
+    version = "1.1.1363";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1361/ryujinx-1.1.1361-macos_universal.app.tar.gz";
-      sha256 = "sha256-8AbpIvH4kD0lsevj7yJk2Lze1q4EA2iiZJ7JcrUS1TY=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1363/ryujinx-1.1.1363-macos_universal.app.tar.gz";
+      sha256 = "sha256-qwaImc8T/k0iIo+tkQVQzeP5j2KsMy6LtnIvVWkoRKk=";
     };
   };
   ryusak = {
@@ -607,10 +607,10 @@
   };
   zy-player = {
     pname = "zy-player";
-    version = "3.3.6";
+    version = "3.3.7";
     src = fetchurl {
-      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.6/zyplayer-mac-3.3.6-arm64.dmg";
-      sha256 = "sha256-wFBGbYXb1sMFSkzs9vWm4BmEqrEjbr+/iASevF5gIk4=";
+      url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.7/zyplayer-mac-3.3.7-arm64.dmg";
+      sha256 = "sha256-2Ft17zCRzWXOcBz/ckgHLhAgR0g+7Wfz0KJrcNXqo2M=";
     };
   };
 }
