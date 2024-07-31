@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-27 04:41:51 UTC
+- LAST_MODIFY: 2024-07-31 07:29:41 UTC
 
 
 ## How to use
@@ -99,7 +99,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.12.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.13.3-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.8|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.15.0|ebook management|
@@ -118,7 +118,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.4|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**rpcs3**](https://github.com/RPCS3)||0.0.32-16711|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1361|A simple, experimental Nintendo Switch emulator|
+|[**ryujinx**](https://ryujinx.org)||1.1.1363|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.5|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
@@ -129,7 +129,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.1|第三方B站客户端|
 |[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.1|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
-|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.6|跨平台视频资源播放器, 简洁免费无广告.|
+|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.7|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
 
 ### firefox-addons
