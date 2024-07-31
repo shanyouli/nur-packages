@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-31 07:29:41 UTC
+- LAST_MODIFY: 2024-07-31 13:29:46 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** packages.
 
 ### common
 
@@ -95,7 +95,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>31</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>32</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -115,6 +115,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **68** 
 |[**lyricsx**](https://github.com/ddddxxx/LyricsX)||1.6.7|🎶 Ultimate lyrics app for macOS. |
 |[**neovide**](https://neovide.dev/)||0.13.3|No Nonsense Neovim Client in Rust|
 |[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.14.0|ChatGpt Next Web|
+|[**pearcleaner**](https://github.com/alienator88/Pearcleaner)||3.8.2|appclear |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.4|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**rpcs3**](https://github.com/RPCS3)||0.0.32-16711|rpcs3|
