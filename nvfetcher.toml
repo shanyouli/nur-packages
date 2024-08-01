@@ -106,6 +106,10 @@ fetch.github = "alist-org/alist"
 src.github = "alist-org/alist-web"
 fetch.url = "https://github.com/alist-org/alist-web/releases/download/$ver/dist.tar.gz"
 
+[tmux-fastcopy]
+src.github = "abhinav/tmux-fastcopy"
+fetch.github = "abhinav/tmux-fastcopy"
+
 ### darwin
 [yabai-zsh-completions]
 src.git = "https://github.com/Amar1729/yabai-zsh-completions"
