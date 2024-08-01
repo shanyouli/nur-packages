@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-07-31 13:29:46 UTC
+- LAST_MODIFY: 2024-08-01 11:51:02 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>20</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -88,6 +88,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.5.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
+|[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-07-09|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
@@ -99,7 +100,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.13.3-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.13.4-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.8|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.15.0|ebook management|
@@ -119,7 +120,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.4|A lightweight screen recorder based on ScreenCapture Kit for macOS|
 |[**rpcs3**](https://github.com/RPCS3)||0.0.32-16711|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1363|A simple, experimental Nintendo Switch emulator|
+|[**ryujinx**](https://ryujinx.org)||1.1.1364|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.5|Simple Live 简简单单的看直播 |
 |[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
