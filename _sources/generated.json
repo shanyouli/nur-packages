@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-NeQHtt0GuFqolRNlUF1C53L3HsYrgqt/oYIZkfZkWBY=",
+            "sha256": "sha256-lQGBhDqrS71CcYbqTjRpua8Y4v5BKPEUAGnTut5LuFM=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.3-Beta/AeroSpace-v0.13.3-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.4-Beta/AeroSpace-v0.13.4-Beta.zip"
         },
-        "version": "0.13.3-Beta"
+        "version": "0.13.4-Beta"
     },
     "airbattery": {
         "cargoLocks": null,
@@ -799,11 +799,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qwaImc8T/k0iIo+tkQVQzeP5j2KsMy6LtnIvVWkoRKk=",
+            "sha256": "sha256-sk5cuTFH02GPQFg778SStwpm7ahIGW9uGzb1A2vCyYA=",
             "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1363/ryujinx-1.1.1363-macos_universal.app.tar.gz"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1364/ryujinx-1.1.1364-macos_universal.app.tar.gz"
         },
-        "version": "1.1.1363"
+        "version": "1.1.1364"
     },
     "ryusak": {
         "cargoLocks": null,
@@ -938,6 +938,27 @@
             "url": "https://github.com/PhotonQuantum/tmexclude/releases/download/v0.2.2/TimeMachine.Exclude_0.2.2_universal.dmg"
         },
         "version": "0.2.2"
+    },
+    "tmux-fastcopy": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tmux-fastcopy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "abhinav",
+            "repo": "tmux-fastcopy",
+            "rev": "v0.14.1",
+            "sha256": "sha256-j7Kk5uaC3vx4JifaAHXfLvXx6ask9YqlNKEiU5BYi+A=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.14.1"
     },
     "upic": {
         "cargoLocks": null,

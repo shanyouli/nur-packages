@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.13.3-Beta";
+    version = "0.13.4-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.3-Beta/AeroSpace-v0.13.3-Beta.zip";
-      sha256 = "sha256-NeQHtt0GuFqolRNlUF1C53L3HsYrgqt/oYIZkfZkWBY=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.13.4-Beta/AeroSpace-v0.13.4-Beta.zip";
+      sha256 = "sha256-lQGBhDqrS71CcYbqTjRpua8Y4v5BKPEUAGnTut5LuFM=";
     };
   };
   airbattery = {
@@ -439,10 +439,10 @@
   };
   ryujinx = {
     pname = "ryujinx";
-    version = "1.1.1363";
+    version = "1.1.1364";
     src = fetchurl {
-      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1363/ryujinx-1.1.1363-macos_universal.app.tar.gz";
-      sha256 = "sha256-qwaImc8T/k0iIo+tkQVQzeP5j2KsMy6LtnIvVWkoRKk=";
+      url = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1364/ryujinx-1.1.1364-macos_universal.app.tar.gz";
+      sha256 = "sha256-sk5cuTFH02GPQFg778SStwpm7ahIGW9uGzb1A2vCyYA=";
     };
   };
   ryusak = {
@@ -517,6 +517,17 @@
     src = fetchurl {
       url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v0.2.2/TimeMachine.Exclude_0.2.2_universal.dmg";
       sha256 = "sha256-KIRSb/W6Bulmkj0VVYIrr3tubepc5msk3uL/L112Gak=";
+    };
+  };
+  tmux-fastcopy = {
+    pname = "tmux-fastcopy";
+    version = "v0.14.1";
+    src = fetchFromGitHub {
+      owner = "abhinav";
+      repo = "tmux-fastcopy";
+      rev = "v0.14.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-j7Kk5uaC3vx4JifaAHXfLvXx6ask9YqlNKEiU5BYi+A=";
     };
   };
   upic = {
