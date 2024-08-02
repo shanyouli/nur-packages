@@ -62,15 +62,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "9c876ab50abc73992c34fd1d901fea398cfe46b6";
+    version = "e4b292c99127595ca9c5a3736eb9eb08f3373c48";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "9c876ab50abc73992c34fd1d901fea398cfe46b6";
+      rev = "e4b292c99127595ca9c5a3736eb9eb08f3373c48";
       fetchSubmodules = false;
-      sha256 = "sha256-OS3hFZitfMIGCTErtJGZTAvZD9vbwjoFLVxVaEAasB8=";
+      sha256 = "sha256-D4H+oeRelfENa69hXn7KfNZed6ULSx0gvb8Ju3LG5UA=";
     };
-    date = "2024-07-25";
+    date = "2024-08-02";
   };
   calibre = {
     pname = "calibre";
