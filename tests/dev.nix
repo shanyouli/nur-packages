@@ -45,7 +45,7 @@ with builtins; let
 
     # airbattery = isPkg "darwin-apps-airbattery";
 
-    p = isPkg "tmux-fastcopy";
+    p = isPkg "emacsGit";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
