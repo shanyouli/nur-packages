@@ -253,7 +253,7 @@
     };
     date = "2024-07-15";
   };
-  "emacs31.poll" = {
+  "emacs30.poll" = {
     pname = "emacs31.poll";
     version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
     src = fetchurl {

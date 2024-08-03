@@ -322,9 +322,9 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
 
-["emacs31.poll"]
+["emacs30.poll"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
-fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/poll.patch"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/poll.patch"
 
 ["emacs30.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
