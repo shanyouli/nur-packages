@@ -74,18 +74,18 @@
   };
   calibre = {
     pname = "calibre";
-    version = "7.15.0";
+    version = "7.16.0";
     src = fetchurl {
-      url = "https://download.calibre-ebook.com/7.15.0/calibre-7.15.0.dmg";
-      sha256 = "sha256-pCGZw/4EYHLCAPp93chOaBvDJJHkI1h9ed9itv2YMgM=";
+      url = "https://download.calibre-ebook.com/7.16.0/calibre-7.16.0.dmg";
+      sha256 = "sha256-G85ym8GYH8ylox/VleJIsQ5KQF0O3rpffD3U1HJOGGc=";
     };
   };
   calibrepath = {
     pname = "calibrepath";
-    version = "7.15.0";
+    version = "7.16.0";
     src = fetchurl {
-      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.15.0/mac-patch-backend+update-v7.15.0.zip";
-      sha256 = "sha256-ozxrs4mzPiTQRpLlc15d5/paMs0xssyx7Komfb0/vrg=";
+      url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.16.0/mac-patch-backend+update-v7.16.0.zip";
+      sha256 = "sha256-857M2GsR+wy/uTptvGIaXThrdILebIbazCQPerRbPJ8=";
     };
   };
   chatgpt = {
@@ -226,15 +226,6 @@
     };
     date = "2024-07-15";
   };
-  "emacs30.poll" = {
-    pname = "emacs30.poll";
-    version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
-    src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-30/poll.patch";
-      sha256 = "sha256-Mbdtaigw+jttRT47v17HJZtbq/HZd7K/iKZiT6eMs+Y=";
-    };
-    date = "2024-07-15";
-  };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
     version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
@@ -259,6 +250,15 @@
     src = fetchurl {
       url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
+    };
+    date = "2024-07-15";
+  };
+  "emacs31.poll" = {
+    pname = "emacs31.poll";
+    version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
+    src = fetchurl {
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-31/poll.patch";
+      sha256 = "sha256-+EIB6LcNpGqght8QZNTbx2sKEle9ezRhqi3VD1BQLhM=";
     };
     date = "2024-07-15";
   };
@@ -401,10 +401,10 @@
   };
   pearcleaner = {
     pname = "pearcleaner";
-    version = "3.8.2";
+    version = "3.8.3";
     src = fetchurl {
-      url = "https://github.com/alienator88/Pearcleaner/releases/download/3.8.2/Pearcleaner.zip";
-      sha256 = "sha256-oVZHmcHInqez/70dazd+UBPBa52JyPjbw4k9y0tChXQ=";
+      url = "https://github.com/alienator88/Pearcleaner/releases/download/3.8.3/Pearcleaner.zip";
+      sha256 = "sha256-x3Z9IP21ylRKBh8ZNq6SApItJQaeuoXoPN93CqqDjys=";
     };
   };
   pngpaste = {
