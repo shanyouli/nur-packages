@@ -226,6 +226,15 @@
     };
     date = "2024-07-15";
   };
+  "emacs30.poll" = {
+    pname = "emacs30.poll";
+    version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
+    src = fetchurl {
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-30/poll.patch";
+      sha256 = "sha256-Mbdtaigw+jttRT47v17HJZtbq/HZd7K/iKZiT6eMs+Y=";
+    };
+    date = "2024-07-15";
+  };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
     version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
@@ -250,15 +259,6 @@
     src = fetchurl {
       url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
-    };
-    date = "2024-07-15";
-  };
-  "emacs30.poll" = {
-    pname = "emacs31.poll";
-    version = "323d86b2685a2420341e648bbc6c7b7c02029fa9";
-    src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/323d86b2685a2420341e648bbc6c7b7c02029fa9/patches/emacs-31/poll.patch";
-      sha256 = "sha256-+EIB6LcNpGqght8QZNTbx2sKEle9ezRhqi3VD1BQLhM=";
     };
     date = "2024-07-15";
   };
