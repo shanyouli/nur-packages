@@ -6,7 +6,7 @@
   stdenv,
   coreutils,
 }: let
-  inherit (python3.pkgs) typer colorama rich buildPythonApplication poetry-core wcwidth; # rich 丰富色彩
+  inherit (python3.pkgs) typer buildPythonApplication poetry-core wcwidth; # rich 丰富色彩
 in
   buildPythonApplication rec {
     version =
@@ -17,11 +17,12 @@ in
     pyproject = true;
     # nativeBuildInputs = [poetry-core installShellFiles coreutils procps];
     nativeBuildInputs = [poetry-core installShellFiles];
-    propagatedBuildInputs = [typer colorama rich wcwidth];
+    propagatedBuildInputs = [typer wcwidth];
     postPatch = ''
       substituteInPlace sd/utils/cmd.py \
-        --replace "/usr/bin/env" "${coreutils}/bin/env"
+        --replace-warn "/usr/bin/env" "${coreutils}/bin/env"
     '';
+    # BUG: @see https://github.com/sarugaku/shellingham/issues/35
     postInstall = lib.optionalString stdenv.isLinux ''
       installShellCompletion --cmd sd \
         --bash <($out/bin/sd --show-completion bash) \
