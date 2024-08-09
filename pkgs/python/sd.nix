@@ -4,9 +4,8 @@
   installShellFiles,
   source,
   stdenv,
-  coreutils,
 }: let
-  inherit (python3.pkgs) typer buildPythonApplication poetry-core wcwidth; # rich 丰富色彩
+  inherit (python3.pkgs) typer buildPythonApplication hatchling wcwidth; # rich 丰富色彩
 in
   buildPythonApplication rec {
     version =
@@ -16,12 +15,13 @@ in
     inherit (source) pname src;
     pyproject = true;
     # nativeBuildInputs = [poetry-core installShellFiles coreutils procps];
-    nativeBuildInputs = [poetry-core installShellFiles];
+    nativeBuildInputs = [hatchling installShellFiles];
+    # nativeBuildInputs = [hatchling installShellFiles] ++ lib.optional stdenv.isDarwin [darwin.ps];
     propagatedBuildInputs = [typer wcwidth];
-    postPatch = ''
-      substituteInPlace sd/utils/cmd.py \
-        --replace-warn "/usr/bin/env" "${coreutils}/bin/env"
-    '';
+    # postPatch = ''
+    # substituteInPlace sd/utils/cmd.py \
+    # --replace-warn "/usr/bin/env" "${coreutils}/bin/env"
+    # '';
     # BUG: @see https://github.com/sarugaku/shellingham/issues/35
     postInstall = lib.optionalString stdenv.isLinux ''
       installShellCompletion --cmd sd \

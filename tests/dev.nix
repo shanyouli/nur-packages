@@ -45,7 +45,7 @@ with builtins; let
 
     # airbattery = isPkg "darwin-apps-airbattery";
 
-    p = isPkg "emacsGit";
+    p = isPkg "python-apps-sd";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
