@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.14.0-Beta";
+    version = "0.14.1-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.0-Beta/AeroSpace-v0.14.0-Beta.zip";
-      sha256 = "sha256-n4pWYG0zUTHuLbgjL9TjcY+GKkQNYmBfyVhr8jsD5B0=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.1-Beta/AeroSpace-v0.14.1-Beta.zip";
+      sha256 = "sha256-KgPeEX++zvdHwuZr+RcjOEa9kMJulu8OW6X56kmf3Qg=";
     };
   };
   airbattery = {
@@ -455,13 +455,13 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.2.0";
+    version = "v0.2.1";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.2.0";
+      rev = "v0.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-lMJ6IV9ACoLpPbge2p5BQm0HHidwcqr1a3zpE7amRFw=";
+      sha256 = "sha256-4rVHRO4m0wLQYntsE4fIbgFYO4T8JNORebnMWP5/m1k=";
     };
   };
   seam = {
@@ -494,10 +494,10 @@
   };
   spotube = {
     pname = "spotube";
-    version = "3.7.1";
+    version = "3.8.0";
     src = fetchurl {
-      url = "https://github.com/KRTirtho/spotube/releases/download/v3.7.1/Spotube-macos-universal.dmg";
-      sha256 = "sha256-EYgjVXO/ztIsVYzEHe14YgXbQTclQIht9Qqr8ewHU8w=";
+      url = "https://github.com/KRTirtho/spotube/releases/download/v3.8.0/Spotube-macos-universal.dmg";
+      sha256 = "sha256-qQDbGRnia8JAclm2AgT2FCxhYS6WoNuDWIMbG76pDB0=";
     };
   };
   switchaudio-osx = {
@@ -576,21 +576,21 @@
   };
   yabai = {
     pname = "yabai";
-    version = "v7.1.1";
+    version = "v7.1.2";
     src = fetchFromGitHub {
       owner = "koekeishiya";
       repo = "yabai";
-      rev = "v7.1.1";
+      rev = "v7.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=";
+      sha256 = "sha256-H+7vH6AjP6HQ1ifXe8qlLSh0FQu8KJkwr+38C5akk/c=";
     };
   };
   yabai-bin = {
     pname = "yabai-bin";
-    version = "7.1.1";
+    version = "7.1.2";
     src = fetchurl {
-      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.1/yabai-v7.1.1.tar.gz";
-      sha256 = "sha256-uqxP7hO4cyZRoA9acOHWMVPmEGQhZcIRGmLar3H+xE8=";
+      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.2/yabai-v7.1.2.tar.gz";
+      sha256 = "sha256-RIYo5Ilqbfs4kqYKSrztYLAqgvlPXqaEenVnMJvTWDk=";
     };
   };
   yabai-zsh-completions = {

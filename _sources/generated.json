@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-n4pWYG0zUTHuLbgjL9TjcY+GKkQNYmBfyVhr8jsD5B0=",
+            "sha256": "sha256-KgPeEX++zvdHwuZr+RcjOEa9kMJulu8OW6X56kmf3Qg=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.0-Beta/AeroSpace-v0.14.0-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.1-Beta/AeroSpace-v0.14.1-Beta.zip"
         },
-        "version": "0.14.0-Beta"
+        "version": "0.14.1-Beta"
     },
     "airbattery": {
         "cargoLocks": null,
@@ -834,12 +834,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "v0.2.0",
-            "sha256": "sha256-lMJ6IV9ACoLpPbge2p5BQm0HHidwcqr1a3zpE7amRFw=",
+            "rev": "v0.2.1",
+            "sha256": "sha256-4rVHRO4m0wLQYntsE4fIbgFYO4T8JNORebnMWP5/m1k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.0"
+        "version": "v0.2.1"
     },
     "seam": {
         "cargoLocks": {
@@ -897,11 +897,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EYgjVXO/ztIsVYzEHe14YgXbQTclQIht9Qqr8ewHU8w=",
+            "sha256": "sha256-qQDbGRnia8JAclm2AgT2FCxhYS6WoNuDWIMbG76pDB0=",
             "type": "url",
-            "url": "https://github.com/KRTirtho/spotube/releases/download/v3.7.1/Spotube-macos-universal.dmg"
+            "url": "https://github.com/KRTirtho/spotube/releases/download/v3.8.0/Spotube-macos-universal.dmg"
         },
-        "version": "3.7.1"
+        "version": "3.8.0"
     },
     "switchaudio-osx": {
         "cargoLocks": null,
@@ -1055,12 +1055,12 @@
             "name": null,
             "owner": "koekeishiya",
             "repo": "yabai",
-            "rev": "v7.1.1",
-            "sha256": "sha256-dznMjSaS2kkyYf7JrNf1Y++Nb5YFOmk/JQP3BBrf5Bk=",
+            "rev": "v7.1.2",
+            "sha256": "sha256-H+7vH6AjP6HQ1ifXe8qlLSh0FQu8KJkwr+38C5akk/c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.1"
+        "version": "v7.1.2"
     },
     "yabai-bin": {
         "cargoLocks": null,
@@ -1071,11 +1071,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uqxP7hO4cyZRoA9acOHWMVPmEGQhZcIRGmLar3H+xE8=",
+            "sha256": "sha256-RIYo5Ilqbfs4kqYKSrztYLAqgvlPXqaEenVnMJvTWDk=",
             "type": "url",
-            "url": "https://github.com/koekeishiya/yabai/releases/download/v7.1.1/yabai-v7.1.1.tar.gz"
+            "url": "https://github.com/koekeishiya/yabai/releases/download/v7.1.2/yabai-v7.1.2.tar.gz"
         },
-        "version": "7.1.1"
+        "version": "7.1.2"
     },
     "yabai-zsh-completions": {
         "cargoLocks": null,
