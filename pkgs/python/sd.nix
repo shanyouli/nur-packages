@@ -4,7 +4,7 @@
   installShellFiles,
   source,
   stdenv,
-  coreutils,
+  darwin,
 }: let
   inherit (python3.pkgs) typer buildPythonApplication hatchling wcwidth; # rich 丰富色彩
 in
@@ -15,20 +15,13 @@ in
       else lib.removePrefix "v" source.version;
     inherit (source) pname src;
     pyproject = true;
-    # nativeBuildInputs = [poetry-core installShellFiles coreutils procps];
-    nativeBuildInputs = [hatchling installShellFiles];
-    # nativeBuildInputs = [hatchling installShellFiles] ++ lib.optional stdenv.isDarwin [darwin.ps];
+    nativeBuildInputs = [hatchling installShellFiles] ++ lib.optional stdenv.isDarwin [darwin.ps];
     propagatedBuildInputs = [typer wcwidth];
-    postPatch = lib.optionalString stdenv.isLinux ''
-      substituteInPlace src/sd/utils/cmd.py \
-        --replace-warn "/usr/bin/env" "${coreutils}/bin/env"
-    '';
-    # BUG: @see https://github.com/sarugaku/shellingham/issues/35
-    postInstall = lib.optionalString stdenv.isLinux ''
+    postInstall = ''
       installShellCompletion --cmd sd \
-        --bash <($out/bin/sd --show-completion bash) \
-        --zsh <($out/bin/sd --show-completion zsh) \
-        --fish <($out/bin/sd --show-completion fish)
+        --bash <($out/bin/sd completion show bash) \
+        --zsh <($out/bin/sd completion show zsh) \
+        --fish <($out/bin/sd completion show fish)
     '';
     meta = with lib; {
       description = "My system command line";
