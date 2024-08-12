@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-08-09 14:08:40 UTC
+- LAST_MODIFY: 2024-08-12 09:24:29 UTC
 
 
 ## How to use
@@ -100,7 +100,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.14.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.14.1-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.9|Get the battery level of all your devices on your Mac.|
 |[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
 |[**calibre**](https://calibre-ebook.com/)||7.16.0|ebook management|
@@ -123,13 +123,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** 
 |[**ryujinx**](https://ryujinx.org)||1.1.1373|A simple, experimental Nintendo Switch emulator|
 |[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
 |[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.5|Simple Live 简简单单的看直播 |
-|[**spotube**](https://github.com/KRTirtho/spotube)||3.7.1|Open source Spotify client|
+|[**spotube**](https://github.com/KRTirtho/spotube)||3.8.0|Open source Spotify client|
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
 |[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
 |[**vimmotion**](https://github.com/dwarvesf/VimMotionApp)||1.2.3|Access macOS UI elements with your fingers stay on keyboard.|
 |[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.1|第三方B站客户端|
-|[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.1|A tiling window manager for macOS based on binary space partitioning|
+|[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.2|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 |[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.7|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
@@ -166,7 +166,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** 
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.1.5|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
-|[**sd**](None)||0.2.0|My system command line|
+|[**sd**](None)||0.2.1|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
