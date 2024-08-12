@@ -14,7 +14,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - flyci-macos-large-latest-m1
+          - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout repository
@@ -32,11 +32,6 @@ jobs:
         name: 'shanyouli'
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - name: env
-      run: |
-        [[ -f /usr/bin/env ]] && echo good
-        which env
-        whereis env
     - name: dev nix packages
       run: nix run .#devci
       timeout-minutes: 240

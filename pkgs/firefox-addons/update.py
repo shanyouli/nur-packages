@@ -46,7 +46,7 @@ def get_firefox_addons_xpi(name: str) -> str:
         if "href" in i.attrs and i["href"].endswith(".xpi"):
             return i["href"]
     else:
-        xpi_soup = soup.find(href=re.compile("\.xpi$"))
+        xpi_soup = soup.find(href=re.compile(r"\.xpi$"))
         if xpi_soup:
             return xpi_soup.get("href")
         else:
@@ -132,5 +132,11 @@ if __name__ == "__main__":
             "privacy-pass",
             "ublock-origin",
             "immersive-translate",
+            "darkreader",
+            "chrome-mask",
+            "zeroomega",
+            "easy-image-blocker",
+            "kiss-translator",
+            "raindropio",
         ]
     )

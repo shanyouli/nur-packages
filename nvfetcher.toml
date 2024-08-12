@@ -138,92 +138,6 @@ fetch.github = "deweller/switchaudio-osx"
 
 
 ### DarwinAPP
-[quickrecorder]
-src.github = "lihaoyun6/QuickRecorder"
-fetch.url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/$ver/QuickRecorder_v$ver.dmg"
-
-[dashplayer]
-src.github = "solidSpoon/DashPlayer"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/solidSpoon/DashPlayer/releases/download/v$ver/DashPlayer-$ver-arm64.dmg"
-
-[airbattery]
-src.github = "lihaoyun6/AirBattery"
-fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_v$ver.dmg"
-
-[vimmotion]
-src.github = "dwarvesf/VimMotionApp"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/dwarvesf/VimMotionApp/releases/download/v$ver/VimMotion.$ver.dmg"
-
-[tmexclude]
-src.github = "PhotonQuantum/tmexclude"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v$ver/TimeMachine.Exclude_$ver_universal.dmg"
-
-[chatgpt]
-src.github="lencx/ChatGPT"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/lencx/ChatGPT/releases/download/v$ver/ChatGPT_$ver_macos_aarch64.dmg"
-
-[next-chat]
-src.github="ChatGPTNextWeb/ChatGPT-Next-Web"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v$ver/NextChat_$ver_universal.dmg"
-
-[clash-nyanpasu]
-src.github="keiko233/clash-nyanpasu"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/keiko233/clash-nyanpasu/releases/download/v$ver/Clash.Nyanpasu_$ver_aarch64.dmg"
-
-[clash-verge]
-src.github="clash-verge-rev/clash-verge-rev"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
-
-[pearcleaner]
-src.github = "alienator88/Pearcleaner"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/alienator88/Pearcleaner/releases/download/$ver/Pearcleaner.zip"
-
-[neovide]
-src.github="neovide/neovide"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/neovide/neovide/releases/download/$ver/Neovide-aarch64-apple-darwin.dmg"
-
-[upic]
-src.github="gee1k/uPic"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/gee1k/uPic/releases/download/v$ver/uPic.zip"
-
-[zy-player]
-src.github="Hiram-Wong/ZyPlayer"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v$ver/zyplayer-mac-$ver-arm64.dmg"
-
-[calibrepath]
-src.github = "Cirn09/calibre-do-not-translate-my-path"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v$ver/mac-patch-backend+update-v$ver.zip"
-
-[calibre]
-src.github = "Cirn09/calibre-do-not-translate-my-path"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://download.calibre-ebook.com/$ver/calibre-$ver.dmg"
-
 
 # [vivaldi]
 # src.webpage = "https://vivaldi.com/download"
@@ -235,40 +149,6 @@ src.github_tag = "nikitabobko/AeroSpace"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/nikitabobko/AeroSpace/releases/download/v$ver/AeroSpace-v$ver.zip"
-
-[ryujinx]
-src.github = "Ryujinx/release-channel-master"
-fetch.url = "https://github.com/Ryujinx/release-channel-master/releases/download/$ver/ryujinx-$ver-macos_universal.app.tar.gz"
-
-[ryusak]
-src.github = "FennyFatal/RyuSAK"
-src.from_pattern = "v(.*)-experimental"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/FennyFatal/RyuSAK/releases/download/v$ver-experimental/RyuSAK-darwin-arm64-$ver.zip"
-
-[spotube]
-src.github = "KRTirtho/spotube"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/KRTirtho/spotube/releases/download/v$ver/Spotube-macos-universal.dmg"
-
-[downkyi]
-src.github = "yaobiao131/downkyicore"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/yaobiao131/downkyicore/releases/download/v$ver/DownKyi-$ver-osx-arm64.dmg"
-
-[wiliwili]
-src.github = "xfangfang/wiliwili"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/xfangfang/wiliwili/releases/download/v$ver/wiliwili-macOS-AppleSilicon.dmg"
-
-[alexandria]
-src.github = "btpf/Alexandria"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/btpf/Alexandria/releases/download/v$ver/Alexandria_$ver.0_x64.dmg"
 
 ### firefox-addons
 

@@ -44,7 +44,7 @@ jobs:
           - shanyouli
         os:
           - ubuntu-latest
-          - flyci-macos-large-latest-m1
+          - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout repository

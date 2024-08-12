@@ -1,5 +1,29 @@
 # ChangeLog
 
+## 2024-08-14 
+
++ remove: clash-verge, clash-nyanpasu
++ remove: dash-player
++ remove: chatgpt quickrecorder ryusak tmexclude
++ remove: willwill
++ remove: downkyi
++ remove: spotube
++ remove: airbattery
++ remove: vimmotion
++ remove: simple-live
++ remove: alexandria
++ remove: ryujinx
++ remove: calibre
++ remove: rpcs3
+
+## 2024-08-13 
+
++ remove: nextchat, 使用 homebrew 管理该包
++ remove: pearcleaner, 使用 homebrew 管理该包
++ remove: LyricsX, 使用 Homebrew 管理
++ remove: neovide, 使用 Homebrew 管理
++ remove: upic, 使用 homebrew 管理
+
 ## 2024-07-04 19:47:32
 
 + remove: fx-utils, 使用 benzBrake/userChrome.js-Loader
