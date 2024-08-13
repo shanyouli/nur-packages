@@ -170,12 +170,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/lencx/ChatGPT/releases/download/v$ver/ChatGPT_$ver_macos_aarch64.dmg"
 
-[next-chat]
-src.github="ChatGPTNextWeb/ChatGPT-Next-Web"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v$ver/NextChat_$ver_universal.dmg"
-
 [clash-nyanpasu]
 src.github="keiko233/clash-nyanpasu"
 src.from_pattern = "v(.*)"

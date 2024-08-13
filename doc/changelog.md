@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-08-13 
+
++ remove: nextchat: 使用 homebrew 管理该包
+
 ## 2024-07-04 19:47:32
 
 + remove: fx-utils, 使用 benzBrake/userChrome.js-Loader
