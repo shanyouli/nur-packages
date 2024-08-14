@@ -5,6 +5,7 @@
 + remove: clash-verge, clash-nyanpasu
 + remove: dash-player
 + remove: chatgpt quickrecorder ryusak tmexclude
++ remove: willwill
 
 ## 2024-08-13 
 
