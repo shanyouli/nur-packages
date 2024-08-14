@@ -7,6 +7,7 @@
 + remove: chatgpt quickrecorder ryusak tmexclude
 + remove: willwill
 + remove: downkyi
++ remove: spotube
 
 ## 2024-08-13 
 
