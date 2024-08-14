@@ -10,6 +10,7 @@
 + remove: spotube
 + remove: airbattery
 + remove: vimmotion
++ remove: simple-live
 
 ## 2024-08-13 
 
