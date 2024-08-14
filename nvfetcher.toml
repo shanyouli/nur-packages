@@ -138,26 +138,12 @@ fetch.github = "deweller/switchaudio-osx"
 
 
 ### DarwinAPP
-[quickrecorder]
-src.github = "lihaoyun6/QuickRecorder"
-fetch.url = "https://github.com/lihaoyun6/QuickRecorder/releases/download/$ver/QuickRecorder_v$ver.dmg"
-
-
-[airbattery]
-src.github = "lihaoyun6/AirBattery"
-fetch.url = "https://github.com/lihaoyun6/AirBattery/releases/download/$ver/AirBattery_v$ver.dmg"
 
 [vimmotion]
 src.github = "dwarvesf/VimMotionApp"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/dwarvesf/VimMotionApp/releases/download/v$ver/VimMotion.$ver.dmg"
-
-[tmexclude]
-src.github = "PhotonQuantum/tmexclude"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v$ver/TimeMachine.Exclude_$ver_universal.dmg"
 
 [zy-player]
 src.github="Hiram-Wong/ZyPlayer"
