@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-08-12 09:24:29 UTC
+- LAST_MODIFY: 2024-08-14 07:55:04 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **47** packages.
 
 ### common
 
@@ -96,42 +96,19 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>32</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>9</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.14.1-Beta|AeroSpace is an i3-like tiling window manager for macOS|
-|[**airbattery**](https://lihaoyun6.github.io/AirBattery/)||1.4.9|Get the battery level of all your devices on your Mac.|
-|[**alexandria**](https://github.com/btpf/Alexandria)||0.12|A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript|
-|[**calibre**](https://calibre-ebook.com/)||7.16.0|ebook management|
-|[**chatgpt**](https://app.nofwl.com/chatgpt)|**x86_64-darwin**|1.1.0|ChatGPT Desktop Application (Mac, Windows and Linux) |
-|[**clash-nyanpasu**](https://github.com/keiko233/clash-nyanpasu)||1.5.1|Clash Nyanpasu! (∠・ω< )⌒☆​|
-|[**clash-verge**](https://github.com/zzzgydi/clash-verge)||1.7.5|A Clash GUI based on tauri. Supports Windows, macOS and Linux. |
-|[**dashplayer**](https://solidspoon.xyz/DashPlayer/home.html)|**x86_64-darwin**|4.2.3|video player|
-|[**downkyi**](https://github.com/yaobiao131/downkyicore)||1.0.11| 哔哩下载姬(跨平台版)downkyi，哔哩哔哩网站视频下载工具，支持批量下载，支持8K、HDR、杜比视界，提供工具箱（音视频提取、去水印等）|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.13.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
-|[**lyricsx**](https://github.com/ddddxxx/LyricsX)||1.6.7|🎶 Ultimate lyrics app for macOS. |
-|[**neovide**](https://neovide.dev/)||0.13.3|No Nonsense Neovim Client in Rust|
-|[**next-chat**](https://github.com/Yidadaa/ChatGPT-Next-Web)||2.14.1|ChatGpt Next Web|
-|[**pearcleaner**](https://github.com/alienator88/Pearcleaner)||3.8.4|appclear |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
-|[**quickrecorder**](https://lihaoyun6.github.io/quickrecorder/)||1.4.5|A lightweight screen recorder based on ScreenCapture Kit for macOS|
-|[**rpcs3**](https://github.com/RPCS3)||0.0.32-16737|rpcs3|
-|[**ryujinx**](https://ryujinx.org)||1.1.1373|A simple, experimental Nintendo Switch emulator|
-|[**ryusak**](https://github.com/FennyFatal/RyuSAK)||1.6.3|Color finder for switch emulator|
-|[**simple-live**](https://github.com/xiaoyaocz/dart_simple_live)||1.6.5|Simple Live 简简单单的看直播 |
-|[**spotube**](https://github.com/KRTirtho/spotube)||3.8.0|Open source Spotify client|
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
-|[**tmexclude**](https://github.com/PhotonQuantum/tmexclude)||0.2.2|Exclude undesired files (node_modules, target, etc) from your TimeMachine backup. |
-|[**upic**](https://github.com/gee1k/uPic)||0.21.1|upic 图床管理|
-|[**vimmotion**](https://github.com/dwarvesf/VimMotionApp)||1.2.3|Access macOS UI elements with your fingers stay on keyboard.|
-|[**wiliwili**](https://github.com/xfangfang/wiliwili)||1.4.1|第三方B站客户端|
 |[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.2|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
-|[**zy-player**](https://github.com/Hiram-Wong/ZyPlayer)||3.3.7|跨平台视频资源播放器, 简洁免费无广告.|
 </details>
 
 ### firefox-addons
