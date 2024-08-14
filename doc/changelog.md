@@ -6,6 +6,7 @@
 + remove: dash-player
 + remove: chatgpt quickrecorder ryusak tmexclude
 + remove: willwill
++ remove: downkyi
 
 ## 2024-08-13 
 

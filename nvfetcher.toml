@@ -199,12 +199,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/KRTirtho/spotube/releases/download/v$ver/Spotube-macos-universal.dmg"
 
-[downkyi]
-src.github = "yaobiao131/downkyicore"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/yaobiao131/downkyicore/releases/download/v$ver/DownKyi-$ver-osx-arm64.dmg"
-
 [alexandria]
 src.github = "btpf/Alexandria"
 src.from_pattern = "v(.*)"
