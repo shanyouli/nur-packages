@@ -13,6 +13,7 @@
 + remove: simple-live
 + remove: alexandria
 + remove: ryujinx
++ remove: calibre
 
 ## 2024-08-13 
 
