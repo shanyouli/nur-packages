@@ -170,24 +170,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/lencx/ChatGPT/releases/download/v$ver/ChatGPT_$ver_macos_aarch64.dmg"
 
-[clash-nyanpasu]
-src.github="keiko233/clash-nyanpasu"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/keiko233/clash-nyanpasu/releases/download/v$ver/Clash.Nyanpasu_$ver_aarch64.dmg"
-
-[clash-verge]
-src.github="clash-verge-rev/clash-verge-rev"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$ver/Clash.Verge_$ver_aarch64.dmg"
-
-[upic]
-src.github="gee1k/uPic"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/gee1k/uPic/releases/download/v$ver/uPic.zip"
-
 [zy-player]
 src.github="Hiram-Wong/ZyPlayer"
 src.from_pattern = "v(.*)"

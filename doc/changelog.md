@@ -1,11 +1,16 @@
 # ChangeLog
 
+## 2024-08-14 
+
++ remove: clash-verge, clash-nyanpasu
+
 ## 2024-08-13 
 
 + remove: nextchat, 使用 homebrew 管理该包
 + remove: pearcleaner, 使用 homebrew 管理该包
 + remove: LyricsX, 使用 Homebrew 管理
 + remove: neovide, 使用 Homebrew 管理
++ remove: upic, 使用 homebrew 管理
 
 ## 2024-07-04 19:47:32
 
