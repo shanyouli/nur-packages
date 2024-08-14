@@ -11,6 +11,7 @@
 + remove: airbattery
 + remove: vimmotion
 + remove: simple-live
++ remove: alexandria
 
 ## 2024-08-13 
 
