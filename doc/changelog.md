@@ -9,6 +9,7 @@
 + remove: downkyi
 + remove: spotube
 + remove: airbattery
++ remove: vimmotion
 
 ## 2024-08-13 
 
