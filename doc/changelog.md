@@ -12,6 +12,7 @@
 + remove: vimmotion
 + remove: simple-live
 + remove: alexandria
++ remove: ryujinx
 
 ## 2024-08-13 
 
