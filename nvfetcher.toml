@@ -159,12 +159,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/PhotonQuantum/tmexclude/releases/download/v$ver/TimeMachine.Exclude_$ver_universal.dmg"
 
-[chatgpt]
-src.github="lencx/ChatGPT"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/lencx/ChatGPT/releases/download/v$ver/ChatGPT_$ver_macos_aarch64.dmg"
-
 [zy-player]
 src.github="Hiram-Wong/ZyPlayer"
 src.from_pattern = "v(.*)"
@@ -198,12 +192,6 @@ fetch.url = "https://github.com/nikitabobko/AeroSpace/releases/download/v$ver/Ae
 [ryujinx]
 src.github = "Ryujinx/release-channel-master"
 fetch.url = "https://github.com/Ryujinx/release-channel-master/releases/download/$ver/ryujinx-$ver-macos_universal.app.tar.gz"
-
-[ryusak]
-src.github = "FennyFatal/RyuSAK"
-src.from_pattern = "v(.*)-experimental"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/FennyFatal/RyuSAK/releases/download/v$ver-experimental/RyuSAK-darwin-arm64-$ver.zip"
 
 [spotube]
 src.github = "KRTirtho/spotube"

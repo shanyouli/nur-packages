@@ -4,6 +4,7 @@
 
 + remove: clash-verge, clash-nyanpasu
 + remove: dash-player
++ remove: chatgpt quickrecorder ryusak tmexclude
 
 ## 2024-08-13 
 
