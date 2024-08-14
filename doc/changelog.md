@@ -3,6 +3,7 @@
 ## 2024-08-14 
 
 + remove: clash-verge, clash-nyanpasu
++ remove: dash-player
 
 ## 2024-08-13 
 
