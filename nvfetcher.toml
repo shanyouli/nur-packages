@@ -139,13 +139,6 @@ fetch.github = "deweller/switchaudio-osx"
 
 ### DarwinAPP
 
-[zy-player]
-src.github="Hiram-Wong/ZyPlayer"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v$ver/zyplayer-mac-$ver-arm64.dmg"
-
-
 # [vivaldi]
 # src.webpage = "https://vivaldi.com/download"
 # src.regex = "\"https://downloads.vivaldi.com/stable/Vivaldi.([0-9.]+).universal.dmg\""

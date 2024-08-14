@@ -14,6 +14,7 @@
 + remove: alexandria
 + remove: ryujinx
 + remove: calibre
++ remove: rpcs3
 
 ## 2024-08-13 
 
