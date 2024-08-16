@@ -23,41 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KgPeEX++zvdHwuZr+RcjOEa9kMJulu8OW6X56kmf3Qg=",
+            "sha256": "sha256-xOIP51kFQTy9RbCGQo5gJGMzl/WhZlJ+lCtMOaMCnB8=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.1-Beta/AeroSpace-v0.14.1-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.14.2-Beta/AeroSpace-v0.14.2-Beta.zip"
         },
-        "version": "0.14.1-Beta"
-    },
-    "airbattery": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "airbattery",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-J/mHDQqSnjq2h2yg1jVzEjRnMAIDDqcHDB/hdF9kYUg=",
-            "type": "url",
-            "url": "https://github.com/lihaoyun6/AirBattery/releases/download/1.4.9/AirBattery_v1.4.9.dmg"
-        },
-        "version": "1.4.9"
-    },
-    "alexandria": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "alexandria",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-mmQFu3Ym+jYRu9pN9SSmTQZ37e//1Ck86BCFrTVDpFg=",
-            "type": "url",
-            "url": "https://github.com/btpf/Alexandria/releases/download/v0.12/Alexandria_0.12.0_x64.dmg"
-        },
-        "version": "0.12"
+        "version": "0.14.2-Beta"
     },
     "alist": {
         "cargoLocks": null,
@@ -112,7 +82,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2024-08-02",
+        "date": "2024-08-14",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -124,87 +94,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "e4b292c99127595ca9c5a3736eb9eb08f3373c48",
-            "sha256": "sha256-D4H+oeRelfENa69hXn7KfNZed6ULSx0gvb8Ju3LG5UA=",
+            "rev": "45622f79cd766e0fc6f5cbd49fcf4960340f35c3",
+            "sha256": "sha256-IXSK4XrdDbSbjvx0XsjZqi53mo4tTeFL3p0gegaNCA0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e4b292c99127595ca9c5a3736eb9eb08f3373c48"
-    },
-    "calibre": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "calibre",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-G85ym8GYH8ylox/VleJIsQ5KQF0O3rpffD3U1HJOGGc=",
-            "type": "url",
-            "url": "https://download.calibre-ebook.com/7.16.0/calibre-7.16.0.dmg"
-        },
-        "version": "7.16.0"
-    },
-    "calibrepath": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "calibrepath",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-857M2GsR+wy/uTptvGIaXThrdILebIbazCQPerRbPJ8=",
-            "type": "url",
-            "url": "https://github.com/Cirn09/calibre-do-not-translate-my-path/releases/download/v7.16.0/mac-patch-backend+update-v7.16.0.zip"
-        },
-        "version": "7.16.0"
-    },
-    "chatgpt": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "chatgpt",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-+HC6E1rZkHFUdMuwOLWzisuNCGQIA+LHnIeOIQ9IAPY=",
-            "type": "url",
-            "url": "https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_macos_aarch64.dmg"
-        },
-        "version": "1.1.0"
-    },
-    "clash-nyanpasu": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "clash-nyanpasu",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-ZB61L5Z8bfFAuanAYn6yeHha+gfL4j6fu++w3nEq0yQ=",
-            "type": "url",
-            "url": "https://github.com/keiko233/clash-nyanpasu/releases/download/v1.5.1/Clash.Nyanpasu_1.5.1_aarch64.dmg"
-        },
-        "version": "1.5.1"
-    },
-    "clash-verge": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "clash-verge",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-IzCCpIQh1ew4z1JsCO+NJ2Rwua/9Q/bMw7ulDG89chE=",
-            "type": "url",
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.5/Clash.Verge_1.7.5_aarch64.dmg"
-        },
-        "version": "1.7.5"
+        "version": "45622f79cd766e0fc6f5cbd49fcf4960340f35c3"
     },
     "clash2singbox": {
         "cargoLocks": null,
@@ -241,21 +136,6 @@
             "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.88/darkreader-firefox.xpi"
         },
         "version": "4.9.88"
-    },
-    "dashplayer": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "dashplayer",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-gohfwjxC6l1bM4p/0ph/xXdbWm2cbyiU0K9KTTnC52s=",
-            "type": "url",
-            "url": "https://github.com/solidSpoon/DashPlayer/releases/download/v4.2.3/DashPlayer-4.2.3-arm64.dmg"
-        },
-        "version": "4.2.3"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -298,21 +178,6 @@
             "type": "github"
         },
         "version": "release-1.7.6"
-    },
-    "downkyi": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "downkyi",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-mI2NJ1MAWYvTn4zhKvrlvL3Ozabfc0NICTh/VObBP5Y=",
-            "type": "url",
-            "url": "https://github.com/yaobiao131/downkyicore/releases/download/v1.0.11/DownKyi-1.0.11-osx-arm64.dmg"
-        },
-        "version": "1.0.11"
     },
     "dutis": {
         "cargoLocks": null,
@@ -688,51 +553,6 @@
         },
         "version": "v1.5.0"
     },
-    "neovide": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "neovide",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-0XiDoasWlMJNZwmGzU9YVt/t6RNMu0kEJg5+duYU3qA=",
-            "type": "url",
-            "url": "https://github.com/neovide/neovide/releases/download/0.13.3/Neovide-aarch64-apple-darwin.dmg"
-        },
-        "version": "0.13.3"
-    },
-    "next-chat": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "next-chat",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-E6Tw7BpbLSn5sELo51lBK1XZIjnZYx/2hWAEBbWloyI=",
-            "type": "url",
-            "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/releases/download/v2.14.1/NextChat_2.14.1_universal.dmg"
-        },
-        "version": "2.14.1"
-    },
-    "pearcleaner": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "pearcleaner",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-8SoHpgBlwesAYf6rclGq+vM18ChvOigJgIOE7E7xsKk=",
-            "type": "url",
-            "url": "https://github.com/alienator88/Pearcleaner/releases/download/3.8.4/Pearcleaner.zip"
-        },
-        "version": "3.8.4"
-    },
     "pngpaste": {
         "cargoLocks": null,
         "date": null,
@@ -774,51 +594,6 @@
             "type": "github"
         },
         "version": "release-4.6.5.10"
-    },
-    "quickrecorder": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "quickrecorder",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-n2Yg9YdFOYn1ljHKxeIZ949guJ7YY1kpcECoiKx2lmw=",
-            "type": "url",
-            "url": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.4.5/QuickRecorder_v1.4.5.dmg"
-        },
-        "version": "1.4.5"
-    },
-    "ryujinx": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ryujinx",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-lwhcSNwP4E2+VtVdOhKeSnMc7XqtIWwt3OSIkdHl9nE=",
-            "type": "url",
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1373/ryujinx-1.1.1373-macos_universal.app.tar.gz"
-        },
-        "version": "1.1.1373"
-    },
-    "ryusak": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ryusak",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-iohH/P56qaFnrS/WhoNxZr66h8cdwCuFfCUDfHF1tho=",
-            "type": "url",
-            "url": "https://github.com/FennyFatal/RyuSAK/releases/download/v1.6.3-experimental/RyuSAK-darwin-arm64-1.6.3.zip"
-        },
-        "version": "1.6.3"
     },
     "sd": {
         "cargoLocks": null,
@@ -888,21 +663,6 @@
         },
         "version": "v5.2.0"
     },
-    "spotube": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "spotube",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-qQDbGRnia8JAclm2AgT2FCxhYS6WoNuDWIMbG76pDB0=",
-            "type": "url",
-            "url": "https://github.com/KRTirtho/spotube/releases/download/v3.8.0/Spotube-macos-universal.dmg"
-        },
-        "version": "3.8.0"
-    },
     "switchaudio-osx": {
         "cargoLocks": null,
         "date": null,
@@ -923,21 +683,6 @@
             "type": "github"
         },
         "version": "1.2.2"
-    },
-    "tmexclude": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "tmexclude",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-KIRSb/W6Bulmkj0VVYIrr3tubepc5msk3uL/L112Gak=",
-            "type": "url",
-            "url": "https://github.com/PhotonQuantum/tmexclude/releases/download/v0.2.2/TimeMachine.Exclude_0.2.2_universal.dmg"
-        },
-        "version": "0.2.2"
     },
     "tmux-fastcopy": {
         "cargoLocks": null,
@@ -960,21 +705,6 @@
         },
         "version": "v0.14.1"
     },
-    "upic": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "upic",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-EVLi85lcwz0W12Q0hhinCp+wZ/Kxf1SKgTZGgJqhFUw=",
-            "type": "url",
-            "url": "https://github.com/gee1k/uPic/releases/download/v0.21.1/uPic.zip"
-        },
-        "version": "0.21.1"
-    },
     "userChromeJS": {
         "cargoLocks": null,
         "date": "2024-07-09",
@@ -996,21 +726,6 @@
         },
         "version": "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be"
     },
-    "vimmotion": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "vimmotion",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-wUu5NVtRkdFaXHIkxIdjvxZ8qSavOSBtMIsc+aygDAA=",
-            "type": "url",
-            "url": "https://github.com/dwarvesf/VimMotionApp/releases/download/v1.2.3/VimMotion.1.2.3.dmg"
-        },
-        "version": "1.2.3"
-    },
     "websocket-bridge-python": {
         "cargoLocks": null,
         "date": null,
@@ -1025,21 +740,6 @@
             "url": "https://pypi.org/packages/source/w/websocket_bridge_python/websocket_bridge_python-0.0.2.tar.gz"
         },
         "version": "0.0.2"
-    },
-    "wiliwili": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "wiliwili",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-iy7dJix2lq3eUQCcHg3cK/QcG4nH1veJyOtakVc36Mo=",
-            "type": "url",
-            "url": "https://github.com/xfangfang/wiliwili/releases/download/v1.4.1/wiliwili-macOS-AppleSilicon.dmg"
-        },
-        "version": "1.4.1"
     },
     "yabai": {
         "cargoLocks": null,
@@ -1118,20 +818,5 @@
             "type": "github"
         },
         "version": "v1.1.0"
-    },
-    "zy-player": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "zy-player",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-2Ft17zCRzWXOcBz/ckgHLhAgR0g+7Wfz0KJrcNXqo2M=",
-            "type": "url",
-            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.7/zyplayer-mac-3.3.7-arm64.dmg"
-        },
-        "version": "3.3.7"
     }
 }
