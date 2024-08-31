@@ -53,13 +53,14 @@ buildDotnetModule rec {
   runtimeDeps = [];
   postFixup = ''
     ${lib.optionalString stdenv.isDarwin ''/usr/bin/strip $out/lib/BBDown/BBDown''}
+    ln -sf ~/.config/bbdown $out/lib/BBDown/BBDown.data
   '';
   meta = with lib; {
     homepage = "https://github.com/nilaoda/BBDown";
     description = "Bilibili Downloader. 一款命令行式哔哩哔哩下载器.";
     license = licenses.mit;
     # broken = stdenv.isDarwin;
-    broken = true;
+    # broken = true;
     # platforms = platforms.linux;
   };
 }
