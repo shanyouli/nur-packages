@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-08-30 23:21:36 UTC
+- LAST_MODIFY: 2024-08-31 06:58:35 UTC
 
 
 ## How to use
@@ -72,7 +72,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alist**](https://github.com/alist-org/alist)||3.36.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
-|[**bbdown**](https://github.com/nilaoda/BBDown)|**aarch64-darwin** **aarch64-linux** **x86_64-darwin** **x86_64-linux**|2024-08-14|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||2024-08-14|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
