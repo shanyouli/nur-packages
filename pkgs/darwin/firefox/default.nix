@@ -5,6 +5,7 @@
   withFx ? true,
   lib,
   fetchurl,
+  debug ? false,
   ...
 }: let
   fxSrc = sources.userChromeJS.src;
@@ -19,7 +20,7 @@
   };
 in
   mkDarwinApp rec {
-    inherit pname version src;
+    inherit pname version src debug;
     appname = "Firefox";
     postInstall = lib.optionalString withFx ''
       cp -ar ${fxSrc}/program/config.js $out/Applications/Firefox.app/Contents/Resources/config.js

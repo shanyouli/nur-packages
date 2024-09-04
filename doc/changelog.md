@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-09-04 14:40:23
+
++ adjust: darwinApp function
+
 ## 2024-08-14 
 
 + remove: clash-verge, clash-nyanpasu

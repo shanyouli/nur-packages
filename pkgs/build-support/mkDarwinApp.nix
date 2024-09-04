@@ -9,6 +9,7 @@ in
     meta ? {},
     nativeBuildInputs ? [],
     sourceRoot ? ".",
+    debug ? false,
     ...
   } @ args:
     assert stdenv.isDarwin;
@@ -41,7 +42,7 @@ in
                 echo "Attahing $_mnt"
                 /usr/bin/hdiutil attach -nobrowse -readonly $_pathDmg -mountpoint $_mnt
                 echo "What's in the mount dir"?
-                ls -la $_mnt/
+                ${lib.optionalString debug ''ls -la $_mnt/''}
                 _app=$(find $_mnt/ -maxdepth 1 -name "*.app")
               fi
             fi
@@ -49,7 +50,7 @@ in
             if [[ $(dirname "$_app") != "." ]] && [[ $(dirname "$_app") != $PWD ]]; then
               cp -a "$_app" "$PWD/"
             fi
-            ls -al $PWD
+            ${lib.optionalString debug ''ls -al $PWD''}
             if [[ -n $_mnt ]]; then
               echo "Detaching $_mnt"
               /usr/bin/hdiutil detach -force $_mnt
@@ -66,7 +67,7 @@ in
             runHook postInstall
           '';
         }
-        // (builtins.removeAttrs args ["appname" "sourceRoot"])
+        // (builtins.removeAttrs args ["appname" "sourceRoot" "debug"])
         // {
           name = "${
             builtins.replaceStrings [" "] ["_"] (lib.toLower pname)
