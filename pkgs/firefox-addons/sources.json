@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4342735/download_with_aria2-4.11.1.2836.xpi",
-    "version": "4.11.1.2836",
-    "sha256": "05c4w1p8rscb8kq8kc99l0z7ckadfww5l30ah7fzmncmwj9l5ybg",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4347248/download_with_aria2-4.11.2.2859.xpi",
+    "version": "4.11.2.2859",
+    "sha256": "0wylr0iyv4fkjywryny3nlb79lhz84kyi53v27d09yyf0yk85vf8",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4340283/immersive_translate-1.8.3.xpi",
-    "version": "1.8.3",
-    "sha256": "0vblhbsdgadmsb6c95jajlacmlwxd6lwpbz9xrmygwwr7rn0hsy2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4346845/immersive_translate-1.9.1.xpi",
+    "version": "1.9.1",
+    "sha256": "1d5dbhs29bw6dhzx65vvzhw2apwq4jlpabbwrbdlmh81ani9jwac",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4342405/zeroomega-3.3.10.xpi",
-    "version": "3.3.10",
-    "sha256": "18qfgh31d2hqjl1gpfz1s2cwgpyzmzhflhz3xf2ialmn4m9kamv8",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4345729/zeroomega-3.3.11.xpi",
+    "version": "3.3.11",
+    "sha256": "00b53wzv4r6940sn7bay5a4yjfw86bw27x633vcp2ffnglp4aqcd",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
