@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-08-31 06:58:35 UTC
+- LAST_MODIFY: 2024-09-07 07:32:57 UTC
 
 
 ## How to use
@@ -72,12 +72,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alist**](https://github.com/alist-org/alist)||3.36.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||2024-08-14|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240830.0|Extensible, customizable GNU text editor|
-|[**fav**](https://github.com/kingwingfly/fav)||0.2.32|Back up your favorite bilibili resources with CLI|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240906.0|Extensible, customizable GNU text editor|
+|[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-20|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
@@ -103,7 +103,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.14.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.14.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.15.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
@@ -121,10 +121,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||4.2.0|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.89.1|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.1.2836|Browser extension for aria2c json-rpc |
+|[**darkreader**](https://darkreader.org/)||4.9.90|Dark Reader Chrome and Firefox extension|
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.2.2859|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.8.3|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.9.1|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
 |[**noscript**](https://noscript.net/)||11.4.35|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
@@ -135,7 +135,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.59.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.20.0|An open source userscript manager.|
-|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.10| Manage and switch between multiple proxies quickly & easily.|
+|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.11| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
 ### python3-apps
