@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-09-09 11:28:20
+
++ remove: lazyvim
+
 ## 2024-09-04 14:40:23
 
 + adjust: darwinApp function
