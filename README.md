@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-07 07:32:57 UTC
+- LAST_MODIFY: 2024-09-09 03:34:46 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>20</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -79,7 +79,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||20240906.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**lazyvim-star**](https://www.lazyvim.org/)||2024-07-20|LazyVim is a Neovim setup powered by 💤 lazy.nvim to make it easy to customize and extend your config.|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-vinyl|A mpc-like control interface for mpv|
