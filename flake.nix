@@ -2,16 +2,31 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
+    flake-utils.url = "github:numtide/flake-utils";
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     nvfetcher.url = "github:berberman/nvfetcher";
     nvfetcher.inputs.nixpkgs.follows = "nixpkgs";
+    nvfetcher.inputs.flake-utils.follows = "flake-utils";
+    nvfetcher.inputs.flake-compat.follows = "flake-compat";
 
     pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
     pre-commit-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
+    pre-commit-hooks-nix.inputs.nixpkgs-stable.follows = "nixpkgs-stable";
+    pre-commit-hooks-nix.inputs.flake-compat.follows = "flake-compat";
 
     emacs-overlay.url = "github:nix-community/emacs-overlay/master";
     emacs-overlay.inputs.nixpkgs.follows = "nixpkgs";
+    emacs-overlay.inputs.nixpkgs-stable.follows = "nixpkgs-stable";
+    emacs-overlay.inputs.flake-utils.follows = "flake-utils";
+
     # @see https://github.com/nix-community/emacs-overlay/issues/275
     # emacs-src.url = "github:emacs-mirror/emacs/emacs-29";
     # emacs-src.flake = false;
