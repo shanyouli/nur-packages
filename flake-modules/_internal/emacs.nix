@@ -34,17 +34,19 @@
             srcs."emacs${version}.role-patch".src
             srcs."emacs${version}.system-appearance".src
             srcs."emacs${version}.round-undecorated-frame".src
+            srcs."emacs${version}.poll".src
           ]
           ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
             srcs."emacs${version}.no-frame-refocus-cocoa".src
-            srcs."emacs${version}.poll".src
           ];
         buildInputs = (old.buildInputs or []) ++ lib.optionals pkgs.stdenvNoCC.isDarwin [pkgs.darwin.apple_sdk.frameworks.WebKit];
         configureFlags = (old.configureFlags or []) ++ ["--enable-check-lisp-object-type"] ++ lib.optionals pkgs.stdenvNoCC.isDarwin ["--with-xwidgets"];
         CFLAGS = "-DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -g -O2";
       });
+    emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
+    emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
   in {
-    packages.emacsGit = mkEmacs inputs'.emacs-overlay.packages.emacs-git "30";
-    packages.emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable "29";
+    packages.emacsGit = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
+    packages.emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
   };
 }

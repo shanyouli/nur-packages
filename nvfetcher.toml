@@ -209,3 +209,19 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs30.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
+
+["emacs31.role-patch"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
+
+["emacs31.poll"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/poll.patch"
+
+["emacs31.round-undecorated-frame"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/round-undecorated-frame.patch"
+
+["emacs31.system-appearance"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
