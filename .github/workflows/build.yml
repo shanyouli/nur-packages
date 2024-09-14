@@ -1,5 +1,7 @@
 name: "Build and populate cache"
 on:
+  repository_dispatch:
+    types: [trigger-second-workflow]
   pull_request:
   push:
     branches:
@@ -9,8 +11,6 @@ on:
       - 'pkgs/**'
       - '!pkgs/**/update.py'
       - '!pkgs/**/update.sh'
-      - '_sources/**'
-      - 'flake.lock'
   schedule:
     # rebuild everyday at 2:51
     # TIP: Choose a random time here so not all repositories are build at once:
