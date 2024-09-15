@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-09 03:34:46 UTC
+- LAST_MODIFY: 2024-09-15 04:34:17 UTC
 
 
 ## How to use
@@ -71,12 +71,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.36.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.37.2|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
-|[**emacs**](https://www.gnu.org/software/emacs/)||29.4|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240906.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||30.0.91|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240914.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
@@ -120,12 +120,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||4.2.0|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.90|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.2.2859|Browser extension for aria2c json-rpc |
+|[**darkreader**](https://darkreader.org/)||4.9.92|Dark Reader Chrome and Firefox extension|
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.3.2869|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.9.1|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.9.3|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||11.4.35|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||11.4.37|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.24|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
@@ -147,7 +147,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** 
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.1.5|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
-|[**sd**](None)||0.2.2|My system command line|
+|[**sd**](None)||0.2.3|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
