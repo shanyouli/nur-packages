@@ -80,7 +80,7 @@ jobs:
         brew uninstall --zap google-chrome
         df -h
     - name: Install nix
-      uses: cachix/install-nix-action@V27
+      uses: cachix/install-nix-action@V28
       with:
         extra_nix_config: |
           experimental-features = nix-command flakes
@@ -132,7 +132,7 @@ jobs:
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
       - name: Install nix
-        uses: cachix/install-nix-action@V27
+        uses: cachix/install-nix-action@V28
         with:
           extra_nix_config: |
             experimental-features = nix-command flakes
