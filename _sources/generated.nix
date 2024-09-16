@@ -335,6 +335,24 @@
       sha256 = "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=";
     };
   };
+  nh_darwin = {
+    pname = "nh_darwin";
+    version = "642220e43e1b1fec3b1894fb25ad36c6831d0cab";
+    src = fetchFromGitHub {
+      owner = "ToyVo";
+      repo = "nh_darwin";
+      rev = "642220e43e1b1fec3b1894fb25ad36c6831d0cab";
+      fetchSubmodules = false;
+      sha256 = "sha256-CRP0fja7sT9aNJCKV+VUGrMZCslMptEtK0/JAjNAoQU=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./nh_darwin-642220e43e1b1fec3b1894fb25ad36c6831d0cab/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
+    date = "2024-09-11";
+  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";

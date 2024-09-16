@@ -592,6 +592,32 @@
         },
         "version": "v1.5.0"
     },
+    "nh_darwin": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./nh_darwin-642220e43e1b1fec3b1894fb25ad36c6831d0cab/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2024-09-11",
+        "extract": null,
+        "name": "nh_darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "ToyVo",
+            "repo": "nh_darwin",
+            "rev": "642220e43e1b1fec3b1894fb25ad36c6831d0cab",
+            "sha256": "sha256-CRP0fja7sT9aNJCKV+VUGrMZCslMptEtK0/JAjNAoQU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "642220e43e1b1fec3b1894fb25ad36c6831d0cab"
+    },
     "pngpaste": {
         "cargoLocks": null,
         "date": null,
