@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-15 04:34:17 UTC
+- LAST_MODIFY: 2024-09-16 01:57:36 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>19</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>20</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -83,6 +83,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **51** 
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-vinyl|A mpc-like control interface for mpv|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
+|[**nh_darwin**](https://github.com/viperML/nh)||2024-09-11|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.6.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.6.10|Featureful free software BitTorrent client|
