@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - dev
     paths:
       - 'pkgs/**/update.py'
   workflow_dispatch:
