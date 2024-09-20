@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4315769/violentmonkey-2.20.0.xpi",
-    "version": "2.20.0",
-    "sha256": "044rshjdqa7jh8zs05fmpxnlhjn4mrm6mdw0rb2qqzm4gr88izll",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4352761/violentmonkey-2.23.0.xpi",
+    "version": "2.23.0",
+    "sha256": "16xlib3z592hhmawz6jwa7li4n1wjc2swqxaj1jkg4v0bf2xzsmk",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -60,15 +60,15 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4347944/immersive_translate-1.9.3.xpi",
-    "version": "1.9.3",
-    "sha256": "1d07jbp1wvg37qcg235ncjfqz2c3z5wvwm4x365cbhy2dd8ypsjm",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4352222/immersive_translate-1.9.6.xpi",
+    "version": "1.9.6",
+    "sha256": "1lgalsmvzi4sxkr73b6jmynhd2q4n76ajv3yl81i3f6y4h0hrd3q",
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4341235/darkreader-4.9.89.xpi",
-    "version": "4.9.89",
-    "sha256": "1gj9gj4kqvnp0dpp8icxzbz8wf5nrmr2178sndlcr6bdjvav99gl",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4351387/darkreader-4.9.92.xpi",
+    "version": "4.9.92",
+    "sha256": "09l2m4vxh4c1aqxr81sdkjw3a042za894gc28cyp95dbbgmb6mdy",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4345729/zeroomega-3.3.11.xpi",
-    "version": "3.3.11",
-    "sha256": "00b53wzv4r6940sn7bay5a4yjfw86bw27x633vcp2ffnglp4aqcd",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4353434/zeroomega-3.3.13.xpi",
+    "version": "3.3.13",
+    "sha256": "12cfq3k9kpkg2y50k0lxqih17jlapz67rm21ddcrjzx9mg44qdim",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
