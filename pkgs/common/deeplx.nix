@@ -2,6 +2,7 @@
   lib,
   buildGoModule,
   source,
+  go,
 }:
 buildGoModule rec {
   inherit (source) pname src;
@@ -15,6 +16,10 @@ buildGoModule rec {
   postInstall = ''
     mv $out/bin/DeepLX $out
     mv $out/DeepLX $out/bin/deeplx
+  '';
+  preBuild = ''
+    ls -al
+    sed -i 's/^go 1\(\.[0-9]\+\)\{1,2\}$/go ${go.version}/' go.mod
   '';
   meta = with lib; {
     description = "DeepL Free API (No TOKEN required";
