@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-16 01:57:36 UTC
+- LAST_MODIFY: 2024-09-22 03:35:20 UTC
 
 
 ## How to use
@@ -71,12 +71,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.37.2|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.37.4|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.5|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.91|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240914.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20240920.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
@@ -85,8 +85,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nh_darwin**](https://github.com/viperML/nh)||2024-09-11|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
-|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.6.10|Featureful free software BitTorrent client|
-|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.6.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.7.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.7.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-07-09|Firefox scripts |
@@ -107,7 +107,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
-|[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.2|A tiling window manager for macOS based on binary space partitioning|
+|[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.3|A tiling window manager for macOS based on binary space partitioning|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
 </details>
 
@@ -124,7 +124,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**darkreader**](https://darkreader.org/)||4.9.92|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.3.2869|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.9.3|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.9.6|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
 |[**noscript**](https://noscript.net/)||11.4.37|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
@@ -134,8 +134,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **52** 
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.59.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
-|[**violentmonkey**](https://violentmonkey.github.io)||2.20.0|An open source userscript manager.|
-|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.11| Manage and switch between multiple proxies quickly & easily.|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.23.0|An open source userscript manager.|
+|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.13| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
 ### python3-apps
