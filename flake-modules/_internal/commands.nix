@@ -16,7 +16,8 @@
         NIX_LOGFILE=nix-build-uncached.log
 
         # Workaround https://github.com/NixOS/nix/issues/6572
-        for i in {1..5}; do
+        __IS_NEXT=true
+        while [[ "''${__IS_NEXT}" == "true" ]]; do
           ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/ci.nix -A cacheOutputs -vv -build-flags '-v -L' --show-trace 2>&1 | tee $NIX_LOGFILE && exit 0
           if grep -q "specified:" $NIX_LOGFILE; then
             if grep -q "got:" $NIX_LOGFILE; then
@@ -36,10 +37,13 @@
                 ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH_OLD}#''${GOT_HASH[$i]}#g" $(find pkgs/ -name \*.nix) || true
               done
             fi
+          else
+            __IS_NEXT=false
           fi
           rm -f $NIX_LOGFILE
         done
-
+        # for i in {1..5}; do
+        # done
         exit 1
       '';
       devci = ''
