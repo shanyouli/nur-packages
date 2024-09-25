@@ -69,10 +69,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.92";
+    version = "4.9.94";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.92/darkreader-firefox.xpi";
-      sha256 = "sha256-kNPzdCnP0TV+yDEmWZZjXpk3ROe5lzt20hUwq4lRSGA=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.94/darkreader-firefox.xpi";
+      sha256 = "sha256-o+YyW1VDhqYPM5D17w+ywCOyr29TziYE8KSU1+0/QW4=";
     };
   };
   deeplx = {
@@ -284,6 +284,24 @@
       fetchSubmodules = false;
       sha256 = "sha256-g8zZZ/uQeoJQIzpQY3oMUuWMu4/8OnaOLeLvaii+Tmk=";
     };
+  };
+  manix = {
+    pname = "manix";
+    version = "5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3";
+    src = fetchFromGitHub {
+      owner = "kaii-zen";
+      repo = "manix";
+      rev = "5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3";
+      fetchSubmodules = false;
+      sha256 = "sha256-Qxs6p+MyS/0NTbJzLKvZHgKBUE1+z+zaINouG//Uio8=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./manix-5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
+    date = "2021-07-28";
   };
   maple-mono = {
     pname = "maple-mono";
