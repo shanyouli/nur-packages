@@ -95,6 +95,12 @@ src.git = "https://github.com/ToyVo/nh_darwin"
 fetch.github = "ToyVo/nh_darwin"
 cargo_locks = ["Cargo.lock"]
 
+# a fast CLI documentaion searcher for nix
+[manix]
+src.git = "https://github.com/kaii-zen/manix"
+fetch.github = "kaii-zen/manix"
+cargo_locks = ["Cargo.lock"]
+
 [bbdown]
 src.git = "https://github.com/nilaoda/BBDown"
 fetch.github = "nilaoda/BBDown"
