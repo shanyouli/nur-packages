@@ -846,12 +846,12 @@
             "name": null,
             "owner": "koekeishiya",
             "repo": "yabai",
-            "rev": "v7.1.3",
-            "sha256": "sha256-hCwI6ziUR4yuJOv4MQXh3ufbausaDrG8XfjR+jIOeC4=",
+            "rev": "v7.1.4",
+            "sha256": "sha256-i/UqmBNTLBYY4ORI1Y7FWr+LZK0f/qMdWLPPuTb9+2w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.3"
+        "version": "v7.1.4"
     },
     "yabai-bin": {
         "cargoLocks": null,
@@ -862,11 +862,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eq7nUb/a8fjXiyy+tRmAr+gv1JYNCB5MYjualCL6JaU=",
+            "sha256": "sha256-xAqVZ6LNqTx5qG2Hxg0qPSIhZl0+AQepJC9jVxdt9RA=",
             "type": "url",
-            "url": "https://github.com/koekeishiya/yabai/releases/download/v7.1.3/yabai-v7.1.3.tar.gz"
+            "url": "https://github.com/koekeishiya/yabai/releases/download/v7.1.4/yabai-v7.1.4.tar.gz"
         },
-        "version": "7.1.3"
+        "version": "7.1.4"
     },
     "yabai-zsh-completions": {
         "cargoLocks": null,

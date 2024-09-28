@@ -476,21 +476,21 @@
   };
   yabai = {
     pname = "yabai";
-    version = "v7.1.3";
+    version = "v7.1.4";
     src = fetchFromGitHub {
       owner = "koekeishiya";
       repo = "yabai";
-      rev = "v7.1.3";
+      rev = "v7.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-hCwI6ziUR4yuJOv4MQXh3ufbausaDrG8XfjR+jIOeC4=";
+      sha256 = "sha256-i/UqmBNTLBYY4ORI1Y7FWr+LZK0f/qMdWLPPuTb9+2w=";
     };
   };
   yabai-bin = {
     pname = "yabai-bin";
-    version = "7.1.3";
+    version = "7.1.4";
     src = fetchurl {
-      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.3/yabai-v7.1.3.tar.gz";
-      sha256 = "sha256-eq7nUb/a8fjXiyy+tRmAr+gv1JYNCB5MYjualCL6JaU=";
+      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.4/yabai-v7.1.4.tar.gz";
+      sha256 = "sha256-xAqVZ6LNqTx5qG2Hxg0qPSIhZl0+AQepJC9jVxdt9RA=";
     };
   };
   yabai-zsh-completions = {
