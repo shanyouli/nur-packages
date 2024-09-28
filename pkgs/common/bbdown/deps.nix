@@ -7,6 +7,9 @@
   (fetchNuGet { pname = "Microsoft.NET.ILLink.Analyzers"; version = "7.0.100-1.23401.1"; hash = "sha256-jGyhmj7DZxTv9Hir6YonkpL+SDsRore8Ph4RNN+2q94="; })
   (fetchNuGet { pname = "Microsoft.NET.ILLink.Tasks"; version = "7.0.100-1.23401.1"; hash = "sha256-n95rHugj0BOtCBvv5209zJ5ttPX0A2+RWLjEwwtxgRA="; })
   (fetchNuGet { pname = "QRCoder"; version = "1.4.3"; hash = "sha256-it4WJGJVrpmYb8YLlTLeUrTbGW8AFm2rXskW7NvCtMI="; })
+  (fetchNuGet { pname = "runtime.linux-arm64.Microsoft.DotNet.ILCompiler"; version = "8.0.8"; hash = "sha256-Dz8dkFRN//VvdLjWxe8+5o81adh/gqYyo5aHxtjzoqs="; })
+  (fetchNuGet { pname = "runtime.osx-arm64.Microsoft.DotNet.ILCompiler"; version = "8.0.8"; hash = "sha256-Q7ZRUqGLN41EIbmTPQXiiLIJsLWwHHlTMCg7e9B38Fs="; })
+  (fetchNuGet { pname = "runtime.osx-x64.Microsoft.DotNet.ILCompiler"; version = "8.0.8"; hash = "sha256-exBYb8kUySdkudyNrs5ArXa/wkkS2b6lhVpm4jZMnqQ="; })
   (fetchNuGet { pname = "SharpZipLib"; version = "1.4.2"; hash = "sha256-/giVqikworG2XKqfN9uLyjUSXr35zBuZ2FX2r8X/WUY="; })
   (fetchNuGet { pname = "System.CommandLine"; version = "2.0.0-beta4.22272.1"; hash = "sha256-zSO+CYnMH8deBHDI9DHhCPj79Ce3GOzHCyH1/TiHxcc="; })
 ]
