@@ -319,6 +319,17 @@
       sha256 = "sha256-SbXWkrpLJUrq+Jt1h3GBP9md5TbYpPchdiR0oEDMAgY=";
     };
   };
+  mkalias = {
+    pname = "mkalias";
+    version = "v0.3.2";
+    src = fetchFromGitHub {
+      owner = "reckenrode";
+      repo = "mkAlias";
+      rev = "v0.3.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-tL3C/b2BPOGQpV287wECDCDWmKwwPvezAAN3qz7N07M=";
+    };
+  };
   mpvc = {
     pname = "mpvc";
     version = "1.5-vinyl";
