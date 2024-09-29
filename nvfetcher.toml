@@ -143,6 +143,9 @@ fetch.github = "blacktop/lporg"
 src.github_tag = "deweller/switchaudio-osx"
 fetch.github = "deweller/switchaudio-osx"
 
+[mkalias]
+src.github_tag = "reckenrode/mkAlias"
+fetch.github = "reckenrode/mkAlias"
 
 ### DarwinAPP
 
