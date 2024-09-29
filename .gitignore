@@ -6,3 +6,4 @@ nix-build-uncached.log
 .DS_STORE
 __pycache__
 .pre-commit-config.yaml
+.DS_Store

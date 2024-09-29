@@ -1,19 +1,4 @@
 {
-    "about-time": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "about-time",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-alOIYtM85n2ZdCnRSZgxDh2/2my32bv795nEcJhH/s4=",
-            "type": "url",
-            "url": "https://pypi.org/packages/source/a/about-time/about-time-4.2.1.tar.gz"
-        },
-        "version": "4.2.1"
-    },
     "aerospace": {
         "cargoLocks": null,
         "date": null,
