@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-09-29
+
++ add: mkalias
+
 ## 2024-09-25 18:42:37
 
 + add: manix
