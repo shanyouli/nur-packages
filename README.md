@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-29 06:52:22 UTC
+- LAST_MODIFY: 2024-09-29 09:00:30 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **53** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** packages.
 
 ### common
 
@@ -97,7 +97,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **53** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>9</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>10</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -106,6 +106,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **53** 
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.15.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
+|[**mkalias**](https://github.com/reckenrode/mkalias)||0.3.2|Simple command-line tool to create Finder aliases|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.4|A tiling window manager for macOS based on binary space partitioning|
