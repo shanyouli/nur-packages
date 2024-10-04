@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4358157/violentmonkey-2.25.0.xpi",
-    "version": "2.25.0",
-    "sha256": "1m0jh3fflm3slgpgmkmgllm7vk8wa2y6c0rh40ix878ws1snwipn",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4362578/violentmonkey-2.26.0.xpi",
+    "version": "2.26.0",
+    "sha256": "0bp1n9hm8zg97n59l6zqshma1wfkc16bj6jrcyzkhak0cga1zdj7",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4328681/ublock_origin-1.59.0.xpi",
-    "version": "1.59.0",
-    "sha256": "057vdkwrahxw934cdgqd6k16qjnnwgwj9g6v6s6iy53xl1vcdf8x",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4359936/ublock_origin-1.60.0.xpi",
+    "version": "1.60.0",
+    "sha256": "000np37j2c80ld8jxfl70mbghlnz51zzia8dxzjzd9xhl6rakkg2",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4351387/darkreader-4.9.92.xpi",
-    "version": "4.9.92",
-    "sha256": "09l2m4vxh4c1aqxr81sdkjw3a042za894gc28cyp95dbbgmb6mdy",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4359254/darkreader-4.9.94.xpi",
+    "version": "4.9.94",
+    "sha256": "1mncr7a4cy37886p8ab4c06cqbdrkbjh0dl00sqcmh1h19ylw715",
     "pname": "darkreader"
   },
   "chrome-mask": {
