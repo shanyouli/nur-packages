@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-09-29 09:00:30 UTC
+- LAST_MODIFY: 2024-10-06 04:24:43 UTC
 
 
 ## How to use
@@ -76,7 +76,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.91|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20240927.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20241005.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
@@ -104,7 +104,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** 
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.14.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||115.15.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.3.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.3.2|Simple command-line tool to create Finder aliases|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
@@ -123,7 +123,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||4.2.0|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.94|Dark Reader Chrome and Firefox extension|
+|[**darkreader**](https://darkreader.org/)||4.9.95|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.11.3.2869|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.9.7|Immersive Dual Web Page Translation Extension |
@@ -134,10 +134,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** 
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||1.5.51|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.59.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.60.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
-|[**violentmonkey**](https://violentmonkey.github.io)||2.25.0|An open source userscript manager.|
-|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.13| Manage and switch between multiple proxies quickly & easily.|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.26.0|An open source userscript manager.|
+|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.14| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
 ### python3-apps
