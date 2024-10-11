@@ -43,12 +43,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.37.4",
-            "sha256": "sha256-xNkcekxb0Aw7trBPxc0/Akb0ntx4DKM9b+i5SQju2lw=",
+            "rev": "v3.38.0",
+            "sha256": "sha256-1nqveTEYrN9kYAOMTbLPw0MFNNNbFOqej+d+aTLAZ1o=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.37.4"
+        "version": "v3.38.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -59,11 +59,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DKH861KRxZ1bXcwPPocerJZIXTmrzoSV8etRDMErzPY=",
+            "sha256": "sha256-jHbWhjvHfgtdocuuELbOwrMzL8tOQfBVdH9MxasEwGo=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.37.1/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.38.0/dist.tar.gz"
         },
-        "version": "3.37.1"
+        "version": "3.38.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -151,12 +151,12 @@
             "name": null,
             "owner": "OwO-Network",
             "repo": "DeepLX",
-            "rev": "v0.9.7",
-            "sha256": "sha256-A5mMjMaG01XmJM7eqnCV6aB2L38Z9N1NITA4d9Q3I0A=",
+            "rev": "v0.9.8",
+            "sha256": "sha256-HVLTvpjwWTRrX6xzug0lTeURLRcBwg+y5GDOcG+2+cw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.9.7"
+        "version": "v0.9.8"
     },
     "dict2xml": {
         "cargoLocks": null,

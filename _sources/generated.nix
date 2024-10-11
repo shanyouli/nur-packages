@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.37.4";
+    version = "v3.38.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.37.4";
+      rev = "v3.38.0";
       fetchSubmodules = false;
-      sha256 = "sha256-xNkcekxb0Aw7trBPxc0/Akb0ntx4DKM9b+i5SQju2lw=";
+      sha256 = "sha256-1nqveTEYrN9kYAOMTbLPw0MFNNNbFOqej+d+aTLAZ1o=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.37.1";
+    version = "3.38.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.37.1/dist.tar.gz";
-      sha256 = "sha256-DKH861KRxZ1bXcwPPocerJZIXTmrzoSV8etRDMErzPY=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.38.0/dist.tar.gz";
+      sha256 = "sha256-jHbWhjvHfgtdocuuELbOwrMzL8tOQfBVdH9MxasEwGo=";
     };
   };
   alive-progress = {
@@ -77,13 +77,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v0.9.7";
+    version = "v0.9.8";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v0.9.7";
+      rev = "v0.9.8";
       fetchSubmodules = false;
-      sha256 = "sha256-A5mMjMaG01XmJM7eqnCV6aB2L38Z9N1NITA4d9Q3I0A=";
+      sha256 = "sha256-HVLTvpjwWTRrX6xzug0lTeURLRcBwg+y5GDOcG+2+cw=";
     };
   };
   dict2xml = {
