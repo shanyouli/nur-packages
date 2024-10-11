@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4357325/noscript-11.4.40.xpi",
-    "version": "11.4.40",
-    "sha256": "1cmvmplr49pf79j5rp3cfkd9gg4aw2z2q1hk19473n2rc51asbi4",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4363712/noscript-11.4.42.xpi",
+    "version": "11.4.42",
+    "sha256": "0wh47k8qqfq54bcbpf43fm6xblr6m65nzv1hzsv9p0lkzl544bgx",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4356394/immersive_translate-1.9.7.xpi",
-    "version": "1.9.7",
-    "sha256": "02fpsbyb8n1mm4yams47abyiywcqabjbxjwysph7cyz4fp6zgskb",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4361147/immersive_translate-1.9.8.xpi",
+    "version": "1.9.8",
+    "sha256": "1vs2l1vxiyi0hsqyg0zayksyhxi9ylyj3dxixm39649m0f4m7l5x",
     "pname": "immersive-translate"
   },
   "darkreader": {
