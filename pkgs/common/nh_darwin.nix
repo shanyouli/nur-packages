@@ -22,15 +22,12 @@ in
 
     strictDeps = true;
 
-    nativeBuildInputs = [
-      installShellFiles
-      makeBinaryWrapper
-    ];
+    nativeBuildInputs = [installShellFiles makeBinaryWrapper];
 
     buildInputs = lib.optionals stdenv.isDarwin [darwin.apple_sdk.frameworks.SystemConfiguration];
     postInstall =
       ''
-        mv $out/bin/nh_darwin $out/bin/nh
+        # mv $out/bin/nh_darwin $out/bin/nh
         wrapProgram $out/bin/nh --prefix PATH : ${lib.makeBinPath runtimeDeps}
       ''
       + lib.optionalString (stdenv.buildPlatform.canExecute stdenv.hostPlatform) ''
