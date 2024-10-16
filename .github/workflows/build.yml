@@ -46,6 +46,8 @@ jobs:
           - ubuntu-latest
           - macos-latest
     runs-on: ${{ matrix.os }}
+    outputs:
+      MY_MODIFY: ${{ steps.modify_code.outputs.MY_MODIFY }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -98,18 +100,24 @@ jobs:
     - name: Build nix packages
       run: nix run .#ci
       timeout-minutes: 240
-    - name: pull
+    - name: modify code
+      id: modify_code
       run: |
-        git branch --set-upstream-to=origin/master
-        git pull --no-rebase
+        if git status | grep "modified" ; then
+          echo "MY_MODIFY=true" >> $GITHUB_ENV
+          echo "MY_MODIFY=true" >> $GITHUB_OUTPUT
+          git fetch origin
+          if git ls-remote origin refs/heads/temp-branch-${{ matrix.os }} | grep temp-branch ; then
+            git push origin --delete temp-branch-${{ matrix.os }}
+          fi
+        fi
     - name: Commit back to repository
+      if: ${{ env.MY_MODIFY  == 'true' }}
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: 'auto: update package hashes'
-    # - name: Trigger NUR update
-    #   # Don't replace <YOUR_REPO_NAME> here!
-    #   if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
-    #   run: curl -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}"
+        commit_message: 'auto: update package hashes ${{ matrix.os }}'
+        create_branch: true
+        branch: temp-branch-${{ matrix.os }}
 
   publish-stable:
     runs-on: ubuntu-latest
@@ -118,12 +126,52 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: master
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Prepare flakebot branch
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
+      - name: Merge os chanages
+        if: needs.build-packages.outputs.MY_MODIFY == 'true'
+        run: |
+          git fetch origin
+          echo "Getting information about all branches."
+          echo "Merging of branch temp-branch-macos-latest"
+          if git ls-remote origin refs/heads/temp-branch-macos-latest | grep temp-branch-macos-latest ; then
+            if git diff origin/temp-branch-macos-latest | grep "+++"; then
+              git checkout origin/temp-branch-macos-latest
+              echo "MY_MERGE_MACOS=true" >> $GITHUB_ENV
+            fi
+          fi
+      - name: merge-to-master with macos-latest
+        if: ${{ env.MY_MERGE_MACOS == 'true'}}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
+      - name: merge ubuntu chanages
+        if: needs.build-packages.outputs.MY_MODIFY == 'true'
+        run: |
+          git fetch origin
+          git checkout master
+          git pull
+          echo "Merging of branch temp-branch-ubuntu-latest"
+          if git ls-remote origin refs/heads/temp-branch-ubuntu-latest | grep temp-branch-ubuntu-latest ; then
+            if git diff origin/temp-branch-ubuntu-latest | grep "+++"; then
+              git checkout origin/temp-branch-ubuntu-latest
+              echo "MY_MERGE_LINUX=true" >> $GITHUB_ENV
+            fi
+          fi
+      - name: merge-to-master with macos-latest
+        if: ${{ env.MY_MERGE_LINUX == 'true'}}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
       - name: Install nix
         uses: cachix/install-nix-action@v30
         with:
@@ -131,7 +179,11 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: update README.md
-        run: nix run .#readme
+        run: |
+          git fetch
+          git checkout master
+          git pull
+          nix run .#readme
       - name: Push stable
         uses: ad-m/github-push-action@master
         with:
