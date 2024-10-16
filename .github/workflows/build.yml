@@ -100,15 +100,8 @@ jobs:
       timeout-minutes: 240
     - name: pull
       run: |
-        if git status | grep "modified" ; then
-          git stash && git branch --set-upstream-to=origin/master && git pull
-
-          if [[ $(git stash list) != "" ]] && [[ $(git diff --name-only stash@{0} HEAD) != "" ]]; then
-            git stash apply
-          fi
-        else
-          git branch --set-upstream-to=origin/master && git pull
-        fi
+        git branch --set-upstream-to=origin/master
+        git pull --no-rebase
     - name: Commit back to repository
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
