@@ -8,17 +8,46 @@ on:
       - main
       - master
     paths:
-      - 'pkgs/**'
+      - '**.nix'
+      - '!_sources/**.nix'
       - '!pkgs/**/update.py'
       - '!pkgs/**/update.sh'
-  # schedule:
-  #   # rebuild everyday at 2:51
-  #   # TIP: Choose a random time here so not all repositories are build at once:
-  #   # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-  #   - cron: '0 22 * * 5'
   workflow_dispatch:
 
 jobs:
+  use_branch:
+    runs-on: ubuntu-latest
+    outputs:
+      MY_TARGET_BRANCH: ${{ steps.determine_branch.outputs.runbranch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: get last commit time of master branch
+        id: get_master_time
+        run: |
+          git fetch origin master
+          MASTER_COMMIT_TIME=$(git log -1 --format=%ct origin/master)
+          echo "Current flakebot Last commit time is ${MASTER_COMMIT_TIME}"
+          echo "MASTER_COMMIT_TIME=${MASTER_COMMIT_TIME}" >> $GITHUB_ENV
+      - name: get last commit time of flakebot
+        id: get_flakebot_time
+        run: |
+          git fetch origin flakebot
+          FLAKEBOT_COMMIT_TIME=$(git log -1 --format=%ct origin/flakebot)
+          echo "Current flakebot Last commit time is ${FLAKEBOT_COMMIT_TIME}"
+          echo "FLAKEBOT_COMMIT_TIME=${FLAKEBOT_COMMIT_TIME}" >> $GITHUB_ENV
+      - name: use target branch
+        id: determine_branch
+        run: |
+          if [[ "${MASTER_COMMIT_TIME}" -gt "${FLAKEBOT_COMMIT_TIME}" ]]; then
+            echo "Will be working on master branch"
+            echo "runbranch=master" >> $GITHUB_OUTPUT
+          else
+            echo "Will be working on flakebot branch"
+            echo "runbranch=flakebot" >> $GITHUB_OUTPUT
+          fi
   build-packages:
     strategy:
       fail-fast: false
@@ -46,11 +75,15 @@ jobs:
           - ubuntu-latest
           - macos-latest
     runs-on: ${{ matrix.os }}
+    env:
+      MY_TARGET_BRANCH: ${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}
     outputs:
       MY_MODIFY: ${{ steps.modify_code.outputs.MY_MODIFY }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
     - name: Free Disk Space (Ubuntu)
       uses: jlumbroso/free-disk-space@main
       if: ${{ matrix.os == 'ubuntu-latest' }}
@@ -92,7 +125,7 @@ jobs:
       # Don't replace <YOUR_CACHIX_NAME> here!
       if: ${{ matrix.cachixName != '<YOUR_CACHIX_NAME>' }}
       with:
-        name: ${{ matrix.cachixName }}
+        name: '${{ matrix.cachixName }}'
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - name: Check evaluation
@@ -120,13 +153,16 @@ jobs:
         branch: temp-branch-${{ matrix.os }}
 
   publish-stable:
-    runs-on: ubuntu-latest
     needs:
+      - use_branch
       - build-packages
+    runs-on: ubuntu-latest
+    env:
+      MY_TARGET_BRANCH: ${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
+          ref: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Prepare flakebot branch
@@ -150,13 +186,13 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
           force: true
       - name: merge ubuntu chanages
         if: needs.build-packages.outputs.MY_MODIFY == 'true'
         run: |
           git fetch origin
-          git checkout master
+          git checkout $MY_TARGET_BRANCH
           git pull
           echo "Merging of branch temp-branch-ubuntu-latest"
           if git ls-remote origin refs/heads/temp-branch-ubuntu-latest | grep temp-branch-ubuntu-latest ; then
@@ -170,7 +206,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
           force: true
       - name: Install nix
         uses: cachix/install-nix-action@v30
@@ -181,7 +217,7 @@ jobs:
       - name: update README.md
         run: |
           git fetch
-          git checkout master
+          git checkout $MY_TARGET_BRANCH
           git pull
           nix run .#readme
       - name: Push stable

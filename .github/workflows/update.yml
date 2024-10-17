@@ -24,10 +24,11 @@ jobs:
           # FIXME: https://github.com/NixOS/nix/issues/9889
           extra_nix_config: |
             experimental-features = nix-command flakes configurable-impure-env auto-allocate-uids
-      - name: git configurations
+      - name: Prepare flakebot branch
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"
+          git checkout -B flakebot
       - name: Backup before auto-update to another branch
         uses: ad-m/github-push-action@master
         with:
@@ -36,7 +37,6 @@ jobs:
           force: true
       - name: Update and commit lockfile
         run: nix flake update --commit-lock-file
-      #   run: nix flake lock --update-input darwin --update-input devenv --update-input emacs-overlay --update-input flake-utils --update-input home-manager --update-input nix-index-database --update-input nixos-hardware --update-input nixpkgs --update-input nur --update-input treefmt-nix --update-input nvfetcher --commit-lock-file
       - name: Update nvfetcher src
         run: |
           cat > secrets.toml <<EOF
@@ -50,13 +50,23 @@ jobs:
         run: nix run .#updatePy
       - name: Current Time
         run: echo "CURRENT_TIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: flakebot
           force: true
+      - name: pull-request-action
+        uses: vsoch/pull-request-action@1.1.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PULL_REQUEST_FROM_BRANCH: 'flakebot'
+          PULL_REQUEST_BRANCH: 'master'
+          MAINTAINER_CANT_MODIFY: true
+          PASS_IF_EXISTS: true
+          PASS_ON_ERROR: true
+          PULL_REQUEST_UPDATE: true
+          PULL_REQUEST_TITLE: 'Update src and lock'
       - name: Trigger second workflow
         run: |
           curl -X POST \

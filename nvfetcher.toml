@@ -28,6 +28,7 @@ fetch.github = "delfick/python-dict2xml"
 
 [sd]
 src.github_tag = "shanyouli/sd"
+# src.git = "https://github.com/shanyouli/sd"
 fetch.github = "shanyouli/sd"
 
 
