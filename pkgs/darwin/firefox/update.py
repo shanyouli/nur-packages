@@ -43,6 +43,7 @@ def get_version() -> List:
     resp = requests.get(
         "https://product-details.mozilla.org/1.0/firefox_versions.json"
     ).json()
+
     return {
         "firefox": resp["LATEST_FIREFOX_VERSION"],
         "firefox-esr": resp["FIREFOX_ESR"],
