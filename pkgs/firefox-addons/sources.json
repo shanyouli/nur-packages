@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4361147/immersive_translate-1.9.8.xpi",
-    "version": "1.9.8",
-    "sha256": "1vs2l1vxiyi0hsqyg0zayksyhxi9ylyj3dxixm39649m0f4m7l5x",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4368755/immersive_translate-1.10.2.xpi",
+    "version": "1.10.2",
+    "sha256": "12lsbq1v8kpglbj9s03vzi0wplhhicdg3iv5cg7zkfydr7dpla43",
     "pname": "immersive-translate"
   },
   "darkreader": {
