@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2024-10-20
+
++ add: bash-env-json
+
 ## 2024-09-29
 
 + add: mkalias

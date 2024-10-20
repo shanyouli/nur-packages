@@ -241,3 +241,8 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs31.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
+
+
+["bash-env-json"]
+src.github = "tesujimath/bash-env-json"
+fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
