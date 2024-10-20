@@ -80,6 +80,21 @@
         },
         "version": "3.1.5"
     },
+    "bash-env-json": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "bash-env-json",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=",
+            "type": "url",
+            "url": "https://github.com/tesujimath/bash-env-json/raw/0.7.0/bash-env-json"
+        },
+        "version": "0.7.0"
+    },
     "bbdown": {
         "cargoLocks": null,
         "date": "2024-09-01",
@@ -450,12 +465,12 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.5.3",
-            "sha256": "sha256-qf4XAAfWWlHAnNGhXaYpnjj+2z+/lWOHaTyv8R4UDgQ=",
+            "rev": "v4.5.4",
+            "sha256": "sha256-xMbfE7bb8TMXB0CYeff+2rfcTTESajDZMBzmCxGAhis=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.5.3"
+        "version": "v4.5.4"
     },
     "httpx": {
         "cargoLocks": null,

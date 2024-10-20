@@ -44,6 +44,14 @@
       sha256 = "sha256-QuOZpmyBUNxQdgLf97eVPxBe8R+vl92qbSexy/RcTJg=";
     };
   };
+  bash-env-json = {
+    pname = "bash-env-json";
+    version = "0.7.0";
+    src = fetchurl {
+      url = "https://github.com/tesujimath/bash-env-json/raw/0.7.0/bash-env-json";
+      sha256 = "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=";
+    };
+  };
   bbdown = {
     pname = "bbdown";
     version = "99f9ed49fa81b8488928eef5aef45d4d14aeabd3";
@@ -254,13 +262,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.5.3";
+    version = "v4.5.4";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.5.3";
+      rev = "v4.5.4";
       fetchSubmodules = false;
-      sha256 = "sha256-qf4XAAfWWlHAnNGhXaYpnjj+2z+/lWOHaTyv8R4UDgQ=";
+      sha256 = "sha256-xMbfE7bb8TMXB0CYeff+2rfcTTESajDZMBzmCxGAhis=";
     };
   };
   httpx = {
