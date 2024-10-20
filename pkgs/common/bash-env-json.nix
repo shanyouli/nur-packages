@@ -17,8 +17,6 @@ in
       then source.date
       else lib.removePrefix "v" source.version;
     buildInputs = [bash jq makeWrapper];
-    dontUnpack = true;
-    dontInstall = true;
     meta = with lib; {
       description = " export of Bash environment as JSON";
       homepage = "https://github.com/tesujimath/bash-env-json";
@@ -26,7 +24,8 @@ in
     };
   } ''
      mkdir -p $out/bin
-     mv -vf $src $out/bin/${pname}
+     cp -rv $src $out/bin/${pname}
+     chmod +x $out/bin/${pname}
      patchShebangs $out/bin/${pname}
     wrapProgram $out/bin/${pname} --prefix PATH : ${lib.makeBinPath [coreutils gnused jq]}
   ''
