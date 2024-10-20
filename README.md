@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-10-18 21:36:06 UTC
+- LAST_MODIFY: 2024-10-20 16:49:35 UTC
 
 
 ## How to use
@@ -62,23 +62,24 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **54** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **55** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>21</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>22</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alist**](https://github.com/alist-org/alist)||3.38.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.91|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20241018.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
-|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
+|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.4|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
