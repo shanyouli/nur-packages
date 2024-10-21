@@ -9,8 +9,26 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  pre-work:
+    runs-on: ubuntu-latest
+    outputs:
+      updatepy: ${{ steps.check_updatePy.outputs.changed}}
+      updateNvfetcher: ${{ steps.check_nvfetcher.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: check update.pya has changed
+        id: check_updatePy
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "update.py$"; then
+             echo "changed=true" >> $GITHUB_OUTPUT
+          fi
   updatePy:
     runs-on: ubuntu-latest
+    needs: pre-work
+    if: needs.pre-work.outputs.updatepy != 'true'
     steps:
       # - uses: styfle/cancel-workflow-action@0.7.0
       #   with:
