@@ -260,15 +260,26 @@
       };
     };
   };
+  fisher = {
+    pname = "fisher";
+    version = "4.4.5";
+    src = fetchFromGitHub {
+      owner = "jorgebucaran";
+      repo = "fisher";
+      rev = "4.4.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-VC8LMjwIvF6oG8ZVtFQvo2mGdyAzQyluAGBoK8N2/QM=";
+    };
+  };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.5.4";
+    version = "v4.5.5";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.5.4";
+      rev = "v4.5.5";
       fetchSubmodules = false;
-      sha256 = "sha256-xMbfE7bb8TMXB0CYeff+2rfcTTESajDZMBzmCxGAhis=";
+      sha256 = "sha256-s67cWtf88+GJExW04DB+KWBw5ImzunA0OnXpIrJK7qw=";
     };
   };
   httpx = {

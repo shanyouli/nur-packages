@@ -1,5 +1,10 @@
 # ChangeLog
 
+## 2024-10-23 
+
++ add: fisher
++ 调整 callPkg 函数，让它更通用
+
 ## 2024-10-20
 
 + add: bash-env-json

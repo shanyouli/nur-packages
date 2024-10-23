@@ -41,13 +41,36 @@
           fi
           rm -f $NIX_LOGFILE
         done
-        # for i in {1..5}; do
-        # done
         exit 1
       '';
       devci = ''
         set -euo pipefail
-        ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/dev.nix -A cacheDevOutputs -vv -build-flags '-v -L' --show-trace 2>&1
+        NIX_LOGFILE=nix-build-uncached.log
+        for i in {1..5}; do
+          ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/dev.nix -A cacheDevOutputs -vv -build-flags '-v -L' --show-trace 2>&1 | tee $NIX_LOGFILE && exit 0
+          if grep -q "specified:" $NIX_LOGFILE; then
+            if grep -q "got:" $NIX_LOGFILE; then
+              SPECIFIED_HASH=($(grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
+              GOT_HASH=($(grep "got:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
+              for (( i=0; i<''${#SPECIFIED_HASH[@]}; i++ )); do
+                echo "::group::Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
+                echo "Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
+                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH[@]:$i:1}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
+                echo "::endgroup::"
+
+                SPECIFIED_HASH_OLD=$(nix hash convert --to nix32 "''${SPECIFIED_HASH[@]:$i:1}" || nix hash to-base32 "''${SPECIFIED_HASH[@]:$i:1}")
+                echo "::group::Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
+                echo "Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
+                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH_OLD}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
+                echo "::endgroup::"
+              done
+            fi
+          else
+            __IS_NEXT=false
+          fi
+          rm -f $NIX_LOGFILE
+        done
+        exit 1
       '';
       nvfetcher = ''
         set -euo pipefail
