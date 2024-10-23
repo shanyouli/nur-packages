@@ -45,6 +45,7 @@ with builtins; let
     # fish file -> fish-xx
 
     p = isPkg "fish-fisher";
+    # a = isPkg "alist";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;

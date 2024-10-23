@@ -60,7 +60,7 @@ in rec {
     callFishPkg = dir: name:
       callPkg' {
         inherit dir name;
-        inherit (prev.fishPlugins) buildFishPlugin fishtape_3;
+        inherit (prev.fishPlugins) buildFishPlugin fishtape_3 fishtape;
       };
     packageOverrides = pfinal: pprev: let
       callPyPkg = dir: name:
