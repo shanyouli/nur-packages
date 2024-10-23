@@ -55,7 +55,7 @@ jobs:
           extra_nix_config: |
             experimental-features = nix-command flakes configurable-impure-env auto-allocate-uids
       - name: Prepare github bot
-        id: pre_git
+        id: prev_git
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
           git config --local user.name "flakebot"

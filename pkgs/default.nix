@@ -37,8 +37,11 @@ in rec {
   overlay = final: prev: let
     sources = (import ../_sources/generated.nix) {inherit (final) fetchurl fetchFromGitHub fetchgit dockerTools;};
     fsources = builtins.fromJSON (builtins.readFile ./firefox-addons/sources.json);
-
-    callPkg = dir: name: let
+    callPkg' = {
+      dir,
+      name,
+      ...
+    } @ extraArgs: let
       package = import "${builtins.toString dir}/${name}";
       source = let
         basename = removeNixSuffix name;
@@ -47,22 +50,24 @@ in rec {
         if bsource == null
         then (getAttr basename fsources)
         else bsource;
-      args = builtins.intersectAttrs (builtins.functionArgs package) {
-        inherit sources source;
-      };
+      args = builtins.intersectAttrs (builtins.functionArgs package) (prev.lib.removeAttrs extraArgs ["dir" "name"]
+        // {
+          inherit sources source;
+        });
     in
       final.callPackage package args;
-
+    callPkg = dir: name: callPkg' {inherit dir name;};
+    callFishPkg = dir: name:
+      callPkg' {
+        inherit dir name;
+        inherit (prev.fishPlugins) buildFishPlugin fishtape_3;
+      };
     packageOverrides = pfinal: pprev: let
-      callPyPkg = dir: name: let
-        package = import "${builtins.toString dir}/${name}";
-        args = builtins.intersectAttrs (builtins.functionArgs package) {
-          inherit sources;
-          source = getAttr (removeNixSuffix name) sources;
+      callPyPkg = dir: name:
+        pfinal.toPythonModule (callPkg' {
+          inherit name dir;
           python3Packages = pfinal;
-        };
-      in
-        pfinal.toPythonModule (final.callPackage package args);
+        });
     in
       {
         # httpx = pprev.httpx.overrideAttrs (old: {
@@ -98,6 +103,7 @@ in rec {
       firefox-addons = mapPkgs ./firefox-addons callPkg;
       darwinapps = mapPkgs ./darwin callPkg;
       qbittorrent-enhanced-nox = final.qbittorrent-enhanced.override {guiSupport = false;};
+      fishPlugins = mapPkgs ./fish callFishPkg;
     };
 
   packages = pkgs: (
@@ -110,6 +116,7 @@ in rec {
       (mapPackages ./common (n: pkgs.${removeNixSuffix n}))
       // (mapPackages' ./python (n: pkgs.python3.pkgs.${removeNixSuffix n}) (n: "python-apps-${removeNixSuffix n}"))
       // (mapPackages' ./firefox-addons (n: pkgs.firefox-addons.${removeNixSuffix n}) (n: "firefox-addons-${removeNixSuffix n}"))
+      // (mapPackages' ./fish (n: pkgs.fishPlugins.${removeNixSuffix n}) (n: "fish-${removeNixSuffix n}"))
       // darwinPkgs
       // {
         qbittorrent-enhanced-nox = pkgs.qbittorrent-enhanced-nox;

@@ -190,6 +190,8 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/koekeishiya/yabai/releases/download/v$ver/yabai-v$ver.tar.gz"
 
+
+#### emacs
 ["emacs29.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
@@ -246,3 +248,10 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["bash-env-json"]
 src.github = "tesujimath/bash-env-json"
 fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
+
+#####
+# fish plugins
+
+["fisher"]
+src.github = "jorgebucaran/fisher"
+fetch.github = "jorgebucaran/fisher"

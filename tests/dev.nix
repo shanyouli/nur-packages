@@ -42,10 +42,9 @@ with builtins; let
     # darwin file --> darwin-apps-xx
     # python file --> python-apps-xx
     # firefox-addons --> firefox-addons-xx
+    # fish file -> fish-xx
 
-    # airbattery = isPkg "darwin-apps-airbattery";
-
-    p = isPkg "bash-env-json";
+    p = isPkg "fish-fisher";
   };
 in rec {
   buildPkgs = filter isBuildable nurPkgs;
