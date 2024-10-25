@@ -2,14 +2,10 @@
   lib,
   stdenv,
   source,
-  stdenvNoCC,
-  jq,
-  moreutils,
-  nodePackages,
-  cacert,
+  pnpm_9,
+  nodejs,
   makeWrapper,
-  python3,
-  npmHooks,
+  jq,
   patchelf,
 }:
 stdenv.mkDerivation (finalAttrs: {
@@ -19,64 +15,40 @@ stdenv.mkDerivation (finalAttrs: {
     then source.date
     else lib.removePrefix "v" source.version;
 
-  pnpmDeps = stdenvNoCC.mkDerivation {
-    pname = "${finalAttrs.pname}-pnpm-deps";
-    inherit (finalAttrs) src version;
-
-    nativeBuildInputs = [jq moreutils nodePackages.pnpm cacert];
-
-    installPhase = ''
-      export HOME=$(mktemp -d)
-
-      pnpm config set store-dir $out
-      pnpm install --frozen-lockfile --ignore-script
-
-      rm -rf $out/v3/tmp
-      for f in $(find $out -name "*.json"); do
-        sed -i -E -e 's/"checkedAt":[0-9]+,//g' $f
-        jq --sort-keys . $f | sponge $f
-      done
-    '';
-
-    dontBuild = true;
-    dontFixup = true;
-    outputHashMode = "recursive";
-    outputHash =
-      {
-        x86_64-linux = "sha256-jCRU54KlVLMoQcSXPc8APfDzFn+obDnJIH/JMAgmCJM=";
-        aarch64-linux = "sha256-w/xrPRWFqJFsnDuAwXjwLdclwBv2sv1VU2OcdMcfvNs=";
-        x86_64-darwin = "sha256-w/xrPRWFqJFsnDuAwXjwLdclwBv2sv1VU2OcdMcfvNs=";
-        aarch64-darwin = "sha256-urq8Zyi5vQPGW1tVwFGfgJ1NBzFjPnUAloTShUKFyjg=";
-      }
-      .${stdenv.system}
-      or (throw "Unsupported system: ${stdenv.system}");
+  pnpmDeps = pnpm_9.fetchDeps {
+    inherit (finalAttrs) pname version src;
+    hash = "sha256-VI7NdNkudS6izSOPKAndg59zUSd8/6gHG7xC7Exn0rA=";
   };
-  nativeBuildInputs = [makeWrapper python3 nodePackages.pnpm nodePackages.nodejs npmHooks.npmInstallHook patchelf];
-  preBuild = ''
-    export HOME=$(mktemp -d)
-    export STORE_PATH=$(mktemp -d)
-
-    cp -Tr "$pnpmDeps" "$STORE_PATH"
-    chmod -R +w "$STORE_PATH"
-
-    pnpm config set store-dir "$STORE_PATH"
-    pnpm install --offline --frozen-lockfile --ignore-script
-    patchShebangs node_modules/{*,.*}
-    ls
-  '';
-  postBuild = ''
-    pnpm rebuild
+  nativeBuildInputs = [makeWrapper pnpm_9.configHook nodejs jq patchelf];
+  buildPhase = ''
+    runHook preBuild
     pnpm build
+    pnpm rebuild
+    runHook postBuild
   '';
-  # postInstall = ''
-  #   tree
-  #   tree $out/
-  # '';
+  installPhase = ''
+    runHook preInstall
+    packageOutDir="$out/lib/node_modules/$(jq --raw-output '.name' package.json)"
+    mkdir -p "$packageOutDir"
+    cp -r node_modules "$packageOutDir/node_modules"
+    while IFS=" " read -ra f; do
+      cp -rv "$f" "$packageOutDir"
+    done < <(jq --raw-output '.files.[]' ./package.json)
+    while IFS=" " read -ra bin; do
+      mkdir -p "$out/bin"
+      makeWrapper ${lib.getExe nodejs}  "$out/bin/''${bin[0]}" --add-flags "$packageOutDir/''${bin[1]}"
+    done < <(jq --raw-output '(.bin | type) as $typ | if $typ == "string" then
+        .name + " " + .bin
+        elif $typ == "object" then .bin | to_entries | map(.key + " " + .value) | join("\n")
+        elif $typ == "null" then empty
+        else "invalid type " + $typ | halt_error end' ./package.json)
+    [ -f ./package.json ] && cp -rv ./package.json "$packageOutDir"
+    [ -f ./LICENSE ] && cp -rv ./LICENSE "$packageOutDir"
+    runHook postInstall
+  '';
   passthru = {
     inherit (finalAttrs) pnpmDeps;
   };
-  dontNpmPrune = true;
-  dontStrip = true;
   meta = with lib; {
     description = "🎵 一个可播放及下载音乐的 Node.js 命令行工具 ";
     homepage = "https://github.com/zonemeen/musicn";
