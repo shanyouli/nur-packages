@@ -123,6 +123,10 @@ fetch.github = "abhinav/tmux-fastcopy"
 src.github = "FelixKratz/JankyBorders"
 fetch.github = "FelixKratz/JankyBorders"
 
+[nowplaying-cli]
+src.github = "kirtan-shah/nowplaying-cli"
+fetch.github = "kirtan-shah/nowplaying-cli"
+
 [yabai-zsh-completions]
 src.git = "https://github.com/Amar1729/yabai-zsh-completions"
 fetch.github = "Amar1729/yabai-zsh-completions"
