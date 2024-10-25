@@ -119,6 +119,10 @@ src.github = "abhinav/tmux-fastcopy"
 fetch.github = "abhinav/tmux-fastcopy"
 
 ### darwin
+[borders]
+src.github = "FelixKratz/JankyBorders"
+fetch.github = "FelixKratz/JankyBorders"
+
 [yabai-zsh-completions]
 src.git = "https://github.com/Amar1729/yabai-zsh-completions"
 fetch.github = "Amar1729/yabai-zsh-completions"
