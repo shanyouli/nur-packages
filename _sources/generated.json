@@ -116,6 +116,27 @@
         },
         "version": "99f9ed49fa81b8488928eef5aef45d4d14aeabd3"
     },
+    "borders": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "borders",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "FelixKratz",
+            "repo": "JankyBorders",
+            "rev": "v1.6.0",
+            "sha256": "sha256-DX1d228UCOI+JU+RxenhiGyn3AiqpsGe0aCtr091szs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.6.0"
+    },
     "clash2singbox": {
         "cargoLocks": null,
         "date": null,
@@ -486,12 +507,12 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.5.5",
-            "sha256": "sha256-s67cWtf88+GJExW04DB+KWBw5ImzunA0OnXpIrJK7qw=",
+            "rev": "v4.5.6",
+            "sha256": "sha256-uhVIn1mMCoHL/0fGjHAp+kiyJDQcWtK1zfTHxvN7Sd4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.5.5"
+        "version": "v4.5.6"
     },
     "httpx": {
         "cargoLocks": null,
@@ -741,12 +762,12 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-4.6.7.10",
-            "sha256": "sha256-Mr376nH2pE6NMF9IdDhZULwqkRr7472OZnKO86hb6ZI=",
+            "rev": "release-5.0.0.10",
+            "sha256": "sha256-MQo5z0OKwCw5kVQKyonrZxhgAvDdevuA+RNNFf1yj10=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "release-4.6.7.10"
+        "version": "release-5.0.0.10"
     },
     "sd": {
         "cargoLocks": null,

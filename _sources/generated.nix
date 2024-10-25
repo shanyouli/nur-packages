@@ -64,6 +64,17 @@
     };
     date = "2024-09-01";
   };
+  borders = {
+    pname = "borders";
+    version = "v1.6.0";
+    src = fetchFromGitHub {
+      owner = "FelixKratz";
+      repo = "JankyBorders";
+      rev = "v1.6.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-DX1d228UCOI+JU+RxenhiGyn3AiqpsGe0aCtr091szs=";
+    };
+  };
   clash2singbox = {
     pname = "clash2singbox";
     version = "v0.1.4";
@@ -273,13 +284,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.5.5";
+    version = "v4.5.6";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.5.5";
+      rev = "v4.5.6";
       fetchSubmodules = false;
-      sha256 = "sha256-s67cWtf88+GJExW04DB+KWBw5ImzunA0OnXpIrJK7qw=";
+      sha256 = "sha256-uhVIn1mMCoHL/0fGjHAp+kiyJDQcWtK1zfTHxvN7Sd4=";
     };
   };
   httpx = {
@@ -420,13 +431,13 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-4.6.7.10";
+    version = "release-5.0.0.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-4.6.7.10";
+      rev = "release-5.0.0.10";
       fetchSubmodules = false;
-      sha256 = "sha256-Mr376nH2pE6NMF9IdDhZULwqkRr7472OZnKO86hb6ZI=";
+      sha256 = "sha256-MQo5z0OKwCw5kVQKyonrZxhgAvDdevuA+RNNFf1yj10=";
     };
   };
   sd = {
