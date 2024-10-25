@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-10-25 08:21:55 UTC
+- LAST_MODIFY: 2024-10-25 08:49:07 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **56** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **57** packages.
 
 ### common
 
@@ -99,11 +99,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **56** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>10</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.15.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**borders**](https://github.com/FelixKratz/JankyBorders)||1.6.0|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2024-03-20|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.3.1esr|Mozilla Firefox, free web browser (binary package)|
