@@ -44,7 +44,7 @@ with builtins; let
     # firefox-addons --> firefox-addons-xx
     # fish file -> fish-xx
 
-    p = isPkg "fish-fisher";
+    p = isPkg "darwin-apps-borders";
     # a = isPkg "alist";
   };
 in rec {
