@@ -19,7 +19,6 @@ stdenv.mkDerivation rec {
   ];
   installPhase = ''
     mkdir -p $out/bin
-    ls -al
     cp ./bin/borders $out/bin/
     installManPage ./docs/borders.1
   '';
