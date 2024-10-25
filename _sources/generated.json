@@ -727,6 +727,27 @@
         },
         "version": "c8f6b4e9f016945644f8b645ef308c2bd60dda20"
     },
+    "nowplaying-cli": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nowplaying-cli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kirtan-shah",
+            "repo": "nowplaying-cli",
+            "rev": "v1.2.1",
+            "sha256": "sha256-FkyrtgsGzpK2rLNr+oxfPUbX43TVXYeiBg7CN1JUg8Y=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.2.1"
+    },
     "pngpaste": {
         "cargoLocks": null,
         "date": null,

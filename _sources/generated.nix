@@ -418,6 +418,17 @@
     };
     date = "2024-10-10";
   };
+  nowplaying-cli = {
+    pname = "nowplaying-cli";
+    version = "v1.2.1";
+    src = fetchFromGitHub {
+      owner = "kirtan-shah";
+      repo = "nowplaying-cli";
+      rev = "v1.2.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-FkyrtgsGzpK2rLNr+oxfPUbX43TVXYeiBg7CN1JUg8Y=";
+    };
+  };
   pngpaste = {
     pname = "pngpaste";
     version = "0.2.3";
