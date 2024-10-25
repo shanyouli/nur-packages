@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-10-23 08:10:05 UTC
+- LAST_MODIFY: 2024-10-25 08:21:55 UTC
 
 
 ## How to use
@@ -80,7 +80,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **56** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||20241018.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.5|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
+|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.6|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
@@ -88,8 +88,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **56** 
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nh_darwin**](https://github.com/viperML/nh)||2024-10-10|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
-|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-4.6.7.10|Featureful free software BitTorrent client|
-|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-4.6.7.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.0.10|Featureful free software BitTorrent client|
+|[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.0.0.10|Featureful free software BitTorrent client|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-07-09|Firefox scripts |
