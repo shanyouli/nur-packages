@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-10-25 08:58:11 UTC
+- LAST_MODIFY: 2024-10-25 21:36:39 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **57** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **58** packages.
 
 ### common
 
@@ -77,7 +77,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **57** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.91|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20241018.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20241025.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.33|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.5.6|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
@@ -99,7 +99,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **57** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>12</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -110,6 +110,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **57** 
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.3.1esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.3.2|Simple command-line tool to create Finder aliases|
+|[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||1.2.1|macOS command-line utility for retrieving currently playing media|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**yabai-bin**](https://github.com/koekeishiya/yabai)||7.1.4|A tiling window manager for macOS based on binary space partitioning|
