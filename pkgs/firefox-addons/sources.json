@@ -72,9 +72,9 @@
     "pname": "darkreader"
   },
   "chrome-mask": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4330642/chrome_mask-4.2.0.xpi",
-    "version": "4.2.0",
-    "sha256": "1ny50llncz4sbia1nj8rwwfz65icq6qsdav2yy77ai7riijcg5cm",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4376278/chrome_mask-4.3.0.xpi",
+    "version": "4.3.0",
+    "sha256": "06dxgzvhllw7jycrjs675644dcxnp9w8i651bqf8r66cyaw1vgk3",
     "pname": "chrome-mask"
   },
   "zeroomega": {
