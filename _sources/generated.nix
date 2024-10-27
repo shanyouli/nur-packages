@@ -44,6 +44,20 @@
       sha256 = "sha256-7eKdBG/0VP5WuUH2hvid2TiUMMSlt2WORFywuA4OTes=";
     };
   };
+  antifennel = {
+    pname = "antifennel";
+    version = "a135f016414517ecb624bad26b39ed56d256beaa";
+    src = fetchgit {
+      url = "https://git.sr.ht/~technomancy/antifennel";
+      rev = "a135f016414517ecb624bad26b39ed56d256beaa";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-XynKKDyykyPM4z2ZLp9Oy8KFlEZG2iHXKMkajaS/DaE=";
+    };
+    date = "2024-09-25";
+  };
   bash-env-json = {
     pname = "bash-env-json";
     version = "0.7.0";
@@ -391,13 +405,13 @@
   };
   musicn = {
     pname = "musicn";
-    version = "v1.5.0";
+    version = "v1.5.3-beta.0";
     src = fetchFromGitHub {
       owner = "zonemeen";
       repo = "musicn";
-      rev = "v1.5.0";
+      rev = "v1.5.3-beta.0";
       fetchSubmodules = false;
-      sha256 = "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=";
+      sha256 = "sha256-loIT6Oy0TmkqtjEUMOVZEk27hr5wWPiP5WycGDXmo3s=";
     };
   };
   nh_darwin = {

@@ -80,6 +80,26 @@
         },
         "version": "3.2.0"
     },
+    "antifennel": {
+        "cargoLocks": null,
+        "date": "2024-09-25",
+        "extract": null,
+        "name": "antifennel",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "a135f016414517ecb624bad26b39ed56d256beaa",
+            "sha256": "sha256-XynKKDyykyPM4z2ZLp9Oy8KFlEZG2iHXKMkajaS/DaE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://git.sr.ht/~technomancy/antifennel"
+        },
+        "version": "a135f016414517ecb624bad26b39ed56d256beaa"
+    },
     "bash-env-json": {
         "cargoLocks": null,
         "date": null,
@@ -694,12 +714,12 @@
             "name": null,
             "owner": "zonemeen",
             "repo": "musicn",
-            "rev": "v1.5.0",
-            "sha256": "sha256-jnS3NwxguAu4SJNFTvk6HgYF0eVw8/L7qC4o1K+WVwE=",
+            "rev": "v1.5.3-beta.0",
+            "sha256": "sha256-loIT6Oy0TmkqtjEUMOVZEk27hr5wWPiP5WycGDXmo3s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.0"
+        "version": "v1.5.3-beta.0"
     },
     "nh_darwin": {
         "cargoLocks": {
