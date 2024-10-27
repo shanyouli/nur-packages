@@ -64,6 +64,10 @@ git.fetchSubmodules = false
 src.github = "OwO-Network/DeepLX"
 fetch.github = "OwO-Network/DeepLX"
 
+[antifennel]
+src.git = "https://git.sr.ht/~technomancy/antifennel"
+fetch.git = "https://git.sr.ht/~technomancy/antifennel"
+
 # [codicons]
 # src.git = "https://github.com/microsoft/vscode-codicons"
 # fetch.url = "https://github.com/microsoft/vscode-codicons/raw/$ver/dist/codicon.ttf"
@@ -73,7 +77,7 @@ src.github = "xmdhs/clash2singbox"
 fetch.github = "xmdhs/clash2singbox"
 
 [musicn]
-src.github = "zonemeen/musicn"
+src.github_tag = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
 
 [userChromeJS]
