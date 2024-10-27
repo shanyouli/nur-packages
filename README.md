@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-10-26 09:13:27 UTC
+- LAST_MODIFY: 2024-10-27 05:16:38 UTC
 
 
 ## How to use
@@ -85,7 +85,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **58** 
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
 |[**mpvc**](https://gmt4.github.io/mpvc/)||1.5-vinyl|A mpc-like control interface for mpv|
-|[**musicn**](https://github.com/zonemeen/musicn)||1.5.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
+|[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nh_darwin**](https://github.com/viperML/nh)||2024-10-10|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.0.10|Featureful free software BitTorrent client|
