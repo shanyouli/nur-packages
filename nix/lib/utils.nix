@@ -19,7 +19,7 @@ in rec {
 
   nurPkgsFn = attrs:
     flattenPkgs (listToAttrs (map (n: nameValuePair n attrs.${n})
-        (filter (n: (n: !isReserved n)) (attrNames attrs))));
+        (filter (n: !(isReserved n)) (attrNames attrs))));
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 }

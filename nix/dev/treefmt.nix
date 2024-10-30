@@ -7,9 +7,9 @@
         "hosts/**/hardware-*.nix"
         "*.gpg"
         "*.lock"
-        "orbstack.nix"
-        "generated.nix"
-        "bbdown/deps.nix"
+        "**/orbstack.nix"
+        "**/generated.nix"
+        "**/bbdown/deps.nix"
       ];
 
       programs = {

@@ -3,7 +3,7 @@
   withSystem,
   ...
 }: {
-  flake.overlays.emacs = final: prev:
+  flake.overlays.emacs = _final: prev:
     withSystem prev.stdenv.hostPlatform.system ({config, ...}: {
       inherit (config.packages) emacs emacs-git;
     });

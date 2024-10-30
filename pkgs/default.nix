@@ -77,7 +77,7 @@ in rec {
         # httpx = pprev.httpx.overrideAttrs (old: {
         #   inherit (sources.httpx) pname version src;
         # });
-        dict2xml = pprev.dict2xml.overrideAttrs (old: {
+        dict2xml = pprev.dict2xml.overrideAttrs (_old: {
           inherit (sources.dict2xml) pname version src;
         });
         # nvfetcher-bin neeed packaging

@@ -5,7 +5,7 @@
   ...
 }: {apps, ...} @ extra: let
   _buildInputs =
-    (lib.mapAttrsToList (n: v:
+    (lib.mapAttrsToList (n: _v:
       writeShellScriptBin n ''
         exec nix run .#${n} -- "$@"
       '')

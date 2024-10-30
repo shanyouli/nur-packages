@@ -3,10 +3,11 @@
     config,
     lib,
     my,
+    self',
     ...
   }: {
     devShells.default = my.make-apps-shell {
-      inherit (config) apps;
+      inherit (self') apps;
       name = "Shanyou Li";
       meta.description = "nix development environment";
       inputsFrom = lib.optionals (inputs ? treefmt-nix) [config.treefmt.build.programs];
