@@ -7,6 +7,7 @@
     pkgs,
     inputs',
     system,
+    my,
     ...
   }: let
     commands = rec {
@@ -79,45 +80,83 @@
         done
         exit 1
       '';
+    };
+    nushell-commands = rec {
       nvfetcher = ''
-        set -euo pipefail
-        keys_args=""
-        [[ -f $HOME/.config/nvfetcher.toml ]] && keys_args="-k $HOME/.config/nvfetcher.toml"
-        export NIX_PATH="nixpkgs=${inputs.nixpkgs}:''${NIX_PATH:-}"
-        export PYTHONPATH=${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages:''${PYTHONPATH:-}
-        ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $keys_args -r 10  --keep-going -j 3 --commit-changes
-      '';
-      bbdownDeps = ''
-        nix-build ./tests/ci.nix -A bbdownDeps -v
-        ./result ./pkgs/common/bbdown/deps.nix
-        if [[ $(git diff ./pkgs/common/bbdown/deps.nix) != "" ]]; then
-          git add ./pkgs/common/bbdown/deps.nix
-          git commit -m "update bbdown deps"
-        fi
-      '';
-
-      updatePy = let
-        py = pkgs.python3.withPackages (p: with p; [requests beautifulsoup4]);
-      in ''
-        find ./pkgs -iname "update.py" | while read -r f; do
-          echo "update $(echo "$f" | rev | cut -d'/' -f2 | rev) ..."
-          ${py}/bin/python3 "$f" 1
-        done
+        use std log
+        log info $"The execution file path is ($env.FILE_PWD)"
+        exit 0
+        mut key_args = [ "-r" "10" "--keep-going" "-j" "3" "--commit-changes"]
+        let nvfetcher_config = $env.HOME | path join ".config" "nvfetcher.toml"
+        let ccommit = git rev-parse --short=7 HEAD
+        if ($nvfetcher_config | path exists) {
+          $key_args = $key_args | append "-k"
+          $key_args = $key_args | append $nvfetcher_config
+        }
+        let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -i NIX_PATH | is-empty) {
+            ""
+            } else {
+             ":" + $env.NIX_PATH
+            })
+        let pythonpath = "${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages" + (
+           if ($env | get -i PYTHONPATH | is-empty) {
+             ""
+           } else {
+             ":" + $env.PYTHONPATH
+           })
+        with-env {PYTHONPATH: $pythonpath, NIX_PATH: $nix_path } {
+          print $"::group::(ansi green_underline)Update source by nvfetcher(ansi reset)..."
+          ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $keys_args -r 10  --keep-going -j 3 --commit-changes
+          print "::endgroup::"
+        }
+        if ((git re-parse --short=7 HEAD) != $ccommit) {
+          if (git log HEAD^..HEAD | str contains bbdown) {
+            print $"::group::(ansi green_underline)create bbdown deps update script(ansi reset)..."
+            ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.bbdown.fetch-deps --skip-cached --no-nom
+            print "::endgroup::"
+            print $"::group::(ansi green_underline)update bbdown deps(ansi reset)..."
+            if ("./result-" | path exists ) {
+              ./result- ./pkgs/common/bbdown/deps.nix
+            } else if ("./result" | path exists ) {
+              ./result ./pkgs/common/bbdown/deps.nix
+            }
+            print "::endgroup::"
+          }
+          print "::group::commit bbdown deps"
+          if ((git diff ./pkgs/common/bbdown/deps.nix) != "") {
+            git add ./pkgs/common/bbdown/deps.nix
+            git commit -m "update bbdown deps"
+          }
+          print "::endgroup::"
+        }
       '';
       upFlake = ''
-        set -euo pipefail
         nix flake update
       '';
       readme = ''
         ${pkgs.python3}/bin/python3 ./tools/write_readme.py
       '';
+      updatePy = let
+        py = pkgs.python3.withPackages (p: with p; [requests beautifulsoup4]);
+      in ''
+        for i in (^find ./pkgs -name "update.py" | lines ) {
+          print $"::group::(ansi green_underline)Update ($i | path dirname  | path basename)(ansi reset)..."
+          ${py}/bin/python3 $i 1
+          print "::endgroup::"
+        }
+      '';
     };
   in rec {
     apps =
-      lib.mapAttrs (n: v: {
-        type = "app";
-        program = pkgs.writeShellScriptBin n v;
-      })
-      commands;
+      (lib.mapAttrs (n: v: {
+          type = "app";
+          program = pkgs.writeShellScriptBin n v;
+        })
+        commands)
+      // (lib.mapAttrs (n: v: {
+          type = "app";
+          program = my.writeNuScriptBin n v;
+        })
+        nushell-commands);
   };
 }

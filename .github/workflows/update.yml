@@ -44,8 +44,6 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
           nix run .#nvfetcher
-      - name: update bbdown src
-        run: nix run .#bbdownDeps
       - name: update src by update.py
         run: nix run .#updatePy
       - name: Current Time
