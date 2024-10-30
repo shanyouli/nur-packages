@@ -6,6 +6,7 @@
   perSystem = {
     pkgs,
     inputs',
+    system,
     ...
   }: let
     commands = rec {
@@ -21,7 +22,7 @@
           __IS_NEXT=false
           TRY_NUM=$(( TRY_NUM + 1 ))
           echo "::group::Try $TRY_NUM: Building packages with nix-fast-build"
-          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${builtins.currentSystem} --skip-cached --no-nom 2>&1 | tee $NIX_LOGFILE && exit 0
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom 2>&1 | tee $NIX_LOGFILE && exit 0
           echo "::endgroup::"
 
           if grep -q "specified:" $NIX_LOGFILE; then
