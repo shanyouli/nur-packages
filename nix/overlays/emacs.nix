@@ -5,8 +5,7 @@
 }: {
   flake.overlays.emacs = final: prev:
     withSystem prev.stdenv.hostPlatform.system ({config, ...}: {
-      emacs = config.packages.emacs;
-      emacsGit = config.packages.emacsGit;
+      inherit (config.packages) emacs emacs-git;
     });
 
   perSystem = {
@@ -49,7 +48,7 @@
     emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
     emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
   in {
-    packages.emacsGit = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
+    packages.emacs-git = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
     packages.emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
   };
 }

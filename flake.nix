@@ -8,30 +8,41 @@
       url = "github:edolstra/flake-compat";
       flake = false;
     };
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
 
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
-
-    nvfetcher.url = "github:berberman/nvfetcher";
-    nvfetcher.inputs.nixpkgs.follows = "nixpkgs";
-    nvfetcher.inputs.flake-utils.follows = "flake-utils";
-    nvfetcher.inputs.flake-compat.follows = "flake-compat";
-
-    pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
-    pre-commit-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
-    pre-commit-hooks-nix.inputs.nixpkgs-stable.follows = "nixpkgs-stable";
-    pre-commit-hooks-nix.inputs.flake-compat.follows = "flake-compat";
-
-    emacs-overlay.url = "github:nix-community/emacs-overlay/master";
-    emacs-overlay.inputs.nixpkgs.follows = "nixpkgs";
-    emacs-overlay.inputs.nixpkgs-stable.follows = "nixpkgs-stable";
-    emacs-overlay.inputs.flake-utils.follows = "flake-utils";
+    nvfetcher = {
+      url = "github:berberman/nvfetcher";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+      inputs.flake-compat.follows = "flake-compat";
+    };
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    git-hooks-nix = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs-stable.follows = "nixpkgs-stable";
+      inputs.flake-compat.follows = "flake-compat";
+    };
+    emacs-overlay = {
+      url = "github:nix-community/emacs-overlay/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs-stable.follows = "nixpkgs-stable";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
     # @see https://github.com/nix-community/emacs-overlay/issues/275
     # emacs-src.url = "github:emacs-mirror/emacs/emacs-29";
     # emacs-src.flake = false;
-    nix-index-database.url = "github:Mic92/nix-index-database";
-    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = {
     self,
@@ -39,16 +50,24 @@
     flake-parts,
     ...
   } @ inputs: let
+    inherit (inputs.nixpkgs.lib) filterAttrs mapAttrsToList hasSuffix hasPrefix;
+    filterFn = path:
+      filterAttrs (name: type:
+        (type == "directory" && (builtins.pathExists "${path}/${name}/default.nix"))
+        || (type == "regular" && hasSuffix ".nix" name && name != "default.nix" && !(hasPrefix "_" name)))
+      (builtins.readDir path);
+    importsFn = path: mapAttrsToList (k: _: "${path}/${k}") (filterFn path);
+
     this = import ./pkgs;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
-      imports = [
-        ./flake-modules/_internal/commands.nix
-        ./flake-modules/_internal/fmt.nix
-        ./flake-modules/_internal/emacs.nix
-        ./flake-modules/_internal/nix-index.nix
-      ];
-      debug = true;
+      imports =
+        [
+          ./flake-modules/_internal/commands.nix
+          ./flake-modules/_internal/fmt.nix
+        ]
+        ++ importsFn (builtins.toString ./nix);
+      # debug = true;
       systems = [
         "x86_64-linux"
         "aarch64-linux"
