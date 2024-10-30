@@ -14,7 +14,7 @@
     then "firefox-esr"
     else "firefox";
   source = builtins.fromJSON (builtins.readFile ./sources.json);
-  version = source."${pname}".version;
+  inherit (source."${pname}") version;
   src = fetchurl {
     inherit (source."${pname}") url sha256;
   };

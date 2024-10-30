@@ -1,6 +1,6 @@
 {inputs, ...}: {
   imports = [inputs.git-hooks-nix.flakeModule];
-  preSystem.pre-commit = {
+  perSystem.pre-commit = {
     check.enable = true;
     settings = {
       excludes = ["generated.nix" "bbdown/deps.nix$"];
@@ -15,7 +15,9 @@
         };
         statix = {
           enable = true;
-          ignore = ["orbstack.nix" "generated.nix" "deps.nix"];
+          settings = {
+            ignore = ["orbstack.nix" "generated.nix" "deps.nix"];
+          };
         };
 
         ruff.enable = true;

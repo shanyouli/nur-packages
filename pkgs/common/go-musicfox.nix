@@ -18,8 +18,7 @@ buildGoModule rec {
   vendorHash = null;
   subPackages = ["cmd/musicfox.go"];
   buildInputs =
-    []
-    ++ lib.optionals stdenv.isDarwin [
+    lib.optionals stdenv.isDarwin [
       darwin.apple_sdk.frameworks.AudioToolbox
       darwin.apple_sdk.frameworks.AppKit
     ]

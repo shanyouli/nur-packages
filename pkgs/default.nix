@@ -1,11 +1,15 @@
 let
   hasNixSuffix = str: let
     sLen = builtins.stringLength str;
-  in (sLen > 4 && builtins.substring (sLen - 4) sLen str == ".nix");
+  in
+    if sLen > 4
+    then (builtins.substring (sLen - 4) sLen str) == ".nix"
+    else false;
+
   removeNixSuffix = str: let
     sLen = builtins.stringLength str;
   in
-    if (sLen > 4 && builtins.substring (sLen - 4) sLen str == ".nix")
+    if (sLen > 4 && (builtins.substring (sLen - 4) sLen str) == ".nix")
     then builtins.substring 0 (sLen - 4) str
     else str;
 
@@ -119,7 +123,7 @@ in rec {
       // (mapPackages' ./fish (n: pkgs.fishPlugins.${removeNixSuffix n}) (n: "fish-${removeNixSuffix n}"))
       // darwinPkgs
       // {
-        qbittorrent-enhanced-nox = pkgs.qbittorrent-enhanced-nox;
+        inherit (pkgs) qbittorrent-enhanced-nox;
       }
   );
 }
