@@ -1,11 +1,12 @@
 {inputs, ...}: {
   perSystem = {
     config,
-    pkgs,
     lib,
+    my,
     ...
   }: {
-    devShells.default = pkgs.mkShell {
+    devShells.default = my.make-apps-shell {
+      inherit (config) apps;
       name = "Shanyou Li";
       meta.description = "nix development environment";
       inputsFrom = lib.optionals (inputs ? treefmt-nix) [config.treefmt.build.programs];

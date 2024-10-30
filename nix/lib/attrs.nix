@@ -16,7 +16,7 @@ with lib; rec {
   # mergeAttrs' :: listOf attrs -> attrs
   # will deeply merge attrsets (left -> attrs)
   # eg: [{a = 1; b = 2;} {b = 3; c = 4;}] -> {a = 1; b = 3; c = 4;}
-  mergeAttrs = attrList: let
+  mergeAttrs' = attrList: let
     f = attrPath:
       zipAttrsWith (n: values:
         if (tail values) == []

@@ -61,7 +61,7 @@
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = moduleFilesRec ./nix;
-      # debug = true;
+      debug = true;
       systems = [
         "x86_64-linux"
         "aarch64-linux"

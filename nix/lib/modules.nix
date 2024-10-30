@@ -4,6 +4,7 @@
   mapFilterAttrs' = f: pred: attrs: (filterAttrs pred (mapAttrs' f attrs));
   isNixFile = n: v: v == "regular" && n != "default.nix" && (hasSuffix ".nix" n) && !(hasPrefix "_" n);
 in rec {
+  relativeRoot = lib.path.append ../../.;
   # fileFn :: 将文件作为一个参数调用该 fn 函数
   fileFn = fn: f: let
     fpath = toString f;
@@ -57,7 +58,7 @@ in rec {
 
   # mapModules :: 对获取的 nix attrs 执行函数，不能修改 k 值，仅可以修改 v 值
   # dir -> attr -> attr (name 不变， value 可以变化)
-  mapModules = dir: fn: mapAttrs fn (moduleFiles dir);
+  mapModules = dir: fn: mapAttrs (_: v: (fn v)) (moduleFiles dir);
   mapModules' = dir: fn: mapAttrs' fn (moduleFiles dir);
 
   # mapModulesRec' :: 对获取的所有 nix 路径，执行 函数

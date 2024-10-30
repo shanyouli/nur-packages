@@ -4,7 +4,6 @@
   ...
 }: {
   perSystem = {
-    config,
     pkgs,
     inputs',
     ...
@@ -105,8 +104,6 @@
         ${pkgs.python3}/bin/python3 ./tools/write_readme.py
       '';
     };
-
-    makeAppsShell = pkgs.callPackage ../../lib/make-apps-shell.nix {};
   in rec {
     apps =
       lib.mapAttrs (n: v: {
@@ -114,11 +111,5 @@
         program = pkgs.writeShellScriptBin n v;
       })
       commands;
-
-    devShells.default = makeAppsShell {
-      inherit apps;
-      shellHook = config.pre-commit.installationScript;
-      nativeBuildInputs = [config.pre-commit.settings.package];
-    };
   };
 }
