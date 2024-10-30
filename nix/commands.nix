@@ -16,13 +16,21 @@
 
         # Workaround https://github.com/NixOS/nix/issues/6572
         __IS_NEXT=true
+        TRY_NUM=0
         while [[ "''${__IS_NEXT}" == "true" ]]; do
-          ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/ci.nix -A cacheOutputs -vv -build-flags '-v -L' --show-trace 2>&1 | tee $NIX_LOGFILE && exit 0
+          __IS_NEXT=false
+          TRY_NUM=$(( TRY_NUM + 1 ))
+          echo "::group::Try $TRY_NUM: Building packages with nix-fast-build"
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${builtins.currentSystem} --skip-cached --no-nom 2>&1 | tee $NIX_LOGFILE && exit 0
+          echo "::endgroup::"
+
           if grep -q "specified:" $NIX_LOGFILE; then
             if grep -q "got:" $NIX_LOGFILE; then
               SPECIFIED_HASH=($(grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
               GOT_HASH=($(grep "got:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
+
               for (( i=0; i<''${#SPECIFIED_HASH[@]}; i++ )); do
+                __IS_NEXT=true
                 echo "::group::Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
                 echo "Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
                 ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH[@]:$i:1}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
@@ -35,11 +43,10 @@
                 echo "::endgroup::"
               done
             fi
-          else
-            __IS_NEXT=false
           fi
           rm -f $NIX_LOGFILE
         done
+
         exit 1
       '';
       devci = ''
