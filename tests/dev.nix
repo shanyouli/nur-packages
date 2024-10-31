@@ -17,7 +17,7 @@ with builtins; let
     # firefox-addons --> firefox-addons-xx
     # fish file -> fish-xx
 
-    p = isPkg "darwin-apps-nowplaying-cli";
+    p = isPkg "deeplx";
     # a = isPkg "alist";
   };
 in rec {

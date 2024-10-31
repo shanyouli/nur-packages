@@ -8,80 +8,126 @@
     inputs',
     system,
     my,
+    config,
     ...
   }: let
     commands = rec {
       ci = ''
-        set -euo pipefail
-
-        NIX_LOGFILE=nix-build-uncached.log
-
+        const NIX_LOGFILE = "nix-build-uncached.log"
         # Workaround https://github.com/NixOS/nix/issues/6572
-        __IS_NEXT=true
-        TRY_NUM=0
-        while [[ "''${__IS_NEXT}" == "true" ]]; do
-          __IS_NEXT=false
-          TRY_NUM=$(( TRY_NUM + 1 ))
-          echo "::group::Try $TRY_NUM: Building packages with nix-fast-build"
-          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom 2>&1 | tee $NIX_LOGFILE && exit 0
-          echo "::endgroup::"
 
-          if grep -q "specified:" $NIX_LOGFILE; then
-            if grep -q "got:" $NIX_LOGFILE; then
-              SPECIFIED_HASH=($(grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
-              GOT_HASH=($(grep "got:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
+        def nixVersion>= [v: string] -> bool  {
+          let currentVersion = nix --version | cut -d" " -f3 | split row "."
+          let vList = $v | split row "."
+          for i in 0..($vList | length) {
+            if (($currentVersion | get $i) >= ($vList | get $i)) {
+              return true
+            }
+          }
+        }
 
-              for (( i=0; i<''${#SPECIFIED_HASH[@]}; i++ )); do
-                __IS_NEXT=true
-                echo "::group::Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
-                echo "Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
-                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH[@]:$i:1}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
-                echo "::endgroup::"
-
-                SPECIFIED_HASH_OLD=$(nix hash convert --to nix32 "''${SPECIFIED_HASH[@]:$i:1}" || nix hash to-base32 "''${SPECIFIED_HASH[@]:$i:1}")
-                echo "::group::Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
-                echo "Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
-                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH_OLD}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
-                echo "::endgroup::"
-              done
-            fi
-          fi
-          rm -f $NIX_LOGFILE
-        done
-
-        exit 1
+        mut is_next = "true"
+        mut try_num = 0
+        while ($is_next == "true") {
+          $is_next = "false"
+          $try_num = $try_num + 1
+          print $"::group::Try (ansi u)($try_num)(ansi reset): Building packages with nix-fast-build"
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom  | tee -e {save -f $NIX_LOGFILE}
+          print "::endgroup::"
+          let last_10 = ^tail -n 10 $NIX_LOGFILE
+          if (not ($last_10 | parse -r 'ERROR:.*exited with [1-9]+' | is-empty)) {
+            let SPECIFIED_HASH = (grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim )
+            if ($SPECIFIED_HASH | is-empty) {
+              print $"Please check the script for problems, non-hash errors"
+              rm -rf $NIX_LOGFILE
+              exit 1
+            }
+            let GOT_HASH = (grep "got:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim)
+            for i in 0..(($SPECIFIED_HASH | length) - 1) {
+              let old_hash = $SPECIFIED_HASH | get $i
+              let new_hash = $GOT_HASH | get $i
+              let old_hashx = (if (nixVersion>= 2.20.0) {
+                    nix hash convert --to nix32 $old_hash
+                  } else {
+                    nix hash to-base32 $old_hash
+                  })
+              print $"::group::Auto replace ($old_hash) with ($new_hash)"
+              for f in (^find pkgs -name "*.nix" | lines) {
+                if (open $f | str contains $old_hash) {
+                  ${pkgs.gnused}/bin/sed -i $"s#($old_hash)#($new_hash)#g" $f
+                } else if (open $f | str contains $old_hashx) {
+                  ${pkgs.gnused}/bin/sed -i $"s#($old_hashx)#($new_hash)#g" $f
+                }
+              }
+              print "::endgroup::"
+            }
+            rm -f $NIX_LOGFILE
+            $is_next = "true"
+          }
+        }
       '';
       devci = ''
-        set -euo pipefail
-        NIX_LOGFILE=nix-build-uncached.log
-        for i in {1..5}; do
-          ${pkgs.nix-build-uncached}/bin/nix-build-uncached tests/dev.nix -A cacheDevOutputs -vv -build-flags '-v -L' --show-trace 2>&1 | tee $NIX_LOGFILE && exit 0
-          if grep -q "specified:" $NIX_LOGFILE; then
-            if grep -q "got:" $NIX_LOGFILE; then
-              SPECIFIED_HASH=($(grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
-              GOT_HASH=($(grep "got:" $NIX_LOGFILE | cut -d":" -f2 | xargs))
-              for (( i=0; i<''${#SPECIFIED_HASH[@]}; i++ )); do
-                echo "::group::Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
-                echo "Auto replace ''${SPECIFIED_HASH[@]:$i:1} with ''${GOT_HASH[@]:$i:1}"
-                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH[@]:$i:1}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
-                echo "::endgroup::"
-
-                SPECIFIED_HASH_OLD=$(nix hash convert --to nix32 "''${SPECIFIED_HASH[@]:$i:1}" || nix hash to-base32 "''${SPECIFIED_HASH[@]:$i:1}")
-                echo "::group::Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
-                echo "Auto replace ''${SPECIFIED_HASH_OLD} with ''${GOT_HASH[@]:$i:1}"
-                ${pkgs.gnused}/bin/sed -i "s#''${SPECIFIED_HASH_OLD}#''${GOT_HASH[@]:$i:1}#g" $(find pkgs/ -name \*.nix) || true
-                echo "::endgroup::"
-              done
-            fi
-          else
-            __IS_NEXT=false
-          fi
-          rm -f $NIX_LOGFILE
-        done
-        exit 1
+        let DEFAULT_APPS = ${my.toNu (builtins.attrNames config.packages)}
+        let dev_apps = open ./tests/dev.yaml
+        if (not ($dev_apps | get dev)) {
+          print $"No need to build dev packages."
+          exit 0
+        }
+        let dev_apps = $dev_apps | get apps | filter {|x| $x in $DEFAULT_APPS}
+        const NIX_LOGFILE = "nix-build-uncached.log"
+        def nixVersion>= [v: string] -> bool  {
+          let currentVersion = nix --version | cut -d" " -f3 | split row "."
+          let vList = $v | split row "."
+          for i in 0..($vList | length) {
+            if (($currentVersion | get $i) >= ($vList | get $i)) {
+              return true
+            }
+          }
+        }
+        def build [s: string ] {
+          print $"::group::Building (ansi u)($s)(ansi reset) package with nix-fast-build"
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($s) --skip-cached --no-nom  | tee -e {save -f $NIX_LOGFILE}
+          print $"::endgroup::"
+          let last_10 = ^tail -n 10 $NIX_LOGFILE
+          if (not ($last_10 | parse -r 'ERROR:.*exited with [1-9]+' | is-empty )) {
+            let SPECIFIED_HASH = (grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim )
+            if ($SPECIFIED_HASH | is-empty) {
+              print $"Please check the script for problems, non-hash errors"
+              rm -rf $NIX_LOGFILE
+              exit 1
+            }
+            let GOT_HASH = (grep "got:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim)
+            for i in 0..(($SPECIFIED_HASH | length) - 1) {
+              let old_hash = $SPECIFIED_HASH | get $i
+              let new_hash = $GOT_HASH | get $i
+              let old_hashx = (if (nixVersion>= 2.20.0) {
+                    nix hash convert --to nix32 $old_hash
+                  } else {
+                    nix hash to-base32 $old_hash
+                  })
+              print $"::group::Auto replace ($old_hash) with ($new_hash)"
+              for f in (^find pkgs -name "*.nix" | lines) {
+                if (open $f | str contains $old_hash) {
+                  ${pkgs.gnused}/bin/sed -i $"s#($old_hash)#($new_hash)#g" $f
+                } else if (open $f | str contains $old_hashx) {
+                  ${pkgs.gnused}/bin/sed -i $"s#($old_hashx)#($new_hash)#g" $f
+                }
+              }
+              print "::endgroup::"
+            }
+            rm -f $NIX_LOGFILE
+          } else {
+            true
+          }
+        }
+        for i in $dev_apps {
+          for j in 1..3 {
+            if (build $i) {
+              break
+            }
+          }
+        }
       '';
-    };
-    nushell-commands = rec {
       nvfetcher = ''
         use std log
         log info $"The execution file path is ($env.FILE_PWD)"
@@ -148,15 +194,10 @@
     };
   in rec {
     apps =
-      (lib.mapAttrs (n: v: {
-          type = "app";
-          program = pkgs.writeShellScriptBin n v;
-        })
-        commands)
-      // (lib.mapAttrs (n: v: {
-          type = "app";
-          program = my.writeNuScriptBin n v;
-        })
-        nushell-commands);
+      lib.mapAttrs (n: v: {
+        type = "app";
+        program = my.writeNuScriptBin n v;
+      })
+      commands;
   };
 }

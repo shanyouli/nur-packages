@@ -1,0 +1,8 @@
+# darwin file -> darwin-apps-xx
+# python file -> python-apps-xx
+# firefox-addons -> firefox-addons-xx
+# fish file -> fish-xx
+dev: true
+apps:
+  - deeplx
+  - avsd
