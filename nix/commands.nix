@@ -32,14 +32,17 @@
           $is_next = "false"
           $try_num = $try_num + 1
           print $"::group::Try (ansi u)($try_num)(ansi reset): Building packages with nix-fast-build"
-          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom  | tee -e {save -f $NIX_LOGFILE}
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom out+err>| tee {save -f $NIX_LOGFILE}
           print "::endgroup::"
           let last_10 = ^tail -n 10 $NIX_LOGFILE
+          if ($last_10 | str contains "nix-fast-build: error:") {
+            print $"nix-fast-build commands error, Please Checking the nix-fast-build command line"
+          }
           if (not ($last_10 | parse -r 'ERROR:.*exited with [1-9]+' | is-empty)) {
             let SPECIFIED_HASH = (grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim )
             if ($SPECIFIED_HASH | is-empty) {
               print $"Please check the script for problems, non-hash errors"
-              rm -rf $NIX_LOGFILE
+              # rm -rf $NIX_LOGFILE
               exit 1
             }
             let GOT_HASH = (grep "got:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim)
@@ -86,7 +89,7 @@
         }
         def build [s: string ] {
           print $"::group::Building (ansi u)($s)(ansi reset) package with nix-fast-build"
-          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($s) --skip-cached --no-nom  | tee -e {save -f $NIX_LOGFILE}
+          ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($s) --skip-cached --no-nom out+err>| tee {save -f $NIX_LOGFILE}
           print $"::endgroup::"
           let last_10 = ^tail -n 10 $NIX_LOGFILE
           if (not ($last_10 | parse -r 'ERROR:.*exited with [1-9]+' | is-empty )) {
