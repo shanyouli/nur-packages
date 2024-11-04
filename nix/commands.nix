@@ -119,6 +119,7 @@
               print "::endgroup::"
             }
             rm -f $NIX_LOGFILE
+            false
           } else {
             true
           }
