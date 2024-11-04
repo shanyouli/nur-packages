@@ -253,9 +253,7 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 src.github = "tesujimath/bash-env-json"
 fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
 
-#####
-# fish plugins
-
+#### fish plugins
 ["fisher"]
 src.github = "jorgebucaran/fisher"
 fetch.github = "jorgebucaran/fisher"
