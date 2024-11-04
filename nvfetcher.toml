@@ -213,10 +213,6 @@ fetch.url = "https://github.com/koekeishiya/yabai/releases/download/v$ver/yabai-
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
 
-["emacs29.poll"]
-src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
-fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-29/poll.patch"
-
 ["emacs29.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-29/round-undecorated-frame.patch"
@@ -233,9 +229,6 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
 
-["emacs30.poll"]
-src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
-fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/poll.patch"
 
 ["emacs30.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
@@ -248,10 +241,6 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs31.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
-
-["emacs31.poll"]
-src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
-fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/poll.patch"
 
 ["emacs31.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"

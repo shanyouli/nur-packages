@@ -36,7 +36,6 @@
             srcs."emacs${version}.role-patch".src
             srcs."emacs${version}.system-appearance".src
             srcs."emacs${version}.round-undecorated-frame".src
-            srcs."emacs${version}.poll".src
           ]
           ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
             srcs."emacs${version}.no-frame-refocus-cocoa".src
