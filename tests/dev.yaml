@@ -2,7 +2,6 @@
 # python file -> python-apps-xx
 # firefox-addons -> firefox-addons-xx
 # fish file -> fish-xx
-dev: false
+dev: true
 apps:
-  - deeplx
-  - avsd
+  - singboxp
