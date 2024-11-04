@@ -6,6 +6,10 @@
 fetch.github = "CharlesPikachu/musicdl"
 src.git = "https://github.com/CharlesPikachu/musicdl"
 
+[singboxp]
+fetch.github = "PuerNya/sing-box"
+src.github = "https://github.com/PuerNya/sing-box"
+
 [about-time]
 src.pypi = "about-time"
 fetch.pypi = "about-time"
