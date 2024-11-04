@@ -49,6 +49,7 @@ jobs:
             echo "runbranch=flakebot" >> $GITHUB_OUTPUT
           fi
   build-packages:
+    needs: use_branch
     strategy:
       fail-fast: false
       matrix:
