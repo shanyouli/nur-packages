@@ -207,6 +207,9 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/koekeishiya/yabai/releases/download/v$ver/yabai-v$ver.tar.gz"
 
+["bash-env-json"]
+src.github = "tesujimath/bash-env-json"
+fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
 
 #### emacs
 ["emacs29.role-patch"]
@@ -248,10 +251,6 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs31.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
-
-["bash-env-json"]
-src.github = "tesujimath/bash-env-json"
-fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
 
 #### fish plugins
 ["fisher"]
