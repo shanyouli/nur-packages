@@ -6,9 +6,6 @@
 fetch.github = "CharlesPikachu/musicdl"
 src.git = "https://github.com/CharlesPikachu/musicdl"
 
-[singboxp]
-fetch.github = "PuerNya/sing-box"
-src.github = "https://github.com/PuerNya/sing-box"
 
 [about-time]
 src.pypi = "about-time"
@@ -79,6 +76,11 @@ fetch.git = "https://git.sr.ht/~technomancy/antifennel"
 [clash2singbox]
 src.github = "xmdhs/clash2singbox"
 fetch.github = "xmdhs/clash2singbox"
+
+
+[singboxp]
+fetch.github = "PuerNya/sing-box"
+src.git = "https://github.com/PuerNya/sing-box"
 
 [musicn]
 src.github_tag = "zonemeen/musicn"

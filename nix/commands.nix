@@ -131,16 +131,22 @@
           }
         }
       '';
-      nvfetcher = ''
+      nvfetcher = let
+        nvfetcher_bin = with pkgs.haskell.lib;
+          overrideCabal
+          (justStaticExecutables inputs'.nvfetcher.packages.nvfetcher-lib)
+          (drv: {
+            disallowGhcReference = false;
+          });
+      in ''
         use std log
         log info $"The execution file path is ($env.FILE_PWD)"
-        exit 0
-        mut key_args = [ "-r" "10" "--keep-going" "-j" "3" "--commit-changes"]
+        let key_args = [ "-r" "10"  "--keep-going" "-j" "3" "--commit-changes"]
         let nvfetcher_config = $env.HOME | path join ".config" "nvfetcher.toml"
         let ccommit = git rev-parse --short=7 HEAD
         if ($nvfetcher_config | path exists) {
-          $key_args = $key_args | append "-k"
-          $key_args = $key_args | append $nvfetcher_config
+          let key_args = $key_args | append "-k"
+          let key_args = $key_args | append $nvfetcher_config
         }
         let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -i NIX_PATH | is-empty) {
             ""
@@ -155,7 +161,8 @@
            })
         with-env {PYTHONPATH: $pythonpath, NIX_PATH: $nix_path } {
           print $"::group::(ansi green_underline)Update source by nvfetcher(ansi reset)..."
-          ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $keys_args -r 10  --keep-going -j 3 --commit-changes
+          print $env.PWD
+          ${nvfetcher_bin}/bin/nvfetcher ...$key_args
           print "::endgroup::"
         }
         if ((git re-parse --short=7 HEAD) != $ccommit) {
