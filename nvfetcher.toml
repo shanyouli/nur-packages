@@ -77,7 +77,6 @@ fetch.git = "https://git.sr.ht/~technomancy/antifennel"
 src.github = "xmdhs/clash2singbox"
 fetch.github = "xmdhs/clash2singbox"
 
-
 [singboxp]
 fetch.github = "PuerNya/sing-box"
 src.git = "https://github.com/PuerNya/sing-box"
