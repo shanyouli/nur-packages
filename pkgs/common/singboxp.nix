@@ -14,7 +14,7 @@ buildGoModule rec {
     then source.date
     else lib.removePrefix "v" source.version;
 
-  vendorHash = "sha256-7GQTsicl420bXUPT09sBn+OLBA5Ppi8OPWJys8mNe+c=";
+  vendorHash = "sha256-d2qjuMXZ5M2t6qzDRQiFtHBY9FWdOxfhnIYKWJWyJkQ=";
 
   tags = [
     "with_quic"
