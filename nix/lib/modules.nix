@@ -22,7 +22,7 @@ in rec {
       path = "${toString dir}/${n}";
     in
       if v == "directory" && pathExists "${path}/default.nix"
-      then nameValuePair n "${path}/default.nix"
+      then nameValuePair n "${path}"
       else if (isNixFile n v)
       then nameValuePair (removeSuffix ".nix" n) path
       else nameValuePair "" null)
@@ -58,7 +58,7 @@ in rec {
 
   # mapModules :: 对获取的 nix attrs 执行函数，不能修改 k 值，仅可以修改 v 值
   # dir -> attr -> attr (name 不变， value 可以变化)
-  mapModules = dir: fn: mapAttrs (_: v: (fn v)) (moduleFiles dir);
+  mapModules = dir: fn: mapAttrs fn (moduleFiles dir);
   mapModules' = dir: fn: mapAttrs' fn (moduleFiles dir);
 
   # mapModulesRec' :: 对获取的所有 nix 路径，执行 函数

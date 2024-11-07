@@ -40,7 +40,7 @@
 in {
   flake = {
     lib = let
-      libModules = sortLibsByDeps (mapModules ./. import);
+      libModules = sortLibsByDeps (mapModules ./. (_: v: (import v)));
       libs =
         foldl libConcat {
           inherit lib inputs;
@@ -50,7 +50,7 @@ in {
     in
       libs // (mergeAttrs' (attrValues libs));
     my = let
-      libs = makeExtensible (self: mapModules ./. (file: import file {inherit lib inputs self;}));
+      libs = makeExtensible (self: mapModules ./. (_: file: import file {inherit lib inputs self;}));
     in
       libs.extend (_self: prev: foldr (a: b: a // b) {} (attrValues prev));
   };

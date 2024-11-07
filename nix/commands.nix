@@ -133,6 +133,7 @@
         }
       '';
       nvfetcher = let
+        #see @https://discourse.nixos.org/t/what-does-error-x-is-not-allowed-to-refer-to-the-following-paths-mean-exactly/50680
         nvfetcher_bin = with pkgs.haskell.lib;
           overrideCabal
           (justStaticExecutables inputs'.nvfetcher.packages.nvfetcher-lib)

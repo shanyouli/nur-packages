@@ -11,11 +11,7 @@
   tree,
 }:
 buildDotnetModule rec {
-  inherit (source) pname src;
-  version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+  inherit (source) pname src version;
   # projectFile = "BBDown.sln";
   projectFile = "BBDown/BBDown.csproj";
   nugetDeps = ./deps.nix;

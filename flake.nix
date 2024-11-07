@@ -51,13 +51,11 @@
     };
   };
   outputs = {
-    self,
     nixpkgs,
     flake-parts,
     ...
   } @ inputs: let
     inherit (import ./nix/lib/modules.nix {inherit (nixpkgs) lib;}) moduleFilesRec;
-    this = import ./pkgs;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = moduleFilesRec ./nix;
@@ -68,23 +66,5 @@
         "x86_64-darwin"
         "aarch64-darwin"
       ];
-      flake = {
-        overlay = self.overlays.default;
-        overlays = {
-          default = this.overlay;
-        };
-      };
-      perSystem = {
-        system,
-        pkgs,
-        ...
-      }: rec {
-        _module.args.pkgs = import inputs.nixpkgs {
-          overlays = [self.overlays.default];
-          inherit system;
-          config.allowUnfree = true;
-        };
-        packages = this.packages pkgs;
-      };
     };
 }

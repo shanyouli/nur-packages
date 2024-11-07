@@ -24,7 +24,6 @@
         # An incompatibility with newer versions of webkit2gtk was revealed
         # 和较新的 webkit2gtk 不兼容，临时禁用它
         withXwidgets = (! pkgs.stdenvNoCC.isDarwin) && ((lib.strings.toInt version) < 30);
-        # withXwidgets = false;
         # @see https://emacs-china.org/t/native-compilation/23316/73
         # 目前没有发现明显的提升
         # withNativeCompilation = true;
