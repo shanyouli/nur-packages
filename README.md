@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2024-11-04 15:47:06 UTC
+- LAST_MODIFY: 2024-11-07 12:57:37 UTC
 
 
 ## How to use
@@ -74,7 +74,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **60** 
 |[**alist**](https://github.com/alist-org/alist)||3.39.1|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2024-09-25|Turn Lua code into Fennel code|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2024-09-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||0.9.8.3|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.92|Extensible, customizable GNU text editor|
@@ -95,7 +95,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **60** 
 |[**singboxp**](https://sing-box.sagernet.org)||2024-08-19|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2024-07-09|Firefox scripts |
-|[**zpmod**](https://github.com/z-shell/zpmod)||v1.1.0|Zsh module transparently and automatically compiles sourced scripts|
+|[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
 ### darwin
@@ -129,7 +129,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **60** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.8.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||4.3.0|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.96|Dark Reader Chrome and Firefox extension|
+|[**darkreader**](https://darkreader.org/)||4.9.94|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.12.0.2923|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.10.6|Immersive Dual Web Page Translation Extension |
@@ -137,7 +137,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **60** 
 |[**noscript**](https://noscript.net/)||11.5.0|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.24|All-in-one bookmark manager|
-|[**sidebery**](https://github.com/mbnuqw/sidebery)||v5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
+|[**sidebery**](https://github.com/mbnuqw/sidebery)||5.2.0|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||1.5.51|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.16.1|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.60.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
