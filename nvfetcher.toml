@@ -168,7 +168,7 @@ cargo_locks = ["Cargo.lock"]
 
 [mac-app-util]
 src.git = "https://github.com/hraban/mac-app-util"
-fetch.url = "https://github.com/hraban/mac-app-util/raw/refs/$ver/main.lisp"
+fetch.url = "https://github.com/hraban/mac-app-util/raw/$ver/main.lisp"
 
 ### DarwinAPP
 

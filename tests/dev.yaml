@@ -4,4 +4,4 @@
 # fish file -> fish-xx
 dev: true
 apps:
-  - mac-app-util
+  - darwin-apps-mac-app-util
