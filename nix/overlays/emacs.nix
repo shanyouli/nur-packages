@@ -1,6 +1,7 @@
 {
   lib,
   withSystem,
+  self,
   ...
 }: {
   flake.overlays.emacs = _final: prev:
@@ -13,9 +14,7 @@
     pkgs,
     ...
   }: let
-    srcs = (import ../../_sources/generated.nix) {
-      inherit (pkgs) fetchurl fetchFromGitHub fetchgit dockerTools;
-    };
+    srcs = self.lib.nurSources pkgs;
     mkEmacs = pkg: version: let
       basePkg = pkg.override {
         withImageMagick = true; # org-mode 控制图片大小

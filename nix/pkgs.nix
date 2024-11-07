@@ -92,6 +92,9 @@
       python310Packages = python310.pkgs;
     }
     // (mapModules ./plib/build-support callPkg)
+    // {
+      inherit (prev.extend inputs.cl-nix-lite.overlays.default) lispPackagesLite;
+    }
     // (mapPkgs "common" callPkg)
     // {
       firefox-addons = mapPkgs "firefox-addons" callPkg;

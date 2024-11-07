@@ -166,6 +166,10 @@ src.github_tag = "reckenrode/mkAlias"
 fetch.github = "reckenrode/mkAlias"
 cargo_locks = ["Cargo.lock"]
 
+[mac-app-util]
+src.git = "https://github.com/hraban/mac-app-util"
+fetch.url = "https://github.com/hraban/mac-app-util/raw/refs/$ver/main.lisp"
+
 ### DarwinAPP
 
 # [vivaldi]

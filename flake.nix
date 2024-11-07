@@ -38,7 +38,6 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         nixpkgs-stable.follows = "nixpkgs-stable";
-        flake-utils.follows = "flake-utils";
       };
     };
 
@@ -49,6 +48,8 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # cl-nix-lite, 用于 mac-app-util 包
+    cl-nix-lite.url = "github:hraban/cl-nix-lite";
   };
   outputs = {
     nixpkgs,
