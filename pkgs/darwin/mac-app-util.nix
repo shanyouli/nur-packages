@@ -36,4 +36,6 @@ with lispPackagesLite;
     '';
     doInstallCheck = true;
     meta.license = lib.licenses.agpl3Only;
+    # see@https://github.com/NixOS/nixpkgs/issues/327836
+    meta.broken = true;
   }

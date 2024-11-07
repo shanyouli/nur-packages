@@ -133,6 +133,6 @@ in {
       inherit system;
       config.allowUnfree = true;
     };
-    packages = packageFn pkgs;
+    packages = lib.filterAttrs (_: v: self.lib.isBuildable v) (packageFn pkgs);
   };
 }
