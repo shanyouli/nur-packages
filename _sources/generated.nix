@@ -243,16 +243,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v0.2.33";
+    version = "v0.2.34";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v0.2.33";
+      rev = "v0.2.34";
       fetchSubmodules = false;
-      sha256 = "sha256-B/2mXMQpo+ZpofhKYilDQnlcldnZdAo6p5Hck8ECO4E=";
+      sha256 = "sha256-HPp+zYGCfBuOU8yPwe7UGGYoja5qAJwOpHiH11PfEe0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v0.2.33/Cargo.lock;
+      lockFile = ./fav-v0.2.34/Cargo.lock;
       outputHashes = {
         
       };
@@ -301,6 +301,15 @@
       fetchSubmodules = false;
       sha256 = "sha256-g8zZZ/uQeoJQIzpQY3oMUuWMu4/8OnaOLeLvaii+Tmk=";
     };
+  };
+  mac-app-util = {
+    pname = "mac-app-util";
+    version = "9c6bbe2a6a7ec647d03f64f0fadb874284f59eac";
+    src = fetchurl {
+      url = "https://github.com/hraban/mac-app-util/raw/9c6bbe2a6a7ec647d03f64f0fadb874284f59eac/main.lisp";
+      sha256 = "sha256-qETXIPFPIgpWzNNH9AkDg6S53EDUZo364rEpsP3cuDk=";
+    };
+    date = "2024-09-27";
   };
   manix = {
     pname = "manix";
