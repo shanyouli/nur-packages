@@ -12,7 +12,7 @@
 with lispPackagesLite;
   lispScript rec {
     inherit (source) src;
-    name = pname;
+    name = source.pname;
     dependencies = [
       alexandria
       inferior-shell
@@ -24,7 +24,7 @@ with lispPackagesLite;
     nativeBuildInputs = [makeBinaryWrapper];
     postInstall = ''
       wrapProgramBinary "$out/bin/${name}" \
-                  --suffix PATH : "${lib.makeBinPath [
+        --suffix PATH : "${lib.makeBinPath [
         dockutil
         rsync
         findutils
@@ -35,5 +35,5 @@ with lispPackagesLite;
       $out/bin/${name} --help
     '';
     doInstallCheck = true;
-    meta.license = pkgs.lib.licenses.agpl3Only;
+    meta.license = lib.licenses.agpl3Only;
   }
