@@ -11,7 +11,11 @@
   tree,
 }:
 buildDotnetModule rec {
-  inherit (source) pname src version;
+  inherit (source) pname src;
+  version =
+    if lib.hasPrefix "unstable" source.version
+    then "9.9-${source.version}"
+    else source.version;
   # projectFile = "BBDown.sln";
   projectFile = "BBDown/BBDown.csproj";
   nugetDeps = ./deps.nix;
