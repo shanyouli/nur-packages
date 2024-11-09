@@ -26,19 +26,17 @@ buildDotnetModule rec {
     [stdenv.cc zlib tree]
     ++ lib.optionals stdenv.isLinux [icu]
     ++ lib.optionals stdenv.isDarwin [
-      darwin.apple_sdk_11_0.MacOSX-SDK
-      darwin.apple_sdk_11_0.frameworks.CryptoKit
-      darwin.apple_sdk_11_0.frameworks.GSS
+      darwin.apple_sdk.MacOSX-SDK
+      darwin.apple_sdk.frameworks.CryptoKit
+      darwin.apple_sdk.frameworks.GSS
+      darwin.ICU
       xcbuild
     ];
   # 仅在macos上测试
-  preConfigure =
-    ''
-    ''
-    + lib.optionalString stdenv.isDarwin ''
-      export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
-      export LIBRARY_PATH=$LIBRARY_PATH:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib/swift:${darwin.apple_sdk_11_0.MacOSX-SDK}/usr/lib
-    '';
+  # preConfigure = lib.optionalString stdenv.isDarwin ''
+  #     export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
+  #     export LIBRARY_PATH=$LIBRARY_PATH:${darwin.apple_sdk.MacOSX-SDK}/usr/lib/:${darwin.apple_sdk.MacOSX-SDK}/usr/lib/swift/
+  #   '';
   # BUGS: see @  https://github.com/NixOS/nixpkgs/issues/280923
   # + lib.optionalString stdenv.isLinux ''
   #   TOOLS="$HOME/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/${dotnetCorePackages.runtime_8_0.version}/tools/"
