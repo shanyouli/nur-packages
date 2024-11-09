@@ -7,23 +7,15 @@
 }:
 stdenv.mkDerivation rec {
   inherit (source) pname version src;
-  # pname = "switchaudio-osx";
-  # version = "1.2.2";
-
-  # src = fetchFromGitHub {
-  #   owner = "deweller";
-  #   repo = "switchaudio-osx";
-  #   rev = version;
-  #   hash = "sha256-AZJn5kHK/al94ONfIHcG+W0jyMfgdJkIngN+PVj+I44=";
-  # };
   nativeBuildInputs = [
     xcodebuild
-    darwin.apple_sdk.frameworks.CoreServices
+    darwin.apple_sdk_12_3.frameworks.CoreServices
+    darwin.apple_sdk_12_3.frameworks.CoreAudio
   ];
   # see @https://github.com/NixOS/nixpkgs/pull/285603
-  postPatch = ''
-    substituteInPlace audio_switch.c --replace kAudioObjectPropertyElementMain kAudioObjectPropertyElementMaster
-  '';
+  # postPatch = ''
+  #   substituteInPlace audio_switch.c --replace-fail kAudioObjectPropertyElementMain kAudioObjectPropertyElementMaster
+  # '';
   installPhase = ''
     _dir=$(find . -type d -iname 'build' -maxdepth 2 | head -n 1)
     echo $_dir
@@ -43,5 +35,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     mainProgram = "switchaudio-osx";
     platforms = platforms.darwin;
+    broken = true;
   };
 }
