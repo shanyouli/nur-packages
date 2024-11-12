@@ -4,4 +4,5 @@
 # fish file -> fish-xx
 dev: true
 apps:
-  - darwin-apps-switchaudio-osx
+  # - darwin-apps-mkalias
+  - bbdown

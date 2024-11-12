@@ -5,8 +5,9 @@
   stdenv,
   zlib,
   icu,
-  darwin,
+  apple-sdk,
   xcbuild,
+  darwin,
   source,
   tree,
 }:
@@ -26,9 +27,7 @@ buildDotnetModule rec {
     [stdenv.cc zlib tree]
     ++ lib.optionals stdenv.isLinux [icu]
     ++ lib.optionals stdenv.isDarwin [
-      darwin.apple_sdk.MacOSX-SDK
-      darwin.apple_sdk.frameworks.CryptoKit
-      darwin.apple_sdk.frameworks.GSS
+      apple-sdk
       darwin.ICU
       xcbuild
     ];

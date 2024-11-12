@@ -1,6 +1,6 @@
 {
   stdenv,
-  darwin,
+  apple-sdk,
   lib,
   source,
 }:
@@ -10,7 +10,7 @@ stdenv.mkDerivation rec {
     if (builtins.hasAttr "date" source)
     then source.date
     else lib.removePrefix "v" source.version;
-  buildInputs = [darwin.apple_sdk.frameworks.Cocoa];
+  buildInputs = [apple-sdk];
   installPhase = ''
     mkdir -p $out/bin
     cp pngpaste $out/bin/

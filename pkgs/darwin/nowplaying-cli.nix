@@ -1,16 +1,12 @@
 {
   stdenv,
-  darwin,
   lib,
+  apple-sdk,
   source,
 }:
 stdenv.mkDerivation rec {
-  inherit (source) pname src;
-  version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
-  buildInputs = [darwin.apple_sdk.frameworks.Cocoa];
+  inherit (source) pname src version;
+  buildInputs = [apple-sdk];
   installPhase = ''
     mkdir -p $out/bin
     cp nowplaying-cli $out/bin/

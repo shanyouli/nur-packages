@@ -1,21 +1,15 @@
 {
   stdenv,
-  darwin,
+  apple-sdk,
   lib,
   source,
   installShellFiles,
 }:
 stdenv.mkDerivation rec {
-  inherit (source) pname src;
-  version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+  inherit (source) pname src version;
   nativeBuildInputs = [installShellFiles];
   buildInputs = [
-    darwin.apple_sdk.frameworks.CoreVideo
-    darwin.apple_sdk.frameworks.AppKit
-    darwin.apple_sdk.frameworks.SkyLight
+    apple-sdk
   ];
   installPhase = ''
     mkdir -p $out/bin
