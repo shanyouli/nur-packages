@@ -4,7 +4,7 @@
   rustPlatform,
   installShellFiles,
   makeBinaryWrapper,
-  darwin,
+  apple-sdk_13,
   nvd,
   nix-output-monitor,
   source,
@@ -24,7 +24,7 @@ in
 
     nativeBuildInputs = [installShellFiles makeBinaryWrapper];
 
-    buildInputs = lib.optionals stdenv.isDarwin [darwin.apple_sdk.frameworks.SystemConfiguration];
+    buildInputs = lib.optionals stdenv.isDarwin [apple-sdk_13];
     postInstall =
       ''
         # mv $out/bin/nh_darwin $out/bin/nh

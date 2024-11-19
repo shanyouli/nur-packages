@@ -4,7 +4,7 @@
   sources,
   boost,
   cmake,
-  apple-sdk,
+  apple-sdk_13,
   libtorrent-rasterbar,
   ninja,
   qt6Packages,
@@ -40,7 +40,7 @@ in
         qtsvg
         qttools
       ]
-      ++ lib.optionals stdenv.isDarwin [apple-sdk]
+      ++ lib.optionals stdenv.isDarwin [apple-sdk_13]
       ++ lib.optionals guiSupport [dbus]
       ++ lib.optionals (guiSupport && stdenv.isLinux) [
         qtwayland

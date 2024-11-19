@@ -39,7 +39,7 @@
           ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
             srcs."emacs${version}.no-frame-refocus-cocoa".src
           ];
-        buildInputs = (old.buildInputs or []) ++ lib.optionals pkgs.stdenvNoCC.isDarwin [pkgs.darwin.apple_sdk.frameworks.WebKit];
+        buildInputs = (old.buildInputs or []) ++ lib.optionals pkgs.stdenvNoCC.isDarwin [pkgs.apple-sdk_13];
         configureFlags = (old.configureFlags or []) ++ ["--enable-check-lisp-object-type"] ++ lib.optionals pkgs.stdenvNoCC.isDarwin ["--with-xwidgets"];
         CFLAGS = "-DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -g -O2";
       });

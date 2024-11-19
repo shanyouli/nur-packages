@@ -1,6 +1,6 @@
 {
   stdenv,
-  apple-sdk,
+  apple-sdk_13,
   lib,
   source,
   installShellFiles,
@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   inherit (source) pname src version;
   nativeBuildInputs = [installShellFiles];
   buildInputs = [
-    apple-sdk
+    apple-sdk_13
   ];
   installPhase = ''
     mkdir -p $out/bin

@@ -4,7 +4,7 @@
   pkg-config,
   openssl,
   stdenv,
-  apple-sdk,
+  apple-sdk_13,
   source,
 }:
 # {pkgs ? import <nixpkgs> {} }:
@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
       openssl
     ]
     ++ lib.optionals stdenv.isDarwin [
-      apple-sdk
+      apple-sdk_13
     ];
   doCheck = false;
   env = {

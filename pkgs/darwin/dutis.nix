@@ -4,13 +4,13 @@
   makeWrapper,
   duti,
   source,
-  apple-sdk,
+  apple-sdk_13,
   ...
 }: let
   newduti = duti.overrideAttrs (old: {
-    buildInputs = (old.buildInputs or []) ++ [apple-sdk];
+    buildInputs = (old.buildInputs or []) ++ [apple-sdk_13];
     configureFlags = [
-      "--with-macosx-sdk=${apple-sdk.sdkroot}"
+      "--with-macosx-sdk=${apple-sdk_13.sdkroot}"
       "--host=x86_64-apple-darwin18"
     ];
   });
