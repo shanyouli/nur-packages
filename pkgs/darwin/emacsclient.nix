@@ -7,11 +7,12 @@
   emacsClientBin ? "/usr/bin/emacsclient",
   withNotify ? false,
   source,
+  makeBinaryWrapper,
   ...
 }: let
   messageCmd =
     if withNotify
-    then "${terminal-notifier}/bin/terminal-notifier"
+    then "terminal-notifier"
     else "";
   EmacsClientAppleScript = writeText "emacsclient" ''
     on emacsclient(input)
@@ -133,7 +134,7 @@ in
     version = "29.2";
     srcs = [EmacsClientAppleScript icns];
     phases = ["installPhase"];
-    buildInputs = [buildEnv];
+    nativeBuildInputs = [makeBinaryWrapper buildEnv];
     installPhase = ''
       mkdir -p $out/Applications
       osacompile -o EmacsClient.app ${EmacsClientAppleScript}
@@ -160,5 +161,8 @@ in
       rm -rf EmacsClient.app/Contents/Resources/droplet.icns
       mv -f EmacsClient.app/Contents/MacOS/droplet EmacsClient.app/Contents/MacOS/EmacsClient
       cp -R EmacsClient.app $out/Applications
+      wrapProgramBinary $out/Applications/EmacsClient.app/Contents/MacOS/EmacsClient --suffix PATH : "${lib.makeBinPath [
+        terminal-notifier
+      ]}"
     '';
   }
