@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4385344/download_with_aria2-4.12.0.2948.xpi",
-    "version": "4.12.0.2948",
-    "sha256": "07skx3mpz7hqlnklklljpchlqs4gdfwwwbkdnaxacfqcplkc7m5m",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4391283/download_with_aria2-4.12.0.2956.xpi",
+    "version": "4.12.0.2956",
+    "sha256": "1qxb1klg155ba31gajgd5wb6mrdsb9j36ics6vjjf3m5gmnyriic",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4382893/immersive_translate-1.11.1.xpi",
-    "version": "1.11.1",
-    "sha256": "03yp4hhl3wj50p3d3n5z863b06brhv32bz7bm77wdvwjxghsm9zm",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4389110/immersive_translate-1.11.4.xpi",
+    "version": "1.11.4",
+    "sha256": "0cnjhaw6gzkjhykdwjnlfj8kxk4f4barrykdl1avvl17f4l9j634",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -96,9 +96,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4269679/raindropio-6.6.24.xpi",
-    "version": "6.6.24",
-    "sha256": "03v6mdmq5am2p5lldvw8c5ap3a2rwqdww80zijbvbrq6ivkzb1jc",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4387956/raindropio-6.6.62.xpi",
+    "version": "6.6.62",
+    "sha256": "0nlhn0rsmqagh43f8zp0anm8g7r7y9laa7gsl3ifaiff8smb20v5",
     "pname": "raindropio"
   }
 }
