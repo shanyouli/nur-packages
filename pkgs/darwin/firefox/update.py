@@ -8,7 +8,6 @@ from typing import List
 import requests
 
 # copy from https://github.com/bandithedoge/nixpkgs-firefox-darwin/blob/main/update.sh
-
 SCRIPT_DIR = os.path.dirname(os.path.relpath(__file__))
 
 
