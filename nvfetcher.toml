@@ -34,11 +34,6 @@ fetch.github = "shanyouli/sd"
 
 
 ### common
-
-[mpvc]
-src.github = "gmt4/mpvc"
-fetch.github = "gmt4/mpvc"
-
 [zpmod]
 src.github = "z-shell/zpmod"
 fetch.github = "z-shell/zpmod"
@@ -54,6 +49,12 @@ src.github = "subframe7536/Maple-font"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/subframe7536/maple-font/releases/download/v$ver/MapleMono-ttf.zip"
+
+[sarasa-term]
+src.github = "laishulu/Sarasa-Term-SC-Nerd"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v$ver/SarasaTermSCNerd.ttc.tar.gz"
 
 [go-musicfox]
 src.github = "go-musicfox/go-musicfox"
