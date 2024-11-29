@@ -4,7 +4,7 @@
   source,
 }:
 stdenvNoCC.mkDerivation {
-  inherit (source) src pname;
+  inherit (source) src pname version;
   installPhase = ''
     runHook preInstall
     mkdir -p $out/share/fonts/ttc
