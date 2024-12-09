@@ -145,6 +145,7 @@ fetch.github = "Amar1729/yabai-zsh-completions"
 src.github_tag = "jcsalterego/pngpaste"
 fetch.github = "jcsalterego/pngpaste"
 
+
 [dutis]
 src.git = "https://github.com/tsonglew/dutis"
 fetch.github = "tsonglew/dutis"
