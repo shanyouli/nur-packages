@@ -32,9 +32,9 @@ in
       ''
       + lib.optionalString (stdenv.buildPlatform.canExecute stdenv.hostPlatform) ''
         installShellCompletion --cmd nh \
-          --bash <("$out/bin/nh" completions --shell bash) \
-          --zsh <("$out/bin/nh" completions --shell zsh) \
-          --fish <("$out/bin/nh" completions --shell fish)
+          --bash <("$out/bin/nh" completions bash) \
+          --zsh <("$out/bin/nh" completions  zsh) \
+          --fish <("$out/bin/nh" completions fish)
       '';
     meta = {
       description = "Yet another nix cli helper";
