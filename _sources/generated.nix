@@ -140,6 +140,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-hsuI1xSgHX8ckdN6rv6WWMLSmuYLVaR5CEdqSLHfvcs=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./dutis-59c572055aa49137bff0edd2c637717393311f63/Cargo.lock;
+      outputHashes = {
+
+      };
+    };
     date = "2024-12-08";
   };
   "emacs29.no-frame-refocus-cocoa" = {
@@ -254,7 +260,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./fav-v0.2.37/Cargo.lock;
       outputHashes = {
-        
+
       };
     };
   };
@@ -324,7 +330,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./manix-5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3/Cargo.lock;
       outputHashes = {
-        
+
       };
     };
     date = "2021-07-28";
@@ -358,7 +364,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./mkalias-v0.3.2/Cargo.lock;
       outputHashes = {
-        
+
       };
     };
   };
@@ -398,7 +404,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./nh_darwin-80e64a85d349aa2075973c68053ab475949f3bfd/Cargo.lock;
       outputHashes = {
-        
+
       };
     };
     date = "2024-12-01";
@@ -468,7 +474,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./seam-v_cli.0.1.39/Cargo.lock;
       outputHashes = {
-        
+
       };
     };
   };

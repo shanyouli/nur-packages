@@ -12,7 +12,7 @@ in
     debug ? false,
     ...
   } @ args:
-    assert stdenv.isDarwin;
+    assert stdenv.hostPlatform.isDarwin;
       stdenv.mkDerivation (rec {
           inherit sourceRoot;
           unpackCmd = ''

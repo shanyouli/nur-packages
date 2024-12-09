@@ -40,9 +40,9 @@ in
         qtsvg
         qttools
       ]
-      ++ lib.optionals stdenv.isDarwin [apple-sdk_13]
+      ++ lib.optionals stdenv.hostPlatform.isDarwin [apple-sdk_13]
       ++ lib.optionals guiSupport [dbus]
-      ++ lib.optionals (guiSupport && stdenv.isLinux) [
+      ++ lib.optionals (guiSupport && stdenv.hostPlatform.isLinux) [
         qtwayland
       ]
       ++ lib.optionals trackerSearch [
@@ -69,7 +69,7 @@ in
 
     dontWrapGApps = true;
 
-    postInstall = lib.optionalString stdenv.isDarwin ''
+    postInstall = lib.optionalString stdenv.hostPlatform.isDarwin ''
       APP_NAME=qbittorrent${lib.optionalString (!guiSupport) "-nox"}
       mkdir -p $out/{Applications,bin}
       cp -R $APP_NAME.app $out/Applications

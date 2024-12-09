@@ -15,7 +15,7 @@ in
       else lib.removePrefix "v" source.version;
     inherit (source) pname src;
     pyproject = true;
-    nativeBuildInputs = [hatchling installShellFiles] ++ lib.optional stdenv.isDarwin [darwin.ps];
+    nativeBuildInputs = [hatchling installShellFiles] ++ lib.optional stdenv.hostPlatform.isDarwin [darwin.ps];
     propagatedBuildInputs = [typer wcwidth];
     postInstall = ''
       installShellCompletion --cmd sd \
