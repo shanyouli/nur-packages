@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-E5bf7Xx9H+akIcclNknHBfY3aKHz74kZelhavPKnVDs=",
+            "sha256": "sha256-HibE3GcRAWj8sEAAyvkZBLlOQvRTRRcmrWAArvfkNA8=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.16.0-Beta/AeroSpace-v0.16.0-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.16.2-Beta/AeroSpace-v0.16.2-Beta.zip"
         },
-        "version": "0.16.0-Beta"
+        "version": "0.16.2-Beta"
     },
     "alist": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
             "name": null,
             "owner": "OwO-Network",
             "repo": "DeepLX",
-            "rev": "v0.9.8.3",
-            "sha256": "sha256-7/sT0gGqZ9V2a5uVJysXfL/x5aO4YGgb683Dcx/xFhE=",
+            "rev": "v1.0.1",
+            "sha256": "sha256-6ZGC1cYIyZUudZLAqRExtjE6QsDMHvTVgLWHZfM83Uw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.9.8.3"
+        "version": "v1.0.1"
     },
     "dict2xml": {
         "cargoLocks": null,
@@ -237,7 +237,7 @@
     },
     "dutis": {
         "cargoLocks": null,
-        "date": "2024-03-20",
+        "date": "2024-12-08",
         "extract": null,
         "name": "dutis",
         "passthru": null,
@@ -249,12 +249,12 @@
             "name": null,
             "owner": "tsonglew",
             "repo": "dutis",
-            "rev": "e1c3f9ba222552350964b51389507ea0be93057c",
-            "sha256": "sha256-hPvQ6M+foEzQEcPYYLGzVJ69moAkfMe9boKQ/2ajFtI=",
+            "rev": "59c572055aa49137bff0edd2c637717393311f63",
+            "sha256": "sha256-hsuI1xSgHX8ckdN6rv6WWMLSmuYLVaR5CEdqSLHfvcs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e1c3f9ba222552350964b51389507ea0be93057c"
+        "version": "59c572055aa49137bff0edd2c637717393311f63"
     },
     "emacs29.no-frame-refocus-cocoa": {
         "cargoLocks": null,
@@ -385,9 +385,9 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=",
+            "sha256": "sha256-kVRiH1nwDVgRfRmaQnxcCBKJ/StpGyLZvfJ+/gZfQ/A=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e63e414aa662c81673818795f87490e2815d57ff/patches/emacs-30/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e63e414aa662c81673818795f87490e2815d57ff/patches/emacs-31/round-undecorated-frame.patch"
         },
         "version": "e63e414aa662c81673818795f87490e2815d57ff"
     },
@@ -482,12 +482,12 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.5.7",
-            "sha256": "sha256-x3j+gfPRPkDJq9dF2NZBqvRWhnthQ8Y1TUE6xV0qFVU=",
+            "rev": "v4.6.0",
+            "sha256": "sha256-pzB57XeDD8lfJMkP9/k1rrszYXYYzQt2UekH2Atiqjw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.5.7"
+        "version": "v4.6.0"
     },
     "httpx": {
         "cargoLocks": null,
@@ -503,12 +503,12 @@
             "name": null,
             "owner": "encode",
             "repo": "httpx",
-            "rev": "0.28.0",
-            "sha256": "sha256-mMKb22gjYGPDn7GV25PX7EOvnu9x0Y5otkw1p0JbkQ4=",
+            "rev": "0.28.1",
+            "sha256": "sha256-tB8uZm0kPRnmeOvsDdrkrHcMVIYfGanB4l/xHsTKpgE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.28.0"
+        "version": "0.28.1"
     },
     "lporg": {
         "cargoLocks": null,
@@ -533,7 +533,7 @@
     },
     "mac-app-util": {
         "cargoLocks": null,
-        "date": "2024-11-25",
+        "date": "2024-11-29",
         "extract": null,
         "name": "mac-app-util",
         "passthru": null,
@@ -542,9 +542,9 @@
             "name": null,
             "sha256": "sha256-kp1JfPabT6bPx+vDuT1fxwCrkhEdiv4p3HmZHylrOZo=",
             "type": "url",
-            "url": "https://github.com/hraban/mac-app-util/raw/ded87083092186c7b8e30fbfe944c726540a007c/main.lisp"
+            "url": "https://github.com/hraban/mac-app-util/raw/548672d0cb661ce11d08ee8bde92b87d2a75c872/main.lisp"
         },
-        "version": "ded87083092186c7b8e30fbfe944c726540a007c"
+        "version": "548672d0cb661ce11d08ee8bde92b87d2a75c872"
     },
     "manix": {
         "cargoLocks": {
@@ -673,11 +673,11 @@
     "nh_darwin": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh_darwin-f19fcb3ad4c2f0686c36243fd8a9f7793942dea2/Cargo.lock",
+                "./nh_darwin-80e64a85d349aa2075973c68053ab475949f3bfd/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-11-17",
+        "date": "2024-12-01",
         "extract": null,
         "name": "nh_darwin",
         "passthru": null,
@@ -689,12 +689,12 @@
             "name": null,
             "owner": "ToyVo",
             "repo": "nh_darwin",
-            "rev": "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2",
-            "sha256": "sha256-u6rTrvXRii4wm1qs1F0/IcRDLwfEcEDxC5YO5NkL8Gg=",
+            "rev": "80e64a85d349aa2075973c68053ab475949f3bfd",
+            "sha256": "sha256-kpzViKJZFIU8DryCQzdpdHdOZN5nWrryZBiMLy3kEEE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2"
+        "version": "80e64a85d349aa2075973c68053ab475949f3bfd"
     },
     "nowplaying-cli": {
         "cargoLocks": null,

@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.16.0-Beta";
+    version = "0.16.2-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.16.0-Beta/AeroSpace-v0.16.0-Beta.zip";
-      sha256 = "sha256-E5bf7Xx9H+akIcclNknHBfY3aKHz74kZelhavPKnVDs=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.16.2-Beta/AeroSpace-v0.16.2-Beta.zip";
+      sha256 = "sha256-HibE3GcRAWj8sEAAyvkZBLlOQvRTRRcmrWAArvfkNA8=";
     };
   };
   alist = {
@@ -110,13 +110,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v0.9.8.3";
+    version = "v1.0.1";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v0.9.8.3";
+      rev = "v1.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7/sT0gGqZ9V2a5uVJysXfL/x5aO4YGgb683Dcx/xFhE=";
+      sha256 = "sha256-6ZGC1cYIyZUudZLAqRExtjE6QsDMHvTVgLWHZfM83Uw=";
     };
   };
   dict2xml = {
@@ -132,15 +132,15 @@
   };
   dutis = {
     pname = "dutis";
-    version = "e1c3f9ba222552350964b51389507ea0be93057c";
+    version = "59c572055aa49137bff0edd2c637717393311f63";
     src = fetchFromGitHub {
       owner = "tsonglew";
       repo = "dutis";
-      rev = "e1c3f9ba222552350964b51389507ea0be93057c";
+      rev = "59c572055aa49137bff0edd2c637717393311f63";
       fetchSubmodules = false;
-      sha256 = "sha256-hPvQ6M+foEzQEcPYYLGzVJ69moAkfMe9boKQ/2ajFtI=";
+      sha256 = "sha256-hsuI1xSgHX8ckdN6rv6WWMLSmuYLVaR5CEdqSLHfvcs=";
     };
-    date = "2024-03-20";
+    date = "2024-12-08";
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
@@ -218,8 +218,8 @@
     pname = "emacs31.round-undecorated-frame";
     version = "e63e414aa662c81673818795f87490e2815d57ff";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e63e414aa662c81673818795f87490e2815d57ff/patches/emacs-30/round-undecorated-frame.patch";
-      sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e63e414aa662c81673818795f87490e2815d57ff/patches/emacs-31/round-undecorated-frame.patch";
+      sha256 = "sha256-kVRiH1nwDVgRfRmaQnxcCBKJ/StpGyLZvfJ+/gZfQ/A=";
     };
     date = "2024-11-27";
   };
@@ -271,24 +271,24 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.5.7";
+    version = "v4.6.0";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.5.7";
+      rev = "v4.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-x3j+gfPRPkDJq9dF2NZBqvRWhnthQ8Y1TUE6xV0qFVU=";
+      sha256 = "sha256-pzB57XeDD8lfJMkP9/k1rrszYXYYzQt2UekH2Atiqjw=";
     };
   };
   httpx = {
     pname = "httpx";
-    version = "0.28.0";
+    version = "0.28.1";
     src = fetchFromGitHub {
       owner = "encode";
       repo = "httpx";
-      rev = "0.28.0";
+      rev = "0.28.1";
       fetchSubmodules = false;
-      sha256 = "sha256-mMKb22gjYGPDn7GV25PX7EOvnu9x0Y5otkw1p0JbkQ4=";
+      sha256 = "sha256-tB8uZm0kPRnmeOvsDdrkrHcMVIYfGanB4l/xHsTKpgE=";
     };
   };
   lporg = {
@@ -304,12 +304,12 @@
   };
   mac-app-util = {
     pname = "mac-app-util";
-    version = "ded87083092186c7b8e30fbfe944c726540a007c";
+    version = "548672d0cb661ce11d08ee8bde92b87d2a75c872";
     src = fetchurl {
-      url = "https://github.com/hraban/mac-app-util/raw/ded87083092186c7b8e30fbfe944c726540a007c/main.lisp";
+      url = "https://github.com/hraban/mac-app-util/raw/548672d0cb661ce11d08ee8bde92b87d2a75c872/main.lisp";
       sha256 = "sha256-kp1JfPabT6bPx+vDuT1fxwCrkhEdiv4p3HmZHylrOZo=";
     };
-    date = "2024-11-25";
+    date = "2024-11-29";
   };
   manix = {
     pname = "manix";
@@ -387,21 +387,21 @@
   };
   nh_darwin = {
     pname = "nh_darwin";
-    version = "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2";
+    version = "80e64a85d349aa2075973c68053ab475949f3bfd";
     src = fetchFromGitHub {
       owner = "ToyVo";
       repo = "nh_darwin";
-      rev = "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2";
+      rev = "80e64a85d349aa2075973c68053ab475949f3bfd";
       fetchSubmodules = false;
-      sha256 = "sha256-u6rTrvXRii4wm1qs1F0/IcRDLwfEcEDxC5YO5NkL8Gg=";
+      sha256 = "sha256-kpzViKJZFIU8DryCQzdpdHdOZN5nWrryZBiMLy3kEEE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh_darwin-f19fcb3ad4c2f0686c36243fd8a9f7793942dea2/Cargo.lock;
+      lockFile = ./nh_darwin-80e64a85d349aa2075973c68053ab475949f3bfd/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-11-17";
+    date = "2024-12-01";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
