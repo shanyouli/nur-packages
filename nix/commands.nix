@@ -149,6 +149,9 @@
         if ($nvfetcher_config | path exists) {
           let key_args = $key_args | append "-k"
           let key_args = $key_args | append $nvfetcher_config
+        } else if (($env.PWD | path join "secrets.toml") | path exists) {
+          let key_args = $key_args | append "-k"
+          let key_args = $key_args | append ($env.PWD | path join "secrets.toml")
         }
         let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -i NIX_PATH | is-empty) {
             ""
