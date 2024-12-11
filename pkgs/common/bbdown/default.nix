@@ -10,6 +10,7 @@
   darwin,
   source,
   tree,
+  stdenvNoCC,
 }: let
   rid = dotnetCorePackages.systemToDotnetRid stdenvNoCC.hostPlatform.system;
 in
