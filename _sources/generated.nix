@@ -66,6 +66,18 @@
       sha256 = "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=";
     };
   };
+  bbdown = {
+    pname = "bbdown";
+    version = "56f9a4329d583773807cbb980fc23020d7e29949";
+    src = fetchFromGitHub {
+      owner = "nilaoda";
+      repo = "BBDown";
+      rev = "56f9a4329d583773807cbb980fc23020d7e29949";
+      fetchSubmodules = false;
+      sha256 = "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=";
+    };
+    date = "2024-12-10";
+  };
   borders = {
     pname = "borders";
     version = "v1.7.0";
@@ -561,25 +573,6 @@
     src = fetchurl {
       url = "https://pypi.org/packages/source/w/websocket_bridge_python/websocket_bridge_python-0.0.2.tar.gz";
       sha256 = "sha256-J9HGD3PSavZQwh2eZPbM6isdknZ1M2nkL5WHlYjRju8=";
-    };
-  };
-  yabai = {
-    pname = "yabai";
-    version = "v7.1.5";
-    src = fetchFromGitHub {
-      owner = "koekeishiya";
-      repo = "yabai";
-      rev = "v7.1.5";
-      fetchSubmodules = false;
-      sha256 = "sha256-6HBWJvjVWagtHrfjWaYSRcnQOuwTBVeVxo3wc+jSlyE=";
-    };
-  };
-  yabai-bin = {
-    pname = "yabai-bin";
-    version = "7.1.5";
-    src = fetchurl {
-      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.5/yabai-v7.1.5.tar.gz";
-      sha256 = "sha256-U+hzkxhJTBDDWF4e4inbWz7laCiV69lHCGlQt50WIhQ=";
     };
   };
   yabai-zsh-completions = {
