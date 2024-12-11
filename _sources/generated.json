@@ -117,7 +117,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2024-11-28",
+        "date": "2024-12-10",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -129,12 +129,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "22fa77a29e93ac7012f9193b73dfbffa1ea8cade",
-            "sha256": "sha256-shuLAsnM4O/JqH1C9ZHtlrtTwELU9wZ0dO5RoV/Ysac=",
+            "rev": "56f9a4329d583773807cbb980fc23020d7e29949",
+            "sha256": "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "22fa77a29e93ac7012f9193b73dfbffa1ea8cade"
+        "version": "56f9a4329d583773807cbb980fc23020d7e29949"
     },
     "borders": {
         "cargoLocks": null,
@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rSQZxURcYceBRHhf9/vzJmuhv+QTLk2rHlaambAZS18=",
+            "sha256": "sha256-rxfnkSoRsXvYsuDH7AJ26cMW3cIbLaMXTOC4GFqYQBA=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.96/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.97/darkreader-firefox.xpi"
         },
-        "version": "4.9.96"
+        "version": "4.9.97"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -742,6 +742,66 @@
             "type": "github"
         },
         "version": "0.2.3"
+    },
+    "pragmasevka": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pragmasevka",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Odz3R2fyE6OdzxfeyNGT68babKknx1TQlmc/cuA+F0E=",
+            "type": "url",
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka.zip"
+        },
+        "version": "32.2.1"
+    },
+    "pragmasevka-nerd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pragmasevka-nerd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-UvvxrmV95QQcZoFBgZQxQkzNCCpbmypiGBX9L7T+qn8=",
+            "type": "url",
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka-nerd.zip"
+        },
+        "version": "32.2.1"
+    },
+    "pragmasevka-sans": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pragmasevka-sans",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-rgjwnspDLaMsTjmlf3UyIJbi2hbhSTLQAEq5xbFSnXI=",
+            "type": "url",
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSans.zip"
+        },
+        "version": "32.2.1"
+    },
+    "pragmasevka-serif": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pragmasevka-serif",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-f+5aFv/gLc92P4UjzbImoyGc8y2GcuSrFAfe40iY+80=",
+            "type": "url",
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSerif.zip"
+        },
+        "version": "32.2.1"
     },
     "qbittorrent": {
         "cargoLocks": null,

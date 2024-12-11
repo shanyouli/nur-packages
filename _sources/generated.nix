@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "22fa77a29e93ac7012f9193b73dfbffa1ea8cade";
+    version = "56f9a4329d583773807cbb980fc23020d7e29949";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "22fa77a29e93ac7012f9193b73dfbffa1ea8cade";
+      rev = "56f9a4329d583773807cbb980fc23020d7e29949";
       fetchSubmodules = false;
-      sha256 = "sha256-shuLAsnM4O/JqH1C9ZHtlrtTwELU9wZ0dO5RoV/Ysac=";
+      sha256 = "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=";
     };
-    date = "2024-11-28";
+    date = "2024-12-10";
   };
   borders = {
     pname = "borders";
@@ -102,10 +102,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.96";
+    version = "4.9.97";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.96/darkreader-firefox.xpi";
-      sha256 = "sha256-rSQZxURcYceBRHhf9/vzJmuhv+QTLk2rHlaambAZS18=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.97/darkreader-firefox.xpi";
+      sha256 = "sha256-rxfnkSoRsXvYsuDH7AJ26cMW3cIbLaMXTOC4GFqYQBA=";
     };
   };
   deeplx = {
@@ -143,7 +143,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./dutis-59c572055aa49137bff0edd2c637717393311f63/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
     date = "2024-12-08";
@@ -260,7 +260,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./fav-v0.2.37/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
   };
@@ -330,7 +330,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./manix-5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
     date = "2021-07-28";
@@ -364,7 +364,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./mkalias-v0.3.2/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
   };
@@ -404,7 +404,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./nh_darwin-80e64a85d349aa2075973c68053ab475949f3bfd/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
     date = "2024-12-01";
@@ -429,6 +429,38 @@
       rev = "0.2.3";
       fetchSubmodules = false;
       sha256 = "sha256-uvajxSelk1Wfd5is5kmT2fzDShlufBgC0PDCeabEOSE=";
+    };
+  };
+  pragmasevka = {
+    pname = "pragmasevka";
+    version = "32.2.1";
+    src = fetchurl {
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka.zip";
+      sha256 = "sha256-Odz3R2fyE6OdzxfeyNGT68babKknx1TQlmc/cuA+F0E=";
+    };
+  };
+  pragmasevka-nerd = {
+    pname = "pragmasevka-nerd";
+    version = "32.2.1";
+    src = fetchurl {
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka-nerd.zip";
+      sha256 = "sha256-UvvxrmV95QQcZoFBgZQxQkzNCCpbmypiGBX9L7T+qn8=";
+    };
+  };
+  pragmasevka-sans = {
+    pname = "pragmasevka-sans";
+    version = "32.2.1";
+    src = fetchurl {
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSans.zip";
+      sha256 = "sha256-rgjwnspDLaMsTjmlf3UyIJbi2hbhSTLQAEq5xbFSnXI=";
+    };
+  };
+  pragmasevka-serif = {
+    pname = "pragmasevka-serif";
+    version = "32.2.1";
+    src = fetchurl {
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSerif.zip";
+      sha256 = "sha256-f+5aFv/gLc92P4UjzbImoyGc8y2GcuSrFAfe40iY+80=";
     };
   };
   qbittorrent = {
@@ -474,7 +506,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./seam-v_cli.0.1.39/Cargo.lock;
       outputHashes = {
-
+        
       };
     };
   };
