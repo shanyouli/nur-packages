@@ -37,14 +37,13 @@ in
     preBuild = ''
       export projectFile=(BBDown)
     '';
-    # dotnetFlags = ["-p:PublishTrimmed=true"] ++ lib.optionals stdenv.hostPlatform.isDarwin ["-p:StripSymbols=false"];
     dotnetFlags = [
       "-p:PublishReadyToRun=false"
       # for some reason this is set to win-x64 in the project files
       "-p:RuntimeIdentifier=${rid}"
     ];
-    dotnetInstallFlags = ["--framework=net9.0"];
-    selfContainedBuild = true;
+    # dotnetInstallFlags = ["--framework=net9.0"];
+    # selfContainedBuild = true;
     dotnet-runtime = dotnetCorePackages.runtime_9_0;
     runtimeDeps = [];
     # postFixup = ''
