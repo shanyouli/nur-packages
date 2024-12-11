@@ -56,6 +56,30 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v$ver/SarasaTermSCNerd.ttc.tar.gz"
 
+[pragmasevka]
+src.github = "shanyouli/iosevka"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragmasevka.zip"
+
+[pragmasevka-nerd]
+src.github = "shanyouli/iosevka"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragmasevka-nerd.zip"
+
+[pragmasevka-sans]
+src.github = "shanyouli/iosevka"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/PragmasevkaSans.zip"
+
+[pragmasevka-serif]
+src.github = "shanyouli/iosevka"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/PragmasevkaSerif.zip"
+
 [go-musicfox]
 src.github = "go-musicfox/go-musicfox"
 fetch.github = "go-musicfox/go-musicfox"
