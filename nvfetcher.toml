@@ -225,16 +225,6 @@ fetch.url = "https://github.com/darkreader/darkreader/releases/download/v$ver/da
 src.github = "c0re100/qBittorrent-Enhanced-Edition"
 fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
 
-[yabai]
-src.github = "koekeishiya/yabai"
-fetch.github = "koekeishiya/yabai"
-
-[yabai-bin]
-src.github = "koekeishiya/yabai"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/koekeishiya/yabai/releases/download/v$ver/yabai-v$ver.tar.gz"
-
 ["bash-env-json"]
 src.github = "tesujimath/bash-env-json"
 fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"

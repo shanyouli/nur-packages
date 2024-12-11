@@ -66,18 +66,6 @@
       sha256 = "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=";
     };
   };
-  bbdown = {
-    pname = "bbdown";
-    version = "56f9a4329d583773807cbb980fc23020d7e29949";
-    src = fetchFromGitHub {
-      owner = "nilaoda";
-      repo = "BBDown";
-      rev = "56f9a4329d583773807cbb980fc23020d7e29949";
-      fetchSubmodules = false;
-      sha256 = "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=";
-    };
-    date = "2024-12-10";
-  };
   borders = {
     pname = "borders";
     version = "v1.7.0";

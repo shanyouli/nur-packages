@@ -181,6 +181,9 @@
             } else if ("./result" | path exists ) {
               ./result ./pkgs/common/bbdown/deps.nix
             }
+            # fix some error see: @https://github.com/NixOS/nixpkgs/pull/343837
+            ${pkgs.gnused}/bin/sed -i 's/^.*linux.*$//' ./pkgs/common/bbdown/deps.nix
+            ${pkgs.gnused}/bin/sed -i 's/^.*osx.*$//' ./pkgs/common/bbdown/deps.nix
             print "::endgroup::"
           }
           print "::group::commit bbdown deps"
