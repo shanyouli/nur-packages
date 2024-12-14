@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.40.0";
+    version = "v3.41.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.40.0";
+      rev = "v3.41.0";
       fetchSubmodules = false;
-      sha256 = "sha256-D2XwY2D5WS7VoidmpEM5KyMA1NsZjlUV6Xs2uSj6+BE=";
+      sha256 = "sha256-pGOdTBzAEW8KZAoGMoUgwqkkMFBav86puODNHMvEIBg=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.39.2";
+    version = "3.41.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.39.2/dist.tar.gz";
-      sha256 = "sha256-2ZgxWv9VROfXJIIU0Co7BKkjZr8KxQ+0eRsjgz6LVDo=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.41.0/dist.tar.gz";
+      sha256 = "sha256-f7w+g4dPyhXrZZCq0sCc1utPFap/6+KyWpYepWulJls=";
     };
   };
   alive-progress = {
@@ -66,6 +66,18 @@
       sha256 = "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=";
     };
   };
+  bbdown = {
+    pname = "bbdown";
+    version = "56f9a4329d583773807cbb980fc23020d7e29949";
+    src = fetchFromGitHub {
+      owner = "nilaoda";
+      repo = "BBDown";
+      rev = "56f9a4329d583773807cbb980fc23020d7e29949";
+      fetchSubmodules = false;
+      sha256 = "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=";
+    };
+    date = "2024-12-10";
+  };
   borders = {
     pname = "borders";
     version = "v1.7.0";
@@ -90,10 +102,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.97";
+    version = "4.9.99";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.97/darkreader-firefox.xpi";
-      sha256 = "sha256-rxfnkSoRsXvYsuDH7AJ26cMW3cIbLaMXTOC4GFqYQBA=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.99/darkreader-firefox.xpi";
+      sha256 = "sha256-ahzhRrMBLMY9iUKQz/blBY0/MZECzdZwz4IJEhB8Gr0=";
     };
   };
   deeplx = {
@@ -380,22 +392,22 @@
     };
   };
   nh = {
-    pname = "nh_darwin";
-    version = "80e64a85d349aa2075973c68053ab475949f3bfd";
+    pname = "nh";
+    version = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
     src = fetchFromGitHub {
-      owner = "ToyVo";
-      repo = "nh_darwin";
-      rev = "80e64a85d349aa2075973c68053ab475949f3bfd";
+      owner = "viperML";
+      repo = "nh";
+      rev = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
       fetchSubmodules = false;
-      sha256 = "sha256-kpzViKJZFIU8DryCQzdpdHdOZN5nWrryZBiMLy3kEEE=";
+      sha256 = "sha256-I3ubew5jt8YZ27AOtIodRAYo0aew6wxY8UkWCSqz6B4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh_darwin-80e64a85d349aa2075973c68053ab475949f3bfd/Cargo.lock;
+      lockFile = ./nh-6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-12-01";
+    date = "2024-12-11";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -561,25 +573,6 @@
     src = fetchurl {
       url = "https://pypi.org/packages/source/w/websocket_bridge_python/websocket_bridge_python-0.0.2.tar.gz";
       sha256 = "sha256-J9HGD3PSavZQwh2eZPbM6isdknZ1M2nkL5WHlYjRju8=";
-    };
-  };
-  yabai = {
-    pname = "yabai";
-    version = "v7.1.5";
-    src = fetchFromGitHub {
-      owner = "koekeishiya";
-      repo = "yabai";
-      rev = "v7.1.5";
-      fetchSubmodules = false;
-      sha256 = "sha256-6HBWJvjVWagtHrfjWaYSRcnQOuwTBVeVxo3wc+jSlyE=";
-    };
-  };
-  yabai-bin = {
-    pname = "yabai-bin";
-    version = "7.1.5";
-    src = fetchurl {
-      url = "https://github.com/koekeishiya/yabai/releases/download/v7.1.5/yabai-v7.1.5.tar.gz";
-      sha256 = "sha256-U+hzkxhJTBDDWF4e4inbWz7laCiV69lHCGlQt50WIhQ=";
     };
   };
   yabai-zsh-completions = {
