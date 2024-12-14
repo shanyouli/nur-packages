@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4379821/violentmonkey-2.28.0.xpi",
-    "version": "2.28.0",
-    "sha256": "1fmw45qi74d999r4cip9yg3bj0is7w91km118xz1k9cl86qkvg1h",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4398029/violentmonkey-2.29.0.xpi",
+    "version": "2.29.0",
+    "sha256": "0sflf6yv8dxqz9879r46jikmls1zmyyklz3wlmvqlss74jl3kprf",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4378073/darkreader-4.9.96.xpi",
-    "version": "4.9.96",
-    "sha256": "0zj7ixvah5szryrgffqvgajvckgak2qzrq3yrnq9b09rs8v1lbvf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4403051/darkreader-4.9.97.xpi",
+    "version": "4.9.97",
+    "sha256": "0ix4gz7wsm19gv0dx524p18c83h12p3xkpyjifs7vw4r3lrrbfij",
     "pname": "darkreader"
   },
   "chrome-mask": {
