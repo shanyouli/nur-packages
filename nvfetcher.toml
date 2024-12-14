@@ -123,9 +123,9 @@ src.github = "kingwingfly/fav"
 fetch.github = "kingwingfly/fav"
 cargo_locks = [ "Cargo.lock" ]
 
-[nh_darwin]
-src.git = "https://github.com/ToyVo/nh_darwin"
-fetch.github = "ToyVo/nh_darwin"
+[nh]
+src.git = "https://github.com/viperML/nh"
+fetch.github = "viperML/nh"
 cargo_locks = ["Cargo.lock"]
 
 # a fast CLI documentaion searcher for nix

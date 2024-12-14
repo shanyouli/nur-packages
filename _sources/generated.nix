@@ -379,7 +379,7 @@
       sha256 = "sha256-loIT6Oy0TmkqtjEUMOVZEk27hr5wWPiP5WycGDXmo3s=";
     };
   };
-  nh_darwin = {
+  nh = {
     pname = "nh_darwin";
     version = "80e64a85d349aa2075973c68053ab475949f3bfd";
     src = fetchFromGitHub {

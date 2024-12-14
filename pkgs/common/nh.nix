@@ -13,11 +13,7 @@
   runtimeDeps = [nvd nix-output-monitor];
 in
   rustPlatform.buildRustPackage {
-    inherit (source) src pname;
-    version =
-      if (builtins.hasAttr "date" source)
-      then source.date
-      else lib.removePrefix "v" source.version;
+    inherit (source) src pname version;
     cargoLock = source.cargoLock."Cargo.lock";
 
     strictDeps = true;
@@ -27,7 +23,6 @@ in
     buildInputs = lib.optionals stdenv.isDarwin [apple-sdk_13];
     postInstall =
       ''
-        # mv $out/bin/nh_darwin $out/bin/nh
         wrapProgram $out/bin/nh --prefix PATH : ${lib.makeBinPath runtimeDeps}
       ''
       + lib.optionalString (stdenv.buildPlatform.canExecute stdenv.hostPlatform) ''

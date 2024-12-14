@@ -4,7 +4,4 @@
 # fish file -> fish-xx
 dev: true
 apps:
-  - pragmasevka
-  - pragmasevka-nerd
-  - pragmasevka-sans
-  - pragmasevka-serif
+  - nh
