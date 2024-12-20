@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "56f9a4329d583773807cbb980fc23020d7e29949";
+    version = "5294b28f358329d9bcc8c80e4337ca3532e46898";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "56f9a4329d583773807cbb980fc23020d7e29949";
+      rev = "5294b28f358329d9bcc8c80e4337ca3532e46898";
       fetchSubmodules = false;
-      sha256 = "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=";
+      sha256 = "sha256-SZK5tKdUdvajrcziHdM5ujkFNQki3OFmuLn2AxhE/7s=";
     };
-    date = "2024-12-10";
+    date = "2024-12-14";
   };
   borders = {
     pname = "borders";
@@ -465,13 +465,13 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.0.2.10";
+    version = "release-5.0.3.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.0.2.10";
+      rev = "release-5.0.3.10";
       fetchSubmodules = false;
-      sha256 = "sha256-9RCG530zWQ+qzP0Y+y69NFlBWVA8GT29dY8aC1cvq7o=";
+      sha256 = "sha256-8cRkbTMvV0iyrEyEltVpFdPamWQ6qiAFm4eBb7GYXpI=";
     };
   };
   sarasa-term = {

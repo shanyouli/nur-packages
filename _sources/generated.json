@@ -117,7 +117,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2024-12-10",
+        "date": "2024-12-14",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -129,12 +129,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "56f9a4329d583773807cbb980fc23020d7e29949",
-            "sha256": "sha256-uRqPpQVUf14TLU2JzcEUkyJvvRzqEN6trv8cfc2h1ms=",
+            "rev": "5294b28f358329d9bcc8c80e4337ca3532e46898",
+            "sha256": "sha256-SZK5tKdUdvajrcziHdM5ujkFNQki3OFmuLn2AxhE/7s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "56f9a4329d583773807cbb980fc23020d7e29949"
+        "version": "5294b28f358329d9bcc8c80e4337ca3532e46898"
     },
     "borders": {
         "cargoLocks": null,
@@ -817,12 +817,12 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-5.0.2.10",
-            "sha256": "sha256-9RCG530zWQ+qzP0Y+y69NFlBWVA8GT29dY8aC1cvq7o=",
+            "rev": "release-5.0.3.10",
+            "sha256": "sha256-8cRkbTMvV0iyrEyEltVpFdPamWQ6qiAFm4eBb7GYXpI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "release-5.0.2.10"
+        "version": "release-5.0.3.10"
     },
     "sarasa-term": {
         "cargoLocks": null,
