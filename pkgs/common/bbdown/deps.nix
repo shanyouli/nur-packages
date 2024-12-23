@@ -19,21 +19,6 @@
     hash = "sha256-2Ev/6d7PH6K4dVYQQHlZ+ZggkCnDtrlaGygs65mDo28=";
   })
   (fetchNuGet {
-
-    version = "9.0.0";
-    hash = "sha256-6K4hYOQ9jasxZvHu4gy4mGRiDE4mKSeSkxQVvFHuC5A=";
-  })
-  (fetchNuGet {
-
-    version = "9.0.0";
-    hash = "sha256-WLJA9CoDVdUpP9Pgv6Tg1xi7YHjneY8gPdOLiEHF/r8=";
-  })
-  (fetchNuGet {
-
-    version = "9.0.0";
-    hash = "sha256-dkEUTvOMkz3kBPYhFLot1Vv9rOoajkusCTjuX/MMXrs=";
-  })
-  (fetchNuGet {
     pname = "SharpZipLib";
     version = "1.4.2";
     hash = "sha256-/giVqikworG2XKqfN9uLyjUSXr35zBuZ2FX2r8X/WUY=";
