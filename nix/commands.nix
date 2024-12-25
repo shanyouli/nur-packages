@@ -168,6 +168,7 @@
         with-env {PYTHONPATH: $pythonpath, NIX_PATH: $nix_path } {
           print $"::group::(ansi green_underline)Update source by nvfetcher(ansi reset)..."
           print $env.PWD
+          print ...$key_args
           ${nvfetcher_bin}/bin/nvfetcher ...$key_args -c nvfetcher.toml -o _sources
           print "::endgroup::"
         }
