@@ -16,7 +16,7 @@
     nvfetcher = {
       url = "github:berberman/nvfetcher";
       inputs = {
-        nixpkgs.follows = "nixpkgs";
+        nixpkgs.follows = "nixpkgs-stable";
         flake-utils.follows = "flake-utils";
         flake-compat.follows = "flake-compat";
       };
