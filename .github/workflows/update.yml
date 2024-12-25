@@ -44,6 +44,7 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
           nix run .#nvfetcher
+          rm -f secrets.toml
       - name: update src by update.py
         run: nix run .#updatePy
       - name: Current Time

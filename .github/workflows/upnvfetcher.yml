@@ -54,6 +54,7 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
           nix run .#nvfetcher
+          rm -f secrets.toml
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

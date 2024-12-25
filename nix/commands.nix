@@ -134,24 +134,25 @@
       '';
       nvfetcher = let
         #see @https://discourse.nixos.org/t/what-does-error-x-is-not-allowed-to-refer-to-the-following-paths-mean-exactly/50680
-        nvfetcher_bin = with pkgs.haskell.lib;
-          overrideCabal
-          (justStaticExecutables inputs'.nvfetcher.packages.nvfetcher-lib)
-          (drv: {
-            disallowGhcReference = false;
-          });
+        # nvfetcher_bin = with pkgs.haskell.lib;
+        #   overrideCabal
+        #   (justStaticExecutables inputs'.nvfetcher.packages.nvfetcher-lib)
+        #   (drv: {
+        #     disallowGhcReference = false;
+        #   });
+        nvfetcher_bin = inputs'.nvfetcher.packages.default;
       in ''
         use std log
         log info $"The execution file path is ($env.FILE_PWD)"
-        let key_args = [ "-r" "10"  "--keep-going" "-j" "3" "--commit-changes"]
+        let base_key_args = [ "-r" "10"  "--keep-going" "-j" "3" "--commit-changes"]
         let nvfetcher_config = $env.HOME | path join ".config" "nvfetcher.toml"
         let ccommit = git rev-parse --short=7 HEAD
-        if ($nvfetcher_config | path exists) {
-          let key_args = $key_args | append "-k"
-          let key_args = $key_args | append $nvfetcher_config
+        let key_args =         if ($nvfetcher_config | path exists) {
+          $base_key_args | append "-k" | append $nvfetcher_config
         } else if (($env.PWD | path join "secrets.toml") | path exists) {
-          let key_args = $key_args | append "-k"
-          let key_args = $key_args | append ($env.PWD | path join "secrets.toml")
+          $base_key_args | append "-k" | append ($env.PWD | path join "secrets.toml")
+        } else {
+          $base_key_args
         }
         let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -i NIX_PATH | is-empty) {
             ""
@@ -167,8 +168,7 @@
         with-env {PYTHONPATH: $pythonpath, NIX_PATH: $nix_path } {
           print $"::group::(ansi green_underline)Update source by nvfetcher(ansi reset)..."
           print $env.PWD
-          ls
-          ${nvfetcher_bin}/bin/nvfetcher ...$key_args
+          ${nvfetcher_bin}/bin/nvfetcher ...$key_args -c nvfetcher.toml -o _sources
           print "::endgroup::"
         }
         if ((git rev-parse --short=7 HEAD) != $ccommit) {
