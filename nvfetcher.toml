@@ -1,11 +1,12 @@
+### Don't use Chinese, I don't know what causes using Chinese comments to report an error.
+
 #### python packages
 
 # https://discourse.nixos.org/t/installing-a-python-package-from-pypi/24553/2
-# 不使用 fetchPypi，原因见上面链接
+# The reason for not using fetch.pypi is referenced above
 [musicdl]
 fetch.github = "CharlesPikachu/musicdl"
 src.git = "https://github.com/CharlesPikachu/musicdl"
-
 
 [about-time]
 src.pypi = "about-time"
@@ -31,7 +32,6 @@ fetch.github = "delfick/python-dict2xml"
 src.github_tag = "shanyouli/sd"
 # src.git = "https://github.com/shanyouli/sd"
 fetch.github = "shanyouli/sd"
-
 
 ### common
 [zpmod]
@@ -218,7 +218,6 @@ src.github = "darkreader/darkreader"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/darkreader/darkreader/releases/download/v$ver/darkreader-firefox.xpi"
-
 
 ### packages in modules
 [qbittorrent]
