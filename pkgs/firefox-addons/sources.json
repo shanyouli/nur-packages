@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4406262/zeroomega-3.3.17.xpi",
-    "version": "3.3.17",
-    "sha256": "03z9i1q1zp3j4pvy1f0sfc3xk707mfqcscd9y7z31p1fa1y3vvgx",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4410666/zeroomega-3.3.18.xpi",
+    "version": "3.3.18",
+    "sha256": "1jwx01i19fr71136db0p0aivfndk3baxxg7ixv9akn97nv5nkj2l",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
@@ -96,9 +96,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4387956/raindropio-6.6.62.xpi",
-    "version": "6.6.62",
-    "sha256": "0nlhn0rsmqagh43f8zp0anm8g7r7y9laa7gsl3ifaiff8smb20v5",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4406418/raindropio-6.6.65.xpi",
+    "version": "6.6.65",
+    "sha256": "10n8np1jlm62z2mis36n6r7fdnzp8w80asc85l0rn5l9q1zq42kv",
     "pname": "raindropio"
   }
 }
