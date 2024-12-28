@@ -16,7 +16,7 @@
         const NIX_LOGFILE = "nix-build-uncached.log"
         # Workaround https://github.com/NixOS/nix/issues/6572
 
-        def nixVersion>= [v: string] -> bool  {
+        def nixVersion>= [v: string]: nothing -> bool {
           let currentVersion = nix --version | cut -d" " -f3 | split row "."
           let vList = $v | split row "."
           for i in 0..($vList | length) {
@@ -24,6 +24,7 @@
               return true
             }
           }
+          return false
         }
 
         mut is_next = "true"
@@ -78,7 +79,7 @@
         }
         let dev_apps = $dev_apps | get apps | filter {|x| $x in $DEFAULT_APPS}
         const NIX_LOGFILE = "nix-build-uncached.log"
-        def nixVersion>= [v: string] -> bool  {
+        def nixVersion>= [v: string]: nothing -> bool  {
           let currentVersion = nix --version | cut -d" " -f3 | split row "."
           let vList = $v | split row "."
           for i in 0..($vList | length) {
@@ -86,6 +87,7 @@
               return true
             }
           }
+          return false
         }
         def build [s: string ] {
           print $"::group::Building (ansi u)($s)(ansi reset) package with nix-fast-build"
