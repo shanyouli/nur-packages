@@ -186,7 +186,7 @@
               ./result ./pkgs/common/bbdown/deps.nix
             }
             # fix some error see: @https://github.com/NixOS/nixpkgs/pull/343837
-            ${pkgs.python3}/bin/python3 ./tools/fix_bbdown_deps.py ./pkgs/common/bbdown/deps.nix
+            ${pkgs.python3}/bin/python3 ./tools/patch-dotnet-deps.py ./pkgs/common/bbdown/deps.nix
             print "::endgroup::"
           }
           print "::group::commit bbdown deps"

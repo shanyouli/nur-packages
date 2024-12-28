@@ -36,7 +36,7 @@
     emacs-overlay = {
       url = "github:nix-community/emacs-overlay/master";
       inputs = {
-        nixpkgs.follows = "nixpkgs-stable"; # 最近 nixpkgs 库的更新导致很多包存在问题，eg nvfetcher，emacs
+        nixpkgs.follows = "nixpkgs"; # 最近 nixpkgs 库的更新导致很多包存在问题，eg nvfetcher，emacs
         nixpkgs-stable.follows = "nixpkgs-stable";
       };
     };
