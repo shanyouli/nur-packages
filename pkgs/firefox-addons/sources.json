@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4379558/noscript-11.5.2.xpi",
-    "version": "11.5.2",
-    "sha256": "0fj96c9pnjyg2dwqnnzd64vnx1inhl72c27ybm0j515zhijal2j6",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4411102/noscript-12.1.1.xpi",
+    "version": "12.1.1",
+    "sha256": "06pk3zf353yh7c8bv3xvl1jwmc2bd7v4y3p0dl1m5hygzxirwqzr",
     "pname": "noscript"
   },
   "browserpass-ce": {
