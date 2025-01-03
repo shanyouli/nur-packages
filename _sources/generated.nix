@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
+    version = "b7a857066e726dafe9c5f00a8af6ab3f25036ee1";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
+      rev = "b7a857066e726dafe9c5f00a8af6ab3f25036ee1";
       fetchSubmodules = false;
-      sha256 = "sha256-I3ubew5jt8YZ27AOtIodRAYo0aew6wxY8UkWCSqz6B4=";
+      sha256 = "sha256-7zBiXoC43piFocq0wHvNm5KgzolCi3axD4QhWfsw4DU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4/Cargo.lock;
+      lockFile = ./nh-b7a857066e726dafe9c5f00a8af6ab3f25036ee1/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-12-11";
+    date = "2025-01-02";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -476,10 +476,10 @@
   };
   sarasa-term = {
     pname = "sarasa-term";
-    version = "2.3.0";
+    version = "2.3.1";
     src = fetchurl {
-      url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.0/SarasaTermSCNerd.ttc.tar.gz";
-      sha256 = "sha256-jHTVgU9O2krwBA8OAAUpRkj01PAk/LsDjmzso/+1uhM=";
+      url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.1/SarasaTermSCNerd.ttc.tar.gz";
+      sha256 = "sha256-WiXDbXdpRmf4R8IkdeIC3jUuwRKPUFUIHT6CzYoDmuI=";
     };
   };
   sd = {

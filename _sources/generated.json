@@ -678,11 +678,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4/Cargo.lock",
+                "./nh-b7a857066e726dafe9c5f00a8af6ab3f25036ee1/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-12-11",
+        "date": "2025-01-02",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -694,12 +694,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4",
-            "sha256": "sha256-I3ubew5jt8YZ27AOtIodRAYo0aew6wxY8UkWCSqz6B4=",
+            "rev": "b7a857066e726dafe9c5f00a8af6ab3f25036ee1",
+            "sha256": "sha256-7zBiXoC43piFocq0wHvNm5KgzolCi3axD4QhWfsw4DU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4"
+        "version": "b7a857066e726dafe9c5f00a8af6ab3f25036ee1"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
@@ -833,11 +833,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jHTVgU9O2krwBA8OAAUpRkj01PAk/LsDjmzso/+1uhM=",
+            "sha256": "sha256-WiXDbXdpRmf4R8IkdeIC3jUuwRKPUFUIHT6CzYoDmuI=",
             "type": "url",
-            "url": "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.0/SarasaTermSCNerd.ttc.tar.gz"
+            "url": "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.1/SarasaTermSCNerd.ttc.tar.gz"
         },
-        "version": "2.3.0"
+        "version": "2.3.1"
     },
     "sd": {
         "cargoLocks": null,
