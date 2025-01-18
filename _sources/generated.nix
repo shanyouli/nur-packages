@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "5294b28f358329d9bcc8c80e4337ca3532e46898";
+    version = "600fe8711e4c5a73cbd8821e4ff0d731d051ddff";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "5294b28f358329d9bcc8c80e4337ca3532e46898";
+      rev = "600fe8711e4c5a73cbd8821e4ff0d731d051ddff";
       fetchSubmodules = false;
-      sha256 = "sha256-SZK5tKdUdvajrcziHdM5ujkFNQki3OFmuLn2AxhE/7s=";
+      sha256 = "sha256-Pcy0mF68rTnMRQsCrKXv1MDXQkoFKoVcklCvOZdY2Mw=";
     };
-    date = "2024-12-14";
+    date = "2025-01-14";
   };
   borders = {
     pname = "borders";
@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
+    version = "f4da5cf5af09e01a0177e889aa6fc682c6176a67";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4";
+      rev = "f4da5cf5af09e01a0177e889aa6fc682c6176a67";
       fetchSubmodules = false;
-      sha256 = "sha256-I3ubew5jt8YZ27AOtIodRAYo0aew6wxY8UkWCSqz6B4=";
+      sha256 = "sha256-MCUsaDZVi2FCVvLPXkekq5i1BxTX/5zyLLEJDFX1u5Y=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-6a69a145b0c7dbd5616bbded512b8bf8b5d2f8a4/Cargo.lock;
+      lockFile = ./nh-f4da5cf5af09e01a0177e889aa6fc682c6176a67/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-12-11";
+    date = "2025-01-13";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -476,10 +476,10 @@
   };
   sarasa-term = {
     pname = "sarasa-term";
-    version = "2.3.0";
+    version = "2.3.1";
     src = fetchurl {
-      url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.0/SarasaTermSCNerd.ttc.tar.gz";
-      sha256 = "sha256-jHTVgU9O2krwBA8OAAUpRkj01PAk/LsDjmzso/+1uhM=";
+      url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v2.3.1/SarasaTermSCNerd.ttc.tar.gz";
+      sha256 = "sha256-WiXDbXdpRmf4R8IkdeIC3jUuwRKPUFUIHT6CzYoDmuI=";
     };
   };
   sd = {
