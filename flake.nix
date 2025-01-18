@@ -29,14 +29,13 @@
       url = "github:cachix/git-hooks.nix";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        nixpkgs-stable.follows = "nixpkgs-stable";
         flake-compat.follows = "flake-compat";
       };
     };
     emacs-overlay = {
       url = "github:nix-community/emacs-overlay/master";
       inputs = {
-        nixpkgs.follows = "nixpkgs"; # 最近 nixpkgs 库的更新导致很多包存在问题，eg nvfetcher，emacs
+        nixpkgs.follows = "nixpkgs-stable"; # 最近 nixpkgs 库的更新导致很多包存在问题，eg nvfetcher，emacs
         nixpkgs-stable.follows = "nixpkgs-stable";
       };
     };
