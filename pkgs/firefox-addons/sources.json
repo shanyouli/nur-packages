@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4379558/noscript-11.5.2.xpi",
-    "version": "11.5.2",
-    "sha256": "0fj96c9pnjyg2dwqnnzd64vnx1inhl72c27ybm0j515zhijal2j6",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4411102/noscript-12.1.1.xpi",
+    "version": "12.1.1",
+    "sha256": "06pk3zf353yh7c8bv3xvl1jwmc2bd7v4y3p0dl1m5hygzxirwqzr",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -54,15 +54,15 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4391011/ublock_origin-1.61.2.xpi",
-    "version": "1.61.2",
-    "sha256": "055srgfm6qpva45h4m11fjmzvrzdqvn7y1r32xyw2cpz8r574fpf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4412673/ublock_origin-1.62.0.xpi",
+    "version": "1.62.0",
+    "sha256": "18ziiq0z4nhli8b9avyxm9c67lrnc25chnrb9sqjyc4chfm057la",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4394599/immersive_translate-1.11.7.xpi",
-    "version": "1.11.7",
-    "sha256": "0f5vzwsq2sag7d111qck1njmvm6b19zqynp5gqb5kvbwxk17gksk",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4419548/immersive_translate-1.13.5.xpi",
+    "version": "1.13.5",
+    "sha256": "12r154nia08d2jp6kj8ph4ldwy70prdq8534m8ywrazl3bmfm7zy",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4410666/zeroomega-3.3.18.xpi",
-    "version": "3.3.18",
-    "sha256": "1jwx01i19fr71136db0p0aivfndk3baxxg7ixv9akn97nv5nkj2l",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4419500/zeroomega-3.3.20.xpi",
+    "version": "3.3.20",
+    "sha256": "0dk43vnvqqb2qyr9w29qxig3p77yzxc9zkjkcr187rw10qk50y51",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
