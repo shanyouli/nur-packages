@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "600fe8711e4c5a73cbd8821e4ff0d731d051ddff";
+    version = "4e6ee6a14bfb565874a5e9e5f3bea3d0e5d46441";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "600fe8711e4c5a73cbd8821e4ff0d731d051ddff";
+      rev = "4e6ee6a14bfb565874a5e9e5f3bea3d0e5d46441";
       fetchSubmodules = false;
-      sha256 = "sha256-Pcy0mF68rTnMRQsCrKXv1MDXQkoFKoVcklCvOZdY2Mw=";
+      sha256 = "sha256-q0fBB9ml86p9SXgPyTrD1TqFLIQdhv36aKgVvc1qh0E=";
     };
-    date = "2025-01-14";
+    date = "2025-01-21";
   };
   borders = {
     pname = "borders";
@@ -110,13 +110,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v1.0.1";
+    version = "v1.0.2";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v1.0.1";
+      rev = "v1.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-6ZGC1cYIyZUudZLAqRExtjE6QsDMHvTVgLWHZfM83Uw=";
+      sha256 = "sha256-Mvlbu69iBoJ2tP+WaQ4jV+nNzCua52FiK7hntFhz9b8=";
     };
   };
   dict2xml = {
@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "f4da5cf5af09e01a0177e889aa6fc682c6176a67";
+    version = "245b2a1743a7b7f559d428090630b2b56c25949f";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "f4da5cf5af09e01a0177e889aa6fc682c6176a67";
+      rev = "245b2a1743a7b7f559d428090630b2b56c25949f";
       fetchSubmodules = false;
-      sha256 = "sha256-MCUsaDZVi2FCVvLPXkekq5i1BxTX/5zyLLEJDFX1u5Y=";
+      sha256 = "sha256-gNmu5trAOoWOo1nlSr0i0BOw4AnVmsbI1eG0WjMdvZU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-f4da5cf5af09e01a0177e889aa6fc682c6176a67/Cargo.lock;
+      lockFile = ./nh-245b2a1743a7b7f559d428090630b2b56c25949f/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-01-13";
+    date = "2025-01-22";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -512,13 +512,13 @@
   };
   sidebery = {
     pname = "sidebery";
-    version = "v5.2.0";
+    version = "v5.3.1";
     src = fetchFromGitHub {
       owner = "mbnuqw";
       repo = "sidebery";
-      rev = "v5.2.0";
+      rev = "v5.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-83n0aX5mJYf1yYamuM+DelkpOGLRZqkXpTgQMAmMLXI=";
+      sha256 = "sha256-nJwJs97/yoBNqqTU1lqtsGoNLnvQ2e11+Pf8uTEYpuQ=";
     };
   };
   singboxp = {
