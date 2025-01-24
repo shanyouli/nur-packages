@@ -96,9 +96,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4406418/raindropio-6.6.65.xpi",
-    "version": "6.6.65",
-    "sha256": "10n8np1jlm62z2mis36n6r7fdnzp8w80asc85l0rn5l9q1zq42kv",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4420771/raindropio-6.6.71.xpi",
+    "version": "6.6.71",
+    "sha256": "1507l4pvy8rxwhz1iqlabjqkwv9a6n37qpy2wal0r9qwk0bm5zjj",
     "pname": "raindropio"
   }
 }
