@@ -337,18 +337,18 @@
   };
   maple-mono = {
     pname = "maple-mono";
-    version = "6.4";
+    version = "7.0-beta36";
     src = fetchurl {
-      url = "https://github.com/subframe7536/maple-font/releases/download/v6.4/MapleMono-ttf.zip";
-      sha256 = "sha256-a06JLIP5aVb9SeEz6kw+LqKy0ydCgaUlPDFWA2Y0G8Q=";
+      url = "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta36/MapleMono-ttf.zip";
+      sha256 = "sha256-J3SjrGq2bka/quqY081xv/aW6ry4wQPqt/x7rkYaU0w=";
     };
   };
   maple-sc-nf = {
     pname = "maple-sc-nf";
-    version = "6.4";
+    version = "7.0-beta36";
     src = fetchurl {
-      url = "https://github.com/subframe7536/Maple-font/releases/download/v6.4/MapleMono-SC-NF.zip";
-      sha256 = "sha256-SbXWkrpLJUrq+Jt1h3GBP9md5TbYpPchdiR0oEDMAgY=";
+      url = "https://github.com/subframe7536/Maple-font/releases/download/v7.0-beta36/MapleMono-NF-CN.zip";
+      sha256 = "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=";
     };
   };
   mkalias = {

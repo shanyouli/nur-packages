@@ -586,11 +586,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a06JLIP5aVb9SeEz6kw+LqKy0ydCgaUlPDFWA2Y0G8Q=",
+            "sha256": "sha256-J3SjrGq2bka/quqY081xv/aW6ry4wQPqt/x7rkYaU0w=",
             "type": "url",
-            "url": "https://github.com/subframe7536/maple-font/releases/download/v6.4/MapleMono-ttf.zip"
+            "url": "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta36/MapleMono-ttf.zip"
         },
-        "version": "6.4"
+        "version": "7.0-beta36"
     },
     "maple-sc-nf": {
         "cargoLocks": null,
@@ -601,11 +601,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SbXWkrpLJUrq+Jt1h3GBP9md5TbYpPchdiR0oEDMAgY=",
+            "sha256": "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=",
             "type": "url",
-            "url": "https://github.com/subframe7536/Maple-font/releases/download/v6.4/MapleMono-SC-NF.zip"
+            "url": "https://github.com/subframe7536/Maple-font/releases/download/v7.0-beta36/MapleMono-NF-CN.zip"
         },
-        "version": "6.4"
+        "version": "7.0-beta36"
     },
     "mkalias": {
         "cargoLocks": {
