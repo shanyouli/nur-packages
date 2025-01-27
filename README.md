@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-01-24 22:11:07 UTC
+- LAST_MODIFY: 2025-01-27 12:52:35 UTC
 
 
 ## How to use
@@ -83,8 +83,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.6.0|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
-|[**maple-mono**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
-|[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||6.4|Open source monospace/Nerd Font |
+|[**maple-mono**](https://github.com/subframe7536/Maple-font)||7.0-beta36|Open source monospace/Nerd Font |
+|[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||7.0-beta36|Open source monospace/Nerd Font |
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nh**](https://github.com/viperML/nh)||unstable-2025-01-22|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
