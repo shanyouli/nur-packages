@@ -42,7 +42,7 @@ fetch.github = "z-shell/zpmod"
 src.github = "subframe7536/Maple-font"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/subframe7536/Maple-font/releases/download/v$ver/MapleMono-SC-NF.zip"
+fetch.url = "https://github.com/subframe7536/Maple-font/releases/download/v$ver/MapleMono-NF-CN.zip"
 
 [maple-mono]
 src.github = "subframe7536/Maple-font"
