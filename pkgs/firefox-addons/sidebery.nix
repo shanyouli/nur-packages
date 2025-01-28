@@ -2,12 +2,14 @@
   lib,
   source,
   buildNpmPackage,
+  importNpmLock,
 }: let
   addonId = "{3c078156-979c-498b-8990-85f7987dd929}";
 in
   buildNpmPackage rec {
     inherit (source) pname version src;
-    npmDepsHash = "sha256-wBYjX65Tb3+83NT5625j77qceCADkiS22PsmCdwbJA0=";
+    npmDeps = importNpmLock {npmRoot = source.src;};
+    inherit (importNpmLock) npmConfigHook;
     installPhase = ''
       npm run build.ext
       dst="$out/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
