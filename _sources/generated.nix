@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.41.0";
+    version = "v3.42.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.41.0";
+      rev = "v3.42.0";
       fetchSubmodules = false;
-      sha256 = "sha256-pGOdTBzAEW8KZAoGMoUgwqkkMFBav86puODNHMvEIBg=";
+      sha256 = "sha256-r9hL4bxeCiJKHiWMyN4MxqDeN3NhlY8pnpxBCaWDz9c=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.41.0";
+    version = "3.42.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.41.0/dist.tar.gz";
-      sha256 = "sha256-f7w+g4dPyhXrZZCq0sCc1utPFap/6+KyWpYepWulJls=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.42.0/dist.tar.gz";
+      sha256 = "sha256-aF3RO02jniUwhdgv0RB08FGxy8QCOEeUIXY7PS5JsvA=";
     };
   };
   alive-progress = {
@@ -102,10 +102,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.99";
+    version = "4.9.100";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.99/darkreader-firefox.xpi";
-      sha256 = "sha256-ahzhRrMBLMY9iUKQz/blBY0/MZECzdZwz4IJEhB8Gr0=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.100/darkreader-firefox.xpi";
+      sha256 = "sha256-mWhOUILRr/CoN3pVRvuzQnyKA6xXsAvIBOsMnIN6ju0=";
     };
   };
   deeplx = {
@@ -557,15 +557,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be";
+    version = "d563f20f8fa848155821de84daf2e7562a277543";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be";
+      rev = "d563f20f8fa848155821de84daf2e7562a277543";
       fetchSubmodules = false;
-      sha256 = "sha256-ymblpbySU2iPo+9zOAQSuDatprGvlcd+MECq2d0lguU=";
+      sha256 = "sha256-MdMXh4QIjndDrKmFaSQv4dLbYT5fpd3xQ2E2u57CNPA=";
     };
-    date = "2024-07-09";
+    date = "2025-01-31";
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";

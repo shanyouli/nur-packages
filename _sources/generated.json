@@ -43,12 +43,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.41.0",
-            "sha256": "sha256-pGOdTBzAEW8KZAoGMoUgwqkkMFBav86puODNHMvEIBg=",
+            "rev": "v3.42.0",
+            "sha256": "sha256-r9hL4bxeCiJKHiWMyN4MxqDeN3NhlY8pnpxBCaWDz9c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.41.0"
+        "version": "v3.42.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -59,11 +59,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-f7w+g4dPyhXrZZCq0sCc1utPFap/6+KyWpYepWulJls=",
+            "sha256": "sha256-aF3RO02jniUwhdgv0RB08FGxy8QCOEeUIXY7PS5JsvA=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.41.0/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.42.0/dist.tar.gz"
         },
-        "version": "3.41.0"
+        "version": "3.42.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ahzhRrMBLMY9iUKQz/blBY0/MZECzdZwz4IJEhB8Gr0=",
+            "sha256": "sha256-mWhOUILRr/CoN3pVRvuzQnyKA6xXsAvIBOsMnIN6ju0=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.99/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.100/darkreader-firefox.xpi"
         },
-        "version": "4.9.99"
+        "version": "4.9.100"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -972,7 +972,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2024-07-09",
+        "date": "2025-01-31",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -984,12 +984,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be",
-            "sha256": "sha256-ymblpbySU2iPo+9zOAQSuDatprGvlcd+MECq2d0lguU=",
+            "rev": "d563f20f8fa848155821de84daf2e7562a277543",
+            "sha256": "sha256-MdMXh4QIjndDrKmFaSQv4dLbYT5fpd3xQ2E2u57CNPA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f9ab1a2fdbb3c3efdb14ddabd90bf22b7fb7b5be"
+        "version": "d563f20f8fa848155821de84daf2e7562a277543"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,
