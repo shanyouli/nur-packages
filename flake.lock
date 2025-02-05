@@ -18,7 +18,7 @@
     "emacs-overlay": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs-stable"
+          "nixpkgs"
         ],
         "nixpkgs-stable": [
           "nixpkgs-stable"

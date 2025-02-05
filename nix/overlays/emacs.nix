@@ -51,7 +51,10 @@
     emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
     emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
   in {
-    packages.emacs-git = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
-    packages.emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
+    packages = {
+      emacs-git = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
+      emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
+      # emacs-igc = mkEmacs inputs'.emacs-overlay.packages.emacs-igc emacs-git-version;
+    };
   };
 }
