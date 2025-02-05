@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-02-05 07:50:28 UTC
+- LAST_MODIFY: 2025-02-05 09:01:57 UTC
 
 
 ## How to use
@@ -86,7 +86,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**maple-mono**](https://github.com/subframe7536/Maple-font)||7.0-beta36|Open source monospace/Nerd Font |
 |[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||7.0-beta36|Open source monospace/Nerd Font |
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
-|[**nh**](https://github.com/viperML/nh)||unstable-2025-01-22|Yet another nix cli helper|
+|[**nh**](https://github.com/viperML/nh)||4.0.0-beta.9-8ef70b6|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||32.2.1|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||32.2.1|我的自定义 iosvake|
