@@ -49,6 +49,11 @@
     };
     # cl-nix-lite, 用于 mac-app-util 包
     cl-nix-lite.url = "github:hraban/cl-nix-lite";
+    # nh 配置
+    nh-olverlay = {
+      url = "github:viperML/nh";
+      inputs.nixpkgs.follows = "nixpkgs-stable";
+    };
   };
   outputs = {
     nixpkgs,
