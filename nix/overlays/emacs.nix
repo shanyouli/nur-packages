@@ -39,9 +39,14 @@
           ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
             srcs."emacs${version}.no-frame-refocus-cocoa".src
           ];
-        buildInputs = (old.buildInputs or []) ++ lib.optionals pkgs.stdenvNoCC.isDarwin [pkgs.apple-sdk_13];
-        configureFlags = (old.configureFlags or []) ++ ["--enable-check-lisp-object-type"] ++ lib.optionals pkgs.stdenvNoCC.isDarwin ["--with-xwidgets"];
-        CFLAGS = "-DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -g -O2";
+        configureFlags =
+          (old.configureFlags or [])
+          ++ ["--enable-check-lisp-object-type"]
+          ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
+            "--with-xwidgets"
+          ];
+        # BUG: 设置 CFLAGS 会导致 darwin 编译时，无法发现 AppKit，自从 nixos24.11 后
+        # CFLAGS="-DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -O2 -g";
       });
     emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
     emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
