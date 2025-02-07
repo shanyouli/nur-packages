@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4405348/download_with_aria2-4.12.0.2974.xpi",
-    "version": "4.12.0.2974",
-    "sha256": "1d0zxssjlzpn426xb3mw4k0j13vn00fv1bfrs29vr8x122yqxh4v",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4429872/download_with_aria2-4.12.0.2987.xpi",
+    "version": "4.12.0.2987",
+    "sha256": "10k7ynmhgn1dn8afljf1hyzbliailsqbazdpwm4a5nq8fiqkigsk",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -36,15 +36,15 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4398029/violentmonkey-2.29.0.xpi",
-    "version": "2.29.0",
-    "sha256": "0sflf6yv8dxqz9879r46jikmls1zmyyklz3wlmvqlss74jl3kprf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4426490/violentmonkey-2.30.0.xpi",
+    "version": "2.30.0",
+    "sha256": "1523chmwrzz4q3p9w94lkxjv49k2yzwxq73vyl7272m6dffjz4w2",
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4338993/styl_us-1.5.51.xpi",
-    "version": "1.5.51",
-    "sha256": "0kw1whk7vzgsk5y5xxmwin80ahnw8107rirkbz1l07yqy951hz2d",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4427271/styl_us-2.3.10.xpi",
+    "version": "2.3.10",
+    "sha256": "01xil0s9nxh0j1rjbav9byrlfyfjhjs5w9avch4xpxpayb58qlk2",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -60,15 +60,15 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4419548/immersive_translate-1.13.5.xpi",
-    "version": "1.13.5",
-    "sha256": "12r154nia08d2jp6kj8ph4ldwy70prdq8534m8ywrazl3bmfm7zy",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4425120/immersive_translate-1.13.8.xpi",
+    "version": "1.13.8",
+    "sha256": "0kwvch6v80plsq4hhhphf92a343lixxbpyd0a0wf8722wa74kvai",
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4405074/darkreader-4.9.99.xpi",
-    "version": "4.9.99",
-    "sha256": "0wjf002y1hvf3r6lbjzcg4x6rv8ixw3r56rnbsdp35ndngi7rih2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4427854/darkreader-4.9.100.xpi",
+    "version": "4.9.100",
+    "sha256": "00j389dfvfw7zs5ipvfah6v7pfvaigpciwgv2xv37mrnzvgpgm4s",
     "pname": "darkreader"
   },
   "chrome-mask": {
