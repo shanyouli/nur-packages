@@ -1,12 +1,12 @@
 {
   "firefox-esr": {
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.6.0esr/mac/en-US/Firefox%20128.6.0esr.dmg",
-    "sha256": "088aa40d2db87f726fc02d2b66af3afa48bc584b9d67f37694b4fa9a6a0cea9b",
-    "version": "128.6.0esr"
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.7.0esr/mac/en-US/Firefox%20128.7.0esr.dmg",
+    "sha256": "8a6c620271168332c589075c2f1ceb9e13130a9475eddaf5ce4d44a448101d73",
+    "version": "128.7.0esr"
   },
   "firefox": {
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/134.0.2/mac/en-US/Firefox%20134.0.2.dmg",
-    "sha256": "7832a8d1e1a13322dec1b52d32e1e64d2b6254de8348575f2d22af4975d56a85",
-    "version": "134.0.2"
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/mac/en-US/Firefox%20135.0.dmg",
+    "sha256": "e55e24e6b2a4980f4b9091900835977b282f599dcdd5e38b753d95bad8a11da9",
+    "version": "135.0"
   }
 }
