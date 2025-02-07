@@ -102,21 +102,21 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.100";
+    version = "4.9.101";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.100/darkreader-firefox.xpi";
-      sha256 = "sha256-mWhOUILRr/CoN3pVRvuzQnyKA6xXsAvIBOsMnIN6ju0=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.101/darkreader-firefox.xpi";
+      sha256 = "sha256-GYPJ51v1cNdzM9/gpPbqlGnGMhK2y+B6jeEnVxuqKpc=";
     };
   };
   deeplx = {
     pname = "deeplx";
-    version = "v1.0.2";
+    version = "v1.0.3";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v1.0.2";
+      rev = "v1.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-Mvlbu69iBoJ2tP+WaQ4jV+nNzCua52FiK7hntFhz9b8=";
+      sha256 = "sha256-+GzgrwV1UA3LDz90Ra3dvQTFXBfcovZMKpYhKUGL5is=";
     };
   };
   dict2xml = {
@@ -132,21 +132,21 @@
   };
   dutis = {
     pname = "dutis";
-    version = "59c572055aa49137bff0edd2c637717393311f63";
+    version = "cab5d61b84ab023e039f7d8998586c44ac6f2874";
     src = fetchFromGitHub {
       owner = "tsonglew";
       repo = "dutis";
-      rev = "59c572055aa49137bff0edd2c637717393311f63";
+      rev = "cab5d61b84ab023e039f7d8998586c44ac6f2874";
       fetchSubmodules = false;
-      sha256 = "sha256-hsuI1xSgHX8ckdN6rv6WWMLSmuYLVaR5CEdqSLHfvcs=";
+      sha256 = "sha256-NbQtt3zAqJ7RixewmEuJQ0X3xguvSsDV3+7l8odgHxM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./dutis-59c572055aa49137bff0edd2c637717393311f63/Cargo.lock;
+      lockFile = ./dutis-cab5d61b84ab023e039f7d8998586c44ac6f2874/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-12-08";
+    date = "2025-02-06";
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "245b2a1743a7b7f559d428090630b2b56c25949f";
+    version = "8ef70b642b8351c010a48f43dda6a1ebf038f5d9";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "245b2a1743a7b7f559d428090630b2b56c25949f";
+      rev = "8ef70b642b8351c010a48f43dda6a1ebf038f5d9";
       fetchSubmodules = false;
-      sha256 = "sha256-gNmu5trAOoWOo1nlSr0i0BOw4AnVmsbI1eG0WjMdvZU=";
+      sha256 = "sha256-HcNEFumdZ4Y59CBB1h1IzOyPxwn0u/Wson6hhzItXCA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-245b2a1743a7b7f559d428090630b2b56c25949f/Cargo.lock;
+      lockFile = ./nh-8ef70b642b8351c010a48f43dda6a1ebf038f5d9/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-01-22";
+    date = "2025-02-03";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -512,13 +512,13 @@
   };
   sidebery = {
     pname = "sidebery";
-    version = "v5.3.1";
+    version = "v5.3.2";
     src = fetchFromGitHub {
       owner = "mbnuqw";
       repo = "sidebery";
-      rev = "v5.3.1";
+      rev = "v5.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-nJwJs97/yoBNqqTU1lqtsGoNLnvQ2e11+Pf8uTEYpuQ=";
+      sha256 = "sha256-tyQGSsdnSpLMz7jBGoZyJRMF6i39y+d21YsiNpxzNGc=";
     };
   };
   singboxp = {

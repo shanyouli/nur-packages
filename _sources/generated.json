@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mWhOUILRr/CoN3pVRvuzQnyKA6xXsAvIBOsMnIN6ju0=",
+            "sha256": "sha256-GYPJ51v1cNdzM9/gpPbqlGnGMhK2y+B6jeEnVxuqKpc=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.100/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.101/darkreader-firefox.xpi"
         },
-        "version": "4.9.100"
+        "version": "4.9.101"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
             "name": null,
             "owner": "OwO-Network",
             "repo": "DeepLX",
-            "rev": "v1.0.2",
-            "sha256": "sha256-Mvlbu69iBoJ2tP+WaQ4jV+nNzCua52FiK7hntFhz9b8=",
+            "rev": "v1.0.3",
+            "sha256": "sha256-+GzgrwV1UA3LDz90Ra3dvQTFXBfcovZMKpYhKUGL5is=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.0.2"
+        "version": "v1.0.3"
     },
     "dict2xml": {
         "cargoLocks": null,
@@ -238,11 +238,11 @@
     "dutis": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./dutis-59c572055aa49137bff0edd2c637717393311f63/Cargo.lock",
+                "./dutis-cab5d61b84ab023e039f7d8998586c44ac6f2874/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-12-08",
+        "date": "2025-02-06",
         "extract": null,
         "name": "dutis",
         "passthru": null,
@@ -254,12 +254,12 @@
             "name": null,
             "owner": "tsonglew",
             "repo": "dutis",
-            "rev": "59c572055aa49137bff0edd2c637717393311f63",
-            "sha256": "sha256-hsuI1xSgHX8ckdN6rv6WWMLSmuYLVaR5CEdqSLHfvcs=",
+            "rev": "cab5d61b84ab023e039f7d8998586c44ac6f2874",
+            "sha256": "sha256-NbQtt3zAqJ7RixewmEuJQ0X3xguvSsDV3+7l8odgHxM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "59c572055aa49137bff0edd2c637717393311f63"
+        "version": "cab5d61b84ab023e039f7d8998586c44ac6f2874"
     },
     "emacs29.no-frame-refocus-cocoa": {
         "cargoLocks": null,
@@ -678,11 +678,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-245b2a1743a7b7f559d428090630b2b56c25949f/Cargo.lock",
+                "./nh-8ef70b642b8351c010a48f43dda6a1ebf038f5d9/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-01-22",
+        "date": "2025-02-03",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -694,12 +694,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "245b2a1743a7b7f559d428090630b2b56c25949f",
-            "sha256": "sha256-gNmu5trAOoWOo1nlSr0i0BOw4AnVmsbI1eG0WjMdvZU=",
+            "rev": "8ef70b642b8351c010a48f43dda6a1ebf038f5d9",
+            "sha256": "sha256-HcNEFumdZ4Y59CBB1h1IzOyPxwn0u/Wson6hhzItXCA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "245b2a1743a7b7f559d428090630b2b56c25949f"
+        "version": "8ef70b642b8351c010a48f43dda6a1ebf038f5d9"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
@@ -900,12 +900,12 @@
             "name": null,
             "owner": "mbnuqw",
             "repo": "sidebery",
-            "rev": "v5.3.1",
-            "sha256": "sha256-nJwJs97/yoBNqqTU1lqtsGoNLnvQ2e11+Pf8uTEYpuQ=",
+            "rev": "v5.3.2",
+            "sha256": "sha256-tyQGSsdnSpLMz7jBGoZyJRMF6i39y+d21YsiNpxzNGc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.3.1"
+        "version": "v5.3.2"
     },
     "singboxp": {
         "cargoLocks": null,
