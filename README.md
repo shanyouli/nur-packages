@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-02-07 21:44:33 UTC
+- LAST_MODIFY: 2025-02-14 22:14:21 UTC
 
 
 ## How to use
@@ -76,9 +76,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-01-21|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.3|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.93|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250207.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250214.0|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.39|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.6.0|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
@@ -98,7 +98,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2024-08-19|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-01-31|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-02-13|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
