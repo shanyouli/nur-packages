@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "4e6ee6a14bfb565874a5e9e5f3bea3d0e5d46441";
+    version = "a72c5ab96358caf273f45aff0740bf5de72e9e17";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "4e6ee6a14bfb565874a5e9e5f3bea3d0e5d46441";
+      rev = "a72c5ab96358caf273f45aff0740bf5de72e9e17";
       fetchSubmodules = false;
-      sha256 = "sha256-q0fBB9ml86p9SXgPyTrD1TqFLIQdhv36aKgVvc1qh0E=";
+      sha256 = "sha256-qHraKpx2FcjprqK7kYy8UOGlsBj5JMCWxcennaNJAYA=";
     };
-    date = "2025-01-21";
+    date = "2025-02-16";
   };
   borders = {
     pname = "borders";
@@ -484,14 +484,15 @@
   };
   sd = {
     pname = "sd";
-    version = "v0.2.3";
+    version = "051163c763cafa1cac278f8b249bc7705a9729fd";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "v0.2.3";
+      rev = "051163c763cafa1cac278f8b249bc7705a9729fd";
       fetchSubmodules = false;
-      sha256 = "sha256-NXD0xj08LOz7PgRko6sjDMe9+00jVwiQXeOTjSN8rQU=";
+      sha256 = "sha256-5yVFZKQpb/wJHTMnlLWc8i3U8jeBvNu+Ilx0flmFYJk=";
     };
+    date = "2025-02-15";
   };
   seam = {
     pname = "seam";
