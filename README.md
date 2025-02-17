@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-02-14 22:14:21 UTC
+- LAST_MODIFY: 2025-02-17 07:14:20 UTC
 
 
 ## How to use
@@ -74,7 +74,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**alist**](https://github.com/alist-org/alist)||3.42.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2024-09-25|Turn Lua code into Fennel code|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-01-21|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-02-16|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.0.93|Extensible, customizable GNU text editor|
@@ -159,7 +159,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.2.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
-|[**sd**](None)||0.2.3|My system command line|
+|[**sd**](None)||2025-02-15|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
