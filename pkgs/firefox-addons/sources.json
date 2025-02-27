@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4429872/download_with_aria2-4.12.0.2987.xpi",
-    "version": "4.12.0.2987",
-    "sha256": "10k7ynmhgn1dn8afljf1hyzbliailsqbazdpwm4a5nq8fiqkigsk",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4443767/download_with_aria2-4.13.0.3004.xpi",
+    "version": "4.13.0.3004",
+    "sha256": "1f8ska2hql2i0zf7lr0b0d1778189av09ilxqxpk93gxgxzl2x8n",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4440752/zeroomega-3.3.22.xpi",
-    "version": "3.3.22",
-    "sha256": "071sq690mkgj2vyxcb423sf7caxjskidxy25lb5jz5q0zbcxic15",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4442919/zeroomega-3.3.23.xpi",
+    "version": "3.3.23",
+    "sha256": "1yrl5rk081clvycjf27abrvcq1v0d5x9p99za520amlmk6h195hf",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
