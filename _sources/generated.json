@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UlzrrXxNQNOXkGXb1RXlf4FqcvcCqJYwOAWE0RzSytk=",
+            "sha256": "sha256-tKppApOFAP21PekXJy+4wfR2eDqId8lRWzsGvluI5KA=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.104/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.105/darkreader-firefox.xpi"
         },
-        "version": "4.9.104"
+        "version": "4.9.105"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
             "name": null,
             "owner": "OwO-Network",
             "repo": "DeepLX",
-            "rev": "v1.0.4",
-            "sha256": "sha256-D6U00rCjMmzp2nT7IbYKtDluJdM75JloIJADy+Wg2/0=",
+            "rev": "v1.0.5",
+            "sha256": "sha256-+OlOHDIjbYbMCCETNRRtALFlaSDM2LZDZD9Z7plKJVU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.0.4"
+        "version": "v1.0.5"
     },
     "dict2xml": {
         "cargoLocks": null,
@@ -263,7 +263,7 @@
     },
     "emacs29.no-frame-refocus-cocoa": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs29.no-frame-refocus-cocoa",
         "passthru": null,
@@ -272,13 +272,13 @@
             "name": null,
             "sha256": "sha256-+1d33IkKoHNJ8UOuZcK89D7a1v6/1WSwGiI1xaFfyr0=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-28/no-frame-refocus-cocoa.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/no-frame-refocus-cocoa.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs29.role-patch": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs29.role-patch",
         "passthru": null,
@@ -287,13 +287,13 @@
             "name": null,
             "sha256": "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-28/fix-window-role.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs29.round-undecorated-frame": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs29.round-undecorated-frame",
         "passthru": null,
@@ -302,13 +302,13 @@
             "name": null,
             "sha256": "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-29/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-29/round-undecorated-frame.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs29.system-appearance": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs29.system-appearance",
         "passthru": null,
@@ -317,13 +317,13 @@
             "name": null,
             "sha256": "sha256-1u4VmDmzi2r1Ode5vf8jEmPkUcH9Qu7A0SUxjJ24zZI=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-28/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/system-appearance.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs30.role-patch": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs30.role-patch",
         "passthru": null,
@@ -332,13 +332,13 @@
             "name": null,
             "sha256": "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-28/fix-window-role.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs30.round-undecorated-frame": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs30.round-undecorated-frame",
         "passthru": null,
@@ -347,13 +347,13 @@
             "name": null,
             "sha256": "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-30/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/round-undecorated-frame.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs30.system-appearance": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs30.system-appearance",
         "passthru": null,
@@ -362,13 +362,13 @@
             "name": null,
             "sha256": "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-30/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/system-appearance.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs31.role-patch": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs31.role-patch",
         "passthru": null,
@@ -377,13 +377,13 @@
             "name": null,
             "sha256": "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-28/fix-window-role.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs31.round-undecorated-frame": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs31.round-undecorated-frame",
         "passthru": null,
@@ -392,13 +392,13 @@
             "name": null,
             "sha256": "sha256-FOF9ZDWOry8dMeScR0MRnN0GmOoMwZx6XAxn0Tfv2U8=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-31/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-31/round-undecorated-frame.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacs31.system-appearance": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-26",
         "extract": null,
         "name": "emacs31.system-appearance",
         "passthru": null,
@@ -407,9 +407,9 @@
             "name": null,
             "sha256": "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/9e44ce1a1d3432f6df203f3bc40b03b5a32ff049/patches/emacs-30/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/system-appearance.patch"
         },
-        "version": "9e44ce1a1d3432f6df203f3bc40b03b5a32ff049"
+        "version": "6cae8c927b71aaf1699e8dc2dc6477db75449713"
     },
     "emacsclient": {
         "cargoLocks": null,
@@ -678,11 +678,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-1ef9f9a94d0e7598ef810f641312169ca008868b/Cargo.lock",
+                "./nh-1b25d633376f50139f7b8fe314c8914711d44b42/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-02-20",
+        "date": "2025-02-26",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -694,12 +694,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "1ef9f9a94d0e7598ef810f641312169ca008868b",
-            "sha256": "sha256-Ig4TM9uEs5UOfEarkBNTC1+8vhe415eqkjqTN8d3O24=",
+            "rev": "1b25d633376f50139f7b8fe314c8914711d44b42",
+            "sha256": "sha256-ILEarFQp89V6RWr5GRU/ip9dB1SEqUFQGs1QMPrk9TQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1ef9f9a94d0e7598ef810f641312169ca008868b"
+        "version": "1b25d633376f50139f7b8fe314c8914711d44b42"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
@@ -752,11 +752,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Odz3R2fyE6OdzxfeyNGT68babKknx1TQlmc/cuA+F0E=",
+            "sha256": "sha256-unX1xM3I6JzZU6ZiZGvYetiZQW1YKg2+QEIrV4Q6pL0=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/Pragmasevka.zip"
         },
-        "version": "32.2.1"
+        "version": "32.5.0"
     },
     "pragmasevka-nerd": {
         "cargoLocks": null,
@@ -767,11 +767,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UvvxrmV95QQcZoFBgZQxQkzNCCpbmypiGBX9L7T+qn8=",
+            "sha256": "sha256-iN+Gjc38Gm/pGlSWqBLEnO0BtsCz5UGLM5TunMAC8zU=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/Pragmasevka-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/Pragmasevka-nerd.zip"
         },
-        "version": "32.2.1"
+        "version": "32.5.0"
     },
     "pragmasevka-sans": {
         "cargoLocks": null,
@@ -782,11 +782,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rgjwnspDLaMsTjmlf3UyIJbi2hbhSTLQAEq5xbFSnXI=",
+            "sha256": "sha256-rz+ZwGJ+MLi/gg/rWsOfu9qmKJryhUB5h23XnvcDKYU=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/PragmasevkaSans.zip"
         },
-        "version": "32.2.1"
+        "version": "32.5.0"
     },
     "pragmasevka-serif": {
         "cargoLocks": null,
@@ -797,11 +797,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-f+5aFv/gLc92P4UjzbImoyGc8y2GcuSrFAfe40iY+80=",
+            "sha256": "sha256-skRwYka1QaU5v2ztFrXPJvvuH4uxryT9IyaEHuKrm7w=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.2.1/PragmasevkaSerif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/PragmasevkaSerif.zip"
         },
-        "version": "32.2.1"
+        "version": "32.5.0"
     },
     "qbittorrent": {
         "cargoLocks": null,
@@ -841,7 +841,7 @@
     },
     "sd": {
         "cargoLocks": null,
-        "date": "2025-02-15",
+        "date": "2025-02-27",
         "extract": null,
         "name": "sd",
         "passthru": null,
@@ -853,12 +853,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "051163c763cafa1cac278f8b249bc7705a9729fd",
-            "sha256": "sha256-5yVFZKQpb/wJHTMnlLWc8i3U8jeBvNu+Ilx0flmFYJk=",
+            "rev": "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c",
+            "sha256": "sha256-u8J8X8c/sulewrw0M747RF8bTfJYgYZRQxxJ+PLYPfE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "051163c763cafa1cac278f8b249bc7705a9729fd"
+        "version": "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c"
     },
     "seam": {
         "cargoLocks": {
