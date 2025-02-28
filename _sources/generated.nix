@@ -465,13 +465,13 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.0.3.10";
+    version = "release-5.0.4.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.0.3.10";
+      rev = "release-5.0.4.10";
       fetchSubmodules = false;
-      sha256 = "sha256-efQFjdJeVMrPvCQ5aYtUb65hozKc73MnP0/Kheti9BI=";
+      sha256 = "sha256-qYGDPEg4BZZgHschgFjp23EnmaBtmM+UNoC2Lympt/g=";
     };
   };
   sarasa-term = {
