@@ -150,93 +150,93 @@
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/no-frame-refocus-cocoa.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-28/no-frame-refocus-cocoa.patch";
       sha256 = "sha256-+1d33IkKoHNJ8UOuZcK89D7a1v6/1WSwGiI1xaFfyr0=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs29.role-patch" = {
     pname = "emacs29.role-patch";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs29.round-undecorated-frame" = {
     pname = "emacs29.round-undecorated-frame";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-29/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-29/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs29.system-appearance" = {
     pname = "emacs29.system-appearance";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-28/system-appearance.patch";
       sha256 = "sha256-1u4VmDmzi2r1Ode5vf8jEmPkUcH9Qu7A0SUxjJ24zZI=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs30.round-undecorated-frame" = {
     pname = "emacs30.round-undecorated-frame";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-30/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs30.system-appearance" = {
     pname = "emacs30.system-appearance";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs31.role-patch" = {
     pname = "emacs31.role-patch";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-FOF9ZDWOry8dMeScR0MRnN0GmOoMwZx6XAxn0Tfv2U8=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   "emacs31.system-appearance" = {
     pname = "emacs31.system-appearance";
-    version = "6cae8c927b71aaf1699e8dc2dc6477db75449713";
+    version = "54556379f8909905f3338f30336b62bbd7812c1b";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/6cae8c927b71aaf1699e8dc2dc6477db75449713/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/54556379f8909905f3338f30336b62bbd7812c1b/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2025-02-26";
+    date = "2025-02-27";
   };
   emacsclient = {
     pname = "emacsclient";
@@ -435,32 +435,32 @@
     pname = "pragmasevka";
     version = "32.5.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/Pragmasevka.zip";
-      sha256 = "sha256-unX1xM3I6JzZU6ZiZGvYetiZQW1YKg2+QEIrV4Q6pL0=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/pragma-sevka-mono.zip";
+      sha256 = "sha256-hvfhEyh+CwBbbNEZ6WvzWLHidslnqhF+Az4fm0I+G88=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
     version = "32.5.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/Pragmasevka-nerd.zip";
-      sha256 = "sha256-iN+Gjc38Gm/pGlSWqBLEnO0BtsCz5UGLM5TunMAC8zU=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-tqRNt7ldD040rLP/+oUhe9hKsbdyb9NneCRpEq/3lpc=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
     version = "32.5.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/PragmasevkaSans.zip";
-      sha256 = "sha256-rz+ZwGJ+MLi/gg/rWsOfu9qmKJryhUB5h23XnvcDKYU=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/pragma-sevka-sans.zip";
+      sha256 = "sha256-Qg/vvF4FxqmXOm4SR4M7ckYsMSMBdpTBJO9L5p0weDE=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
     version = "32.5.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/PragmasevkaSerif.zip";
-      sha256 = "sha256-skRwYka1QaU5v2ztFrXPJvvuH4uxryT9IyaEHuKrm7w=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v32.5.0/pragma-sevka-serif.zip";
+      sha256 = "sha256-wXnm6BA8raSPvIH08ybMkRlsBkPMP580f0wdQedRh3o=";
     };
   };
   qbittorrent = {
