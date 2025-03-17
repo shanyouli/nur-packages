@@ -44,7 +44,7 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-      - uses: cachix/install-nix-action@v30
+      - uses: cachix/install-nix-action@v31
         with:
           # FIXME: https://github.com/NixOS/nix/issues/9889
           extra_nix_config: |
@@ -105,7 +105,7 @@ jobs:
             git checkout -B test-dev
           fi
       - name: Install nix
-        uses: cachix/install-nix-action@v30
+        uses: cachix/install-nix-action@v31
         with:
           extra_nix_config: |
             experimental-features = nix-command flakes
