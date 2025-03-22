@@ -111,7 +111,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Setup cachix
-        uses: cachix/cachix-action@v15
+        uses: cachix/cachix-action@v16
         # Don't replace <YOUR_CACHIX_NAME> here!
         with:
           name: 'shanyouli'
