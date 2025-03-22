@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.42.0";
+    version = "v3.43.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.42.0";
+      rev = "v3.43.0";
       fetchSubmodules = false;
-      sha256 = "sha256-r9hL4bxeCiJKHiWMyN4MxqDeN3NhlY8pnpxBCaWDz9c=";
+      sha256 = "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.42.0";
+    version = "3.43.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.42.0/dist.tar.gz";
-      sha256 = "sha256-aF3RO02jniUwhdgv0RB08FGxy8QCOEeUIXY7PS5JsvA=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.43.0/dist.tar.gz";
+      sha256 = "sha256-ItH8vRCvIlcCnGWt0ApYkgH6v5UJ6ldJSm0Ii3ak6KI=";
     };
   };
   alive-progress = {
@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "a72c5ab96358caf273f45aff0740bf5de72e9e17";
+    version = "1e17446e9e432149e9405d103c6f412312206f81";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "a72c5ab96358caf273f45aff0740bf5de72e9e17";
+      rev = "1e17446e9e432149e9405d103c6f412312206f81";
       fetchSubmodules = false;
-      sha256 = "sha256-qHraKpx2FcjprqK7kYy8UOGlsBj5JMCWxcennaNJAYA=";
+      sha256 = "sha256-psxBo7+uBZm7xWMynhAHWXUMLjyQ+8vluBG1Ds3jzTg=";
     };
-    date = "2025-02-16";
+    date = "2025-03-10";
   };
   borders = {
     pname = "borders";
@@ -310,12 +310,12 @@
   };
   mac-app-util = {
     pname = "mac-app-util";
-    version = "c00d5b21ca1fdab8acef65e696795f0f15ec1158";
+    version = "341ede93f290df7957047682482c298e47291b4d";
     src = fetchurl {
-      url = "https://github.com/hraban/mac-app-util/raw/c00d5b21ca1fdab8acef65e696795f0f15ec1158/main.lisp";
-      sha256 = "sha256-HpREdUHdqJI4kuKPhygcOuetm/13WSEE+OBPWXJJGMo=";
+      url = "https://github.com/hraban/mac-app-util/raw/341ede93f290df7957047682482c298e47291b4d/main.lisp";
+      sha256 = "sha256-Sn+Sj0SDcLO+UeLbWcYEX4XzZMCQOzFKiyiYNYU2w9I=";
     };
-    date = "2025-02-17";
+    date = "2025-03-16";
   };
   manix = {
     pname = "manix";
@@ -337,18 +337,18 @@
   };
   maple-mono = {
     pname = "maple-mono";
-    version = "7.0-beta36";
+    version = "7.0";
     src = fetchurl {
-      url = "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta36/MapleMono-ttf.zip";
-      sha256 = "sha256-J3SjrGq2bka/quqY081xv/aW6ry4wQPqt/x7rkYaU0w=";
+      url = "https://github.com/subframe7536/maple-font/releases/download/v7.0/MapleMono-ttf.zip";
+      sha256 = "sha256-FglonkbnphiwmxGj7Z0ozfHMwpJj7+96g6WMtMe3rIo=";
     };
   };
   maple-sc-nf = {
     pname = "maple-sc-nf";
-    version = "7.0-beta36";
+    version = "7.0";
     src = fetchurl {
-      url = "https://github.com/subframe7536/Maple-font/releases/download/v7.0-beta36/MapleMono-NF-CN.zip";
-      sha256 = "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=";
+      url = "https://github.com/subframe7536/Maple-font/releases/download/v7.0/MapleMono-NF-CN.zip";
+      sha256 = "sha256-IUBHSBIW//vWwlumefFW48eSULJmY9e8F9Ymhbt/KU0=";
     };
   };
   mkalias = {
@@ -433,34 +433,34 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.0.1";
+    version = "33.1.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-mono.zip";
-      sha256 = "sha256-RdgKcyF8201Qn6xUFpY3cHfE96+CxlkduRIDbYws2FE=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono.zip";
+      sha256 = "sha256-gmWQbsZkThy1ZEsBVqVyxVNfikCxHnY+K6LipqCq3ao=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.0.1";
+    version = "33.1.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-EJKXQkxGeh4g22bdRkPRvGYxzgHjfGFAhyYKQAd6rpk=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-KvSDBD+iCdydf94cPQM2oMkH/JS+xmwUZ2xQ//KPJ5k=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.0.1";
+    version = "33.1.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-sans.zip";
-      sha256 = "sha256-Lll/1iHGfw7ZaI1NZ7/a+VW5E3sDKaGjMZKUnFyK9/k=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-sans.zip";
+      sha256 = "sha256-jpgDDEcwwv0K078jzt2iKsUoSOaTvpeU9A0WWDlozQc=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.0.1";
+    version = "33.1.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-serif.zip";
-      sha256 = "sha256-vafJIgaI7jynMytp+g53sBmAuI/jH+8bGA3gg4xG1Mc=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-serif.zip";
+      sha256 = "sha256-Hu+II7Th+gO/YABFnpgEZhcrGv6+4/wtTR3bz7/ugG8=";
     };
   };
   qbittorrent = {
@@ -484,15 +484,15 @@
   };
   sd = {
     pname = "sd";
-    version = "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c";
+    version = "4549be8afac6578b0af96c537037d6b22ef661a7";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c";
+      rev = "4549be8afac6578b0af96c537037d6b22ef661a7";
       fetchSubmodules = false;
-      sha256 = "sha256-u8J8X8c/sulewrw0M747RF8bTfJYgYZRQxxJ+PLYPfE=";
+      sha256 = "sha256-kB8LtGEOVqaaqNWtYEMLHclzVKKB5lpxGq4akm3Jdpo=";
     };
-    date = "2025-02-27";
+    date = "2025-03-20";
   };
   seam = {
     pname = "seam";
@@ -558,15 +558,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "3fa9473ce0fbb4a497b69b884d02c6df1a294b52";
+    version = "8bce1d76e59ba66705058373a4a9f6048d2053a9";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "3fa9473ce0fbb4a497b69b884d02c6df1a294b52";
+      rev = "8bce1d76e59ba66705058373a4a9f6048d2053a9";
       fetchSubmodules = false;
-      sha256 = "sha256-O1SVoU/F/iNGGUHN0QxRLnsVsUqQcn9FBf/d6WwJoqU=";
+      sha256 = "sha256-z8E2bqoF2CJec4JqX8lSWhpefc9NHykyi5172zND50A=";
     };
-    date = "2025-02-19";
+    date = "2025-03-08";
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";

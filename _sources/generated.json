@@ -43,12 +43,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.42.0",
-            "sha256": "sha256-r9hL4bxeCiJKHiWMyN4MxqDeN3NhlY8pnpxBCaWDz9c=",
+            "rev": "v3.43.0",
+            "sha256": "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.42.0"
+        "version": "v3.43.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -59,11 +59,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aF3RO02jniUwhdgv0RB08FGxy8QCOEeUIXY7PS5JsvA=",
+            "sha256": "sha256-ItH8vRCvIlcCnGWt0ApYkgH6v5UJ6ldJSm0Ii3ak6KI=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.42.0/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.43.0/dist.tar.gz"
         },
-        "version": "3.42.0"
+        "version": "3.43.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -117,7 +117,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2025-02-16",
+        "date": "2025-03-10",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -129,12 +129,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "a72c5ab96358caf273f45aff0740bf5de72e9e17",
-            "sha256": "sha256-qHraKpx2FcjprqK7kYy8UOGlsBj5JMCWxcennaNJAYA=",
+            "rev": "1e17446e9e432149e9405d103c6f412312206f81",
+            "sha256": "sha256-psxBo7+uBZm7xWMynhAHWXUMLjyQ+8vluBG1Ds3jzTg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a72c5ab96358caf273f45aff0740bf5de72e9e17"
+        "version": "1e17446e9e432149e9405d103c6f412312206f81"
     },
     "borders": {
         "cargoLocks": null,
@@ -538,18 +538,18 @@
     },
     "mac-app-util": {
         "cargoLocks": null,
-        "date": "2025-02-17",
+        "date": "2025-03-16",
         "extract": null,
         "name": "mac-app-util",
         "passthru": null,
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-HpREdUHdqJI4kuKPhygcOuetm/13WSEE+OBPWXJJGMo=",
+            "sha256": "sha256-Sn+Sj0SDcLO+UeLbWcYEX4XzZMCQOzFKiyiYNYU2w9I=",
             "type": "url",
-            "url": "https://github.com/hraban/mac-app-util/raw/c00d5b21ca1fdab8acef65e696795f0f15ec1158/main.lisp"
+            "url": "https://github.com/hraban/mac-app-util/raw/341ede93f290df7957047682482c298e47291b4d/main.lisp"
         },
-        "version": "c00d5b21ca1fdab8acef65e696795f0f15ec1158"
+        "version": "341ede93f290df7957047682482c298e47291b4d"
     },
     "manix": {
         "cargoLocks": {
@@ -586,11 +586,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-J3SjrGq2bka/quqY081xv/aW6ry4wQPqt/x7rkYaU0w=",
+            "sha256": "sha256-FglonkbnphiwmxGj7Z0ozfHMwpJj7+96g6WMtMe3rIo=",
             "type": "url",
-            "url": "https://github.com/subframe7536/maple-font/releases/download/v7.0-beta36/MapleMono-ttf.zip"
+            "url": "https://github.com/subframe7536/maple-font/releases/download/v7.0/MapleMono-ttf.zip"
         },
-        "version": "7.0-beta36"
+        "version": "7.0"
     },
     "maple-sc-nf": {
         "cargoLocks": null,
@@ -601,11 +601,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=",
+            "sha256": "sha256-IUBHSBIW//vWwlumefFW48eSULJmY9e8F9Ymhbt/KU0=",
             "type": "url",
-            "url": "https://github.com/subframe7536/Maple-font/releases/download/v7.0-beta36/MapleMono-NF-CN.zip"
+            "url": "https://github.com/subframe7536/Maple-font/releases/download/v7.0/MapleMono-NF-CN.zip"
         },
-        "version": "7.0-beta36"
+        "version": "7.0"
     },
     "mkalias": {
         "cargoLocks": {
@@ -752,11 +752,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-RdgKcyF8201Qn6xUFpY3cHfE96+CxlkduRIDbYws2FE=",
+            "sha256": "sha256-gmWQbsZkThy1ZEsBVqVyxVNfikCxHnY+K6LipqCq3ao=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-mono.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono.zip"
         },
-        "version": "33.0.1"
+        "version": "33.1.0"
     },
     "pragmasevka-nerd": {
         "cargoLocks": null,
@@ -767,11 +767,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EJKXQkxGeh4g22bdRkPRvGYxzgHjfGFAhyYKQAd6rpk=",
+            "sha256": "sha256-KvSDBD+iCdydf94cPQM2oMkH/JS+xmwUZ2xQ//KPJ5k=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-mono-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono-nerd.zip"
         },
-        "version": "33.0.1"
+        "version": "33.1.0"
     },
     "pragmasevka-sans": {
         "cargoLocks": null,
@@ -782,11 +782,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Lll/1iHGfw7ZaI1NZ7/a+VW5E3sDKaGjMZKUnFyK9/k=",
+            "sha256": "sha256-jpgDDEcwwv0K078jzt2iKsUoSOaTvpeU9A0WWDlozQc=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-sans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-sans.zip"
         },
-        "version": "33.0.1"
+        "version": "33.1.0"
     },
     "pragmasevka-serif": {
         "cargoLocks": null,
@@ -797,11 +797,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vafJIgaI7jynMytp+g53sBmAuI/jH+8bGA3gg4xG1Mc=",
+            "sha256": "sha256-Hu+II7Th+gO/YABFnpgEZhcrGv6+4/wtTR3bz7/ugG8=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.0.1/pragma-sevka-serif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-serif.zip"
         },
-        "version": "33.0.1"
+        "version": "33.1.0"
     },
     "qbittorrent": {
         "cargoLocks": null,
@@ -841,7 +841,7 @@
     },
     "sd": {
         "cargoLocks": null,
-        "date": "2025-02-27",
+        "date": "2025-03-20",
         "extract": null,
         "name": "sd",
         "passthru": null,
@@ -853,12 +853,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c",
-            "sha256": "sha256-u8J8X8c/sulewrw0M747RF8bTfJYgYZRQxxJ+PLYPfE=",
+            "rev": "4549be8afac6578b0af96c537037d6b22ef661a7",
+            "sha256": "sha256-kB8LtGEOVqaaqNWtYEMLHclzVKKB5lpxGq4akm3Jdpo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b5f27d38897cc929fe6bccbc5cd3a626a5c7626c"
+        "version": "4549be8afac6578b0af96c537037d6b22ef661a7"
     },
     "seam": {
         "cargoLocks": {
@@ -972,7 +972,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2025-02-19",
+        "date": "2025-03-08",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -984,12 +984,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "3fa9473ce0fbb4a497b69b884d02c6df1a294b52",
-            "sha256": "sha256-O1SVoU/F/iNGGUHN0QxRLnsVsUqQcn9FBf/d6WwJoqU=",
+            "rev": "8bce1d76e59ba66705058373a4a9f6048d2053a9",
+            "sha256": "sha256-z8E2bqoF2CJec4JqX8lSWhpefc9NHykyi5172zND50A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3fa9473ce0fbb4a497b69b884d02c6df1a294b52"
+        "version": "8bce1d76e59ba66705058373a4a9f6048d2053a9"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,
