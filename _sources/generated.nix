@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.43.0";
+    version = "v3.44.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.43.0";
+      rev = "v3.44.0";
       fetchSubmodules = false;
-      sha256 = "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=";
+      sha256 = "sha256-MgNoqR9RYRZhQSCplZwqQECE+6/33vijjx0AnC0U2QA=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.43.0";
+    version = "3.44.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.43.0/dist.tar.gz";
-      sha256 = "sha256-ItH8vRCvIlcCnGWt0ApYkgH6v5UJ6ldJSm0Ii3ak6KI=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.44.0/dist.tar.gz";
+      sha256 = "sha256-Nwm+xZu8FPD590GTzruyWjF8l4+jpa4GqQDrNB4bWuc=";
     };
   };
   alive-progress = {
@@ -68,15 +68,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "1e17446e9e432149e9405d103c6f412312206f81";
+    version = "7c48a078c5fd57c06ebcc3c3111e1a91c8f280f9";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "1e17446e9e432149e9405d103c6f412312206f81";
+      rev = "7c48a078c5fd57c06ebcc3c3111e1a91c8f280f9";
       fetchSubmodules = false;
-      sha256 = "sha256-psxBo7+uBZm7xWMynhAHWXUMLjyQ+8vluBG1Ds3jzTg=";
+      sha256 = "sha256-1nSvl5wmkWoM051ubuxtEuKkfDDiry/cwiYPJU4PBDE=";
     };
-    date = "2025-03-10";
+    date = "2025-03-25";
   };
   borders = {
     pname = "borders";
@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "509dd6c96eefa11e7324f475a86ff4ea447987b7";
+    version = "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "509dd6c96eefa11e7324f475a86ff4ea447987b7";
+      rev = "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3";
       fetchSubmodules = false;
-      sha256 = "sha256-ahECQuhpwRKp0TcBsE1rsHlm6t+mUllMojORXmgBcC4=";
+      sha256 = "sha256-Qe/XUKvcaNdQflvhQQSX1PV5SjNx/RCBBDHxbWxE2xI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-509dd6c96eefa11e7324f475a86ff4ea447987b7/Cargo.lock;
+      lockFile = ./nh-7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-03-07";
+    date = "2025-03-25";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
