@@ -31,14 +31,20 @@
       basePkg.overrideAttrs (old: {
         patches =
           (old.patches or [])
-          ++ lib.optionals pkgs.stdenvNoCC.isDarwin [
-            srcs."emacs${version}.role-patch".src
-            srcs."emacs${version}.system-appearance".src
-            srcs."emacs${version}.round-undecorated-frame".src
-          ]
-          ++ lib.optionals (pkgs.stdenvNoCC.isDarwin && (version == "29")) [
-            srcs."emacs${version}.no-frame-refocus-cocoa".src
-          ];
+          # NOTE: emacs-git path is broken, @see https://github.com/d12frosted/homebrew-emacs-plus/issues/804
+          ++ (
+            if pkgs.stdenvNoCC.isDarwin && version != "31"
+            then
+              [
+                srcs."emacs${version}.role-patch".src
+                srcs."emacs${version}.system-appearance".src
+                srcs."emacs${version}.round-undecorated-frame".src
+              ]
+              ++ lib.optionals (version == "29") [
+                srcs."emacs${version}.no-frame-refocus-cocoa".src
+              ]
+            else []
+          );
         configureFlags =
           (old.configureFlags or [])
           ++ ["--enable-check-lisp-object-type"]
