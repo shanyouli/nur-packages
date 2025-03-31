@@ -43,12 +43,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.43.0",
-            "sha256": "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=",
+            "rev": "v3.44.0",
+            "sha256": "sha256-MgNoqR9RYRZhQSCplZwqQECE+6/33vijjx0AnC0U2QA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.43.0"
+        "version": "v3.44.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -59,11 +59,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ItH8vRCvIlcCnGWt0ApYkgH6v5UJ6ldJSm0Ii3ak6KI=",
+            "sha256": "sha256-Nwm+xZu8FPD590GTzruyWjF8l4+jpa4GqQDrNB4bWuc=",
             "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.43.0/dist.tar.gz"
+            "url": "https://github.com/alist-org/alist-web/releases/download/3.44.0/dist.tar.gz"
         },
-        "version": "3.43.0"
+        "version": "3.44.0"
     },
     "alive-progress": {
         "cargoLocks": null,
@@ -117,7 +117,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2025-03-10",
+        "date": "2025-03-25",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -129,12 +129,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "1e17446e9e432149e9405d103c6f412312206f81",
-            "sha256": "sha256-psxBo7+uBZm7xWMynhAHWXUMLjyQ+8vluBG1Ds3jzTg=",
+            "rev": "7c48a078c5fd57c06ebcc3c3111e1a91c8f280f9",
+            "sha256": "sha256-1nSvl5wmkWoM051ubuxtEuKkfDDiry/cwiYPJU4PBDE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1e17446e9e432149e9405d103c6f412312206f81"
+        "version": "7c48a078c5fd57c06ebcc3c3111e1a91c8f280f9"
     },
     "borders": {
         "cargoLocks": null,
@@ -678,11 +678,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-509dd6c96eefa11e7324f475a86ff4ea447987b7/Cargo.lock",
+                "./nh-7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-03-07",
+        "date": "2025-03-25",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -694,12 +694,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "509dd6c96eefa11e7324f475a86ff4ea447987b7",
-            "sha256": "sha256-ahECQuhpwRKp0TcBsE1rsHlm6t+mUllMojORXmgBcC4=",
+            "rev": "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3",
+            "sha256": "sha256-Qe/XUKvcaNdQflvhQQSX1PV5SjNx/RCBBDHxbWxE2xI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "509dd6c96eefa11e7324f475a86ff4ea447987b7"
+        "version": "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
