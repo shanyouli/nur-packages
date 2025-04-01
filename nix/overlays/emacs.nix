@@ -31,9 +31,8 @@
       basePkg.overrideAttrs (old: {
         patches =
           (old.patches or [])
-          # NOTE: emacs-git path is broken, @see https://github.com/d12frosted/homebrew-emacs-plus/issues/804
           ++ (
-            if pkgs.stdenvNoCC.isDarwin && version != "31"
+            if pkgs.stdenvNoCC.isDarwin
             then
               [
                 srcs."emacs${version}.role-patch".src
