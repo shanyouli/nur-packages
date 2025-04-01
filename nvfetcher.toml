@@ -129,6 +129,10 @@ fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/pragma
 src.github = "c0re100/qBittorrent-Enhanced-Edition"
 fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
 
+[rime-ice]
+src.git = "https://github.com/iDvel/rime-ice.git"
+fetch.github = "iDvel/rime-ice"
+
 [sarasa-term]
 src.github = "laishulu/Sarasa-Term-SC-Nerd"
 src.from_pattern = "v(.*)"
