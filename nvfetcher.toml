@@ -2,12 +2,6 @@
 
 #### python packages
 
-# https://discourse.nixos.org/t/installing-a-python-package-from-pypi/24553/2
-# The reason for not using fetch.pypi is referenced above
-[musicdl]
-fetch.github = "CharlesPikachu/musicdl"
-src.git = "https://github.com/CharlesPikachu/musicdl"
-
 [about-time]
 src.pypi = "about-time"
 fetch.pypi = "about-time"
@@ -16,33 +10,75 @@ fetch.pypi = "about-time"
 fetch.pypi = "alive-progress"
 src.pypi = "alive-progress"
 
-[websocket-bridge-python]
-fetch.pypi = "websocket_bridge_python"
-src.pypi = "websocket_bridge_python"
+[dict2xml]
+src.github = "delfick/python-dict2xml"
+fetch.github = "delfick/python-dict2xml"
 
 [httpx]
 src.github = "encode/httpx"
 fetch.github = "encode/httpx"
 
-[dict2xml]
-src.github = "delfick/python-dict2xml"
-fetch.github = "delfick/python-dict2xml"
+# https://discourse.nixos.org/t/installing-a-python-package-from-pypi/24553/2
+# The reason for not using fetch.pypi is referenced above
+[musicdl]
+fetch.github = "CharlesPikachu/musicdl"
+src.git = "https://github.com/CharlesPikachu/musicdl"
 
 [sd]
 # src.github_tag = "shanyouli/sd"
 src.git = "https://github.com/shanyouli/sd"
 fetch.github = "shanyouli/sd"
 
-### common
-[zpmod]
-src.github = "z-shell/zpmod"
-fetch.github = "z-shell/zpmod"
+[websocket-bridge-python]
+fetch.pypi = "websocket_bridge_python"
+src.pypi = "websocket_bridge_python"
 
-[maple-sc-nf]
-src.github = "subframe7536/Maple-font"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/subframe7536/Maple-font/releases/download/v$ver/MapleMono-NF-CN.zip"
+### common
+
+[alist]
+src.github = "alist-org/alist"
+fetch.github = "alist-org/alist"
+
+[alist-web]
+src.github = "alist-org/alist-web"
+fetch.url = "https://github.com/alist-org/alist-web/releases/download/$ver/dist.tar.gz"
+
+[antifennel]
+src.git = "https://git.sr.ht/~technomancy/antifennel"
+fetch.git = "https://git.sr.ht/~technomancy/antifennel"
+
+["bash-env-json"]
+src.github = "tesujimath/bash-env-json"
+fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
+
+[bbdown]
+src.git = "https://github.com/nilaoda/BBDown"
+fetch.github = "nilaoda/BBDown"
+
+[clash2singbox]
+src.github = "xmdhs/clash2singbox"
+fetch.github = "xmdhs/clash2singbox"
+
+[deeplx]
+src.github = "OwO-Network/DeepLX"
+fetch.github = "OwO-Network/DeepLX"
+
+[fav]
+src.github = "kingwingfly/fav"
+fetch.github = "kingwingfly/fav"
+cargo_locks = [ "Cargo.lock" ]
+
+[go-musicfox]
+src.github = "go-musicfox/go-musicfox"
+fetch.github = "go-musicfox/go-musicfox"
+git.fetchSubmodules = false
+# passthru = { vendorHash = null }
+
+# a fast CLI documentaion searcher for nix
+[manix]
+src.git = "https://github.com/kaii-zen/manix"
+fetch.github = "kaii-zen/manix"
+cargo_locks = ["Cargo.lock"]
 
 [maple-mono]
 src.github = "subframe7536/Maple-font"
@@ -50,11 +86,20 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/subframe7536/maple-font/releases/download/v$ver/MapleMono-ttf.zip"
 
-[sarasa-term]
-src.github = "laishulu/Sarasa-Term-SC-Nerd"
+[maple-sc-nf]
+src.github = "subframe7536/Maple-font"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v$ver/SarasaTermSCNerd.ttc.tar.gz"
+fetch.url = "https://github.com/subframe7536/Maple-font/releases/download/v$ver/MapleMono-NF-CN.zip"
+
+[musicn]
+src.github_tag = "zonemeen/musicn"
+fetch.github = "zonemeen/musicn"
+
+[nh]
+src.git = "https://github.com/viperML/nh"
+fetch.github = "viperML/nh"
+cargo_locks = ["Cargo.lock"]
 
 [pragmasevka]
 src.github = "shanyouli/iosevka"
@@ -67,105 +112,61 @@ src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/pragma-sevka-mono-nerd.zip"
+
 [pragmasevka-sans]
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/pragma-sevka-sans.zip"
+
 [pragmasevka-serif]
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/pragma-sevka-serif.zip"
 
-[go-musicfox]
-src.github = "go-musicfox/go-musicfox"
-fetch.github = "go-musicfox/go-musicfox"
-git.fetchSubmodules = false
-# passthru = { vendorHash = null }
+[qbittorrent]
+src.github = "c0re100/qBittorrent-Enhanced-Edition"
+fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
 
-[deeplx]
-src.github = "OwO-Network/DeepLX"
-fetch.github = "OwO-Network/DeepLX"
+[sarasa-term]
+src.github = "laishulu/Sarasa-Term-SC-Nerd"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v$ver/SarasaTermSCNerd.ttc.tar.gz"
 
-[antifennel]
-src.git = "https://git.sr.ht/~technomancy/antifennel"
-fetch.git = "https://git.sr.ht/~technomancy/antifennel"
-
-# [codicons]
-# src.git = "https://github.com/microsoft/vscode-codicons"
-# fetch.url = "https://github.com/microsoft/vscode-codicons/raw/$ver/dist/codicon.ttf"
-
-[clash2singbox]
-src.github = "xmdhs/clash2singbox"
-fetch.github = "xmdhs/clash2singbox"
+[seam]
+src.github = "Borber/seam"
+fetch.github = "Borber/seam"
+cargo_locks = ["Cargo.lock"]
 
 [singboxp]
 fetch.github = "PuerNya/sing-box"
 src.git = "https://github.com/PuerNya/sing-box"
 
-[musicn]
-src.github_tag = "zonemeen/musicn"
-fetch.github = "zonemeen/musicn"
+[tmux-fastcopy]
+src.github = "abhinav/tmux-fastcopy"
+fetch.github = "abhinav/tmux-fastcopy"
 
 [userChromeJS]
 src.git = "https://github.com/benzBrake/userChrome.js-Loader"
 fetch.github = "benzBrake/userChrome.js-Loader"
 
-[seam]
-src.github = "Borber/seam"
-fetch.github = "Borber/seam"
-# passthru = { cargoHash = "sha256-SFwNYyZ/qzWlIwV2c8Tot+RyQtTNb559jK4GCGtWjNk=" }
-cargo_locks = ["Cargo.lock"]
-
-[fav]
-src.github = "kingwingfly/fav"
-fetch.github = "kingwingfly/fav"
-cargo_locks = [ "Cargo.lock" ]
-
-[nh]
-src.git = "https://github.com/viperML/nh"
-fetch.github = "viperML/nh"
-cargo_locks = ["Cargo.lock"]
-
-# a fast CLI documentaion searcher for nix
-[manix]
-src.git = "https://github.com/kaii-zen/manix"
-fetch.github = "kaii-zen/manix"
-cargo_locks = ["Cargo.lock"]
-
-[bbdown]
-src.git = "https://github.com/nilaoda/BBDown"
-fetch.github = "nilaoda/BBDown"
-
-[alist]
-src.github = "alist-org/alist"
-fetch.github = "alist-org/alist"
-
-[alist-web]
-src.github = "alist-org/alist-web"
-fetch.url = "https://github.com/alist-org/alist-web/releases/download/$ver/dist.tar.gz"
-
-[tmux-fastcopy]
-src.github = "abhinav/tmux-fastcopy"
-fetch.github = "abhinav/tmux-fastcopy"
+[zpmod]
+src.github = "z-shell/zpmod"
+fetch.github = "z-shell/zpmod"
 
 ### darwin
+
+[aerospace]
+src.github_tag = "nikitabobko/AeroSpace"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/nikitabobko/AeroSpace/releases/download/v$ver/AeroSpace-v$ver.zip"
+
 [borders]
 src.github = "FelixKratz/JankyBorders"
 fetch.github = "FelixKratz/JankyBorders"
-
-[nowplaying-cli]
-src.github = "kirtan-shah/nowplaying-cli"
-fetch.github = "kirtan-shah/nowplaying-cli"
-
-[yabai-zsh-completions]
-src.git = "https://github.com/Amar1729/yabai-zsh-completions"
-fetch.github = "Amar1729/yabai-zsh-completions"
-
-[pngpaste]
-src.github_tag = "jcsalterego/pngpaste"
-fetch.github = "jcsalterego/pngpaste"
 
 [dutis]
 src.git = "https://github.com/tsonglew/dutis"
@@ -181,37 +182,37 @@ fetch.url = "https://github.com/nashamri/spacemacs-logo/raw/$ver/spacemacs.icns"
 src.github = "blacktop/lporg"
 fetch.github = "blacktop/lporg"
 
-[switchaudio-osx]
-src.github_tag = "deweller/switchaudio-osx"
-fetch.github = "deweller/switchaudio-osx"
+[mac-app-util]
+src.git = "https://github.com/hraban/mac-app-util"
+fetch.url = "https://github.com/hraban/mac-app-util/raw/$ver/main.lisp"
 
 [mkalias]
 src.github_tag = "reckenrode/mkAlias"
 fetch.github = "reckenrode/mkAlias"
 cargo_locks = ["Cargo.lock"]
 
-[mac-app-util]
-src.git = "https://github.com/hraban/mac-app-util"
-fetch.url = "https://github.com/hraban/mac-app-util/raw/$ver/main.lisp"
+[nowplaying-cli]
+src.github = "kirtan-shah/nowplaying-cli"
+fetch.github = "kirtan-shah/nowplaying-cli"
 
-### DarwinAPP
+[pngpaste]
+src.github_tag = "jcsalterego/pngpaste"
+fetch.github = "jcsalterego/pngpaste"
+
+[switchaudio-osx]
+src.github_tag = "deweller/switchaudio-osx"
+fetch.github = "deweller/switchaudio-osx"
 
 # [vivaldi]
 # src.webpage = "https://vivaldi.com/download"
 # src.regex = "\"https://downloads.vivaldi.com/stable/Vivaldi.([0-9.]+).universal.dmg\""
 # fetch.url = "https://downloads.vivaldi.com/stable/Vivaldi.$ver.universal.dmg"
 
-[aerospace]
-src.github_tag = "nikitabobko/AeroSpace"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/nikitabobko/AeroSpace/releases/download/v$ver/AeroSpace-v$ver.zip"
+[yabai-zsh-completions]
+src.git = "https://github.com/Amar1729/yabai-zsh-completions"
+fetch.github = "Amar1729/yabai-zsh-completions"
 
 ### firefox-addons
-
-[sidebery]
-src.github = "mbnuqw/sidebery"
-fetch.github = "mbnuqw/sidebery"
 
 [darkreader]
 src.github = "darkreader/darkreader"
@@ -219,16 +220,17 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/darkreader/darkreader/releases/download/v$ver/darkreader-firefox.xpi"
 
-### packages in modules
-[qbittorrent]
-src.github = "c0re100/qBittorrent-Enhanced-Edition"
-fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
+[sidebery]
+src.github = "mbnuqw/sidebery"
+fetch.github = "mbnuqw/sidebery"
 
-["bash-env-json"]
-src.github = "tesujimath/bash-env-json"
-fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
+### packages in modules
 
 #### emacs
+["emacs29.no-frame-refocus-cocoa"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/no-frame-refocus-cocoa.patch"
+
 ["emacs29.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
@@ -240,10 +242,6 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs29.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/system-appearance.patch"
-
-["emacs29.no-frame-refocus-cocoa"]
-src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
-fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/no-frame-refocus-cocoa.patch"
 
 ["emacs30.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
