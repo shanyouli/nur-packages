@@ -133,6 +133,12 @@ fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
 src.git = "https://github.com/iDvel/rime-ice.git"
 fetch.github = "iDvel/rime-ice"
 
+[rime-wanxiang]
+src.github_tag = "amzxyz/rime_wanxiang_pro"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v$ver/wanxiang-moqi-fuzhu.zip"
+
 [sarasa-term]
 src.github = "laishulu/Sarasa-Term-SC-Nerd"
 src.from_pattern = "v(.*)"
@@ -155,6 +161,11 @@ fetch.github = "abhinav/tmux-fastcopy"
 [userChromeJS]
 src.git = "https://github.com/benzBrake/userChrome.js-Loader"
 fetch.github = "benzBrake/userChrome.js-Loader"
+
+# rime 輸入法的語法模型。
+[wanxiang-lts-zh-hans]
+src.manual = "2024"
+fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
 
 [zpmod]
 src.github = "z-shell/zpmod"
