@@ -59,6 +59,7 @@
     packages = {
       emacs-git = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
       emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
+      emacs-stable = mkEmacs pkgs.emacs (lib.versions.major pkgs.emacs.version);
       # emacs-igc = mkEmacs inputs'.emacs-overlay.packages.emacs-igc emacs-git-version;
     };
   };
