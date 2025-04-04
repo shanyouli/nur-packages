@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-03-31 08:28:52 UTC
+- LAST_MODIFY: 2025-04-04 07:23:28 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>29</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>31</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -79,6 +79,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.6|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20250330.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.39|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.6.0|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
@@ -94,6 +95,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **63** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.1.0|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.4.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.0.4.10|Featureful free software BitTorrent client|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-03-30|Rime 配置:雾凇拼音|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2024-08-19|The universal proxy platform|
