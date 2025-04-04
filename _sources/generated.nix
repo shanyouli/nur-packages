@@ -393,21 +393,21 @@
   };
   nh = {
     pname = "nh";
-    version = "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3";
+    version = "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3";
+      rev = "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a";
       fetchSubmodules = false;
-      sha256 = "sha256-Qe/XUKvcaNdQflvhQQSX1PV5SjNx/RCBBDHxbWxE2xI=";
+      sha256 = "sha256-bg+aAN8K90r3m/I+xXiXG0gawpbkshwlk93wxUN7KEk=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-7bd0d00a3f1aab85a7e29d34b4f1f6744263e6c3/Cargo.lock;
+      lockFile = ./nh-9e9a4590b38b62b28f07a1fae973ce7b6ca0687a/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-03-25";
+    date = "2025-04-03";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -433,34 +433,34 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.1.0";
+    version = "33.2.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono.zip";
-      sha256 = "sha256-gmWQbsZkThy1ZEsBVqVyxVNfikCxHnY+K6LipqCq3ao=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono.zip";
+      sha256 = "sha256-m+zWrjSDmfuEHHrQqFxJLW+uiVLCr8fRe3Uok6ZABlg=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.1.0";
+    version = "33.2.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-KvSDBD+iCdydf94cPQM2oMkH/JS+xmwUZ2xQ//KPJ5k=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-IxqbvSzj5SIM1k6Y57pb9NOrmNt9NSUGPzlIRZCQ6l4=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.1.0";
+    version = "33.2.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-sans.zip";
-      sha256 = "sha256-jpgDDEcwwv0K078jzt2iKsUoSOaTvpeU9A0WWDlozQc=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-sans.zip";
+      sha256 = "sha256-SYI0cAAsTR9mhSMEAlX4R+af+l9oXlk1SGVITUyeJf8=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.1.0";
+    version = "33.2.0";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.1.0/pragma-sevka-serif.zip";
-      sha256 = "sha256-Hu+II7Th+gO/YABFnpgEZhcrGv6+4/wtTR3bz7/ugG8=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-serif.zip";
+      sha256 = "sha256-rScpgC6q/4FQVRubLRsSf9EFWl+ZbPu5CnBaCSC0C74=";
     };
   };
   qbittorrent = {
@@ -476,15 +476,23 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "af3ea15b5c843d2c2d9ce904356073f962e8aa3d";
+    version = "a5f5404e369100fcfc5562f86f1205827453e31c";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "af3ea15b5c843d2c2d9ce904356073f962e8aa3d";
+      rev = "a5f5404e369100fcfc5562f86f1205827453e31c";
       fetchSubmodules = false;
-      sha256 = "sha256-52Iu5qikFJzYc5jL604C/zklLozV6p+C0/zr/DUvlGk=";
+      sha256 = "sha256-s3r8cdEliiPnKWs64Wgi0rC9Ngl1mkIrLnr2tIcyXWw=";
     };
-    date = "2025-03-30";
+    date = "2025-04-01";
+  };
+  rime-wanxiang = {
+    pname = "rime-wanxiang";
+    version = "6.1";
+    src = fetchurl {
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.1/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-TgMX5fDWg4GNYcfaB5xojM54QHvUJW2VQUfl958DtlI=";
+    };
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -570,15 +578,23 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "8bce1d76e59ba66705058373a4a9f6048d2053a9";
+    version = "b30fa402e03cc52348f95a7e4248f4ee831a5576";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "8bce1d76e59ba66705058373a4a9f6048d2053a9";
+      rev = "b30fa402e03cc52348f95a7e4248f4ee831a5576";
       fetchSubmodules = false;
-      sha256 = "sha256-z8E2bqoF2CJec4JqX8lSWhpefc9NHykyi5172zND50A=";
+      sha256 = "sha256-l5yebQbczHOQxrcO9TRL26w4ogK9mbhAyjK5xub/Y1M=";
     };
-    date = "2025-03-08";
+    date = "2025-04-04";
+  };
+  wanxiang-lts-zh-hans = {
+    pname = "wanxiang-lts-zh-hans";
+    version = "2024";
+    src = fetchurl {
+      url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
+      sha256 = "sha256-AAPBzGI5YjOweCEc2zusa5pnEB7g90AFvVrt/zfWV4k=";
+    };
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";

@@ -3,9 +3,15 @@
   stdenvNoCC,
   lib,
   sources,
+  p7zip,
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (source) pname src version;
+  phases = ["unpackPhase" "installPhase"];
+  nativeBuildInputs = [p7zip];
+  unpackCmd = ''
+    7z x -y $src
+  '';
   # buildPhase = ''
   #   runHook preBuild
   #   mv default.yaml rime_ice_suggestion.yaml
@@ -17,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     mkdir -p $out/share/rime-data
     rm -rf ./.github
     cp -r ./* $out/share/rime-data/
-    cp -r ${sources.wanxiang-lts-zh-hans.src} $out/share/rime-data
+    cp -r ${sources.wanxiang-lts-zh-hans.src} $out/share/rime-data/${lib.getName sources.wanxiang-lts-zh-hans.src}
 
     runHook postInstall
   '';
