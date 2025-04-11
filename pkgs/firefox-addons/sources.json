@@ -6,15 +6,15 @@
     "pname": "noscript"
   },
   "browserpass-ce": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4465883/browserpass_ce-3.10.1.xpi",
-    "version": "3.10.1",
-    "sha256": "1annxs6vdziw9p02mmn8bkjycxs3m36whzzvmn278hzp7jfyvn99",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4468825/browserpass_ce-3.10.2.xpi",
+    "version": "3.10.2",
+    "sha256": "03zdn8wraq2d4izaif4q5n7xfyp1zzqds6i7xbb1kl6cd0cy3sb3",
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4466448/download_with_aria2-4.15.0.3266.xpi",
-    "version": "4.15.0.3266",
-    "sha256": "09h2zzpii8v3nibhxbyl28qdr1gfdy7iqbqgw6xc44i7zddcgg7a",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4472127/download_with_aria2-4.15.0.3282.xpi",
+    "version": "4.15.0.3282",
+    "sha256": "0wghws26i5s9wva2jc0jhnd71sc1kzlwg9p4a9bpwxdwmq5yw6s6",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
