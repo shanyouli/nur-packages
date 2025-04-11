@@ -110,13 +110,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v1.0.6";
+    version = "v1.0.7";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v1.0.6";
+      rev = "v1.0.7";
       fetchSubmodules = false;
-      sha256 = "sha256-r8kQzYc4kn5HDJtx7a7xrXUJXuFcxDzCcChtLnVqXmg=";
+      sha256 = "sha256-ZGcSh7Iry1j+dpPLxHDKdFFUzp+zp1Lt0FoHefhdCHA=";
     };
   };
   dict2xml = {
@@ -476,22 +476,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "a5f5404e369100fcfc5562f86f1205827453e31c";
+    version = "51777daedbe4783c3b79f0246d775e4b6d978cbc";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "a5f5404e369100fcfc5562f86f1205827453e31c";
+      rev = "51777daedbe4783c3b79f0246d775e4b6d978cbc";
       fetchSubmodules = false;
-      sha256 = "sha256-s3r8cdEliiPnKWs64Wgi0rC9Ngl1mkIrLnr2tIcyXWw=";
+      sha256 = "sha256-cFaFgChhpgEiJw+dHl3Hr3T2UQF+Vy6u36JWY+cYBNo=";
     };
-    date = "2025-04-01";
+    date = "2025-04-06";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.1";
+    version = "6.4";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.1/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-TgMX5fDWg4GNYcfaB5xojM54QHvUJW2VQUfl958DtlI=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-ao1/xY/Cy370wPBsxo+iZuDzDug5h/HZ1jKF8rtFtfE=";
     };
   };
   sarasa-term = {
@@ -593,7 +593,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-AAPBzGI5YjOweCEc2zusa5pnEB7g90AFvVrt/zfWV4k=";
+      sha256 = "sha256-iJMa2Svx3gHgEMWwqiN9wnO450U06a3H4d1YdagHuBU=";
     };
   };
   websocket-bridge-python = {
