@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-04-04 21:56:01 UTC
+- LAST_MODIFY: 2025-04-11 21:55:58 UTC
 
 
 ## How to use
@@ -76,9 +76,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-03-25|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.6|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250404.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250411.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.39|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -95,8 +95,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.0|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.4.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.0.4.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-04-01|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.1|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-04-06|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.4|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2024-08-19|The universal proxy platform|
@@ -133,10 +133,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
-|[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.10.1|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
+|[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.10.2|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||5.0.1|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.103|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.15.0.3266|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.15.0.3282|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.15.10|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
