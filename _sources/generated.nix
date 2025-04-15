@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.17.1-Beta";
+    version = "0.18.2-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.17.1-Beta/AeroSpace-v0.17.1-Beta.zip";
-      sha256 = "sha256-FQUmIXebz1rcy6XaXoJnsnyEXW1pAnc4P4Sjg7GGUeE=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.2-Beta/AeroSpace-v0.18.2-Beta.zip";
+      sha256 = "sha256-ljw4S+FnOSH/da6p0uRzevp6j8iAnB8BxT/LYKKW6ew=";
     };
   };
   alist = {
@@ -488,10 +488,10 @@
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.4";
+    version = "6.4.4";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-ao1/xY/Cy370wPBsxo+iZuDzDug5h/HZ1jKF8rtFtfE=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.4/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-o2lud54/8EzkJRoPcSakeM6YdeVGyxJBGSXo9VaGV7Q=";
     };
   };
   sarasa-term = {
@@ -593,7 +593,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-iJMa2Svx3gHgEMWwqiN9wnO450U06a3H4d1YdagHuBU=";
+      sha256 = "sha256-IPLstNXtKUcbqf8ao0g4ptVgSgub3fH4xk7xwpmNfuw=";
     };
   };
   websocket-bridge-python = {
