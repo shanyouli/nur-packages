@@ -752,11 +752,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-m+zWrjSDmfuEHHrQqFxJLW+uiVLCr8fRe3Uok6ZABlg=",
+            "sha256": "sha256-1kM++aPxKOpj/cHC8FDJepqBGcgVtGIM0K69Us/+TBQ=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-mono.zip"
         },
-        "version": "33.2.0"
+        "version": "33.2.1"
     },
     "pragmasevka-nerd": {
         "cargoLocks": null,
@@ -767,11 +767,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IxqbvSzj5SIM1k6Y57pb9NOrmNt9NSUGPzlIRZCQ6l4=",
+            "sha256": "sha256-CK7o3B2tVmPJ/+tSF2quI/GGiCgqpZ38MnhRSUAPJX8=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-mono-nerd.zip"
         },
-        "version": "33.2.0"
+        "version": "33.2.1"
     },
     "pragmasevka-sans": {
         "cargoLocks": null,
@@ -782,11 +782,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SYI0cAAsTR9mhSMEAlX4R+af+l9oXlk1SGVITUyeJf8=",
+            "sha256": "sha256-uuIY5Fxa2yUlwQFxqi2OMt7GsRULHLAw6HScbRGcOsc=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-sans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-sans.zip"
         },
-        "version": "33.2.0"
+        "version": "33.2.1"
     },
     "pragmasevka-serif": {
         "cargoLocks": null,
@@ -797,11 +797,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rScpgC6q/4FQVRubLRsSf9EFWl+ZbPu5CnBaCSC0C74=",
+            "sha256": "sha256-C2df8FeE79sG57oH9k07lSS/6onRUemYQJvhSMm74j8=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-serif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-serif.zip"
         },
-        "version": "33.2.0"
+        "version": "33.2.1"
     },
     "qbittorrent": {
         "cargoLocks": null,
@@ -826,7 +826,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-04-06",
+        "date": "2025-04-16",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -838,12 +838,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "51777daedbe4783c3b79f0246d775e4b6d978cbc",
-            "sha256": "sha256-cFaFgChhpgEiJw+dHl3Hr3T2UQF+Vy6u36JWY+cYBNo=",
+            "rev": "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683",
+            "sha256": "sha256-7DodE2/bcYSVoXCyJ9YAeYH80lARIG7XJ9AImh75Kcc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "51777daedbe4783c3b79f0246d775e4b6d978cbc"
+        "version": "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683"
     },
     "rime-wanxiang": {
         "cargoLocks": null,
@@ -854,11 +854,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-o2lud54/8EzkJRoPcSakeM6YdeVGyxJBGSXo9VaGV7Q=",
+            "sha256": "sha256-+8GP0c+FblY4fsgw5cSMWRneckAif9Sxd3KQLsaQHXI=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.4/wanxiang-moqi-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.5/wanxiang-moqi-fuzhu.zip"
         },
-        "version": "6.4.4"
+        "version": "6.4.5"
     },
     "sarasa-term": {
         "cargoLocks": null,

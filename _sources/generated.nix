@@ -433,34 +433,34 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.2.0";
+    version = "33.2.1";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono.zip";
-      sha256 = "sha256-m+zWrjSDmfuEHHrQqFxJLW+uiVLCr8fRe3Uok6ZABlg=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-mono.zip";
+      sha256 = "sha256-1kM++aPxKOpj/cHC8FDJepqBGcgVtGIM0K69Us/+TBQ=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.2.0";
+    version = "33.2.1";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-IxqbvSzj5SIM1k6Y57pb9NOrmNt9NSUGPzlIRZCQ6l4=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-CK7o3B2tVmPJ/+tSF2quI/GGiCgqpZ38MnhRSUAPJX8=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.2.0";
+    version = "33.2.1";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-sans.zip";
-      sha256 = "sha256-SYI0cAAsTR9mhSMEAlX4R+af+l9oXlk1SGVITUyeJf8=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-sans.zip";
+      sha256 = "sha256-uuIY5Fxa2yUlwQFxqi2OMt7GsRULHLAw6HScbRGcOsc=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.2.0";
+    version = "33.2.1";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.0/pragma-sevka-serif.zip";
-      sha256 = "sha256-rScpgC6q/4FQVRubLRsSf9EFWl+ZbPu5CnBaCSC0C74=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.1/pragma-sevka-serif.zip";
+      sha256 = "sha256-C2df8FeE79sG57oH9k07lSS/6onRUemYQJvhSMm74j8=";
     };
   };
   qbittorrent = {
@@ -476,22 +476,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "51777daedbe4783c3b79f0246d775e4b6d978cbc";
+    version = "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "51777daedbe4783c3b79f0246d775e4b6d978cbc";
+      rev = "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683";
       fetchSubmodules = false;
-      sha256 = "sha256-cFaFgChhpgEiJw+dHl3Hr3T2UQF+Vy6u36JWY+cYBNo=";
+      sha256 = "sha256-7DodE2/bcYSVoXCyJ9YAeYH80lARIG7XJ9AImh75Kcc=";
     };
-    date = "2025-04-06";
+    date = "2025-04-16";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.4.4";
+    version = "6.4.5";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.4/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-o2lud54/8EzkJRoPcSakeM6YdeVGyxJBGSXo9VaGV7Q=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.5/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-+8GP0c+FblY4fsgw5cSMWRneckAif9Sxd3KQLsaQHXI=";
     };
   };
   sarasa-term = {
