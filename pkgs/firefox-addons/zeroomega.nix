@@ -3,8 +3,7 @@
   lib,
   source,
 }:
-mkFirefoxAddon
-{
+mkFirefoxAddon {
   inherit (source) pname version src;
   addonId = "suziwen1@gmail.com";
   meta = with lib; {

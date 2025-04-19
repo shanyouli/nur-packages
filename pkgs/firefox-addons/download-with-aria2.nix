@@ -3,8 +3,7 @@
   lib,
   source,
 }:
-mkFirefoxAddon
-{
+mkFirefoxAddon {
   inherit (source) pname version src;
   addonId = "firefox@downloadWithAria2";
   meta = with lib; {

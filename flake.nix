@@ -55,14 +55,12 @@
       inputs.nixpkgs.follows = "nixpkgs-stable";
     };
   };
-  outputs = {
-    nixpkgs,
-    flake-parts,
-    ...
-  } @ inputs: let
-    inherit (import ./nix/lib/modules.nix {inherit (nixpkgs) lib;}) moduleFilesRec;
-  in
-    flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs =
+    { nixpkgs, flake-parts, ... }@inputs:
+    let
+      inherit (import ./nix/lib/modules.nix { inherit (nixpkgs) lib; }) moduleFilesRec;
+    in
+    flake-parts.lib.mkFlake { inherit inputs; } {
       imports = moduleFilesRec ./nix;
       debug = true;
       systems = [

@@ -7,7 +7,7 @@
 stdenvNoCC.mkDerivation {
   inherit (source) src pname version;
   sourceRoot = ".";
-  nativeBuildInputs = [p7zip];
+  nativeBuildInputs = [ p7zip ];
   unpackPhase = ''
     mkdir -p $out/tmp
     7z x -y $src -o$out/tmp

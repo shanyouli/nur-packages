@@ -7,10 +7,8 @@
 stdenv.mkDerivation {
   inherit (source) src pname;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
-  nativeBuildInputs = [p7zip];
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
+  nativeBuildInputs = [ p7zip ];
   dontInstall = true;
   unpackPhase = ''
     mkdir -p $out/tmp

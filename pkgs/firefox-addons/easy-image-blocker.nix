@@ -3,8 +3,7 @@
   lib,
   source,
 }:
-mkFirefoxAddon
-{
+mkFirefoxAddon {
   inherit (source) pname version src;
   addonId = "@easyimageblocker";
   meta = with lib; {

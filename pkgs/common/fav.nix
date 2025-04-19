@@ -14,9 +14,7 @@
 rustPlatform.buildRustPackage rec {
   inherit (source) pname src;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   cargoLock = source.cargoLock."Cargo.lock";
   postConfigure = ''
     cargo metadata --offline
@@ -25,17 +23,9 @@ rustPlatform.buildRustPackage rec {
   #   cargo update --offline
   # '';
   # cargoBuildFlags = ["--offline"];
-  nativeBuildInputs = [
-    pkg-config
-  ];
+  nativeBuildInputs = [ pkg-config ];
 
-  buildInputs =
-    [
-      openssl
-    ]
-    ++ lib.optionals stdenv.hostPlatform.isDarwin [
-      apple-sdk_13
-    ];
+  buildInputs = [ openssl ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ];
   doCheck = false;
   env = {
     OPENSSL_NO_VENDOR = true;

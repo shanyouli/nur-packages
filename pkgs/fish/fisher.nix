@@ -6,9 +6,7 @@
 buildFishPlugin rec {
   inherit (source) pname src;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   dontCheck = true;
   # 目前测试存在问题，故不进行测试
   # nativeCheckInputs = [git];

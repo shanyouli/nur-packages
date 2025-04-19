@@ -3,8 +3,7 @@
   lib,
   source,
 }:
-mkFirefoxAddon
-{
+mkFirefoxAddon {
   inherit (source) pname version src;
   addonId = "uBlock0@raymondhill.net";
   meta = with lib; {

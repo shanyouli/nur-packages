@@ -6,9 +6,7 @@
 rustPlatform.buildRustPackage rec {
   inherit (source) src pname;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   cargoLock = source.cargoLock."Cargo.lock";
 
   meta = with lib; {

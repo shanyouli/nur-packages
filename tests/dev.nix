@@ -1,13 +1,16 @@
-with builtins; let
+with builtins;
+let
   flake = builtins.getFlake (toString ../.);
-  inherit (flake.lib) isBuildable isCacheable flattenPkgs outputsOf;
+  inherit (flake.lib)
+    isBuildable
+    isCacheable
+    flattenPkgs
+    outputsOf
+    ;
 
   nurAttrs = flake.currentSystem.packages;
 
-  isPkg' = name: p:
-    if builtins.hasAttr name p
-    then p.${name}
-    else null;
+  isPkg' = name: p: if builtins.hasAttr name p then p.${name} else null;
 
   isPkg = name: isPkg' name nurAttrs;
 
@@ -20,7 +23,8 @@ with builtins; let
     p = isPkg "deeplx";
     # a = isPkg "alist";
   };
-in rec {
+in
+rec {
   buildDevPkgs = filter isBuildable devPkgs;
   cacheDevPkgs = filter isCacheable buildDevPkgs;
   cacheDevOutputs = concatMap outputsOf devPkgs;

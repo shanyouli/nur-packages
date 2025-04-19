@@ -11,15 +11,19 @@
 stdenv.mkDerivation (finalAttrs: {
   inherit (source) pname src;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
   pnpmDeps = pnpm_9.fetchDeps {
     inherit (finalAttrs) pname version src;
     hash = "sha256-/cxuMTcMKU1jwkvQhPI/+Em1sadBDEJraR54rBw/7wk=";
   };
-  nativeBuildInputs = [makeWrapper pnpm_9.configHook nodejs jq patchelf];
+  nativeBuildInputs = [
+    makeWrapper
+    pnpm_9.configHook
+    nodejs
+    jq
+    patchelf
+  ];
   buildPhase = ''
     runHook preBuild
     pnpm build
@@ -46,9 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     [ -f ./LICENSE ] && cp -rv ./LICENSE "$packageOutDir"
     runHook postInstall
   '';
-  passthru = {
-    inherit (finalAttrs) pnpmDeps;
-  };
+  passthru = { inherit (finalAttrs) pnpmDeps; };
   meta = with lib; {
     description = "🎵 一个可播放及下载音乐的 Node.js 命令行工具 ";
     homepage = "https://github.com/zonemeen/musicn";

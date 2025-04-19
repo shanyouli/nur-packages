@@ -3,18 +3,24 @@
   lib,
   writeShellScriptBin,
   ...
-}: {apps, ...} @ extra: let
+}:
+{ apps, ... }@extra:
+let
   _buildInputs =
-    (lib.mapAttrsToList (n: _v:
+    (lib.mapAttrsToList (
+      n: _v:
       writeShellScriptBin n ''
         exec nix run .#${n} -- "$@"
-      '')
-    apps)
+      ''
+    ) apps)
     ++ lib.optionals (extra ? buildInputs) extra.buildInputs;
   _extra =
-    (lib.removeAttrs extra ["buildInputs" "apps"])
+    (lib.removeAttrs extra [
+      "buildInputs"
+      "apps"
+    ])
     // {
       buildInputs = _buildInputs;
     };
 in
-  mkShell _extra
+mkShell _extra

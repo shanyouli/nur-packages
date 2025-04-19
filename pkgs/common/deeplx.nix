@@ -8,11 +8,12 @@ buildGoModule rec {
   inherit (source) pname src;
   vendorHash = "sha256-ls2oHH5wGVwGM4AxMPxl+sGgK35dfhAaIw6izE8g8Y8=";
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
-  ldflags = ["-s" "-w"];
+  ldflags = [
+    "-s"
+    "-w"
+  ];
   postInstall = ''
     mv $out/bin/DeepLX $out
     mv $out/DeepLX $out/bin/deeplx

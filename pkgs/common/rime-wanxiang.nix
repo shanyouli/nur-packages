@@ -7,8 +7,11 @@
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (source) pname src version;
-  phases = ["unpackPhase" "installPhase"];
-  nativeBuildInputs = [p7zip];
+  phases = [
+    "unpackPhase"
+    "installPhase"
+  ];
+  nativeBuildInputs = [ p7zip ];
   unpackCmd = ''
     7z x -y $src
   '';

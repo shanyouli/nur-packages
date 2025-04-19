@@ -9,11 +9,9 @@
   source,
   makeBinaryWrapper,
   ...
-}: let
-  messageCmd =
-    if withNotify
-    then "terminal-notifier"
-    else "";
+}:
+let
+  messageCmd = if withNotify then "terminal-notifier" else "";
   EmacsClientAppleScript = writeText "emacsclient" ''
     on emacsclient(input)
       set cmd to "${emacsClientBin}"
@@ -120,49 +118,55 @@
   infoPlist = builtins.toJSON [
     {
       CFBundleURLName = "org-protocol handler";
-      CFBundleURLSchemes = ["org-protocol"];
+      CFBundleURLSchemes = [ "org-protocol" ];
     }
   ];
 
-  buildEnv = runCommandLocal "build-symlinks" {} ''
+  buildEnv = runCommandLocal "build-symlinks" { } ''
     mkdir -p $out/bin
     ln -s /usr/bin/{osacompile,plutil} $out/bin
   '';
 in
-  stdenv.mkDerivation rec {
-    pname = "EmacsClient";
-    version = "29.2";
-    srcs = [EmacsClientAppleScript icns];
-    phases = ["installPhase"];
-    nativeBuildInputs = [makeBinaryWrapper buildEnv];
-    installPhase = ''
-      mkdir -p $out/Applications
-      osacompile -o EmacsClient.app ${EmacsClientAppleScript}
+stdenv.mkDerivation rec {
+  pname = "EmacsClient";
+  version = "29.2";
+  srcs = [
+    EmacsClientAppleScript
+    icns
+  ];
+  phases = [ "installPhase" ];
+  nativeBuildInputs = [
+    makeBinaryWrapper
+    buildEnv
+  ];
+  installPhase = ''
+    mkdir -p $out/Applications
+    osacompile -o EmacsClient.app ${EmacsClientAppleScript}
 
-      plutil -insert CFBundleDisplayName -string "EmacsClient" EmacsClient.app/Contents/Info.plist
+    plutil -insert CFBundleDisplayName -string "EmacsClient" EmacsClient.app/Contents/Info.plist
 
-      # icons file
-      plutil -replace CFBundleIconFile -string "EmacsClient" EmacsClient.app/Contents/Info.plist
+    # icons file
+    plutil -replace CFBundleIconFile -string "EmacsClient" EmacsClient.app/Contents/Info.plist
 
-      # execute
-      plutil -replace CFBundleExecutable -string "EmacsClient" EmacsClient.app/Contents/Info.plist
+    # execute
+    plutil -replace CFBundleExecutable -string "EmacsClient" EmacsClient.app/Contents/Info.plist
 
-      # bundleID
-      plutil -insert CFBundleIdentifier -string "org.nixos.EmacsClient" EmacsClient.app/Contents/Info.plist
+    # bundleID
+    plutil -insert CFBundleIdentifier -string "org.nixos.EmacsClient" EmacsClient.app/Contents/Info.plist
 
-      # 版本号相关的
-      plutil -insert CFBundleShortVersionString -string "${version}" EmacsClient.app/Contents/Info.plist
-      plutil -insert CFBundleVersion -string "${version}" EmacsClient.app/Contents/Info.plist
-      plutil -insert CFBundleURLTypes -json ${
-        lib.escapeShellArg infoPlist
-      } EmacsClient.app/Contents/Info.plist
+    # 版本号相关的
+    plutil -insert CFBundleShortVersionString -string "${version}" EmacsClient.app/Contents/Info.plist
+    plutil -insert CFBundleVersion -string "${version}" EmacsClient.app/Contents/Info.plist
+    plutil -insert CFBundleURLTypes -json ${lib.escapeShellArg infoPlist} EmacsClient.app/Contents/Info.plist
 
-      cp -R ${icns} EmacsClient.app/Contents/Resources/EmacsClient.icns
-      rm -rf EmacsClient.app/Contents/Resources/droplet.icns
-      mv -f EmacsClient.app/Contents/MacOS/droplet EmacsClient.app/Contents/MacOS/EmacsClient
-      cp -R EmacsClient.app $out/Applications
-      wrapProgramBinary $out/Applications/EmacsClient.app/Contents/MacOS/EmacsClient --suffix PATH : "${lib.makeBinPath [
+    cp -R ${icns} EmacsClient.app/Contents/Resources/EmacsClient.icns
+    rm -rf EmacsClient.app/Contents/Resources/droplet.icns
+    mv -f EmacsClient.app/Contents/MacOS/droplet EmacsClient.app/Contents/MacOS/EmacsClient
+    cp -R EmacsClient.app $out/Applications
+    wrapProgramBinary $out/Applications/EmacsClient.app/Contents/MacOS/EmacsClient --suffix PATH : "${
+      lib.makeBinPath [
         terminal-notifier
-      ]}"
-    '';
-  }
+      ]
+    }"
+  '';
+}

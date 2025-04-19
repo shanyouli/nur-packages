@@ -3,16 +3,18 @@
   lib,
   source,
   ...
-}: let
+}:
+let
   inherit (python3Packages) buildPythonPackage grapheme about-time;
 in
-  buildPythonPackage rec {
-    inherit (source) pname src;
-    version =
-      if (builtins.hasAttr "date" source)
-      then source.date
-      else lib.removePrefix "v" source.version;
+buildPythonPackage rec {
+  inherit (source) pname src;
+  version =
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
-    propagatedBuildInputs = [grapheme about-time];
-    doCheck = false;
-  }
+  propagatedBuildInputs = [
+    grapheme
+    about-time
+  ];
+  doCheck = false;
+}

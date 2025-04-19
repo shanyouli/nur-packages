@@ -8,8 +8,8 @@
 }:
 stdenv.mkDerivation rec {
   inherit (source) pname version src;
-  nativeBuildInputs = [xcodebuild];
-  buildInputs = [apple-sdk_15];
+  nativeBuildInputs = [ xcodebuild ];
+  buildInputs = [ apple-sdk_15 ];
   # FIXME: mkdir -p /var/empty/xxx error
   # see @https://github.com/NixOS/nixpkgs/blob/787264df644cc07c545b1683639ef030cbff4ef4/pkgs/applications/editors/vim/macvim.nix#L114
   # 我不知道为什么构建时，使用 `-derivedDataPath build` 会无法修改 DERIVED_DATA_DIR,

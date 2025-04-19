@@ -3,8 +3,7 @@
   lib,
   source,
 }:
-mkFirefoxAddon
-{
+mkFirefoxAddon {
   inherit (source) pname version src;
   addonId = "browserpass@maximbaz.com";
   meta = with lib; {

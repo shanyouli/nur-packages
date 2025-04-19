@@ -6,8 +6,8 @@
 }:
 stdenv.mkDerivation rec {
   inherit (source) pname src version;
-  buildInputs = [ncurses];
-  configureFlags = ["--with-tcsetpgrp"];
+  buildInputs = [ ncurses ];
+  configureFlags = [ "--with-tcsetpgrp" ];
   installPhase = ''
     install -D -m755 ./Src/zi/zpmod.so $out/lib/zi/zpmod.so
     mkdir -p $out/share/zpmod

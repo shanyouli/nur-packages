@@ -7,8 +7,14 @@
 }:
 stdenv.mkDerivation rec {
   inherit (source) pname version src;
-  phases = ["unpackPhase" "installPhase"];
-  nativeBuildInputs = [p7zip installShellFiles];
+  phases = [
+    "unpackPhase"
+    "installPhase"
+  ];
+  nativeBuildInputs = [
+    p7zip
+    installShellFiles
+  ];
   unpackCmd = ''
     7z x -y $src
   '';

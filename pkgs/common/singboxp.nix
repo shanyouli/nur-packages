@@ -10,9 +10,7 @@
 buildGoModule rec {
   inherit (source) pname src;
   version =
-    if (builtins.hasAttr "date" source)
-    then source.date
-    else lib.removePrefix "v" source.version;
+    if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
   vendorHash = "sha256-d2qjuMXZ5M2t6qzDRQiFtHBY9FWdOxfhnIYKWJWyJkQ=";
 
@@ -30,11 +28,9 @@ buildGoModule rec {
     "with_gvisor"
   ];
 
-  subPackages = [
-    "cmd/sing-box"
-  ];
+  subPackages = [ "cmd/sing-box" ];
 
-  nativeBuildInputs = [installShellFiles];
+  nativeBuildInputs = [ installShellFiles ];
 
   ldflags = [
     "-s"
@@ -42,25 +38,27 @@ buildGoModule rec {
     "-X=github.com/sagernet/sing-box/constant.Version=${version}"
   ];
 
-  postInstall = let
-    emulator = stdenv.hostPlatform.emulator buildPackages;
-  in ''
-    installShellCompletion --cmd sing-box \
-      --bash <(${emulator} $out/bin/sing-box completion bash) \
-      --fish <(${emulator} $out/bin/sing-box completion fish) \
-      --zsh  <(${emulator} $out/bin/sing-box completion zsh )
+  postInstall =
+    let
+      emulator = stdenv.hostPlatform.emulator buildPackages;
+    in
+    ''
+      installShellCompletion --cmd sing-box \
+        --bash <(${emulator} $out/bin/sing-box completion bash) \
+        --fish <(${emulator} $out/bin/sing-box completion fish) \
+        --zsh  <(${emulator} $out/bin/sing-box completion zsh )
 
-    substituteInPlace release/config/sing-box{,@}.service \
-      --replace-fail "/usr/bin/sing-box" "$out/bin/sing-box" \
-      --replace-fail "/bin/kill" "${coreutils}/bin/kill"
-    install -Dm444 -t "$out/lib/systemd/system/" release/config/sing-box{,@}.service
-  '';
+      substituteInPlace release/config/sing-box{,@}.service \
+        --replace-fail "/usr/bin/sing-box" "$out/bin/sing-box" \
+        --replace-fail "/bin/kill" "${coreutils}/bin/kill"
+      install -Dm444 -t "$out/lib/systemd/system/" release/config/sing-box{,@}.service
+    '';
 
   meta = with lib; {
     homepage = "https://sing-box.sagernet.org";
     description = "The universal proxy platform";
     license = licenses.gpl3Plus;
-    maintainers = with maintainers; [nickcao];
+    maintainers = with maintainers; [ nickcao ];
     mainProgram = "sing-box";
   };
 }

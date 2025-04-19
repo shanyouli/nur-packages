@@ -9,3 +9,4 @@ __pycache__
 .DS_Store
 /nixbuild-uncached.log
 nix-build-uncached.log*
+/.treefmt.toml
