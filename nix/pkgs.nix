@@ -74,7 +74,8 @@ let
           inherit (prev.fishPlugins) buildFishPlugin fishtape_3 fishtape;
         };
 
-      packageOverrides =
+      # python overlays
+      pyPackageOverrides =
         pfinal: pprev:
         let
           callPyPkg =
@@ -97,27 +98,65 @@ let
           });
         }
         // mapPkgs "python" callPyPkg;
+
+      lua-overlay =
+        let
+          nameAndPkgs = name: pkgs: {
+            interpreter = name;
+            packages = pkgs;
+          };
+          luaNames = [
+            (nameAndPkgs "lua" "luaPackages")
+            (nameAndPkgs "lua5_1" "lua51Packages")
+            (nameAndPkgs "lua5_2" "lua52Packages")
+            (nameAndPkgs "lua5_3" "lua53Packages")
+            (nameAndPkgs "lua5_4" "lua54Packages")
+            (nameAndPkgs "luajit" "luajitPackages")
+          ];
+          overriddenLua =
+            { interpreter, packages }:
+            let
+
+              newLua = prev.${interpreter}.override {
+                packageOverrides =
+                  lua_final: lua_prev:
+                  let
+                    callLuaPkg =
+                      name: dir:
+                      callPkg' {
+                        inherit name dir;
+                        lua = prev.${interpreter};
+                        luaPackages = lua_final;
+                      };
+                  in
+                  mapPkgs "lua" callLuaPkg;
+              };
+            in
+            [
+              {
+                name = interpreter;
+                value = newLua;
+              }
+              {
+                name = packages;
+                value = newLua.pkgs;
+              }
+            ];
+          overriddenLuas = lib.concatMap overriddenLua luaNames;
+        in
+        builtins.listToAttrs overriddenLuas;
+
     in
     rec {
-      # python3 = prev.python3.override { inherit packageOverrides; };
-      # python3Packages = python3.pkgs;
-
-      # pypy3 = prev.python3.override { inherit packageOverrides; };
-      # pypy3Packages = pypy3.pkgs;
-
-      # python39 = prev.python39.override { inherit packageOverrides; };
-      # python39Packages = python39.pkgs;
-
-      # python310 = prev.python310.override { inherit packageOverrides; };
-      # python310Packages = python310.pkgs;
       pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
         # (python-final: python-prev: {
         #   foo = python-prev.foo.overrPythonAttrs (oldAttrs: {});
         # })
-        packageOverrides
+        pyPackageOverrides
       ];
     }
     // (mapModules ./plib/build-support callPkg)
+    // lua-overlay
     // {
       inherit (prev.extend inputs.cl-nix-lite.overlays.default) lispPackagesLite;
     }
@@ -128,6 +167,7 @@ let
       qbittorrent-enhanced-nox = final.qbittorrent-enhanced.override { guiSupport = false; };
       fishPlugins = mapPkgs "fish" callFishPkg;
     };
+
   packageFn =
     p:
     let
@@ -144,7 +184,8 @@ let
     // {
       inherit (p) qbittorrent-enhanced-nox;
     }
-    // (mapPkgs' "python" (n: _: lib.nameValuePair "python-apps-${n}" p.python3.pkgs.${n}));
+    // (mapPkgs' "python" (n: _: lib.nameValuePair "python-apps-${n}" p.python3.pkgs.${n}))
+    // (mapPkgs' "lua" (n: _: lib.nameValuePair "lua-apps-${n}" p.lua54Packages.${n}));
 in
 {
   flake = {

@@ -2,22 +2,24 @@
   lib,
   stdenv,
   source,
-  lua5_4,
-  lua54Packages,
+  # lua5_4,
+  # lua54Packages,
+  lua,
+  luaPackages,
   pandoc,
 }:
 let
-  inherit (lua54Packages) fennel;
+  inherit (luaPackages) fennel;
 in
 stdenv.mkDerivation rec {
   inherit (source) pname src;
   version = if (source ? date) then source.date else lib.removePrefix "v" source.version;
   makeFlags = [
     "PREFIX=$(out)"
-    "LUA=${lua5_4}/bin/lua"
+    "LUA=${lua}/bin/lua"
   ];
   nativeBuildInputs = [
-    lua5_4
+    lua
     fennel
     pandoc
   ];
