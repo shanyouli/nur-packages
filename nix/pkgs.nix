@@ -99,17 +99,23 @@ let
         // mapPkgs "python" callPyPkg;
     in
     rec {
-      python3 = prev.python3.override { inherit packageOverrides; };
-      python3Packages = python3.pkgs;
+      # python3 = prev.python3.override { inherit packageOverrides; };
+      # python3Packages = python3.pkgs;
 
-      pypy3 = prev.python3.override { inherit packageOverrides; };
-      pypy3Packages = pypy3.pkgs;
+      # pypy3 = prev.python3.override { inherit packageOverrides; };
+      # pypy3Packages = pypy3.pkgs;
 
-      python39 = prev.python39.override { inherit packageOverrides; };
-      python39Packages = python39.pkgs;
+      # python39 = prev.python39.override { inherit packageOverrides; };
+      # python39Packages = python39.pkgs;
 
-      python310 = prev.python310.override { inherit packageOverrides; };
-      python310Packages = python310.pkgs;
+      # python310 = prev.python310.override { inherit packageOverrides; };
+      # python310Packages = python310.pkgs;
+      pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
+        # (python-final: python-prev: {
+        #   foo = python-prev.foo.overrPythonAttrs (oldAttrs: {});
+        # })
+        packageOverrides
+      ];
     }
     // (mapModules ./plib/build-support callPkg)
     // {
