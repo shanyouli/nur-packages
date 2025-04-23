@@ -523,11 +523,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=",
+            "sha256": "sha256-nFWr2oM9k6HeJwGeLd0gTU+xyzER84nnQSfZheBqBhA=",
             "type": "tarball",
-            "url": "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar"
+            "url": "https://luarocks.org/manifests/technomancy/jeejah-0.3.2-1.src.rock"
         },
-        "version": "0.3.2"
+        "version": "0.3.2-1"
     },
     "lporg": {
         "cargoLocks": null,

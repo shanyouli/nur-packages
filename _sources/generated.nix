@@ -299,10 +299,10 @@
   };
   jeejah = {
     pname = "jeejah";
-    version = "0.3.2";
+    version = "0.3.2-1";
     src = fetchTarball {
-      url = "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar";
-      sha256 = "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=";
+      url = "https://luarocks.org/manifests/technomancy/jeejah-0.3.2-1.src.rock";
+      sha256 = "sha256-nFWr2oM9k6HeJwGeLd0gTU+xyzER84nnQSfZheBqBhA=";
     };
   };
   lporg = {
