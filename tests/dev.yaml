@@ -4,4 +4,4 @@
 # fish file -> fish-xx
 dev: true
 apps:
-  - lua-apps-antifennel
+  - lua-apps-jeejah

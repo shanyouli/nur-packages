@@ -288,10 +288,15 @@ fetch.github = "jorgebucaran/fisher"
 src.git = "https://git.sr.ht/~technomancy/antifennel"
 fetch.git = "https://git.sr.ht/~technomancy/antifennel"
 
-[jeejah]
+[jeejah-rock]
 src.webpage = "https://luarocks.org/modules/technomancy/jeejah"
 src.regex = "href=\"/modules/technomancy/jeejah/([0-9.-]+)"
-fetch.tarball = "https://luarocks.org/manifests/technomancy/jeejah-$ver.src.rock"
+fetch.url = "https://luarocks.org/manifests/technomancy/jeejah-$ver.rockspec"
+
+[jeejah]
+src.webpage = "https://gitlab.com/technomancy/jeejah/-/tags"
+src.regex = "href=\"/technomancy/jeejah/-/tags/([0-9.]+)"
+fetch.tarball = "https://gitlab.com/technomancy/jeejah/-/archive/$ver/jeejah-$ver.tar"
 # # src.regex = "\"https://downloads.vivaldi.com/stable/Vivaldi.([0-9.]+).universal.dmg\""
 # # fetch.url = "https://downloads.vivaldi.com/stable/Vivaldi.$ver.universal.dmg"
 # src.git = "https://gitlab.com/technomancy/jeejah"
