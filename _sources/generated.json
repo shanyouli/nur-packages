@@ -523,9 +523,24 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-nFWr2oM9k6HeJwGeLd0gTU+xyzER84nnQSfZheBqBhA=",
+            "sha256": "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=",
             "type": "tarball",
-            "url": "https://luarocks.org/manifests/technomancy/jeejah-0.3.2-1.src.rock"
+            "url": "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar"
+        },
+        "version": "0.3.2"
+    },
+    "jeejah-rock": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "jeejah-rock",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Ouj+umHFOLtGwwMKochvG1fqIyRMdPzXg9039jD/bPk=",
+            "type": "url",
+            "url": "https://luarocks.org/manifests/technomancy/jeejah-0.3.2-1.rockspec"
         },
         "version": "0.3.2-1"
     },
