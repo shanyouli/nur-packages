@@ -297,6 +297,20 @@
       sha256 = "sha256-tB8uZm0kPRnmeOvsDdrkrHcMVIYfGanB4l/xHsTKpgE=";
     };
   };
+  jeejah = {
+    pname = "jeejah";
+    version = "1555350e1e5eb77625334db1fba3c79b8c2c30a2";
+    src = fetchgit {
+      url = "https://gitlab.com/technomancy/jeejah";
+      rev = "1555350e1e5eb77625334db1fba3c79b8c2c30a2";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-DyJJprTj9WjnhCC5CqudObLuae43zJD0VY9svGbqz10=";
+    };
+    date = "2023-09-28";
+  };
   lporg = {
     pname = "lporg";
     version = "v20.4.32";
@@ -393,21 +407,21 @@
   };
   nh = {
     pname = "nh";
-    version = "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a";
+    version = "3262f3ccc8ea26bc04b13ebc3b13409224d436dc";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a";
+      rev = "3262f3ccc8ea26bc04b13ebc3b13409224d436dc";
       fetchSubmodules = false;
-      sha256 = "sha256-bg+aAN8K90r3m/I+xXiXG0gawpbkshwlk93wxUN7KEk=";
+      sha256 = "sha256-pph3fWc7ikLiB6LoYnoEGxwd37v93/0AW3ee+ZA/HwM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-9e9a4590b38b62b28f07a1fae973ce7b6ca0687a/Cargo.lock;
+      lockFile = ./nh-3262f3ccc8ea26bc04b13ebc3b13409224d436dc/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-04-03";
+    date = "2025-04-22";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -465,33 +479,33 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.0.4.10";
+    version = "release-5.0.5.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.0.4.10";
+      rev = "release-5.0.5.10";
       fetchSubmodules = false;
-      sha256 = "sha256-qYGDPEg4BZZgHschgFjp23EnmaBtmM+UNoC2Lympt/g=";
+      sha256 = "sha256-wMPzasrWmPG+iOwUBkbswSMQQBJxq03GVlQg5ck54vQ=";
     };
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683";
+    version = "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683";
+      rev = "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2";
       fetchSubmodules = false;
-      sha256 = "sha256-7DodE2/bcYSVoXCyJ9YAeYH80lARIG7XJ9AImh75Kcc=";
+      sha256 = "sha256-N7EDvQX598jxNILzwTwAeu/BY9wWVBRUuTApamf4nAY=";
     };
-    date = "2025-04-16";
+    date = "2025-04-22";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.4.5";
+    version = "6.5";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.5/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-+8GP0c+FblY4fsgw5cSMWRneckAif9Sxd3KQLsaQHXI=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.5/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-745SDPuNkhjM32/GCF1Po+0YvEQnytxDYiTiDBjkz14=";
     };
   };
   sarasa-term = {
@@ -578,15 +592,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "b30fa402e03cc52348f95a7e4248f4ee831a5576";
+    version = "97bca8b107bf1d6762d8b6db554b5d1a207a86cc";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "b30fa402e03cc52348f95a7e4248f4ee831a5576";
+      rev = "97bca8b107bf1d6762d8b6db554b5d1a207a86cc";
       fetchSubmodules = false;
-      sha256 = "sha256-l5yebQbczHOQxrcO9TRL26w4ogK9mbhAyjK5xub/Y1M=";
+      sha256 = "sha256-QRe/q5sDIJnO8a/qzyenp0zpQSDD4pKunDDNIbpiP7s=";
     };
-    date = "2025-04-04";
+    date = "2025-04-21";
   };
   wanxiang-lts-zh-hans = {
     pname = "wanxiang-lts-zh-hans";

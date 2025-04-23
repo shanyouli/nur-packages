@@ -515,6 +515,26 @@
         },
         "version": "0.28.1"
     },
+    "jeejah": {
+        "cargoLocks": null,
+        "date": "2023-09-28",
+        "extract": null,
+        "name": "jeejah",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "1555350e1e5eb77625334db1fba3c79b8c2c30a2",
+            "sha256": "sha256-DyJJprTj9WjnhCC5CqudObLuae43zJD0VY9svGbqz10=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://gitlab.com/technomancy/jeejah"
+        },
+        "version": "1555350e1e5eb77625334db1fba3c79b8c2c30a2"
+    },
     "lporg": {
         "cargoLocks": null,
         "date": null,
@@ -678,11 +698,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-9e9a4590b38b62b28f07a1fae973ce7b6ca0687a/Cargo.lock",
+                "./nh-3262f3ccc8ea26bc04b13ebc3b13409224d436dc/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-04-03",
+        "date": "2025-04-22",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -694,12 +714,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a",
-            "sha256": "sha256-bg+aAN8K90r3m/I+xXiXG0gawpbkshwlk93wxUN7KEk=",
+            "rev": "3262f3ccc8ea26bc04b13ebc3b13409224d436dc",
+            "sha256": "sha256-pph3fWc7ikLiB6LoYnoEGxwd37v93/0AW3ee+ZA/HwM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9e9a4590b38b62b28f07a1fae973ce7b6ca0687a"
+        "version": "3262f3ccc8ea26bc04b13ebc3b13409224d436dc"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
@@ -817,16 +837,16 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-5.0.4.10",
-            "sha256": "sha256-qYGDPEg4BZZgHschgFjp23EnmaBtmM+UNoC2Lympt/g=",
+            "rev": "release-5.0.5.10",
+            "sha256": "sha256-wMPzasrWmPG+iOwUBkbswSMQQBJxq03GVlQg5ck54vQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "release-5.0.4.10"
+        "version": "release-5.0.5.10"
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-04-16",
+        "date": "2025-04-22",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -838,12 +858,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683",
-            "sha256": "sha256-7DodE2/bcYSVoXCyJ9YAeYH80lARIG7XJ9AImh75Kcc=",
+            "rev": "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2",
+            "sha256": "sha256-N7EDvQX598jxNILzwTwAeu/BY9wWVBRUuTApamf4nAY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5b1999c3c3bc1bfd84bffacd7ff5c5e0879ea683"
+        "version": "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2"
     },
     "rime-wanxiang": {
         "cargoLocks": null,
@@ -854,11 +874,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+8GP0c+FblY4fsgw5cSMWRneckAif9Sxd3KQLsaQHXI=",
+            "sha256": "sha256-745SDPuNkhjM32/GCF1Po+0YvEQnytxDYiTiDBjkz14=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.4.5/wanxiang-moqi-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.5/wanxiang-moqi-fuzhu.zip"
         },
-        "version": "6.4.5"
+        "version": "6.5"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -1008,7 +1028,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2025-04-04",
+        "date": "2025-04-21",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -1020,12 +1040,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "b30fa402e03cc52348f95a7e4248f4ee831a5576",
-            "sha256": "sha256-l5yebQbczHOQxrcO9TRL26w4ogK9mbhAyjK5xub/Y1M=",
+            "rev": "97bca8b107bf1d6762d8b6db554b5d1a207a86cc",
+            "sha256": "sha256-QRe/q5sDIJnO8a/qzyenp0zpQSDD4pKunDDNIbpiP7s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b30fa402e03cc52348f95a7e4248f4ee831a5576"
+        "version": "97bca8b107bf1d6762d8b6db554b5d1a207a86cc"
     },
     "wanxiang-lts-zh-hans": {
         "cargoLocks": null,
