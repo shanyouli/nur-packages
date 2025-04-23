@@ -517,23 +517,17 @@
     },
     "jeejah": {
         "cargoLocks": null,
-        "date": "2023-09-28",
+        "date": null,
         "extract": null,
         "name": "jeejah",
         "passthru": null,
         "pinned": false,
         "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "1555350e1e5eb77625334db1fba3c79b8c2c30a2",
-            "sha256": "sha256-DyJJprTj9WjnhCC5CqudObLuae43zJD0VY9svGbqz10=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://gitlab.com/technomancy/jeejah"
+            "sha256": "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=",
+            "type": "tarball",
+            "url": "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar"
         },
-        "version": "1555350e1e5eb77625334db1fba3c79b8c2c30a2"
+        "version": "0.3.2"
     },
     "lporg": {
         "cargoLocks": null,

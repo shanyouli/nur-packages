@@ -299,17 +299,11 @@
   };
   jeejah = {
     pname = "jeejah";
-    version = "1555350e1e5eb77625334db1fba3c79b8c2c30a2";
-    src = fetchgit {
-      url = "https://gitlab.com/technomancy/jeejah";
-      rev = "1555350e1e5eb77625334db1fba3c79b8c2c30a2";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-DyJJprTj9WjnhCC5CqudObLuae43zJD0VY9svGbqz10=";
+    version = "0.3.2";
+    src = fetchTarball {
+      url = "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar";
+      sha256 = "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=";
     };
-    date = "2023-09-28";
   };
   lporg = {
     pname = "lporg";
