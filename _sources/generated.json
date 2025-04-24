@@ -517,17 +517,23 @@
     },
     "jeejah": {
         "cargoLocks": null,
-        "date": null,
+        "date": "2023-09-28",
         "extract": null,
         "name": "jeejah",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-HdZ+IwituwCxu5CoqbwDrEV4hT1Qdd0H5kafcno0/wQ=",
-            "type": "tarball",
-            "url": "https://gitlab.com/technomancy/jeejah/-/archive/0.3.2/jeejah-0.3.2.tar"
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "1555350e1e5eb77625334db1fba3c79b8c2c30a2",
+            "sha256": "sha256-DyJJprTj9WjnhCC5CqudObLuae43zJD0VY9svGbqz10=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://gitlab.com/technomancy/jeejah"
         },
-        "version": "0.3.2"
+        "version": "1555350e1e5eb77625334db1fba3c79b8c2c30a2"
     },
     "jeejah-rock": {
         "cargoLocks": null,
@@ -707,11 +713,11 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-3262f3ccc8ea26bc04b13ebc3b13409224d436dc/Cargo.lock",
+                "./nh-418c6620f80f064b38011d0f44c1240c67169cc5/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-04-22",
+        "date": "2025-04-24",
         "extract": null,
         "name": "nh",
         "passthru": null,
@@ -723,12 +729,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "3262f3ccc8ea26bc04b13ebc3b13409224d436dc",
-            "sha256": "sha256-pph3fWc7ikLiB6LoYnoEGxwd37v93/0AW3ee+ZA/HwM=",
+            "rev": "418c6620f80f064b38011d0f44c1240c67169cc5",
+            "sha256": "sha256-QvJJ3BHhPOhotJuuIYEzZwwtXUBwXBl2aVJy7FBe29k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3262f3ccc8ea26bc04b13ebc3b13409224d436dc"
+        "version": "418c6620f80f064b38011d0f44c1240c67169cc5"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
