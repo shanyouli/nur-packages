@@ -75,6 +75,7 @@ let
         };
 
       # python overlays
+      # @see https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/python.section.md
       pyPackageOverrides =
         pfinal: pprev:
         let
@@ -99,6 +100,7 @@ let
         }
         // mapPkgs "python" callPyPkg;
 
+      # see @https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/lua.section.md#how-to-override-a-lua-package-using-overlays-how-to-override-a-lua-package-using-overlays
       lua-overlay =
         let
           nameAndPkgs = name: pkgs: {

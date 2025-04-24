@@ -28,7 +28,6 @@ buildLuarocksPackage rec {
       };
     }))
   ];
-
   meta = {
     homepage = "https://gitlab.com/technomancy/jeejah";
     description = "An nREPL server";
