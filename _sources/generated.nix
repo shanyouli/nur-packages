@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.18.2-Beta";
+    version = "0.18.4-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.2-Beta/AeroSpace-v0.18.2-Beta.zip";
-      sha256 = "sha256-ljw4S+FnOSH/da6p0uRzevp6j8iAnB8BxT/LYKKW6ew=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.4-Beta/AeroSpace-v0.18.4-Beta.zip";
+      sha256 = "sha256-42Tra8vRBGzowmiA4vwoievwowInmON2WypncYQGO/M=";
     };
   };
   alist = {
@@ -415,21 +415,20 @@
   };
   nh = {
     pname = "nh";
-    version = "418c6620f80f064b38011d0f44c1240c67169cc5";
+    version = "v4.0.2";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "418c6620f80f064b38011d0f44c1240c67169cc5";
+      rev = "v4.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-QvJJ3BHhPOhotJuuIYEzZwwtXUBwXBl2aVJy7FBe29k=";
+      sha256 = "sha256-ajEl9nV4XFW7H98XCPUshzYL+K0+gVqEWUC4+MBAUFw=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-418c6620f80f064b38011d0f44c1240c67169cc5/Cargo.lock;
+      lockFile = ./nh-v4.0.2/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-04-24";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -498,22 +497,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2";
+    version = "40859fe0e39b83ad0498a5bc8d61478204bab84c";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "7f6f4880bd5f6b7a76195c515af2e64b88ce0ec2";
+      rev = "40859fe0e39b83ad0498a5bc8d61478204bab84c";
       fetchSubmodules = false;
-      sha256 = "sha256-N7EDvQX598jxNILzwTwAeu/BY9wWVBRUuTApamf4nAY=";
+      sha256 = "sha256-l0X2Y99USTyPcr1KdNaHLXUkDDC792KDZfKyx/dgfHk=";
     };
-    date = "2025-04-22";
+    date = "2025-04-26";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.5";
+    version = "6.5.5";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.5/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-745SDPuNkhjM32/GCF1Po+0YvEQnytxDYiTiDBjkz14=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.5.5/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-1aowy66mKVoVJaWZUDFuLYOzKEo4jE4TmxlzMu/NvMI=";
     };
   };
   sarasa-term = {
@@ -615,7 +614,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-IPLstNXtKUcbqf8ao0g4ptVgSgub3fH4xk7xwpmNfuw=";
+      sha256 = "sha256-DeNo3io5n7MHtiwR8LyIh9QGPpOSudPrO540d8N6S6s=";
     };
   };
   websocket-bridge-python = {
