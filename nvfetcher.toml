@@ -93,7 +93,7 @@ src.github_tag = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
 
 [nh]
-src.git = "https://github.com/viperML/nh"
+src.github_tag = "viperML/nh"
 fetch.github = "viperML/nh"
 cargo_locks = ["Cargo.lock"]
 
