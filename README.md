@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-05-06 16:21:57 UTC
+- LAST_MODIFY: 2025-05-06 16:48:59 UTC
 
 
 ## How to use
@@ -95,10 +95,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.5.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.0.5.10|Featureful free software BitTorrent client|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-05-01|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.6|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.6.6|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2024-08-19|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2025-05-05|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-04-21|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
@@ -111,7 +111,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.18.4-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.18.5-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.7.0|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||unstable-2025-02-06|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
