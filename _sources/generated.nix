@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.18.4-Beta";
+    version = "0.18.5-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.4-Beta/AeroSpace-v0.18.4-Beta.zip";
-      sha256 = "sha256-42Tra8vRBGzowmiA4vwoievwowInmON2WypncYQGO/M=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.5-Beta/AeroSpace-v0.18.5-Beta.zip";
+      sha256 = "sha256-49euM3Cc7cg8LkvUpbKs2C+tj03jwFZ7xA4R6r+4mpM=";
     };
   };
   alist = {
@@ -357,22 +357,6 @@
     };
     date = "2021-07-28";
   };
-  maple-mono = {
-    pname = "maple-mono";
-    version = "7.2";
-    src = fetchurl {
-      url = "https://github.com/subframe7536/maple-font/releases/download/v7.2/MapleMono-ttf.zip";
-      sha256 = "sha256-1wQ97Tm2BN+ba2Oxonyeovl5UlLooYrYfkrA85CQZmM=";
-    };
-  };
-  maple-sc-nf = {
-    pname = "maple-sc-nf";
-    version = "7.2";
-    src = fetchurl {
-      url = "https://github.com/subframe7536/Maple-font/releases/download/v7.2/MapleMono-NF-CN.zip";
-      sha256 = "sha256-w7j1UI8OE4CbNzeY4n0g3WKtVgkJ07uMpRnRCVRIo8M=";
-    };
-  };
   mkalias = {
     pname = "mkalias";
     version = "v0.3.2";
@@ -509,10 +493,10 @@
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.6";
+    version = "6.6.6";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-2jhBuL0Mr9j9kfWOrPtdKDLZngMc6aYSGM3Z/Y9Nwjo=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6.6/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-tCeVnRDQ7Aaq9Js5DKNO85gnMv5wDoyl9V1a9LH0t2M=";
     };
   };
   sarasa-term = {
@@ -565,15 +549,15 @@
   };
   singboxp = {
     pname = "singboxp";
-    version = "154018b315673a20f8f47cae1b465449e6c9a032";
+    version = "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8";
     src = fetchFromGitHub {
       owner = "PuerNya";
       repo = "sing-box";
-      rev = "154018b315673a20f8f47cae1b465449e6c9a032";
+      rev = "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8";
       fetchSubmodules = false;
-      sha256 = "sha256-hTpqTpeSlKVdvVL9JDyg7+J4pAhNDMypYgQ7gQS4JOU=";
+      sha256 = "sha256-Uj7HX+mYzvPXIsEGnNoGccwu7xpeINZFUPNxqQFS4ow=";
     };
-    date = "2024-08-19";
+    date = "2025-05-05";
   };
   switchaudio-osx = {
     pname = "switchaudio-osx";
@@ -614,7 +598,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-qTH+TCh3j0ljz4ZIRxCS93RJRYPYN+3RGuc9d7vXMik=";
+      sha256 = "sha256-BS88XSxj0xyEwKkn5lbNK6TW3ZQNsPlTFZMct68PuQo=";
     };
   };
   websocket-bridge-python = {

@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-42Tra8vRBGzowmiA4vwoievwowInmON2WypncYQGO/M=",
+            "sha256": "sha256-49euM3Cc7cg8LkvUpbKs2C+tj03jwFZ7xA4R6r+4mpM=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.4-Beta/AeroSpace-v0.18.4-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.5-Beta/AeroSpace-v0.18.5-Beta.zip"
         },
-        "version": "0.18.4-Beta"
+        "version": "0.18.5-Beta"
     },
     "alist": {
         "cargoLocks": null,
@@ -612,36 +612,6 @@
         },
         "version": "5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3"
     },
-    "maple-mono": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "maple-mono",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-1wQ97Tm2BN+ba2Oxonyeovl5UlLooYrYfkrA85CQZmM=",
-            "type": "url",
-            "url": "https://github.com/subframe7536/maple-font/releases/download/v7.2/MapleMono-ttf.zip"
-        },
-        "version": "7.2"
-    },
-    "maple-sc-nf": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "maple-sc-nf",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-w7j1UI8OE4CbNzeY4n0g3WKtVgkJ07uMpRnRCVRIo8M=",
-            "type": "url",
-            "url": "https://github.com/subframe7536/Maple-font/releases/download/v7.2/MapleMono-NF-CN.zip"
-        },
-        "version": "7.2"
-    },
     "mkalias": {
         "cargoLocks": {
             "Cargo.lock": [
@@ -889,11 +859,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2jhBuL0Mr9j9kfWOrPtdKDLZngMc6aYSGM3Z/Y9Nwjo=",
+            "sha256": "sha256-tCeVnRDQ7Aaq9Js5DKNO85gnMv5wDoyl9V1a9LH0t2M=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6/wanxiang-moqi-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6.6/wanxiang-moqi-fuzhu.zip"
         },
-        "version": "6.6"
+        "version": "6.6.6"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -980,7 +950,7 @@
     },
     "singboxp": {
         "cargoLocks": null,
-        "date": "2024-08-19",
+        "date": "2025-05-05",
         "extract": null,
         "name": "singboxp",
         "passthru": null,
@@ -992,12 +962,12 @@
             "name": null,
             "owner": "PuerNya",
             "repo": "sing-box",
-            "rev": "154018b315673a20f8f47cae1b465449e6c9a032",
-            "sha256": "sha256-hTpqTpeSlKVdvVL9JDyg7+J4pAhNDMypYgQ7gQS4JOU=",
+            "rev": "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8",
+            "sha256": "sha256-Uj7HX+mYzvPXIsEGnNoGccwu7xpeINZFUPNxqQFS4ow=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "154018b315673a20f8f47cae1b465449e6c9a032"
+        "version": "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8"
     },
     "switchaudio-osx": {
         "cargoLocks": null,
@@ -1071,7 +1041,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qTH+TCh3j0ljz4ZIRxCS93RJRYPYN+3RGuc9d7vXMik=",
+            "sha256": "sha256-BS88XSxj0xyEwKkn5lbNK6TW3ZQNsPlTFZMct68PuQo=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
