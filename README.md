@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-05-02 23:02:30 UTC
+- LAST_MODIFY: 2025-05-06 16:21:57 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>33</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>31</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -85,8 +85,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2024-09-25|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
-|[**maple-mono**](https://github.com/subframe7536/Maple-font)||7.2|Open source monospace/Nerd Font |
-|[**maple-sc-nf**](https://github.com/subframe7536/Maple-font)||7.2|Open source monospace/Nerd Font |
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nh**](https://github.com/viperML/nh)||4.0.3-894bb7e|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
