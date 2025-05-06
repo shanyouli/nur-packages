@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-05-07
+
++ remove: maple-mono
+
 ## 2024-11-29
 
 + remove: mpvc (在 macos 上使用效果不加，linux 上官方包中存在)
