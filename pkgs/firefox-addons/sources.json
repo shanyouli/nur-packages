@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4411102/noscript-12.1.1.xpi",
-    "version": "12.1.1",
-    "sha256": "06pk3zf353yh7c8bv3xvl1jwmc2bd7v4y3p0dl1m5hygzxirwqzr",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4482368/noscript-12.6.xpi",
+    "version": "12.6",
+    "sha256": "1xhvvmqahb3gpq54xdr4v4wad3rj8n7i0hy21qvqpbfvrk5sxnci",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4481532/download_with_aria2-4.15.4.3371.xpi",
-    "version": "4.15.4.3371",
-    "sha256": "1cw13409dw8kp2y914r5y7sh7hsqs52f93xa23v5zirvdl2ni8lw",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4487909/download_with_aria2-4.16.0.3384.xpi",
+    "version": "4.16.0.3384",
+    "sha256": "0yg1zn2yknn96isiwz3frq4lmm91nd5iabn0bnhpvc8gwqd4nrvm",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
