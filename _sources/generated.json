@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-tKppApOFAP21PekXJy+4wfR2eDqId8lRWzsGvluI5KA=",
+            "sha256": "sha256-7xUitHxxFUk4c8ZoQosWvDtLjPCOpPYMV8c1FMQYc/s=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.105/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.106/darkreader-firefox.xpi"
         },
-        "version": "4.9.105"
+        "version": "4.9.106"
     },
     "deeplx": {
         "cargoLocks": null,

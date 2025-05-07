@@ -102,10 +102,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.105";
+    version = "4.9.106";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.105/darkreader-firefox.xpi";
-      sha256 = "sha256-tKppApOFAP21PekXJy+4wfR2eDqId8lRWzsGvluI5KA=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.106/darkreader-firefox.xpi";
+      sha256 = "sha256-7xUitHxxFUk4c8ZoQosWvDtLjPCOpPYMV8c1FMQYc/s=";
     };
   };
   deeplx = {
