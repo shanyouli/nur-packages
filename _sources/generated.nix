@@ -481,22 +481,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "5322bcd86f47d18e0785cac4a5da239664b46235";
+    version = "60cd1631f9f5023cf00e86adc535571d1b86f1b2";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "5322bcd86f47d18e0785cac4a5da239664b46235";
+      rev = "60cd1631f9f5023cf00e86adc535571d1b86f1b2";
       fetchSubmodules = false;
-      sha256 = "sha256-BFS/pMuUlZ6pQEITZ37hotl7YUMmU7kWoHA26L+y7Pc=";
+      sha256 = "sha256-3K25oc4q/5pmZL7WYoSR6RyjgV+7o7W6MzBcIKeRD0Y=";
     };
-    date = "2025-05-01";
+    date = "2025-05-08";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.6.6";
+    version = "6.6.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6.6/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-tCeVnRDQ7Aaq9Js5DKNO85gnMv5wDoyl9V1a9LH0t2M=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6.8/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-OL30T09eV2GsgCsM6LiT72Gv+U7cwdmbgp1PSyqVsHA=";
     };
   };
   sarasa-term = {
