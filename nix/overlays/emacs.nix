@@ -35,6 +35,9 @@
           };
         in
         basePkg.overrideAttrs (old: {
+          # preConfigure = old.preConfigure or "" + ''
+          #     export CFLAGS+=" -DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -O2 -g"
+          #   '';
           patches =
             (old.patches or [ ])
             ++ (
@@ -51,9 +54,14 @@
           configureFlags =
             (old.configureFlags or [ ])
             ++ [ "--enable-check-lisp-object-type" ]
-            ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [ "--with-xwidgets" ];
+            ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
+              "--with-xwidgets"
+              "CFLAGS=-DMAC_OS_X_VERSION_MAX_ALLOWED=101201"
+              "CFLAGS=-DMAC_OS_X_VERSION_MIN_REQUIRED=101201"
+              "CFLAGS=-O2"
+              "CFLAGS=-g"
+            ];
           # BUG: 设置 CFLAGS 会导致 darwin 编译时，无法发现 AppKit，自从 nixos24.11 后
-          # CFLAGS="-DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -O2 -g";
         });
       emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
       emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
