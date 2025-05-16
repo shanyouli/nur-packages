@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-05-15 08:58:26 UTC
+- LAST_MODIFY: 2025-05-16 23:03:36 UTC
 
 
 ## How to use
@@ -77,7 +77,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250508.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250516.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||0.2.39|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -86,7 +86,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
-|[**nh**](https://github.com/nix-community/nh)||4.0.3-28972b6|Yet another nix cli helper|
+|[**nh**](https://github.com/nix-community/nh)||4.0.3-9bbd963|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.2.2|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.2.2|我的自定义 iosvake|
@@ -94,13 +94,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.2|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.0.5.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.0.5.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-05-08|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.6.8|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-05-16|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||6.7.9|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2025-05-05|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2025-05-14|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-04-21|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-05-16|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -134,8 +134,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.10.2|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||5.0.1|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.103|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.0.3384|Browser extension for aria2c json-rpc |
+|[**darkreader**](https://darkreader.org/)||4.9.106|Dark Reader Chrome and Firefox extension|
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.0.3390|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.15.10|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
@@ -145,7 +145,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.3.3|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.3.14|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.5|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.63.2|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.64.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.5.0|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.31.0|An open source userscript manager.|
 |[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.3.23| Manage and switch between multiple proxies quickly & easily.|
