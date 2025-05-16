@@ -481,22 +481,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "60cd1631f9f5023cf00e86adc535571d1b86f1b2";
+    version = "10053e774d22b64d1e4d169c041ef7d9224a6a33";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "60cd1631f9f5023cf00e86adc535571d1b86f1b2";
+      rev = "10053e774d22b64d1e4d169c041ef7d9224a6a33";
       fetchSubmodules = false;
-      sha256 = "sha256-3K25oc4q/5pmZL7WYoSR6RyjgV+7o7W6MzBcIKeRD0Y=";
+      sha256 = "sha256-A4GUoD3Ayc354vyMEevNprNfL/JAzSRp6Jk8yB4EnSY=";
     };
-    date = "2025-05-08";
+    date = "2025-05-16";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.6.8";
+    version = "6.7.9";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.6.8/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-OL30T09eV2GsgCsM6LiT72Gv+U7cwdmbgp1PSyqVsHA=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.7.9/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-jUEp1V5IXwsRVF/7xctv2ppmQG63Z1G+HEPyrseBcxw=";
     };
   };
   sarasa-term = {
@@ -549,15 +549,15 @@
   };
   singboxp = {
     pname = "singboxp";
-    version = "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8";
+    version = "f2687a71dd7261e6e40763bb8ac244a9677d6b59";
     src = fetchFromGitHub {
       owner = "PuerNya";
       repo = "sing-box";
-      rev = "2fc9dfa9d2defe7e699984cfaefe05de1eaca1b8";
+      rev = "f2687a71dd7261e6e40763bb8ac244a9677d6b59";
       fetchSubmodules = false;
-      sha256 = "sha256-Uj7HX+mYzvPXIsEGnNoGccwu7xpeINZFUPNxqQFS4ow=";
+      sha256 = "sha256-OHv1gIEqXMnOaPI1mqvOXoksUzez6h/atoUQf+HPjCI=";
     };
-    date = "2025-05-05";
+    date = "2025-05-14";
   };
   switchaudio-osx = {
     pname = "switchaudio-osx";
@@ -583,22 +583,22 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "97bca8b107bf1d6762d8b6db554b5d1a207a86cc";
+    version = "31fb764b48248140e0ff97a8cc9827452df8a2ca";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "97bca8b107bf1d6762d8b6db554b5d1a207a86cc";
+      rev = "31fb764b48248140e0ff97a8cc9827452df8a2ca";
       fetchSubmodules = false;
-      sha256 = "sha256-QRe/q5sDIJnO8a/qzyenp0zpQSDD4pKunDDNIbpiP7s=";
+      sha256 = "sha256-xkogS6TYMpC+OwJp0aCzVBH1ZpWiNx3eYbVjP9zfmIA=";
     };
-    date = "2025-04-21";
+    date = "2025-05-16";
   };
   wanxiang-lts-zh-hans = {
     pname = "wanxiang-lts-zh-hans";
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-BS88XSxj0xyEwKkn5lbNK6TW3ZQNsPlTFZMct68PuQo=";
+      sha256 = "sha256-szFzG81qM4vlkB0iAKbmZc9GRJbzLDhguI9FmfO5g+M=";
     };
   };
   websocket-bridge-python = {
