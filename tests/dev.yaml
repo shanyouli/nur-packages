@@ -3,6 +3,7 @@
 # firefox-addons -> firefox-addons-xx
 # fish file -> fish-xx
 # lua file -> lua-apps-xx
-dev: false
+dev: true
 apps:
-  - singboxp
+  - pragmasevka-sc
+  - pragmasevka-sc-nf
