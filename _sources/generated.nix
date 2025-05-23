@@ -509,10 +509,10 @@
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.8";
+    version = "6.8.6";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-9iphDs7kOHYawr+1Hf82Eqtisew1g+YpA75tnbKRcBA=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8.6/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-7H6s8bx3xE4WlKTjdUfhaH8oHJhE5WeSx2oqBTMsgnY=";
     };
   };
   sarasa-term = {

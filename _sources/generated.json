@@ -889,11 +889,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9iphDs7kOHYawr+1Hf82Eqtisew1g+YpA75tnbKRcBA=",
+            "sha256": "sha256-7H6s8bx3xE4WlKTjdUfhaH8oHJhE5WeSx2oqBTMsgnY=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8/wanxiang-moqi-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8.6/wanxiang-moqi-fuzhu.zip"
         },
-        "version": "6.8"
+        "version": "6.8.6"
     },
     "sarasa-term": {
         "cargoLocks": null,
