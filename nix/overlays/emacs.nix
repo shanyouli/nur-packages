@@ -35,9 +35,6 @@
           };
         in
         basePkg.overrideAttrs (old: {
-          # preConfigure = old.preConfigure or "" + ''
-          #     export CFLAGS+=" -DMAC_OS_X_VERSION_MAX_ALLOWED=110203 -O2 -g"
-          #   '';
           patches =
             (old.patches or [ ])
             ++ (
@@ -61,7 +58,6 @@
               "CFLAGS=-O2"
               "CFLAGS=-g"
             ];
-          # BUG: 设置 CFLAGS 会导致 darwin 编译时，无法发现 AppKit，自从 nixos24.11 后
         });
       emacs-version = lib.versions.major inputs'.emacs-overlay.packages.emacs-unstable.version;
       emacs-git-version = builtins.toString ((lib.strings.toInt emacs-version) + 1);
