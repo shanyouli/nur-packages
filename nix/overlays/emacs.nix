@@ -53,6 +53,8 @@
             ++ [ "--enable-check-lisp-object-type" ]
             ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
               "--with-xwidgets"
+              # 停止关闭一个窗口时重新聚焦其他窗口
+              "--with-no-frame-refocus"
               "CFLAGS=-DMAC_OS_X_VERSION_MAX_ALLOWED=101201"
               "CFLAGS=-DMAC_OS_X_VERSION_MIN_REQUIRED=101201"
               "CFLAGS=-O2"
