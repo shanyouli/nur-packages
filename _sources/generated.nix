@@ -19,21 +19,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.44.0";
+    version = "v3.45.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.44.0";
+      rev = "v3.45.0";
       fetchSubmodules = false;
-      sha256 = "sha256-MgNoqR9RYRZhQSCplZwqQECE+6/33vijjx0AnC0U2QA=";
+      sha256 = "sha256-4Ov0niOhP+T9EKq8bts/JudNPiqgyYGeCvGE5Q+dL/Q=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.44.0";
+    version = "3.45.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.44.0/dist.tar.gz";
-      sha256 = "sha256-Nwm+xZu8FPD590GTzruyWjF8l4+jpa4GqQDrNB4bWuc=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.45.0/dist.tar.gz";
+      sha256 = "sha256-QIsYIok7pt1rvrQFXWyLlsF40Q9Pu45Wls8U3MiN0vs=";
     };
   };
   alive-progress = {
@@ -486,33 +486,33 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.1.0.10";
+    version = "release-5.1.0.11";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.1.0.10";
+      rev = "release-5.1.0.11";
       fetchSubmodules = false;
-      sha256 = "sha256-VJqQFx9OvfuGyIfot9CgKiyGawOD3mYIdux20Atjea0=";
+      sha256 = "sha256-LY79Y7sG6EHGOh1hRujAOMRK3MKSAblJ+FFuGlj13iQ=";
     };
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "7fab37280f1a90055007f561518c7daf59da9a09";
+    version = "2e0d8d9a3ba292ecca3f6dccb5719a06764917ca";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "7fab37280f1a90055007f561518c7daf59da9a09";
+      rev = "2e0d8d9a3ba292ecca3f6dccb5719a06764917ca";
       fetchSubmodules = false;
-      sha256 = "sha256-vWjAJ7UEnuGpYVfqwLt0Cq1jzz+S+DjivQpR9QKyad8=";
+      sha256 = "sha256-v+j2Bp7+OEbiWImf0/6YbZTTHlaORvtK2foXTfjZW9s=";
     };
-    date = "2025-05-19";
+    date = "2025-05-29";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "6.8.6";
+    version = "6.8.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8.6/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-7H6s8bx3xE4WlKTjdUfhaH8oHJhE5WeSx2oqBTMsgnY=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8.8/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-YlM/Vhat9A83eQFx2gs5tH1+duaY2HfwBsOPDBTD8nU=";
     };
   };
   sarasa-term = {
@@ -525,15 +525,15 @@
   };
   sd = {
     pname = "sd";
-    version = "4549be8afac6578b0af96c537037d6b22ef661a7";
+    version = "de03ce517348b3a33e389867189ddadab0b18a7a";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "4549be8afac6578b0af96c537037d6b22ef661a7";
+      rev = "de03ce517348b3a33e389867189ddadab0b18a7a";
       fetchSubmodules = false;
-      sha256 = "sha256-kB8LtGEOVqaaqNWtYEMLHclzVKKB5lpxGq4akm3Jdpo=";
+      sha256 = "sha256-H4W2Dkgpdh11fNb496bP+1lSi9q04119N7e6mzZCgA4=";
     };
-    date = "2025-03-20";
+    date = "2025-05-29";
   };
   seam = {
     pname = "seam";
@@ -614,7 +614,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-S234LD8z3IRmBfzWbGucOFT7dYGBgJOmhgJ0PG4ddaQ=";
+      sha256 = "sha256-0x+xhcrHqVMF5hwgTfAsucr1fsnRXano0lRzercB55U=";
     };
   };
   websocket-bridge-python = {
