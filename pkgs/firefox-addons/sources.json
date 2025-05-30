@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4495120/noscript-13.0.6.xpi",
-    "version": "13.0.6",
-    "sha256": "12b981na4az7dswf25b5y04qwb3510ylvgkb5ndq7k249kr6w1l5",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4497468/noscript-13.0.8.xpi",
+    "version": "13.0.8",
+    "sha256": "1p6jrz22jjzcqlbza2v8nix2sx9xjgl43vmm43hwrf9w13z8r5wx",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4494791/download_with_aria2-4.16.0.3402.xpi",
-    "version": "4.16.0.3402",
-    "sha256": "1rnd0j2ydrnka12f7vvl3zqmlcc4a5ia2whv7achfdnswrv8c9mb",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4503578/download_with_aria2-4.16.1.3418.xpi",
+    "version": "4.16.1.3418",
+    "sha256": "1k9id5yhca9gnclhxyi5fcxzi69vhi5fk2c2h4ik9v4dbig5xg4x",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -30,9 +30,9 @@
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4098688/user_agent_string_switcher-0.5.0.xpi",
-    "version": "0.5.0",
-    "sha256": "0cxf7sv0s2csjf3b4ngq0bss59hza1irqy7x296z1m26ihydmj4x",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4497925/user_agent_string_switcher-0.6.5.1.xpi",
+    "version": "0.6.5.1",
+    "sha256": "0wf16hd4cy0m8f7qsnh9cmgl0pmzilhjl58czlv2id1l6ky7rbxa",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
