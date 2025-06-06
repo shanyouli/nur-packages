@@ -82,7 +82,7 @@
     },
     "antifennel": {
         "cargoLocks": null,
-        "date": "2024-09-25",
+        "date": "2025-06-02",
         "extract": null,
         "name": "antifennel",
         "passthru": null,
@@ -92,13 +92,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a135f016414517ecb624bad26b39ed56d256beaa",
-            "sha256": "sha256-XynKKDyykyPM4z2ZLp9Oy8KFlEZG2iHXKMkajaS/DaE=",
+            "rev": "76b02c0252cfc8e2a56edea381f7f682b598ac37",
+            "sha256": "sha256-6gt89ZNm91JrQo/4/0CQLpkc4xux5OGQWg87cju4vCQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.sr.ht/~technomancy/antifennel"
         },
-        "version": "a135f016414517ecb624bad26b39ed56d256beaa"
+        "version": "76b02c0252cfc8e2a56edea381f7f682b598ac37"
     },
     "bash-env-json": {
         "cargoLocks": null,
@@ -429,7 +429,7 @@
     "fav": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./fav-v0.2.39/Cargo.lock",
+                "./fav-v1.0.9/Cargo.lock",
                 {}
             ]
         },
@@ -445,12 +445,12 @@
             "name": null,
             "owner": "kingwingfly",
             "repo": "fav",
-            "rev": "v0.2.39",
-            "sha256": "sha256-a/O0ZH+i6rcW08uhvc5UPs7apD1jZ1GpqBjks02y8c8=",
+            "rev": "v1.0.9",
+            "sha256": "sha256-daFRf9+++YsFdqxxlD3ENUyHU+DBseYAV3B+XMfia3Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.39"
+        "version": "v1.0.9"
     },
     "fisher": {
         "cargoLocks": null,
@@ -683,7 +683,7 @@
     "nh": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-v4.1.0/Cargo.lock",
+                "./nh-v4.1.1/Cargo.lock",
                 {}
             ]
         },
@@ -699,12 +699,12 @@
             "name": null,
             "owner": "viperML",
             "repo": "nh",
-            "rev": "v4.1.0",
-            "sha256": "sha256-OiuhBrJe1AyVxC+AV4HMJ+vhDvUfCyLpBmj+Fy7MDtM=",
+            "rev": "v4.1.1",
+            "sha256": "sha256-AC47bSPkt+R2mY5M1LvWHDr6+wtT//ddwCFj95iuF4g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.1.0"
+        "version": "v4.1.1"
     },
     "nowplaying-cli": {
         "cargoLocks": null,
@@ -757,11 +757,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UdCEF56EbapsNoLWUJsCQ+Qjbg1CKgNlrR134v3zayM=",
+            "sha256": "sha256-wWdmP9XJCGdF2ZfgHnTmTYlJ9Q6N27/78X9cRZo3WNg=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/pragma-sevka-mono.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/pragma-sevka-mono.zip"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "pragmasevka-nerd": {
         "cargoLocks": null,
@@ -772,11 +772,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1klqxklo7yKjefaaTmglwcm8pHD0hE0iuY/+u1q0EyE=",
+            "sha256": "sha256-nduB513MD/FBgIoOp33it/r4ZssrbLhMCrtoxdHmlxs=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/pragma-sevka-mono-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/pragma-sevka-mono-nerd.zip"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "pragmasevka-sans": {
         "cargoLocks": null,
@@ -787,11 +787,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FTEVOSRuoMLXRRMNcaQDLqIoSMGNfpoIcxoyvrW0EUA=",
+            "sha256": "sha256-V/R4XvFJITFazf1/+milxQpMkCkpD9pEiX3zBcal1x8=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/pragma-sevka-sans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/pragma-sevka-sans.zip"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "pragmasevka-sc": {
         "cargoLocks": null,
@@ -802,11 +802,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TaqGsUBDKCAkxLV4CCTWBeQvF359njdTlco50Hmb0UI=",
+            "sha256": "sha256-aeEoxJAyx9AogHA7A9cNEnxwA9S2nbyc7tOZFrrf6F0=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/Pragma-Sevka-SC.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/Pragma-Sevka-SC.ttf"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "pragmasevka-sc-nf": {
         "cargoLocks": null,
@@ -817,11 +817,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BvwBAYUCCRY7aL+XGd68gUwNjEOVmwfbEYWBjtv92No=",
+            "sha256": "sha256-LbUKyl4QGeddC6p+Fa+hkIuhSlMvyn60hwm4h/h+LK4=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/Pragma-Sevka-SC-NF.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/Pragma-Sevka-SC-NF.ttf"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "pragmasevka-serif": {
         "cargoLocks": null,
@@ -832,11 +832,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-575Hlj2QY/YYgfETcpFTm/64/5YrqRzjItjpRZ1YzrM=",
+            "sha256": "sha256-Ppt9j/QzrEvvIlKWFfXO6COJpGHRsoJooTelNNWaSZ8=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.3/pragma-sevka-serif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.4/pragma-sevka-serif.zip"
         },
-        "version": "33.2.3"
+        "version": "33.2.4"
     },
     "qbittorrent": {
         "cargoLocks": null,
@@ -861,7 +861,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-05-29",
+        "date": "2025-06-06",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -873,12 +873,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "2e0d8d9a3ba292ecca3f6dccb5719a06764917ca",
-            "sha256": "sha256-v+j2Bp7+OEbiWImf0/6YbZTTHlaORvtK2foXTfjZW9s=",
+            "rev": "b86e6147d68c229b45bb1f2a593f8b76155e964d",
+            "sha256": "sha256-ttGHvxv6ZImn6xBifsL4bc+7Q/RvarwPwegx9pT+Hsg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2e0d8d9a3ba292ecca3f6dccb5719a06764917ca"
+        "version": "b86e6147d68c229b45bb1f2a593f8b76155e964d"
     },
     "rime-wanxiang": {
         "cargoLocks": null,
@@ -889,11 +889,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YlM/Vhat9A83eQFx2gs5tH1+duaY2HfwBsOPDBTD8nU=",
+            "sha256": "sha256-u3rJOSoSBJvtzbJXXK8JYRBbPpTsedwhYJjvzuYlW0o=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v6.8.8/wanxiang-moqi-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v7.0.5/wanxiang-moqi-fuzhu.zip"
         },
-        "version": "6.8.8"
+        "version": "7.0.5"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -1043,7 +1043,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2025-05-21",
+        "date": "2025-06-05",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -1055,12 +1055,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "a4b61bffd43b28fe24f1ebf99cfdaa802cb55652",
-            "sha256": "sha256-F+GJDKqDRHFiP7oA9HZq2rJrV0TG3OA4s5aLneLHX4g=",
+            "rev": "017414d6962ddba53f2c4972595630f4635aa2ae",
+            "sha256": "sha256-N+5HPLkQoelpYs38p/z+Epdu3Ym6Y+EIYGjA68LzB90=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a4b61bffd43b28fe24f1ebf99cfdaa802cb55652"
+        "version": "017414d6962ddba53f2c4972595630f4635aa2ae"
     },
     "wanxiang-lts-zh-hans": {
         "cargoLocks": null,
@@ -1071,7 +1071,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0x+xhcrHqVMF5hwgTfAsucr1fsnRXano0lRzercB55U=",
+            "sha256": "sha256-Zvw4p7p376XwTxmMdDLmlrUrgvTVJfQWGRiS1fznT8M=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
