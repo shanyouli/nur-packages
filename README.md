@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-06-06 22:15:32 UTC
+- LAST_MODIFY: 2025-06-13 23:07:04 UTC
 
 
 ## How to use
@@ -77,7 +77,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1.90|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250606.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250613.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.0.9|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -86,7 +86,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
-|[**nh**](https://github.com/nix-community/nh)||4.1.1-89e79ab|Yet another nix cli helper|
+|[**nh**](https://github.com/nix-community/nh)||4.1.1-003dd72|Yet another nix cli helper|
 |[**nix-index**](None)|||None|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.2.4|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.2.4|我的自定义 iosvake|
@@ -96,13 +96,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.4|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.0.11|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.0.11|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-06-06|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||7.0.5|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-06-09|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||7.0.8|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2025-05-14|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2025-06-10|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-06-05|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-06-10|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -137,7 +137,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.10.2|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||5.0.1|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.106|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.1.3420|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.2.3432|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.17.1|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.8.11|Simple, open source bilingual translation extension & Greasemonkey script|
