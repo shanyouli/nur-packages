@@ -399,16 +399,16 @@
   };
   nh = {
     pname = "nh";
-    version = "v4.1.1";
+    version = "v4.1.2";
     src = fetchFromGitHub {
       owner = "viperML";
       repo = "nh";
-      rev = "v4.1.1";
+      rev = "v4.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-AC47bSPkt+R2mY5M1LvWHDr6+wtT//ddwCFj95iuF4g=";
+      sha256 = "sha256-v02NsZ589zzPq5xsCxyrG1/ZkFbbMkUthly50QdmYKo=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-v4.1.1/Cargo.lock;
+      lockFile = ./nh-v4.1.2/Cargo.lock;
       outputHashes = {
         
       };
@@ -497,22 +497,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "b86e6147d68c229b45bb1f2a593f8b76155e964d";
+    version = "5b94b7df626bffedc3fe05ee71511aa0272bfc36";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "b86e6147d68c229b45bb1f2a593f8b76155e964d";
+      rev = "5b94b7df626bffedc3fe05ee71511aa0272bfc36";
       fetchSubmodules = false;
-      sha256 = "sha256-ttGHvxv6ZImn6xBifsL4bc+7Q/RvarwPwegx9pT+Hsg=";
+      sha256 = "sha256-RK5togo9YEQVSUL1bpkcsHmzK1V8IMe0adFB1T2hVoI=";
     };
-    date = "2025-06-06";
+    date = "2025-06-09";
   };
   rime-wanxiang = {
     pname = "rime-wanxiang";
-    version = "7.0.5";
+    version = "7.0.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v7.0.5/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-u3rJOSoSBJvtzbJXXK8JYRBbPpTsedwhYJjvzuYlW0o=";
+      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v7.0.8/wanxiang-moqi-fuzhu.zip";
+      sha256 = "sha256-aISy2GiDXa+W5rxe8kTBL+Sikz4/2uK8GO150FqRnjA=";
     };
   };
   sarasa-term = {
@@ -565,15 +565,15 @@
   };
   singboxp = {
     pname = "singboxp";
-    version = "f2687a71dd7261e6e40763bb8ac244a9677d6b59";
+    version = "94f78f8dfcad4b310b747a505ea95e011d241381";
     src = fetchFromGitHub {
       owner = "PuerNya";
       repo = "sing-box";
-      rev = "f2687a71dd7261e6e40763bb8ac244a9677d6b59";
+      rev = "94f78f8dfcad4b310b747a505ea95e011d241381";
       fetchSubmodules = false;
-      sha256 = "sha256-OHv1gIEqXMnOaPI1mqvOXoksUzez6h/atoUQf+HPjCI=";
+      sha256 = "sha256-HHGDxo61uDR/Bohk3lESS+kkx/GoJrVmh0Goe09bb94=";
     };
-    date = "2025-05-14";
+    date = "2025-06-10";
   };
   switchaudio-osx = {
     pname = "switchaudio-osx";
@@ -599,22 +599,22 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "017414d6962ddba53f2c4972595630f4635aa2ae";
+    version = "05a7d6167c9905356662901e9c91c7cad2d7ecd8";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "017414d6962ddba53f2c4972595630f4635aa2ae";
+      rev = "05a7d6167c9905356662901e9c91c7cad2d7ecd8";
       fetchSubmodules = false;
-      sha256 = "sha256-N+5HPLkQoelpYs38p/z+Epdu3Ym6Y+EIYGjA68LzB90=";
+      sha256 = "sha256-DxCH0dCyvrZMl4OcJPOlpOPGBayZAHkwDyua42KZ/ho=";
     };
-    date = "2025-06-05";
+    date = "2025-06-10";
   };
   wanxiang-lts-zh-hans = {
     pname = "wanxiang-lts-zh-hans";
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-Zvw4p7p376XwTxmMdDLmlrUrgvTVJfQWGRiS1fznT8M=";
+      sha256 = "sha256-XnQTbTRAk64Rex4esps8n9cKJoaNWvZr1/eUTsuFOo0=";
     };
   };
   websocket-bridge-python = {
