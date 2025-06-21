@@ -141,7 +141,7 @@ jobs:
           fi
       - name: Commit back to repository
         if: ${{ env.MY_MODIFY  == 'true' }}
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: 'auto: update package hashes ${{ matrix.os }}'
           create_branch: true
