@@ -80,11 +80,6 @@ cargo_locks = ["Cargo.lock"]
 src.github_tag = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
 
-[nh]
-src.github_tag = "viperML/nh"
-fetch.github = "viperML/nh"
-cargo_locks = ["Cargo.lock"]
-
 [pragmasevka]
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
