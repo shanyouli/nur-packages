@@ -19,13 +19,13 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.45.0";
+    version = "v3.45.1";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.45.0";
+      rev = "v3.45.1";
       fetchSubmodules = false;
-      sha256 = "sha256-4Ov0niOhP+T9EKq8bts/JudNPiqgyYGeCvGE5Q+dL/Q=";
+      sha256 = "sha256-RFVyZZy/6P5WQMeULrjMnWpfFABMCVuUZiOh3nuO+hs=";
     };
   };
   alist-web = {
@@ -46,17 +46,17 @@
   };
   antifennel = {
     pname = "antifennel";
-    version = "76b02c0252cfc8e2a56edea381f7f682b598ac37";
+    version = "d1b02bee8528e1ee9463c9504791ae0718585915";
     src = fetchgit {
       url = "https://git.sr.ht/~technomancy/antifennel";
-      rev = "76b02c0252cfc8e2a56edea381f7f682b598ac37";
+      rev = "d1b02bee8528e1ee9463c9504791ae0718585915";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-6gt89ZNm91JrQo/4/0CQLpkc4xux5OGQWg87cju4vCQ=";
+      sha256 = "sha256-+QjSXa9kL6DMQd2FQsugUZBNm9b/4n3Bwg6So6QhIfs=";
     };
-    date = "2025-06-02";
+    date = "2025-06-27";
   };
   bash-env-json = {
     pname = "bash-env-json";
@@ -249,16 +249,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v1.0.9";
+    version = "v1.1.0";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v1.0.9";
+      rev = "v1.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-daFRf9+++YsFdqxxlD3ENUyHU+DBseYAV3B+XMfia3Y=";
+      sha256 = "sha256-e2q9q7KH8qVvhyEvwBlYx0fTl2mggSkwtHHduWnKeJ4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v1.0.9/Cargo.lock;
+      lockFile = ./fav-v1.1.0/Cargo.lock;
       outputHashes = {
         
       };
@@ -397,23 +397,6 @@
       sha256 = "sha256-loIT6Oy0TmkqtjEUMOVZEk27hr5wWPiP5WycGDXmo3s=";
     };
   };
-  nh = {
-    pname = "nh";
-    version = "v4.1.2";
-    src = fetchFromGitHub {
-      owner = "viperML";
-      repo = "nh";
-      rev = "v4.1.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-v02NsZ589zzPq5xsCxyrG1/ZkFbbMkUthly50QdmYKo=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./nh-v4.1.2/Cargo.lock;
-      outputHashes = {
-        
-      };
-    };
-  };
   nowplaying-cli = {
     pname = "nowplaying-cli";
     version = "v1.2.1";
@@ -486,13 +469,13 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.1.0.11";
+    version = "release-5.1.1.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.1.0.11";
+      rev = "release-5.1.1.10";
       fetchSubmodules = false;
-      sha256 = "sha256-LY79Y7sG6EHGOh1hRujAOMRK3MKSAblJ+FFuGlj13iQ=";
+      sha256 = "sha256-BUBx1GbrajmCPMYHBngc/4yES7o+jwNi36Wqwcu7BIc=";
     };
   };
   rime-ice = {
@@ -506,14 +489,6 @@
       sha256 = "sha256-CTZoJeTuVr2n3U69p/0V3RvAFzpYGqds7stPGXSTj7s=";
     };
     date = "2025-06-19";
-  };
-  rime-wanxiang = {
-    pname = "rime-wanxiang";
-    version = "7.1";
-    src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v7.1/wanxiang-moqi-fuzhu.zip";
-      sha256 = "sha256-ClGGOEuSOh7p0+e1ffXVoqxxhjQ2Jzs++AIjxqhf5zg=";
-    };
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -565,15 +540,15 @@
   };
   singboxp = {
     pname = "singboxp";
-    version = "94f78f8dfcad4b310b747a505ea95e011d241381";
+    version = "1f74074ff58a4da9b0f74f988deb33c773025219";
     src = fetchFromGitHub {
       owner = "PuerNya";
       repo = "sing-box";
-      rev = "94f78f8dfcad4b310b747a505ea95e011d241381";
+      rev = "1f74074ff58a4da9b0f74f988deb33c773025219";
       fetchSubmodules = false;
-      sha256 = "sha256-HHGDxo61uDR/Bohk3lESS+kkx/GoJrVmh0Goe09bb94=";
+      sha256 = "sha256-yCj8+10UNW1MEv4RYKgAuVu0wF+jhhGTeUwv1ZcZGh8=";
     };
-    date = "2025-06-10";
+    date = "2025-06-29";
   };
   switchaudio-osx = {
     pname = "switchaudio-osx";
@@ -614,7 +589,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-+5AqtqZLpvg8oqN3/5wvtkDq/EMp64OWw0VqgJmdv7Q=";
+      sha256 = "sha256-0z9O9YQ/yZa6+fQ6GBHXrVR1bl4oBS2koYOKbxLX2kM=";
     };
   };
   websocket-bridge-python = {

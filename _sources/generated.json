@@ -43,12 +43,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.45.0",
-            "sha256": "sha256-4Ov0niOhP+T9EKq8bts/JudNPiqgyYGeCvGE5Q+dL/Q=",
+            "rev": "v3.45.1",
+            "sha256": "sha256-RFVyZZy/6P5WQMeULrjMnWpfFABMCVuUZiOh3nuO+hs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.45.0"
+        "version": "v3.45.1"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -82,7 +82,7 @@
     },
     "antifennel": {
         "cargoLocks": null,
-        "date": "2025-06-02",
+        "date": "2025-06-27",
         "extract": null,
         "name": "antifennel",
         "passthru": null,
@@ -92,13 +92,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "76b02c0252cfc8e2a56edea381f7f682b598ac37",
-            "sha256": "sha256-6gt89ZNm91JrQo/4/0CQLpkc4xux5OGQWg87cju4vCQ=",
+            "rev": "d1b02bee8528e1ee9463c9504791ae0718585915",
+            "sha256": "sha256-+QjSXa9kL6DMQd2FQsugUZBNm9b/4n3Bwg6So6QhIfs=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.sr.ht/~technomancy/antifennel"
         },
-        "version": "76b02c0252cfc8e2a56edea381f7f682b598ac37"
+        "version": "d1b02bee8528e1ee9463c9504791ae0718585915"
     },
     "bash-env-json": {
         "cargoLocks": null,
@@ -429,7 +429,7 @@
     "fav": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./fav-v1.0.9/Cargo.lock",
+                "./fav-v1.1.0/Cargo.lock",
                 {}
             ]
         },
@@ -445,12 +445,12 @@
             "name": null,
             "owner": "kingwingfly",
             "repo": "fav",
-            "rev": "v1.0.9",
-            "sha256": "sha256-daFRf9+++YsFdqxxlD3ENUyHU+DBseYAV3B+XMfia3Y=",
+            "rev": "v1.1.0",
+            "sha256": "sha256-e2q9q7KH8qVvhyEvwBlYx0fTl2mggSkwtHHduWnKeJ4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.0.9"
+        "version": "v1.1.0"
     },
     "fisher": {
         "cargoLocks": null,
@@ -680,32 +680,6 @@
         },
         "version": "v1.5.3-beta.0"
     },
-    "nh": {
-        "cargoLocks": {
-            "Cargo.lock": [
-                "./nh-v4.1.2/Cargo.lock",
-                {}
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "nh",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "viperML",
-            "repo": "nh",
-            "rev": "v4.1.2",
-            "sha256": "sha256-v02NsZ589zzPq5xsCxyrG1/ZkFbbMkUthly50QdmYKo=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v4.1.2"
-    },
     "nowplaying-cli": {
         "cargoLocks": null,
         "date": null,
@@ -852,12 +826,12 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-5.1.0.11",
-            "sha256": "sha256-LY79Y7sG6EHGOh1hRujAOMRK3MKSAblJ+FFuGlj13iQ=",
+            "rev": "release-5.1.1.10",
+            "sha256": "sha256-BUBx1GbrajmCPMYHBngc/4yES7o+jwNi36Wqwcu7BIc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "release-5.1.0.11"
+        "version": "release-5.1.1.10"
     },
     "rime-ice": {
         "cargoLocks": null,
@@ -879,21 +853,6 @@
             "type": "github"
         },
         "version": "bd514e4e788f216d25fcc74516f7bf4a82e74163"
-    },
-    "rime-wanxiang": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "rime-wanxiang",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-ClGGOEuSOh7p0+e1ffXVoqxxhjQ2Jzs++AIjxqhf5zg=",
-            "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v7.1/wanxiang-moqi-fuzhu.zip"
-        },
-        "version": "7.1"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -980,7 +939,7 @@
     },
     "singboxp": {
         "cargoLocks": null,
-        "date": "2025-06-10",
+        "date": "2025-06-29",
         "extract": null,
         "name": "singboxp",
         "passthru": null,
@@ -992,12 +951,12 @@
             "name": null,
             "owner": "PuerNya",
             "repo": "sing-box",
-            "rev": "94f78f8dfcad4b310b747a505ea95e011d241381",
-            "sha256": "sha256-HHGDxo61uDR/Bohk3lESS+kkx/GoJrVmh0Goe09bb94=",
+            "rev": "1f74074ff58a4da9b0f74f988deb33c773025219",
+            "sha256": "sha256-yCj8+10UNW1MEv4RYKgAuVu0wF+jhhGTeUwv1ZcZGh8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "94f78f8dfcad4b310b747a505ea95e011d241381"
+        "version": "1f74074ff58a4da9b0f74f988deb33c773025219"
     },
     "switchaudio-osx": {
         "cargoLocks": null,
@@ -1071,7 +1030,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+5AqtqZLpvg8oqN3/5wvtkDq/EMp64OWw0VqgJmdv7Q=",
+            "sha256": "sha256-0z9O9YQ/yZa6+fQ6GBHXrVR1bl4oBS2koYOKbxLX2kM=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
