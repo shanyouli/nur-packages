@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-07-01 07:45:24 UTC
+- LAST_MODIFY: 2025-07-01 11:33:28 UTC
 
 
 ## How to use
@@ -77,7 +77,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.7|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1.90|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250620.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250630.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.0|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -96,7 +96,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.1.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.1.10|Featureful free software BitTorrent client|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-06-19|Rime 配置:雾凇拼音|
-|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v8.3|Rime 配置:万象输入法|
+|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v8.3.1|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-06-29|The universal proxy platform|
@@ -116,7 +116,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.7.0|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||unstable-2025-02-06|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.11.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.12.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.3.2|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||1.2.1|macOS command-line utility for retrieving currently playing media|
@@ -149,7 +149,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.64.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.6.5.1|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.31.0|An open source userscript manager.|
-|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.4.0| Manage and switch between multiple proxies quickly & easily.|
+|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.4.1| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
 ### python3-apps
