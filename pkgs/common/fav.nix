@@ -6,6 +6,7 @@
   stdenv,
   apple-sdk_13,
   source,
+  ffmpeg,
 }:
 # {pkgs ? import <nixpkgs> {} }:
 # with pkgs;
@@ -23,9 +24,15 @@ rustPlatform.buildRustPackage rec {
   #   cargo update --offline
   # '';
   # cargoBuildFlags = ["--offline"];
-  nativeBuildInputs = [ pkg-config ];
+  nativeBuildInputs = [
+    pkg-config
+    rustPlatform.bindgenHook
+  ];
 
-  buildInputs = [ openssl ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ];
+  buildInputs = [
+    openssl
+    ffmpeg
+  ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ];
   doCheck = false;
   env = {
     OPENSSL_NO_VENDOR = true;
