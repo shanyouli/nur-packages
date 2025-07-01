@@ -12,7 +12,7 @@ buildGoModule rec {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
-  vendorHash = "sha256-TIeDP/JnylnhMKFanXnk9rHB0kyPD0ReUOnduUG61Ks=";
+  vendorHash = "sha256-A6fewQLvNJIlAyGiDJpE2Bnz6or2Z9XawNqFjcKWIbw=";
 
   tags = [
     "with_quic"
