@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4505861/zeroomega-3.4.0.xpi",
-    "version": "3.4.0",
-    "sha256": "0a6idkaapa2vh8ks0ayr9shagcpfzvhffym9immfp0pzb17l2mmh",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4523117/zeroomega-3.4.1.xpi",
+    "version": "3.4.1",
+    "sha256": "14lwd438wrq41d80hy9d18h8jan9spm3b5zp6klv8fcpzbqqgwh2",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
