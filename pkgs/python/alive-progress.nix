@@ -16,5 +16,6 @@ buildPythonPackage rec {
     grapheme
     about-time
   ];
+  format = "setuptools";
   doCheck = false;
 }
