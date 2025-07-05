@@ -12,4 +12,5 @@ buildPythonPackage rec {
   inherit (source) pname src;
   propagatedBuildInputs = [ websockets ];
   doCheck = false;
+  format = "setuptools";
 }

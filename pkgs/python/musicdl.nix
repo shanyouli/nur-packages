@@ -25,7 +25,7 @@ buildPythonPackage rec {
     alive-progress
   ];
   doCheck = false;
-
+  format = "setuptools";
   meta = with lib; {
     description = ''A lightweight music downloader written in pure python.'';
     homepage = "https://github.com/CharlesPikachu/musicdl";
