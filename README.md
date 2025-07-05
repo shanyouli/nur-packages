@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-07-01 11:33:28 UTC
+- LAST_MODIFY: 2025-07-05 11:18:33 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
 
 ### common
 
@@ -155,11 +155,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 ### python3-apps
 
 <details>
-<summary>Installing <b>python programs</b> with nix. , Total: <b>5</b> packages </summary>
+<summary>Installing <b>python programs</b> with nix. , Total: <b>4</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**about-time**](None)||4.2.1|None|
 |[**alive-progress**](None)||3.2.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
 |[**sd**](None)||2025-05-29|My system command line|
