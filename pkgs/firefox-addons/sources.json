@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4511333/download_with_aria2-4.16.2.3432.xpi",
-    "version": "4.16.2.3432",
-    "sha256": "1hcfnhzprcgg6achs87564p9q92jpha40a98w25lmzdqp1m0wff7",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4524951/download_with_aria2-4.16.3.3439.xpi",
+    "version": "4.16.3.3439",
+    "sha256": "0fv5gg7dmsk81rc0w1zwcq9ihb4r6dl4xsms7kc48q6zqr9bldqm",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -96,9 +96,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4448464/raindropio-6.6.76.xpi",
-    "version": "6.6.76",
-    "sha256": "09a6abc62cyrwpz0g56id7fm02ly4lgzl8kkicxkfd42xhy06sci",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4522152/raindropio-6.6.84.xpi",
+    "version": "6.6.84",
+    "sha256": "1igpdn954wam1h1psfvimc6f0nsrsy8jg4gm7qmz2rga1n1fi0jf",
     "pname": "raindropio"
   }
 }
