@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.18.5-Beta";
+    version = "0.19.0-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.18.5-Beta/AeroSpace-v0.18.5-Beta.zip";
-      sha256 = "sha256-49euM3Cc7cg8LkvUpbKs2C+tj03jwFZ7xA4R6r+4mpM=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.19.0-Beta/AeroSpace-v0.19.0-Beta.zip";
+      sha256 = "sha256-GdX3PUJkY49DDAk15qmHL5lWVC5+wo6MBLxGYb0CcxY=";
     };
   };
   alist = {
@@ -102,10 +102,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.108";
+    version = "4.9.109";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.108/darkreader-firefox.xpi";
-      sha256 = "sha256-UZMHnsJQ1islwLmOT/MWJmqtFdxqG3AFOC0SkrHqefQ=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.109/darkreader-firefox.xpi";
+      sha256 = "sha256-uGjvfsOrVKhvl5UR8A9KsC6RzQH/Yo0U+3p3AMBJyI8=";
     };
   };
   deeplx = {
@@ -121,13 +121,13 @@
   };
   dict2xml = {
     pname = "dict2xml";
-    version = "release-1.7.6";
+    version = "release-1.7.7";
     src = fetchFromGitHub {
       owner = "delfick";
       repo = "python-dict2xml";
-      rev = "release-1.7.6";
+      rev = "release-1.7.7";
       fetchSubmodules = false;
-      sha256 = "sha256-5GnIVpG2xHKYv27sSjjmm8JsZ1YR9Mvc3SqE4SnE84o=";
+      sha256 = "sha256-66ODdslXF6nWYqJku8cNG0RPK/YGEfbpHwVLLnSoDrk=";
     };
   };
   dutis = {
@@ -277,13 +277,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.6.2";
+    version = "v4.6.3";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.6.2";
+      rev = "v4.6.3";
       fetchSubmodules = false;
-      sha256 = "sha256-GpzbHShQvsgPNnUjk52PSDhvmxEuJVXNXI7z8ESv6QQ=";
+      sha256 = "sha256-TxBd+Q7tEyJpcUwOWAl2U1gmdNRYrBkGCtT961/8K1E=";
     };
   };
   httpx = {
@@ -469,13 +469,13 @@
   };
   qbittorrent = {
     pname = "qbittorrent";
-    version = "release-5.1.1.10";
+    version = "release-5.1.2.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-5.1.1.10";
+      rev = "release-5.1.2.10";
       fetchSubmodules = false;
-      sha256 = "sha256-BUBx1GbrajmCPMYHBngc/4yES7o+jwNi36Wqwcu7BIc=";
+      sha256 = "sha256-Q3gipRgZCzihKUQZZmETT65AUSEUfgj9dFxZFybq258=";
     };
   };
   rime-ice = {
@@ -574,22 +574,22 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "5c07e4b57e153a43b48dda54a3ad67a87f95fba9";
+    version = "0ad110de87671e56735b53ca27de806353b6b5ec";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "5c07e4b57e153a43b48dda54a3ad67a87f95fba9";
+      rev = "0ad110de87671e56735b53ca27de806353b6b5ec";
       fetchSubmodules = false;
-      sha256 = "sha256-yRtARXvAhHWNXDqjaE565lRmyqUOt2n1FWaONrwvC8M=";
+      sha256 = "sha256-fCTZNtz/gfVpQweUEz/sFm1zKDAEYXpr9sx0pR6syXE=";
     };
-    date = "2025-06-15";
+    date = "2025-07-10";
   };
   wanxiang-lts-zh-hans = {
     pname = "wanxiang-lts-zh-hans";
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-vWK2SyIRzgyKPz+qeBh5IZPcgY5zhXYX38yIt5LsUW4=";
+      sha256 = "sha256-m4Yh8DulXoDkiPZJ7tsCMIzSSmGbmK/Z3XZL97cQbY0=";
     };
   };
   websocket-bridge-python = {
