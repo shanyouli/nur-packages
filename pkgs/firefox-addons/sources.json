@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4492375/ublock_origin-1.64.0.xpi",
-    "version": "1.64.0",
-    "sha256": "17qf5q15zm2h2fifczxh6jxgy3m9s5v1gq7jmgydxh8spmlciqdr",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4531307/ublock_origin-1.65.0.xpi",
+    "version": "1.65.0",
+    "sha256": "1krki9kf1xx7sypx33dgajrgajwq6bh6yxghcmh8ccx955mcjwry",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -66,15 +66,15 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4488139/darkreader-4.9.106.xpi",
-    "version": "4.9.106",
-    "sha256": "040zzsis2fnvj2crxhknak5gz7q4mc8r3jj0mrzvb9is0s2l1j93",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4535824/darkreader-4.9.110.xpi",
+    "version": "4.9.110",
+    "sha256": "1p1hmrpqcnx8p218c8m148rz1z3n40xlk03lb441mk3hcj14aql4",
     "pname": "darkreader"
   },
   "chrome-mask": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4455755/chrome_mask-5.0.1.xpi",
-    "version": "5.0.1",
-    "sha256": "1g9q9n301bl42lp0lsm7bdwk1p1a5bdgj4yxzdzd5219jd7042a7",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4530699/chrome_mask-6.0.0.xpi",
+    "version": "6.0.0",
+    "sha256": "1ka2ndij4l3l66z2ks6qqq936x18q8vgizng4xysdyzwvv5hgpa2",
     "pname": "chrome-mask"
   },
   "zeroomega": {
