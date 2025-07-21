@@ -11,10 +11,10 @@
   };
   aerospace = {
     pname = "aerospace";
-    version = "0.19.0-Beta";
+    version = "0.19.2-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.19.0-Beta/AeroSpace-v0.19.0-Beta.zip";
-      sha256 = "sha256-GdX3PUJkY49DDAk15qmHL5lWVC5+wo6MBLxGYb0CcxY=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.19.2-Beta/AeroSpace-v0.19.2-Beta.zip";
+      sha256 = "sha256-u4UBOxgYmWPh/ASeHU3yg/zCV1EVYVdHY469LvhapHA=";
     };
   };
   alist = {
@@ -38,10 +38,10 @@
   };
   alive-progress = {
     pname = "alive-progress";
-    version = "3.2.0";
+    version = "3.3.0";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.2.0.tar.gz";
-      sha256 = "sha256-7eKdBG/0VP5WuUH2hvid2TiUMMSlt2WORFywuA4OTes=";
+      url = "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.3.0.tar.gz";
+      sha256 = "sha256-RX3SQotI2s1JhUAipGRI0jakjxtyd4dAccOTlTB+gww=";
     };
   };
   antifennel = {
@@ -102,21 +102,21 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.109";
+    version = "4.9.110";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.109/darkreader-firefox.xpi";
-      sha256 = "sha256-uGjvfsOrVKhvl5UR8A9KsC6RzQH/Yo0U+3p3AMBJyI8=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.110/darkreader-firefox.xpi";
+      sha256 = "sha256-kBC2WdbvGj5kjCCBSaM62vwzktNJkGHsBw4akovI0OA=";
     };
   };
   deeplx = {
     pname = "deeplx";
-    version = "v1.0.7";
+    version = "v1.0.8";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v1.0.7";
+      rev = "v1.0.8";
       fetchSubmodules = false;
-      sha256 = "sha256-ZGcSh7Iry1j+dpPLxHDKdFFUzp+zp1Lt0FoHefhdCHA=";
+      sha256 = "sha256-MutYqV4K9UNfoLBw7zRQvzIy1mBnPuLE9tP6NzzXVZg=";
     };
   };
   dict2xml = {
@@ -249,16 +249,16 @@
   };
   fav = {
     pname = "fav";
-    version = "v1.1.0";
+    version = "v1.1.1";
     src = fetchFromGitHub {
       owner = "kingwingfly";
       repo = "fav";
-      rev = "v1.1.0";
+      rev = "v1.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-e2q9q7KH8qVvhyEvwBlYx0fTl2mggSkwtHHduWnKeJ4=";
+      sha256 = "sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v1.1.0/Cargo.lock;
+      lockFile = ./fav-v1.1.1/Cargo.lock;
       outputHashes = {
         
       };
@@ -480,15 +480,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "7acdee60d09602383b6299d1bdaaba03f0a57869";
+    version = "52978bc79779b28597272636269c02bb4e12fff0";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "7acdee60d09602383b6299d1bdaaba03f0a57869";
+      rev = "52978bc79779b28597272636269c02bb4e12fff0";
       fetchSubmodules = false;
-      sha256 = "sha256-yCVcTc8qitar5JJfVTH4xNJMTPgx/NsRMoTxVm5PVrY=";
+      sha256 = "sha256-SyZQ8wOVkdtm+d/tF22CFuVDQH1dQvGrztxYEBqEv4Q=";
     };
-    date = "2025-07-06";
+    date = "2025-07-21";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -589,7 +589,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-m4Yh8DulXoDkiPZJ7tsCMIzSSmGbmK/Z3XZL97cQbY0=";
+      sha256 = "sha256-23N1pNxmDe28MNMDgzAyqkw511eAsBdC0tSSweRK2lo=";
     };
   };
   websocket-bridge-python = {

@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-GdX3PUJkY49DDAk15qmHL5lWVC5+wo6MBLxGYb0CcxY=",
+            "sha256": "sha256-u4UBOxgYmWPh/ASeHU3yg/zCV1EVYVdHY469LvhapHA=",
             "type": "url",
-            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.19.0-Beta/AeroSpace-v0.19.0-Beta.zip"
+            "url": "https://github.com/nikitabobko/AeroSpace/releases/download/v0.19.2-Beta/AeroSpace-v0.19.2-Beta.zip"
         },
-        "version": "0.19.0-Beta"
+        "version": "0.19.2-Beta"
     },
     "alist": {
         "cargoLocks": null,
@@ -74,11 +74,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7eKdBG/0VP5WuUH2hvid2TiUMMSlt2WORFywuA4OTes=",
+            "sha256": "sha256-RX3SQotI2s1JhUAipGRI0jakjxtyd4dAccOTlTB+gww=",
             "type": "url",
-            "url": "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.2.0.tar.gz"
+            "url": "https://pypi.org/packages/source/a/alive-progress/alive-progress-3.3.0.tar.gz"
         },
-        "version": "3.2.0"
+        "version": "3.3.0"
     },
     "antifennel": {
         "cargoLocks": null,
@@ -187,11 +187,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uGjvfsOrVKhvl5UR8A9KsC6RzQH/Yo0U+3p3AMBJyI8=",
+            "sha256": "sha256-kBC2WdbvGj5kjCCBSaM62vwzktNJkGHsBw4akovI0OA=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.109/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.110/darkreader-firefox.xpi"
         },
-        "version": "4.9.109"
+        "version": "4.9.110"
     },
     "deeplx": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
             "name": null,
             "owner": "OwO-Network",
             "repo": "DeepLX",
-            "rev": "v1.0.7",
-            "sha256": "sha256-ZGcSh7Iry1j+dpPLxHDKdFFUzp+zp1Lt0FoHefhdCHA=",
+            "rev": "v1.0.8",
+            "sha256": "sha256-MutYqV4K9UNfoLBw7zRQvzIy1mBnPuLE9tP6NzzXVZg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.0.7"
+        "version": "v1.0.8"
     },
     "dict2xml": {
         "cargoLocks": null,
@@ -429,7 +429,7 @@
     "fav": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./fav-v1.1.0/Cargo.lock",
+                "./fav-v1.1.1/Cargo.lock",
                 {}
             ]
         },
@@ -445,12 +445,12 @@
             "name": null,
             "owner": "kingwingfly",
             "repo": "fav",
-            "rev": "v1.1.0",
-            "sha256": "sha256-e2q9q7KH8qVvhyEvwBlYx0fTl2mggSkwtHHduWnKeJ4=",
+            "rev": "v1.1.1",
+            "sha256": "sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.1.0"
+        "version": "v1.1.1"
     },
     "fisher": {
         "cargoLocks": null,
@@ -835,7 +835,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-07-06",
+        "date": "2025-07-21",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -847,12 +847,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "7acdee60d09602383b6299d1bdaaba03f0a57869",
-            "sha256": "sha256-yCVcTc8qitar5JJfVTH4xNJMTPgx/NsRMoTxVm5PVrY=",
+            "rev": "52978bc79779b28597272636269c02bb4e12fff0",
+            "sha256": "sha256-SyZQ8wOVkdtm+d/tF22CFuVDQH1dQvGrztxYEBqEv4Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7acdee60d09602383b6299d1bdaaba03f0a57869"
+        "version": "52978bc79779b28597272636269c02bb4e12fff0"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -1030,7 +1030,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-m4Yh8DulXoDkiPZJ7tsCMIzSSmGbmK/Z3XZL97cQbY0=",
+            "sha256": "sha256-23N1pNxmDe28MNMDgzAyqkw511eAsBdC0tSSweRK2lo=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
