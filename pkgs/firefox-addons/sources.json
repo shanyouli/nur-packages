@@ -6,9 +6,9 @@
     "pname": "noscript"
   },
   "browserpass-ce": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4468825/browserpass_ce-3.10.2.xpi",
-    "version": "3.10.2",
-    "sha256": "03zdn8wraq2d4izaif4q5n7xfyp1zzqds6i7xbb1kl6cd0cy3sb3",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4542488/browserpass_ce-3.11.0.xpi",
+    "version": "3.11.0",
+    "sha256": "0y6pyl09b5j8f7k0xvm2m3fjbwzs4kfnjml5qy9y82zyvg9zzb0i",
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4291806/kiss_translator-1.8.11.xpi",
-    "version": "1.8.11",
-    "sha256": "09mnd89ssd4cvbb092m4yza6brnq4nmzx765vgcdyffcc1drv5c9",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4540691/kiss_translator-1.9.1.xpi",
+    "version": "1.9.1",
+    "sha256": "00l18ygilw9wqny8pnmka8n8ilfamzkvk5s9x984a4v0rgdbzq0d",
     "pname": "kiss-translator"
   },
   "raindropio": {
