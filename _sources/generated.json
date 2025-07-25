@@ -1,19 +1,4 @@
 {
-    "about-time": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "about-time",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-alOIYtM85n2ZdCnRSZgxDh2/2my32bv795nEcJhH/s4=",
-            "type": "url",
-            "url": "https://pypi.org/packages/source/a/about-time/about-time-4.2.1.tar.gz"
-        },
-        "version": "4.2.1"
-    },
     "aerospace": {
         "cargoLocks": null,
         "date": null,
@@ -731,11 +716,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-th6HyG7BoyITwTSCHffZo75WcWksO7VVZlUTPOMgYxk=",
+            "sha256": "sha256-wrn3lOKyAy4waL+rDJepWnia0ckr0X7wolQZXygp0kE=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/pragma-sevka-mono.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-mono.zip"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "pragmasevka-nerd": {
         "cargoLocks": null,
@@ -746,11 +731,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-liYrgxK5RxVkXV2jK99+ndajxH9tcODoyNr4iqpv6gc=",
+            "sha256": "sha256-REgccP1eJwtul+DwROr7rbB1fbG7zRujXF0gaCeMpFc=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/pragma-sevka-mono-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-mono-nerd.zip"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "pragmasevka-sans": {
         "cargoLocks": null,
@@ -761,11 +746,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KTVFKE4GlQlgg+NnKD8X7VVown6/7ZaTl0Ndnamjetg=",
+            "sha256": "sha256-iv8jkW+lrcCgg5tW0bjMrTJRBoRCgGrRbmFHbBJOxOI=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/pragma-sevka-sans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-sans.zip"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "pragmasevka-sc": {
         "cargoLocks": null,
@@ -776,11 +761,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-RoUW0M94c++ainQlaI9XmSmyy8NgsmkN/ITc80aQxTE=",
+            "sha256": "sha256-XUspF63I1kCL+txhhzO3grh35/AuYOXblsqIPOAC6BE=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/Pragma-Sevka-SC.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/Pragma-Sevka-SC.ttf"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "pragmasevka-sc-nf": {
         "cargoLocks": null,
@@ -791,11 +776,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xsuMSc5m2QW2Sr8t0A0Nl9XaxKAlVymr2D6/YFcP8RM=",
+            "sha256": "sha256-pY2qSqF41cZpH7el2bujJeNTXZCiIrYhrm/W3aKWOmM=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/Pragma-Sevka-SC-NF.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/Pragma-Sevka-SC-NF.ttf"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "pragmasevka-serif": {
         "cargoLocks": null,
@@ -806,11 +791,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DbMpna9zwakGE1oWZydkmY4HPmvxxiiLgS3m7x5EWKM=",
+            "sha256": "sha256-MYlG9Y2FyVf49rCvSTC1FUv2MEq19lVbgZUfTW1x8Bk=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.6/pragma-sevka-serif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-serif.zip"
         },
-        "version": "33.2.6"
+        "version": "33.2.7"
     },
     "qbittorrent": {
         "cargoLocks": null,
@@ -835,7 +820,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-07-21",
+        "date": "2025-07-24",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -847,12 +832,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "52978bc79779b28597272636269c02bb4e12fff0",
-            "sha256": "sha256-SyZQ8wOVkdtm+d/tF22CFuVDQH1dQvGrztxYEBqEv4Q=",
+            "rev": "74fc9c59935ba834bb0df0aa28a0036234f8e9f1",
+            "sha256": "sha256-DN0YjnTifHG3/Dnfm1OW0VHN4fkqdAKK0vowN3jD1wg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "52978bc79779b28597272636269c02bb4e12fff0"
+        "version": "74fc9c59935ba834bb0df0aa28a0036234f8e9f1"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -1002,7 +987,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2025-07-10",
+        "date": "2025-07-24",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -1014,12 +999,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "0ad110de87671e56735b53ca27de806353b6b5ec",
-            "sha256": "sha256-fCTZNtz/gfVpQweUEz/sFm1zKDAEYXpr9sx0pR6syXE=",
+            "rev": "471958a3de864c093422c3d6b9302e2bcac72568",
+            "sha256": "sha256-j4mafK6vuI/Ceev4QxxJyxFPERes1w3BmKs7nYycALQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0ad110de87671e56735b53ca27de806353b6b5ec"
+        "version": "471958a3de864c093422c3d6b9302e2bcac72568"
     },
     "wanxiang-lts-zh-hans": {
         "cargoLocks": null,
@@ -1030,7 +1015,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-23N1pNxmDe28MNMDgzAyqkw511eAsBdC0tSSweRK2lo=",
+            "sha256": "sha256-sdTVgVnY0Zvc4awjYT2+yuElQJVKrHouQsdh8iDkPpc=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
