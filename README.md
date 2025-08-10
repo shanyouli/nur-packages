@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-07-25 22:12:26 UTC
+- LAST_MODIFY: 2025-08-10 05:51:57 UTC
 
 
 ## How to use
@@ -71,9 +71,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.45.1|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.49.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-07-01|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-08-03|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1.90|Extensible, customizable GNU text editor|
@@ -81,7 +81,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.6.3|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
+|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.6.6|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-06-27|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
@@ -95,11 +95,11 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-07-24|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-08-08|Rime 配置:雾凇拼音|
 |[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v10.0.3|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2025-06-29|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-07-24|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
