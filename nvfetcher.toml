@@ -230,6 +230,12 @@ fetch.url = "https://github.com/darkreader/darkreader/releases/download/v$ver/da
 src.github = "mbnuqw/sidebery"
 fetch.github = "mbnuqw/sidebery"
 
+[zeroomega]
+src.github = "zero-peak/ZeroOmega"
+# src.from_pattern = "v(.*)"
+# src.to_pattern = "\\1"
+fetch.url = "https://github.com/zero-peak/ZeroOmega/releases/download/$ver/zeroomega-$ver.xpi"
+
 ### packages in modules
 
 #### emacs
