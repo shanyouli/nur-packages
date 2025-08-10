@@ -91,11 +91,13 @@ def update_src(add_name: List[str]):
     next_sources = {}
     if sources:
         for i in add_name:
+            print(f"check {i} ...")
             url = get_firefox_addons_xpi(i)
             sources_contain_i = True if i in sources else False
             if sources_contain_i and sources[i]["url"] == url:
                 next_sources[i] = sources.pop(i)
             else:
+                print(f"update {i} ...")
                 next_sources[i] = {
                     "url": url,
                     "version": get_version(url),
