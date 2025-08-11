@@ -203,15 +203,6 @@
     };
     date = "2025-08-04";
   };
-  "emacs31.role-patch" = {
-    pname = "emacs31.role-patch";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
-    src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-28/fix-window-role.patch";
-      sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
-    };
-    date = "2025-08-04";
-  };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
     version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
@@ -581,7 +572,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-KGDxN0hFrfyxhbkXtyNPNcnbkksPL1jFGYxDnQlp0bw=";
+      sha256 = "sha256-A9QaaU8ILDItg1qAMVR+A7UFeHugg+rsHmnZnJqtdtk=";
     };
   };
   websocket-bridge-python = {
