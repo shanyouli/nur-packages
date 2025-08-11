@@ -20,7 +20,9 @@ buildGoModule rec {
   '';
   preBuild = ''
     sed -i 's/^go 1\(\.[0-9]\+\)\{1,2\}$/go ${go.version}/' go.mod
+     go mod tidy
   '';
+  proxyVendor = true;
   meta = with lib; {
     description = "DeepL Free API (No TOKEN required";
     homepage = "https://github.com/OwO-Network/DeepLX";
