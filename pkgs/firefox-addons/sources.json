@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4524951/download_with_aria2-4.16.3.3439.xpi",
-    "version": "4.16.3.3439",
-    "sha256": "0fv5gg7dmsk81rc0w1zwcq9ihb4r6dl4xsms7kc48q6zqr9bldqm",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4548965/download_with_aria2-4.16.4.3450.xpi",
+    "version": "4.16.4.3450",
+    "sha256": "1k2y7gxyj1zglmlxrdi4y8iwgm24b8w35z44bdh3acj4h41ic3i7",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -77,12 +77,6 @@
     "sha256": "1ka2ndij4l3l66z2ks6qqq936x18q8vgizng4xysdyzwvv5hgpa2",
     "pname": "chrome-mask"
   },
-  "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4523117/zeroomega-3.4.1.xpi",
-    "version": "3.4.1",
-    "sha256": "14lwd438wrq41d80hy9d18h8jan9spm3b5zp6klv8fcpzbqqgwh2",
-    "pname": "zeroomega"
-  },
   "easy-image-blocker": {
     "url": "https://addons.mozilla.org/firefox/downloads/file/3020336/easy_image_blocker-3.1.5.xpi",
     "version": "3.1.5",
@@ -90,9 +84,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4540691/kiss_translator-1.9.1.xpi",
-    "version": "1.9.1",
-    "sha256": "00l18ygilw9wqny8pnmka8n8ilfamzkvk5s9x984a4v0rgdbzq0d",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4553890/kiss_translator-1.9.2.xpi",
+    "version": "1.9.2",
+    "sha256": "05j9g3d547bisagl4amyn1nipw7vj99qc1gmr7why07i8rzb3mc2",
     "pname": "kiss-translator"
   },
   "raindropio": {
