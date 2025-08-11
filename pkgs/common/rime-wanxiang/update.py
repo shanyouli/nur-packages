@@ -110,7 +110,9 @@ def update_src():
                     "moqi": "rime-wanxiang-moqi-fuzhu.zip",
                     "flypy": "rime-wanxiang-flypy-fuzhu.zip",
                     "wubi": "rime-wanxiang-wubi-fuzhu.zip",
-                    "jdh": "rime-wanxiang-jdh-fuzhu.zip",
+                    # NOTE: see @https://github.com/amzxyz/rime_wanxiang/pull/317
+                    # jdh 已被移除
+                    # "jdh": "rime-wanxiang-jdh-fuzhu.zip",
                     "hanxin": "rime-wanxiang-hanxin-fuzhu.zip",
                 },
             )
