@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-08-11 06:54:47 UTC
+- LAST_MODIFY: 2025-08-11 07:40:46 UTC
 
 
 ## How to use
@@ -77,7 +77,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1.90|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250725.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250810.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -96,7 +96,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-08-08|Rime 配置:雾凇拼音|
-|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v10.0.3|Rime 配置:万象输入法|
+|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v11.0.0|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
@@ -136,10 +136,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.11.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||6.0.0|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.110|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.3.3439|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.16.4.3450|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.18.1|Immersive Dual Web Page Translation Extension |
-|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.9.1|Simple, open source bilingual translation extension & Greasemonkey script|
+|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.9.2|Simple, open source bilingual translation extension & Greasemonkey script|
 |[**noscript**](https://noscript.net/)||13.0.8|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.84|All-in-one bookmark manager|
