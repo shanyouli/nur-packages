@@ -40,10 +40,11 @@
             ++ (
               if pkgs.stdenvNoCC.isDarwin then
                 [
-                  srcs."emacs${version}.role-patch".src
+
                   srcs."emacs${version}.system-appearance".src
                   srcs."emacs${version}.round-undecorated-frame".src
                 ]
+                ++ lib.optionals (version == "30") [ srcs."emacs${version}.role-patch".src ]
                 ++ lib.optionals (version == "29") [ srcs."emacs${version}.no-frame-refocus-cocoa".src ]
               else
                 [ ]
