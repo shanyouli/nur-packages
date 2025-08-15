@@ -11,21 +11,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.49.0";
+    version = "v3.50.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.49.0";
+      rev = "v3.50.0";
       fetchSubmodules = false;
-      sha256 = "sha256-vRzXeQ+3LBbYkKLfEYYhiLKxhVsEAmKtwvcLZ5AA7Js=";
+      sha256 = "sha256-MWnFQ5VfiOza/HJplk7iarU6Y/8JffJGaMBwijBK9m0=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.49.0";
+    version = "3.50.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.49.0/dist.tar.gz";
-      sha256 = "sha256-3tgO3Fc1V0fTZ8W+jZtzQob5/coCxN28Rr6b9IDHokU=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.50.0/dist.tar.gz";
+      sha256 = "sha256-cFeV9GI/JHhRM6MlqIczsTUsd/weUK8lj7B4v1yUS4I=";
     };
   };
   alive-progress = {
@@ -142,84 +142,84 @@
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-28/no-frame-refocus-cocoa.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-28/no-frame-refocus-cocoa.patch";
       sha256 = "sha256-+1d33IkKoHNJ8UOuZcK89D7a1v6/1WSwGiI1xaFfyr0=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs29.role-patch" = {
     pname = "emacs29.role-patch";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs29.round-undecorated-frame" = {
     pname = "emacs29.round-undecorated-frame";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-29/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-29/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs29.system-appearance" = {
     pname = "emacs29.system-appearance";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-28/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-28/system-appearance.patch";
       sha256 = "sha256-1u4VmDmzi2r1Ode5vf8jEmPkUcH9Qu7A0SUxjJ24zZI=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs30.round-undecorated-frame" = {
     pname = "emacs30.round-undecorated-frame";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-30/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-30/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs30.system-appearance" = {
     pname = "emacs30.system-appearance";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-JpR7ZyT8KfrdRIiYCMXPC0zmJ4zwT0YIaiHfUMjEFR0=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   "emacs31.system-appearance" = {
     pname = "emacs31.system-appearance";
-    version = "cd8d57de9ac25d9822567ea4d51d5c67d791d7ab";
+    version = "e5d826e81b5997cbfe73c183617a9cba1af2431d";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/cd8d57de9ac25d9822567ea4d51d5c67d791d7ab/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e5d826e81b5997cbfe73c183617a9cba1af2431d/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2025-08-04";
+    date = "2025-08-15";
   };
   emacsclient = {
     pname = "emacsclient";
@@ -404,50 +404,50 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-mono.zip";
-      sha256 = "sha256-wrn3lOKyAy4waL+rDJepWnia0ckr0X7wolQZXygp0kE=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-mono.zip";
+      sha256 = "sha256-CZT51DscYo8EOqdq05R+6ZDY/owVIwUKLRtL9Vrcbrc=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-REgccP1eJwtul+DwROr7rbB1fbG7zRujXF0gaCeMpFc=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-01r616cTKqs2EqIl9/UuT3QGWlyJi5Eccn4vDpCHDNk=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-sans.zip";
-      sha256 = "sha256-iv8jkW+lrcCgg5tW0bjMrTJRBoRCgGrRbmFHbBJOxOI=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-sans.zip";
+      sha256 = "sha256-7TxNZjRSoW9ziF+DRpSqb7/OZV12jbvVvJ/6GTB81Os=";
     };
   };
   pragmasevka-sc = {
     pname = "pragmasevka-sc";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/Pragma-Sevka-SC.ttf";
-      sha256 = "sha256-XUspF63I1kCL+txhhzO3grh35/AuYOXblsqIPOAC6BE=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/Pragma-Sevka-SC.ttf";
+      sha256 = "sha256-HTuZ2pcla0RpJAQlOZxWDEK3Sbx2EetjHFe7/MYU/hw=";
     };
   };
   pragmasevka-sc-nf = {
     pname = "pragmasevka-sc-nf";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/Pragma-Sevka-SC-NF.ttf";
-      sha256 = "sha256-pY2qSqF41cZpH7el2bujJeNTXZCiIrYhrm/W3aKWOmM=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/Pragma-Sevka-SC-NF.ttf";
+      sha256 = "sha256-10YejgJqm+lxy/evZAPPY6hZVF68zmuJztdcBryVz3s=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.2.7";
+    version = "33.2.8";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.7/pragma-sevka-serif.zip";
-      sha256 = "sha256-MYlG9Y2FyVf49rCvSTC1FUv2MEq19lVbgZUfTW1x8Bk=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-serif.zip";
+      sha256 = "sha256-d7pqqBszssXZiH86Sk5VkPf/1/gfGxDwPiI2+i/WznI=";
     };
   };
   qbittorrent = {
@@ -572,7 +572,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-A9QaaU8ILDItg1qAMVR+A7UFeHugg+rsHmnZnJqtdtk=";
+      sha256 = "sha256-The7c1E8al4u22I3oH96+iyC6bAVLBBq+v7RXHnXXkA=";
     };
   };
   websocket-bridge-python = {
