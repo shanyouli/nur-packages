@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-08-11 07:40:46 UTC
+- LAST_MODIFY: 2025-08-15 22:41:43 UTC
 
 
 ## How to use
@@ -71,13 +71,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.49.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.50.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-08-03|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
-|[**emacs**](https://www.gnu.org/software/emacs/)||30.1.90|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250810.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250815.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.1|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -87,12 +87,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.7|我的自定义 iosvake|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-08-08|Rime 配置:雾凇拼音|
@@ -140,9 +140,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.18.1|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.9.2|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.0.8|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||13.0.9|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
-|[**raindropio**](https://app.raindrop.io/)||6.6.84|All-in-one bookmark manager|
+|[**raindropio**](https://app.raindrop.io/)||6.6.90|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.3.3|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.3.14|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.5|Map your keys for web surfing, expand your browser with javascript and keyboard. |
