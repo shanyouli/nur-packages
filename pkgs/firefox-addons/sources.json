@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4497468/noscript-13.0.8.xpi",
-    "version": "13.0.8",
-    "sha256": "1p6jrz22jjzcqlbza2v8nix2sx9xjgl43vmm43hwrf9w13z8r5wx",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4551629/noscript-13.0.9.xpi",
+    "version": "13.0.9",
+    "sha256": "1xbisx3xqak9aj7nb2lh94an6yfldsl6a2g2qc87vxi1zwdbcnjj",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -90,9 +90,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4522152/raindropio-6.6.84.xpi",
-    "version": "6.6.84",
-    "sha256": "1igpdn954wam1h1psfvimc6f0nsrsy8jg4gm7qmz2rga1n1fi0jf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4552760/raindropio-6.6.90.xpi",
+    "version": "6.6.90",
+    "sha256": "10x7pq4k3mlsnch9hz6w3svdskprpsynhs9y1isb42fyywxk3dld",
     "pname": "raindropio"
   }
 }
