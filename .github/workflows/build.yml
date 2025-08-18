@@ -20,7 +20,7 @@ jobs:
     outputs:
       MY_TARGET_BRANCH: ${{ steps.determine_branch.outputs.runbranch }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
@@ -82,7 +82,7 @@ jobs:
       MY_MODIFY: ${{ steps.modify_code.outputs.MY_MODIFY }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
     - name: Free Disk Space (Ubuntu)
@@ -161,7 +161,7 @@ jobs:
     env:
       MY_TARGET_BRANCH: ${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: '${{ needs.use_branch.outputs.MY_TARGET_BRANCH }}'
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
