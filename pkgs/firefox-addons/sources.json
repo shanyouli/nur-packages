@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4548965/download_with_aria2-4.16.4.3450.xpi",
-    "version": "4.16.4.3450",
-    "sha256": "1k2y7gxyj1zglmlxrdi4y8iwgm24b8w35z44bdh3acj4h41ic3i7",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4562260/download_with_aria2-4.17.0.3548.xpi",
+    "version": "4.17.0.3548",
+    "sha256": "1w18w3qv9bj6v9ls0sqhvjq1nfzqlk2sfyzrzfc5xj5hmna2xyni",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4451438/styl_us-2.3.14.xpi",
-    "version": "2.3.14",
-    "sha256": "1n0m2fhh7mrbmzimpdcxvz1p1xnwbnpymyz13h4il06par11p1h2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4554444/styl_us-2.3.16.xpi",
+    "version": "2.3.16",
+    "sha256": "1a3qqgs500qvh4h2vi0fw4b5463ra0wwq55qp2asmrg5y52k9nic",
     "pname": "styl-us"
   },
   "privacy-pass": {
