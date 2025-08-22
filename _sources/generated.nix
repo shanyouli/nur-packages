@@ -11,21 +11,21 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.50.0";
+    version = "v3.51.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.50.0";
+      rev = "v3.51.0";
       fetchSubmodules = false;
-      sha256 = "sha256-MWnFQ5VfiOza/HJplk7iarU6Y/8JffJGaMBwijBK9m0=";
+      sha256 = "sha256-oqWwHIEIvhTwbnDNQSh884G1n+m+qcnG1G3RwGA0uy4=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.50.0";
+    version = "3.51.0";
     src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.50.0/dist.tar.gz";
-      sha256 = "sha256-cFeV9GI/JHhRM6MlqIczsTUsd/weUK8lj7B4v1yUS4I=";
+      url = "https://github.com/alist-org/alist-web/releases/download/3.51.0/dist.tar.gz";
+      sha256 = "sha256-TYmOQn070Ak/Vzkxj0RdziYNuC1xYs8/CIRxjAUKQDI=";
     };
   };
   alive-progress = {
@@ -463,15 +463,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "5725c4cd295797fcd92a80c7892000dcf0e30710";
+    version = "39b04584c216fec7cdc30270fc9b6f054423e202";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "5725c4cd295797fcd92a80c7892000dcf0e30710";
+      rev = "39b04584c216fec7cdc30270fc9b6f054423e202";
       fetchSubmodules = false;
-      sha256 = "sha256-nPkwX5ruvCkQZ4yKNVuh72RmbLiEs/lkjb7mPQURVWw=";
+      sha256 = "sha256-AP2T4G/KDVOLzzRXHrO2c33bV/HxSOhu8QCeiUP/IzI=";
     };
-    date = "2025-08-08";
+    date = "2025-08-16";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -572,7 +572,7 @@
     version = "2024";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-The7c1E8al4u22I3oH96+iyC6bAVLBBq+v7RXHnXXkA=";
+      sha256 = "sha256-bQY3UoR0X3VNgh4waDwJ19R1RxiVnYYSOAJmnkSHm0U=";
     };
   };
   websocket-bridge-python = {
