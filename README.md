@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-08-22 23:12:03 UTC
+- LAST_MODIFY: 2025-08-29 23:29:27 UTC
 
 
 ## How to use
@@ -71,13 +71,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**alist**](https://github.com/alist-org/alist)||3.51.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
+|[**alist**](https://github.com/alist-org/alist)||3.52.0|A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-08-03|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250822.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250829.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -95,8 +95,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.2.8|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-08-16|Rime 配置:雾凇拼音|
-|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v11.3.1|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-08-29|Rime 配置:雾凇拼音|
+|[**moqi**](https://github.com/amzxyz/rime_wanxiang_pro)||v11.4.0|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
@@ -114,7 +114,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.19.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.7.0|window border system for macOS|
-|[**dutis**](https://github.com/tsonglew/dutis)||unstable-2025-02-06|A command-line tool to select default applications, based on duti|
+|[**dutis**](https://github.com/tsonglew/dutis)||unstable-2025-08-24|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||128.14.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
@@ -138,7 +138,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**darkreader**](https://darkreader.org/)||4.9.110|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.17.0.3548|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.18.1|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.20.8|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.9.2|Simple, open source bilingual translation extension & Greasemonkey script|
 |[**noscript**](https://noscript.net/)||13.0.9|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
