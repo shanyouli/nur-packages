@@ -18,7 +18,7 @@ buildGoModule rec {
   inherit (source) pname src;
   # FIXME:  import lookup disabled by -mod=vendor
   # see @https://github.com/NixOS/nixpkgs/issues/273998
-  vendorHash = "sha256-uxtd8JTLTRR3pum5xlyLM//xcPCs1Jt9+XCG2pAlT7c=";
+  vendorHash = "sha256-Q5Z1rJmmKnfMJ4KqmETJ4zDjutdijlV1ZszAXVY+gfg=";
   proxyVendor = true;
   preBuild = ''
     rm -rf public/dist
