@@ -154,9 +154,9 @@ src.git = "https://github.com/benzBrake/userChrome.js-Loader"
 fetch.github = "benzBrake/userChrome.js-Loader"
 
 # rime 輸入法的語法模型。
-[wanxiang-lts-zh-hans]
-src.manual = "2024"
-fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+# [wanxiang-lts-zh-hans]
+# src.manual = "2024"
+# fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
 
 [zpmod]
 src.github = "z-shell/zpmod"

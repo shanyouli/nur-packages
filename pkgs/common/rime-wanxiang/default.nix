@@ -1,7 +1,6 @@
 {
   stdenvNoCC,
   lib,
-  sources,
   p7zip,
   fetchurl,
   fuzu ? "moqi",
@@ -22,21 +21,12 @@ stdenvNoCC.mkDerivation rec {
     "installPhase"
   ];
   nativeBuildInputs = [ p7zip ];
-  # unpackCmd = ''
-  #   7z x -y $src
-  # '';
-  # buildPhase = ''
-  #   runHook preBuild
-  #   mv default.yaml rime_ice_suggestion.yaml
-  #   runHook postBuild
-  # '';
   installPhase = ''
     7z x -y $src
     runHook preInstall
     mkdir -p $out/share/rime-data
     rm -rf ./.github
     cp -r ./* $out/share/rime-data/
-    cp -r ${sources.wanxiang-lts-zh-hans.src} $out/share/rime-data/${lib.getName sources.wanxiang-lts-zh-hans.src}
     [[ -f $out/share/rime-data/env-vars ]] && rm -rf $out/share/rime-data/env-vars
     runHook postInstall
   '';

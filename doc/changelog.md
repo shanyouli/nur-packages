@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 2025-09-04
+
++ 移除 rime 输入法的语言模型，由于无法获取准确的 hash 值
 ## 2025-05-07
 
 + remove: maple-mono
