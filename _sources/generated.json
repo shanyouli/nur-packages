@@ -457,12 +457,12 @@
             "name": null,
             "owner": "go-musicfox",
             "repo": "go-musicfox",
-            "rev": "v4.6.6",
-            "sha256": "sha256-BLX43eWM1vMXgUThcLEHb3+OZejfUye1m/SCecfzTiE=",
+            "rev": "v4.7.1",
+            "sha256": "sha256-jrrxG26OKOUiUzv12Td8Vy12gnj9+mHog/vZSaTwqmw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.6.6"
+        "version": "v4.7.1"
     },
     "httpx": {
         "cargoLocks": null,
@@ -972,7 +972,7 @@
     },
     "userChromeJS": {
         "cargoLocks": null,
-        "date": "2025-07-24",
+        "date": "2025-09-02",
         "extract": null,
         "name": "userChromeJS",
         "passthru": null,
@@ -984,27 +984,12 @@
             "name": null,
             "owner": "benzBrake",
             "repo": "userChrome.js-Loader",
-            "rev": "471958a3de864c093422c3d6b9302e2bcac72568",
-            "sha256": "sha256-j4mafK6vuI/Ceev4QxxJyxFPERes1w3BmKs7nYycALQ=",
+            "rev": "b93a33da86c73020c286b01940556e923c994c4c",
+            "sha256": "sha256-ojJq1sYs4nZCYDQUckW7s6TeDpY7H8F6klj6iSVk2OA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "471958a3de864c093422c3d6b9302e2bcac72568"
-    },
-    "wanxiang-lts-zh-hans": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "wanxiang-lts-zh-hans",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-Zeh6Er1hq8ubGUshffczur4zNJZSVxhUsddg/E8A7CM=",
-            "type": "url",
-            "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
-        },
-        "version": "2024"
+        "version": "b93a33da86c73020c286b01940556e923c994c4c"
     },
     "websocket-bridge-python": {
         "cargoLocks": null,

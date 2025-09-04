@@ -260,13 +260,13 @@
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v4.6.6";
+    version = "v4.7.1";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v4.6.6";
+      rev = "v4.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-BLX43eWM1vMXgUThcLEHb3+OZejfUye1m/SCecfzTiE=";
+      sha256 = "sha256-jrrxG26OKOUiUzv12Td8Vy12gnj9+mHog/vZSaTwqmw=";
     };
   };
   httpx = {
@@ -557,23 +557,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "471958a3de864c093422c3d6b9302e2bcac72568";
+    version = "b93a33da86c73020c286b01940556e923c994c4c";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "471958a3de864c093422c3d6b9302e2bcac72568";
+      rev = "b93a33da86c73020c286b01940556e923c994c4c";
       fetchSubmodules = false;
-      sha256 = "sha256-j4mafK6vuI/Ceev4QxxJyxFPERes1w3BmKs7nYycALQ=";
+      sha256 = "sha256-ojJq1sYs4nZCYDQUckW7s6TeDpY7H8F6klj6iSVk2OA=";
     };
-    date = "2025-07-24";
-  };
-  wanxiang-lts-zh-hans = {
-    pname = "wanxiang-lts-zh-hans";
-    version = "2024";
-    src = fetchurl {
-      url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-Zeh6Er1hq8ubGUshffczur4zNJZSVxhUsddg/E8A7CM=";
-    };
+    date = "2025-09-02";
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";
