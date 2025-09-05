@@ -14,7 +14,8 @@ let
     if (builtins.hasAttr fuzu sourceJson) then sourceJson."${fuzu}" else sourceJson.base;
 in
 stdenvNoCC.mkDerivation rec {
-  inherit (source) pname version;
+  inherit (source) version;
+  pname = "rime-wanxiang";
   src = fetchurl { inherit (source) url sha256; };
   phases = [
     # "unpackPhase"

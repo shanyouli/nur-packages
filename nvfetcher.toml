@@ -35,14 +35,6 @@ src.pypi = "websocket_bridge_python"
 
 ### common
 
-[alist]
-src.github = "alist-org/alist"
-fetch.github = "alist-org/alist"
-
-[alist-web]
-src.github = "alist-org/alist-web"
-fetch.url = "https://github.com/alist-org/alist-web/releases/download/$ver/dist.tar.gz"
-
 ["bash-env-json"]
 src.github = "tesujimath/bash-env-json"
 fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
