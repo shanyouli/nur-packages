@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-09-04 07:29:32 UTC
+- LAST_MODIFY: 2025-09-05 09:21:23 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>32</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>33</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -78,6 +78,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20250829.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250824.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
