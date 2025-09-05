@@ -404,50 +404,50 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-mono.zip";
-      sha256 = "sha256-CZT51DscYo8EOqdq05R+6ZDY/owVIwUKLRtL9Vrcbrc=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/pragma-sevka-mono.zip";
+      sha256 = "sha256-fmi5/7pCqYWG60CHWSOSYmNlqZgMfft+KcX52hsTWzk=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-01r616cTKqs2EqIl9/UuT3QGWlyJi5Eccn4vDpCHDNk=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-bdi0PaFWhXA7ohDUUhdhxRYTk2umEV6Zp6wRhew//Rs=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-sans.zip";
-      sha256 = "sha256-7TxNZjRSoW9ziF+DRpSqb7/OZV12jbvVvJ/6GTB81Os=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/pragma-sevka-sans.zip";
+      sha256 = "sha256-DpjPVGLlybhPvGUX197rVAqrAxethb/nafKy3qapfog=";
     };
   };
   pragmasevka-sc = {
     pname = "pragmasevka-sc";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/Pragma-Sevka-SC.ttf";
-      sha256 = "sha256-HTuZ2pcla0RpJAQlOZxWDEK3Sbx2EetjHFe7/MYU/hw=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/Pragma-Sevka-SC.ttf";
+      sha256 = "sha256-qOXEFKLtwmpCVd1Pa2tm5Ust/txBHHs6Y1sJ/+4zAMU=";
     };
   };
   pragmasevka-sc-nf = {
     pname = "pragmasevka-sc-nf";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/Pragma-Sevka-SC-NF.ttf";
-      sha256 = "sha256-10YejgJqm+lxy/evZAPPY6hZVF68zmuJztdcBryVz3s=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/Pragma-Sevka-SC-NF.ttf";
+      sha256 = "sha256-NKDHsGywGdgHa/CcUbL1+qcx3MoySMEh9qYDBGaj3W4=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.2.8";
+    version = "33.2.9";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.8/pragma-sevka-serif.zip";
-      sha256 = "sha256-d7pqqBszssXZiH86Sk5VkPf/1/gfGxDwPiI2+i/WznI=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.2.9/pragma-sevka-serif.zip";
+      sha256 = "sha256-OyZtPAGeZdFDkCvVJpH/Ig543lsYMKwAY/KHSt5RI2k=";
     };
   };
   qbittorrent = {
@@ -483,15 +483,15 @@
   };
   sd = {
     pname = "sd";
-    version = "de03ce517348b3a33e389867189ddadab0b18a7a";
+    version = "98ec80331cf9423ae3586db47507f332d9ed9da2";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "de03ce517348b3a33e389867189ddadab0b18a7a";
+      rev = "98ec80331cf9423ae3586db47507f332d9ed9da2";
       fetchSubmodules = false;
-      sha256 = "sha256-H4W2Dkgpdh11fNb496bP+1lSi9q04119N7e6mzZCgA4=";
+      sha256 = "sha256-NaVRC5Q2bYTCRJfzlik/stlwADPJSSafrRH3CGkJP7w=";
     };
-    date = "2025-05-29";
+    date = "2025-09-04";
   };
   seam = {
     pname = "seam";
