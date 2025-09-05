@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4562260/download_with_aria2-4.17.0.3548.xpi",
-    "version": "4.17.0.3548",
-    "sha256": "1w18w3qv9bj6v9ls0sqhvjq1nfzqlk2sfyzrzfc5xj5hmna2xyni",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4569483/download_with_aria2-4.18.0.3595.xpi",
+    "version": "4.18.0.3595",
+    "sha256": "10ak0aplxcjrcsf3a4xvfcdd44bfrf5dddfywb4kakq99zbg78na",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -72,9 +72,9 @@
     "pname": "darkreader"
   },
   "chrome-mask": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4530699/chrome_mask-6.0.0.xpi",
-    "version": "6.0.0",
-    "sha256": "1ka2ndij4l3l66z2ks6qqq936x18q8vgizng4xysdyzwvv5hgpa2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4564577/chrome_mask-7.0.0.xpi",
+    "version": "7.0.0",
+    "sha256": "0i0kzn1n11abzc4i5qr8acf19f7pi05cd730xgakz58nxmyndw1z",
     "pname": "chrome-mask"
   },
   "easy-image-blocker": {
