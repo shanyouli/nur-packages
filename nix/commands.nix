@@ -180,12 +180,12 @@
                 print "::endgroup::"
                 print $"::group::(ansi green_underline)update bbdown deps(ansi reset)..."
                 if ("./result-" | path exists ) {
-                  ./result- ./pkgs/common/bbdown/deps.nix
+                  ./result- ./pkgs/common/bbdown/deps.json
                 } else if ("./result" | path exists ) {
-                  ./result ./pkgs/common/bbdown/deps.nix
+                  ./result ./pkgs/common/bbdown/deps.json
                 }
                 # fix some error see: @https://github.com/NixOS/nixpkgs/pull/343837
-                ${pkgs.python3}/bin/python3 ./tools/patch-dotnet-deps.py ./pkgs/common/bbdown/deps.nix
+                ${pkgs.python3}/bin/python3 ./tools/patch-dotnet-deps.py ./pkgs/common/bbdown/deps.json
                 print "::endgroup::"
               }
               print "::group::commit bbdown deps"
