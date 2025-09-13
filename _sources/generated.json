@@ -14,42 +14,6 @@
         },
         "version": "0.19.2-Beta"
     },
-    "alist": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "alist",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "alist-org",
-            "repo": "alist",
-            "rev": "v3.52.0",
-            "sha256": "sha256-epOS2SNqeiLAJPpMaLsv9FT19BuFejchyZUB+BcMQ/4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v3.52.0"
-    },
-    "alist-web": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "alist-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-peQVtyt62JwNt6PEepa0YNc0Pd1y8oAaCcmh28sjRBI=",
-            "type": "url",
-            "url": "https://github.com/alist-org/alist-web/releases/download/3.52.0/dist.tar.gz"
-        },
-        "version": "3.52.0"
-    },
     "alive-progress": {
         "cargoLocks": null,
         "date": null,
@@ -102,7 +66,7 @@
     },
     "bbdown": {
         "cargoLocks": null,
-        "date": "2025-08-03",
+        "date": "2025-09-07",
         "extract": null,
         "name": "bbdown",
         "passthru": null,
@@ -114,12 +78,12 @@
             "name": null,
             "owner": "nilaoda",
             "repo": "BBDown",
-            "rev": "1cba9b0cda6da90c3e1c20c6d57f592479eaf43b",
-            "sha256": "sha256-BPdjPw7CE5G+HPsKGvdnjjO5zKLnaKzV2pl7kCJvNXk=",
+            "rev": "4b47d1bc1752a1385604a8e388054aa5dcc667a7",
+            "sha256": "sha256-y4m92lAaIOsbHUCEtvz4s1zXxo4cPYmdX+vZtpuDenU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1cba9b0cda6da90c3e1c20c6d57f592479eaf43b"
+        "version": "4b47d1bc1752a1385604a8e388054aa5dcc667a7"
     },
     "borders": {
         "cargoLocks": null,
@@ -805,7 +769,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-08-29",
+        "date": "2025-09-10",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -817,12 +781,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "b9befa0788e142e0841eb3f5bbb1ba60850ad5f1",
-            "sha256": "sha256-ma8Z6Ar4n2D//hsloZrOy7rnQT4mivvQckWAPz2p8GM=",
+            "rev": "dd050e4c00c5f0aab43fab0ee6541e51a42f1494",
+            "sha256": "sha256-V/4/T04a/Q234RoodGCopfbFoiHsS9fIkblz3q3YkBw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b9befa0788e142e0841eb3f5bbb1ba60850ad5f1"
+        "version": "dd050e4c00c5f0aab43fab0ee6541e51a42f1494"
     },
     "sarasa-term": {
         "cargoLocks": null,
@@ -841,7 +805,7 @@
     },
     "sd": {
         "cargoLocks": null,
-        "date": "2025-09-04",
+        "date": "2025-09-13",
         "extract": null,
         "name": "sd",
         "passthru": null,
@@ -853,12 +817,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "98ec80331cf9423ae3586db47507f332d9ed9da2",
-            "sha256": "sha256-NaVRC5Q2bYTCRJfzlik/stlwADPJSSafrRH3CGkJP7w=",
+            "rev": "c730f8ad66a433ce7c9da954a77e81cca79bdce0",
+            "sha256": "sha256-azFuxM/BFrDyTb3BlL119N77RRLTIXhcftl91iHcoyE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "98ec80331cf9423ae3586db47507f332d9ed9da2"
+        "version": "c730f8ad66a433ce7c9da954a77e81cca79bdce0"
     },
     "seam": {
         "cargoLocks": {

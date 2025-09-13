@@ -9,25 +9,6 @@
       sha256 = "sha256-u4UBOxgYmWPh/ASeHU3yg/zCV1EVYVdHY469LvhapHA=";
     };
   };
-  alist = {
-    pname = "alist";
-    version = "v3.52.0";
-    src = fetchFromGitHub {
-      owner = "alist-org";
-      repo = "alist";
-      rev = "v3.52.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-epOS2SNqeiLAJPpMaLsv9FT19BuFejchyZUB+BcMQ/4=";
-    };
-  };
-  alist-web = {
-    pname = "alist-web";
-    version = "3.52.0";
-    src = fetchurl {
-      url = "https://github.com/alist-org/alist-web/releases/download/3.52.0/dist.tar.gz";
-      sha256 = "sha256-peQVtyt62JwNt6PEepa0YNc0Pd1y8oAaCcmh28sjRBI=";
-    };
-  };
   alive-progress = {
     pname = "alive-progress";
     version = "3.3.0";
@@ -60,15 +41,15 @@
   };
   bbdown = {
     pname = "bbdown";
-    version = "1cba9b0cda6da90c3e1c20c6d57f592479eaf43b";
+    version = "4b47d1bc1752a1385604a8e388054aa5dcc667a7";
     src = fetchFromGitHub {
       owner = "nilaoda";
       repo = "BBDown";
-      rev = "1cba9b0cda6da90c3e1c20c6d57f592479eaf43b";
+      rev = "4b47d1bc1752a1385604a8e388054aa5dcc667a7";
       fetchSubmodules = false;
-      sha256 = "sha256-BPdjPw7CE5G+HPsKGvdnjjO5zKLnaKzV2pl7kCJvNXk=";
+      sha256 = "sha256-y4m92lAaIOsbHUCEtvz4s1zXxo4cPYmdX+vZtpuDenU=";
     };
-    date = "2025-08-03";
+    date = "2025-09-07";
   };
   borders = {
     pname = "borders";
@@ -463,15 +444,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "b9befa0788e142e0841eb3f5bbb1ba60850ad5f1";
+    version = "dd050e4c00c5f0aab43fab0ee6541e51a42f1494";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "b9befa0788e142e0841eb3f5bbb1ba60850ad5f1";
+      rev = "dd050e4c00c5f0aab43fab0ee6541e51a42f1494";
       fetchSubmodules = false;
-      sha256 = "sha256-ma8Z6Ar4n2D//hsloZrOy7rnQT4mivvQckWAPz2p8GM=";
+      sha256 = "sha256-V/4/T04a/Q234RoodGCopfbFoiHsS9fIkblz3q3YkBw=";
     };
-    date = "2025-08-29";
+    date = "2025-09-10";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -483,15 +464,15 @@
   };
   sd = {
     pname = "sd";
-    version = "98ec80331cf9423ae3586db47507f332d9ed9da2";
+    version = "c730f8ad66a433ce7c9da954a77e81cca79bdce0";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "98ec80331cf9423ae3586db47507f332d9ed9da2";
+      rev = "c730f8ad66a433ce7c9da954a77e81cca79bdce0";
       fetchSubmodules = false;
-      sha256 = "sha256-NaVRC5Q2bYTCRJfzlik/stlwADPJSSafrRH3CGkJP7w=";
+      sha256 = "sha256-azFuxM/BFrDyTb3BlL119N77RRLTIXhcftl91iHcoyE=";
     };
-    date = "2025-09-04";
+    date = "2025-09-13";
   };
   seam = {
     pname = "seam";
