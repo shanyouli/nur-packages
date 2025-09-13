@@ -12,15 +12,15 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4569483/download_with_aria2-4.18.0.3595.xpi",
-    "version": "4.18.0.3595",
-    "sha256": "10ak0aplxcjrcsf3a4xvfcdd44bfrf5dddfywb4kakq99zbg78na",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4574340/download_with_aria2-4.18.1.3608.xpi",
+    "version": "4.18.1.3608",
+    "sha256": "03p4hi6d993bh3qwbs5ablf8i0395hf2ixhl229a7p31w7p28ykm",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4394007/surfingkeys_ff-1.17.5.xpi",
-    "version": "1.17.5",
-    "sha256": "0j8a4w5mk6q14zflpqs285il0ihykqayn8mx9qizcrv1q7nzjafa",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4573120/surfingkeys_ff-1.17.11.xpi",
+    "version": "1.17.11",
+    "sha256": "1y58gpz1wzz90h5x15l73qr6l39zz9dqs1ys2yva3jqzvyjyai7h",
     "pname": "surfingkeys_ff"
   },
   "auto-tab-discard": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4531307/ublock_origin-1.65.0.xpi",
-    "version": "1.65.0",
-    "sha256": "1krki9kf1xx7sypx33dgajrgajwq6bh6yxghcmh8ccx955mcjwry",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4573289/ublock_origin-1.66.0.xpi",
+    "version": "1.66.0",
+    "sha256": "1p6vdxprjh7kbcpz0129qlqi29959a56f9vyajxcixsvrsx20n0m",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -90,9 +90,9 @@
     "pname": "kiss-translator"
   },
   "raindropio": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4552760/raindropio-6.6.90.xpi",
-    "version": "6.6.90",
-    "sha256": "10x7pq4k3mlsnch9hz6w3svdskprpsynhs9y1isb42fyywxk3dld",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4570192/raindropio-6.6.91.xpi",
+    "version": "6.6.91",
+    "sha256": "1r6imqp0sfddfvxk49kxk7gymdjk8bs2fc8093k4233gyvzsafk4",
     "pname": "raindropio"
   }
 }
