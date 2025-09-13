@@ -189,8 +189,8 @@
                 print "::endgroup::"
               }
               print "::group::commit bbdown deps"
-              if ((git diff ./pkgs/common/bbdown/deps.nix) != "") {
-                git add ./pkgs/common/bbdown/deps.nix
+              if ((git diff ./pkgs/common/bbdown/deps.json) != "") {
+                git add ./pkgs/common/bbdown/deps.json
                 git commit -m "update bbdown deps"
               }
               print "::endgroup::"
