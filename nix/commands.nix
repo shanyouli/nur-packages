@@ -155,13 +155,13 @@
             } else {
               $base_key_args
             }
-            let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -i NIX_PATH | is-empty) {
+            let nix_path = "nixpkgs=${inputs.nixpkgs}" + (if ($env | get -o NIX_PATH | is-empty) {
                 ""
                 } else {
                  ":" + $env.NIX_PATH
                 })
             let pythonpath = "${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages" + (
-               if ($env | get -i PYTHONPATH | is-empty) {
+               if ($env | get -o PYTHONPATH | is-empty) {
                  ""
                } else {
                  ":" + $env.PYTHONPATH
