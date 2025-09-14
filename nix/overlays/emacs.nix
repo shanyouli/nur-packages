@@ -30,8 +30,7 @@
             withXwidgets = (!pkgs.stdenvNoCC.isDarwin) && ((lib.strings.toInt version) < 30);
             # @see https://emacs-china.org/t/native-compilation/23316/73
             # 目前没有发现明显的提升
-            # BUG: see@https://github.com/NixOS/nixpkgs/issues/395169
-            withNativeCompilation = !pkgs.stdenv.hostPlatform.isDarwin;
+            # withNativeCompilation = !pkgs.stdenv.hostPlatform.isDarwin;
           };
         in
         basePkg.overrideAttrs (old: {
