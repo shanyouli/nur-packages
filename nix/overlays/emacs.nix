@@ -30,6 +30,7 @@
             withXwidgets = (!pkgs.stdenvNoCC.isDarwin) && ((lib.strings.toInt version) < 30);
             # @see https://emacs-china.org/t/native-compilation/23316/73
             # 目前没有发现明显的提升
+            withNativeCompilation = false;
             # withNativeCompilation = !pkgs.stdenv.hostPlatform.isDarwin;
           };
         in
@@ -67,8 +68,8 @@
     {
       packages = {
         emacs-git = mkEmacs inputs'.emacs-overlay.packages.emacs-git emacs-git-version;
-        emacs = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
-        emacs-stable = mkEmacs pkgs.emacs (lib.versions.major pkgs.emacs.version);
+        emacs-unstable = mkEmacs inputs'.emacs-overlay.packages.emacs-unstable emacs-version;
+        emacs = mkEmacs pkgs.emacs (lib.versions.major pkgs.emacs.version);
         emacs-igc = mkEmacs inputs'.emacs-overlay.packages.emacs-igc emacs-git-version;
       };
     };
