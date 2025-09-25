@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-09-25
+
+- add flexfox
+
 ## 2025-09-07
 
 + 移除 alist，官方包包含。

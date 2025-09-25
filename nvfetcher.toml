@@ -228,6 +228,10 @@ src.github = "zero-peak/ZeroOmega"
 # src.to_pattern = "\\1"
 fetch.url = "https://github.com/zero-peak/ZeroOmega/releases/download/$ver/zeroomega-$ver.xpi"
 
+[flexfox]
+src.github = "yuuqilin/FlexFox"
+fetch.github = "yuuqilin/FlexFox"
+
 ### packages in modules
 
 #### emacs
