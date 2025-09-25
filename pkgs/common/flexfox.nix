@@ -13,7 +13,8 @@ runCommandLocal "flexfox"
   }
   ''
     mkdir -p $out
-    cp -rv $src/chrome $out/
+    cp -rv $src/chrome $out/chrome
     cp -rv $src/scripts/user.js $out/
     cp -rv $src/README*.md $out
+    cp -rv $src/Sidebery $out/Sidebery
   ''
