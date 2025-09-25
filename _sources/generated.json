@@ -99,12 +99,12 @@
             "name": null,
             "owner": "FelixKratz",
             "repo": "JankyBorders",
-            "rev": "v1.8.3",
-            "sha256": "sha256-lc61PjaRZ8ZOWAFhsf/G3sQkd1oUyePHU43w4pt1AWY=",
+            "rev": "v1.8.4",
+            "sha256": "sha256-31Er+cUQNJbZnXKC6KvlrBhOvyPAM7nP3BaxunAtvWg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.8.3"
+        "version": "v1.8.4"
     },
     "clash2singbox": {
         "cargoLocks": null,
@@ -406,6 +406,27 @@
             "type": "github"
         },
         "version": "4.4.5"
+    },
+    "flexfox": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "flexfox",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "yuuqilin",
+            "repo": "FlexFox",
+            "rev": "v5.0.3",
+            "sha256": "sha256-RIHfeJ2ke8hFTA5t258bJnysxDQO0UPZpINh+pJsxAQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v5.0.3"
     },
     "go-musicfox": {
         "cargoLocks": null,
@@ -769,7 +790,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-09-17",
+        "date": "2025-09-24",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -781,12 +802,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "2a25d90f1b3b2142d0b2e8d23a0a752ce32b55d3",
-            "sha256": "sha256-Bfp02YJHqotT4OtLxYFcfivFGRvEKuEk9w5eiTnLSMo=",
+            "rev": "f0cd71cbe511026b4961f2febd03afb350a07aa4",
+            "sha256": "sha256-/BiVpDEPqH0C40SZZr3HCazNcJG05FWlSLZxPbGO4SM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2a25d90f1b3b2142d0b2e8d23a0a752ce32b55d3"
+        "version": "f0cd71cbe511026b4961f2febd03afb350a07aa4"
     },
     "sarasa-term": {
         "cargoLocks": null,

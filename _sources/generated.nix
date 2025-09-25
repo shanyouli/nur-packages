@@ -58,13 +58,13 @@
   };
   borders = {
     pname = "borders";
-    version = "v1.8.3";
+    version = "v1.8.4";
     src = fetchFromGitHub {
       owner = "FelixKratz";
       repo = "JankyBorders";
-      rev = "v1.8.3";
+      rev = "v1.8.4";
       fetchSubmodules = false;
-      sha256 = "sha256-lc61PjaRZ8ZOWAFhsf/G3sQkd1oUyePHU43w4pt1AWY=";
+      sha256 = "sha256-31Er+cUQNJbZnXKC6KvlrBhOvyPAM7nP3BaxunAtvWg=";
     };
   };
   clash2singbox = {
@@ -242,6 +242,17 @@
       rev = "4.4.5";
       fetchSubmodules = false;
       sha256 = "sha256-VC8LMjwIvF6oG8ZVtFQvo2mGdyAzQyluAGBoK8N2/QM=";
+    };
+  };
+  flexfox = {
+    pname = "flexfox";
+    version = "v5.0.3";
+    src = fetchFromGitHub {
+      owner = "yuuqilin";
+      repo = "FlexFox";
+      rev = "v5.0.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-RIHfeJ2ke8hFTA5t258bJnysxDQO0UPZpINh+pJsxAQ=";
     };
   };
   go-musicfox = {
@@ -449,15 +460,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "2a25d90f1b3b2142d0b2e8d23a0a752ce32b55d3";
+    version = "f0cd71cbe511026b4961f2febd03afb350a07aa4";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "2a25d90f1b3b2142d0b2e8d23a0a752ce32b55d3";
+      rev = "f0cd71cbe511026b4961f2febd03afb350a07aa4";
       fetchSubmodules = false;
-      sha256 = "sha256-Bfp02YJHqotT4OtLxYFcfivFGRvEKuEk9w5eiTnLSMo=";
+      sha256 = "sha256-/BiVpDEPqH0C40SZZr3HCazNcJG05FWlSLZxPbGO4SM=";
     };
-    date = "2025-09-17";
+    date = "2025-09-24";
   };
   sarasa-term = {
     pname = "sarasa-term";
