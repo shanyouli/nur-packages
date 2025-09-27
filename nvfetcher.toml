@@ -167,7 +167,7 @@ src.github = "FelixKratz/JankyBorders"
 fetch.github = "FelixKratz/JankyBorders"
 
 [dutis]
-src.git = "https://github.com/tsonglew/dutis"
+src.github = "tsonglew/dutis"
 fetch.github = "tsonglew/dutis"
 cargo_locks = ["Cargo.lock"]
 git.fetchSubmodules = false
