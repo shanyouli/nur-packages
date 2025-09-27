@@ -110,21 +110,20 @@
   };
   dutis = {
     pname = "dutis";
-    version = "e6784552147aeb7e2cd860d432e373b8f7c74fac";
+    version = "v2.0.0";
     src = fetchFromGitHub {
       owner = "tsonglew";
       repo = "dutis";
-      rev = "e6784552147aeb7e2cd860d432e373b8f7c74fac";
+      rev = "v2.0.0";
       fetchSubmodules = false;
       sha256 = "sha256-YmkmHsA5PvAOowl9y7W8DB4wwdupKCxnQA1cuWxsiE8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./dutis-e6784552147aeb7e2cd860d432e373b8f7c74fac/Cargo.lock;
+      lockFile = ./dutis-v2.0.0/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2025-08-24";
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
@@ -401,50 +400,50 @@
   };
   pragmasevka = {
     pname = "pragmasevka";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/pragma-sevka-mono.zip";
-      sha256 = "sha256-j+FigAJrWIiIWn0HhNYU33D0rXj0uKQFR5sr6OUMscM=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/pragma-sevka-mono.zip";
+      sha256 = "sha256-ji3rezqTili/VwoOCvPvugSismU0ZRo0tJ1gxnzol8k=";
     };
   };
   pragmasevka-nerd = {
     pname = "pragmasevka-nerd";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/pragma-sevka-mono-nerd.zip";
-      sha256 = "sha256-kPQsPT1f3EL46LrbTdDwKEYP08N2i/pQpMWbwTWAn2Q=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/pragma-sevka-mono-nerd.zip";
+      sha256 = "sha256-hZX6YyQxl83a7qfmz5KvApY/+dnKobz7D21k/MGgmFE=";
     };
   };
   pragmasevka-sans = {
     pname = "pragmasevka-sans";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/pragma-sevka-sans.zip";
-      sha256 = "sha256-aZErQLJb2vjkIS/pB5C7oIGEhzLth0asVarZ7/dhazM=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/pragma-sevka-sans.zip";
+      sha256 = "sha256-88crwiVHNr86EXw0x5n/a0Fz+Tk5zsHatoVtpVtVqxw=";
     };
   };
   pragmasevka-sc = {
     pname = "pragmasevka-sc";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/Pragma-Sevka-SC.ttf";
-      sha256 = "sha256-n9+yVkBm4jBxuLMm8m0q/RIZcm/njmxm0l/gy7B6CYI=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/Pragma-Sevka-SC.ttf";
+      sha256 = "sha256-gDYU41Fp4sn/R0EGVvhEMOKwYSa8PTzZCuuzHxpDWyw=";
     };
   };
   pragmasevka-sc-nf = {
     pname = "pragmasevka-sc-nf";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/Pragma-Sevka-SC-NF.ttf";
-      sha256 = "sha256-MU5/2u+O67hrjDYyh6f8YtPoh5H6zWizqcIJ6M/VvAs=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/Pragma-Sevka-SC-NF.ttf";
+      sha256 = "sha256-PXTyWAMcZ3CizBvVAdrktiF7jZ5vAHhFztERbc7ay5g=";
     };
   };
   pragmasevka-serif = {
     pname = "pragmasevka-serif";
-    version = "33.3.0";
+    version = "33.3.0-1758956940";
     src = fetchurl {
-      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0/pragma-sevka-serif.zip";
-      sha256 = "sha256-OPMtCndOKZCXfdsNLjFQWCmxonk9Cw7FNFQUtzK8D2s=";
+      url = "https://github.com/shanyouli/iosevka/releases/download/v33.3.0-1758956940/pragma-sevka-serif.zip";
+      sha256 = "sha256-rTbU7kRRUgyw66K2A8qNp82WPcdRe0iytaICaRNiVRI=";
     };
   };
   qbittorrent = {
@@ -460,15 +459,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "f0cd71cbe511026b4961f2febd03afb350a07aa4";
+    version = "fe40df58703cb7f0c98bdb6a9e2f62cdb1a9744d";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "f0cd71cbe511026b4961f2febd03afb350a07aa4";
+      rev = "fe40df58703cb7f0c98bdb6a9e2f62cdb1a9744d";
       fetchSubmodules = false;
-      sha256 = "sha256-/BiVpDEPqH0C40SZZr3HCazNcJG05FWlSLZxPbGO4SM=";
+      sha256 = "sha256-3wmlaN6G/XCuKY2YeMBP08kmusAyhIPsZssx4b5H5dY=";
     };
-    date = "2025-09-24";
+    date = "2025-09-26";
   };
   sarasa-term = {
     pname = "sarasa-term";
