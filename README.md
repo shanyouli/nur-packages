@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-09-25 13:51:23 UTC
+- LAST_MODIFY: 2025-09-27 07:54:11 UTC
 
 
 ## How to use
@@ -88,15 +88,15 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.0|我的自定义 iosvake|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-09-24|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-09-26|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v12.6.2|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
@@ -115,7 +115,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |:---|:---|:---|:---|
 |[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.19.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
-|[**dutis**](https://github.com/tsonglew/dutis)||unstable-2025-08-24|A command-line tool to select default applications, based on duti|
+|[**dutis**](https://github.com/tsonglew/dutis)||2.0.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
 |[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.3.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
