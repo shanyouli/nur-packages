@@ -145,7 +145,7 @@
           ''
             use std log
             log info $"The execution file path is ($env.FILE_PWD)"
-            let base_key_args = [ "-r" "10"  "--keep-going" "-j" "3" "--commit-changes"]
+            let base_key_args = [ "-r" "10"  "--keep-going" "-j" "3" "--commit-changes" "--keep-old"]
             let nvfetcher_config = $env.HOME | path join ".config" "nvfetcher.toml"
             let ccommit = git rev-parse --short=7 HEAD
             let key_args =         if ($nvfetcher_config | path exists) {
