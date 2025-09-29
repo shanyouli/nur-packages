@@ -46,6 +46,7 @@
                 ]
                 ++ lib.optionals (version == "30") [ srcs."emacs${version}.role-patch".src ]
                 ++ lib.optionals (version == "29") [ srcs."emacs${version}.no-frame-refocus-cocoa".src ]
+                ++ lib.optionals (version != "29") [ srcs."emacs${version}.ns-mac-input-source".src ]
               else
                 [ ]
             );

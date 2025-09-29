@@ -263,6 +263,10 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
 
+["emacs30.ns-mac-input-source"]
+src.git = "https://github.com/LuciusChen/.emacs.d"
+fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/patches/emacs-30/ns-alpha-background.patch"
+
 ["emacs31.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/round-undecorated-frame.patch"
@@ -270,6 +274,10 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs31.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/system-appearance.patch"
+
+["emacs31.ns-mac-input-source"]
+src.git = "https://github.com/LuciusChen/.emacs.d"
+fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/patches/emacs-31/ns-mac-input-source.patch"
 
 #### fish plugins
 ["fisher"]
