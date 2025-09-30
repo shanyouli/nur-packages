@@ -119,7 +119,7 @@
       sha256 = "sha256-YmkmHsA5PvAOowl9y7W8DB4wwdupKCxnQA1cuWxsiE8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./dutis-v2.0.0/Cargo.lock;
+      lockFile = ./. + "/sha256-YmkmHsA5PvAOowl9y7W8DB4wwdupKCxnQA1cuWxsiE8=/Cargo.lock";
       outputHashes = {
         
       };
@@ -161,6 +161,15 @@
     };
     date = "2025-08-24";
   };
+  "emacs30.ns-mac-input-source" = {
+    pname = "emacs30.ns-mac-input-source";
+    version = "f856750b06f383165e1e052d5843a11618bc9c36";
+    src = fetchurl {
+      url = "https://github.com/LuciusChen/.emacs.d/raw/f856750b06f383165e1e052d5843a11618bc9c36/patches/emacs-30/ns-alpha-background.patch";
+      sha256 = "sha256-izzfjAWg4e8yYDuODXKIgwG7TdQUg2Su6ZebyzCg9hM=";
+    };
+    date = "2025-09-28";
+  };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
     version = "15a9e55c28347ace5bc4d1cbd954e8594bc67dd9";
@@ -187,6 +196,15 @@
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
     date = "2025-08-24";
+  };
+  "emacs31.ns-mac-input-source" = {
+    pname = "emacs31.ns-mac-input-source";
+    version = "f856750b06f383165e1e052d5843a11618bc9c36";
+    src = fetchurl {
+      url = "https://github.com/LuciusChen/.emacs.d/raw/f856750b06f383165e1e052d5843a11618bc9c36/patches/emacs-31/ns-mac-input-source.patch";
+      sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
+    };
+    date = "2025-09-28";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
@@ -226,7 +244,7 @@
       sha256 = "sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./fav-v1.1.1/Cargo.lock;
+      lockFile = ./. + "/sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=/Cargo.lock";
       outputHashes = {
         
       };
@@ -329,7 +347,7 @@
       sha256 = "sha256-Qxs6p+MyS/0NTbJzLKvZHgKBUE1+z+zaINouG//Uio8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./manix-5a69f920f1501f3f7e71a275ab8dbfd4a9f85fb3/Cargo.lock;
+      lockFile = ./. + "/sha256-Qxs6p+MyS_0NTbJzLKvZHgKBUE1+z+zaINouG__Uio8=/Cargo.lock";
       outputHashes = {
         
       };
@@ -347,7 +365,7 @@
       sha256 = "sha256-tL3C/b2BPOGQpV287wECDCDWmKwwPvezAAN3qz7N07M=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./mkalias-v0.3.2/Cargo.lock;
+      lockFile = ./. + "/sha256-tL3C_b2BPOGQpV287wECDCDWmKwwPvezAAN3qz7N07M=/Cargo.lock";
       outputHashes = {
         
       };
@@ -500,7 +518,7 @@
       sha256 = "sha256-rWbswgVQNA006gi9G+Vma+y0NbMDC0/P6SqHwxxvky8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./seam-v_cli.0.1.39/Cargo.lock;
+      lockFile = ./. + "/sha256-rWbswgVQNA006gi9G+Vma+y0NbMDC0_P6SqHwxxvky8=/Cargo.lock";
       outputHashes = {
         
       };
