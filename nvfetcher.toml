@@ -54,7 +54,7 @@ fetch.github = "OwO-Network/DeepLX"
 [fav]
 src.github = "kingwingfly/fav"
 fetch.github = "kingwingfly/fav"
-cargo_locks = [ "Cargo.lock" ]
+cargo_lock = [ "Cargo.lock" ]
 
 [go-musicfox]
 src.github = "go-musicfox/go-musicfox"
@@ -66,7 +66,7 @@ git.fetchSubmodules = false
 [manix]
 src.git = "https://github.com/kaii-zen/manix"
 fetch.github = "kaii-zen/manix"
-cargo_locks = ["Cargo.lock"]
+cargo_lock = ["Cargo.lock"]
 
 [musicn]
 src.github_tag = "zonemeen/musicn"
@@ -131,7 +131,7 @@ fetch.url = "https://github.com/laishulu/Sarasa-Term-SC-Nerd/releases/download/v
 [seam]
 src.github = "Borber/seam"
 fetch.github = "Borber/seam"
-cargo_locks = ["Cargo.lock"]
+cargo_lock = ["Cargo.lock"]
 
 [singboxp]
 fetch.github = "PuerNya/sing-box"
@@ -169,7 +169,7 @@ fetch.github = "FelixKratz/JankyBorders"
 [dutis]
 src.github = "tsonglew/dutis"
 fetch.github = "tsonglew/dutis"
-cargo_locks = ["Cargo.lock"]
+cargo_lock = ["Cargo.lock"]
 git.fetchSubmodules = false
 
 [emacsclient]
@@ -187,7 +187,7 @@ fetch.url = "https://github.com/hraban/mac-app-util/raw/$ver/main.lisp"
 [mkalias]
 src.github_tag = "reckenrode/mkAlias"
 fetch.github = "reckenrode/mkAlias"
-cargo_locks = ["Cargo.lock"]
+cargo_lock = ["Cargo.lock"]
 
 [nowplaying-cli]
 src.github = "kirtan-shah/nowplaying-cli"
