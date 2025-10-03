@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-09-30 05:48:17 UTC
+- LAST_MODIFY: 2025-10-03 21:57:01 UTC
 
 
 ## How to use
@@ -74,30 +74,30 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
 |[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-09-07|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.8|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.9|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250926.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20250926.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20250928.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251002.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.0.3|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-06-27|Turn Lua code into Fennel code|
+|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-02|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.0-1758956940|我的自定义 iosvake|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-09-26|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v12.6.9|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.0.3|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
@@ -137,7 +137,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.11.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||7.0.0|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.110|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.19.3.3712|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.19.6.3780|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.20.13|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||1.9.2|Simple, open source bilingual translation extension & Greasemonkey script|
