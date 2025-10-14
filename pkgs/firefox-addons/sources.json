@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4551629/noscript-13.0.9.xpi",
-    "version": "13.0.9",
-    "sha256": "1xbisx3xqak9aj7nb2lh94an6yfldsl6a2g2qc87vxi1zwdbcnjj",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4593796/noscript-13.2.1.xpi",
+    "version": "13.2.1",
+    "sha256": "16p63kg7zwnfss9sb3j2kn9m7dx9prh09h4vbz3b0pg5s7rrf0hr",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4589249/download_with_aria2-4.19.6.3780.xpi",
-    "version": "4.19.6.3780",
-    "sha256": "0khjg7pf69dnm2ylz0jzfagfiljwsgv8pm04cvwiwp2y0d1nb2xf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4596825/download_with_aria2-4.19.7.3792.xpi",
+    "version": "4.19.7.3792",
+    "sha256": "1jv76aylv5qk2l39wizfx6qg6nim1l4vqp7v34h6n5ya18hj3vby",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4574984/immersive_translate-1.20.13.xpi",
-    "version": "1.20.13",
-    "sha256": "11y7lfrvqwib1b5a8cwqn0ij2bnxnj0lw70g2kfljyy8lywd15sh",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4582985/immersive_translate-1.21.7.xpi",
+    "version": "1.21.7",
+    "sha256": "1jhjs1akh1g8ck21gja1xycziv6g1pyqm5ym2943cfvq827cpnpd",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -72,9 +72,9 @@
     "pname": "darkreader"
   },
   "chrome-mask": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4564577/chrome_mask-7.0.0.xpi",
-    "version": "7.0.0",
-    "sha256": "0i0kzn1n11abzc4i5qr8acf19f7pi05cd730xgakz58nxmyndw1z",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4589979/chrome_mask-7.0.1.xpi",
+    "version": "7.0.1",
+    "sha256": "17xrgrivlz1s374wrymz3sbssq11z5n68286qmnb9a621053xj2j",
     "pname": "chrome-mask"
   },
   "easy-image-blocker": {
