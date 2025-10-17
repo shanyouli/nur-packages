@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4596825/download_with_aria2-4.19.7.3792.xpi",
-    "version": "4.19.7.3792",
-    "sha256": "1jv76aylv5qk2l39wizfx6qg6nim1l4vqp7v34h6n5ya18hj3vby",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4600117/download_with_aria2-4.20.0.3808.xpi",
+    "version": "4.20.0.3808",
+    "sha256": "01caz2awzkxvmz7wh5iklw9s7fh4xpy2inz95lp8r0q2pxfqvgdz",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -30,9 +30,9 @@
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4497925/user_agent_string_switcher-0.6.5.1.xpi",
-    "version": "0.6.5.1",
-    "sha256": "0wf16hd4cy0m8f7qsnh9cmgl0pmzilhjl58czlv2id1l6ky7rbxa",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4593736/user_agent_string_switcher-0.6.6.xpi",
+    "version": "0.6.6",
+    "sha256": "16bmjsw2g47f8fqcshdiyba2gl6amabsjxldmzvj39w9pllyw7ww",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
@@ -84,9 +84,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4553890/kiss_translator-1.9.2.xpi",
-    "version": "1.9.2",
-    "sha256": "05j9g3d547bisagl4amyn1nipw7vj99qc1gmr7why07i8rzb3mc2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4599865/kiss_translator-2.0.2.xpi",
+    "version": "2.0.2",
+    "sha256": "10gk6ksbs5c7q14751sb3xm7vr925i317p5f7wj7a0ly72gsicy9",
     "pname": "kiss-translator"
   },
   "raindropio": {
