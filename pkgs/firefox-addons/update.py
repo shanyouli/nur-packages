@@ -136,8 +136,7 @@ if __name__ == "__main__":
             "immersive-translate",
             "darkreader",
             "chrome-mask",
-            # NOTE: https://github.com/zero-peak/ZeroOmega/issues/202
-            # "zeroomega", # remove firefox addon
+            "zeroomega", 
             "easy-image-blocker",
             "kiss-translator",
             "raindropio",
