@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-10-17 22:26:49 UTC
+- LAST_MODIFY: 2025-10-28 11:39:32 UTC
 
 
 ## How to use
@@ -72,32 +72,32 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-09-07|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2025-10-23|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
-|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.0.9|DeepL Free API (No TOKEN required|
+|[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.0|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251017.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251017.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251028.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251026.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.5.2|Firefox Chrome css|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.5.3|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-05|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||unstable-2023-09-28|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.3|我的自定义 iosvake|
 |[**qbittorrent-enhanced**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
 |[**qbittorrent-enhanced-nox**](https://www.qbittorrent.org)||release-5.1.2.10|Featureful free software BitTorrent client|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-10-14|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.1.5|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-10-23|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.1.10|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
@@ -136,21 +136,21 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.11.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||7.0.1|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.110|Dark Reader Chrome and Firefox extension|
+|[**darkreader**](https://darkreader.org/)||4.9.112|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.20.0.3808|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.21.7|Immersive Dual Web Page Translation Extension |
-|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.2|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.2.1|NoScript Security Suite|
+|[**immersive-translate**](https://immersivetranslate.com/)||1.22.4|Immersive Dual Web Page Translation Extension |
+|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.4|Simple, open source bilingual translation extension & Greasemonkey script|
+|[**noscript**](https://noscript.net/)||13.2.2|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.3.3|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.3.16|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.11|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.66.4|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.67.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.6.6|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.31.0|An open source userscript manager.|
-|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.4.1| Manage and switch between multiple proxies quickly & easily.|
+|[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.4.5| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
 ### python3-apps
@@ -161,7 +161,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2023-02-22|A lightweight music downloader written in pure python.|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-10-22|A lightweight music downloader written in pure python.|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
