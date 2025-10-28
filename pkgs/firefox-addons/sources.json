@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4593796/noscript-13.2.1.xpi",
-    "version": "13.2.1",
-    "sha256": "16p63kg7zwnfss9sb3j2kn9m7dx9prh09h4vbz3b0pg5s7rrf0hr",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4597669/noscript-13.2.2.xpi",
+    "version": "13.2.2",
+    "sha256": "0w2w0a76dk01bkh83mqwgs9ky02rjqk15z5sxg4a6mw0hpr81bpm",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -54,21 +54,21 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4578681/ublock_origin-1.66.4.xpi",
-    "version": "1.66.4",
-    "sha256": "1c3z0ww46xcc370rlb3g8q41hjxx5csqjhwnd0ajy8810s9wsqmw",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4598854/ublock_origin-1.67.0.xpi",
+    "version": "1.67.0",
+    "sha256": "0fhk7jmhl4mkhf30sjg9hb7yrk05f2y3vdc8s82qsyl1kz26wg5q",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4582985/immersive_translate-1.21.7.xpi",
-    "version": "1.21.7",
-    "sha256": "1jhjs1akh1g8ck21gja1xycziv6g1pyqm5ym2943cfvq827cpnpd",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4601644/immersive_translate-1.22.4.xpi",
+    "version": "1.22.4",
+    "sha256": "1baf76i4k5iazqxvsqz0l1c02yicsg8j8d047sb4hirmkwly2nfq",
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4535824/darkreader-4.9.110.xpi",
-    "version": "4.9.110",
-    "sha256": "1p1hmrpqcnx8p218c8m148rz1z3n40xlk03lb441mk3hcj14aql4",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4598977/darkreader-4.9.112.xpi",
+    "version": "4.9.112",
+    "sha256": "0dxlxkjbkimpipw061p4i0w48xqsw7wcnq4a3qg2yrk1brxw47yw",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -77,6 +77,12 @@
     "sha256": "17xrgrivlz1s374wrymz3sbssq11z5n68286qmnb9a621053xj2j",
     "pname": "chrome-mask"
   },
+  "zeroomega": {
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4593637/zeroomega-3.4.5.xpi",
+    "version": "3.4.5",
+    "sha256": "02a0vipav5c4zvyisv27rq3kd0x6cf7fzy1saxgi7gsxif558ly0",
+    "pname": "zeroomega"
+  },
   "easy-image-blocker": {
     "url": "https://addons.mozilla.org/firefox/downloads/file/3020336/easy_image_blocker-3.1.5.xpi",
     "version": "3.1.5",
@@ -84,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4599865/kiss_translator-2.0.2.xpi",
-    "version": "2.0.2",
-    "sha256": "10gk6ksbs5c7q14751sb3xm7vr925i317p5f7wj7a0ly72gsicy9",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4606126/kiss_translator-2.0.4.xpi",
+    "version": "2.0.4",
+    "sha256": "17zq6aaq724mlfrnn7m4dd0hwbimilpzqrpv9sl9xkf4n674wr3b",
     "pname": "kiss-translator"
   },
   "raindropio": {
