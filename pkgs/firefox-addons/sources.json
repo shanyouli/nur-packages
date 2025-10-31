@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4606126/kiss_translator-2.0.4.xpi",
-    "version": "2.0.4",
-    "sha256": "17zq6aaq724mlfrnn7m4dd0hwbimilpzqrpv9sl9xkf4n674wr3b",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4610158/kiss_translator-2.0.5.xpi",
+    "version": "2.0.5",
+    "sha256": "0yn1v8nynwjpzx7kw2kg7m8brsvmqalzni23rsx16a294haghscv",
     "pname": "kiss-translator"
   },
   "raindropio": {
