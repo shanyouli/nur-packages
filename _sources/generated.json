@@ -272,7 +272,7 @@
     },
     "emacs30.ns-mac-input-source": {
         "cargoLock": null,
-        "date": "2025-10-27",
+        "date": "2025-10-31",
         "extract": null,
         "name": "emacs30.ns-mac-input-source",
         "passthru": null,
@@ -281,9 +281,9 @@
             "name": null,
             "sha256": "sha256-izzfjAWg4e8yYDuODXKIgwG7TdQUg2Su6ZebyzCg9hM=",
             "type": "url",
-            "url": "https://github.com/LuciusChen/.emacs.d/raw/90e10f7818ff889536999b5da41e2b8f5ef4682f/patches/emacs-30/ns-alpha-background.patch"
+            "url": "https://github.com/LuciusChen/.emacs.d/raw/0a1a42a1850e1673dd6289b4bf976a745d4c5151/patches/emacs-30/ns-alpha-background.patch"
         },
-        "version": "90e10f7818ff889536999b5da41e2b8f5ef4682f"
+        "version": "0a1a42a1850e1673dd6289b4bf976a745d4c5151"
     },
     "emacs30.role-patch": {
         "cargoLock": null,
@@ -332,7 +332,7 @@
     },
     "emacs31.ns-mac-input-source": {
         "cargoLock": null,
-        "date": "2025-10-27",
+        "date": "2025-10-31",
         "extract": null,
         "name": "emacs31.ns-mac-input-source",
         "passthru": null,
@@ -341,9 +341,9 @@
             "name": null,
             "sha256": "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=",
             "type": "url",
-            "url": "https://github.com/LuciusChen/.emacs.d/raw/90e10f7818ff889536999b5da41e2b8f5ef4682f/patches/emacs-31/ns-mac-input-source.patch"
+            "url": "https://github.com/LuciusChen/.emacs.d/raw/0a1a42a1850e1673dd6289b4bf976a745d4c5151/patches/emacs-31/ns-mac-input-source.patch"
         },
-        "version": "90e10f7818ff889536999b5da41e2b8f5ef4682f"
+        "version": "0a1a42a1850e1673dd6289b4bf976a745d4c5151"
     },
     "emacs31.round-undecorated-frame": {
         "cargoLock": null,
@@ -716,11 +716,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UgvP6qiTgJA2xATbG3EXtCik2MrjYU1B3VzUfBJ3kG8=",
+            "sha256": "sha256-jb3oXV2MjHfhSzxNc9GQBDQjfVgczs20tpHKy2PKn1c=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/pragma-sevka-mono.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/pragma-sevka-mono.zip"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "pragmasevka-nerd": {
         "cargoLock": null,
@@ -731,11 +731,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-HpHiO81OOD7yp80G9hsdRSRzbItoulkE1i6cSIjbTGo=",
+            "sha256": "sha256-fYInFJfvquCa6/AaX4vOlFhETacbiVi2pPPYsqtoDrE=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/pragma-sevka-mono-nerd.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/pragma-sevka-mono-nerd.zip"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "pragmasevka-sans": {
         "cargoLock": null,
@@ -746,11 +746,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9F78hkcqeVQv6LlXQt99AtyhFLQPZTOF4XIeEP0ypqU=",
+            "sha256": "sha256-NZMnssJzJpSCivRfdPzIzfxzpqhaz9UYK/jIkAYwZ0g=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/pragma-sevka-sans.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/pragma-sevka-sans.zip"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "pragmasevka-sc": {
         "cargoLock": null,
@@ -761,11 +761,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aGgEMdzJ2GbgcFFz+YlROmQJ3LVCXpJpSmxztFSCWrM=",
+            "sha256": "sha256-X9nf+p0qaJ9F2cF3RnttBQnmhOKDvorVwb1gM4AWtZY=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/Pragma-Sevka-SC.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/Pragma-Sevka-SC.ttf"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "pragmasevka-sc-nf": {
         "cargoLock": null,
@@ -776,11 +776,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pEiahgVyvhK8JYWJmeQpmJCBCA1A6eIBLYYCW+ekpYs=",
+            "sha256": "sha256-wObbvwFACjIyQgfODEMFg6GF6Fs8ecl01IbzIFdRBhc=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/Pragma-Sevka-SC-NF.ttf"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/Pragma-Sevka-SC-NF.ttf"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "pragmasevka-serif": {
         "cargoLock": null,
@@ -791,11 +791,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-l/8ItSHZ7GhKGMU6NdUeSZoONAM04Oc98ZCvt3gKZqI=",
+            "sha256": "sha256-B7NY0e8cjLFKsGdAvjHTajg4KIi7k1unmylP93qDkes=",
             "type": "url",
-            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.3/pragma-sevka-serif.zip"
+            "url": "https://github.com/shanyouli/iosevka/releases/download/v33.3.1/pragma-sevka-serif.zip"
         },
-        "version": "33.3.3"
+        "version": "33.3.1"
     },
     "qbittorrent": {
         "cargoLock": null,
@@ -820,7 +820,7 @@
     },
     "rime-ice": {
         "cargoLock": null,
-        "date": "2025-10-23",
+        "date": "2025-11-01",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -832,12 +832,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "49e5ed738f849279c7033221b6227c295f0e05f5",
-            "sha256": "sha256-NuqUBZJiPAidwBEIq36H8YstutCOUJdxvJGdFAVJ2YU=",
+            "rev": "0d85dd53f833f885480eb3dbf5f14368985e29dc",
+            "sha256": "sha256-U5Eh3o0m5Inuk/plGrOD2qdE9KYAWG2kRi8nIVpmw4s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "49e5ed738f849279c7033221b6227c295f0e05f5"
+        "version": "0d85dd53f833f885480eb3dbf5f14368985e29dc"
     },
     "sarasa-term": {
         "cargoLock": null,
