@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 2025-11-17
+
+- 修复 bittorrent error
 ## 2025-09-25
 
 - add flexfox

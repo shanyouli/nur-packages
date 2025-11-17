@@ -74,7 +74,7 @@
             print $"No need to build dev packages."
             exit 0
           }
-          let dev_apps = $dev_apps | get apps | filter {|x| $x in $DEFAULT_APPS}
+          let dev_apps = $dev_apps | get apps | where {|x| $x in $DEFAULT_APPS}
           const NIX_LOGFILE = "nix-build-uncached.log"
           def nixVersion>= [v: string]: nothing -> bool  {
             let currentVersion = nix --version | cut -d" " -f3 | split row "."

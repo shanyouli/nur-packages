@@ -4,7 +4,7 @@
   sources,
   boost,
   cmake,
-  apple-sdk_13,
+  # apple-sdk_13,
   libtorrent-rasterbar,
   ninja,
   qt6Packages,
@@ -14,6 +14,8 @@
   trackerSearch ? true,
   python3,
   webuiSupport ? true,
+  openssl,
+  zlib,
 }:
 let
   inherit (qt6Packages)
@@ -39,18 +41,19 @@ stdenv.mkDerivation rec {
     wrapQtAppsHook
   ];
 
-  buildInputs =
-    [
-      boost
-      libtorrent-rasterbar
-      qtbase
-      qtsvg
-      qttools
-    ]
-    ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ]
-    ++ lib.optionals guiSupport [ dbus ]
-    ++ lib.optionals (guiSupport && stdenv.hostPlatform.isLinux) [ qtwayland ]
-    ++ lib.optionals trackerSearch [ python3 ];
+  buildInputs = [
+    boost
+    libtorrent-rasterbar
+    openssl
+    zlib
+    qtbase
+    qtsvg
+    qttools
+  ]
+  #   ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ]
+  ++ lib.optionals guiSupport [ dbus ]
+  ++ lib.optionals (guiSupport && stdenv.hostPlatform.isLinux) [ qtwayland ]
+  ++ lib.optionals trackerSearch [ python3 ];
 
   cmakeFlags =
     lib.optionals (qtVersion == "6") [ "-DQT6=ON" ]
