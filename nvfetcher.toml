@@ -108,10 +108,6 @@ src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma-Sevka-SC-NF.ttf"
 
-[qbittorrent]
-src.github = "c0re100/qBittorrent-Enhanced-Edition"
-fetch.github = "c0re100/qBittorrent-Enhanced-Edition"
-
 [rime-ice]
 src.git = "https://github.com/iDvel/rime-ice.git"
 fetch.github = "iDvel/rime-ice"

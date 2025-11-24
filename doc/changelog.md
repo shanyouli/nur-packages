@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-11-24
+
+- remove qbittorrent-enhanced 官方包已含有。
+
 ## 2025-11-17
 
 - 修复 bittorrent error

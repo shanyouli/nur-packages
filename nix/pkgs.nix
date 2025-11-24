@@ -166,7 +166,6 @@ let
     // {
       firefox-addons = mapPkgs "firefox-addons" callPkg;
       darwinapps = mapPkgs "darwin" callPkg;
-      qbittorrent-enhanced-nox = final.qbittorrent-enhanced.override { guiSupport = false; };
       fishPlugins = mapPkgs "fish" callFishPkg;
     };
 
@@ -183,9 +182,6 @@ let
     // (mapPkgs' "fish" (n: _: lib.nameValuePair "fish-${n}" p.fishPlugins.${n}))
     // (mapPkgs' "firefox-addons" (n: _: lib.nameValuePair "firefox-addons-${n}" p.firefox-addons.${n}))
     // darwinPkgs
-    // {
-      inherit (p) qbittorrent-enhanced-nox;
-    }
     // (mapPkgs' "python" (n: _: lib.nameValuePair "python-apps-${n}" p.python3.pkgs.${n}))
     // (mapPkgs' "lua" (n: _: lib.nameValuePair "lua-apps-${n}" p.lua54Packages.${n}));
 in
