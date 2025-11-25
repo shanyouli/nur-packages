@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-11-24 08:24:38 UTC
+- LAST_MODIFY: 2025-11-25 10:29:11 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **64** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
 
 ### common
 
@@ -94,7 +94,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **64** 
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-11-17|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-11-25|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.1.10|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
@@ -111,7 +111,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **64** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.19.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.20.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.0.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
@@ -154,12 +154,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **64** 
 ### python3-apps
 
 <details>
-<summary>Installing <b>python programs</b> with nix. , Total: <b>4</b> packages </summary>
+<summary>Installing <b>python programs</b> with nix. , Total: <b>5</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-11-24|A lightweight music downloader written in pure python.|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-11-25|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-11-25|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
