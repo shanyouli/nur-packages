@@ -637,12 +637,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "musicdl",
-            "rev": "34c33c9363edc4c481aeef44a1eb8f28ec403961",
-            "sha256": "sha256-OX3lKVTPEoHtKzHoDnw7YmBTKWwNiCrpQA3iOnn5TOg=",
+            "rev": "8ba9ed6234a85e3c68dc55a82808938e0932fe1d",
+            "sha256": "sha256-sEyjDQtgT9D1073diHHB9EJheU8PuxmQANy0TIAOVFw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "34c33c9363edc4c481aeef44a1eb8f28ec403961"
+        "version": "8ba9ed6234a85e3c68dc55a82808938e0932fe1d"
     },
     "musicn": {
         "cargoLock": null,
@@ -832,12 +832,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "a580284c2884accceb4bf64895aa6d6ebd60b9be",
-            "sha256": "sha256-Ei8qeo5Misu0J/yZ894c0EbUFz/8EmqWqiEy8O9TD30=",
+            "rev": "4991dcbfffc1bc935b25af92e118eaf65f77b4e6",
+            "sha256": "sha256-eWsHgcNHCFgkxKzEfwpala87M7wtNMa8T8U6tIKFisg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a580284c2884accceb4bf64895aa6d6ebd60b9be"
+        "version": "4991dcbfffc1bc935b25af92e118eaf65f77b4e6"
     },
     "sarasa-term": {
         "cargoLock": null,

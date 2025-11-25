@@ -373,13 +373,13 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "34c33c9363edc4c481aeef44a1eb8f28ec403961";
+    version = "8ba9ed6234a85e3c68dc55a82808938e0932fe1d";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "34c33c9363edc4c481aeef44a1eb8f28ec403961";
+      rev = "8ba9ed6234a85e3c68dc55a82808938e0932fe1d";
       fetchSubmodules = false;
-      sha256 = "sha256-OX3lKVTPEoHtKzHoDnw7YmBTKWwNiCrpQA3iOnn5TOg=";
+      sha256 = "sha256-sEyjDQtgT9D1073diHHB9EJheU8PuxmQANy0TIAOVFw=";
     };
     date = "2025-11-25";
   };
@@ -478,13 +478,13 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "a580284c2884accceb4bf64895aa6d6ebd60b9be";
+    version = "4991dcbfffc1bc935b25af92e118eaf65f77b4e6";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "a580284c2884accceb4bf64895aa6d6ebd60b9be";
+      rev = "4991dcbfffc1bc935b25af92e118eaf65f77b4e6";
       fetchSubmodules = false;
-      sha256 = "sha256-Ei8qeo5Misu0J/yZ894c0EbUFz/8EmqWqiEy8O9TD30=";
+      sha256 = "sha256-eWsHgcNHCFgkxKzEfwpala87M7wtNMa8T8U6tIKFisg=";
     };
     date = "2025-11-25";
   };
