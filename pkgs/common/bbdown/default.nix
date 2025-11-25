@@ -5,7 +5,7 @@
   stdenv,
   zlib,
   icu,
-  apple-sdk_13,
+  apple-sdk,
   xcbuild,
   darwin,
   source,
@@ -30,7 +30,7 @@ buildDotnetModule rec {
   ]
   ++ lib.optionals stdenv.hostPlatform.isLinux [ icu ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [
-    apple-sdk_13
+    apple-sdk
     darwin.ICU
     xcbuild
   ];

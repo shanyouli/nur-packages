@@ -1,7 +1,7 @@
 {
   lib,
   rustPlatform,
-  apple-sdk_13,
+  apple-sdk,
   source,
 }:
 rustPlatform.buildRustPackage rec {
@@ -12,7 +12,7 @@ rustPlatform.buildRustPackage rec {
   postConfigure = ''
     cargo metadata --offline
   '';
-  buildInputs = [ apple-sdk_13 ];
+  buildInputs = [ apple-sdk ];
   doCheck = false;
   meta = with lib; {
     description = "Simple command-line tool to create Finder aliases";

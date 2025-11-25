@@ -4,7 +4,7 @@
   pkg-config,
   openssl,
   stdenv,
-  apple-sdk_13,
+  apple-sdk,
   source,
   ffmpeg,
 }:
@@ -32,7 +32,8 @@ rustPlatform.buildRustPackage rec {
   buildInputs = [
     openssl
     ffmpeg
-  ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ];
+  ]
+  ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk ];
   doCheck = false;
   env = {
     OPENSSL_NO_VENDOR = true;

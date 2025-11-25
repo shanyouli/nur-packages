@@ -1,6 +1,6 @@
 {
   stdenv,
-  apple-sdk_13,
+  apple-sdk,
   lib,
   source,
 }:
@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
   inherit (source) pname src;
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
-  buildInputs = [ apple-sdk_13 ];
+  buildInputs = [ apple-sdk ];
   installPhase = ''
     mkdir -p $out/bin
     cp pngpaste $out/bin/

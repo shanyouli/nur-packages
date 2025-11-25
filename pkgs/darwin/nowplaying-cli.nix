@@ -1,12 +1,12 @@
 {
   stdenv,
   lib,
-  apple-sdk_13,
+  apple-sdk,
   source,
 }:
 stdenv.mkDerivation rec {
   inherit (source) pname src version;
-  buildInputs = [ apple-sdk_13 ];
+  buildInputs = [ apple-sdk ];
   installPhase = ''
     mkdir -p $out/bin
     cp nowplaying-cli $out/bin/

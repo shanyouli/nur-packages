@@ -4,7 +4,7 @@
   pkg-config,
   stdenv,
   openssl,
-  apple-sdk_13,
+  apple-sdk,
   source,
 }:
 rustPlatform.buildRustPackage rec {
@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
   ];
   doCheck = false;
   cargoLock = source.cargoLock."Cargo.lock";
-  buildInputs = [ openssl ] ++ lib.optionals stdenv.isDarwin [ apple-sdk_13 ];
+  buildInputs = [ openssl ] ++ lib.optionals stdenv.isDarwin [ apple-sdk ];
   env = {
     OPENSSL_NO_VENDOR = true;
   };

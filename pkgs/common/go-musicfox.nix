@@ -3,7 +3,7 @@
   lib,
   stdenv,
   buildGoModule,
-  apple-sdk_13,
+  apple-sdk,
   alsa-lib,
   flac,
   pkg-config,
@@ -16,7 +16,7 @@ buildGoModule rec {
   vendorHash = null;
   subPackages = [ "cmd/musicfox.go" ];
   buildInputs =
-    lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk_13 ]
+    lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk ]
     ++ lib.optionals stdenv.hostPlatform.isLinux [
       alsa-lib
       flac
