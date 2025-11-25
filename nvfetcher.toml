@@ -14,6 +14,10 @@ src.pypi = "alive-progress"
 src.github = "delfick/python-dict2xml"
 fetch.github = "delfick/python-dict2xml"
 
+[pyfreeproxy]
+src.git = "https://github.com/CharlesPikachu/freeproxy"
+fetch.github = "CharlesPikachu/freeproxy"
+
 [httpx]
 src.github = "encode/httpx"
 fetch.github = "encode/httpx"

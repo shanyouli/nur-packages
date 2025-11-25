@@ -7,10 +7,25 @@ let
   inherit (python3Packages)
     buildPythonPackage
     click
-    pycryptodome
-    requests
+    json-repair
     prettytable
-    alive-progress
+    pycryptodome
+    orjson
+    requests
+    cryptography
+    faster-whisper
+    pyfreeproxy
+    fake-useragent
+    pathvalidate
+    rich
+    emoji
+    bleach
+    beautifulsoup4
+    aigpy
+    av
+    tabulate
+    mutagen
+    ytmusicapi
     ;
 in
 buildPythonPackage rec {
@@ -19,10 +34,25 @@ buildPythonPackage rec {
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   propagatedBuildInputs = [
     click
-    pycryptodome
-    requests
+    json-repair
     prettytable
-    alive-progress
+    pycryptodome
+    orjson
+    requests
+    cryptography
+    faster-whisper
+    pyfreeproxy
+    fake-useragent
+    pathvalidate
+    rich
+    emoji
+    bleach
+    beautifulsoup4
+    aigpy
+    av
+    tabulate
+    mutagen
+    ytmusicapi
   ];
   doCheck = false;
   format = "setuptools";
