@@ -56,7 +56,7 @@ src.github = "OwO-Network/DeepLX"
 fetch.github = "OwO-Network/DeepLX"
 
 [fav]
-src.github = "kingwingfly/fav"
+src.github_tag = "kingwingfly/fav"
 fetch.github = "kingwingfly/fav"
 cargo_lock = [ "Cargo.lock" ]
 
