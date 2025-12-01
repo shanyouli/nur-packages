@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-11-25 13:30:00 UTC
+- LAST_MODIFY: 2025-12-01 09:48:42 UTC
 
 
 ## How to use
@@ -79,9 +79,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||20251125.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20251125.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**fav**](https://github.com/kingwingfly/fav)||1.1.1|Back up your favorite bilibili resources with CLI|
+|[**fav**](https://github.com/kingwingfly/fav)||1.2.2|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.6.2|Firefox Chrome css|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.7.4|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-05|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
@@ -94,7 +94,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-11-25|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-11-28|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.4.7|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
@@ -159,8 +159,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-11-25|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-11-25|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-01|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-01|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
