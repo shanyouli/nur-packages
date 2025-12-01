@@ -393,7 +393,7 @@
     "fav": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=/Cargo.lock",
+                "sha256-fN6X4q2mWKNUr6nEevCaY_Nd9Y8liJhffe3jhr6u+vg=/Cargo.lock",
                 {}
             ]
         },
@@ -409,12 +409,12 @@
             "name": null,
             "owner": "kingwingfly",
             "repo": "fav",
-            "rev": "v1.1.1",
-            "sha256": "sha256-UWhYI38+jYdazgfWpbAEJ8EjKvdCQFbCbYLaGWxC9OE=",
+            "rev": "v1.2.2",
+            "sha256": "sha256-fN6X4q2mWKNUr6nEevCaY/Nd9Y8liJhffe3jhr6u+vg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.1.1"
+        "version": "v1.2.2"
     },
     "fisher": {
         "cargoLock": null,
@@ -451,12 +451,12 @@
             "name": null,
             "owner": "yuuqilin",
             "repo": "FlexFox",
-            "rev": "v5.6.2",
-            "sha256": "sha256-Tqm5TknioQUrhB0hIprg3ZG6ZuT3UMD20qjt0B+Zv1E=",
+            "rev": "v5.7.4",
+            "sha256": "sha256-niQ/9WWGRka3j1k7EAxa662j0dql2Mw5BMSGFf7XE90=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.6.2"
+        "version": "v5.7.4"
     },
     "go-musicfox": {
         "cargoLock": null,
@@ -625,7 +625,7 @@
     },
     "musicdl": {
         "cargoLock": null,
-        "date": "2025-11-25",
+        "date": "2025-12-01",
         "extract": null,
         "name": "musicdl",
         "passthru": null,
@@ -637,12 +637,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "musicdl",
-            "rev": "8ba9ed6234a85e3c68dc55a82808938e0932fe1d",
-            "sha256": "sha256-sEyjDQtgT9D1073diHHB9EJheU8PuxmQANy0TIAOVFw=",
+            "rev": "15fd616e4d4d826f68932575058a06b13360b4df",
+            "sha256": "sha256-+8G6JdrCCPcyaxqorQFIeicRVBvewrqkvXycyleCFpI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8ba9ed6234a85e3c68dc55a82808938e0932fe1d"
+        "version": "15fd616e4d4d826f68932575058a06b13360b4df"
     },
     "musicn": {
         "cargoLock": null,
@@ -799,7 +799,7 @@
     },
     "pyfreeproxy": {
         "cargoLock": null,
-        "date": "2025-11-25",
+        "date": "2025-12-01",
         "extract": null,
         "name": "pyfreeproxy",
         "passthru": null,
@@ -811,16 +811,16 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "bed91193a90a6fdb2b47deb8abcb6d5c6fd9f250",
-            "sha256": "sha256-PUwHBqDvsJ583LhbWBJtC8y+f9qTGvyN1bRC8LHhaLE=",
+            "rev": "839e2b0f4a5910180c9e81188ad32835d7941f15",
+            "sha256": "sha256-ceEKZT+M0VZV7BP+b5jXjQDGvysWesOnrvR+CeIecKU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bed91193a90a6fdb2b47deb8abcb6d5c6fd9f250"
+        "version": "839e2b0f4a5910180c9e81188ad32835d7941f15"
     },
     "rime-ice": {
         "cargoLock": null,
-        "date": "2025-11-25",
+        "date": "2025-11-28",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -832,12 +832,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "4991dcbfffc1bc935b25af92e118eaf65f77b4e6",
-            "sha256": "sha256-eWsHgcNHCFgkxKzEfwpala87M7wtNMa8T8U6tIKFisg=",
+            "rev": "c5e8cca497dc44a4e4540cf2a95043aa0151a40e",
+            "sha256": "sha256-6HvbKAqk5ihNnk0abN45fZ5DQG80AwNodXvC030r6Mo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4991dcbfffc1bc935b25af92e118eaf65f77b4e6"
+        "version": "c5e8cca497dc44a4e4540cf2a95043aa0151a40e"
     },
     "sarasa-term": {
         "cargoLock": null,
