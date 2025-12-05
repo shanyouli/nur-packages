@@ -54,15 +54,15 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4598854/ublock_origin-1.67.0.xpi",
-    "version": "1.67.0",
-    "sha256": "0fhk7jmhl4mkhf30sjg9hb7yrk05f2y3vdc8s82qsyl1kz26wg5q",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4629131/ublock_origin-1.68.0.xpi",
+    "version": "1.68.0",
+    "sha256": "05a3f11dcbdj6s6c70x7hanqrpdv35lia4ia490qh0clljylmbsw",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4609119/immersive_translate-1.22.7.xpi",
-    "version": "1.22.7",
-    "sha256": "1q1ba8s24r56ylmray1k75wzxnill8773nm8mlr6sj5crc9wmxh1",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4628559/immersive_translate-1.23.9.xpi",
+    "version": "1.23.9",
+    "sha256": "04yqp2zaf0j6vp0x8zkjd8mmnz744bm8zdjajwgxyvss43dady3a",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4625516/kiss_translator-2.0.12.xpi",
-    "version": "2.0.12",
-    "sha256": "1zfvyq31mc7xifylnmc43zpkrwh5fxh06w1yyrhzfy9wxfhq79bn",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4635494/kiss_translator-2.0.14.xpi",
+    "version": "2.0.14",
+    "sha256": "0qnsbyp77qbqnskwik8izb2px532311vl4w1x63aqj1i4ig6g3k2",
     "pname": "kiss-translator"
   },
   "raindropio": {
