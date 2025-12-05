@@ -80,10 +80,10 @@
   };
   darkreader = {
     pname = "darkreader";
-    version = "4.9.116";
+    version = "4.9.117";
     src = fetchurl {
-      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.116/darkreader-firefox.xpi";
-      sha256 = "sha256-RtCwWi4VblGVk4Gyt/swma9PGtwpp2aLvA6YUjFT8Q0=";
+      url = "https://github.com/darkreader/darkreader/releases/download/v4.9.117/darkreader-firefox.xpi";
+      sha256 = "sha256-z2pgDh12m8yzepmkAiZ+RElWjL3SWslFbV4fYGWIjS4=";
     };
   };
   deeplx = {
@@ -163,12 +163,12 @@
   };
   "emacs30.ns-mac-input-source" = {
     pname = "emacs30.ns-mac-input-source";
-    version = "5c3b70ef2f5e02d952497144a8cf7d6293e24c5a";
+    version = "89c1885cff935350ae62fe6316069d817b9e062a";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/5c3b70ef2f5e02d952497144a8cf7d6293e24c5a/patches/emacs-30/ns-alpha-background.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/89c1885cff935350ae62fe6316069d817b9e062a/patches/emacs-30/ns-alpha-background.patch";
       sha256 = "sha256-izzfjAWg4e8yYDuODXKIgwG7TdQUg2Su6ZebyzCg9hM=";
     };
-    date = "2025-11-24";
+    date = "2025-12-05";
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
@@ -199,12 +199,12 @@
   };
   "emacs31.ns-mac-input-source" = {
     pname = "emacs31.ns-mac-input-source";
-    version = "5c3b70ef2f5e02d952497144a8cf7d6293e24c5a";
+    version = "89c1885cff935350ae62fe6316069d817b9e062a";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/5c3b70ef2f5e02d952497144a8cf7d6293e24c5a/patches/emacs-31/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/89c1885cff935350ae62fe6316069d817b9e062a/patches/emacs-31/ns-mac-input-source.patch";
       sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
     };
-    date = "2025-11-24";
+    date = "2025-12-05";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
@@ -263,13 +263,13 @@
   };
   flexfox = {
     pname = "flexfox";
-    version = "v5.7.4";
+    version = "v5.7.5";
     src = fetchFromGitHub {
       owner = "yuuqilin";
       repo = "FlexFox";
-      rev = "v5.7.4";
+      rev = "v5.7.5";
       fetchSubmodules = false;
-      sha256 = "sha256-niQ/9WWGRka3j1k7EAxa662j0dql2Mw5BMSGFf7XE90=";
+      sha256 = "sha256-kw0PrQLXWDnwHZpQMMFL1J0SoQYpNOumvyW8WRftCYU=";
     };
   };
   go-musicfox = {
@@ -373,15 +373,15 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "15fd616e4d4d826f68932575058a06b13360b4df";
+    version = "ae7e212544de0c60d189c2b7cb66f5e8022a1a0a";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "15fd616e4d4d826f68932575058a06b13360b4df";
+      rev = "ae7e212544de0c60d189c2b7cb66f5e8022a1a0a";
       fetchSubmodules = false;
-      sha256 = "sha256-+8G6JdrCCPcyaxqorQFIeicRVBvewrqkvXycyleCFpI=";
+      sha256 = "sha256-aboD3a9X/oFTnVLb55yI73cw198UsFxXC67oZNVuc0g=";
     };
-    date = "2025-12-01";
+    date = "2025-12-03";
   };
   musicn = {
     pname = "musicn";
@@ -466,27 +466,27 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "839e2b0f4a5910180c9e81188ad32835d7941f15";
+    version = "ba3f9046c76c24617faeae81cc64aab5dcd67c94";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "839e2b0f4a5910180c9e81188ad32835d7941f15";
+      rev = "ba3f9046c76c24617faeae81cc64aab5dcd67c94";
       fetchSubmodules = false;
-      sha256 = "sha256-ceEKZT+M0VZV7BP+b5jXjQDGvysWesOnrvR+CeIecKU=";
+      sha256 = "sha256-9d5wm32bDnMic3HMJe12SvPP4ClXkffpRu3WMzkmuEY=";
     };
-    date = "2025-12-01";
+    date = "2025-12-05";
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "c5e8cca497dc44a4e4540cf2a95043aa0151a40e";
+    version = "c7fdbb25d6b2e50f65dfae7923a74b5272e934c2";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "c5e8cca497dc44a4e4540cf2a95043aa0151a40e";
+      rev = "c7fdbb25d6b2e50f65dfae7923a74b5272e934c2";
       fetchSubmodules = false;
-      sha256 = "sha256-6HvbKAqk5ihNnk0abN45fZ5DQG80AwNodXvC030r6Mo=";
+      sha256 = "sha256-ayXzpWrRq6a0g69Ohx+tHbo3YfjERhdEsCK1IMoTypw=";
     };
-    date = "2025-11-28";
+    date = "2025-12-03";
   };
   sarasa-term = {
     pname = "sarasa-term";
