@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-12-01 12:43:26 UTC
+- LAST_MODIFY: 2025-12-05 21:52:02 UTC
 
 
 ## How to use
@@ -76,12 +76,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.0|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251129.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251129.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251204.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251205.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.2|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.7.4|Firefox Chrome css|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.7.5|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-05|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
@@ -94,8 +94,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-11-28|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.5.5|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-03|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.7.0|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
@@ -137,15 +137,15 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**darkreader**](https://darkreader.org/)||4.9.116|Dark Reader Chrome and Firefox extension|
 |[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.21.0.3880|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.22.7|Immersive Dual Web Page Translation Extension |
-|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.12|Simple, open source bilingual translation extension & Greasemonkey script|
+|[**immersive-translate**](https://immersivetranslate.com/)||1.23.9|Immersive Dual Web Page Translation Extension |
+|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.14|Simple, open source bilingual translation extension & Greasemonkey script|
 |[**noscript**](https://noscript.net/)||13.5|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.4.0|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.3.17|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.11|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.67.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.68.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.6.6|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.31.0|An open source userscript manager.|
 |[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.4.5| Manage and switch between multiple proxies quickly & easily.|
@@ -159,8 +159,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-01|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-01|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-03|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-05|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
