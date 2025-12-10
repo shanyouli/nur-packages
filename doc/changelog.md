@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-12-10
+
+- add `nu-lint` package
+
 ## 2025-11-24
 
 - remove qbittorrent-enhanced 官方包已含有。

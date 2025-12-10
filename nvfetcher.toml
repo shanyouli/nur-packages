@@ -193,6 +193,11 @@ cargo_lock = ["Cargo.lock"]
 src.github = "kirtan-shah/nowplaying-cli"
 fetch.github = "kirtan-shah/nowplaying-cli"
 
+[nu-lint]
+src.git = "https://github.com/wvhulle/nu-lint"
+fetch.github = "wvhulle/nu-lint"
+cargo_lock = [ "Cargo.lock" ]
+
 [pngpaste]
 src.github_tag = "jcsalterego/pngpaste"
 fetch.github = "jcsalterego/pngpaste"

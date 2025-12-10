@@ -3,7 +3,6 @@
 # firefox-addons -> firefox-addons-xx
 # fish file -> fish-xx
 # lua file -> lua-apps-xx
-dev: false
+dev: true
 apps:
-  - pragmasevka-sc
-  - pragmasevka-sc-nf
+  - nu-lint
