@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-12-05 21:52:02 UTC
+- LAST_MODIFY: 2025-12-10 11:37:37 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>31</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>32</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -88,13 +88,14 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
+|[**nu-lint**](https://github.com/wvhulle/nu-lint)||2025-12-07|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
 |[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-03|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-08|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.7.0|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
@@ -159,8 +160,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **65** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-03|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-05|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-10|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-10|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
