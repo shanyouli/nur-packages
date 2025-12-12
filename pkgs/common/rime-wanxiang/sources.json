@@ -1,44 +1,44 @@
 {
   "base": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-base.zip",
-    "version": "v13.7.0",
-    "sha256": "0ym29421lgzj7d0m8vxl6jbqgdwxhvsz01c75wfr8yxpi6dndjwq",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-base.zip",
+    "version": "v13.8.5",
+    "sha256": "0bmhc7gj9qb067h0sl24cmq1vap4mm0hl35l37ir1iay9g7xwn84",
     "pname": "base"
   },
   "zrm": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-zrm-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "11smvf5yal073qh2mnw50nialkg7l4zp4grvw3hqq9pxgag2659g",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-zrm-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "0jp00aif9nc55ny2zigyjbxp9axbp556afm1f4nmglpd1xf8pykq",
     "pname": "zrm"
   },
   "tiger": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-tiger-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "17j3szlhb9c322wwfhf2kwrd7dqbm6j0kq43qk21i63z36x0640v",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-tiger-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "0bhckzcdzm2lnfvfjmz6xsj4p09gd5s33zlfc6zrs9q93l1mkb46",
     "pname": "tiger"
   },
   "moqi": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-moqi-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "1lsqnsjbk2d1jg9jwivbqlvrms4qfd9sqz1cqmkzh57xz2pibcgh",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-moqi-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "0fvc3gb7x75y9sy87kaxla24facxqrh6wsdzyjiy13bcj7vlykpv",
     "pname": "moqi"
   },
   "flypy": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-flypy-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "0w0ssw0fxad4qj06ij5zdimpn6vpcigjanx5qyw9sz1sy7qk18il",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-flypy-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "14h1d40q80rxdgqgfw6yi4d3kdss6ayk54nngw20rhv29wv2x48r",
     "pname": "flypy"
   },
   "wubi": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-wubi-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "010ysscq72irfcp2mk0z3cs3qhsdjcnasq7y05x5zmrfb0bvmizj",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-wubi-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "13byy2bhakxzq8h6hj9n3yghd1xab87xbffq8q6nc6ilxvxkgfps",
     "pname": "wubi"
   },
   "hanxin": {
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.7.0/rime-wanxiang-hanxin-fuzhu.zip",
-    "version": "v13.7.0",
-    "sha256": "1j39lsrvla4qkm2kcdjsjmjgx4lrgabrb4pihc1142kqywdyzk1f",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v13.8.5/rime-wanxiang-hanxin-fuzhu.zip",
+    "version": "v13.8.5",
+    "sha256": "1fkpk4h0ixrspj17gq8n1al3rgjcjf2wi5y9fac3mwblljb7m7az",
     "pname": "hanxin"
   }
 }
