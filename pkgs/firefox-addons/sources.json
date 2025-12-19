@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4628164/noscript-13.5.xpi",
-    "version": "13.5",
-    "sha256": "0bwvyljp4r6qdpbqq20bwxi3j3sh9kdb5y3ds1a5k4c2jmlmmshv",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4641827/noscript-13.5.4.xpi",
+    "version": "13.5.4",
+    "sha256": "12h31m5v5y3p4h86q3wns2kxqrqs29din6qx3clgbjn6d8gi7k40",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4631132/download_with_aria2-4.21.0.3880.xpi",
-    "version": "4.21.0.3880",
-    "sha256": "1awy13x6vzzfpc94aaqq7h6jw2ij5wdwnr80ki6y0ixr2z5xly44",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4639327/download_with_aria2-4.23.0.3929.xpi",
+    "version": "4.23.0.3929",
+    "sha256": "06zfhs3hwhibkcrcyfjj85c0p0i731mni49bhcsfpql5nrl40xr4",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4625542/darkreader-4.9.116.xpi",
-    "version": "4.9.116",
-    "sha256": "0f1qav5y64f9wg5nfzkm62wh32vgixm6csp7si1j4z5jv5ngyvss",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4638146/darkreader-4.9.118.xpi",
+    "version": "4.9.118",
+    "sha256": "154k9hn7ak8x0kvvxvdj4p7q0lkn03rp4n4sxnfy2pjlhh7dmlk9",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4635494/kiss_translator-2.0.14.xpi",
-    "version": "2.0.14",
-    "sha256": "0qnsbyp77qbqnskwik8izb2px532311vl4w1x63aqj1i4ig6g3k2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4639448/kiss_translator-2.0.15.xpi",
+    "version": "2.0.15",
+    "sha256": "0nwk6jycwz4p3c7r7la8ddvh3wdkyb4aqlazw3dzxxy94j40bd51",
     "pname": "kiss-translator"
   },
   "raindropio": {
