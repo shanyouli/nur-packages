@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-12-11 14:36:15 UTC
+- LAST_MODIFY: 2025-12-19 22:12:38 UTC
 
 
 ## How to use
@@ -76,8 +76,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.0|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251204.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20251205.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251219.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251206.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.2|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -89,19 +89,19 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
 |[**nu-lint**](https://github.com/wvhulle/nu-lint)||2025-12-07|Linter for Nu shell scripts that helpfully suggests improvements|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.1|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-08|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.7.0|Rime 配置:万象输入法|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-18|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.8.7|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2025-08-04|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2025-12-17|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-09-02|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-12-19|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -116,7 +116,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.0.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.5.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.6.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.3.2|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||1.2.1|macOS command-line utility for retrieving currently playing media|
@@ -135,12 +135,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.6.7|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.11.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||8.0.0|Makes Firefox wear a mask to look like Chrome.|
-|[**darkreader**](https://darkreader.org/)||4.9.116|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.21.0.3880|Browser extension for aria2c json-rpc |
+|[**darkreader**](https://darkreader.org/)||4.9.118|Dark Reader Chrome and Firefox extension|
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.23.0.3929|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.23.9|Immersive Dual Web Page Translation Extension |
-|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.14|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.5|NoScript Security Suite|
+|[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.15|Simple, open source bilingual translation extension & Greasemonkey script|
+|[**noscript**](https://noscript.net/)||13.5.4|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.4.0|Firefox extension for managing tabs and bookmarks in sidebar|
@@ -160,8 +160,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-10|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-10|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-19|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-19|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
