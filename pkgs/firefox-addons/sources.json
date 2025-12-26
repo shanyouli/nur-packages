@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4641827/noscript-13.5.4.xpi",
-    "version": "13.5.4",
-    "sha256": "12h31m5v5y3p4h86q3wns2kxqrqs29din6qx3clgbjn6d8gi7k40",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4647959/noscript-13.5.5.xpi",
+    "version": "13.5.5",
+    "sha256": "15acd052agqa25z28drc2s3ayz8vjb3gs70w13xc6m45aafd4wh9",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4639327/download_with_aria2-4.23.0.3929.xpi",
-    "version": "4.23.0.3929",
-    "sha256": "06zfhs3hwhibkcrcyfjj85c0p0i731mni49bhcsfpql5nrl40xr4",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4648545/download_with_aria2-4.23.1.3945.xpi",
+    "version": "4.23.1.3945",
+    "sha256": "0b82451bc27hi3cf9mkbh4rn32h6g16yc66hgyjr00y8p167k271",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4639448/kiss_translator-2.0.15.xpi",
-    "version": "2.0.15",
-    "sha256": "0nwk6jycwz4p3c7r7la8ddvh3wdkyb4aqlazw3dzxxy94j40bd51",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4650480/kiss_translator-2.0.17.xpi",
+    "version": "2.0.17",
+    "sha256": "1ixhj702q6wxc4jr7v4zdg7ga2q3r9a6z1plz9lwp30knq1qyadl",
     "pname": "kiss-translator"
   },
   "raindropio": {
