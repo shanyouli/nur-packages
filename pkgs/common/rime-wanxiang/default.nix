@@ -3,7 +3,7 @@
   lib,
   p7zip,
   fetchurl,
-  fuzu ? "moqi",
+  fuzu ? "base",
   ...
 }:
 let

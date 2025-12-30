@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation {
   phases = [ "installPhase" ];
   installPhase = ''
     runHook preInstall
-    install -D -m755  $out/bin/mtranserver $src
+    install -D -m755 $src $out/bin/mtranserver
     runHook postInstall
   '';
 
