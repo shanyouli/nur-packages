@@ -15,13 +15,15 @@ let
       sources."mtranserver.mac.arm64"
     else
       sources."mtranserver.mac.amd64";
+  pname = "mtranserver";
 in
 stdenvNoCC.mkDerivation {
-  inherit (source) src pname version;
+  inherit (source) src version;
+  inherit pname;
   phases = [ "installPhase" ];
   installPhase = ''
     runHook preInstall
-    install -D -m755 -t $out/bin $src
+    install -D -m755  $out/bin/mtranserver $src
     runHook postInstall
   '';
 
