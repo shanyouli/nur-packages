@@ -76,6 +76,10 @@ cargo_lock = ["Cargo.lock"]
 src.github_tag = "zonemeen/musicn"
 fetch.github = "zonemeen/musicn"
 
+[mtranserver]
+src.github = "xxnuo/MTranServer"
+fetch.github = "xxnuo/MTranServer"
+
 [pragmasevka]
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
