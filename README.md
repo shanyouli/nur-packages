@@ -76,8 +76,13 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.0|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
+<<<<<<< variant A
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260104.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260102.0|Extensible, customizable GNU text editor|
+>>>>>>> variant B
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251226.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20251206.0|Extensible, customizable GNU text editor|
+======= end
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.2|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
@@ -97,7 +102,11 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-31|Rime 配置:雾凇拼音|
+<<<<<<< variant A
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v14.0.5|Rime 配置:万象输入法|
+>>>>>>> variant B
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.9.5|Rime 配置:万象输入法|
+======= end
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||2026-01-01|The universal proxy platform|
