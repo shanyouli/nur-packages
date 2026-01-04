@@ -8,10 +8,10 @@
 {
   aerospace = {
     pname = "aerospace";
-    version = "0.20.0-Beta";
+    version = "0.20.1-Beta";
     src = fetchurl {
-      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.20.0-Beta/AeroSpace-v0.20.0-Beta.zip";
-      sha256 = "sha256-j68D9BOKjApWSz62Sq2nPyChJol0j3uOj6LKJ3tQos4=";
+      url = "https://github.com/nikitabobko/AeroSpace/releases/download/v0.20.1-Beta/AeroSpace-v0.20.1-Beta.zip";
+      sha256 = "sha256-aKrxN+JfksjEn8auqluXU3zPksExI+Z4RoLlPqo3Y8Y=";
     };
   };
   alive-progress = {
@@ -127,102 +127,102 @@
   };
   "emacs29.no-frame-refocus-cocoa" = {
     pname = "emacs29.no-frame-refocus-cocoa";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-28/no-frame-refocus-cocoa.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-28/no-frame-refocus-cocoa.patch";
       sha256 = "sha256-+1d33IkKoHNJ8UOuZcK89D7a1v6/1WSwGiI1xaFfyr0=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs29.role-patch" = {
     pname = "emacs29.role-patch";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs29.round-undecorated-frame" = {
     pname = "emacs29.round-undecorated-frame";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-29/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-29/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs29.system-appearance" = {
     pname = "emacs29.system-appearance";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-28/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-28/system-appearance.patch";
       sha256 = "sha256-1u4VmDmzi2r1Ode5vf8jEmPkUcH9Qu7A0SUxjJ24zZI=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs30.ns-mac-input-source" = {
     pname = "emacs30.ns-mac-input-source";
-    version = "97f7d594ec222db214b137910626cb7316de3da4";
+    version = "d6246d7abcf4a79e2765767214c7c1c15b03d281";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/97f7d594ec222db214b137910626cb7316de3da4/patches/emacs-30/ns-alpha-background.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/d6246d7abcf4a79e2765767214c7c1c15b03d281/scripts/macos/patches/emacs-30/ns-alpha-background.patch";
       sha256 = "sha256-izzfjAWg4e8yYDuODXKIgwG7TdQUg2Su6ZebyzCg9hM=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs30.round-undecorated-frame" = {
     pname = "emacs30.round-undecorated-frame";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-30/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-30/round-undecorated-frame.patch";
       sha256 = "sha256-dFH4D1WYQOVOagUuVdEQB3irxV+Y8dDAOKJOJXc/KHQ=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs30.system-appearance" = {
     pname = "emacs30.system-appearance";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs31.ns-mac-input-source" = {
     pname = "emacs31.ns-mac-input-source";
-    version = "97f7d594ec222db214b137910626cb7316de3da4";
+    version = "d6246d7abcf4a79e2765767214c7c1c15b03d281";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/97f7d594ec222db214b137910626cb7316de3da4/patches/emacs-31/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/d6246d7abcf4a79e2765767214c7c1c15b03d281/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
       sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-JpR7ZyT8KfrdRIiYCMXPC0zmJ4zwT0YIaiHfUMjEFR0=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   "emacs31.system-appearance" = {
     pname = "emacs31.system-appearance";
-    version = "7851998604144ca710e3da7b7521e94270d170fe";
+    version = "8cc213add8a9afeb6df99fee12ae2b6add09cb98";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7851998604144ca710e3da7b7521e94270d170fe/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/8cc213add8a9afeb6df99fee12ae2b6add09cb98/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   emacsclient = {
     pname = "emacsclient";
@@ -263,13 +263,13 @@
   };
   flexfox = {
     pname = "flexfox";
-    version = "v5.7.5";
+    version = "v6.0.1";
     src = fetchFromGitHub {
       owner = "yuuqilin";
       repo = "FlexFox";
-      rev = "v5.7.5";
+      rev = "v6.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-kw0PrQLXWDnwHZpQMMFL1J0SoQYpNOumvyW8WRftCYU=";
+      sha256 = "sha256-Hr9hKxSNliriGzpa58t3lj00rCcq4Idc4Xrd5Wpb8xM=";
     };
   };
   go-musicfox = {
@@ -373,47 +373,47 @@
   };
   "mtranserver.linux.amd64" = {
     pname = "mtranserver.linux.amd64";
-    version = "3.1.24";
+    version = "4.0.10";
     src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v3.1.24/mtranserver-3.1.24-linux-amd64";
-      sha256 = "sha256-pcEX3ff3yagUyVykYXHs7r+DEEHD68UeGh6WmETOgF4=";
+      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.10/mtranserver-4.0.10-linux-amd64";
+      sha256 = "sha256-DPgapM1HoIqngDZ5+ZueVx5q3rlsMNzGMsFHA/kQ1sU=";
     };
   };
-  "mtranserver.linux.arm" = {
-    pname = "mtranserver.linux.arm";
-    version = "3.1.24";
+  "mtranserver.linux.arm64" = {
+    pname = "mtranserver.linux.arm64";
+    version = "4.0.10";
     src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v3.1.24/mtranserver-3.1.24-linux-arm64";
-      sha256 = "sha256-kJDOGPcEtC/JZHfRG2TjeGjNa+y0MUuRqzIlXTzuQu8=";
+      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.10/mtranserver-4.0.10-linux-arm64";
+      sha256 = "sha256-ah09Ypanror6w2aNc4J9w/l+CBUKUZrJefAbKWPKBSQ=";
     };
   };
   "mtranserver.mac.amd64" = {
     pname = "mtranserver.mac.amd64";
-    version = "3.1.24";
+    version = "4.0.10";
     src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v3.1.24/mtranserver-3.1.24-darwin-amd64";
-      sha256 = "sha256-5nr3C/c97zW8ZgQBclH7/FT6+xvFqP6yPBZm3nmuJNU=";
+      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.10/mtranserver-4.0.10-darwin-amd64";
+      sha256 = "sha256-k2Q+y/itghw/aWUtA+t+JwVjds3E4dPhEbLAZ91rLg8=";
     };
   };
   "mtranserver.mac.arm64" = {
     pname = "mtranserver.mac.arm64";
-    version = "3.1.24";
+    version = "4.0.10";
     src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v3.1.24/mtranserver-3.1.24-darwin-arm64";
-      sha256 = "sha256-WTAKmJ9xKEL7/5HFU0aAjrl6CPOKL/qEXGnmpfQNT9Y=";
+      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.10/mtranserver-4.0.10-darwin-arm64";
+      sha256 = "sha256-Bk+TRCsbqvjo5FcaHj6aZTQn7aSl3NvbPvBh4sQlMXQ=";
     };
   };
   musicdl = {
     pname = "musicdl";
-    version = "5aded36ce802d08ef268b7dd227cb967cb50fcaf";
+    version = "5edf9140d0185cc1f4045c46285a02bc16dfcddd";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "5aded36ce802d08ef268b7dd227cb967cb50fcaf";
+      rev = "5edf9140d0185cc1f4045c46285a02bc16dfcddd";
       fetchSubmodules = false;
-      sha256 = "sha256-SQ9nCTWlETwXHMBAZnMI1Qdu/bx/qh7FTGocA+JX9Ko=";
+      sha256 = "sha256-/VS6qSZtGc6OENJO/wsanY5YqFs7CuLBoiHcv0/tsJ0=";
     };
-    date = "2025-12-30";
+    date = "2026-01-03";
   };
   musicn = {
     pname = "musicn";
@@ -439,21 +439,21 @@
   };
   nu-lint = {
     pname = "nu-lint";
-    version = "873cc30cccbbc9766b717a7376c9b314d68a1aa2";
+    version = "5ea6c336b78dd926daf33a0c26b218ac675f7328";
     src = fetchFromGitHub {
       owner = "wvhulle";
       repo = "nu-lint";
-      rev = "873cc30cccbbc9766b717a7376c9b314d68a1aa2";
+      rev = "5ea6c336b78dd926daf33a0c26b218ac675f7328";
       fetchSubmodules = false;
-      sha256 = "sha256-O7KnSjQCP7Xj67CJLMbzKQ+nD+Mo7XePIiOgZGvd140=";
+      sha256 = "sha256-hQT66+V+igZ9kh09VU5xACquSEpKgahhC5Q4NsH1ucA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-O7KnSjQCP7Xj67CJLMbzKQ+nD+Mo7XePIiOgZGvd140=/Cargo.lock";
+      lockFile = ./. + "/sha256-hQT66+V+igZ9kh09VU5xACquSEpKgahhC5Q4NsH1ucA=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2025-12-29";
+    date = "2026-01-04";
   };
   pngpaste = {
     pname = "pngpaste";
@@ -516,27 +516,27 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "958a3ebadbc665c626c3788772936151611542d4";
+    version = "f2fc98a56f57877a09a885d4a922c96253c9fd89";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "958a3ebadbc665c626c3788772936151611542d4";
+      rev = "f2fc98a56f57877a09a885d4a922c96253c9fd89";
       fetchSubmodules = false;
-      sha256 = "sha256-2HOJ0EItYNa1wO6ptLKdTujY+xni7ZfhR0EfBxQnfbs=";
+      sha256 = "sha256-SozZAUG1TyX1fhkdWOJw9DzF1t+NVCRBGknJcUpdpV4=";
     };
-    date = "2025-12-30";
+    date = "2026-01-04";
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "cc51682a850e9b89db8856c589b8c13f8b534a7c";
+    version = "3a9a76e2c58181d3980a1cdeb6dda55a67605f2d";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "cc51682a850e9b89db8856c589b8c13f8b534a7c";
+      rev = "3a9a76e2c58181d3980a1cdeb6dda55a67605f2d";
       fetchSubmodules = false;
-      sha256 = "sha256-rEWf96uoYZm/n8IBSSG5qnXBgiWvrzhD1+GutLqMlg8=";
+      sha256 = "sha256-FWPh3RJMNhbhUysE8B2C0b+Wz2Bo/oSA49h1HzRBCAI=";
     };
-    date = "2025-12-24";
+    date = "2025-12-31";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -588,15 +588,15 @@
   };
   singboxp = {
     pname = "singboxp";
-    version = "daef974c320f05e57abae651eee1e9ca93220508";
+    version = "c590569f066ac178c5f5d650a51707dc2ffaf0aa";
     src = fetchFromGitHub {
       owner = "PuerNya";
       repo = "sing-box";
-      rev = "daef974c320f05e57abae651eee1e9ca93220508";
+      rev = "c590569f066ac178c5f5d650a51707dc2ffaf0aa";
       fetchSubmodules = false;
-      sha256 = "sha256-itKsB+D+ahhNdw56pqCXpjknvJdnrd9IBaElG2MdhL4=";
+      sha256 = "sha256-/lqfUG23BMFV42ynHdmBk4qWauGMikxrp0DwI+x96eY=";
     };
-    date = "2025-12-17";
+    date = "2026-01-01";
   };
   switchaudio-osx = {
     pname = "switchaudio-osx";
