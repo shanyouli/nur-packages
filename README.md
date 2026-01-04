@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2025-12-26 21:59:17 UTC
+- LAST_MODIFY: 2026-01-04 15:21:41 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>32</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>33</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -81,25 +81,26 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.2|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.5|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||5.7.5|Firefox Chrome css|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.0.1|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.2|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-05|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
+|[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.10|Offline translation model server|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**nu-lint**](https://github.com/wvhulle/nu-lint)||2025-12-26|Linter for Nu shell scripts that helpfully suggests improvements|
+|[**nu-lint**](https://github.com/wvhulle/nu-lint)||2026-01-04|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
 |[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||33.3.6|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-24|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.9.4|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2025-12-31|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v13.9.5|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2025-12-17|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||2026-01-01|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-12-19|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
@@ -112,7 +113,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.20.0-Beta|AeroSpace is an i3-like tiling window manager for macOS|
+|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.20.1-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.0.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
@@ -160,8 +161,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2025-12-24|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2025-12-26|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2026-01-03|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2026-01-04|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
