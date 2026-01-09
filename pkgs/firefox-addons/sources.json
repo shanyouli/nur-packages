@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4647959/noscript-13.5.5.xpi",
-    "version": "13.5.5",
-    "sha256": "15acd052agqa25z28drc2s3ayz8vjb3gs70w13xc6m45aafd4wh9",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4658660/noscript-13.5.6.xpi",
+    "version": "13.5.6",
+    "sha256": "0v7d6mj1mxjjysza27619awlqvybf5npxxvpg1n45490zph6qq78",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4648545/download_with_aria2-4.23.1.3945.xpi",
-    "version": "4.23.1.3945",
-    "sha256": "0b82451bc27hi3cf9mkbh4rn32h6g16yc66hgyjr00y8p167k271",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4658707/download_with_aria2-4.23.2.3958.xpi",
+    "version": "4.23.2.3958",
+    "sha256": "0ki4w1sc56scam3i0aa74v4wk3c2bfhyi62c350az5kxkm0j5wjg",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4611621/styl_us-2.3.17.xpi",
-    "version": "2.3.17",
-    "sha256": "0rvnhlqvc7bfv6dbgjmfix9xsymz9r5pvk5fs87nvlwvq5gjv5dd",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4661054/styl_us-2.3.19.xpi",
+    "version": "2.3.19",
+    "sha256": "0cmaxjs9h1qzr2bjb6hajd13ahsj38s5qvyi47wb3wdjfgvclygl",
     "pname": "styl-us"
   },
   "privacy-pass": {
