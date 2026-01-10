@@ -1,4 +1,7 @@
 # ChangeLog
+## 2026-01-10
+
+- remove aerospace
 
 ## 2025-12-10
 

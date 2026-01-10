@@ -181,12 +181,6 @@ fetch.github = "z-shell/zpmod"
 
 ### darwin
 
-[aerospace]
-src.github_tag = "nikitabobko/AeroSpace"
-src.from_pattern = "v(.*)"
-src.to_pattern = "\\1"
-fetch.url = "https://github.com/nikitabobko/AeroSpace/releases/download/v$ver/AeroSpace-v$ver.zip"
-
 [borders]
 src.github = "FelixKratz/JankyBorders"
 fetch.github = "FelixKratz/JankyBorders"
