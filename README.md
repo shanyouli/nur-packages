@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-01-09 22:04:56 UTC
+- LAST_MODIFY: 2026-01-10 07:41:34 UTC
 
 
 ## How to use
@@ -62,7 +62,7 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
 
 ### common
 
@@ -109,11 +109,10 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>10</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**aerospace**](https://github.com/nikitabobko/AeroSpace)||0.20.2-Beta|AeroSpace is an i3-like tiling window manager for macOS|
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.0.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
@@ -161,8 +160,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2026-01-07|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2026-01-09|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2026-01-10|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2026-01-10|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||2025-09-13|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
