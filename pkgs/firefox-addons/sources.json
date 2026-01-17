@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4658660/noscript-13.5.6.xpi",
-    "version": "13.5.6",
-    "sha256": "0v7d6mj1mxjjysza27619awlqvybf5npxxvpg1n45490zph6qq78",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4665893/noscript-13.5.9.xpi",
+    "version": "13.5.9",
+    "sha256": "1pjmgspb4jybp1kzwikgyhbkbx8v5298wnsw0qyyjvfwj1afbsqn",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4661054/styl_us-2.3.19.xpi",
-    "version": "2.3.19",
-    "sha256": "0cmaxjs9h1qzr2bjb6hajd13ahsj38s5qvyi47wb3wdjfgvclygl",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4661054/styl_us-2.3.19_qtD9vir.xpi",
+    "version": "2601170606",
+    "sha256": "1wbayrvddlzz93n4j7d71dy3fq3nmyzmmjcm3wdksydqijdpvngy",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4638146/darkreader-4.9.118.xpi",
-    "version": "4.9.118",
-    "sha256": "154k9hn7ak8x0kvvxvdj4p7q0lkn03rp4n4sxnfy2pjlhh7dmlk9",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4665768/darkreader-4.9.119.xpi",
+    "version": "4.9.119",
+    "sha256": "1gj455hd0nw2idssbs7cmpxkg1kbjafq18n718rfx0yg5wpl46i6",
     "pname": "darkreader"
   },
   "chrome-mask": {
