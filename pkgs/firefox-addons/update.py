@@ -3,11 +3,12 @@ import os
 import re
 import subprocess
 import sys
-from typing import List
+import logging
 
 import requests
 from bs4 import BeautifulSoup
 
+logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
 def nth(idx, lst):
     if idx >= len(lst):
@@ -25,7 +26,10 @@ def commit_source(msg):
     os.chdir(SCRIPT_DIR)
     for i in ["sources.json", "source.json"]:
         if os.path.isfile(i):
+            logging.info(f"git add {i}")
             subprocess.run(f"git add ./{i}", shell=True)
+
+    logging.info("git commit some file")
     subprocess.run(f"git commit -m '{msg}'", shell=True)
     os.chdir(current_dir)
 
@@ -40,6 +44,7 @@ def nix_prefix_url(url: str) -> str:
 
 
 def get_firefox_addons_xpi(name: str) -> str:
+    logging.info("get %s infos" % name)
     html = requests.get(f"https://addons.mozilla.org/en-US/firefox/addon/{name}").text
     soup = BeautifulSoup(html, "html.parser")
     for i in soup.find_all("a", class_="InstallButtonWrapper-download-link"):
@@ -54,8 +59,9 @@ def get_firefox_addons_xpi(name: str) -> str:
 
 
 def get_version(url: str) -> str:
+    import time
     re_pattern = re.search(r"-([0-9.]+).xpi", url)
-    return re_pattern.group(1) if re_pattern is not None else None
+    return re_pattern.group(1) if re_pattern is not None else time.strftime("%y%m%d%H%M")
 
 
 def get_current_src(f):
@@ -74,36 +80,39 @@ def init_sources(add_name):
     update_list = []
     for i in add_name:
         url = get_firefox_addons_xpi(i)
+        logging.info(f"get {i} version, sha256.")
         sources[i] = {
             "url": url,
             "version": get_version(url),
             "sha256": nix_prefix_url(url),
             "pname": i,
         }
+        logging.info(f"{i}, version: {sources[i]["version"]}")
         update_list.append(f"{i}: ∅ -> {sources[i]['version']}")
     return sources, update_list
 
 
-def update_src(add_name: List[str]):
+def update_src(add_name: list[str]):
     target_file = os.path.join(SCRIPT_DIR, "sources.json")
     update_list = []
     sources = get_current_src(target_file)
     next_sources = {}
     if sources:
         for i in add_name:
-            print(f"check {i} ...")
+            logging.info(f"check {i} ...")
             url = get_firefox_addons_xpi(i)
             sources_contain_i = True if i in sources else False
             if sources_contain_i and sources[i]["url"] == url:
                 next_sources[i] = sources.pop(i)
             else:
-                print(f"update {i} ...")
+                logging.info(f"update {i} ...")
                 next_sources[i] = {
                     "url": url,
                     "version": get_version(url),
                     "sha256": nix_prefix_url(url),
                     "pname": i,
                 }
+                logging.info(f"{i}, version: {sources[i]["version"]}")
                 current_version = sources[i]["version"] if sources_contain_i else "∅"
                 next_version = next_sources[i]["version"]
                 update_list.append(f"{i}: {current_version} -> {next_version}")
