@@ -129,13 +129,13 @@ fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/pragma
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma-Sevka-SC.ttf"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma-Sevka-SC-Regular.ttf"
 
 [pragmasevka-sc-nf]
 src.github = "shanyouli/iosevka"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma-Sevka-SC-NF.ttf"
+fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma-Sevka-SC-NF-Regular.ttf"
 
 [rime-ice]
 src.git = "https://github.com/iDvel/rime-ice.git"
