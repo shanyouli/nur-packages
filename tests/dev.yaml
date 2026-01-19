@@ -3,6 +3,7 @@
 # firefox-addons -> firefox-addons-xx
 # fish file -> fish-xx
 # lua file -> lua-apps-xx
+# emacs-packages-emacs-reader
 dev: true
 apps:
-  - nu-lint
+  - emacs-packages-emacs-reader
