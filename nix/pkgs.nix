@@ -98,7 +98,7 @@ let
             mapPkgs "emacs" (
               name: dir:
               callPkg' {
-                inherit dir name;
+                inherit dir name emacs;
                 inherit (efinal) callPackage;
               }
             )

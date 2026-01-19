@@ -75,7 +75,7 @@ rec {
               && (builtins.hasAttr "date" v)
             then
               {
-                version = "unstable-${v.date}";
+                version = "9.9.${v.date}";
                 rawVersion = v.version;
               }
             else
