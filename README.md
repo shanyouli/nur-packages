@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-01-17 06:38:06 UTC
+- LAST_MODIFY: 2026-01-19 12:26:11 UTC
 
 
 ## How to use
@@ -62,47 +62,48 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **67** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>33</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>34</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9-unstable-2026-01-10|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
+|[**bbdown**](https://github.com/nilaoda/BBDown)||9.9.20260110|Bilibili Downloader. 一款命令行式哔哩哔哩下载器.|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.0|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260116.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260105.0|Extensible, customizable GNU text editor|
+|[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260116|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.4|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.6|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.0.4|Firefox Chrome css|
 |[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.7.2|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
-|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||2025-10-05|Turn Lua code into Fennel code|
+|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
-|[**manix**](https://github.com/kaii-zen/manix/tree/master)||2021-07-28|A fast CLI documentation searcher for Nix|
-|[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.30|Offline translation model server|
+|[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
+|[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.32|Offline translation model server|
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
-|[**nu-lint**](https://github.com/wvhulle/nu-lint)||2026-01-16|Linter for Nu shell scripts that helpfully suggests improvements|
+|[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260119|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake|
 |[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake|
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.0.0|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||unstable-2026-01-05|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v14.2.5|Rime 配置:万象输入法|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260117|Rime 配置:雾凇拼音|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v14.3.1|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
-|[**singboxp**](https://sing-box.sagernet.org)||2026-01-12|The universal proxy platform|
+|[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||2025-12-19|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20251219|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -122,7 +123,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||1.2.1|macOS command-line utility for retrieving currently playing media|
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
-|[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||2023-11-13|zsh completions for yabai, the tiling window manager|
+|[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
 </details>
 
 ### firefox-addons
@@ -140,7 +141,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.23.9|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.17|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.5.9|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||13.5.10|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.4.0|Firefox extension for managing tabs and bookmarks in sidebar|
@@ -160,9 +161,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **66** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||2026-01-16|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||2026-01-17|FreeProxy: Collecting free proxies from internet|
-|[**sd**](None)||2025-09-13|My system command line|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260119|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260119|FreeProxy: Collecting free proxies from internet|
+|[**sd**](None)||20260118|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
