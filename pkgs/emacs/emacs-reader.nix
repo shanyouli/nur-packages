@@ -7,17 +7,22 @@
   source,
 }:
 
-melpaBuild {
-  pname = "reader";
+melpaBuild rec {
+  ename = "reader";
+  pname = "emacs-reader";
   inherit (source) src version;
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ mupdf-headless ];
   files = ''
-    (:defaults "render-core.*"))
+    (:defaults "render-core${stdenv.targetPlatform.extensions.sharedLibrary}")
   '';
-  preBuild = "make clean all CC=$CC USE_PKGCONFIG=yes";
-  runInstall = ''
-    install -Dm444 -t $out/lib/ render-core${stdenv.targetPlatform.extensions.sharedLibrary}
+  preBuild = ''
+    export EMACSLOADPATH=".:$EMACSLOADPATH"
+    make clean all CC=$CC USE_PKGCONFIG=yes
+  '';
+  postInstall = ''
+    dir=$out/share/emacs/site-lisp/elpa/reader-${version}
+    install -Dm444 render-core${stdenv.targetPlatform.extensions.sharedLibrary} $dir/
   '';
   meta = {
     homepage = "https://codeberg.org/divyaranjan/emacs-reader";
