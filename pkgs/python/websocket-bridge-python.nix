@@ -1,11 +1,9 @@
 {
-  python3Packages,
   source,
   lib,
+  buildPythonPackage,
+  websockets,
 }:
-let
-  inherit (python3Packages) buildPythonPackage websockets;
-in
 buildPythonPackage rec {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;

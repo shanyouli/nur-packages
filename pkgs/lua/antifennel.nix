@@ -2,15 +2,10 @@
   lib,
   stdenv,
   source,
-  # lua5_4,
-  # lua54Packages,
   lua,
-  luaPackages,
+  fennel,
   pandoc,
 }:
-let
-  inherit (luaPackages) fennel;
-in
 stdenv.mkDerivation rec {
   inherit (source) pname src;
   version = if (source ? date) then source.date else lib.removePrefix "v" source.version;

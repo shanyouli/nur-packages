@@ -16,6 +16,7 @@ fetch.github = "delfick/python-dict2xml"
 
 [pyfreeproxy]
 src.git = "https://github.com/CharlesPikachu/freeproxy"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "CharlesPikachu/freeproxy"
 
 [httpx]
@@ -27,10 +28,12 @@ fetch.github = "encode/httpx"
 [musicdl]
 fetch.github = "CharlesPikachu/musicdl"
 src.git = "https://github.com/CharlesPikachu/musicdl"
+git.date_format = "%Y%m%d%H%M%S"
 
 [sd]
 # src.github_tag = "shanyouli/sd"
 src.git = "https://github.com/shanyouli/sd"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "shanyouli/sd"
 
 [websocket-bridge-python]
@@ -45,6 +48,7 @@ fetch.url = "https://github.com/tesujimath/bash-env-json/raw/$ver/bash-env-json"
 
 [bbdown]
 src.git = "https://github.com/nilaoda/BBDown"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "nilaoda/BBDown"
 
 [clash2singbox]
@@ -69,6 +73,7 @@ git.fetchSubmodules = false
 # a fast CLI documentaion searcher for nix
 [manix]
 src.git = "https://github.com/kaii-zen/manix"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "kaii-zen/manix"
 cargo_lock = ["Cargo.lock"]
 
@@ -139,6 +144,7 @@ fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma
 
 [rime-ice]
 src.git = "https://github.com/iDvel/rime-ice.git"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "iDvel/rime-ice"
 
 [sarasa-term]
@@ -155,6 +161,7 @@ cargo_lock = ["Cargo.lock"]
 [singboxp]
 fetch.github = "PuerNya/sing-box"
 src.git = "https://github.com/PuerNya/sing-box"
+git.date_format = "%Y%m%d%H%M%S"
 
 [tmux-fastcopy]
 src.github = "abhinav/tmux-fastcopy"
@@ -162,6 +169,7 @@ fetch.github = "abhinav/tmux-fastcopy"
 
 [userChromeJS]
 src.git = "https://github.com/benzBrake/userChrome.js-Loader"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "benzBrake/userChrome.js-Loader"
 
 [zpmod]
@@ -182,6 +190,7 @@ git.fetchSubmodules = false
 
 [emacsclient]
 src.git = "https://github.com/nashamri/spacemacs-logo"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/nashamri/spacemacs-logo/raw/$ver/spacemacs.icns"
 
 [lporg]
@@ -190,6 +199,7 @@ fetch.github = "blacktop/lporg"
 
 [mac-app-util]
 src.git = "https://github.com/hraban/mac-app-util"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/hraban/mac-app-util/raw/$ver/main.lisp"
 
 [mkalias]
@@ -203,6 +213,7 @@ fetch.github = "kirtan-shah/nowplaying-cli"
 
 [nu-lint]
 src.git = "https://github.com/wvhulle/nu-lint"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "wvhulle/nu-lint"
 cargo_lock = [ "Cargo.lock" ]
 
@@ -221,6 +232,7 @@ fetch.github = "deweller/switchaudio-osx"
 
 [yabai-zsh-completions]
 src.git = "https://github.com/Amar1729/yabai-zsh-completions"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.github = "Amar1729/yabai-zsh-completions"
 
 ### firefox-addons
@@ -250,46 +262,57 @@ fetch.github = "yuuqilin/FlexFox"
 #### emacs
 ["emacs29.no-frame-refocus-cocoa"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/no-frame-refocus-cocoa.patch"
 
 ["emacs29.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
 
 ["emacs29.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-29/round-undecorated-frame.patch"
 
 ["emacs29.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/system-appearance.patch"
 
 ["emacs30.role-patch"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-28/fix-window-role.patch"
 
 ["emacs30.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/round-undecorated-frame.patch"
 
 ["emacs30.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-30/system-appearance.patch"
 
 ["emacs30.ns-mac-input-source"]
 src.git = "https://github.com/LuciusChen/.emacs.d"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/scripts/macos/patches/emacs-30/ns-alpha-background.patch"
 
 ["emacs31.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/round-undecorated-frame.patch"
 
 ["emacs31.system-appearance"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/system-appearance.patch"
 
 ["emacs31.ns-mac-input-source"]
 src.git = "https://github.com/LuciusChen/.emacs.d"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/scripts/macos/patches/emacs-31/ns-mac-input-source.patch"
 
 #### fish plugins
@@ -300,6 +323,7 @@ fetch.github = "jorgebucaran/fisher"
 #### lau packages
 [antifennel]
 src.git = "https://git.sr.ht/~technomancy/antifennel"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.git = "https://git.sr.ht/~technomancy/antifennel"
 
 [jeejah-rock]
@@ -309,6 +333,7 @@ fetch.url = "https://luarocks.org/manifests/technomancy/jeejah-$ver.rockspec"
 
 [jeejah]
 src.git = "https://gitlab.com/technomancy/jeejah"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.git = "https://gitlab.com/technomancy/jeejah"
 # src.webpage = "https://gitlab.com/technomancy/jeejah/-/tags"
 # src.regex = "href=\"/technomancy/jeejah/-/tags/([0-9.]+)"
@@ -317,4 +342,5 @@ fetch.git = "https://gitlab.com/technomancy/jeejah"
 #### emacs packages
 [emacs-reader]
 src.git = "https://codeberg.org/divyaranjan/emacs-reader"
+git.date_format = "%Y%m%d%H%M%S"
 fetch.git = "https://codeberg.org/divyaranjan/emacs-reader"
