@@ -141,12 +141,6 @@ fetch.url = "https://github.com/shanyouli/iosevka/releases/download/v$ver/Pragma
 src.git = "https://github.com/iDvel/rime-ice.git"
 fetch.github = "iDvel/rime-ice"
 
-# [rime-wanxiang]
-# src.github_tag = "amzxyz/rime_wanxiang_pro"
-# src.from_pattern = "v(.*)"
-# src.to_pattern = "\\1"
-# fetch.url = "https://github.com/amzxyz/rime_wanxiang_pro/releases/download/v$ver/wanxiang-moqi-fuzhu.zip"
-
 [sarasa-term]
 src.github = "laishulu/Sarasa-Term-SC-Nerd"
 src.from_pattern = "v(.*)"
@@ -169,11 +163,6 @@ fetch.github = "abhinav/tmux-fastcopy"
 [userChromeJS]
 src.git = "https://github.com/benzBrake/userChrome.js-Loader"
 fetch.github = "benzBrake/userChrome.js-Loader"
-
-# rime 輸入法的語法模型。
-# [wanxiang-lts-zh-hans]
-# src.manual = "2024"
-# fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
 
 [zpmod]
 src.github = "z-shell/zpmod"
@@ -324,3 +313,8 @@ fetch.git = "https://gitlab.com/technomancy/jeejah"
 # src.webpage = "https://gitlab.com/technomancy/jeejah/-/tags"
 # src.regex = "href=\"/technomancy/jeejah/-/tags/([0-9.]+)"
 # fetch.tarball = "https://gitlab.com/technomancy/jeejah/-/archive/$ver/jeejah-$ver.tar"
+
+#### emacs packages
+[emacs-reader]
+src.git = "https://codeberg.org/divyaranjan/emacs-reader"
+fetch.git = "https://codeberg.org/divyaranjan/emacs-reader"
