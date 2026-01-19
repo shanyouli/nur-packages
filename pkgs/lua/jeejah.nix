@@ -1,12 +1,11 @@
 {
-  luaPackages,
   fetchurl,
   fetchFromGitLab,
   fetchFromGitHub,
+  luaOlder,
+  luasocket,
+  buildLuarocksPackage,
 }:
-let
-  inherit (luaPackages) luaOlder luasocket buildLuarocksPackage;
-in
 buildLuarocksPackage {
   pname = "jeejah";
   version = "0.3.2-1";

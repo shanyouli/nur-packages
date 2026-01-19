@@ -1,19 +1,14 @@
 {
   lib,
-  python3,
   installShellFiles,
   source,
   stdenv,
   darwin,
+  typer,
+  buildPythonApplication,
+  hatchling,
+  wcwidth,
 }:
-let
-  inherit (python3.pkgs)
-    typer
-    buildPythonApplication
-    hatchling
-    wcwidth
-    ; # rich 丰富色彩
-in
 buildPythonApplication rec {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
@@ -22,7 +17,8 @@ buildPythonApplication rec {
   nativeBuildInputs = [
     hatchling
     installShellFiles
-  ] ++ lib.optional stdenv.hostPlatform.isDarwin [ darwin.ps ];
+  ]
+  ++ lib.optional stdenv.hostPlatform.isDarwin [ darwin.ps ];
   propagatedBuildInputs = [
     typer
     wcwidth

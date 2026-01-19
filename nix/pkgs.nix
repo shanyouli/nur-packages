@@ -50,7 +50,12 @@ let
           lib.getAttr basename sources;
 
       callPkg' =
-        { dir, name, ... }@extraArgs:
+        {
+          dir,
+          name,
+          callPackage ? final.callPackage,
+          ...
+        }@extraArgs:
         let
           package = import dir;
           source = sourceFn dir name;
@@ -58,22 +63,49 @@ let
             lib.removeAttrs extraArgs [
               "dir"
               "name"
+              "callPackage"
             ]
             // {
               inherit sources source;
+              pkgs = final;
             }
           );
         in
-        final.callPackage package args;
+        callPackage package args;
       callPkg = name: dir: callPkg' { inherit dir name; };
 
-      callFishPkg =
-        name: dir:
-        callPkg' {
-          inherit dir name;
-          inherit (prev.fishPlugins) buildFishPlugin fishtape_3 fishtape;
-        };
-
+      # 为某些不支持 overrideScope 属性合集的包如 fishPlugins，让其支持他，
+      # 从而避免依赖地狱。
+      makeCustomScope =
+        pathName: prevSet:
+        (lib.makeScope final.newScope (
+          efinal:
+          prevSet
+          // (mapPkgs pathName (
+            name: dir:
+            callPkg' {
+              inherit name dir;
+              inherit (efinal) callPackage;
+            }
+          ))
+        ));
+      ## emacsPacakges overlay
+      emacs-overlay = {
+        emacsPackagesFor =
+          emacs:
+          (prev.emacsPackagesFor emacs).overrideScope (
+            efinal: _:
+            mapPkgs "emacs" (
+              name: dir:
+              callPkg' {
+                inherit dir name;
+                inherit (efinal) callPackage;
+              }
+            )
+          );
+        # 别名映射：让 pkgs.emacsPackages 也能直接访问
+        emacsPackages = final.emacsPackagesFor final.emacs;
+      };
       # python overlays
       # @see https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/python.section.md
       pyPackageOverrides =
@@ -83,6 +115,7 @@ let
             name: dir:
             pfinal.toPythonModule (callPkg' {
               inherit name dir;
+              inherit (pfinal) callPackage;
               python3Packages = pfinal;
             });
         in
@@ -127,6 +160,7 @@ let
                       name: dir:
                       callPkg' {
                         inherit name dir;
+                        inherit (lua_final) callPackage;
                         lua = prev.${interpreter};
                         luaPackages = lua_final;
                       };
@@ -147,7 +181,6 @@ let
           overriddenLuas = lib.concatMap overriddenLua luaNames;
         in
         builtins.listToAttrs overriddenLuas;
-
     in
     rec {
       pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
@@ -162,11 +195,13 @@ let
     // {
       inherit (prev.extend inputs.cl-nix-lite.overlays.default) lispPackagesLite;
     }
+    // emacs-overlay
     // (mapPkgs "common" callPkg)
     // {
       firefox-addons = mapPkgs "firefox-addons" callPkg;
       darwinapps = mapPkgs "darwin" callPkg;
-      fishPlugins = mapPkgs "fish" callFishPkg;
+      # fishPlugins = mapPkgs "fish" callFishPkg;
+      fishPlugins = makeCustomScope "fish" prev.fishPlugins;
     };
 
   packageFn =
@@ -183,7 +218,8 @@ let
     // (mapPkgs' "firefox-addons" (n: _: lib.nameValuePair "firefox-addons-${n}" p.firefox-addons.${n}))
     // darwinPkgs
     // (mapPkgs' "python" (n: _: lib.nameValuePair "python-apps-${n}" p.python3.pkgs.${n}))
-    // (mapPkgs' "lua" (n: _: lib.nameValuePair "lua-apps-${n}" p.lua54Packages.${n}));
+    // (mapPkgs' "lua" (n: _: lib.nameValuePair "lua-apps-${n}" p.lua54Packages.${n}))
+    // (mapPkgs' "emacs" (n: _: lib.nameValuePair "emacs-packages-${n}" p.emacsPackages.${n}));
 in
 {
   flake = {

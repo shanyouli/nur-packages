@@ -1,12 +1,11 @@
 {
-  python3Packages,
   lib,
   source,
+  buildPythonPackage,
+  grapheme,
+  about-time,
   ...
 }:
-let
-  inherit (python3Packages) buildPythonPackage grapheme about-time;
-in
 buildPythonPackage rec {
   inherit (source) pname src;
   version =

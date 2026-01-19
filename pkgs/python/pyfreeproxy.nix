@@ -1,20 +1,16 @@
 {
   lib,
-  python3Packages,
   source,
+  buildPythonPackage,
+  requests,
+  beautifulsoup4,
+  fake-useragent,
+  prettytable,
+  lxml,
+  platformdirs,
+  playwright,
+  ...
 }:
-let
-  inherit (python3Packages)
-    buildPythonPackage
-    requests
-    beautifulsoup4
-    fake-useragent
-    prettytable
-    lxml
-    platformdirs
-    playwright
-    ;
-in
 buildPythonPackage rec {
   inherit (source) pname src;
   version =
@@ -32,7 +28,7 @@ buildPythonPackage rec {
   doCheck = false;
   format = "setuptools";
   meta = with lib; {
-    description = ''FreeProxy: Collecting free proxies from internet'';
+    description = "FreeProxy: Collecting free proxies from internet";
     homepage = "https://github.com/CharlesPikachu/freeproxy";
     platforms = platforms.unix;
     maintainers = with maintainers; [ lye ];

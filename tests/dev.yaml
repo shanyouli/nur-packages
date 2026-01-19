@@ -2,6 +2,7 @@
 # python file -> python-apps-xx
 # firefox-addons -> firefox-addons-xx
 # fish file -> fish-xx
+# emacsPackages -> emacs-packages-xx
 # lua file -> lua-apps-xx
 # emacs-packages-emacs-reader
 dev: true
