@@ -59,6 +59,11 @@ fetch.github = "xmdhs/clash2singbox"
 src.github = "OwO-Network/DeepLX"
 fetch.github = "OwO-Network/DeepLX"
 
+[ewt-rs]
+src.github = "Master-Hash/ewt-rs"
+fetch.github = "Master-Hash/ewt-rs"
+cargo_lock = [ "Cargo.lock" ]
+
 [fav]
 src.github_tag = "kingwingfly/fav"
 fetch.github = "kingwingfly/fav"
@@ -331,3 +336,8 @@ fetch.git = "https://gitlab.com/technomancy/jeejah"
 src.git = "https://codeberg.org/divyaranjan/emacs-reader"
 git.date_format = "%Y%m%d"
 fetch.git = "https://codeberg.org/divyaranjan/emacs-reader"
+
+[emt]
+src.git = "https://github.com/roife/emt"
+git.date_format = "%Y%m%d"
+fetch.github = "roife/emt"
