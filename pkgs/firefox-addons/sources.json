@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4668449/noscript-13.5.10.xpi",
-    "version": "13.5.10",
-    "sha256": "0knnvzj79vl7a6pi6kcd38x4kv3930b8wqq8d0pczqfycdg5j20r",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4674630/noscript-13.5.12.xpi",
+    "version": "13.5.12",
+    "sha256": "0ajc3zicarr4jwb0bzjvzbsyz45hspa7pwsj0ap2w6nd8hjlkvsq",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4455138/violentmonkey-2.31.0.xpi",
-    "version": "2.31.0",
-    "sha256": "1vncxh10a99fvhifz399r4gdszqzdbw46567xcx5y2n379513048",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4677263/violentmonkey-2.34.0.xpi",
+    "version": "2.34.0",
+    "sha256": "0wslrnj688v1flirxkbcny3q5fxca89lkabinlysfpbnjqkynn5c",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4629131/ublock_origin-1.68.0.xpi",
-    "version": "1.68.0",
-    "sha256": "05a3f11dcbdj6s6c70x7hanqrpdv35lia4ia490qh0clljylmbsw",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4675310/ublock_origin-1.69.0.xpi",
+    "version": "1.69.0",
+    "sha256": "1kvj2kwwiih7yqiirqha7xfvip4vzrgyqr4rjjhaiyi5ibkcsnvq",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4650480/kiss_translator-2.0.17.xpi",
-    "version": "2.0.17",
-    "sha256": "1ixhj702q6wxc4jr7v4zdg7ga2q3r9a6z1plz9lwp30knq1qyadl",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4677105/kiss_translator-2.0.18.xpi",
+    "version": "2.0.18",
+    "sha256": "1cy9vzz8xgw5j1qg95m4vadk4qz1zz67m0qkwzs96q0s6niw6f25",
     "pname": "kiss-translator"
   },
   "raindropio": {
