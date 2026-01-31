@@ -19,7 +19,8 @@ buildDotnetModule rec {
   # projectFile = "BBDown.sln";
   projectFile = "BBDown/BBDown.csproj";
   nugetDeps = ./deps.json;
-  dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_9_0 ]; # sdk_8_0
+  # dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_9_0 ]; # sdk_8_0
+  dotnet-sdk = dotnetCorePackages.sdk_9_0;
   useDotnetFromEnv = true;
   executables = [ "BBDown" ];
   nativeBuildInputs = [
