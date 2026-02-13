@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4665768/darkreader-4.9.119.xpi",
-    "version": "4.9.119",
-    "sha256": "1gj455hd0nw2idssbs7cmpxkg1kbjafq18n718rfx0yg5wpl46i6",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4690081/darkreader-4.9.120.xpi",
+    "version": "4.9.120",
+    "sha256": "1p8gmypj43qzsl2daj7facqz5qqy0npf1k4fa8k65lm4wjhgass9",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4677105/kiss_translator-2.0.18.xpi",
-    "version": "2.0.18",
-    "sha256": "1cy9vzz8xgw5j1qg95m4vadk4qz1zz67m0qkwzs96q0s6niw6f25",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4692365/kiss_translator-2.0.20.xpi",
+    "version": "2.0.20",
+    "sha256": "10ls11nbcp4kvgzvjyg9zsb20n780z7jyi0y6j9rzpmgghgak9vq",
     "pname": "kiss-translator"
   },
   "raindropio": {
