@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4708109/download_with_aria2-4.23.4.4008.xpi",
-    "version": "4.23.4.4008",
-    "sha256": "11aqh1f09jsgjd2vz38s6r597lxr46m3z63dqaysanfcvra4zb54",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4724374/download_with_aria2-4.25.0.4026.xpi",
+    "version": "4.25.0.4026",
+    "sha256": "18dk392svf867walbxgpg5c79s9z4hwa5isw25jl747rj1jf6n16",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4677263/violentmonkey-2.34.0.xpi",
-    "version": "2.34.0",
-    "sha256": "0wslrnj688v1flirxkbcny3q5fxca89lkabinlysfpbnjqkynn5c",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4704557/violentmonkey-2.35.0.xpi",
+    "version": "2.35.0",
+    "sha256": "1jayckf59pqyy46izibhdvhg9pwix82a5ncmaghzbr1hyw3yvmh0",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4675310/ublock_origin-1.69.0.xpi",
-    "version": "1.69.0",
-    "sha256": "1kvj2kwwiih7yqiirqha7xfvip4vzrgyqr4rjjhaiyi5ibkcsnvq",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4721638/ublock_origin-1.70.0.xpi",
+    "version": "1.70.0",
+    "sha256": "1wcwp1a48cgalrx8zlhkwz54jvwk5s4ljmvnbnj66mq0fwl0swzj",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
