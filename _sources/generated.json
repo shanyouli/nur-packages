@@ -949,12 +949,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "6984fe457cd4098e164084672a4cc5dfd657964f",
-            "sha256": "sha256-sVBhb0tmjb2lHAtODR7rcAVWE6VItBACA8lCYlvUihU=",
+            "rev": "6fb2d789f58042a2ce897981f01604a08daae141",
+            "sha256": "sha256-vfkOtYjL5rZNDz5eu1JKxxcf4Icqii90cl/sS1w3Yv4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6984fe457cd4098e164084672a4cc5dfd657964f"
+        "version": "6fb2d789f58042a2ce897981f01604a08daae141"
     },
     "rime-ice": {
         "cargoLock": null,
