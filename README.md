@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-04-04 04:44:50 UTC
+- LAST_MODIFY: 2026-04-04 05:15:30 UTC
 
 
 ## How to use
@@ -76,8 +76,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.1|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260319.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260319.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260401.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260402.0|Extensible, customizable GNU text editor|
 |[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260217|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20250102|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
@@ -100,7 +100,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260402|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v15.2.4|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v15.5.1|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
@@ -119,7 +119,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.8.4|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.3.1|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.8.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.9.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.4.0|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||1.2.1|macOS command-line utility for retrieving currently playing media|
@@ -143,7 +143,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.26.5|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.20|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.6.6|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||13.6.13|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.5.0|Firefox extension for managing tabs and bookmarks in sidebar|
