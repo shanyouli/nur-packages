@@ -220,6 +220,11 @@ cargo_lock = [ "Cargo.lock" ]
 src.github_tag = "jcsalterego/pngpaste"
 fetch.github = "jcsalterego/pngpaste"
 
+[proxychains-rs]
+src.github = "tianrking/proxychains-rs"
+fetch.github = "tianrking/proxychains-rs"
+cargo_lock = [ "Cargo.lock" ]
+
 [switchaudio-osx]
 src.github_tag = "deweller/switchaudio-osx"
 fetch.github = "deweller/switchaudio-osx"
