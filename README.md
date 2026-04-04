@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-03-20 22:07:04 UTC
+- LAST_MODIFY: 2026-04-04 04:44:50 UTC
 
 
 ## How to use
@@ -84,8 +84,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**ewt-rs**](https://github.com/Master-Hash/ewt-rs)||0.4.0|A Rust implementation of Easy Web Token|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.4|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.0.5|Firefox Chrome css|
-|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.8.0|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.0.6|Firefox Chrome css|
+|[**go-musicfox**](https://github.com/go-musicfox/go-musicfox)||4.8.1|go-musicfox是用Go写的又一款网易云音乐命令行客户端|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
@@ -93,19 +93,19 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
 |[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260307|Linter for Nu shell scripts that helpfully suggests improvements|
-|[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake|
-|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake|
-|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake|
-|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
-|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.2.1-1773364951|我的自定义 iosvake|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260321|Rime 配置:雾凇拼音|
+|[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake|
+|[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake|
+|[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake|
+|[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
+|[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.3.0|我的自定义 iosvake|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260402|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v15.2.4|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20251219|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20260328|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||1.1.0|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -163,8 +163,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260318|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260320|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260404|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260404|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260118|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
