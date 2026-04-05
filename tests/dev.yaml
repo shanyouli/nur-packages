@@ -7,4 +7,5 @@
 # emacs-packages-emacs-reader
 dev: true
 apps:
-  - emacs-packages-emacs-reader
+  # - emacs-packages-emacs-reader
+  - proxychains-rs
