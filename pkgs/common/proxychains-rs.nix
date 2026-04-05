@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage rec {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   cargoBuildFlags = [ "--workspace" ];
-  cargoHash = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+  cargoHash = "sha256-9atn5qyBDy4P6iUoHFhg+TV6Ur71fiah4oTJbBMeEy4=";
   # nativeBuildInputs = [
   #   pkg-config
   #   rustPlatform.bindgenHook
