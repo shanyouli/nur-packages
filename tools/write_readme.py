@@ -43,6 +43,7 @@ def get_packages_info(p):
     linux_apps = {}
     darwin_apps = {}
     py_apps = {}
+    emacs_apps = {}
     common = {}
     for k, v in results.items():
         if k.startswith("firefox-addons"):
@@ -53,9 +54,11 @@ def get_packages_info(p):
             darwin_apps[k] = v
         elif k.startswith("linux-apps"):
             linux_apps[k] = v
+        elif k.startswitch("emacs-apps"):
+            emacs_apps[k] = v
         else:
             common[k] = v
-    return total_pkgs, common, linux_apps, darwin_apps, firefox_addons, py_apps
+    return total_pkgs, common, linux_apps, darwin_apps, firefox_addons, py_apps, emacs_apps
 
 
 def pname_fn(name, data, prefix=""):
@@ -81,7 +84,10 @@ def show_pacakges(data: dict, typology: str) -> str:
         prefix = "linux-apps-"
     elif typology == "darwin":
         sum_msg = "Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. "
-        prefix = "darwin-addons-"
+        prefix = "darwin-apps-"
+    elif typology == "emacs-apps-":
+        sum_msg = "<b>emacs package</b>, default support for all systems."
+        prefix = "Emacs-packages-"
     else:
         sum_msg= "Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. "
         prefix = ""
@@ -103,7 +109,7 @@ def show_pacakges(data: dict, typology: str) -> str:
 
 
 def get_package_show(p) -> str:
-    total_pkgs, common, linux_apps, darwin_apps, firefox_addons, python3_apps = get_packages_info(p)
+    total_pkgs, common, linux_apps, darwin_apps, firefox_addons, python3_apps, emacs_apps = get_packages_info(p)
     msg = f"""## packages
 
 Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **{total_pkgs}** packages.
