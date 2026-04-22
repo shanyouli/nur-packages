@@ -7,4 +7,4 @@
 # emacs-packages-emacs-reader
 dev: true
 apps:
-  - emacs-packages-emacs-reader
+  - go-musicfox

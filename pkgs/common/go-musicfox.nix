@@ -14,7 +14,7 @@ buildGoModule rec {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
   vendorHash = null;
-  subPackages = [ "cmd/musicfox.go" ];
+  subPackages = [ "cmd" ];
   buildInputs =
     lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk ]
     ++ lib.optionals stdenv.hostPlatform.isLinux [
@@ -30,4 +30,3 @@ buildGoModule rec {
     license = licenses.mit;
   };
 }
-
