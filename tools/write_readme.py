@@ -54,7 +54,7 @@ def get_packages_info(p):
             darwin_apps[k] = v
         elif k.startswith("linux-apps"):
             linux_apps[k] = v
-        elif k.startswitch("emacs-apps"):
+        elif k.startswith("emacs-apps"):
             emacs_apps[k] = v
         else:
             common[k] = v
