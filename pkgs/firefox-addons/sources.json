@@ -30,15 +30,15 @@
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4593736/user_agent_string_switcher-0.6.6.xpi",
-    "version": "0.6.6",
-    "sha256": "16bmjsw2g47f8fqcshdiyba2gl6amabsjxldmzvj39w9pllyw7ww",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4773733/user_agent_string_switcher-0.6.7.xpi",
+    "version": "0.6.7",
+    "sha256": "0mxj5aw6vd357lwvw30hr3rzy3c77rpmm4w0b5qhpwc0lg4h96lp",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4704557/violentmonkey-2.35.0.xpi",
-    "version": "2.35.0",
-    "sha256": "1jayckf59pqyy46izibhdvhg9pwix82a5ncmaghzbr1hyw3yvmh0",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4777100/violentmonkey-2.37.0.xpi",
+    "version": "2.37.0",
+    "sha256": "0dfp075p1km3ngvxik68rfa1rr0xfyzn9l5f4swa7hwiyc1b812x",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4742336/immersive_translate-1.27.2.xpi",
-    "version": "1.27.2",
-    "sha256": "0banw7lkv9hbik6xk5hgqcdsr4hvh9nrrdafsms31dsl505vwhl1",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4766210/immersive_translate-1.28.3.xpi",
+    "version": "1.28.3",
+    "sha256": "069l9l8lavhxl6sgl7fhqf1sp1pz3yyxb6f7nm7ns20fasmvf14w",
     "pname": "immersive-translate"
   },
   "darkreader": {
