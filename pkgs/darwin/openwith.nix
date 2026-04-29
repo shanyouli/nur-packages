@@ -12,7 +12,7 @@ rustPlatform.buildRustPackage rec {
   buildInputs = [ apple-sdk ];
   meta = with lib; {
     description = "Manage macOS file extension associations from the terminal ";
-    homepage = "https://github.com/ColeMei/openwith/tree/main";
+    homepage = "https://github.com/ColeMei/openwith";
     license = licenses.mit;
     platforms = platforms.darwin;
     mainProgram = "openwith";

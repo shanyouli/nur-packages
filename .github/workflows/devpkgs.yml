@@ -199,7 +199,7 @@ jobs:
           nix run .#stopDev
           git add ./tests/dev.yaml
           git commit -m "feat: turn off dev"
-     - name: merge-to-master with macos-latest
+      - name: merge-to-master with macos-latest
         if: ${{ env.MY_MERGE_MACOS == 'true'}}
         uses: ad-m/github-push-action@master
         with:
