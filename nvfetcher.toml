@@ -189,6 +189,11 @@ fetch.github = "tsonglew/dutis"
 cargo_lock = ["Cargo.lock"]
 git.fetchSubmodules = false
 
+[openwith]
+src.github = "ColeMei/openwith"
+fetch.github = "ColeMei/openwith"
+cargo_lock = ["Cargo.lock"]
+
 [emacsclient]
 src.git = "https://github.com/nashamri/spacemacs-logo"
 fetch.url = "https://github.com/nashamri/spacemacs-logo/raw/$ver/spacemacs.icns"
