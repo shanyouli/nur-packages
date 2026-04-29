@@ -120,12 +120,13 @@ jobs:
       - name: Check evaluation
         run: nix flake show
       - name: dev nix packages
+        if: ${{ needs.pre-work.outputs.devTest == 'true' }}
         run: |
           echo "BUILD_DEV_PACKAGES=$(yq  -r .dev ./tests/dev.yaml)" >> $GITHUB_ENV
           nix run .#devci
         timeout-minutes: 240
       - name: build all packages
-        if: ${{ env.BUILD_DEV_PACKAGES != 'true' }}
+        if: ${{ needs.pre-work.outputs.devTest != 'true' }}
         run: nix run .#ci
         timeout-minutes: 240
       - name: modify code
@@ -179,7 +180,26 @@ jobs:
               echo "MY_MERGE_MACOS=true" >> $GITHUB_ENV
             fi
           fi
-      - name: merge-to-master with macos-latest
+      - name: Install nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - name: Setup cachix
+        uses: cachix/cachix-action@v16
+        # Don't replace <YOUR_CACHIX_NAME> here!
+        with:
+          name: 'shanyouli'
+          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+      - name: turn off dev.yaml
+        if: ${{ needs.pre-work.outputs.devTest == 'true' }}
+        run: |
+          nix run .#stopDev
+          git add ./tests/dev.yaml
+          git commit -m "feat: turn off dev"
+     - name: merge-to-master with macos-latest
         if: ${{ env.MY_MERGE_MACOS == 'true'}}
         uses: ad-m/github-push-action@master
         with:

@@ -202,6 +202,13 @@
         readme = ''
           ${pkgs.python3}/bin/python3 ./tools/write_readme.py
         '';
+        stopDev = ''
+          const P = ./tests/dev.yaml
+          let p_info = open $P
+          if $p_info.dev {
+            $p_info | update dev false | save -f $P
+          }
+        '';
         updatePy =
           let
             py = pkgs.python3.withPackages (
