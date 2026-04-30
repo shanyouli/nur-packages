@@ -9,30 +9,31 @@ jobs:
   pre-work:
     runs-on: ubuntu-latest
     outputs:
-      updatepy: ${{ steps.check_updatePy.outputs.changed}}
-      updateNvfetcher: ${{ steps.check_nvfetcher.outputs.changed }}
-      devTest: ${{ steps.check_dev.outputs.changed }}
+      updatepy: ${{ steps.check.outputs.python }}
+      updateNvfetcher: ${{ steps.check.outputs.nvfetcher }}
+      devTest: ${{ steps.check.outputs.dev }}
     steps:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-      - name: check nvfetcher.toml has changed
-        id: check_nvfetcher
+      - uses: hustcer/setup-nu@v3
+        with:
+          version: "v0.108.0"
+      - name: check update
+        id: check
+        shell: nu {0}
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "^nvfetcher.toml$"; then
-             echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-      - name: check update.pya has changed
-        id: check_updatePy
-        run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "update.py$"; then
-             echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-      - name: check tests/dev.nix has changed
-        id: check_dev
-        run: |
-          echo "changed=$(yq  -r .dev ./tests/dev.yaml)" >> $GITHUB_OUTPUT
+          let P = open "./tests/dev.yaml"
+          if ($P | get -o dev) {
+            echo "dev=true" o>> $env.GITHUB_OUTPUT
+          }
+          if ($P | get -o "upPy") {
+            echo "python=true" o>> $env.GITHUB_OUTPUT
+          }
+          if ($P | get -o "upNvfetcher") {
+            echo "nvfetcher=true" o>> $env.GITHUB_OUTPUT
+          }
 
   update:
     runs-on: ubuntu-latest
@@ -121,9 +122,7 @@ jobs:
         run: nix flake show
       - name: dev nix packages
         if: ${{ needs.pre-work.outputs.devTest == 'true' }}
-        run: |
-          echo "BUILD_DEV_PACKAGES=$(yq  -r .dev ./tests/dev.yaml)" >> $GITHUB_ENV
-          nix run .#devci
+        run: nix run .#devci
         timeout-minutes: 240
       - name: build all packages
         if: ${{ needs.pre-work.outputs.devTest != 'true' }}
@@ -151,6 +150,7 @@ jobs:
   publish-dev:
     runs-on: ubuntu-latest
     needs:
+      - pre-work
       - dev-pacakges
       - update
     steps:
@@ -180,23 +180,23 @@ jobs:
               echo "MY_MERGE_MACOS=true" >> $GITHUB_ENV
             fi
           fi
-      - name: Install nix
-        uses: cachix/install-nix-action@v31
+      - uses: hustcer/setup-nu@v3
         with:
-          extra_nix_config: |
-            experimental-features = nix-command flakes
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-      - name: Setup cachix
-        uses: cachix/cachix-action@v17
-        # Don't replace <YOUR_CACHIX_NAME> here!
-        with:
-          name: 'shanyouli'
-          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          version: "v0.108.0"
       - name: turn off dev.yaml
+        if: ${{ needs.pre-work.outputs.devTest == 'true' ||  needs.update.outputs.update == 'true' }}
+        shell: nu {0}
+        run: |
+          let info = {
+            dev: false,
+            upPy: false,
+            upNvfetcher: false,
+            apps: ["darwin file -> darwin-apps-xx", "python file -> python-apps-xx", "firefox-addons -> firefox-addons-xx", "fish file -> fish-xx", "emacsPackages -> emacs-packages-xx",  "lua file -> lua-apps-x"]
+          }
+          $info | to yaml | save -f ./tests/dev.yaml
+      - name: commit dev.yaml
         if: ${{ needs.pre-work.outputs.devTest == 'true' }}
         run: |
-          nix run .#stopDev
           git add ./tests/dev.yaml
           git commit -m "feat: turn off dev"
       - name: merge-to-master with macos-latest

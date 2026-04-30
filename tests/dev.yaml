@@ -6,5 +6,7 @@
 # lua file -> lua-apps-xx
 # emacs-packages-emacs-reader
 dev: true
+upPy: false
+upNvfetcher: false
 apps:
   - darwin-apps-openwith
