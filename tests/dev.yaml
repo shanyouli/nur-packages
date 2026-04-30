@@ -1,12 +1,10 @@
-# darwin file -> darwin-apps-xx
-# python file -> python-apps-xx
-# firefox-addons -> firefox-addons-xx
-# fish file -> fish-xx
-# emacsPackages -> emacs-packages-xx
-# lua file -> lua-apps-xx
-# emacs-packages-emacs-reader
-dev: true
+dev: false
 upPy: false
 upNvfetcher: false
 apps:
-  - darwin-apps-openwith
+- darwin file -> darwin-apps-xx
+- python file -> python-apps-xx
+- firefox-addons -> firefox-addons-xx
+- fish file -> fish-xx
+- emacsPackages -> emacs-packages-xx
+- lua file -> lua-apps-x
