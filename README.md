@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-04-30 06:19:25 UTC
+- LAST_MODIFY: 2026-05-01 22:30:25 UTC
 
 
 ## How to use
@@ -62,12 +62,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>35</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>36</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -76,7 +76,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.1.4|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.1|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260429.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260501.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260422.0|Extensible, customizable GNU text editor|
 |[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260415|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20250102|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
@@ -98,8 +98,9 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**pragmasevka-sc**](https://github.com/shanyouli/iosevka)||34.4.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.4.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.4.0|我的自定义 iosvake|
+|[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.3|Rime 配置:白霜拼音|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260427|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v15.9.4|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v15.9.5|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
@@ -164,7 +165,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260428|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260430|FreeProxy: Collecting free proxies from internet|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260501|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260421|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
