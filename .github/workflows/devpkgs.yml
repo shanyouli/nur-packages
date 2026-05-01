@@ -26,13 +26,13 @@ jobs:
         run: |
           let P = open "./tests/dev.yaml"
           if ($P | get -o dev) {
-            echo "dev=true" o>> $env.GITHUB_OUTPUT
+            ^echo "dev=true" o>> $env.GITHUB_OUTPUT
           }
           if ($P | get -o "upPy") {
-            echo "python=true" o>> $env.GITHUB_OUTPUT
+            ^echo "python=true" o>> $env.GITHUB_OUTPUT
           }
           if ($P | get -o "upNvfetcher") {
-            echo "nvfetcher=true" o>> $env.GITHUB_OUTPUT
+            ^echo "nvfetcher=true" o>> $env.GITHUB_OUTPUT
           }
 
   update:
@@ -59,14 +59,6 @@ jobs:
           if [[ '${{ needs.pre-work.outputs.updatepy }}' == 'true' || '${{ needs.pre-work.outputs.updateNvfetcher }}' == 'true' ]]; then
             echo "update=true" >> $GITHUB_OUTPUT
             echo "update=true" >> $GITHUB_ENV
-          fi
-      - name: Debug from pre-work
-        run: |
-          echo "updateNvfetcher = '${{ needs.pre-work.outputs.updateNvfetcher }}'"
-          if [[ '${{ needs.pre-work.outputs.updateNvfetcher }}' == 'true' ]]; then
-            echo "Condition satisfied"
-          else
-            echo "Condition NOT satisfied"
           fi
       - name: update src by update.py
         if: needs.pre-work.outputs.updatepy == 'true'
