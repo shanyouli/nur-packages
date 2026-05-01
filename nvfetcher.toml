@@ -148,6 +148,10 @@ src.git = "https://github.com/iDvel/rime-ice.git"
 git.date_format = "%Y%m%d"
 fetch.github = "iDvel/rime-ice"
 
+[rime-frost]
+src.github = "gaboolic/rime-frost"
+fetch.github = "gaboolic/rime-frost"
+
 [sarasa-term]
 src.github = "laishulu/Sarasa-Term-SC-Nerd"
 src.from_pattern = "v(.*)"
