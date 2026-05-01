@@ -60,6 +60,14 @@ jobs:
             echo "update=true" >> $GITHUB_OUTPUT
             echo "update=true" >> $GITHUB_ENV
           fi
+      - name: Debug from pre-work
+        run: |
+          echo "updateNvfetcher = '${{ needs.pre-work.outputs.updateNvfetcher }}'"
+          if [[ '${{ needs.pre-work.outputs.updateNvfetcher }}' == 'true' ]]; then
+            echo "Condition satisfied"
+          else
+            echo "Condition NOT satisfied"
+          fi
       - name: update src by update.py
         if: needs.pre-work.outputs.updatepy == 'true'
         run: nix run .#updatePy
