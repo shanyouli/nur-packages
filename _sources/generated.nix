@@ -568,13 +568,13 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "35d439257c3005496bfae6ac02c89b4accaf0d79";
+    version = "07e931e9998c5cf9baa7ed7cdb42c8ac5d3dac0e";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "35d439257c3005496bfae6ac02c89b4accaf0d79";
+      rev = "07e931e9998c5cf9baa7ed7cdb42c8ac5d3dac0e";
       fetchSubmodules = false;
-      sha256 = "sha256-qInz3qp9Jcm2gCCwmITBk8wLJn/Jay6MCWuZ3WOLc0k=";
+      sha256 = "sha256-nQp9g007YRXzFBCUTFn3P54+2Q6CeclQZNRka2qon5Y=";
     };
     date = "20260501";
   };
