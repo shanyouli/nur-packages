@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4777406/noscript-13.6.16.xpi",
-    "version": "13.6.16",
-    "sha256": "11qg25aicr38xdm50jca42pnnayqa57bkhc5n0d9md7sn3rzrzny",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4794904/noscript-13.6.19.xpi",
+    "version": "13.6.19",
+    "sha256": "03pi1gfb2kvpb5wwdswrp9ksa5wl2ij8cnigp2h2rpldn4gc5dc1",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4661054/styl_us-2.3.19_qtD9vir.xpi",
-    "version": "2601170606",
-    "sha256": "1wbayrvddlzz93n4j7d71dy3fq3nmyzmmjcm3wdksydqijdpvngy",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4802647/styl_us-2.3.23.xpi",
+    "version": "2.3.23",
+    "sha256": "0axq25hgifl1hlaf05wyg9fd5wxnylcy2hc537cn3z0fpdv59vwl",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -60,15 +60,15 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4766210/immersive_translate-1.28.3.xpi",
-    "version": "1.28.3",
-    "sha256": "069l9l8lavhxl6sgl7fhqf1sp1pz3yyxb6f7nm7ns20fasmvf14w",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4805603/immersive_translate-1.29.4.xpi",
+    "version": "1.29.4",
+    "sha256": "1kbnxn45mhp5nlpzzqgw2rfccr1km246idibmdhmys9xmacwpgqr",
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4748915/darkreader-4.9.124.xpi",
-    "version": "4.9.124",
-    "sha256": "1gdwd04aq8ygqpahbw20ai0g301h9byz85n4nphcx6arajc3qw6f",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4783321/darkreader-4.9.125.xpi",
+    "version": "4.9.125",
+    "sha256": "0a5g7rkc0fgnp7fpwk37703yksbwh1csahgq22drpq3kr25s3a91",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4593637/zeroomega-3.4.5.xpi",
-    "version": "3.4.5",
-    "sha256": "02a0vipav5c4zvyisv27rq3kd0x6cf7fzy1saxgi7gsxif558ly0",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4810434/zeroomega-3.5.0.xpi",
+    "version": "3.5.0",
+    "sha256": "14n8hg82nidbawxh443dk1577rvb9yxq3gigjbzqzjhscbifv27k",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
