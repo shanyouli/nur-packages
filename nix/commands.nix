@@ -173,28 +173,6 @@
               ${nvfetcher_bin}/bin/nvfetcher ...$key_args -c nvfetcher.toml -o _sources
               print "::endgroup::"
             }
-            if ((git rev-parse --short=7 HEAD) != $ccommit) {
-              if (git log HEAD^..HEAD | str contains bbdown) {
-                print $"::group::(ansi green_underline)create bbdown deps update script(ansi reset)..."
-                ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.bbdown.fetch-deps --skip-cached --no-nom
-                print "::endgroup::"
-                print $"::group::(ansi green_underline)update bbdown deps(ansi reset)..."
-                if ("./result-" | path exists ) {
-                  ./result- ./pkgs/common/bbdown/deps.json
-                } else if ("./result" | path exists ) {
-                  ./result ./pkgs/common/bbdown/deps.json
-                }
-                # fix some error see: @https://github.com/NixOS/nixpkgs/pull/343837
-                ${pkgs.python3}/bin/python3 ./tools/patch-dotnet-deps.py ./pkgs/common/bbdown/deps.json
-                print "::endgroup::"
-              }
-              print "::group::commit bbdown deps"
-              if ((git diff ./pkgs/common/bbdown/deps.json) != "") {
-                git add ./pkgs/common/bbdown/deps.json
-                git commit -m "update bbdown deps"
-              }
-              print "::endgroup::"
-            }
           '';
         upFlake = ''
           nix flake update

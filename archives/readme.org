@@ -1,0 +1,38 @@
+* bbdown
+该程序于 2026-05-14 归档 [[https://github.com/nilaoda/BBDown][bbdown]]
+- nvfeather.toml
+#+begin_src tomal
+[bbdown]
+src.git = "https://github.com/nilaoda/BBDown"
+git.date_format = "%Y%m%d"
+fetch.github = "nilaoda/BBDown"
+#+end_src
+- dev/test.nix
+#+begin_src nix
+ bbdownDeps = nurAttrs.bbdown.fetch-deps;
+#+end_src
+- @nix/commonds.nix.nvfetcher 中更新方法
+#+begin_src nu
+if ((git rev-parse --short=7 HEAD) != $ccommit) {
+  if (git log HEAD^..HEAD | str contains bbdown) {
+    print $"::group::(ansi green_underline)create bbdown deps update script(ansi reset)..."
+    ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.bbdown.fetch-deps --skip-cached --no-nom
+    print "::endgroup::"
+    print $"::group::(ansi green_underline)update bbdown deps(ansi reset)..."
+    if ("./result-" | path exists ) {
+      ./result- ./pkgs/common/bbdown/deps.json
+    } else if ("./result" | path exists ) {
+      ./result ./pkgs/common/bbdown/deps.json
+    }
+    # fix some error see: @https://github.com/NixOS/nixpkgs/pull/343837
+    ${pkgs.python3}/bin/python3 ./tools/patch-dotnet-deps.py ./pkgs/common/bbdown/deps.json
+    print "::endgroup::"
+  }
+  print "::group::commit bbdown deps"
+  if ((git diff ./pkgs/common/bbdown/deps.json) != "") {
+    git add ./pkgs/common/bbdown/deps.json
+    git commit -m "update bbdown deps"
+  }
+  print "::endgroup::"
+}
+#+end_src

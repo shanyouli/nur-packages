@@ -15,5 +15,4 @@ rec {
   buildPkgs = filter isBuildable nurPkgs;
   cachePkgs = filter isCacheable buildPkgs;
   cacheOutputs = concatMap outputsOf cachePkgs;
-  bbdownDeps = nurAttrs.bbdown.fetch-deps;
 }
