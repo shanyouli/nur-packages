@@ -5,6 +5,7 @@
 }:
 rustPlatform.buildRustPackage rec {
   inherit (source) pname version src;
+  cargoLock = source.cargoLock."Cargo.lock";
   cargoRoot = "src-tauri";
   buildAndTestSubdir = "src-tauri";
   # The upstream repository owns the Rust test suite. The flake package is
