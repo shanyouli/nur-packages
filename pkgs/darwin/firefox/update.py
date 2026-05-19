@@ -3,7 +3,6 @@ import os
 import re
 import subprocess
 import sys
-from typing import List
 
 import requests
 
@@ -38,8 +37,8 @@ def save_current_src(f, sources):
         json.dump(sources, text, indent=2)
 
 
-def get_version() -> List:
-    resp = requests.get(
+def get_version() -> dict[str,str]:
+    resp = requests.get(  # pyright: ignore[reportAny]
         "https://product-details.mozilla.org/1.0/firefox_versions.json"
     ).json()
 
@@ -56,7 +55,7 @@ def get_hash(version="124.0.1"):
     return re_pattern.group(1) if re_pattern is not None else None
 
 
-def get_dict(version) -> dict[str, str]:
+def get_dict(version) -> dict[str, str] | None:
     url = f"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/mac/en-US/Firefox%20{version}.dmg"
     sha256 = get_hash(version)
     if sha256 is not None:

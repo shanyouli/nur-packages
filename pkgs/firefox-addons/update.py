@@ -145,7 +145,7 @@ if __name__ == "__main__":
             "immersive-translate",
             "darkreader",
             "chrome-mask",
-            "zeroomega", 
+            "zeroomega",
             "easy-image-blocker",
             "kiss-translator",
             "raindropio",
