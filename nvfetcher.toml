@@ -66,6 +66,11 @@ fetch.github = "go-musicfox/go-musicfox"
 git.fetchSubmodules = false
 # passthru = { vendorHash = null }
 
+[jcode]
+src.github = "1jehuang/jcode"
+fetch.github = "1jehuang/jcode"
+cargo_lock = ["Cargo.lock"]
+
 # a fast CLI documentaion searcher for nix
 [manix]
 src.git = "https://github.com/kaii-zen/manix"
