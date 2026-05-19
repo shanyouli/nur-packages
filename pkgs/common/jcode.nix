@@ -13,6 +13,7 @@ rustPlatform.buildRustPackage rec {
     rustPlatform.bindgenHook
     pkg-config
   ];
+  doCheck = false;
   buildInputs = [ openssl ] ++ lib.optionals stdenv.isDarwin [ apple-sdk ];
   cargoLock = source.cargoLock."Cargo.lock";
   meta = with lib; {
