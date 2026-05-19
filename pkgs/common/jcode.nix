@@ -3,6 +3,7 @@
   source,
   lib,
   pkg-config,
+  apple-sdk,
 }:
 rustPlatform.buildRustPackage rec {
   inherit (source) pname version src;
@@ -10,6 +11,7 @@ rustPlatform.buildRustPackage rec {
     rustPlatform.bindgenHook
     pkg-config
   ];
+  buildInputs = [ openssl ] ++ lib.optionals stdenv.isDarwin [ apple-sdk ];
   cargoLock = source.cargoLock."Cargo.lock";
   meta = with lib; {
     description = "Coding Agent Harness";
