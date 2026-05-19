@@ -47,6 +47,23 @@
       sha256 = "sha256-j4hdW7JXTmSrE4bwlOkUYxA32AD011za7dmItwwIvyg=";
     };
   };
+  cc-switch = {
+    pname = "cc-switch";
+    version = "v5.5.0";
+    src = fetchFromGitHub {
+      owner = "SaladDay";
+      repo = "cc-switch-cli";
+      rev = "v5.5.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-i2/Fy41pp6Ym2jvnECbTuTeSjH8wawkhA4SLSgWYNto=";
+    };
+    cargoLock."./src-tauri/Cargo.lock" = {
+      lockFile = ./. + "/sha256-i2_Fy41pp6Ym2jvnECbTuTeSjH8wawkhA4SLSgWYNto=/./src-tauri/Cargo.lock";
+      outputHashes = {
+        
+      };
+    };
+  };
   clash2singbox = {
     pname = "clash2singbox";
     version = "v0.2.0";
@@ -446,13 +463,13 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "31db6fdf05e192b3e20f0db56585fad0409a8265";
+    version = "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "31db6fdf05e192b3e20f0db56585fad0409a8265";
+      rev = "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24";
       fetchSubmodules = false;
-      sha256 = "sha256-gJXriy3EWNvGcqDD8ZE0ZCAEeu5cSNIDPt8reASzoN0=";
+      sha256 = "sha256-/M1o8770VotI+2YHi0idMN9LdwQLmLS1ucxo/fpndOo=";
     };
     date = "20260519";
   };

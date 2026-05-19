@@ -70,6 +70,32 @@
         },
         "version": "v1.9.0"
     },
+    "cc-switch": {
+        "cargoLock": {
+            "./src-tauri/Cargo.lock": [
+                "sha256-i2_Fy41pp6Ym2jvnECbTuTeSjH8wawkhA4SLSgWYNto=/./src-tauri/Cargo.lock",
+                {}
+            ]
+        },
+        "date": null,
+        "extract": null,
+        "name": "cc-switch",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SaladDay",
+            "repo": "cc-switch-cli",
+            "rev": "v5.5.0",
+            "sha256": "sha256-i2/Fy41pp6Ym2jvnECbTuTeSjH8wawkhA4SLSgWYNto=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v5.5.0"
+    },
     "clash2singbox": {
         "cargoLock": null,
         "date": null,
@@ -759,12 +785,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "musicdl",
-            "rev": "31db6fdf05e192b3e20f0db56585fad0409a8265",
-            "sha256": "sha256-gJXriy3EWNvGcqDD8ZE0ZCAEeu5cSNIDPt8reASzoN0=",
+            "rev": "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24",
+            "sha256": "sha256-/M1o8770VotI+2YHi0idMN9LdwQLmLS1ucxo/fpndOo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "31db6fdf05e192b3e20f0db56585fad0409a8265"
+        "version": "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24"
     },
     "musicn": {
         "cargoLock": null,
