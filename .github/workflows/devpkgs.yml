@@ -88,10 +88,10 @@ jobs:
           - ubuntu-latest
           - macos-latest
     runs-on: ${{ matrix.os }}
-    if: ${{needs.update.outputs.update == 'true' || needs.pre-work.outputs.devTest == 'true' }}
     needs:
       - pre-work
       - update
+    if: ${{ needs.update.outputs.update == 'true' || needs.pre-work.outputs.devTest == 'true' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
