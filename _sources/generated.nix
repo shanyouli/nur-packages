@@ -157,12 +157,12 @@
   };
   "emacs30.ns-mac-input-source" = {
     pname = "emacs30.ns-mac-input-source";
-    version = "b1a33e0f4b798ac85f622bb164cdd34c2e5c8d43";
+    version = "1be3e9f6610bed79c8066608c0a79695d50582eb";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/b1a33e0f4b798ac85f622bb164cdd34c2e5c8d43/scripts/macos/patches/emacs-30/ns-alpha-background.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/1be3e9f6610bed79c8066608c0a79695d50582eb/scripts/macos/patches/emacs-30/ns-alpha-background.patch";
       sha256 = "sha256-izzfjAWg4e8yYDuODXKIgwG7TdQUg2Su6ZebyzCg9hM=";
     };
-    date = "2026-05-11";
+    date = "2026-05-19";
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
@@ -193,12 +193,12 @@
   };
   "emacs31.ns-mac-input-source" = {
     pname = "emacs31.ns-mac-input-source";
-    version = "b1a33e0f4b798ac85f622bb164cdd34c2e5c8d43";
+    version = "1be3e9f6610bed79c8066608c0a79695d50582eb";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/b1a33e0f4b798ac85f622bb164cdd34c2e5c8d43/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/1be3e9f6610bed79c8066608c0a79695d50582eb/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
       sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
     };
-    date = "2026-05-11";
+    date = "2026-05-19";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
@@ -315,6 +315,24 @@
       rev = "0.28.1";
       fetchSubmodules = false;
       sha256 = "sha256-tB8uZm0kPRnmeOvsDdrkrHcMVIYfGanB4l/xHsTKpgE=";
+    };
+  };
+  jcode = {
+    pname = "jcode";
+    version = "v0.12.3";
+    src = fetchFromGitHub {
+      owner = "1jehuang";
+      repo = "jcode";
+      rev = "v0.12.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZuBVChtHxAFnLax/bgI/5OilPRKO5MJ3UTKNT/3CCIg=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-ZuBVChtHxAFnLax_bgI_5OilPRKO5MJ3UTKNT_3CCIg=/Cargo.lock";
+      outputHashes = {
+        "agentgrep-0.1.2" = "sha256-Sf3EmWIZJ29KdaNbYRvM1tFXAPhOGhmpHOyqViEwkRI=";
+        "mermaid-rs-renderer-0.2.0" = "sha256-lQCloOhTqqEU8MNrkUmmJFdoOTEE3j5nvZJo21GJlMU=";
+      };
     };
   };
   jeejah = {
@@ -556,13 +574,13 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "0dc7407d1225af5a7b0d667dfacef321b2f9f2f4";
+    version = "7902efbf5138bf7e613f0c9b7615fe4bbb26b869";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "0dc7407d1225af5a7b0d667dfacef321b2f9f2f4";
+      rev = "7902efbf5138bf7e613f0c9b7615fe4bbb26b869";
       fetchSubmodules = false;
-      sha256 = "sha256-8Z802CNiXgL5XZZM5H5JmtW1sSvzzSDlrJVqTA/RewE=";
+      sha256 = "sha256-rQMYF6RcspSXwX3EGOhegAtvRO7F7NTrEFs76jeBtQM=";
     };
     date = "20260519";
   };
