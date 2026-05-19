@@ -463,13 +463,13 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24";
+    version = "6f3f0ff43f106e3dccc90bff3d5c5df80a486637";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "be5c81b05d978cfd9149adeaa5ec79ba3edb4f24";
+      rev = "6f3f0ff43f106e3dccc90bff3d5c5df80a486637";
       fetchSubmodules = false;
-      sha256 = "sha256-/M1o8770VotI+2YHi0idMN9LdwQLmLS1ucxo/fpndOo=";
+      sha256 = "sha256-upmXeko3e08gW7UZnYP3O/JweFEEqjITR/RiWR9lg10=";
     };
     date = "20260519";
   };
