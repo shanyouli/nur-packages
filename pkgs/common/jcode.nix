@@ -3,6 +3,7 @@
   source,
   lib,
   pkg-config,
+  openssl,
   apple-sdk,
 }:
 rustPlatform.buildRustPackage rec {
