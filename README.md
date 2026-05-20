@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-05-19 09:20:52 UTC
+- LAST_MODIFY: 2026-05-20 04:55:32 UTC
 
 
 ## How to use
@@ -62,16 +62,17 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>35</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>37</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
+|[**cc-switch**](https://github.com/saladday/cc-switch-cli)||5.5.0|CLI manager for Claude Code, Codex, Gemini, OpenCode, and OpenClaw|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.1.1|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
@@ -84,6 +85,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **69** 
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.5|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.0.7|Firefox Chrome css|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.12.3|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
