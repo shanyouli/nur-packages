@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4802647/styl_us-2.3.23.xpi",
-    "version": "2.3.23",
-    "sha256": "0axq25hgifl1hlaf05wyg9fd5wxnylcy2hc537cn3z0fpdv59vwl",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4813027/styl_us-2.3.24.xpi",
+    "version": "2.3.24",
+    "sha256": "1r6v26dpc3y9lb86v72rqxxn4hwmqd7ifs4y587j93fqrhw8n0rf",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -60,9 +60,9 @@
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4805603/immersive_translate-1.29.4.xpi",
-    "version": "1.29.4",
-    "sha256": "1kbnxn45mhp5nlpzzqgw2rfccr1km246idibmdhmys9xmacwpgqr",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4814118/immersive_translate-1.29.6.xpi",
+    "version": "1.29.6",
+    "sha256": "1a18y84nhrcjxb7byg5f8c71wk7j5frjrr06agngr7wqfvknfwb9",
     "pname": "immersive-translate"
   },
   "darkreader": {
