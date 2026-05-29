@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4756947/download_with_aria2-4.25.2.4128.xpi",
-    "version": "4.25.2.4128",
-    "sha256": "1y962brxyb4xg85lqfzankw9g00iykiy7w7xv67vdwrbpgqns8yw",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4819605/download_with_aria2-4.26.0.4164.xpi",
+    "version": "4.26.0.4164",
+    "sha256": "0vkdf3zr37xb0zgm45ads5j1i4pdcfgf1dnapk4llpnz4f9rk75w",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -36,15 +36,15 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4777100/violentmonkey-2.37.0.xpi",
-    "version": "2.37.0",
-    "sha256": "0dfp075p1km3ngvxik68rfa1rr0xfyzn9l5f4swa7hwiyc1b812x",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4825194/violentmonkey-2.40.0.xpi",
+    "version": "2.40.0",
+    "sha256": "0h8q0xrhq3qkkcy9zk8ll8fldkz2rmbcbx9rvypbiswadbk75km2",
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4813027/styl_us-2.3.24.xpi",
-    "version": "2.3.24",
-    "sha256": "1r6v26dpc3y9lb86v72rqxxn4hwmqd7ifs4y587j93fqrhw8n0rf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4827127/styl_us-2.3.29.24.xpi",
+    "version": "2.3.29.24",
+    "sha256": "18wp94lx3qgvlprqznyrhzh0dm42k3rpjw9n1p71ms8r94pi39sa",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4721638/ublock_origin-1.70.0.xpi",
-    "version": "1.70.0",
-    "sha256": "1wcwp1a48cgalrx8zlhkwz54jvwk5s4ljmvnbnj66mq0fwl0swzj",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4814095/ublock_origin-1.71.0.xpi",
+    "version": "1.71.0",
+    "sha256": "1swzhiwsfjygp0cznrajijwh2mv1i2ayzc0bncq4h09czjhqixs7",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
