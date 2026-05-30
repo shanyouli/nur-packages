@@ -2,8 +2,8 @@
   lib,
   source,
   buildPythonPackage,
-  grapheme,
   about-time,
+  graphemeu,
   ...
 }:
 buildPythonPackage rec {
@@ -12,7 +12,7 @@ buildPythonPackage rec {
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
   propagatedBuildInputs = [
-    grapheme
+    graphemeu
     about-time
   ];
   format = "setuptools";
