@@ -6,7 +6,7 @@
   darwin,
   typer,
   buildPythonApplication,
-  hatchling,
+  uv-build,
   wcwidth,
 }:
 buildPythonApplication rec {
@@ -15,10 +15,10 @@ buildPythonApplication rec {
   inherit (source) pname src;
   pyproject = true;
   nativeBuildInputs = [
-    hatchling
+    uv-build
     installShellFiles
   ]
-  ++ lib.optional stdenv.hostPlatform.isDarwin [ darwin.ps ];
+  ++ lib.optionals stdenv.hostPlatform.isDarwin [ darwin.ps ];
   propagatedBuildInputs = [
     typer
     wcwidth

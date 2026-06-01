@@ -1,10 +1,5 @@
-dev: false
+dev: true
 upPy: false
-upNvfetcher: false
+upNvfetcher: true
 apps:
-- darwin file -> darwin-apps-xx
-- python file -> python-apps-xx
-- firefox-addons -> firefox-addons-xx
-- fish file -> fish-xx
-- emacsPackages -> emacs-packages-xx
-- lua file -> lua-apps-x
+  - python-apps-sd
