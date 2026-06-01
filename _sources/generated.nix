@@ -336,16 +336,16 @@
   };
   jcode = {
     pname = "jcode";
-    version = "v0.15.0";
+    version = "v0.18.0";
     src = fetchFromGitHub {
       owner = "1jehuang";
       repo = "jcode";
-      rev = "v0.15.0";
+      rev = "v0.18.0";
       fetchSubmodules = false;
-      sha256 = "sha256-XJdY7EfxmZjGweuYWg1uT/guqAbX+5b8l6R3alIbSmo=";
+      sha256 = "sha256-LfMZ2ZRPnVQc6WftTxkJG/98WqYQbRME2VBnJ6/9QQk=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-XJdY7EfxmZjGweuYWg1uT_guqAbX+5b8l6R3alIbSmo=/Cargo.lock";
+      lockFile = ./. + "/sha256-LfMZ2ZRPnVQc6WftTxkJG_98WqYQbRME2VBnJ6_9QQk=/Cargo.lock";
       outputHashes = {
         "agentgrep-0.1.2" = "sha256-Sf3EmWIZJ29KdaNbYRvM1tFXAPhOGhmpHOyqViEwkRI=";
         "mermaid-rs-renderer-0.2.0" = "sha256-lQCloOhTqqEU8MNrkUmmJFdoOTEE3j5nvZJo21GJlMU=";
@@ -463,15 +463,15 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "301183f901c16eed8c695a780e3641a125d69c70";
+    version = "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "301183f901c16eed8c695a780e3641a125d69c70";
+      rev = "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a";
       fetchSubmodules = false;
-      sha256 = "sha256-UU62TZZV2Kwb8KL27TfHfwDiB3piI1RJ8dUOow6nR1M=";
+      sha256 = "sha256-gP/PdE23EojsBJ44KHcKOsVLIU+jWaG+OkUYYeSPkgE=";
     };
-    date = "20260530";
+    date = "20260601";
   };
   musicn = {
     pname = "musicn";
@@ -591,15 +591,15 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "9407f3aff9f2773b67c65f1485c38f95f295a216";
+    version = "737b66884fe861e9522e80e44e55996213539d71";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "9407f3aff9f2773b67c65f1485c38f95f295a216";
+      rev = "737b66884fe861e9522e80e44e55996213539d71";
       fetchSubmodules = false;
-      sha256 = "sha256-MNccrZ0IljLamD0KIkd88YPF6GQVnSNjHZLuG9nGtR8=";
+      sha256 = "sha256-2JSwCwD9AUqGhOMnFs+RI2dRCKs0CPzueDDHof9d09Q=";
     };
-    date = "20260529";
+    date = "20260601";
   };
   rime-frost = {
     pname = "rime-frost";
@@ -614,15 +614,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "e0b1588f8ca405fb81dfd92235ecd5bdccfa18ce";
+    version = "3e42f339d1c46628908d1edc73767491d9bc3a8e";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "e0b1588f8ca405fb81dfd92235ecd5bdccfa18ce";
+      rev = "3e42f339d1c46628908d1edc73767491d9bc3a8e";
       fetchSubmodules = false;
-      sha256 = "sha256-3R/g2QKPY3KkZGjGNQP8GcaVT/LkN3FkBmpyQz5sSfI=";
+      sha256 = "sha256-0D1O+XUB5mctY29TQClSYiseLhzlk1VbXvNkzDHGBYQ=";
     };
-    date = "20260523";
+    date = "20260601";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -634,15 +634,15 @@
   };
   sd = {
     pname = "sd";
-    version = "748570a6877b028969b16707d32e8dfa58ee49c8";
+    version = "e94024b21f25cf0d36d04a4324d3d91dc4803e7f";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "748570a6877b028969b16707d32e8dfa58ee49c8";
+      rev = "e94024b21f25cf0d36d04a4324d3d91dc4803e7f";
       fetchSubmodules = false;
-      sha256 = "sha256-wl/xsew2WkEMny2u8rSbKPafjwuGg8uRQKnH4ZjnAnY=";
+      sha256 = "sha256-QcsWBFlOwRazuXpG/r5yxAfYsR0srsFatwok8HXNN7E=";
     };
-    date = "20260421";
+    date = "20260531";
   };
   seam = {
     pname = "seam";
