@@ -25,15 +25,12 @@ jobs:
         shell: nu {0}
         run: |
           let P = open "./tests/dev.yaml"
-          if ($P | get -o dev) {
-            ^echo "dev=true" o>> $env.GITHUB_OUTPUT
-          }
-          if ($P | get -o "upPy") {
-            ^echo "python=true" o>> $env.GITHUB_OUTPUT
-          }
-          if ($P | get -o "upNvfetcher") {
-            ^echo "nvfetcher=true" o>> $env.GITHUB_OUTPUT
-          }
+          let dev = ($P | get -o dev | default false)
+          let upPy = ($P | get -o upPy | default false)
+          let upNvfetcher = ($P | get -o upNvfetcher | default false)
+          ^echo $"dev=($dev)" o>> $env.GITHUB_OUTPUT
+          ^echo $"python=($upPy)" o>> $env.GITHUB_OUTPUT
+          ^echo $"nvfetcher=($upNvfetcher)" o>> $env.GITHUB_OUTPUT
 
   update:
     runs-on: ubuntu-latest
@@ -91,6 +88,8 @@ jobs:
     needs:
       - pre-work
       - update
+    outputs:
+      MY_MODIFY: ${{ steps.modify_code.outputs.MY_MODIFY }}
     if: ${{ needs.update.outputs.update == 'true' || needs.pre-work.outputs.devTest == 'true' }}
     steps:
       - name: Checkout repository
@@ -169,7 +168,7 @@ jobs:
             git checkout -B test-dev
           fi
       - name: Merge os chanages
-        if: needs.dev-packages.outputs.MY_MODIFY == 'true'
+        if: needs.dev-pacakges.outputs.MY_MODIFY == 'true'
         run: |
           git fetch origin
           echo "Getting information about all branches."
@@ -195,10 +194,10 @@ jobs:
           }
           $info | to yaml | save -f ./tests/dev.yaml
       - name: commit dev.yaml
-        if: ${{ needs.pre-work.outputs.devTest == 'true' }}
+        if: ${{ needs.pre-work.outputs.devTest == 'true' || needs.update.outputs.update == 'true' }}
         run: |
           git add ./tests/dev.yaml
-          git commit -m "feat: turn off dev"
+          git diff --cached --quiet || git commit -m "feat: turn off dev"
       - name: merge-to-master with macos-latest
         if: ${{ env.MY_MERGE_MACOS == 'true'}}
         uses: ad-m/github-push-action@master
@@ -207,10 +206,10 @@ jobs:
           branch: 'test-dev'
           force: true
       - name: merge ubuntu chanages
-        if: needs.dev-packages.outputs.MY_MODIFY == 'true'
+        if: needs.dev-pacakges.outputs.MY_MODIFY == 'true'
         run: |
           git fetch origin
-          git checkout $MY_TARGET_BRANCH
+          git checkout test-dev
           git pull
           echo "Merging of branch temp-testdev-ubuntu-latest"
           if git ls-remote origin refs/heads/temp-testdev-ubuntu-latest | grep temp-testdev-ubuntu-latest ; then

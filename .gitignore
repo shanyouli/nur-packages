@@ -10,3 +10,4 @@ __pycache__
 /nixbuild-uncached.log
 nix-build-uncached.log*
 /.treefmt.toml
+/.agent-shell/
