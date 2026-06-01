@@ -785,12 +785,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "musicdl",
-            "rev": "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a",
-            "sha256": "sha256-gP/PdE23EojsBJ44KHcKOsVLIU+jWaG+OkUYYeSPkgE=",
+            "rev": "398a966e1c43faf20e53c1b31e8baf55a194b282",
+            "sha256": "sha256-ksQnJr5E944uoaDky8YcZXc+qEVlkuH92HVnnVQp2lE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a"
+        "version": "398a966e1c43faf20e53c1b31e8baf55a194b282"
     },
     "musicn": {
         "cargoLock": null,
@@ -1077,7 +1077,7 @@
     },
     "sd": {
         "cargoLock": null,
-        "date": "20260531",
+        "date": "20260601",
         "extract": null,
         "name": "sd",
         "passthru": null,
@@ -1089,12 +1089,12 @@
             "name": null,
             "owner": "shanyouli",
             "repo": "sd",
-            "rev": "e94024b21f25cf0d36d04a4324d3d91dc4803e7f",
-            "sha256": "sha256-QcsWBFlOwRazuXpG/r5yxAfYsR0srsFatwok8HXNN7E=",
+            "rev": "3664bcfa3a4c6897542c224ca875781d0133a906",
+            "sha256": "sha256-fg4vtY/zVcJ8pDPMPoEuNjCQQtzClzSN+2euZPvFmlQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e94024b21f25cf0d36d04a4324d3d91dc4803e7f"
+        "version": "3664bcfa3a4c6897542c224ca875781d0133a906"
     },
     "seam": {
         "cargoLock": {

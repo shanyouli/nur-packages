@@ -463,13 +463,13 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a";
+    version = "398a966e1c43faf20e53c1b31e8baf55a194b282";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "a4a1e1c9dbd43a22f327c87720974ac2f8164a2a";
+      rev = "398a966e1c43faf20e53c1b31e8baf55a194b282";
       fetchSubmodules = false;
-      sha256 = "sha256-gP/PdE23EojsBJ44KHcKOsVLIU+jWaG+OkUYYeSPkgE=";
+      sha256 = "sha256-ksQnJr5E944uoaDky8YcZXc+qEVlkuH92HVnnVQp2lE=";
     };
     date = "20260601";
   };
@@ -634,15 +634,15 @@
   };
   sd = {
     pname = "sd";
-    version = "e94024b21f25cf0d36d04a4324d3d91dc4803e7f";
+    version = "3664bcfa3a4c6897542c224ca875781d0133a906";
     src = fetchFromGitHub {
       owner = "shanyouli";
       repo = "sd";
-      rev = "e94024b21f25cf0d36d04a4324d3d91dc4803e7f";
+      rev = "3664bcfa3a4c6897542c224ca875781d0133a906";
       fetchSubmodules = false;
-      sha256 = "sha256-QcsWBFlOwRazuXpG/r5yxAfYsR0srsFatwok8HXNN7E=";
+      sha256 = "sha256-fg4vtY/zVcJ8pDPMPoEuNjCQQtzClzSN+2euZPvFmlQ=";
     };
-    date = "20260531";
+    date = "20260601";
   };
   seam = {
     pname = "seam";
