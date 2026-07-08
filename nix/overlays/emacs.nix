@@ -44,7 +44,6 @@
                   srcs."emacs${version}.round-undecorated-frame".src
                 ]
                 ++ lib.optionals (version == "30") [ srcs."emacs${version}.role-patch".src ]
-                ++ lib.optionals (version != "32") [ srcs."emacs${version}.ns-mac-input-source".src ]
               else
                 [ ]
             );
