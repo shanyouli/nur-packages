@@ -27,7 +27,8 @@
             # see: https://github.com/NixOS/nixpkgs/pull/344631
             # An incompatibility with newer versions of webkit2gtk was revealed
             # 和较新的 webkit2gtk 不兼容，临时禁用它
-            withXwidgets = (!pkgs.stdenvNoCC.isDarwin) && ((lib.strings.toInt version) < 30);
+            # XXX: 上有已经配置好
+            # withXwidgets = (!pkgs.stdenvNoCC.isDarwin) && ((lib.strings.toInt version) < 30);
             # @see https://emacs-china.org/t/native-compilation/23316/73
             # 目前没有发现明显的提升
             withNativeCompilation = false;
@@ -51,7 +52,7 @@
             (old.configureFlags or [ ])
             ++ [ "--enable-check-lisp-object-type" ]
             ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
-              "--with-xwidgets"
+              # "--with-xwidgets" # macos 默认支持 xwidgets
               # 停止关闭一个窗口时重新聚焦其他窗口
               "--with-no-frame-refocus"
               "CFLAGS=-DMAC_OS_X_VERSION_MAX_ALLOWED=101201"
