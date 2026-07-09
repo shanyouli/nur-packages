@@ -1,22 +1,13 @@
 {
   lib,
   stdenv,
-  fetchFromGitHub,
   bun,
   writableTmpDirAsHomeHook,
+  source,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
-  pname = "mtranserver";
-  version = "4.0.33";
-
-  src = fetchFromGitHub {
-    owner = "xxnuo";
-    repo = "MTranServer";
-    rev = "v${finalAttrs.version}";
-    hash = lib.fakeHash;
-  };
-
+  inherit (source) pname src version;
   bunDeps = stdenv.mkDerivation {
     pname = "${finalAttrs.pname}-bun-deps";
     inherit (finalAttrs) version src;
@@ -50,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     dontFixup = true;
-    outputHash = "sha256-cynAufoZZBaJRkZ8ql8XCHkXdQmd2Oc4F/799zMU9Q4=";
+    outputHash = "sha256-cynAufoZZBaJRkZ8ql8XCHkXdQmd2Oc4F/799zMU9Qa=";
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
@@ -72,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
   buildPhase = ''
     runHook preBuild
 
-    bun run build:all
+    bun run build
 
     runHook postBuild
   '';
@@ -87,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
     )"
 
     if [ -z "$mtranserver_bin" ]; then
-      echo "mtranserver binary was not found; update installPhase after checking build:all output" >&2
+      echo "mtranserver binary was not found; update installPhase after checking build output" >&2
       exit 1
     fi
 

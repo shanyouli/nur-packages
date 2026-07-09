@@ -1,5 +1,5 @@
 dev: true
 upPy: false
-upNvfetcher: true
+upNvfetcher: false
 apps:
   - mtranserver
