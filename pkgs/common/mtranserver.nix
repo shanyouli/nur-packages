@@ -87,7 +87,7 @@ stdenv.mkDerivation (finalAttrs: {
     rm -rf dist
     mkdir -p dist
 
-    bun --cwd ui run build
+    (cd ui && bun run build)
     bun run scripts/gen-ui-assets.ts
     bun run scripts/gen-swagger-assets.ts
     bun tsoa spec-and-routes
