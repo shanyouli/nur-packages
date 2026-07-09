@@ -2,6 +2,7 @@
   lib,
   stdenv,
   bun,
+  nodejs,
   writableTmpDirAsHomeHook,
   source,
 }:
@@ -29,6 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     nativeBuildInputs = [
       bun
+      nodejs
       writableTmpDirAsHomeHook
     ];
 
@@ -66,6 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [
     bun
+    nodejs
     writableTmpDirAsHomeHook
   ];
 
