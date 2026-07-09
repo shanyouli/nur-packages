@@ -12,9 +12,11 @@ let
     {
       aarch64-darwin = {
         bunTarget = "bun-darwin-arm64";
+        bunDepsHash = "sha256-G5n0i02zV0f8UAeuFGOprsKrXv68pcO1CnABqWgY7oA=";
       };
       x86_64-linux = {
         bunTarget = "bun-linux-x64";
+        bunDepsHash = "sha256-G5n0i02zV0f8UAeuFGOprsKrXv68pcO1CnABqWgY7oA=";
       };
     }
     .${stdenv.hostPlatform.system}
@@ -68,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     dontFixup = true;
-    outputHash = lib.fakeHash;
+    outputHash = systemInfo.bunDepsHash;
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
