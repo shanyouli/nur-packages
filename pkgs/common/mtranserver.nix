@@ -6,6 +6,21 @@
   source,
 }:
 
+let
+  systemInfo =
+    {
+      aarch64-darwin = {
+        bunTarget = "bun-darwin-arm64";
+        bunDepsHash = "sha256-nBFuqBMAbJlf18EbEkVjTbIR7Xr2aMXtfPtUtoCbRMk=";
+      };
+      x86_64-linux = {
+        bunTarget = "bun-linux-x64";
+        bunDepsHash = "sha256-H+THH3dbtZHYafY8sYcco+abxsMicF2uWcOYBA9MHhU=";
+      };
+    }
+    .${stdenv.hostPlatform.system}
+      or (throw "${source.pname}: unsupported system ${stdenv.hostPlatform.system}");
+in
 stdenv.mkDerivation (finalAttrs: {
   inherit (source) pname src version;
   bunDeps = stdenv.mkDerivation {
@@ -24,9 +39,12 @@ stdenv.mkDerivation (finalAttrs: {
 
       export BUN_INSTALL_CACHE_DIR=$(mktemp -d)
       bun install \
+        --cpu="*" \
+        --force \
         --frozen-lockfile \
         --ignore-scripts \
-        --no-progress
+        --no-progress \
+        --os="*"
 
       runHook postBuild
     '';
@@ -41,13 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     dontFixup = true;
-    outputHash =
-      {
-        aarch64-darwin = "sha256-nBFuqBMAbJlf18EbEkVjTbIR7Xr2aMXtfPtUtoCbRMk=";
-        x86_64-linux = "sha256-H+THH3dbtZHYafY8sYcco+abxsMicF2uWcOYBA9MHhU=";
-      }
-      .${stdenv.hostPlatform.system}
-        or (throw "${finalAttrs.pname}: unsupported system ${stdenv.hostPlatform.system}");
+    outputHash = systemInfo.bunDepsHash;
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
@@ -61,6 +73,9 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preConfigure
 
     cp -R ${finalAttrs.bunDeps}/node_modules .
+    if [ -d ui ] && [ ! -e ui/node_modules ]; then
+      ln -s ../node_modules ui/node_modules
+    fi
     patchShebangs node_modules
 
     runHook postConfigure
@@ -69,7 +84,18 @@ stdenv.mkDerivation (finalAttrs: {
   buildPhase = ''
     runHook preBuild
 
-    bun run build
+    rm -rf dist
+    mkdir -p dist
+
+    bun --cwd ui run build
+    bun run scripts/gen-ui-assets.ts
+    bun run scripts/gen-swagger-assets.ts
+    bun tsoa spec-and-routes
+    bun build src/main.ts \
+      --compile \
+      --target=${systemInfo.bunTarget} \
+      --outfile=./dist/mtranserver \
+      --minify
 
     runHook postBuild
   '';
