@@ -69,7 +69,7 @@ stdenv.mkDerivation (finalAttrs: {
   buildPhase = ''
     runHook preBuild
 
-    bun run build:all
+    bun run build
 
     runHook postBuild
   '';
@@ -84,7 +84,7 @@ stdenv.mkDerivation (finalAttrs: {
     )"
 
     if [ -z "$mtranserver_bin" ]; then
-      echo "mtranserver binary was not found; update installPhase after checking build:all output" >&2
+      echo "mtranserver binary was not found; update installPhase after checking build output" >&2
       exit 1
     fi
 
