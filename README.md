@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-07-09 01:08:25 UTC
+- LAST_MODIFY: 2026-07-09 04:20:01 UTC
 
 
 ## How to use
@@ -54,7 +54,6 @@
 - `ci`: Perform the verification process for github's workflows
 - `devci`: Test commands used when developing or writing a package
 - `nvfetcher`: Use the nvfetcher command to update the original code of the package
-- `bbdownDeps`: Updating bbdown's dependencies using bbdown's own update scripts
 - `updatePy`: Updating the source code of certain packages using python scripts
 - `upFlake`: Automatic `inputs` source
 - `readme`: Automatic generation of readme.md files using python
@@ -85,7 +84,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.5|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.5.6|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.37.0|Coding Agent Harness|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.38.0|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
@@ -100,7 +99,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**pragmasevka-sc-nf**](https://github.com/shanyouli/iosevka)||34.7.0|我的自定义 iosvake, 使用 LXGW-wenKai 作为中文字体|
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.7.0|我的自定义 iosvake|
 |[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.4|Rime 配置:白霜拼音|
-|[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260707|Rime 配置:雾凇拼音|
+|[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260708|Rime 配置:雾凇拼音|
 |[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v16.0.1|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
@@ -165,7 +164,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260708|A lightweight music downloader written in pure python.|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260709|A lightweight music downloader written in pure python.|
 |[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260708|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260601|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
