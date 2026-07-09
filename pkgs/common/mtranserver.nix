@@ -12,11 +12,9 @@ let
     {
       aarch64-darwin = {
         bunTarget = "bun-darwin-arm64";
-        bunDepsHash = "sha256-nBFuqBMAbJlf18EbEkVjTbIR7Xr2aMXtfPtUtoCbRMk=";
       };
       x86_64-linux = {
         bunTarget = "bun-linux-x64";
-        bunDepsHash = "sha256-H+THH3dbtZHYafY8sYcco+abxsMicF2uWcOYBA9MHhU=";
       };
     }
     .${stdenv.hostPlatform.system}
@@ -47,6 +45,13 @@ stdenv.mkDerivation (finalAttrs: {
         --ignore-scripts \
         --no-progress \
         --os="*"
+      (cd ui && bun install \
+        --cpu="*" \
+        --force \
+        --frozen-lockfile \
+        --ignore-scripts \
+        --no-progress \
+        --os="*")
 
       runHook postBuild
     '';
@@ -56,12 +61,14 @@ stdenv.mkDerivation (finalAttrs: {
 
       mkdir -p $out
       cp -R node_modules $out/node_modules
+      mkdir -p $out/ui
+      cp -R ui/node_modules $out/ui/node_modules
 
       runHook postInstall
     '';
 
     dontFixup = true;
-    outputHash = systemInfo.bunDepsHash;
+    outputHash = lib.fakeHash;
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
@@ -76,10 +83,11 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preConfigure
 
     cp -R ${finalAttrs.bunDeps}/node_modules .
-    if [ -d ui ] && [ ! -e ui/node_modules ]; then
-      ln -s ../node_modules ui/node_modules
-    fi
+    mkdir -p ui
+    cp -R ${finalAttrs.bunDeps}/ui/node_modules ui/node_modules
+    chmod -R u+w node_modules ui/node_modules
     patchShebangs node_modules
+    patchShebangs ui/node_modules
 
     runHook postConfigure
   '';
