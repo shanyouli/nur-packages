@@ -326,16 +326,16 @@
   };
   jcode = {
     pname = "jcode";
-    version = "v0.37.0";
+    version = "v0.38.0";
     src = fetchFromGitHub {
       owner = "1jehuang";
       repo = "jcode";
-      rev = "v0.37.0";
+      rev = "v0.38.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Z1lhvIEXhoso0/I/5PRShFSrP09jsoa0Dc7foHCO3/c=";
+      sha256 = "sha256-FjHDBkenw9ZquNpbf3SYhAdQrZ0oZ/3uNXtshhfoMJI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-Z1lhvIEXhoso0_I_5PRShFSrP09jsoa0Dc7foHCO3_c=/Cargo.lock";
+      lockFile = ./. + "/sha256-FjHDBkenw9ZquNpbf3SYhAdQrZ0oZ_3uNXtshhfoMJI=/Cargo.lock";
       outputHashes = {
         "mermaid-rs-renderer-0.3.1" = "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s=";
         "agentgrep-0.1.6" = "sha256-yBLs2YZ6cUlTHYZGLtlAXpK7/9xX2kPi46B1YLbuPUU=";
@@ -419,49 +419,28 @@
       };
     };
   };
-  "mtranserver.linux.amd64" = {
-    pname = "mtranserver.linux.amd64";
-    version = "4.0.33";
-    src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-linux-amd64";
-      sha256 = "sha256-nVbDsdMckZOAUO51D39LqO96oXiHLXGcGYm+SAXPu5U=";
-    };
-  };
-  "mtranserver.linux.arm64" = {
-    pname = "mtranserver.linux.arm64";
-    version = "4.0.33";
-    src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-linux-arm64";
-      sha256 = "sha256-Yrbkhjj1Akvp4MPSB5gU7wU2LBVms47sOnBrggY8Pys=";
-    };
-  };
-  "mtranserver.mac.amd64" = {
-    pname = "mtranserver.mac.amd64";
-    version = "4.0.33";
-    src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-darwin-amd64";
-      sha256 = "sha256-jfwUg3V1I3fpzMZFn6DYGducPoc6ote0eKUk7f9LIDw=";
-    };
-  };
-  "mtranserver.mac.arm64" = {
-    pname = "mtranserver.mac.arm64";
-    version = "4.0.33";
-    src = fetchurl {
-      url = "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-darwin-arm64";
-      sha256 = "sha256-yvUbTXKiAcAV0tydsAYi4abHDpE1c3udiq4WSRvLqP8=";
+  mtranserver = {
+    pname = "mtranserver";
+    version = "v4.0.33";
+    src = fetchFromGitHub {
+      owner = "xxnuo";
+      repo = "MTranServer";
+      rev = "v4.0.33";
+      fetchSubmodules = false;
+      sha256 = "sha256-cynAufoZZBaJRkZ8ql8XCHkXdQmd2Oc4F/799zMU9Q4=";
     };
   };
   musicdl = {
     pname = "musicdl";
-    version = "7d1431affc265f88c2a2bfaaefc7858b16bf33a4";
+    version = "bd74f2528a0e37854f42ee6dcce344c153229a6e";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "7d1431affc265f88c2a2bfaaefc7858b16bf33a4";
+      rev = "bd74f2528a0e37854f42ee6dcce344c153229a6e";
       fetchSubmodules = false;
-      sha256 = "sha256-TxEs3yTSCxQvFfb2R6a2DvD9Vo90TYe15FMfMrUk8BA=";
+      sha256 = "sha256-Iemt49d+wIA42R9CU/yCfG7EVVfzPYx1tKGskIgshHc=";
     };
-    date = "20260708";
+    date = "20260709";
   };
   musicn = {
     pname = "musicn";
@@ -581,13 +560,13 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "4fada8a233014374cb56afd73538c769850334f3";
+    version = "ada9942ef8e87baedc15e4f6797ec6dda9862e56";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "4fada8a233014374cb56afd73538c769850334f3";
+      rev = "ada9942ef8e87baedc15e4f6797ec6dda9862e56";
       fetchSubmodules = false;
-      sha256 = "sha256-UocjUYlYAqapkJ3S4x34tik54hswPAA3gU6Esah0OrQ=";
+      sha256 = "sha256-Kn6MEKUVyjkP9OzYte9EWmTbeVgBAupBiBBp+2ST7yE=";
     };
     date = "20260708";
   };
@@ -604,15 +583,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "6917e5040c4e1b70939960408931b8a4361612dc";
+    version = "3a543652a42c21904c62bd881d65e987600f0722";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "6917e5040c4e1b70939960408931b8a4361612dc";
+      rev = "3a543652a42c21904c62bd881d65e987600f0722";
       fetchSubmodules = false;
-      sha256 = "sha256-A+wMBG2rwrnqm813r67uKadPPEj8H0ekXcoy+yDJYE0=";
+      sha256 = "sha256-lIOTc2zdZH9GXKHuH2lv40I8+KaZxo8nZGbZPyBfXbs=";
     };
-    date = "20260707";
+    date = "20260708";
   };
   sarasa-term = {
     pname = "sarasa-term";

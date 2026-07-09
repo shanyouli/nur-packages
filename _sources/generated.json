@@ -547,7 +547,7 @@
     "jcode": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-Z1lhvIEXhoso0_I_5PRShFSrP09jsoa0Dc7foHCO3_c=/Cargo.lock",
+                "sha256-FjHDBkenw9ZquNpbf3SYhAdQrZ0oZ_3uNXtshhfoMJI=/Cargo.lock",
                 {
                     "agentgrep-0.1.6": "sha256-yBLs2YZ6cUlTHYZGLtlAXpK7/9xX2kPi46B1YLbuPUU=",
                     "mermaid-rs-renderer-0.3.1": "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s="
@@ -566,12 +566,12 @@
             "name": null,
             "owner": "1jehuang",
             "repo": "jcode",
-            "rev": "v0.37.0",
-            "sha256": "sha256-Z1lhvIEXhoso0/I/5PRShFSrP09jsoa0Dc7foHCO3/c=",
+            "rev": "v0.38.0",
+            "sha256": "sha256-FjHDBkenw9ZquNpbf3SYhAdQrZ0oZ/3uNXtshhfoMJI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.37.0"
+        "version": "v0.38.0"
     },
     "jeejah": {
         "cargoLock": null,
@@ -696,69 +696,30 @@
         },
         "version": "v0.4.0"
     },
-    "mtranserver.linux.amd64": {
+    "mtranserver": {
         "cargoLock": null,
         "date": null,
         "extract": null,
-        "name": "mtranserver.linux.amd64",
+        "name": "mtranserver",
         "passthru": null,
         "pinned": false,
         "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
             "name": null,
-            "sha256": "sha256-nVbDsdMckZOAUO51D39LqO96oXiHLXGcGYm+SAXPu5U=",
-            "type": "url",
-            "url": "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-linux-amd64"
+            "owner": "xxnuo",
+            "repo": "MTranServer",
+            "rev": "v4.0.33",
+            "sha256": "sha256-cynAufoZZBaJRkZ8ql8XCHkXdQmd2Oc4F/799zMU9Q4=",
+            "sparseCheckout": [],
+            "type": "github"
         },
-        "version": "4.0.33"
-    },
-    "mtranserver.linux.arm64": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "mtranserver.linux.arm64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-Yrbkhjj1Akvp4MPSB5gU7wU2LBVms47sOnBrggY8Pys=",
-            "type": "url",
-            "url": "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-linux-arm64"
-        },
-        "version": "4.0.33"
-    },
-    "mtranserver.mac.amd64": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "mtranserver.mac.amd64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-jfwUg3V1I3fpzMZFn6DYGducPoc6ote0eKUk7f9LIDw=",
-            "type": "url",
-            "url": "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-darwin-amd64"
-        },
-        "version": "4.0.33"
-    },
-    "mtranserver.mac.arm64": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "mtranserver.mac.arm64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-yvUbTXKiAcAV0tydsAYi4abHDpE1c3udiq4WSRvLqP8=",
-            "type": "url",
-            "url": "https://github.com/xxnuo/MTranServer/releases/download/v4.0.33/mtranserver-4.0.33-darwin-arm64"
-        },
-        "version": "4.0.33"
+        "version": "v4.0.33"
     },
     "musicdl": {
         "cargoLock": null,
-        "date": "20260708",
+        "date": "20260709",
         "extract": null,
         "name": "musicdl",
         "passthru": null,
@@ -770,12 +731,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "musicdl",
-            "rev": "7d1431affc265f88c2a2bfaaefc7858b16bf33a4",
-            "sha256": "sha256-TxEs3yTSCxQvFfb2R6a2DvD9Vo90TYe15FMfMrUk8BA=",
+            "rev": "bd74f2528a0e37854f42ee6dcce344c153229a6e",
+            "sha256": "sha256-Iemt49d+wIA42R9CU/yCfG7EVVfzPYx1tKGskIgshHc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7d1431affc265f88c2a2bfaaefc7858b16bf33a4"
+        "version": "bd74f2528a0e37854f42ee6dcce344c153229a6e"
     },
     "musicn": {
         "cargoLock": null,
@@ -996,12 +957,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "4fada8a233014374cb56afd73538c769850334f3",
-            "sha256": "sha256-UocjUYlYAqapkJ3S4x34tik54hswPAA3gU6Esah0OrQ=",
+            "rev": "ada9942ef8e87baedc15e4f6797ec6dda9862e56",
+            "sha256": "sha256-Kn6MEKUVyjkP9OzYte9EWmTbeVgBAupBiBBp+2ST7yE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4fada8a233014374cb56afd73538c769850334f3"
+        "version": "ada9942ef8e87baedc15e4f6797ec6dda9862e56"
     },
     "rime-frost": {
         "cargoLock": null,
@@ -1026,7 +987,7 @@
     },
     "rime-ice": {
         "cargoLock": null,
-        "date": "20260707",
+        "date": "20260708",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1038,12 +999,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "6917e5040c4e1b70939960408931b8a4361612dc",
-            "sha256": "sha256-A+wMBG2rwrnqm813r67uKadPPEj8H0ekXcoy+yDJYE0=",
+            "rev": "3a543652a42c21904c62bd881d65e987600f0722",
+            "sha256": "sha256-lIOTc2zdZH9GXKHuH2lv40I8+KaZxo8nZGbZPyBfXbs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6917e5040c4e1b70939960408931b8a4361612dc"
+        "version": "3a543652a42c21904c62bd881d65e987600f0722"
     },
     "sarasa-term": {
         "cargoLock": null,
