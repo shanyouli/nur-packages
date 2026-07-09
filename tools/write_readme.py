@@ -10,7 +10,6 @@ def get_app_shows():
 - `ci`: Perform the verification process for github's workflows
 - `devci`: Test commands used when developing or writing a package
 - `nvfetcher`: Use the nvfetcher command to update the original code of the package
-- `bbdownDeps`: Updating bbdown's dependencies using bbdown's own update scripts
 - `updatePy`: Updating the source code of certain packages using python scripts
 - `upFlake`: Automatic `inputs` source
 - `readme`: Automatic generation of readme.md files using python
