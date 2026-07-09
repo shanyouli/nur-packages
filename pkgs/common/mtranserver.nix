@@ -41,7 +41,13 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     dontFixup = true;
-    outputHash = "sha256-cynAufoZZBaJRkZ8ql8XCHkXdQmd2Oc4F/799zMU9Qa=";
+    outputHash =
+      {
+        aarch64-darwin = "sha256-nBFuqBMAbJlf18EbEkVjTbIR7Xr2aMXtfPtUtoCbRMk=";
+        x86_64-linux = "sha256-H+THH3dbtZHYafY8sYcco+abxsMicF2uWcOYBA9MHhU=";
+      }
+      .${stdenv.hostPlatform.system}
+        or (throw "${finalAttrs.pname}: unsupported system ${stdenv.hostPlatform.system}");
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
@@ -63,7 +69,7 @@ stdenv.mkDerivation (finalAttrs: {
   buildPhase = ''
     runHook preBuild
 
-    bun run build
+    bun run build:all
 
     runHook postBuild
   '';
@@ -78,7 +84,7 @@ stdenv.mkDerivation (finalAttrs: {
     )"
 
     if [ -z "$mtranserver_bin" ]; then
-      echo "mtranserver binary was not found; update installPhase after checking build output" >&2
+      echo "mtranserver binary was not found; update installPhase after checking build:all output" >&2
       exit 1
     fi
 
@@ -97,9 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
     sourceProvenance = with sourceTypes; [ fromSource ];
     platforms = [
       "x86_64-linux"
-      "aarch64-linux"
       "aarch64-darwin"
-      "x86_64-darwin"
     ];
     mainProgram = "mtranserver";
   };
