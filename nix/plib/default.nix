@@ -1,6 +1,5 @@
 # pkgs.lib 我的扩展
-{ self, ... }:
-{
+{ self, ... }: {
   perSystem =
     { lib, pkgs, ... }:
     let

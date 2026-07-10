@@ -8,10 +8,7 @@
   flake.overlays.emacs =
     _final: prev:
     withSystem prev.stdenv.hostPlatform.system (
-      { config, ... }:
-      {
-        inherit (config.packages) emacs emacs-git;
-      }
+      { config, ... }: { inherit (config.packages) emacs emacs-git; }
     );
 
   perSystem =

@@ -1,12 +1,8 @@
-{ withSystem, ... }:
-{
+{ withSystem, ... }: {
   flake.overlays.nix-index =
     _final: prev:
     withSystem prev.stdenv.hostPlatform.system (
-      { config, ... }:
-      {
-        inherit (config.packages) nix-index;
-      }
+      { config, ... }: { inherit (config.packages) nix-index; }
     );
 
   perSystem =

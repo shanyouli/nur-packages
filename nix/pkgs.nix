@@ -228,14 +228,12 @@ in
       default = pkgOverlays;
     };
   };
-  perSystem =
-    { system, pkgs, ... }:
-    rec {
-      _module.args.pkgs = import inputs.nixpkgs {
-        overlays = [ self.overlays.default ];
-        inherit system;
-        config.allowUnfree = true;
-      };
-      packages = lib.filterAttrs (_: v: self.lib.isBuildable v) (packageFn pkgs);
+  perSystem = { system, pkgs, ... }: rec {
+    _module.args.pkgs = import inputs.nixpkgs {
+      overlays = [ self.overlays.default ];
+      inherit system;
+      config.allowUnfree = true;
     };
+    packages = lib.filterAttrs (_: v: self.lib.isBuildable v) (packageFn pkgs);
+  };
 }

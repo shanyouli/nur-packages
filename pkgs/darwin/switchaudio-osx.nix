@@ -2,7 +2,6 @@
   lib,
   stdenv,
   xcodebuild,
-  darwin,
   apple-sdk_15,
   source,
 }:

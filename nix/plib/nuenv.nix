@@ -124,21 +124,20 @@ rec {
       destination = "/bin/${name}";
       allowSubstitutes = true;
       preferLocalBuild = false;
-      tet =
-        ''
-          #!${nushell}/bin/nu
-        ''
-        + lib.optionalString (runtimeEnv != null) ''
+      tet = ''
+        #!${nushell}/bin/nu
+      ''
+      + lib.optionalString (runtimeEnv != null) ''
 
-          load-env ${toNu runtimeEnv}
-        ''
-        + lib.optionalString (runtimeInputs != [ ]) ''
+        load-env ${toNu runtimeEnv}
+      ''
+      + lib.optionalString (runtimeInputs != [ ]) ''
 
-          $env.PATH = ${toNu (makeBinPathArray runtimeInputs)} ++ $env.PATH
-        ''
-        + ''
-          ${text}
-        '';
+        $env.PATH = ${toNu (makeBinPathArray runtimeInputs)} ++ $env.PATH
+      ''
+      + ''
+        ${text}
+      '';
       checkPhase =
         if checkPhase == null then
           ''
