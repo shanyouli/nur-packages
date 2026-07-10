@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-07-09 04:20:01 UTC
+- LAST_MODIFY: 2026-07-10 22:44:21 UTC
 
 
 ## How to use
@@ -84,7 +84,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.5|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.5.6|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.38.0|Coding Agent Harness|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.41.0|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
@@ -123,7 +123,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.4.0|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||2.1.0|macOS command-line utility for retrieving currently playing media|
-|[**openwith**](https://github.com/ColeMei/openwith)||0.4.0|Manage macOS file extension associations from the terminal |
+|[**openwith**](https://github.com/ColeMei/openwith)||0.5.3|Manage macOS file extension associations from the terminal |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
@@ -144,7 +144,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
 |[**immersive-translate**](https://immersivetranslate.com/)||1.30.2|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.0.28|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.6.28|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||13.6.30|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.5.2|Firefox extension for managing tabs and bookmarks in sidebar|
@@ -165,8 +165,8 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260709|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260708|FreeProxy: Collecting free proxies from internet|
-|[**sd**](None)||20260601|My system command line|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260710|FreeProxy: Collecting free proxies from internet|
+|[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
 
