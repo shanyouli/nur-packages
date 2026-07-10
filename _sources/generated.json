@@ -547,7 +547,7 @@
     "jcode": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-LXA43jfbPEaPFeLzLxaFENdyLLv1L11yERFVWx702Po=/Cargo.lock",
+                "sha256-s43gzHxKKOoiMFdeOmEAVvssuqqu5IMLfoH4GRozje4=/Cargo.lock",
                 {
                     "agentgrep-0.1.6": "sha256-yBLs2YZ6cUlTHYZGLtlAXpK7/9xX2kPi46B1YLbuPUU=",
                     "mermaid-rs-renderer-0.3.1": "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s="
@@ -566,12 +566,12 @@
             "name": null,
             "owner": "1jehuang",
             "repo": "jcode",
-            "rev": "v0.40.0",
-            "sha256": "sha256-LXA43jfbPEaPFeLzLxaFENdyLLv1L11yERFVWx702Po=",
+            "rev": "v0.41.0",
+            "sha256": "sha256-s43gzHxKKOoiMFdeOmEAVvssuqqu5IMLfoH4GRozje4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.40.0"
+        "version": "v0.41.0"
     },
     "jeejah": {
         "cargoLock": null,
@@ -809,7 +809,7 @@
     "openwith": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-JEGss4reYfR7Vq60xux05H8XF_IRcf9CaXBro0Fir4s=/Cargo.lock",
+                "sha256-V_ZjgwZvJoPBEUifZDBiHc3Z5jbeRRRyjM5U2jecTTY=/Cargo.lock",
                 {}
             ]
         },
@@ -825,12 +825,12 @@
             "name": null,
             "owner": "ColeMei",
             "repo": "openwith",
-            "rev": "v0.5.1",
-            "sha256": "sha256-JEGss4reYfR7Vq60xux05H8XF/IRcf9CaXBro0Fir4s=",
+            "rev": "v0.5.3",
+            "sha256": "sha256-V/ZjgwZvJoPBEUifZDBiHc3Z5jbeRRRyjM5U2jecTTY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.5.1"
+        "version": "v0.5.3"
     },
     "pngpaste": {
         "cargoLock": null,
@@ -957,12 +957,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "e40b52dc7acf7bbcff743a1cfc026d06774de1f7",
-            "sha256": "sha256-cIZG5E0UMVPQ+7UX3MWq62bCWUaZHic64qHCZ1iTIfs=",
+            "rev": "8f2cd612db172bdb1fca8857e3cd6a621da503d6",
+            "sha256": "sha256-E809EuCHLcKtXC/e3DsvdfHA3SDGDcP2PrPpkxkB9Ro=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e40b52dc7acf7bbcff743a1cfc026d06774de1f7"
+        "version": "8f2cd612db172bdb1fca8857e3cd6a621da503d6"
     },
     "rime-frost": {
         "cargoLock": null,

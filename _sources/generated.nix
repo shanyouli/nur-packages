@@ -326,16 +326,16 @@
   };
   jcode = {
     pname = "jcode";
-    version = "v0.40.0";
+    version = "v0.41.0";
     src = fetchFromGitHub {
       owner = "1jehuang";
       repo = "jcode";
-      rev = "v0.40.0";
+      rev = "v0.41.0";
       fetchSubmodules = false;
-      sha256 = "sha256-LXA43jfbPEaPFeLzLxaFENdyLLv1L11yERFVWx702Po=";
+      sha256 = "sha256-s43gzHxKKOoiMFdeOmEAVvssuqqu5IMLfoH4GRozje4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-LXA43jfbPEaPFeLzLxaFENdyLLv1L11yERFVWx702Po=/Cargo.lock";
+      lockFile = ./. + "/sha256-s43gzHxKKOoiMFdeOmEAVvssuqqu5IMLfoH4GRozje4=/Cargo.lock";
       outputHashes = {
         "mermaid-rs-renderer-0.3.1" = "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s=";
         "agentgrep-0.1.6" = "sha256-yBLs2YZ6cUlTHYZGLtlAXpK7/9xX2kPi46B1YLbuPUU=";
@@ -484,16 +484,16 @@
   };
   openwith = {
     pname = "openwith";
-    version = "v0.5.1";
+    version = "v0.5.3";
     src = fetchFromGitHub {
       owner = "ColeMei";
       repo = "openwith";
-      rev = "v0.5.1";
+      rev = "v0.5.3";
       fetchSubmodules = false;
-      sha256 = "sha256-JEGss4reYfR7Vq60xux05H8XF/IRcf9CaXBro0Fir4s=";
+      sha256 = "sha256-V/ZjgwZvJoPBEUifZDBiHc3Z5jbeRRRyjM5U2jecTTY=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-JEGss4reYfR7Vq60xux05H8XF_IRcf9CaXBro0Fir4s=/Cargo.lock";
+      lockFile = ./. + "/sha256-V_ZjgwZvJoPBEUifZDBiHc3Z5jbeRRRyjM5U2jecTTY=/Cargo.lock";
       outputHashes = {
         
       };
@@ -560,13 +560,13 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "e40b52dc7acf7bbcff743a1cfc026d06774de1f7";
+    version = "8f2cd612db172bdb1fca8857e3cd6a621da503d6";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "e40b52dc7acf7bbcff743a1cfc026d06774de1f7";
+      rev = "8f2cd612db172bdb1fca8857e3cd6a621da503d6";
       fetchSubmodules = false;
-      sha256 = "sha256-cIZG5E0UMVPQ+7UX3MWq62bCWUaZHic64qHCZ1iTIfs=";
+      sha256 = "sha256-E809EuCHLcKtXC/e3DsvdfHA3SDGDcP2PrPpkxkB9Ro=";
     };
     date = "20260710";
   };
