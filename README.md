@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-07-10 22:44:21 UTC
+- LAST_MODIFY: 2026-07-19 05:18:11 UTC
 
 
 ## How to use
@@ -61,17 +61,17 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** packages.
+Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **70** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>37</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>36</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.7.0| export of Bash environment as JSON|
-|[**cc-switch**](https://github.com/saladday/cc-switch-cli)||5.9.0|CLI manager for Claude Code, Codex, Gemini, OpenCode, and OpenClaw|
+|[**cc-switch**](https://github.com/saladday/cc-switch-cli)||5.9.2|CLI manager for Claude Code, Codex, Gemini, OpenCode, and OpenClaw|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.2.2|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
@@ -83,13 +83,12 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**ewt-rs**](https://github.com/Master-Hash/ewt-rs)||0.5.0|A Rust implementation of Easy Web Token|
 |[**fav**](https://github.com/kingwingfly/fav)||1.2.5|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.5.6|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.41.0|Coding Agent Harness|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.5.7|Firefox Chrome css|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.52.0|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20251005|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
 |[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.33|Offline translation model server|
-|[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
 |[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260704|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.7.0|我的自定义 iosvake|
@@ -123,7 +122,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.4.0|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||2.1.0|macOS command-line utility for retrieving currently playing media|
-|[**openwith**](https://github.com/ColeMei/openwith)||0.5.3|Manage macOS file extension associations from the terminal |
+|[**openwith**](https://github.com/ColeMei/openwith)||0.5.4|Manage macOS file extension associations from the terminal |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
@@ -147,7 +146,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**noscript**](https://noscript.net/)||13.6.30|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
-|[**sidebery**](https://github.com/mbnuqw/sidebery)||5.5.2|Firefox extension for managing tabs and bookmarks in sidebar|
+|[**sidebery**](https://github.com/mbnuqw/sidebery)||5.6.1|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.4.5|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.11|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.72.2|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
@@ -165,7 +164,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260709|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260710|FreeProxy: Collecting free proxies from internet|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260719|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
