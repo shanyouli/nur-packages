@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-07-10 22:44:21 UTC
+- LAST_MODIFY: 2026-07-19 20:05:43 CST
 
 
 ## How to use
@@ -61,12 +61,12 @@
 
 ## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** packages.
+Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **70** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. , Total: <b>37</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>, <b>aarch64-darwin</b> and <b>x86_64-linux</b>. , Total: <b>36</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -89,7 +89,6 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
 |[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.33|Offline translation model server|
-|[**musicn**](https://github.com/zonemeen/musicn)||1.5.3-beta.0|🎵 一个可播放及下载音乐的 Node.js 命令行工具 |
 |[**nix-index**](None)|||None|
 |[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260704|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.7.0|我的自定义 iosvake|
@@ -112,7 +111,7 @@ Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **71** 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|

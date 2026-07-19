@@ -17,14 +17,21 @@ def get_app_shows():
 
 
 def get_packages_info(p):
+    """收集各 system 下的包元信息，失败时抛出 RuntimeError。"""
     os.chdir(p)
     result = subprocess.run(
-        "nix eval -f tests/pkgmeta.nix --json", capture_output=True, shell=True
+        "nix eval -f tests/pkgmeta.nix --json",
+        capture_output=True,
+        shell=True,
+        text=True,
     )
-    if result.returncode != 0:
-        return
     os.chdir(CURRENT_DIR)
-    packages = json.loads(result.stdout.decode().strip())
+    if result.returncode != 0:
+        stderr = (result.stderr or "").strip()
+        raise RuntimeError(
+            f"nix eval tests/pkgmeta.nix failed (code={result.returncode}):\n{stderr}"
+        )
+    packages = json.loads(result.stdout.strip())
     results = {}
     for k, v in packages.items():
         for n, p in v.items():
@@ -82,13 +89,13 @@ def show_pacakges(data: dict, typology: str) -> str:
         sum_msg = "Only support for <b>aarch64-linux</b>, <b>x86_64-linux</b>. "
         prefix = "linux-apps-"
     elif typology == "darwin":
-        sum_msg = "Only support for <b>aarch64-darwin</b>, <b>x86_64-darwin</b>, Most <b>GUI packages</b> only support <b>aarch64-darwin</b>. "
+        sum_msg = "Only support for <b>aarch64-darwin</b>. "
         prefix = "darwin-apps-"
     elif typology == "emacs-apps-":
         sum_msg = "<b>emacs package</b>, default support for all systems."
         prefix = "Emacs-packages-"
     else:
-        sum_msg= "Default support for <b>aarch64-linux</b>,<b>aarch64-darwin</b>,<b>x86_64-linux</b> and <b>x86_64-darwin</b>. "
+        sum_msg = "Default support for <b>aarch64-linux</b>, <b>aarch64-darwin</b> and <b>x86_64-linux</b>. "
         prefix = ""
     info += f"\n<summary>{sum_msg}, Total: <b>{len(data.keys())}</b> packages </summary>"
     msg += f"""{info}
@@ -111,7 +118,7 @@ def get_package_show(p) -> str:
     total_pkgs, common, linux_apps, darwin_apps, firefox_addons, python3_apps, emacs_apps = get_packages_info(p)
     msg = f"""## packages
 
-Currently only builds on **aarch64-darwin** and **x86_64-linux**, total: **{total_pkgs}** packages.
+Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **{total_pkgs}** packages.
 
 """
     if common:
