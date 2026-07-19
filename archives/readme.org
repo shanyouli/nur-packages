@@ -1,7 +1,15 @@
+* musicn
+- 该程序于 2026-07-19 归档 [[https://github.com/zonemeen/musicn/tree/main][musicn]]
+- nvfether.toml
+#+begin_src toml
+[musicn]
+src.github_tag = "zonemeen/musicn"
+fetch.github = "zonemeen/musicn"
+#+end_src
 * bbdown
 该程序于 2026-05-14 归档 [[https://github.com/nilaoda/BBDown][bbdown]]
 - nvfeather.toml
-#+begin_src tomal
+#+begin_src toml
 [bbdown]
 src.git = "https://github.com/nilaoda/BBDown"
 git.date_format = "%Y%m%d"
