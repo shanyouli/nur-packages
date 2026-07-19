@@ -1460,9 +1460,9 @@ dependencies = [
 
 [[package]]
 name = "crossbeam-epoch"
-version = "0.9.18"
+version = "0.9.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b82ac4a3c2ca9c3460964f020e1402edd5753411d7737aa39c3714ad1b5420e"
+checksum = "2d6914041f254d6e9176c01941b21115dcfb7089e55135a35411081bd106ef3f"
 dependencies = [
  "crossbeam-utils",
 ]
@@ -3248,7 +3248,7 @@ checksum = "92ecc6618181def0457392ccd0ee51198e065e016d1d527a7ac1b6dc7c1f09d2"
 
 [[package]]
 name = "jcode"
-version = "0.41.0"
+version = "0.52.0"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -3363,6 +3363,7 @@ dependencies = [
  "tempfile",
  "tokio",
  "tokio-stream",
+ "tokio-util",
  "unicode-width 0.2.2",
  "url",
  "urlencoding",
@@ -3517,6 +3518,7 @@ dependencies = [
  "chrono",
  "libc",
  "rand 0.9.3",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -3530,6 +3532,7 @@ dependencies = [
  "bytemuck",
  "glyphon",
  "image",
+ "jcode-fuzzy",
  "jcode-tui-messages",
  "libc",
  "pollster",
@@ -3551,6 +3554,10 @@ dependencies = [
  "tract-hir",
  "tract-onnx",
 ]
+
+[[package]]
+name = "jcode-fuzzy"
+version = "0.1.0"
 
 [[package]]
 name = "jcode-gateway-types"
@@ -3816,6 +3823,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "futures",
+ "httpdate",
  "jcode-logging",
  "jcode-message-types",
  "rand 0.9.3",
@@ -4042,6 +4050,7 @@ dependencies = [
  "serde_json",
  "tempfile",
  "toml",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4156,6 +4165,7 @@ dependencies = [
  "jcode-build-meta",
  "jcode-config-types",
  "jcode-core",
+ "jcode-fuzzy",
  "jcode-logging",
  "jcode-productivity-core",
  "jcode-provider-core",
@@ -4221,6 +4231,8 @@ dependencies = [
 name = "jcode-tui-markdown"
 version = "0.1.0"
 dependencies = [
+ "dirs",
+ "image",
  "jcode-render-core",
  "jcode-tui-mermaid",
  "jcode-tui-workspace",
@@ -4229,7 +4241,9 @@ dependencies = [
  "serde",
  "serde_json",
  "syntect",
+ "tempfile",
  "unicode-width 0.2.2",
+ "wait-timeout",
 ]
 
 [[package]]
@@ -7989,6 +8003,7 @@ dependencies = [
  "bytes",
  "futures-core",
  "futures-sink",
+ "futures-util",
  "pin-project-lite",
  "tokio",
 ]
@@ -8675,6 +8690,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6d9b2acfb050df409c972a37d3b8e08cdea3bddb0c09db9d53137e504cfabed0"
 dependencies = [
  "utf8parse",
+]
+
+[[package]]
+name = "wait-timeout"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "09ac3b126d3914f9849036f826e054cbabdc8519970b8998ddaf3b5bd3c65f11"
+dependencies = [
+ "libc",
 ]
 
 [[package]]
