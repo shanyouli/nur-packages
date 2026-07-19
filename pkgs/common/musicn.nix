@@ -2,7 +2,7 @@
   lib,
   stdenv,
   source,
-  pnpm_9,
+  pnpm,
   nodejs,
   makeWrapper,
   jq,
@@ -13,14 +13,14 @@ stdenv.mkDerivation (finalAttrs: {
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
 
-  pnpmDeps = pnpm_9.fetchDeps {
+  pnpmDeps = pnpm.fetchDeps {
     inherit (finalAttrs) pname version src;
     fetcherVersion = 1;
     hash = "sha256-/cxuMTcMKU1jwkvQhPI/+Em1sadBDEJraR54rBw/7wk=";
   };
   nativeBuildInputs = [
     makeWrapper
-    pnpm_9.configHook
+    pnpm.configHook
     nodejs
     jq
     patchelf
