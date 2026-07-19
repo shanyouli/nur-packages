@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4887700/styl_us-2.4.5.xpi",
-    "version": "2.4.5",
-    "sha256": "02i769gx8qy46wglr926xjlwzmfbvgd0ic8nlfbd9p6r8asmg5ah",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4907275/styl_us-2.4.8.xpi",
+    "version": "2.4.8",
+    "sha256": "1pxy1j8fcfhc2zi8p60yqaxzhx8nwpn1408027jkxg9q1a4jcm25",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4859299/darkreader-4.9.128.xpi",
-    "version": "4.9.128",
-    "sha256": "0vr90fbfnkd4y5h1a1ms3j06yj1kf8m7ydgfap10vqw3wzjnkgii",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4899461/darkreader-4.9.129.xpi",
+    "version": "4.9.129",
+    "sha256": "0i4ajppbh2fx71ppwar6na94hy3v1ah8wwqpjv9bc87413z4gw7l",
     "pname": "darkreader"
   },
   "chrome-mask": {
