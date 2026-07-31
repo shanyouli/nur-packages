@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4890844/noscript-13.6.30.xpi",
-    "version": "13.6.30",
-    "sha256": "00g5lwhf9w30811rh3k1c55b5gs1ysydjzjkvwmgskgs0411p95c",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4908823/noscript-13.6.31.xpi",
+    "version": "13.6.31",
+    "sha256": "12p67m335s5qfirz99bvcnav296rn1q3wkraxxz5vai7rm7isylq",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4830363/violentmonkey-2.41.0.xpi",
-    "version": "2.41.0",
-    "sha256": "0sx3dx2nxrqazds1rgqr3dfllyxabpa1rlvdjn8s5xnjidw89la2",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4926076/violentmonkey-2.46.0.xpi",
+    "version": "2.46.0",
+    "sha256": "1zri7qrrxq4jz8pv35pg67nlp3k2cgz35yvwf6gsq4brsw9jb5f6",
     "pname": "violentmonkey"
   },
   "styl-us": {
@@ -72,9 +72,9 @@
     "pname": "darkreader"
   },
   "chrome-mask": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4822042/chrome_mask-9.0.0.xpi",
-    "version": "9.0.0",
-    "sha256": "0z5cqxz6iwk1klnax8v41mv1d5g2gi2p0fsglcz8k9k0sg6c0b99",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4919967/chrome_mask-10.1.0.xpi",
+    "version": "10.1.0",
+    "sha256": "15bdgcxb6lbyi7q0fmyjrlyrk1igx9hqp60q3mdggj3gh2pcg3zy",
     "pname": "chrome-mask"
   },
   "zeroomega": {
