@@ -24,27 +24,27 @@
     "pname": "surfingkeys_ff"
   },
   "auto-tab-discard": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4045009/auto_tab_discard-0.6.7.xpi",
-    "version": "0.6.7",
-    "sha256": "1mdmf1pp96q3rbxqqysgbsixfap5dc9df1x5i662ai640f39prc9",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4959845/auto_tab_discard-0.7.1.xpi",
+    "version": "0.7.1",
+    "sha256": "10ynxppjz6nj602jk08088yid49wvq5rsz9xkrmh45hp7ziqdsiy",
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4773733/user_agent_string_switcher-0.6.7.xpi",
-    "version": "0.6.7",
-    "sha256": "0mxj5aw6vd357lwvw30hr3rzy3c77rpmm4w0b5qhpwc0lg4h96lp",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4948736/user_agent_string_switcher-0.6.8.xpi",
+    "version": "0.6.8",
+    "sha256": "03cf4nx6dx14nrwxmw6an6aw3lgfmrjnfrl6a5lfzv52p4nsf5cz",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4926076/violentmonkey-2.46.0.xpi",
-    "version": "2.46.0",
-    "sha256": "1zri7qrrxq4jz8pv35pg67nlp3k2cgz35yvwf6gsq4brsw9jb5f6",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4941753/violentmonkey-2.47.0.xpi",
+    "version": "2.47.0",
+    "sha256": "0vrin41y0avh7cylhy1wvmmm9g8g35rixxh5m1q7skh6wy51ps6c",
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4907275/styl_us-2.4.8.xpi",
-    "version": "2.4.8",
-    "sha256": "1pxy1j8fcfhc2zi8p60yqaxzhx8nwpn1408027jkxg9q1a4jcm25",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4947910/styl_us-2.4.10.xpi",
+    "version": "2.4.10",
+    "sha256": "0a9125rr6c5qs5f1d59093z0grpq0jhb3sw2xy88i9xazsy1wz4h",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4888680/ublock_origin-1.72.2.xpi",
-    "version": "1.72.2",
-    "sha256": "0y65nzqqcj9113h6bn7b1a9a1psq1ajygypcan0qcwbqvaq1bhs0",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4940584/ublock_origin-1.73.0.xpi",
+    "version": "1.73.0",
+    "sha256": "0skqcj7y7wm9iycinf7jkyvkhwpbzmxjrmhzdspz82hmffkm3k5w",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4872641/kiss_translator-2.0.28.xpi",
-    "version": "2.0.28",
-    "sha256": "1x5x9a48v7dzjkp4r636jwbzn8f74sjrqczsx3iiahmjfycs850y",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4954865/kiss_translator-2.0.32.xpi",
+    "version": "2.0.32",
+    "sha256": "0lqqfkz494qvq502fqjjs7q5b053jrpsp6nsbibm1sg3pcz68xjc",
     "pname": "kiss-translator"
   },
   "raindropio": {
