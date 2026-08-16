@@ -16,24 +16,24 @@
   };
   antifennel = {
     pname = "antifennel";
-    version = "cea2f62b71c53eeb2bfe056625a87f1a9ddfcddf";
+    version = "aa5fe3180f5b95076700c4e9b19b57f17645bf00";
     src = fetchgit {
       url = "https://git.sr.ht/~technomancy/antifennel";
-      rev = "cea2f62b71c53eeb2bfe056625a87f1a9ddfcddf";
+      rev = "aa5fe3180f5b95076700c4e9b19b57f17645bf00";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-LPQLxq7WQHi6CXgdYy6FKz04efFT5p6xPwDx5qhAw50=";
+      sha256 = "sha256-Vnv7PeQ6IfUgRyhJaK4wUPxRA3GZp3+znwDl5WmoFuM=";
     };
-    date = "20251005";
+    date = "20260804";
   };
   bash-env-json = {
     pname = "bash-env-json";
-    version = "0.7.0";
+    version = "0.11.0";
     src = fetchurl {
-      url = "https://github.com/tesujimath/bash-env-json/raw/0.7.0/bash-env-json";
-      sha256 = "sha256-6x8zErIYZuk3qWB807rNVbvH9ZLl8cGffJnKrt7DlSg=";
+      url = "https://github.com/tesujimath/bash-env-json/raw/0.11.0/bash-env-json";
+      sha256 = "sha256-MqhCtYFgYQV7SDV6TBzaEI+9TPuLhGQbkVfzTBuMfVY=";
     };
   };
   borders = {
@@ -49,16 +49,16 @@
   };
   cc-switch = {
     pname = "cc-switch";
-    version = "v5.9.3";
+    version = "v5.10.1";
     src = fetchFromGitHub {
       owner = "SaladDay";
       repo = "cc-switch-cli";
-      rev = "v5.9.3";
+      rev = "v5.10.1";
       fetchSubmodules = false;
-      sha256 = "sha256-SQrr8CcwOwIDRCBohZGOepK4xg+qxBC7zCqC3Jmpu7I=";
+      sha256 = "sha256-+vOebftEWLel+Mlnd5x5WfuSJByYuwfo9LRDX0pPlVE=";
     };
     cargoLock."./src-tauri/Cargo.lock" = {
-      lockFile = ./. + "/sha256-SQrr8CcwOwIDRCBohZGOepK4xg+qxBC7zCqC3Jmpu7I=/./src-tauri/Cargo.lock";
+      lockFile = ./. + "/sha256-+vOebftEWLel+Mlnd5x5WfuSJByYuwfo9LRDX0pPlVE=/./src-tauri/Cargo.lock";
       outputHashes = {
         
       };
@@ -85,13 +85,13 @@
   };
   deeplx = {
     pname = "deeplx";
-    version = "v1.2.2";
+    version = "v1.2.4";
     src = fetchFromGitHub {
       owner = "OwO-Network";
       repo = "DeepLX";
-      rev = "v1.2.2";
+      rev = "v1.2.4";
       fetchSubmodules = false;
-      sha256 = "sha256-b4ulKY4C2G5NiLBDqv2ISyTOee+202IR6x1h+Y/F5DY=";
+      sha256 = "sha256-7WuuO80CtmK4Zd8tI2VR0xH8votIz6AplJVoM58LU/w=";
     };
   };
   dict2xml = {
@@ -146,84 +146,84 @@
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs30.round-undecorated-frame" = {
     pname = "emacs30.round-undecorated-frame";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-30/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-30/round-undecorated-frame.patch";
       sha256 = "sha256-fjnmlM6dylDbcsCb5ELBJ40ZANacJALyiXQq6ujqTD4=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs30.system-appearance" = {
     pname = "emacs30.system-appearance";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs31.ns-mac-input-source" = {
     pname = "emacs31.ns-mac-input-source";
-    version = "b2a3070b075185f7a3341c30e9ee3575cf07dde9";
+    version = "4ef6e15ea1cedfa41728760636a26696417fee74";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/b2a3070b075185f7a3341c30e9ee3575cf07dde9/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/4ef6e15ea1cedfa41728760636a26696417fee74/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
       sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
     };
-    date = "2026-07-31";
+    date = "2026-08-12";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs31.system-appearance" = {
     pname = "emacs31.system-appearance";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs32.ns-mac-input-source" = {
     pname = "emacs32.ns-mac-input-source";
-    version = "b2a3070b075185f7a3341c30e9ee3575cf07dde9";
+    version = "4ef6e15ea1cedfa41728760636a26696417fee74";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/b2a3070b075185f7a3341c30e9ee3575cf07dde9/scripts/macos/patches/emacs-32/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/4ef6e15ea1cedfa41728760636a26696417fee74/scripts/macos/patches/emacs-32/ns-mac-input-source.patch";
       sha256 = "sha256-cYtdtNFE/D73ust2oh34/8O9aA9PNvmrmvIMJiIV7gk=";
     };
-    date = "2026-07-31";
+    date = "2026-08-12";
   };
   "emacs32.round-undecorated-frame" = {
     pname = "emacs32.round-undecorated-frame";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   "emacs32.system-appearance" = {
     pname = "emacs32.system-appearance";
-    version = "7a1ff08a5850b01a981ad831374a51002414fe9d";
+    version = "09a737967386795972b768ed28bc3052978a4d3a";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/7a1ff08a5850b01a981ad831374a51002414fe9d/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/09a737967386795972b768ed28bc3052978a4d3a/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2026-07-31";
+    date = "2026-08-16";
   };
   emacsclient = {
     pname = "emacsclient";
@@ -293,24 +293,24 @@
   };
   flexfox = {
     pname = "flexfox";
-    version = "v6.5.7";
+    version = "v6.6.0";
     src = fetchFromGitHub {
       owner = "yuuqilin";
       repo = "FlexFox";
-      rev = "v6.5.7";
+      rev = "v6.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-sIG0mzOfC9fijUpdhGSsCgjGhhkz/RLsFkFL7OTu0fg=";
+      sha256 = "sha256-P3ZdFYJ3/49lLd09cFEvrN4WNw9n3p0gTI88ZIHljbo=";
     };
   };
   go-musicfox = {
     pname = "go-musicfox";
-    version = "v5.0.0";
+    version = "v5.1.0";
     src = fetchFromGitHub {
       owner = "go-musicfox";
       repo = "go-musicfox";
-      rev = "v5.0.0";
+      rev = "v5.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-4BFSusALoxq4KSI4cBcW8tvRcAxH2RlbxT+v7xpkOTA=";
+      sha256 = "sha256-gM3gnUbevPSa2gmiC0DGYPrVRtwHF2TQB0Hu99ISVU8=";
     };
   };
   httpx = {
@@ -326,16 +326,16 @@
   };
   jcode = {
     pname = "jcode";
-    version = "v0.64.2";
+    version = "v0.76.0";
     src = fetchFromGitHub {
       owner = "1jehuang";
       repo = "jcode";
-      rev = "v0.64.2";
+      rev = "v0.76.0";
       fetchSubmodules = false;
-      sha256 = "sha256-yT7TUztsE8oiVyKt6ZlPGpLZE0FTJ5UZVxLUTXBFRxg=";
+      sha256 = "sha256-xvZoVZp8+PGeY791lpOrTu2Tr8cAMKic8Kp/TeH02/4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-yT7TUztsE8oiVyKt6ZlPGpLZE0FTJ5UZVxLUTXBFRxg=/Cargo.lock";
+      lockFile = ./. + "/sha256-xvZoVZp8+PGeY791lpOrTu2Tr8cAMKic8Kp_TeH02_4=/Cargo.lock";
       outputHashes = {
         "mermaid-rs-renderer-0.3.1" = "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s=";
         "agentgrep-0.1.6" = "sha256-yBLs2YZ6cUlTHYZGLtlAXpK7/9xX2kPi46B1YLbuPUU=";
@@ -432,15 +432,15 @@
   };
   musicdl = {
     pname = "musicdl";
-    version = "fddc02586c7b212f1dc705847ead43660d65a91b";
+    version = "bd201c132731c8f1a215c2dab14a4ffbc2ffda85";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "fddc02586c7b212f1dc705847ead43660d65a91b";
+      rev = "bd201c132731c8f1a215c2dab14a4ffbc2ffda85";
       fetchSubmodules = false;
-      sha256 = "sha256-EDczw9mrXRok5PSDDotoQmen4b90f/1OMfqQaTUwMcw=";
+      sha256 = "sha256-0e+U7NvRISTABVWzO957eD1196cu5wMvLsIWXc+p2nM=";
     };
-    date = "20260730";
+    date = "20260813";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -549,15 +549,15 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "21bbe43d7a464fe7348fe5b05195edaa4c144a81";
+    version = "d7c3493226217c535bea043cb05014c15491056b";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "21bbe43d7a464fe7348fe5b05195edaa4c144a81";
+      rev = "d7c3493226217c535bea043cb05014c15491056b";
       fetchSubmodules = false;
-      sha256 = "sha256-yf1LCytbkROmkat5csl0203FmqR05d61r93YiqpnBjU=";
+      sha256 = "sha256-vcrJUtP3ki3j8PPRjK+T/n0AAu8GHJkYtWeLjFC6QiY=";
     };
-    date = "20260731";
+    date = "20260816";
   };
   rime-frost = {
     pname = "rime-frost";
@@ -572,15 +572,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "8a3d9470c00add3cc93da20aac0c6d4a1ab37895";
+    version = "c398c0d4526b012cb3b306f792089abed13e0413";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "8a3d9470c00add3cc93da20aac0c6d4a1ab37895";
+      rev = "c398c0d4526b012cb3b306f792089abed13e0413";
       fetchSubmodules = false;
-      sha256 = "sha256-+C/4Z44+hguaGgA8SShNLs1wKbgVYOFTLkJqGFiOqb8=";
+      sha256 = "sha256-UZtxZ1GwURCNNJoS/j0mZFgX7UprdlgxpxGvsAqqTKY=";
     };
-    date = "20260731";
+    date = "20260814";
   };
   sarasa-term = {
     pname = "sarasa-term";
@@ -666,15 +666,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "706d4c2ea67a817b4a53b7704b587f2ec008c495";
+    version = "5141632f4ce82e1b6905cfc79f4c538695ee3c03";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "706d4c2ea67a817b4a53b7704b587f2ec008c495";
+      rev = "5141632f4ce82e1b6905cfc79f4c538695ee3c03";
       fetchSubmodules = false;
-      sha256 = "sha256-LQpU0qlxx5Q2Eok++xq1PF2K3KfB4glyt/GISUHL78A=";
+      sha256 = "sha256-W+57xoazNxgnM0yn26Zry5czxGnNZWLj6qa3/mqjB5U=";
     };
-    date = "20260731";
+    date = "20260803";
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";
