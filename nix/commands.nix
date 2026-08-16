@@ -14,15 +14,26 @@
           const NIX_LOGFILE = "nix-build-uncached.log"
           # Workaround https://github.com/NixOS/nix/issues/6572
 
-          def nixVersion>= [v: string]: nothing -> bool {
-            let currentVersion = nix --version | cut -d" " -f3 | split row "."
-            let vList = $v | split row "."
-            for i in 0..($vList | length) {
-              if (($currentVersion | get $i) >= ($vList | get $i)) {
-                return true
-              }
+          def to-semver-str []: string -> string {
+            let v = $in
+            let parts = ($v | split row ".")
+            match ($parts | length) {
+              1 => { $"($parts.0).0.0" }
+              2 => { $"($parts.0).($parts.1).0" }
+              _ => { $v }
             }
-            return false
+          }
+          def nixVersion>= [v: string]: nothing -> bool {
+            let cur_str = (nix --version | ansi strip | parse --regex '(?<v>\d+\.\d+(?:\.\d+)?)' | get v | first)
+            let cur = ($cur_str | to-semver-str | split row "." | each { into int })
+            let tgt = ($v | to-semver-str | split row "." | each { into int })
+            $cur.0 > $tgt.0 or (
+              $cur.0 == $tgt.0 and (
+                $cur.1 > $tgt.1 or (
+                  $cur.1 == $tgt.1 and $cur.2 >= $tgt.2
+                )
+              )
+            )
           }
 
           def run-build [logfile: string]: nothing -> int {
@@ -83,19 +94,30 @@
           }
           let dev_apps = $dev_apps | get apps | where {|x| $x in $DEFAULT_APPS}
           const NIX_LOGFILE = "nix-build-uncached.log"
-          def nixVersion>= [v: string]: nothing -> bool  {
-            let currentVersion = nix --version | cut -d" " -f3 | split row "."
-            let vList = $v | split row "."
-            for i in 0..($vList | length) {
-              if (($currentVersion | get $i) >= ($vList | get $i)) {
-                return true
-              }
+          def to-semver-str []: string -> string {
+            let v = $in
+            let parts = ($v | split row ".")
+            match ($parts | length) {
+              1 => { $"($parts.0).0.0" }
+              2 => { $"($parts.0).($parts.1).0" }
+              _ => { $v }
             }
-            return false
+          }
+          def nixVersion>= [v: string]: nothing -> bool {
+            let cur_str = (nix --version | ansi strip | parse --regex '(?<v>\d+\.\d+(?:\.\d+)?)' | get v | first)
+            let cur = ($cur_str | to-semver-str | split row "." | each { into int })
+            let tgt = ($v | to-semver-str | split row "." | each { into int })
+            $cur.0 > $tgt.0 or (
+              $cur.0 == $tgt.0 and (
+                $cur.1 > $tgt.1 or (
+                  $cur.1 == $tgt.1 and $cur.2 >= $tgt.2
+                )
+              )
+            )
           }
           def run-build [pkg: string, logfile: string]: nothing -> int {
             try {
-              ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($pkg) --skip-cached --no-nom out+err>| tee {save -f $logfile}
+              ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($pkg) --skip-cached --no-nom --debug out+err>| tee { save -f $logfile }
               $env.LAST_EXIT_CODE
             } catch {
               $env.LAST_EXIT_CODE

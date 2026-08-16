@@ -14,10 +14,10 @@ buildGoModule rec {
     "-s"
     "-w"
   ];
-  postInstall = ''
-    mv $out/bin/DeepLX $out
-    mv $out/DeepLX $out/bin/deeplx
-  '';
+  # postInstall = ''
+  #   mv $out/bin/DeepLX $out
+  #   mv $out/DeepLX $out/bin/deeplx
+  # '';
   preBuild = ''
     sed -i 's/^go 1\(\.[0-9]\+\)\{1,2\}$/go ${go.version}/' go.mod
      go mod tidy
