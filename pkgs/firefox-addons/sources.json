@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4908823/noscript-13.6.31.xpi",
-    "version": "13.6.31",
-    "sha256": "12p67m335s5qfirz99bvcnav296rn1q3wkraxxz5vai7rm7isylq",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4968026/noscript-13.6.32.xpi",
+    "version": "13.6.32",
+    "sha256": "1qmk60axzhgbvpdlldj6yqfix2x4qc6i6gcpgs38nkcpy6zq3vlb",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -24,9 +24,9 @@
     "pname": "surfingkeys_ff"
   },
   "auto-tab-discard": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4959845/auto_tab_discard-0.7.1.xpi",
-    "version": "0.7.1",
-    "sha256": "10ynxppjz6nj602jk08088yid49wvq5rsz9xkrmh45hp7ziqdsiy",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4962080/auto_tab_discard-0.7.2.xpi",
+    "version": "0.7.2",
+    "sha256": "0fqdm21l00ngmiwipaac25r4daw0axm1nxg1fwsnlnflh08d83pz",
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
@@ -36,15 +36,15 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4941753/violentmonkey-2.47.0.xpi",
-    "version": "2.47.0",
-    "sha256": "0vrin41y0avh7cylhy1wvmmm9g8g35rixxh5m1q7skh6wy51ps6c",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4963965/violentmonkey-2.48.0.xpi",
+    "version": "2.48.0",
+    "sha256": "0d5ycazm06zzkf7xf33l55lr91y5wg3k23026lryxgkwd41k2gp7",
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4947910/styl_us-2.4.10.xpi",
-    "version": "2.4.10",
-    "sha256": "0a9125rr6c5qs5f1d59093z0grpq0jhb3sw2xy88i9xazsy1wz4h",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4970801/styl_us-2.4.11.xpi",
+    "version": "2.4.11",
+    "sha256": "0902vwb52crbs5svjrgajn50960plg36mpywh4zpzmra2cjq1yx1",
     "pname": "styl-us"
   },
   "privacy-pass": {
