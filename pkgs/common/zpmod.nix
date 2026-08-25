@@ -26,6 +26,13 @@ stdenv.mkDerivation rec {
     "-DZPMOD_ENABLE_NATIVE=OFF" # 保持可移植
   ];
 
+  # GCC 15 / Apple clang 默认把 -Wincompatible-pointer-types 作为 error。
+  # zpmod vendored 的 vendor/zsh/Src/zsh_system.h:764 把 memmove 重定义为
+  # bcopy 宏，在 src/core/source.c:244 产生 char* <- Wordcode(unsigned int*)
+  # 的不兼容指针赋值，导致编译失败（nixpkgs stdenv 升级到 gcc-15 后暴露）。
+  # 上游未修，先降级该诊断为 warning 以恢复构建。
+  NIX_CFLAGS_COMPILE = [ "-Wno-error=incompatible-pointer-types" ];
+
   doCheck = false;
 
   # 安装交给 CMake 的 install(TARGETS zpmod ...) 与 install(FILES .../_zpmod)：
