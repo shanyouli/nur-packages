@@ -161,6 +161,7 @@ fetch.github = "benzBrake/userChrome.js-Loader"
 [zpmod]
 src.github = "z-shell/zpmod"
 fetch.github = "z-shell/zpmod"
+git.fetchSubmodules = true
 
 ### darwin
 

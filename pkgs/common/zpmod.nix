@@ -3,7 +3,7 @@
   stdenv,
   cmake,
   ncurses,
-  zsh,
+  # zsh,
   source,
 }:
 stdenv.mkDerivation rec {
@@ -15,10 +15,10 @@ stdenv.mkDerivation rec {
   # zpmod 的 CMakeLists 期望 vendor/zsh/Src/zsh.h 存在；上游以 git submodule 形式
   # 提供，而 nvfetcher 抓取时 fetchSubmodules=false。这里把 nixpkgs zsh 的源码
   # (同为官方 release tarball，含 Src/zsh.h)解压到 vendor/zsh，以满足头文件查找。
-  preConfigure = ''
-    mkdir -p vendor/zsh
-    tar -xf ${zsh.src} -C vendor/zsh --strip-components=1
-  '';
+  # preConfigure = ''
+  #   mkdir -p vendor/zsh
+  #   tar -xf ${zsh.src} -C vendor/zsh --strip-components=1
+  # '';
 
   cmakeFlags = [
     "-DCMAKE_BUILD_TYPE=Release"
@@ -26,12 +26,20 @@ stdenv.mkDerivation rec {
     "-DZPMOD_ENABLE_NATIVE=OFF" # 保持可移植
   ];
 
-  # GCC 15 / Apple clang 默认把 -Wincompatible-pointer-types 作为 error。
-  # zpmod vendored 的 vendor/zsh/Src/zsh_system.h:764 把 memmove 重定义为
-  # bcopy 宏，在 src/core/source.c:244 产生 char* <- Wordcode(unsigned int*)
-  # 的不兼容指针赋值，导致编译失败（nixpkgs stdenv 升级到 gcc-15 后暴露）。
-  # 上游未修，先降级该诊断为 warning 以恢复构建。
-  NIX_CFLAGS_COMPILE = [ "-Wno-error=incompatible-pointer-types" ];
+  # zpmod vendored 的 zsh 头文件/自身源码在新版 stdenv 编译器下有两处会被默认升级为
+  # error 的诊断，上游未修，先统一降回 warning 以恢复构建:
+  #
+  # 1) -Wincompatible-pointer-types (GCC 15 起默认 error)
+  #    vendor/zsh/Src/zsh_system.h:764 把 memmove 重定义为 bcopy 宏，在
+  #    src/core/source.c:244 产生 char* <- Wordcode(unsigned int*) 的不兼容指针赋值。
+  #
+  # 2) -Wimplicit-function-declaration (GCC 14 起默认 error, clang 亦然)
+  #    src/core/source_hot.c:144 调用 zsh 内部函数 execstring 但未引入其声明。
+  #    运行时该符号由 zsh 模块系统解析，降级为 warning 不影响 zmodload 加载。
+  NIX_CFLAGS_COMPILE = [
+    "-Wno-error=incompatible-pointer-types"
+    "-Wno-error=implicit-function-declaration"
+  ];
 
   doCheck = false;
 
