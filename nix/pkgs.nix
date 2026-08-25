@@ -23,6 +23,13 @@ let
     final: prev:
     let
       sources = nurSources final;
+      # 将 nixpkgs-unstable 作为 pkgs.unstable 注入，供需要更新工具链的包
+      # （如 fav 因 vergen MSRV 需 rustc≥1.96）通过 { unstable, ... } 形参调用。
+      # 不套 self.overlays.default 以避免递归；裸 unstable 只取工具链/构建器即可。
+      unstable = import inputs.nixpkgs {
+        inherit (final.stdenv.hostPlatform) system;
+        config.allowUnfree = true;
+      };
       sourceFn =
         dir: basename:
         let
@@ -68,6 +75,7 @@ let
             // {
               inherit sources source;
               pkgs = final;
+              inherit (final) unstable;
             }
           );
         in
@@ -189,6 +197,7 @@ let
         # })
         pyPackageOverrides
       ];
+      inherit unstable;
     }
     // (mapModules ./plib/build-support callPkg)
     // lua-overlay
@@ -228,14 +237,12 @@ in
       default = pkgOverlays;
     };
   };
-  perSystem =
-    { system, pkgs, ... }:
-    rec {
-      _module.args.pkgs = import inputs.nixpkgs {
-        overlays = [ self.overlays.default ];
-        inherit system;
-        config.allowUnfree = true;
-      };
-      packages = lib.filterAttrs (_: v: self.lib.isBuildable v) (packageFn pkgs);
+  perSystem = { system, pkgs, ... }: rec {
+    _module.args.pkgs = import inputs.nixpkgs-stable {
+      overlays = [ self.overlays.default ];
+      inherit system;
+      config.allowUnfree = true;
     };
+    packages = lib.filterAttrs (_: v: self.lib.isBuildable v) (packageFn pkgs);
+  };
 }

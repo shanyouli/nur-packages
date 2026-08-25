@@ -1,18 +1,20 @@
 {
   lib,
-  rustPlatform,
+  stdenv,
+  unstable,
   pkg-config,
   openssl,
-  stdenv,
+  ffmpeg,
   apple-sdk,
   source,
-  ffmpeg,
 }:
 # {pkgs ? import <nixpkgs> {} }:
 # with pkgs;
 # with pkgs.lib;
 # 不支持 rust1.73
-rustPlatform.buildRustPackage rec {
+# rustc: 用 nixpkgs-unstable 的工具链（rustc≥1.96），满足 vergen 10.x 的 MSRV；
+# openssl/ffmpeg/apple-sdk 等系统库仍用默认（stable）。
+unstable.rustPlatform.buildRustPackage rec {
   inherit (source) pname src;
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
@@ -26,7 +28,7 @@ rustPlatform.buildRustPackage rec {
   # cargoBuildFlags = ["--offline"];
   nativeBuildInputs = [
     pkg-config
-    rustPlatform.bindgenHook
+    unstable.rustPlatform.bindgenHook
   ];
 
   buildInputs = [
