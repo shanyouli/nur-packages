@@ -24,9 +24,9 @@
     "pname": "surfingkeys_ff"
   },
   "auto-tab-discard": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4962080/auto_tab_discard-0.7.2.xpi",
-    "version": "0.7.2",
-    "sha256": "0fqdm21l00ngmiwipaac25r4daw0axm1nxg1fwsnlnflh08d83pz",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4978053/auto_tab_discard-0.7.3.xpi",
+    "version": "0.7.3",
+    "sha256": "00p77svsj1rjrm8hyqckzdb1y3c8qnas84pbg9yavycxwqw8gab6",
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4940584/ublock_origin-1.73.0.xpi",
-    "version": "1.73.0",
-    "sha256": "0skqcj7y7wm9iycinf7jkyvkhwpbzmxjrmhzdspz82hmffkm3k5w",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/4981431/ublock_origin-1.74.0.xpi",
+    "version": "1.74.0",
+    "sha256": "0lhngmads52qj5732rmhsn10yrxyscrw6zrzhr2vmjb88kbmcmqp",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
