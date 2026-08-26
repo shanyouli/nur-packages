@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-08-25 17:08:07 UTC
+- LAST_MODIFY: 2026-08-26 08:49:03 UTC
 
 
 ## How to use
@@ -75,7 +75,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.2.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260821.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260823.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260806.0|Extensible, customizable GNU text editor|
 |[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260704|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20260616|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
@@ -84,7 +84,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**fav**](https://github.com/kingwingfly/fav)||1.3.0|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||6.6.0|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.80.1|Coding Agent Harness|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.81.1|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20260804|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
@@ -99,7 +99,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
 |[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.4|Rime 配置:白霜拼音|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260822|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v17.5.5|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v17.5.9|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
@@ -135,7 +135,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
-|[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.7.2|Dark Reader Chrome and Firefox extension|
+|[**auto-tab-discard**](https://webextension.org/listing/tab-discard.html)||0.7.3|Dark Reader Chrome and Firefox extension|
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.12.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||10.1.0|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.129|Dark Reader Chrome and Firefox extension|
@@ -149,7 +149,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.6.1|Firefox extension for managing tabs and bookmarks in sidebar|
 |[**styl-us**](https://add0n.com/stylus.html)||2.4.11|Stylus - Userstyles Manager|
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.11|Map your keys for web surfing, expand your browser with javascript and keyboard. |
-|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.73.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
+|[**ublock-origin**](https://github.com/gorhill/uBlock)||1.74.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.6.8|User-Agent Switcher and Manager|
 |[**violentmonkey**](https://violentmonkey.github.io)||2.48.0|An open source userscript manager.|
 |[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.5.0| Manage and switch between multiple proxies quickly & easily.|
@@ -164,7 +164,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260819|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260825|FreeProxy: Collecting free proxies from internet|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260826|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
