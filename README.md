@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-08-26 08:49:03 UTC
+- LAST_MODIFY: 2026-08-29 03:43:22 UTC
 
 
 ## How to use
@@ -75,11 +75,11 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.2.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260823.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260828.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20260806.0|Extensible, customizable GNU text editor|
 |[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260704|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20260616|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
-|[**emacs**](https://www.gnu.org/software/emacs/)||31.1-rc1|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||31.1|Extensible, customizable GNU text editor|
 |[**ewt-rs**](https://github.com/Master-Hash/ewt-rs)||0.5.0|A Rust implementation of Easy Web Token|
 |[**fav**](https://github.com/kingwingfly/fav)||1.3.0|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
@@ -99,13 +99,13 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
 |[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.4|Rime 配置:白霜拼音|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260822|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v17.5.9|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v17.7.1|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.14.1|easymotion-style text copying for tmux.|
 |[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20260803|Firefox scripts |
-|[**zpmod**](https://github.com/z-shell/zpmod)||2.0.1|Zsh module transparently and automatically compiles sourced scripts|
+|[**zpmod**](https://github.com/z-shell/zpmod)||2.0.6|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
 ### darwin
@@ -163,8 +163,8 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260819|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260826|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260829|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260829|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
