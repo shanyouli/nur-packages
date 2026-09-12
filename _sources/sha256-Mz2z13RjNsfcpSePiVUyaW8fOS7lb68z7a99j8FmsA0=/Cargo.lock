@@ -3031,7 +3031,7 @@ checksum = "92ecc6618181def0457392ccd0ee51198e065e016d1d527a7ac1b6dc7c1f09d2"
 
 [[package]]
 name = "jcode"
-version = "0.81.1"
+version = "0.84.0"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -3045,6 +3045,7 @@ dependencies = [
  "global-hotkey",
  "hex",
  "jcode-build-meta",
+ "jcode-harness-api",
  "jcode-harness-api-server",
  "jcode-provider-anthropic-runtime",
  "jcode-provider-antigravity-runtime",
@@ -3615,6 +3616,7 @@ dependencies = [
  "jcode-message-types",
  "jcode-provider-copilot",
  "jcode-provider-core",
+ "jcode-provider-openai",
  "reqwest 0.12.28",
  "serde_json",
  "tempfile",
@@ -3793,6 +3795,7 @@ dependencies = [
  "jcode-provider-openai",
  "jcode-schema-dialect",
  "reqwest 0.12.28",
+ "rustls",
  "serde_json",
  "tempfile",
  "tokio",
@@ -3837,6 +3840,7 @@ dependencies = [
  "tokio",
  "tokio-stream",
  "toml",
+ "uuid",
 ]
 
 [[package]]
