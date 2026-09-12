@@ -1,9 +1,10 @@
 {
   lib,
   buildGoModule,
+  go_1_27,
   source,
 }:
-buildGoModule rec {
+(buildGoModule.override { go = go_1_27; }) rec {
   inherit (source) pname src;
   vendorHash = "sha256-Jcx9/qJKR4q1EYUu6NsNkakJS/qtQLlhys0GKx5BLQk=";
   subPackages = [ "." ];
