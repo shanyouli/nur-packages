@@ -6,7 +6,7 @@
 }:
 (buildGoModule.override { go = go_1_27; }) rec {
   inherit (source) pname src;
-  vendorHash = "sha256-Jcx9/qJKR4q1EYUu6NsNkakJS/qtQLlhys0GKx5BLQk=";
+  vendorHash = "sha256-AmUWUzYLDHlzTqz53fGNMsIqC3giecbd9Qzrnu+q/MQ=";
   subPackages = [ "." ];
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
