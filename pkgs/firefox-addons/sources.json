@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4968026/noscript-13.6.32.xpi",
-    "version": "13.6.32",
-    "sha256": "1qmk60axzhgbvpdlldj6yqfix2x4qc6i6gcpgs38nkcpy6zq3vlb",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5028324/noscript-13.6.33.xpi",
+    "version": "13.6.33",
+    "sha256": "1z6xdz5a1s129jw3sixnwg0irmaid7hdf579hzl7mq32a0n1s613",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -12,9 +12,9 @@
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4819605/download_with_aria2-4.26.0.4164.xpi",
-    "version": "4.26.0.4164",
-    "sha256": "0vkdf3zr37xb0zgm45ads5j1i4pdcfgf1dnapk4llpnz4f9rk75w",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5024724/download_with_aria2-4.27.1.4319.xpi",
+    "version": "4.27.1.4319",
+    "sha256": "0pf12lm3k0pjwwk8hq19p3yw2wxaz6a0qp9rxsw5z1fihxzibjnp",
     "pname": "download-with-aria2"
   },
   "surfingkeys_ff": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4970801/styl_us-2.4.11.xpi",
-    "version": "2.4.11",
-    "sha256": "0902vwb52crbs5svjrgajn50960plg36mpywh4zpzmra2cjq1yx1",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5028285/styl_us-2.4.13.xpi",
+    "version": "2.4.13",
+    "sha256": "1pfbs4yqapbfn3c67g5rqgabrs71p50n6k2fgfvsggxc2isrp5id",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -54,9 +54,9 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4981431/ublock_origin-1.74.0.xpi",
-    "version": "1.74.0",
-    "sha256": "0lhngmads52qj5732rmhsn10yrxyscrw6zrzhr2vmjb88kbmcmqp",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+    "version": "1.75.0",
+    "sha256": "11sjm9z9csa0p37xzdbb6mn0wnw6bq91c3yq9dj70qs5c1c42x2v",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
@@ -66,9 +66,9 @@
     "pname": "immersive-translate"
   },
   "darkreader": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4998573/darkreader-4.9.130.xpi",
-    "version": "4.9.130",
-    "sha256": "172cxxa0zmbg6y3nlgwczi6m27zpzcqhnacsldi1vwka65bm8p87",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5029993/darkreader-4.9.131.xpi",
+    "version": "4.9.131",
+    "sha256": "084xwg89p2cfr7r2pbjnxw5d2ghkzk0j7il0j4aqsaaw20d3gqlb",
     "pname": "darkreader"
   },
   "chrome-mask": {
@@ -78,9 +78,9 @@
     "pname": "chrome-mask"
   },
   "zeroomega": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4973909/zeroomega-3.5.1.xpi",
-    "version": "3.5.1",
-    "sha256": "1bqb7f30c33d4qiyv8fivxi8pacsqg0i2g2g5dgv6q7b6zhj6a76",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5017630/zeroomega-3.5.2.xpi",
+    "version": "3.5.2",
+    "sha256": "1vq15q2v8zx87dg8bn7plkcs1q1xkg1h7wdalqmm7syadfvrhl56",
     "pname": "zeroomega"
   },
   "easy-image-blocker": {
