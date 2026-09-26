@@ -24,9 +24,9 @@ mkDarwinApp rec {
     ;
   appname = "Firefox";
   postInstall = lib.optionalString withFx ''
-    cp -ar ${fxSrc}/program/config.js $out/Applications/Firefox.app/Contents/Resources/config.js
+    cp -ar ${fxSrc}/src/program/config.js $out/Applications/Firefox.app/Contents/Resources/config.js
     mkdir -p $out/Applications/Firefox.app/Contents/Resources/defaults/pref
-    cp -ar ${fxSrc}/program/defaults/pref/config-prefs.js $out/Applications/Firefox.app/Contents/Resources/defaults/pref
+    cp -ar ${fxSrc}/src/program/defaults/pref/config-prefs.js $out/Applications/Firefox.app/Contents/Resources/defaults/pref
   '';
   meta = {
     description = "Mozilla Firefox, free web browser (binary package)";

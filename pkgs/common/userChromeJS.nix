@@ -15,5 +15,5 @@ runCommand "firefox-userchromejs"
   }
   ''
     mkdir -p $out
-    cp -rv $src/profile/chrome/* $out/
+    cp -rv $src/src/profile/chrome/* $out/
   ''
