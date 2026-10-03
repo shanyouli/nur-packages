@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-09-26 05:59:30 UTC
+- LAST_MODIFY: 2026-10-03 01:35:54 UTC
 
 
 ## How to use
@@ -75,22 +75,22 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.2.4|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260925.0|Extensible, customizable GNU text editor|
-|[**emacs**](https://www.gnu.org/software/emacs/)||20260924.0|Extensible, customizable GNU text editor|
-|[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20260831|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20261002.0|Extensible, customizable GNU text editor|
+|[**emacs**](https://www.gnu.org/software/emacs/)||20260926.0|Extensible, customizable GNU text editor|
+|[**emacs-reader**](https://codeberg.org/divyaranjan/emacs-reader)||9.9.20261002|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20260616|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
 |[**emacs**](https://www.gnu.org/software/emacs/)||31.1|Extensible, customizable GNU text editor|
 |[**ewt-rs**](https://github.com/Master-Hash/ewt-rs)||0.5.0|A Rust implementation of Easy Web Token|
 |[**fav**](https://github.com/kingwingfly/fav)||1.3.0|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
-|[**flexfox**](https://github.com/yuuqilin/FlexFox)||7.0.1|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.88.0|Coding Agent Harness|
-|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20260919|Turn Lua code into Fennel code|
+|[**flexfox**](https://github.com/yuuqilin/FlexFox)||7.1.0|Firefox Chrome css|
+|[**jcode**](https://github.com/1jehuang/jcode)||0.90.0|Coding Agent Harness|
+|[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20260926|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
 |[**mtranserver**](https://github.com/xxnuo/MTranServer)||4.0.33|Offline translation model server|
 |[**nix-index**](None)|||None|
-|[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260925|Linter for Nu shell scripts that helpfully suggests improvements|
+|[**nu-lint**](https://github.com/wvhulle/nu-lint)||20260926|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
 |[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
@@ -99,7 +99,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.8.0|我的自定义 iosvake|
 |[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.4|Rime 配置:白霜拼音|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20260925|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v18.0.11|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v18.0.15|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
@@ -118,11 +118,11 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**borders**](https://github.com/FelixKratz/JankyBorders)||1.9.0|window border system for macOS|
 |[**dutis**](https://github.com/tsonglew/dutis)||2.24.0|A command-line tool to select default applications, based on duti|
 |[**EmacsClient**](None)||29.2|None|
-|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.16.0esr|Mozilla Firefox, free web browser (binary package)|
+|[**firefox-esr**](http://www.mozilla.com/en-US/firefox/)||140.17.0esr|Mozilla Firefox, free web browser (binary package)|
 |[**lporg**](https://github.com/blacktop/lporg)||20.4.32|Organize Your macOS Launchpad Apps|
 |[**mkalias**](https://github.com/reckenrode/mkalias)||0.4.0|Simple command-line tool to create Finder aliases|
 |[**nowplaying-cli**](https://github.com/kirtan-shah/nowplaying-cli)||2.1.0|macOS command-line utility for retrieving currently playing media|
-|[**openwith**](https://github.com/ColeMei/openwith)||0.6.4|Manage macOS file extension associations from the terminal |
+|[**openwith**](https://github.com/ColeMei/openwith)||0.6.5|Manage macOS file extension associations from the terminal |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
@@ -139,11 +139,11 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**browserpass-ce**](https://github.com/browserpass/browserpass-extension)||3.12.0|Browserpass is a browser extension for Firefox and Chrome to retrieve login details from zx2c4's pass (<a href="https://prod.outgoing.prod.webservices.mozgcp.net/v1/fcd8dcb23434c51a78197a1c25d3e2277aa1bc764c827b4b4726ec5a5657eb64/http%3A//passwordstore.org" rel="nofollow">passwordstore.org</a>) straight from your browser. Tags: passwordstore, password store, password manager, passwordmanager, gpg|
 |[**chrome-mask**](https://github.com/denschub/chrome-mask)||10.1.0|Makes Firefox wear a mask to look like Chrome.|
 |[**darkreader**](https://darkreader.org/)||4.9.133|Dark Reader Chrome and Firefox extension|
-|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||4.27.1.4319|Browser extension for aria2c json-rpc |
+|[**download-with-aria2**](https://github.com/jc3213/download_with_aria2)||5.0.0.4343|Browser extension for aria2c json-rpc |
 |[**easy-image-blocker**](https://addons.mozilla.org/en-US/firefox/addon/easy-image-blocker/)||3.1.5|Easy Image Blocker is the Add-on to control the loading of the image.|
-|[**immersive-translate**](https://immersivetranslate.com/)||1.30.2|Immersive Dual Web Page Translation Extension |
+|[**immersive-translate**](https://immersivetranslate.com/)||1.33.3|Immersive Dual Web Page Translation Extension |
 |[**kiss-translator**](https://github.com/fishjar/kiss-translator)||2.1.0|Simple, open source bilingual translation extension & Greasemonkey script|
-|[**noscript**](https://noscript.net/)||13.6.34|NoScript Security Suite|
+|[**noscript**](https://noscript.net/)||13.6.36|NoScript Security Suite|
 |[**privacy-pass**](https://github.com/cloudflare/pp-browser-extension)||4.0.2|Client for Privacy Pass protocol providing unlinkable cryptographic tokens|
 |[**raindropio**](https://app.raindrop.io/)||6.6.91|All-in-one bookmark manager|
 |[**sidebery**](https://github.com/mbnuqw/sidebery)||5.6.1|Firefox extension for managing tabs and bookmarks in sidebar|
@@ -164,7 +164,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20260923|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20260926|FreeProxy: Collecting free proxies from internet|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20261002|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
