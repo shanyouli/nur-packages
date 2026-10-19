@@ -6,15 +6,21 @@ import sys
 import logging
 
 import requests
-from bs4 import BeautifulSoup
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
+# AMO 页面 HTML 结构频繁改版（2025-07 大改版后安装按钮由前端 JS 渲染，
+# 且 class 名不再稳定），解析页面不可靠；官方 API v5 是文档化的稳定接口。
+AMO_API_URL = "https://addons.mozilla.org/api/v5/addons/addon/{slug}/"
+# 默认的 python-requests UA 会被部分站点拦截，使用常规浏览器 UA
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+}
+REQUEST_TIMEOUT = 30
+
+
 def nth(idx, lst):
-    if idx >= len(lst):
-        return None
-    else:
-        return lst[idx]
+    return lst[idx] if idx < len(lst) else None
 
 
 IS_COMMIT = nth(1, sys.argv)
@@ -27,10 +33,11 @@ def commit_source(msg):
     for i in ["sources.json", "source.json"]:
         if os.path.isfile(i):
             logging.info(f"git add {i}")
-            subprocess.run(f"git add ./{i}", shell=True)
+            subprocess.run(["git", "add", f"./{i}"], check=False)
 
     logging.info("git commit some file")
-    subprocess.run(f"git commit -m '{msg}'", shell=True)
+    # 用列表参数传递消息，避免 shell 拼接在消息含空格/换行时出错
+    subprocess.run(["git", "commit", "-m", msg], check=False)
     os.chdir(current_dir)
 
 
@@ -43,25 +50,37 @@ def nix_prefix_url(url: str) -> str:
     return result.stdout.decode("utf-8").strip()
 
 
-def get_firefox_addons_xpi(name: str) -> str:
-    logging.info("get %s infos" % name)
-    html = requests.get(f"https://addons.mozilla.org/en-US/firefox/addon/{name}").text
-    soup = BeautifulSoup(html, "html.parser")
-    for i in soup.find_all("a", class_="InstallButtonWrapper-download-link"):
-        if "href" in i.attrs and i["href"].endswith(".xpi"):
-            return i["href"]
-    else:
-        xpi_soup = soup.find(href=re.compile(r"\.xpi$"))
-        if xpi_soup:
-            return xpi_soup.get("href")
-        else:
-            raise ValueError(f"The extensions of {name}  not found")
+def get_version_from_url(url: str) -> str | None:
+    """从 XPI 直链解析版本号，如 .../noscript-13.6.36.xpi -> 13.6.36"""
+    m = re.search(r"-([0-9.]+)\.xpi$", url)
+    return m.group(1) if m else None
 
 
-def get_version(url: str) -> str:
-    import time
-    re_pattern = re.search(r"-([0-9.]+).xpi", url)
-    return re_pattern.group(1) if re_pattern is not None else time.strftime("%y%m%d%H%M")
+def get_firefox_addon_info(name: str) -> dict:
+    """通过 AMO 官方 API v5 获取插件当前版本的下载直链与版本号"""
+    logging.info(f"get {name} infos")
+    resp = requests.get(AMO_API_URL.format(slug=name), headers=HEADERS, timeout=REQUEST_TIMEOUT)
+    if resp.status_code == 404:
+        raise ValueError(f"Addon {name!r} not found on AMO (404), please check the slug")
+    resp.raise_for_status()
+    info = resp.json()
+    current = info.get("current_version") or {}
+    file = current.get("file") or {}
+    url = file.get("url")
+    if not url or not url.endswith(".xpi"):
+        raise ValueError(f"Addon {name!r} has no downloadable .xpi in current_version")
+    version = current.get("version") or get_version_from_url(url)
+    return {"url": url, "version": version}
+
+
+def make_source(name: str, info: dict) -> dict:
+    logging.info(f"get {name} sha256.")
+    return {
+        "url": info["url"],
+        "version": info["version"],
+        "sha256": nix_prefix_url(info["url"]),
+        "pname": name,
+    }
 
 
 def get_current_src(f):
@@ -75,58 +94,82 @@ def save_current_src(f, sources):
         json.dump(sources, text, indent=2)
 
 
+def build_commit_message(updates: list[str], added: list[str], removed: list[str]) -> str:
+    """构建 conventional + emoji 风格的提交信息：subject 统计摘要，body 分组明细"""
+    counts = []
+    if updates:
+        counts.append(f"更新 {len(updates)}")
+    if added:
+        counts.append(f"新增 {len(added)}")
+    if removed:
+        counts.append(f"移除 {len(removed)}")
+    # 单个插件更新时，subject 直接携带版本变化，一眼可见
+    if not added and not removed and len(updates) == 1:
+        subject = f"chore(🤖): 更新 firefox-addons 插件 {updates[0]}"
+    else:
+        subject = f"chore(🤖): 更新 firefox-addons 插件（{'、'.join(counts)}）"
+    sections = []
+    if updates:
+        sections.append("更新:\n" + "\n".join(f"- {u}" for u in updates))
+    if added:
+        sections.append("新增:\n" + "\n".join(f"- {a}" for a in added))
+    if removed:
+        sections.append("移除:\n" + "\n".join(f"- {r}" for r in removed))
+    return subject + "\n\n" + "\n\n".join(sections)
+
+
 def init_sources(add_name):
     sources = {}
-    update_list = []
+    added = []
     for i in add_name:
-        url = get_firefox_addons_xpi(i)
-        logging.info(f"get {i} version, sha256.")
-        sources[i] = {
-            "url": url,
-            "version": get_version(url),
-            "sha256": nix_prefix_url(url),
-            "pname": i,
-        }
-        logging.info(f"{i}, version: {sources[i]["version"]}")
-        update_list.append(f"{i}: ∅ -> {sources[i]['version']}")
-    return sources, update_list
+        info = get_firefox_addon_info(i)
+        sources[i] = make_source(i, info)
+        logging.info(f"{i}, version: {sources[i]['version']}")
+        added.append(f"{i}: {sources[i]['version']}")
+    return sources, added
 
 
 def update_src(add_name: list[str]):
     target_file = os.path.join(SCRIPT_DIR, "sources.json")
-    update_list = []
-    sources = get_current_src(target_file)
+    updates = []
+    added = []
+    removed = []
+    failed = []
+    sources = get_current_src(target_file) or {}
     next_sources = {}
     if sources:
         for i in add_name:
             logging.info(f"check {i} ...")
-            url = get_firefox_addons_xpi(i)
-            sources_contain_i = True if i in sources else False
-            if sources_contain_i and sources[i]["url"] == url:
+            try:
+                info = get_firefox_addon_info(i)
+            except Exception as e:
+                logging.warning(f"skip {i}: {e}")
+                failed.append(f"{i}: {e}")
+                continue
+            if i in sources and sources[i]["url"] == info["url"]:
                 next_sources[i] = sources.pop(i)
             else:
                 logging.info(f"update {i} ...")
-                next_sources[i] = {
-                    "url": url,
-                    "version": get_version(url),
-                    "sha256": nix_prefix_url(url),
-                    "pname": i,
-                }
-                logging.info(f"{i}, version: {sources[i]["version"]}")
-                current_version = sources[i]["version"] if sources_contain_i else "∅"
-                next_version = next_sources[i]["version"]
-                update_list.append(f"{i}: {current_version} -> {next_version}")
-                if sources_contain_i:
-                    sources.pop(i)
+                current_version = sources[i]["version"] if i in sources else "∅"
+                next_sources[i] = make_source(i, info)
+                logging.info(f"{i}, version: {next_sources[i]['version']}")
+                if i in sources:
+                    updates.append(f"{i}: {current_version} -> {next_sources[i]['version']}")
+                    sources.pop(i)  # 从旧集合移除，避免被计入“移除”分组
+                else:
+                    added.append(f"{i}: {next_sources[i]['version']}")
         for k, v in sources.items():
-            update_list.append(f"{k}: {v['version']} -> ∅")
+            removed.append(f"{k}: {v['version']} -> ∅")
     else:
-        next_sources, update_list = init_sources(add_name)
-    if update_list:
+        next_sources, added = init_sources(add_name)
+    if updates or added or removed:
         save_current_src(target_file, next_sources)
         if IS_COMMIT:
-            msg = "Update\n" + "\n".join(update_list)
-            commit_source(msg)
+            commit_source(build_commit_message(updates, added, removed))
+    if failed:
+        raise SystemExit(
+            "some addons failed to update:\n" + "\n".join(failed)
+        )
 
 
 if __name__ == "__main__":
