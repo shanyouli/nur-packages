@@ -11,6 +11,19 @@ on:
     # run this daily at 8am UTC, or roughly 4am eastern
     - cron: '15 21 * * 5'
   workflow_dispatch:
+    inputs:
+      lock:
+        description: '更新 flake.lock（nix flake update）'
+        type: boolean
+        default: true
+      nvfetcher:
+        description: 'nvfetcher 更新 _sources 源码'
+        type: boolean
+        default: true
+      updatepy:
+        description: 'updatePy 脚本更新 pkgs sources.json'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -23,7 +36,8 @@ concurrency:
 # 合并自原 upnvfetcher.yml / uppython.yml / update.yml（沿用 update.yml 文件名）：
 #   push 只改 nvfetcher.toml            -> 仅跑 nvfetcher（对应原 upnvfetcher.yml）
 #   push 只改 pkgs/**/update.py         -> 仅跑 updatePy（对应原 uppython.yml）
-#   schedule / workflow_dispatch        -> 全量 lock + nvfetcher + updatePy（对应原 update.yml）
+#   schedule                            -> 全量 lock + nvfetcher + updatePy（对应原 update.yml）
+#   workflow_dispatch                   -> 按手动勾选决定，默认全量（不勾选任何项则仅跑 pre-work 后跳过）
 # 更新统一推送到 flakebot 分支并创建/复用 flakebot -> master 的 PR，
 # 最后只 dispatch 一次 build.yml（trigger-second-workflow）。
 jobs:
@@ -45,6 +59,9 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           BEFORE_SHA: ${{ github.event.before }}
+          INPUT_LOCK: ${{ inputs.lock }}
+          INPUT_NVFETCHER: ${{ inputs.nvfetcher }}
+          INPUT_UPDATEPY: ${{ inputs.updatepy }}
         run: |
           runNvfetcher=false
           runUpdatePy=false
@@ -78,8 +95,13 @@ jobs:
                 runUpdatePy=true
               fi
             fi
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            # 手动触发：按界面勾选决定（boolean input 在 env 中渲染为 true/false 字符串）
+            runLock="$INPUT_LOCK"
+            runNvfetcher="$INPUT_NVFETCHER"
+            runUpdatePy="$INPUT_UPDATEPY"
           else
-            # schedule / workflow_dispatch：全量更新
+            # schedule：全量更新
             runNvfetcher=true
             runUpdatePy=true
             runLock=true
