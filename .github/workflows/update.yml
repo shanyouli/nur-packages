@@ -151,24 +151,40 @@ jobs:
           force: true
       # gh CLI 版 PR 创建（自 upnvfetcher.yml 迁移）：vsoch/pull-request-action 的
       # "check if PR exists" 请求不带 auth headers，会撞上匿名 60 req/hour 的
-      # API 限流。gh 的所有请求均已认证。行为保持一致：已存在打开的
-      # flakebot -> master PR 则跳过（PASS_IF_EXISTS），否则创建。
-      - name: Create or skip pull request
+      # API 限流。gh 的所有请求均已认证。
+      # PR body 由 tools/pr_body.py 基于 master...flakebot 实际差异生成；
+      # 已存在打开的 flakebot -> master PR 时不再跳过，而是用 gh pr edit
+      # 同步刷新 title/body，保证 body 每次运行都反映最新更新内容。
+      - name: Generate PR body
+        env:
+          PR_BODY_FILE: ${{ runner.temp }}/pr-body.md
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          RUN_NUMBER: ${{ github.run_number }}
+          EVENT_NAME: ${{ github.event_name }}
+          RUN_LOCK: ${{ needs.pre-work.outputs.runLock }}
+          RUN_NVFETCHER: ${{ needs.pre-work.outputs.runNvfetcher }}
+          RUN_UPDATEPY: ${{ needs.pre-work.outputs.runUpdatePy }}
+        run: python3 tools/pr_body.py
+      - name: Create or update pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # reuse the existing token, no extra secret needed
           PR_TITLE: ${{ needs.pre-work.outputs.prTitle }}
+          PR_BODY_FILE: ${{ runner.temp }}/pr-body.md
         run: |
-          count=$(gh pr list --repo "$GITHUB_REPOSITORY" --head flakebot --base master --state open --limit 100 --json number --jq 'length')
-          if [ "$count" -gt 0 ]; then
-            echo "Pull request from flakebot to master is already open (count=$count), skipping."
+          # body 生成步骤意外失败时兜底，避免空 body
+          [ -s "$PR_BODY_FILE" ] || printf 'This is an automated pull request to update src and lock.\n' > "$PR_BODY_FILE"
+          pr_num=$(gh pr list --repo "$GITHUB_REPOSITORY" --head flakebot --base master --state open --limit 100 --json number --jq '.[0].number // empty')
+          if [ -n "$pr_num" ]; then
+            echo "Pull request from flakebot to master is already open (#$pr_num), syncing title/body."
+            gh pr edit "$pr_num" --repo "$GITHUB_REPOSITORY" --title "$PR_TITLE" --body-file "$PR_BODY_FILE"
           else
             gh pr create \
               --repo "$GITHUB_REPOSITORY" \
               --base master \
               --head flakebot \
               --title "$PR_TITLE" \
-              --body 'This is an automated pull request to update src and lock.' \
-              --maintainer-can-modify=false
+              --body-file "$PR_BODY_FILE" \
+              --no-maintainer-edit # 原 --maintainer-can-modify=false 并非 gh CLI 的有效 flag
           fi
       - name: Trigger build workflow
         run: |
