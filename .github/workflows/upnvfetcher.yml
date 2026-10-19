@@ -61,17 +61,27 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: 'flakebot'
           force: true
+      # vsoch/pull-request-action@1.1.1 sends its "check if PR exists" request
+      # without auth headers, hitting the anonymous 60 req/hour API rate limit on
+      # shared Actions runner IPs. Replaced with gh CLI: all requests are authenticated.
+      # Behavior kept the same: skip if an open flakebot -> master PR exists (PASS_IF_EXISTS),
+      # otherwise create one.
       - name: pull-request-action
-        uses: vsoch/pull-request-action@1.1.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST_FROM_BRANCH: 'flakebot'
-          PULL_REQUEST_BRANCH: 'master'
-          MAINTAINER_CANT_MODIFY: true
-          PASS_IF_EXISTS: true
-          PASS_ON_ERROR: true
-          PULL_REQUEST_UPDATE: true
-          PULL_REQUEST_TITLE: 'Update src by nvfetcher'
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # reuse the existing token, no extra secret needed
+        run: |
+          count=$(gh pr list --repo "$GITHUB_REPOSITORY" --head flakebot --base master --state open --limit 100 --json number --jq 'length')
+          if [ "$count" -gt 0 ]; then
+            echo "Pull request from flakebot to master is already open (count=$count), skipping."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base master \
+              --head flakebot \
+              --title 'Update src by nvfetcher' \
+              --body 'This is an automated pull request to update src by nvfetcher.' \
+              --maintainer-can-modify=false
+          fi
       - name: Trigger second workflow
         run: |
           curl -X POST \
