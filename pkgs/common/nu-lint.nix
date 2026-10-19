@@ -1,13 +1,14 @@
 {
   lib,
-  rustPlatform,
+  unstable,
   source,
 }:
 # {pkgs ? import <nixpkgs> {} }:
 # with pkgs;
 # with pkgs.lib;
 # 不支持 rust1.73
-rustPlatform.buildRustPackage rec {
+# rustc: 用 nixpkgs-unstable 的工具链（rustc≥1.96），满足 nu-lint 新版本的 MSRV。
+unstable.rustPlatform.buildRustPackage rec {
   inherit (source) pname src;
   version =
     if (builtins.hasAttr "date" source) then source.date else lib.removePrefix "v" source.version;
