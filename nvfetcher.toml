@@ -84,6 +84,48 @@ git.date_format = "%Y%m%d"
 fetch.github = "kaii-zen/manix"
 cargo_lock = ["Cargo.lock"]
 
+[maple-mono]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-TTF.zip"
+
+[maple-mono-cn]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-CN.zip"
+
+[maple-mono-cn-vf]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-CN-VF.zip"
+
+[maple-mono-nf]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF.zip"
+
+[maple-mono-nf-cn]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF-CN.zip"
+
+[maple-mono-nf-cn-vf]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF-CN-VF.zip"
+
+[maple-mono-vf]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-VF.zip"
+
 [mtranserver]
 src.github = "xxnuo/MTranServer"
 fetch.github = "xxnuo/MTranServer"

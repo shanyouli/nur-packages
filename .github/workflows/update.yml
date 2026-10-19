@@ -1,15 +1,108 @@
 name: Update src and lock
 
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'nvfetcher.toml'
+      - 'pkgs/**/update.py'
   schedule:
     # run this daily at 8am UTC, or roughly 4am eastern
     - cron: '15 21 * * 5'
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-src-and-lock
+  cancel-in-progress: false
+
+# 合并自原 upnvfetcher.yml / uppython.yml / update.yml（沿用 update.yml 文件名）：
+#   push 只改 nvfetcher.toml            -> 仅跑 nvfetcher（对应原 upnvfetcher.yml）
+#   push 只改 pkgs/**/update.py         -> 仅跑 updatePy（对应原 uppython.yml）
+#   schedule / workflow_dispatch        -> 全量 lock + nvfetcher + updatePy（对应原 update.yml）
+# 更新统一推送到 flakebot 分支并创建/复用 flakebot -> master 的 PR，
+# 最后只 dispatch 一次 build.yml（trigger-second-workflow）。
 jobs:
-  update:
+  pre-work:
     if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    outputs:
+      runNvfetcher: ${{ steps.decide.outputs.runNvfetcher }}
+      runUpdatePy: ${{ steps.decide.outputs.runUpdatePy }}
+      runLock: ${{ steps.decide.outputs.runLock }}
+      prTitle: ${{ steps.decide.outputs.prTitle }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: Decide what to update
+        id: decide
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          runNvfetcher=false
+          runUpdatePy=false
+          runLock=false
+
+          if [ "$EVENT_NAME" = "push" ]; then
+            # diff 基线：优先用 push 事件的 before；force push 后 before 可能不在
+            # 历史中，回退到上一个 commit；仍不可用（如首个 push）则退化为全量更新
+            before="$BEFORE_SHA"
+            if [ -z "$before" ] || ! git cat-file -e "$before" 2>/dev/null; then
+              before="$(git rev-parse HEAD~1 2>/dev/null || true)"
+            fi
+
+            if [ -z "$before" ]; then
+              runNvfetcher=true
+              runUpdatePy=true
+              runLock=true
+            else
+              changed="$(git diff --name-only "$before" "${{ github.sha }}")"
+
+              if echo "$changed" | grep -q '^nvfetcher\.toml$'; then
+                # 本次 push 已包含 _sources/ 产物更新，说明 nvfetcher 已被手动执行过，跳过
+                if ! echo "$changed" | grep -q '^_sources/'; then
+                  runNvfetcher=true
+                fi
+              fi
+
+              # update.py 变化时直接重跑；updatePy 幂等，重复执行无副作用
+              # （修正原 uppython.yml 检测脚本自身导致主任务被跳过的问题）
+              if echo "$changed" | grep -q 'update\.py$'; then
+                runUpdatePy=true
+              fi
+            fi
+          else
+            # schedule / workflow_dispatch：全量更新
+            runNvfetcher=true
+            runUpdatePy=true
+            runLock=true
+          fi
+
+          if [ "$runLock" = "true" ]; then
+            prTitle='Update src and lock'
+          elif [ "$runNvfetcher" = "true" ] && [ "$runUpdatePy" = "true" ]; then
+            prTitle='Update src by nvfetcher and python script'
+          elif [ "$runNvfetcher" = "true" ]; then
+            prTitle='Update src by nvfetcher'
+          else
+            prTitle='Update src by python script'
+          fi
+
+          echo "runNvfetcher=$runNvfetcher" >> "$GITHUB_OUTPUT"
+          echo "runUpdatePy=$runUpdatePy" >> "$GITHUB_OUTPUT"
+          echo "runLock=$runLock" >> "$GITHUB_OUTPUT"
+          echo "prTitle=$prTitle" >> "$GITHUB_OUTPUT"
+
+  update:
+    needs: pre-work
+    if: needs.pre-work.outputs.runNvfetcher == 'true' || needs.pre-work.outputs.runUpdatePy == 'true' || needs.pre-work.outputs.runLock == 'true'
     runs-on: ubuntu-latest
     steps:
       # - uses: styfle/cancel-workflow-action@0.7.0
@@ -36,8 +129,10 @@ jobs:
           branch: flakebot
           force: true
       - name: Update and commit lockfile
+        if: needs.pre-work.outputs.runLock == 'true'
         run: nix flake update --commit-lock-file
       - name: Update nvfetcher src
+        if: needs.pre-work.outputs.runNvfetcher == 'true'
         run: |
           cat > secrets.toml <<EOF
           [keys]
@@ -45,28 +140,37 @@ jobs:
           EOF
           nix run .#nvfetcher
           rm -f secrets.toml
-      - name: update src by update.py
+      - name: Update src by python script
+        if: needs.pre-work.outputs.runUpdatePy == 'true'
         run: nix run .#updatePy
-      - name: Current Time
-        run: echo "CURRENT_TIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: flakebot
           force: true
-      - name: pull-request-action
-        uses: vsoch/pull-request-action@1.1.1
+      # gh CLI 版 PR 创建（自 upnvfetcher.yml 迁移）：vsoch/pull-request-action 的
+      # "check if PR exists" 请求不带 auth headers，会撞上匿名 60 req/hour 的
+      # API 限流。gh 的所有请求均已认证。行为保持一致：已存在打开的
+      # flakebot -> master PR 则跳过（PASS_IF_EXISTS），否则创建。
+      - name: Create or skip pull request
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST_FROM_BRANCH: 'flakebot'
-          PULL_REQUEST_BRANCH: 'master'
-          MAINTAINER_CANT_MODIFY: true
-          PASS_IF_EXISTS: true
-          PASS_ON_ERROR: true
-          PULL_REQUEST_UPDATE: true
-          PULL_REQUEST_TITLE: 'Update src and lock'
-      - name: Trigger second workflow
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # reuse the existing token, no extra secret needed
+          PR_TITLE: ${{ needs.pre-work.outputs.prTitle }}
+        run: |
+          count=$(gh pr list --repo "$GITHUB_REPOSITORY" --head flakebot --base master --state open --limit 100 --json number --jq 'length')
+          if [ "$count" -gt 0 ]; then
+            echo "Pull request from flakebot to master is already open (count=$count), skipping."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base master \
+              --head flakebot \
+              --title "$PR_TITLE" \
+              --body 'This is an automated pull request to update src and lock.' \
+              --maintainer-can-modify=false
+          fi
+      - name: Trigger build workflow
         run: |
           curl -X POST \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
