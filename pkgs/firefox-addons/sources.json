@@ -6,9 +6,9 @@
     "pname": "noscript"
   },
   "browserpass-ce": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4830437/browserpass_ce-3.12.0.xpi",
-    "version": "3.12.0",
-    "sha256": "0qqyrbpsvd1xap6vv116b0lzrxjjy80jq732lwi99wp4ghbbgi92",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5132603/browserpass_ce-3.13.0.xpi",
+    "version": "3.13.0",
+    "sha256": "0ygr072xb2sj27xzxymr69mphchdshbkgad7y37q1j5ladjl3ddf",
     "pname": "browserpass-ce"
   },
   "download-with-aria2": {
@@ -24,15 +24,15 @@
     "pname": "surfingkeys_ff"
   },
   "auto-tab-discard": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4978053/auto_tab_discard-0.7.3.xpi",
-    "version": "0.7.3",
-    "sha256": "00p77svsj1rjrm8hyqckzdb1y3c8qnas84pbg9yavycxwqw8gab6",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5111461/auto_tab_discard-0.7.7.xpi",
+    "version": "0.7.7",
+    "sha256": "1hsk6xvclp2jcr327j3zdrpp740x8q9h5bgdyrli82bygr3d9m6d",
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/4997127/user_agent_string_switcher-0.7.1.xpi",
-    "version": "0.7.1",
-    "sha256": "0fkrybfz2j80dffsklyj8br1mqvbwpd0d5dcs6d90smmn537pmbk",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5081116/user_agent_string_switcher-0.7.2.xpi",
+    "version": "0.7.2",
+    "sha256": "10mnl36y406zpkq9apvs9vinfn5cql16273gw5k67cvxfcyy1l4s",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5044316/styl_us-2.4.14.xpi",
-    "version": "2.4.14",
-    "sha256": "10bhb6hbdv20vwxa3f8nxnczcbxygcpj4dkyp54sg134mbbfzm2i",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5139589/styl_us-2.4.16.xpi",
+    "version": "2.4.16",
+    "sha256": "10f3yvdn08h38i1bi3wgvs5gan9w8pbg2gd8cpwrzxgk4d5b99lh",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5055909/kiss_translator-2.1.0.xpi",
-    "version": "2.1.0",
-    "sha256": "151p0miljbwd9z1x7i9qxmpfbi8vakl0gxzzg3ippywhgihfqgdm",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5117268/kiss_translator-2.1.1.xpi",
+    "version": "2.1.1",
+    "sha256": "0c2n6s61z3w0hmn3bz65vascq32llqr5qykkqk5zl4rpy6c3psh9",
     "pname": "kiss-translator"
   },
   "raindropio": {
