@@ -7,6 +7,8 @@
 #     2. updatePy:   pkgs/**/sources.json（或 source.json）的版本变化
 #     3. flake.lock: 各输入 rev/version 的变化
 # 3. 用法: python3 tools/pr_body.py [base-ref]，结果写入 $PR_BODY_FILE
+# 4. 每个变更分区用 <details>/<summary> 包成可折叠块（GitHub 原生支持），
+#    默认只展示标题和变更计数，避免 PR 页面被几十条版本条目攬屏
 
 from __future__ import annotations
 
@@ -24,6 +26,7 @@ RUN_NAME_FILE = os.environ.get("PR_RUN_NAME_FILE", "")
 MAX_PER_LIST = 50  # 单个列表最多展示条数，超出折叠
 MAX_COMMITS = 30
 MAX_RUN_NAME = 100  # 过长在 Actions 列表里会被截断，提前省略
+COUNTER_LABELS = {"upd": "更新", "add": "新增", "rem": "移除"}
 
 
 def git(*args: str) -> str:
@@ -84,13 +87,32 @@ def version_diff(old: dict, new: dict) -> tuple[dict[str, list[str]], list[str]]
 
 
 def render_groups(groups: dict[str, list[str]], n: int = MAX_PER_LIST) -> list[str]:
-    labels = {"upd": "更新", "add": "新增", "rem": "移除"}
     out: list[str] = []
     for key in ("upd", "add", "rem"):
         if groups.get(key):
-            out.append(f"**{labels[key]}（{len(groups[key])}）**")
+            out.append(f"**{COUNTER_LABELS[key]}（{len(groups[key])}）**")
             out += cap(groups[key], n)
     return out
+
+
+def count_badge(groups: dict[str, list[str]]) -> str:
+    """折叠块 summary 用的一行统计，如 ' · 更新 3 · 新增 1'（无变更返回空串）"""
+    bits = [
+        f"{COUNTER_LABELS[k]} {len(groups[k])}"
+        for k in ("upd", "add", "rem")
+        if groups.get(k)
+    ]
+    return " · " + " · ".join(bits) if bits else ""
+
+
+def details(summary: str, lines: list[str]) -> list[str]:
+    """把一段 Markdown 包成可折叠块（GitHub 用 <details>/<summary> 实现）
+
+    两个必须遵守的细节，否则 GitHub 不会渲染内部 Markdown：
+      1. <details>、<summary> 与正文之间必须留空行
+      2. 正文不能缩进，否则会被当成代码块
+    """
+    return ["<details>", f"<summary>{summary}</summary>", "", *lines, "", "</details>"]
 
 
 def cap(lines: list[str], n: int = MAX_PER_LIST) -> list[str]:
@@ -180,13 +202,16 @@ def header() -> list[str]:
             modes.append(f"{label} {'✓' if os.environ[key] == 'true' else '—'}")
     mode_txt = f" · 执行任务：{' · '.join(modes)}" if modes else ""
     event = os.environ.get("EVENT_NAME", "")
+    # 明细默认折叠（<details>），所以额外提示一句，避免读者以为更新为空
+    tip = "> 明细默认折叠，点开分区标题即可展开全部条目。"
     if not event and not mode_txt:
         note = f"> 自动更新 PR。body 由 {run_link} 于 {now} UTC 基于 `{BASE}...flakebot` 差异实时重建。"
-        return ["> [!NOTE]", note]
+        return ["> [!NOTE]", note, tip]
     return [
         "> [!NOTE]",
         f"> 自动更新 PR。body 由 {run_link} 于 {now} UTC 基于 `{BASE}...flakebot` 差异实时重建。",
         f"> 触发事件：`{event}`{mode_txt}",
+        tip,
     ]
 
 
@@ -203,7 +228,10 @@ def main() -> None:
         lines = render_groups(groups)
         if lines:
             sections.append(
-                ("### nvfetcher 源更新（`_sources/generated.json`）", lines)
+                (
+                    f"nvfetcher 源更新 <code>_sources/generated.json</code>{count_badge(groups)}",
+                    lines,
+                )
             )
 
     data_files = (
@@ -216,21 +244,22 @@ def main() -> None:
         pkg_names += names
         lines = render_groups(groups, n=100)
         if lines:
-            sections.append((f"### `{f}`", lines))
+            sections.append((f"<code>{f}</code>{count_badge(groups)}", lines))
 
     if "flake.lock" in changed:
         lines = lock_lines()
         lock_count = len(lines)
         if lines:
-            sections.append(("### flake.lock 输入更新", cap(lines, 30)))
+            sections.append((f"flake.lock 输入更新 · {lock_count} 项", cap(lines, 30)))
 
     lines = commit_lines()
     if lines:
-        sections.append(("### 提交记录", lines))
+        sections.append(("提交记录", lines))
 
     out = "\n".join(header()) + "\n"
-    for title, lines in sections:
-        out += f"\n{title}\n\n" + "\n".join(lines) + "\n"
+    # 每个 section 用 <details> 折叠，默认只看得到标题和变更计数，点开才看明细
+    for summary, lines in sections:
+        out += "\n" + "\n".join(details(summary, lines)) + "\n"
     if not sections:
         out += "\n本次运行未产生文件变更（所有源均已是最新）。\n"
     with open(OUT, "w", encoding="utf-8") as f:
