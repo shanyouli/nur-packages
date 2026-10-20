@@ -215,9 +215,13 @@ jobs:
       # PR body 由 tools/pr_body.py 基于 master...flakebot 实际差异生成；
       # 已存在打开的 flakebot -> master PR 时不再跳过，而是用 gh pr edit
       # 同步刷新 title/body，保证 body 每次运行都反映最新更新内容。
+      # 同一脚本额外产出一行变更摘要（PR_RUN_NAME_FILE），供下面 dispatch 给
+      # build.yml，让它的 run-name 显示本次实际更新的内容。
       - name: Generate PR body
         env:
           PR_BODY_FILE: ${{ runner.temp }}/pr-body.md
+          PR_RUN_NAME_FILE: ${{ runner.temp }}/pr-run-name.txt
+          PR_TITLE_FALLBACK: ${{ needs.pre-work.outputs.prTitle }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           RUN_NUMBER: ${{ github.run_number }}
           EVENT_NAME: ${{ github.event_name }}
@@ -246,10 +250,36 @@ jobs:
               --body-file "$PR_BODY_FILE" \
               --no-maintainer-edit # 原 --maintainer-can-modify=false 并非 gh CLI 的有效 flag
           fi
+      # build.yml 的 run-name 取自 client_payload.run_name（见 build.yml 顶部）；
+      # 不传时 repository_dispatch 触发的运行名会固定显示为 event_type，
+      # 也就是永远看到 "trigger-second-workflow"。
+      # 用 gh api 而非 curl：token/header 由 gh 处理，嵌套 client_payload 用
+      # `-f key[subkey]=value` 语法（非字符串值用 -F），省掉手拼 JSON 和 jq 依赖；
+      # 非 2xx 时 gh 直接以非零码退出并打印 API 错误正文，失败不会再被吞掉。
+      # 不用 `gh workflow run`（即 workflow_dispatch）的原因：它会改变 build.yml
+      # 的事件类型（client_payload 不存在，run-name 需换写成 inputs），且需要给本
+      # workflow 补 actions: write 权限；保持 repository_dispatch 只需 contents: write。
       - name: Trigger build workflow
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_TITLE: ${{ needs.pre-work.outputs.prTitle }}
+          PR_RUN_NAME_FILE: ${{ runner.temp }}/pr-run-name.txt
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          curl -X POST \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Accept: application/vnd.github.everest-preview+json" \
-          https://api.github.com/repos/${{ github.repository }}/dispatches \
-          -d '{"event_type": "trigger-second-workflow"}'
+          run_name=""
+          if [ -s "$PR_RUN_NAME_FILE" ]; then
+            run_name="$(head -n 1 "$PR_RUN_NAME_FILE")"
+          fi
+          if [ -z "$run_name" ]; then
+            run_name="$PR_TITLE"
+          fi
+          if [ -z "$run_name" ]; then
+            run_name="Update src and lock (${EVENT_NAME})"
+          fi
+
+          gh api --method POST --silent \
+            "repos/${GITHUB_REPOSITORY}/dispatches" \
+            -f event_type=trigger-second-workflow \
+            -f "client_payload[run_name]=${run_name}"
+
+          echo "已触发 build.yml（run name: ${run_name}）"

@@ -1,5 +1,14 @@
 name: "Build and populate cache"
 
+# 自定义 workflow run 的显示名（Actions 列表、通知标题里看到的那个）：
+#   - repository_dispatch 触发且没有 run-name 时，运行名会固定显示为 event_type，
+#     也就是一直看到 "trigger-second-workflow"，完全看不出本次更新了什么
+#   - 因此 update.yml 在 dispatch 时通过 client_payload.run_name 传入按实际
+#     变更内容生成的摘要（见 tools/pr_body.py 的 build_run_name）
+#   - 其它触发方式回退到 GitHub 原生语义：PR 标题 / commit message / 事件名
+# run-name 只能引用 github / inputs / vars 上下文，client_payload 属于 github.event，可用
+run-name: "${{ github.event.client_payload && github.event.client_payload.run_name || github.event.pull_request.title || github.event.head_commit.message || github.event_name }}"
+
 # 显式声明写权限。仓库的默认 workflow 权限若被收紧为只读，GITHUB_TOKEN 推送会直接 403。
 permissions:
   contents: write

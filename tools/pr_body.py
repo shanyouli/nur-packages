@@ -18,9 +18,12 @@ from datetime import datetime, timezone
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else "master"
 OUT = os.environ.get("PR_BODY_FILE", "/tmp/pr-body.md")
+# 可选：额外写一行摘要，供 update.yml dispatch 给 build.yml 的 run-name 使用
+RUN_NAME_FILE = os.environ.get("PR_RUN_NAME_FILE", "")
 
 MAX_PER_LIST = 50  # 单个列表最多展示条数，超出折叠
 MAX_COMMITS = 30
+MAX_RUN_NAME = 100  # 过长在 Actions 列表里会被截断，提前省略
 
 
 def git(*args: str) -> str:
@@ -50,11 +53,15 @@ def fmt_ver(v: object) -> str:
     return f"`{v}`" if v else "`∅`"
 
 
-def version_diff(old: dict, new: dict) -> dict[str, list[str]]:
-    """对比 {name: {version, src, ...}} 两个映射，返回 更新/新增/移除 三组行"""
+def version_diff(old: dict, new: dict) -> tuple[dict[str, list[str]], list[str]]:
+    """对比 {name: {version, src, ...}} 两个映射
+
+    返回（更新/新增/移除 三组行, 发生变化的包名列表）
+    """
     o = {k: v for k, v in (old or {}).items() if isinstance(v, dict)}
     n = {k: v for k, v in (new or {}).items() if isinstance(v, dict)}
     upd, add, rem = [], [], []
+    names: list[str] = []
     for k in sorted(set(o) | set(n)):
         vo = (o.get(k) or {}).get("version")
         vn = (n.get(k) or {}).get("version")
@@ -63,13 +70,17 @@ def version_diff(old: dict, new: dict) -> dict[str, list[str]]:
         if k in o and k in n:
             if vo != vn:
                 upd.append(f"- **{k}**: {fmt_ver(vo)} → {fmt_ver(vn)}")
+                names.append(k)
             elif (so.get("url"), so.get("sha256")) != (sn.get("url"), sn.get("sha256")):
                 upd.append(f"- **{k}**: {fmt_ver(vo)}（链接/哈希变更，版本不变）")
+                names.append(k)
         elif k in n:
             add.append(f"- **{k}**: {fmt_ver(vn)}")
+            names.append(k)
         else:
             rem.append(f"- **{k}**: {fmt_ver(vo)}")
-    return {"upd": upd, "add": add, "rem": rem}
+            names.append(k)
+    return {"upd": upd, "add": add, "rem": rem}, names
 
 
 def render_groups(groups: dict[str, list[str]], n: int = MAX_PER_LIST) -> list[str]:
@@ -137,6 +148,22 @@ def commit_lines() -> list[str]:
     return [f"- {c}" for c in cap(commits, MAX_COMMITS)]
 
 
+def build_run_name(pkg_names: list[str], lock_count: int) -> str:
+    """按实际变更内容拼一行 run 摘要（供 build.yml 的 run-name 展示）
+
+    例：Update src: ripgrep, fd 等 5 个 · flake.lock: 3 输入
+    无变更时返回空串，由调用方回退到固定标题。
+    """
+    bits: list[str] = []
+    if pkg_names:
+        head = ", ".join(pkg_names[:3])
+        more = f" 等 {len(pkg_names)} 个" if len(pkg_names) > 3 else ""
+        bits.append(f"src: {head}{more}")
+    if lock_count:
+        bits.append(f"flake.lock: {lock_count} 输入")
+    return "Update " + " · ".join(bits) if bits else ""
+
+
 def header() -> list[str]:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     run_url = os.environ.get("RUN_URL", "")
@@ -166,10 +193,13 @@ def header() -> list[str]:
 def main() -> None:
     changed = changed_files()
     sections: list[tuple[str, list[str]]] = []
+    pkg_names: list[str] = []
+    lock_count = 0
 
     if "_sources/generated.json" in changed:
         old = json_at("_sources/generated.json", BASE)
-        groups = version_diff(old, json_at("_sources/generated.json", None))
+        groups, names = version_diff(old, json_at("_sources/generated.json", None))
+        pkg_names += names
         lines = render_groups(groups)
         if lines:
             sections.append(
@@ -182,13 +212,15 @@ def main() -> None:
         if p.startswith("pkgs/") and p.endswith(("sources.json", "source.json"))
     )
     for f in sorted(data_files):
-        groups = version_diff(json_at(f, BASE), json_at(f, None))
+        groups, names = version_diff(json_at(f, BASE), json_at(f, None))
+        pkg_names += names
         lines = render_groups(groups, n=100)
         if lines:
             sections.append((f"### `{f}`", lines))
 
     if "flake.lock" in changed:
         lines = lock_lines()
+        lock_count = len(lines)
         if lines:
             sections.append(("### flake.lock 输入更新", cap(lines, 30)))
 
@@ -204,6 +236,17 @@ def main() -> None:
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(out)
     print(f"PR body written to {OUT} ({len(out)} bytes, {len(sections)} sections)")
+
+    if RUN_NAME_FILE:
+        name = build_run_name(pkg_names, lock_count)
+        if not name:
+            # 当前没有实际变更时，回退到 workflow 传入的固定标题
+            name = os.environ.get("PR_TITLE_FALLBACK", "Update src and lock")
+        if len(name) > MAX_RUN_NAME:
+            name = name[: MAX_RUN_NAME - 1] + "…"
+        with open(RUN_NAME_FILE, "w", encoding="utf-8") as f:
+            f.write(name + "\n")
+        print(f"run name written to {RUN_NAME_FILE}: {name}")
 
 
 if __name__ == "__main__":
