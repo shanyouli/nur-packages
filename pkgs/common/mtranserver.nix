@@ -12,11 +12,11 @@ let
     {
       aarch64-darwin = {
         bunTarget = "bun-darwin-arm64";
-        bunDepsHash = "sha256-G5n0i02zV0f8UAeuFGOprsKrXv68pcO1CnABqWgY7oA=";
+        bunDepsHash = "sha256-GFN8enB5B2N4PW/CPQPuwSume0mEFBe3B8vQrZvt2uo=";
       };
       x86_64-linux = {
         bunTarget = "bun-linux-x64";
-        bunDepsHash = "sha256-G5n0i02zV0f8UAeuFGOprsKrXv68pcO1CnABqWgY7oA=";
+        bunDepsHash = "sha256-GFN8enB5B2N4PW/CPQPuwSume0mEFBe3B8vQrZvt2uo=";
       };
     }
     .${stdenv.hostPlatform.system}
