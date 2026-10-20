@@ -134,6 +134,48 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      # GitHub 偶发在 push 时返回 5xx（remote: Internal Server Error，带 Request ID），
+      # 属服务端瞬时故障。ad-m/github-push-action 内部只执行一次裸 git push，
+      # 不会重试，单次 5xx 就会让整个 job 失败；故改用带指数退避重试的脚本。
+      - name: Prepare push helper
+        run: |
+          cat > "$RUNNER_TEMP/push-retry.sh" <<'SCRIPT'
+          #!/usr/bin/env bash
+          # 强制推送 HEAD 到指定分支，失败时按指数退避重试。
+          # 用法: push-retry.sh <目标分支>
+          set -euo pipefail
+
+          if [[ $# -lt 1 ]]; then
+            echo "用法: push-retry.sh <目标分支>" >&2
+            exit 1
+          fi
+
+          dest="$1"
+          max_attempts="${PUSH_MAX_ATTEMPTS:-5}"
+
+          : "${GITHUB_TOKEN:?需要 GITHUB_TOKEN 环境变量}"
+          : "${GITHUB_REPOSITORY:?需要 GITHUB_REPOSITORY 环境变量}"
+
+          # 显式携带 token，不依赖 actions/checkout 的 persist-credentials
+          url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          for (( attempt = 1; attempt <= max_attempts; attempt++ )); do
+            echo "第 ${attempt}/${max_attempts} 次尝试推送 HEAD -> ${dest} ..."
+            if git push --force "$url" "HEAD:refs/heads/${dest}"; then
+              echo "推送成功: ${dest}"
+              exit 0
+            fi
+            if (( attempt < max_attempts )); then
+              delay=$(( attempt * 10 ))
+              echo "推送失败，${delay} 秒后重试 ..."
+              sleep "$delay"
+            fi
+          done
+
+          echo "连续 ${max_attempts} 次推送 ${dest} 均失败，放弃。" >&2
+          exit 1
+          SCRIPT
+          chmod +x "$RUNNER_TEMP/push-retry.sh"
       - uses: cachix/install-nix-action@v31
         with:
           # FIXME: https://github.com/NixOS/nix/issues/9889
@@ -145,11 +187,9 @@ jobs:
           git config --local user.name "flakebot"
           git checkout -B flakebot
       - name: Backup before auto-update to another branch
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: flakebot
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" flakebot
       - name: Update and commit lockfile
         if: needs.pre-work.outputs.runLock == 'true'
         run: nix flake update --commit-lock-file
@@ -166,11 +206,9 @@ jobs:
         if: needs.pre-work.outputs.runUpdatePy == 'true'
         run: nix run .#updatePy
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: flakebot
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" flakebot
       # gh CLI 版 PR 创建（自 upnvfetcher.yml 迁移）：vsoch/pull-request-action 的
       # "check if PR exists" 请求不带 auth headers，会撞上匿名 60 req/hour 的
       # API 限流。gh 的所有请求均已认证。

@@ -1,4 +1,9 @@
 name: "Dev build dev packages"
+
+# 显式声明写权限。仓库的默认 workflow 权限若被收紧为只读，GITHUB_TOKEN 推送会直接 403。
+permissions:
+  contents: write
+
 on:
   pull_request:
   push:
@@ -42,6 +47,48 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      # GitHub 偶发在 push 时返回 5xx（remote: Internal Server Error，带 Request ID），
+      # 属服务端瞬时故障。ad-m/github-push-action 内部只执行一次裸 git push，
+      # 不会重试，单次 5xx 就会让整个 job 失败；故改用带指数退避重试的脚本。
+      - name: Prepare push helper
+        run: |
+          cat > "$RUNNER_TEMP/push-retry.sh" <<'SCRIPT'
+          #!/usr/bin/env bash
+          # 强制推送 HEAD 到指定分支，失败时按指数退避重试。
+          # 用法: push-retry.sh <目标分支>
+          set -euo pipefail
+
+          if [[ $# -lt 1 ]]; then
+            echo "用法: push-retry.sh <目标分支>" >&2
+            exit 1
+          fi
+
+          dest="$1"
+          max_attempts="${PUSH_MAX_ATTEMPTS:-5}"
+
+          : "${GITHUB_TOKEN:?需要 GITHUB_TOKEN 环境变量}"
+          : "${GITHUB_REPOSITORY:?需要 GITHUB_REPOSITORY 环境变量}"
+
+          # 显式携带 token，不依赖 actions/checkout 的 persist-credentials
+          url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          for (( attempt = 1; attempt <= max_attempts; attempt++ )); do
+            echo "第 ${attempt}/${max_attempts} 次尝试推送 HEAD -> ${dest} ..."
+            if git push --force "$url" "HEAD:refs/heads/${dest}"; then
+              echo "推送成功: ${dest}"
+              exit 0
+            fi
+            if (( attempt < max_attempts )); then
+              delay=$(( attempt * 10 ))
+              echo "推送失败，${delay} 秒后重试 ..."
+              sleep "$delay"
+            fi
+          done
+
+          echo "连续 ${max_attempts} 次推送 ${dest} 均失败，放弃。" >&2
+          exit 1
+          SCRIPT
+          chmod +x "$RUNNER_TEMP/push-retry.sh"
       - uses: cachix/install-nix-action@v31
         with:
           # FIXME: https://github.com/NixOS/nix/issues/9889
@@ -71,11 +118,9 @@ jobs:
           rm -f secrets.toml
       - name: Push changes
         if: ${{ env.update == 'true' }}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'test-dev'
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" test-dev
 
   dev-pacakges:
     strategy:
@@ -157,6 +202,48 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      # GitHub 偶发在 push 时返回 5xx（remote: Internal Server Error，带 Request ID），
+      # 属服务端瞬时故障。ad-m/github-push-action 内部只执行一次裸 git push，
+      # 不会重试，单次 5xx 就会让整个 job 失败；故改用带指数退避重试的脚本。
+      - name: Prepare push helper
+        run: |
+          cat > "$RUNNER_TEMP/push-retry.sh" <<'SCRIPT'
+          #!/usr/bin/env bash
+          # 强制推送 HEAD 到指定分支，失败时按指数退避重试。
+          # 用法: push-retry.sh <目标分支>
+          set -euo pipefail
+
+          if [[ $# -lt 1 ]]; then
+            echo "用法: push-retry.sh <目标分支>" >&2
+            exit 1
+          fi
+
+          dest="$1"
+          max_attempts="${PUSH_MAX_ATTEMPTS:-5}"
+
+          : "${GITHUB_TOKEN:?需要 GITHUB_TOKEN 环境变量}"
+          : "${GITHUB_REPOSITORY:?需要 GITHUB_REPOSITORY 环境变量}"
+
+          # 显式携带 token，不依赖 actions/checkout 的 persist-credentials
+          url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          for (( attempt = 1; attempt <= max_attempts; attempt++ )); do
+            echo "第 ${attempt}/${max_attempts} 次尝试推送 HEAD -> ${dest} ..."
+            if git push --force "$url" "HEAD:refs/heads/${dest}"; then
+              echo "推送成功: ${dest}"
+              exit 0
+            fi
+            if (( attempt < max_attempts )); then
+              delay=$(( attempt * 10 ))
+              echo "推送失败，${delay} 秒后重试 ..."
+              sleep "$delay"
+            fi
+          done
+
+          echo "连续 ${max_attempts} 次推送 ${dest} 均失败，放弃。" >&2
+          exit 1
+          SCRIPT
+          chmod +x "$RUNNER_TEMP/push-retry.sh"
       - name: pre work
         run: |
           git config --local user.email "flakebot@users.noreply.github.com"
@@ -200,11 +287,9 @@ jobs:
           git diff --cached --quiet || git commit -m "feat: turn off dev"
       - name: merge-to-master with macos-latest
         if: ${{ env.MY_MERGE_MACOS == 'true'}}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'test-dev'
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" test-dev
       - name: merge ubuntu chanages
         if: needs.dev-pacakges.outputs.MY_MODIFY == 'true'
         run: |
@@ -218,26 +303,20 @@ jobs:
               echo "MY_MERGE_LINUX=true" >> $GITHUB_ENV
             fi
           fi
-      - name: merge-to-master with macos-latest
+      - name: merge-to-master with ubuntu-latest
         if: ${{ env.MY_MERGE_LINUX == 'true'}}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'test-dev'
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" test-dev
       - name: prev
         run: |
           git fetch
           git checkout test-dev
       - name: Push dev
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'dev'
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" dev
       - name: Push master
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'master'
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash "$RUNNER_TEMP/push-retry.sh" master
