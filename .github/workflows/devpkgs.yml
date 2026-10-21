@@ -13,6 +13,14 @@ on:
 jobs:
   pre-work:
     runs-on: ubuntu-latest
+    # flakebot -> master 的自动更新 PR 由 update.yml 创建，其构建与缓存填充由 build.yml 负责。
+    # 这里跳过，避免同一份改动再触发一遍 devpkgs（单平台最长 240 分钟，双平台）。
+    # 用 head 分支而非 github.actor 判断：该 PR 由 GITHUB_TOKEN 创建，actor 是
+    # github-actions[bot]，与 flakebot 无关；同时校验 head 仓库，避免同名 fork 分支被误判。
+    if: >-
+      github.event_name != 'pull_request' ||
+      !(github.event.pull_request.head.repo.full_name == github.repository &&
+        github.event.pull_request.head.ref == 'flakebot')
     outputs:
       updatepy: ${{ steps.check.outputs.python }}
       updateNvfetcher: ${{ steps.check.outputs.nvfetcher }}
