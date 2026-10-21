@@ -34,6 +34,32 @@
         },
         "version": "613a075b2561ffdc6ec767510e67706b07c3945a"
     },
+    "aubeshim": {
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-KBhjwjaDnYHfRZTsa3EaKL82+tsshuaO9GzkjDDkBoU=/Cargo.lock",
+                {}
+            ]
+        },
+        "date": null,
+        "extract": null,
+        "name": "aubeshim",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "mwolson",
+            "repo": "aubeshim",
+            "rev": "v1.8.0",
+            "sha256": "sha256-KBhjwjaDnYHfRZTsa3EaKL82+tsshuaO9GzkjDDkBoU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.8.0"
+    },
     "bash-env-json": {
         "cargoLock": null,
         "date": null,
@@ -202,7 +228,7 @@
     },
     "emacs-reader": {
         "cargoLock": null,
-        "date": "20261019",
+        "date": "20261020",
         "extract": null,
         "name": "emacs-reader",
         "passthru": null,
@@ -212,13 +238,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d93a925b805807e42f3a2d115c8770e8fab7d7e3",
-            "sha256": "sha256-SttqwFV8u0O7NwIPdjAd9FYaxQI4BaMjUO36lT1CiSA=",
+            "rev": "6563bf6098fc69f035a5f0e0b38cccbf4cd74369",
+            "sha256": "sha256-sosMbnSO4QOyQMh+TFQqjZZdfPPctaUiPMguyqEblxc=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://codeberg.org/divyaranjan/emacs-reader"
         },
-        "version": "d93a925b805807e42f3a2d115c8770e8fab7d7e3"
+        "version": "6563bf6098fc69f035a5f0e0b38cccbf4cd74369"
     },
     "emacs30.ns-mac-input-source": {
         "cargoLock": null,
@@ -237,7 +263,7 @@
     },
     "emacs30.role-patch": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs30.role-patch",
         "passthru": null,
@@ -246,13 +272,13 @@
             "name": null,
             "sha256": "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-28/fix-window-role.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-28/fix-window-role.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs30.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs30.round-undecorated-frame",
         "passthru": null,
@@ -261,13 +287,13 @@
             "name": null,
             "sha256": "sha256-fjnmlM6dylDbcsCb5ELBJ40ZANacJALyiXQq6ujqTD4=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-30/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-30/round-undecorated-frame.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs30.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs30.system-appearance",
         "passthru": null,
@@ -276,9 +302,9 @@
             "name": null,
             "sha256": "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-30/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-30/system-appearance.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs31.ns-mac-input-source": {
         "cargoLock": null,
@@ -297,7 +323,7 @@
     },
     "emacs31.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs31.round-undecorated-frame",
         "passthru": null,
@@ -306,13 +332,13 @@
             "name": null,
             "sha256": "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-31/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-31/round-undecorated-frame.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs31.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs31.system-appearance",
         "passthru": null,
@@ -321,9 +347,9 @@
             "name": null,
             "sha256": "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-31/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-31/system-appearance.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs32.ns-mac-input-source": {
         "cargoLock": null,
@@ -342,7 +368,7 @@
     },
     "emacs32.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs32.round-undecorated-frame",
         "passthru": null,
@@ -351,13 +377,13 @@
             "name": null,
             "sha256": "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-31/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-31/round-undecorated-frame.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacs32.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "emacs32.system-appearance",
         "passthru": null,
@@ -366,9 +392,9 @@
             "name": null,
             "sha256": "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/04248562ae84a768370f71dc792ad70e362f40c2/patches/emacs-31/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/e773b8a42eb7b3ec962720ed9b197ca01a72367a/patches/emacs-31/system-appearance.patch"
         },
-        "version": "04248562ae84a768370f71dc792ad70e362f40c2"
+        "version": "e773b8a42eb7b3ec962720ed9b197ca01a72367a"
     },
     "emacsclient": {
         "cargoLock": null,
@@ -1029,7 +1055,7 @@
     },
     "pyfreeproxy": {
         "cargoLock": null,
-        "date": "20261020",
+        "date": "20261021",
         "extract": null,
         "name": "pyfreeproxy",
         "passthru": null,
@@ -1041,12 +1067,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "7b08890a7ea7acbef9f0894c48e5eaff2acf4bee",
-            "sha256": "sha256-hIB2sR8Y3wle5VHFHaNkHdM3GrA6UlkdCwjuT1M5hfI=",
+            "rev": "cfa8a31d8fb1bad1d0cd1038cf910294c9d34a5d",
+            "sha256": "sha256-xZZVoreOm43W+58ea32wGQeFmclmjkGLXAGmFr8Goh0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7b08890a7ea7acbef9f0894c48e5eaff2acf4bee"
+        "version": "cfa8a31d8fb1bad1d0cd1038cf910294c9d34a5d"
     },
     "rime-frost": {
         "cargoLock": null,
