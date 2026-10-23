@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5139589/styl_us-2.4.16.xpi",
-    "version": "2.4.16",
-    "sha256": "10f3yvdn08h38i1bi3wgvs5gan9w8pbg2gd8cpwrzxgk4d5b99lh",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5142667/styl_us-2.4.17.xpi",
+    "version": "2.4.17",
+    "sha256": "077vwhj8k3izih9xg06vvwglcqqdph9vnbcycdx3wph1la30z8kf",
     "pname": "styl-us"
   },
   "privacy-pass": {
