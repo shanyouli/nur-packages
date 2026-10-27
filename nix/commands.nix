@@ -225,13 +225,9 @@
           }
         '';
         updatePy =
+          # update.py 均只依赖 python 内置库（urllib 等），无需 withPackages
           let
-            py = pkgs.python3.withPackages (
-              p: with p; [
-                requests
-                beautifulsoup4
-              ]
-            );
+            py = pkgs.python3;
           in
           ''
             for i in (^find ./pkgs -name "update.py" | lines ) {
