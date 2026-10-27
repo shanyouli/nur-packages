@@ -36,9 +36,9 @@
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5009389/violentmonkey-2.49.0.xpi",
-    "version": "2.49.0",
-    "sha256": "1yvnzxdrqwx2rf73bzqh5xra0kpxx8hxifqr7lkc6y7f5jisc7kn",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5170937/violentmonkey-2.50.0.xpi",
+    "version": "2.50.0",
+    "sha256": "1pw1zndgwhy8abdw183mynfjcm5c5qylwrmlwls1klzxqxjl81sy",
     "pname": "violentmonkey"
   },
   "styl-us": {
