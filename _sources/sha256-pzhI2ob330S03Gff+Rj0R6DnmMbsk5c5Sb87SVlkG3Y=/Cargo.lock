@@ -560,9 +560,9 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
 name = "cfg_aliases"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724"
+checksum = "f079e83a288787bcd14a6aea84cee5c87a67c5a3e660c30f557a3d24761b3527"
 
 [[package]]
 name = "chacha20"
@@ -3384,7 +3384,7 @@ dependencies = [
 
 [[package]]
 name = "nu-lint"
-version = "1.7.0"
+version = "1.7.1"
 dependencies = [
  "clap",
  "criterion",
@@ -3412,7 +3412,7 @@ dependencies = [
 
 [[package]]
 name = "nu-lint-analysis"
-version = "1.7.0"
+version = "1.7.1"
 dependencies = [
  "jaq-core",
  "log",
@@ -3427,13 +3427,14 @@ dependencies = [
  "rayon",
  "regex",
  "serde",
+ "toml 0.8.23",
  "tracing-log",
  "tracing-subscriber",
 ]
 
 [[package]]
 name = "nu-lint-rules"
-version = "1.7.0"
+version = "1.7.1"
 dependencies = [
  "heck",
  "log",
@@ -7004,6 +7005,14 @@ checksum = "32e45ad4206f6d2479085147f02bc2ef834ac85886624a23575ae137c8aa8156"
 dependencies = [
  "libc",
  "rustix",
+]
+
+[[package]]
+name = "xtask"
+version = "1.7.1"
+dependencies = [
+ "clap",
+ "nu-lint",
 ]
 
 [[package]]
