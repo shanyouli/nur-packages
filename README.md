@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-10-24 00:54:03 UTC
+- LAST_MODIFY: 2026-10-27 11:41:38 UTC
 
 
 ## How to use
@@ -107,7 +107,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**pragmasevka-serif**](https://github.com/shanyouli/iosevka)||34.9.0|我的自定义 iosvake|
 |[**rime-frost**](https://github.com/gaboolic/rime-frost)||1.0.4|Rime 配置:白霜拼音|
 |[**rime-ice**](https://dvel.me/posts/rime-ice/)||9.9.20261005|Rime 配置:雾凇拼音|
-|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v18.1.7|Rime 配置:万象输入法|
+|[**rime-wanxiang**](https://github.com/amzxyz/rime_wanxiang_pro)||v18.1.8|Rime 配置:万象输入法|
 |[**sarasa-term**](https://github.com/laishulu/Sarasa-Term-SC-Nerd)||2.3.1|中英文宽度完美 2:1 字体|
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
@@ -159,7 +159,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**surfingkeys_ff**](https://github.com/brookhong/Surfingkeys)||1.17.11|Map your keys for web surfing, expand your browser with javascript and keyboard. |
 |[**ublock-origin**](https://github.com/gorhill/uBlock)||1.75.0|uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. |
 |[**user-agent-string-switcher**](https://add0n.com/useragent-switcher.html)||0.7.2|User-Agent Switcher and Manager|
-|[**violentmonkey**](https://violentmonkey.github.io)||2.49.0|An open source userscript manager.|
+|[**violentmonkey**](https://violentmonkey.github.io)||2.50.0|An open source userscript manager.|
 |[**zeroomega**](https://github.com/zero-peak/ZeroOmega)||3.5.2| Manage and switch between multiple proxies quickly & easily.|
 </details>
 
