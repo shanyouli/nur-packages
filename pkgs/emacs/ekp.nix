@@ -1,0 +1,37 @@
+{
+  lib,
+  emacs,
+  melpaBuild,
+  source,
+  stdenv,
+}:
+let
+  libExt = stdenv.hostPlatform.extensions.sharedLibrary;
+in
+melpaBuild {
+  inherit (source) pname version src;
+  ename = "ekp";
+  # 上游 package.el 分发物包含 dictionaries/（连字符词典数据），随包安装
+  files = ''
+    (:defaults "dictionaries/*.dic")
+  '';
+  # 参考 nixpkgs liberime 的做法：构建期编译可选的 C 加速模块。
+  # 对应上游 native/Makefile 的 portable profile，显式传入 emacs-module.h 路径。
+  postBuild = ''
+    make -C native CC=$CC \
+      CFLAGS="-std=c11 -O3 -fPIC -D_POSIX_C_SOURCE=200809L -I${emacs}/include" \
+      LDFLAGS="-shared -lpthread -lm"
+  '';
+  # ekp.el 运行时经 M-x ekp-c-module-load 从 <pkg>/native/ekp${libExt} 加载模块
+  postInstall = ''
+    install -Dm444 native/ekp${libExt} \
+      $out/share/emacs/site-lisp/elpa/ekp-*/native/ekp${libExt}
+  '';
+  # Package-Requires: ((emacs "29.1"))，无外部 emacs 包依赖
+  meta = {
+    homepage = "https://github.com/emacs-taf/ekp";
+    description = "Knuth-Plass line breaking with CJK support";
+    license = lib.licenses.gpl3Plus;
+    maintainers = [ ];
+  };
+}

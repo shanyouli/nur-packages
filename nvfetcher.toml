@@ -365,3 +365,43 @@ fetch.git = "https://codeberg.org/divyaranjan/emacs-reader"
 src.git = "https://github.com/roife/emt"
 git.date_format = "%Y%m%d"
 fetch.github = "roife/emt"
+
+[elog]
+src.git = "https://github.com/Kinneyzhang/elog"
+git.date_format = "%Y%m%d"
+fetch.github = "Kinneyzhang/elog"
+
+[ecss]
+src.git = "https://github.com/emacs-taf/ecss"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/ecss"
+
+[ekp]
+src.git = "https://github.com/emacs-taf/ekp"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/ekp"
+
+[ebox]
+src.git = "https://github.com/emacs-taf/ebox"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/ebox"
+
+[etaf]
+src.git = "https://github.com/emacs-taf/etaf"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/etaf"
+
+[etaf-ui]
+src.git = "https://github.com/emacs-taf/etaf-ui"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/etaf-ui"
+
+[etaf-db]
+src.git = "https://github.com/emacs-taf/etaf-db"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/etaf-db"
+
+[etaf-posframe]
+src.git = "https://github.com/emacs-taf/etaf-posframe"
+git.date_format = "%Y%m%d"
+fetch.github = "emacs-taf/etaf-posframe"
