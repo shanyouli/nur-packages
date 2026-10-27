@@ -4,15 +4,15 @@ import re
 import subprocess
 import sys
 import logging
-
-import requests
+import urllib.error
+import urllib.request
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
 # AMO 页面 HTML 结构频繁改版（2025-07 大改版后安装按钮由前端 JS 渲染，
 # 且 class 名不再稳定），解析页面不可靠；官方 API v5 是文档化的稳定接口。
 AMO_API_URL = "https://addons.mozilla.org/api/v5/addons/addon/{slug}/"
-# 默认的 python-requests UA 会被部分站点拦截，使用常规浏览器 UA
+# 默认的 Python UA（Python-urllib/python-requests）会被部分站点拦截，使用常规浏览器 UA
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 }
@@ -41,44 +41,63 @@ def commit_source(msg):
     os.chdir(current_dir)
 
 
-def nix_prefix_url(url: str) -> str:
-    result = subprocess.run(["nix-prefetch-url", url], stdout=subprocess.PIPE)
-    if result.returncode != 0:
-        raise RuntimeError(
-            "nix-prefetch-url exited with error {}".format(result.returncode)
-        )
-    return result.stdout.decode("utf-8").strip()
-
-
 def get_version_from_url(url: str) -> str | None:
     """从 XPI 直链解析版本号，如 .../noscript-13.6.36.xpi -> 13.6.36"""
     m = re.search(r"-([0-9.]+)\.xpi$", url)
     return m.group(1) if m else None
 
 
+def nix_b32_from_sha256_hex(hex_hash: str) -> str:
+    """sha256 hex -> nix base32，与 nix-prefetch-url 输出同格式。
+
+    Nix base32 字符集不含 e/o/u/t 等易混淆字母；编码时把 hash 字节按
+    little-endian 视作大整数，从高位到低位每 5 bit 一个字符。
+    """
+    chars = "0123456789abcdfghijklmnpqrsvwxyz"
+    n = int.from_bytes(bytes.fromhex(hex_hash), "little")
+    digits = []
+    for _ in range((len(hex_hash) * 4 + 4) // 5):
+        digits.append(chars[n & 0x1F])
+        n >>= 5
+    return "".join(reversed(digits))
+
+
 def get_firefox_addon_info(name: str) -> dict:
-    """通过 AMO 官方 API v5 获取插件当前版本的下载直链与版本号"""
+    """通过 AMO 官方 API v5 获取插件当前版本的下载直链、版本号与 sha256"""
     logging.info(f"get {name} infos")
-    resp = requests.get(AMO_API_URL.format(slug=name), headers=HEADERS, timeout=REQUEST_TIMEOUT)
-    if resp.status_code == 404:
-        raise ValueError(f"Addon {name!r} not found on AMO (404), please check the slug")
-    resp.raise_for_status()
-    info = resp.json()
+    req = urllib.request.Request(AMO_API_URL.format(slug=name), headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+            info = json.load(resp)
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            raise ValueError(
+                f"Addon {name!r} not found on AMO (404), please check the slug"
+            ) from e
+        raise
     current = info.get("current_version") or {}
     file = current.get("file") or {}
     url = file.get("url")
     if not url or not url.endswith(".xpi"):
         raise ValueError(f"Addon {name!r} has no downloadable .xpi in current_version")
     version = current.get("version") or get_version_from_url(url)
-    return {"url": url, "version": version}
+    # file.hash 形如 "sha256:<hex>"，为 AMO 官方预计算的文件内容哈希，
+    # 与 nix-prefetch-url 对同一文件计算的结果一致，可直接转换使用
+    algo, _, hex_hash = (file.get("hash") or "").partition(":")
+    if algo != "sha256" or len(hex_hash) != 64:
+        raise ValueError(
+            f"Addon {name!r} has unexpected file hash {file.get('hash')!r}, "
+            "expect 'sha256:<hex>'"
+        )
+    sha256 = nix_b32_from_sha256_hex(hex_hash)
+    return {"url": url, "version": version, "sha256": sha256}
 
 
 def make_source(name: str, info: dict) -> dict:
-    logging.info(f"get {name} sha256.")
     return {
         "url": info["url"],
         "version": info["version"],
-        "sha256": nix_prefix_url(info["url"]),
+        "sha256": info["sha256"],
         "pname": name,
     }
 
