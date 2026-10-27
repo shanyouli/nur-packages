@@ -11,39 +11,12 @@
     let
       commands = rec {
         ci = ''
+          use ${../tools/utils.nu} *
+          # 为 tools/utils.nu 的公共函数前置固定的 nix-fast-build / gnused
+          $env.PATH = ([${pkgs.nix-fast-build}/bin ${pkgs.gnused}/bin] ++ $env.PATH)
+
           const NIX_LOGFILE = "nix-build-uncached.log"
           # Workaround https://github.com/NixOS/nix/issues/6572
-
-          def to-semver-str []: string -> string {
-            let v = $in
-            let parts = ($v | split row ".")
-            match ($parts | length) {
-              1 => { $"($parts.0).0.0" }
-              2 => { $"($parts.0).($parts.1).0" }
-              _ => { $v }
-            }
-          }
-          def nixVersion>= [v: string]: nothing -> bool {
-            let cur_str = (nix --version | ansi strip | parse --regex '(?<v>\d+\.\d+(?:\.\d+)?)' | get v | first)
-            let cur = ($cur_str | to-semver-str | split row "." | each { into int })
-            let tgt = ($v | to-semver-str | split row "." | each { into int })
-            $cur.0 > $tgt.0 or (
-              $cur.0 == $tgt.0 and (
-                $cur.1 > $tgt.1 or (
-                  $cur.1 == $tgt.1 and $cur.2 >= $tgt.2
-                )
-              )
-            )
-          }
-
-          def run-build [logfile: string]: nothing -> int {
-            try {
-              ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system} --skip-cached --no-nom out+err>| tee {save -f $logfile}
-              $env.LAST_EXIT_CODE
-            } catch {
-              $env.LAST_EXIT_CODE
-            }
-          }
 
           mut is_next = "true"
           mut try_num = 0
@@ -51,41 +24,19 @@
             $is_next = "false"
             $try_num = $try_num + 1
             print $"::group::Try (ansi u)($try_num)(ansi reset): Building packages with nix-fast-build"
-            let exit_code = (run-build $NIX_LOGFILE)
+            let exit_code = (run-build ${system} $NIX_LOGFILE)
             print "::endgroup::"
             if ($exit_code != 0) {
-              print $"nix-fast-build failed with exit code ($exit_code), Will check HASH"
-              let SPECIFIED_HASH = (grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim )
-              if ($SPECIFIED_HASH | is-empty) {
-                print $"Please check the script for problems, non-hash errors"
-                # rm -rf $NIX_LOGFILE
-                exit 1
-              }
-              let GOT_HASH = (grep "got:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim)
-              for i in 0..(($SPECIFIED_HASH | length) - 1) {
-                let old_hash = $SPECIFIED_HASH | get $i
-                let new_hash = $GOT_HASH | get $i
-                let old_hashx = (if (nixVersion>= 2.20.0) {
-                      nix hash convert --to nix32 $old_hash
-                    } else {
-                      nix hash to-base32 $old_hash
-                    })
-                print $"::group::Auto replace ($old_hash) with ($new_hash)"
-                for f in (^find pkgs -name "*.nix" | lines) {
-                  if (open $f | str contains $old_hash) {
-                    ${pkgs.gnused}/bin/sed -i $"s#($old_hash)#($new_hash)#g" $f
-                  } else if (open $f | str contains $old_hashx) {
-                    ${pkgs.gnused}/bin/sed -i $"s#($old_hashx)#($new_hash)#g" $f
-                  }
-                }
-                print "::endgroup::"
-              }
-              # rm -f $NIX_LOGFILE
+              fix-hashes $NIX_LOGFILE $exit_code
               $is_next = "true"
             }
           }
         '';
         devci = ''
+          use ${../tools/utils.nu} *
+          # 为 tools/utils.nu 的公共函数前置固定的 nix-fast-build / gnused
+          $env.PATH = ([${pkgs.nix-fast-build}/bin ${pkgs.gnused}/bin] ++ $env.PATH)
+
           let DEFAULT_APPS = ${my.toNu (builtins.attrNames config.packages)}
           let dev_apps = open ./tests/dev.yaml
           if (not ($dev_apps | get dev)) {
@@ -94,67 +45,13 @@
           }
           let dev_apps = $dev_apps | get apps | where {|x| $x in $DEFAULT_APPS}
           const NIX_LOGFILE = "nix-build-uncached.log"
-          def to-semver-str []: string -> string {
-            let v = $in
-            let parts = ($v | split row ".")
-            match ($parts | length) {
-              1 => { $"($parts.0).0.0" }
-              2 => { $"($parts.0).($parts.1).0" }
-              _ => { $v }
-            }
-          }
-          def nixVersion>= [v: string]: nothing -> bool {
-            let cur_str = (nix --version | ansi strip | parse --regex '(?<v>\d+\.\d+(?:\.\d+)?)' | get v | first)
-            let cur = ($cur_str | to-semver-str | split row "." | each { into int })
-            let tgt = ($v | to-semver-str | split row "." | each { into int })
-            $cur.0 > $tgt.0 or (
-              $cur.0 == $tgt.0 and (
-                $cur.1 > $tgt.1 or (
-                  $cur.1 == $tgt.1 and $cur.2 >= $tgt.2
-                )
-              )
-            )
-          }
-          def run-build [pkg: string, logfile: string]: nothing -> int {
-            try {
-              ${pkgs.nix-fast-build}/bin/nix-fast-build -f .#packages.${system}.($pkg) --skip-cached --no-nom --debug out+err>| tee { save -f $logfile }
-              $env.LAST_EXIT_CODE
-            } catch {
-              $env.LAST_EXIT_CODE
-            }
-          }
-          def build [s: string ] {
+
+          def build [s: string] {
             print $"::group::Building (ansi u)($s)(ansi reset) package with nix-fast-build"
-            let exit_code = (run-build $s $NIX_LOGFILE)
+            let exit_code = (run-build ${system} $NIX_LOGFILE --pkg $s --debug)
             print "::endgroup::"
             if ($exit_code != 0) {
-              print $"nix-fast-build failed with exit code ($exit_code), Will check HASH"
-              let SPECIFIED_HASH = (grep "specified:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim )
-              if ($SPECIFIED_HASH | is-empty) {
-                print $"Please check the script for problems, non-hash errors"
-                # rm -rf $NIX_LOGFILE
-                exit 1
-              }
-              let GOT_HASH = (grep "got:" $NIX_LOGFILE | cut -d":" -f2 | lines | str trim)
-              for i in 0..(($SPECIFIED_HASH | length) - 1) {
-                let old_hash = $SPECIFIED_HASH | get $i
-                let new_hash = $GOT_HASH | get $i
-                let old_hashx = (if (nixVersion>= 2.20.0) {
-                      nix hash convert --to nix32 $old_hash
-                    } else {
-                      nix hash to-base32 $old_hash
-                    })
-                print $"::group::Auto replace ($old_hash) with ($new_hash)"
-                for f in (^find pkgs -name "*.nix" | lines) {
-                  if (open $f | str contains $old_hash) {
-                    ${pkgs.gnused}/bin/sed -i $"s#($old_hash)#($new_hash)#g" $f
-                  } else if (open $f | str contains $old_hashx) {
-                    ${pkgs.gnused}/bin/sed -i $"s#($old_hashx)#($new_hash)#g" $f
-                  }
-                }
-                print "::endgroup::"
-              }
-              # rm -f $NIX_LOGFILE
+              fix-hashes $NIX_LOGFILE $exit_code
               false
             } else {
               true
