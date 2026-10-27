@@ -40,6 +40,17 @@ concurrency:
 #   workflow_dispatch                   -> 按手动勾选决定，默认全量（不勾选任何项则仅跑 pre-work 后跳过）
 # 更新统一推送到 flakebot 分支并创建/复用 flakebot -> master 的 PR，
 # 最后只 dispatch 一次 build.yml（trigger-second-workflow）。
+#
+# ⚠️ token 使用规则（2026-06 GitHub 行为变更，见官方 changelog
+#   "Bot-created pull requests can run workflows if approved"）：
+#   自该变更起，GITHUB_TOKEN（github-actions[bot]）创建的 PR 会触发 on: pull_request
+#   工作流，但运行被置于 action_required 待审批状态，无人审批即过期报错
+#   "This workflow run required approval but was not approved before it expired"。
+#   因此创建/编辑 flakebot PR 及推送 flakebot 分支必须使用 PAT（可信身份，
+#   AUTOMERGE_TOKEN）：PR 作者为有写权限的用户后，PR 触发的运行免审批直接执行，
+#   devpkgs.yml / build.yml 内的 flakebot PR 跳过守卫才能生效（跳过而非报错）。
+#   repository_dispatch 触发 build.yml 属 GITHUB_TOKEN 的官方豁免事件，仍用
+#   GITHUB_TOKEN；nvfetcher 的 GitHub API 限流 token 亦无需更换。
 jobs:
   pre-work:
     if: github.ref == 'refs/heads/master'
@@ -188,7 +199,11 @@ jobs:
           git checkout -B flakebot
       - name: Backup before auto-update to another branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 必须用 PAT（可信身份）而非 GITHUB_TOKEN：此推送会让已存在的 flakebot PR
+          # 产生 synchronize 事件，bot 身份触发的 pull_request 运行会被置于待审批
+          # 状态并最终过期报错（PAT 则免审批）。push-retry.sh 读取的 env 名固定为
+          # GITHUB_TOKEN，这里只是换填 token 值。
+          GITHUB_TOKEN: ${{ secrets.AUTOMERGE_TOKEN }}
         run: bash "$RUNNER_TEMP/push-retry.sh" flakebot
       - name: Update and commit lockfile
         if: needs.pre-work.outputs.runLock == 'true'
@@ -207,7 +222,8 @@ jobs:
         run: nix run .#updatePy
       - name: Push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 同上：PAT 触发的 flakebot PR synchronize 运行免审批（见文件头说明）。
+          GITHUB_TOKEN: ${{ secrets.AUTOMERGE_TOKEN }}
         run: bash "$RUNNER_TEMP/push-retry.sh" flakebot
       # gh CLI 版 PR 创建（自 upnvfetcher.yml 迁移）：vsoch/pull-request-action 的
       # "check if PR exists" 请求不带 auth headers，会撞上匿名 60 req/hour 的
@@ -231,7 +247,10 @@ jobs:
         run: python3 tools/pr_body.py
       - name: Create or update pull request
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # reuse the existing token, no extra secret needed
+          # 必须用 PAT（可信身份）创建/编辑 PR：GITHUB_TOKEN（github-actions[bot]）
+          # 创建的 PR 自 2026-06 起触发 pull_request 工作流需人工审批，无人审批即
+          # 过期报错；PAT 创建的 PR 作者为有写权限的用户，免审批直接执行。
+          GH_TOKEN: ${{ secrets.AUTOMERGE_TOKEN }}
           PR_TITLE: ${{ needs.pre-work.outputs.prTitle }}
           PR_BODY_FILE: ${{ runner.temp }}/pr-body.md
         run: |
@@ -259,6 +278,8 @@ jobs:
       # 不用 `gh workflow run`（即 workflow_dispatch）的原因：它会改变 build.yml
       # 的事件类型（client_payload 不存在，run-name 需换写成 inputs），且需要给本
       # workflow 补 actions: write 权限；保持 repository_dispatch 只需 contents: write。
+      # token 用 GITHUB_TOKEN 即可：repository_dispatch 是 GITHUB_TOKEN 触发其它
+      # 工作流的官方豁免事件（需要 PAT 避开审批门禁的只有 PR/推送类事件）。
       - name: Trigger build workflow
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

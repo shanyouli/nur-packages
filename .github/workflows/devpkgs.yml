@@ -15,8 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     # flakebot -> master 的自动更新 PR 由 update.yml 创建，其构建与缓存填充由 build.yml 负责。
     # 这里跳过，避免同一份改动再触发一遍 devpkgs（单平台最长 240 分钟，双平台）。
-    # 用 head 分支而非 github.actor 判断：该 PR 由 GITHUB_TOKEN 创建，actor 是
-    # github-actions[bot]，与 flakebot 无关；同时校验 head 仓库，避免同名 fork 分支被误判。
+    # 2026-06 起 GitHub 允许 bot 创建的 PR 触发 pull_request 工作流（需人工审批，
+    # 未审批即过期报错 "required approval but was not approved"）；update.yml 已改用
+    # PAT（AUTOMERGE_TOKEN）创建 PR，本工作流免审批正常执行并在此处跳过。
+    # 用 head 分支而非 github.actor 判断；同时校验 head 仓库，避免同名 fork 分支被误判。
     if: >-
       github.event_name != 'pull_request' ||
       !(github.event.pull_request.head.repo.full_name == github.repository &&

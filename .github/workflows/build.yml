@@ -31,6 +31,17 @@ on:
 jobs:
   use_branch:
     runs-on: ubuntu-latest
+    # flakebot -> master 的自动更新 PR 由 update.yml 创建，其构建与缓存填充由
+    # update.yml 通过 repository_dispatch（trigger-second-workflow）触发的运行负责。
+    # 2026-06 起 GitHub 允许 bot 创建的 PR 触发 pull_request 工作流（需人工审批，
+    # 未审批即过期报错）；update.yml 已改用 PAT（AUTOMERGE_TOKEN）创建 PR，运行
+    # 免审批执行，这里对 flakebot PR 显式跳过：needs 链（use_branch ->
+    # build-packages -> publish-stable）连带全部跳过，运行以 skipped 结束，
+    # 避免与 dispatch 触发的构建重复（单平台最长 240 分钟，双平台）。
+    if: >-
+      github.event_name != 'pull_request' ||
+      !(github.event.pull_request.head.repo.full_name == github.repository &&
+        github.event.pull_request.head.ref == 'flakebot')
     outputs:
       MY_TARGET_BRANCH: ${{ steps.determine_branch.outputs.runbranch }}
     steps:
