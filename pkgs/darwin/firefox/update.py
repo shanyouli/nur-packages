@@ -3,11 +3,12 @@ import os
 import re
 import subprocess
 import sys
-
-import requests
+import urllib.request
 
 # copy from https://github.com/bandithedoge/nixpkgs-firefox-darwin/blob/main/update.sh
 SCRIPT_DIR = os.path.dirname(os.path.relpath(__file__))
+
+REQUEST_TIMEOUT = 30
 
 
 def nth(idx, lst):
@@ -38,20 +39,23 @@ def save_current_src(f, sources):
 
 
 def get_version() -> dict[str,str]:
-    resp = requests.get(  # pyright: ignore[reportAny]
-        "https://product-details.mozilla.org/1.0/firefox_versions.json"
-    ).json()
+    with urllib.request.urlopen(
+        "https://product-details.mozilla.org/1.0/firefox_versions.json",
+        timeout=REQUEST_TIMEOUT,
+    ) as resp:
+        resp_json = json.load(resp)
 
     return {
-        "firefox": resp["LATEST_FIREFOX_VERSION"],
-        "firefox-esr": resp["FIREFOX_ESR"],
+        "firefox": resp_json["LATEST_FIREFOX_VERSION"],
+        "firefox-esr": resp_json["FIREFOX_ESR"],
     }
 
 
 def get_hash(version="124.0.1"):
     url = f"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/SHA256SUMS"
-    resp = requests.get(url).text
-    re_pattern = re.search(rf"(\S*) +mac\/en-US\/Firefox {version}.dmg", resp)
+    with urllib.request.urlopen(url, timeout=REQUEST_TIMEOUT) as resp:
+        resp_text = resp.read().decode("utf-8")
+    re_pattern = re.search(rf"(\S*) +mac\/en-US\/Firefox {version}.dmg", resp_text)
     return re_pattern.group(1) if re_pattern is not None else None
 
 
