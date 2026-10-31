@@ -873,11 +873,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pI4imKMCJd5A+9e+X0WIrdyrFVUhg+lY2Vs53vVdcIY=",
+            "sha256": "sha256-Bc7TgipiBWpL2squZ32W4kOs3sRXnd8VUyfsK/g6IUQ=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-TTF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-TTF.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "maple-mono-cn": {
         "cargoLock": null,
@@ -888,11 +888,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8J7UrI+fYdq5PIPykSIvvckwonfc0BoVV/6rcBupXv4=",
+            "sha256": "sha256-B46DfwSoG3E9J/4Waz4oRMXTFl8Wox3ats9e4OFU5sY=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-CN.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "maple-mono-cn-vf": {
         "cargoLock": null,
@@ -903,11 +903,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rtzdtOnXVw/uz1O1faeENz+3P+zNBYszeWWF9TH94NM=",
+            "sha256": "sha256-2nYEd6FgydL3UC13Ww6m+q+tBD+YMpV2xuDfIhkUqpY=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-CN-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN-VF.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "maple-mono-nf": {
         "cargoLock": null,
@@ -918,11 +918,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2bYpX04WndnbDlPQZQllDHxpf2mMGdHFMmjU/8mm/x0=",
+            "sha256": "sha256-fDJk+dmj7K0bTfnD/hp70YNSusNO+irGOnSbW0Wx8us=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "maple-mono-nf-cn": {
         "cargoLock": null,
@@ -933,11 +933,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zPKJ0ik8NRy3dCRG2Gapaj2DJs9RurCtbbQDQLIMv8o=",
+            "sha256": "sha256-OToda5ZP9eHH19dVTQO3kQ1a4LL/jBx4al+PqDajYGg=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF-CN.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "maple-mono-nf-cn-vf": {
         "cargoLock": null,
@@ -948,11 +948,26 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-638/w0qoEuHBs64QO3YU7cWSWN5PEV8dUDICF1ny2Ps=",
+            "sha256": "sha256-xuhVy+9qGNctTnOhRJMg8Us4Ffz95kaRp3HudGRNzoo=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF-CN-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN-VF.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
+    },
+    "maple-mono-nf-vf": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "maple-mono-nf-vf",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-msOeEjO9Kv0hA8Odtd2qTEYGoiLM+s5TEHTIUgv9T+Y=",
+            "type": "url",
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-VF.zip"
+        },
+        "version": "8-0e765c5"
     },
     "maple-mono-vf": {
         "cargoLock": null,
@@ -963,11 +978,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-wgAXJBaOgrWRcUh3YEAqisGd7kEV6OuLOPWbz0GhVL8=",
+            "sha256": "sha256-EYZUqk8k6lA/vFvjoZZ1Pajmd+1Q/NcYYjU1xjzgPbk=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-VF.zip"
         },
-        "version": "8-3fda027"
+        "version": "8-0e765c5"
     },
     "mkalias": {
         "cargoLock": {
@@ -1223,7 +1238,7 @@
     },
     "pyfreeproxy": {
         "cargoLock": null,
-        "date": "20261030",
+        "date": "20261031",
         "extract": null,
         "name": "pyfreeproxy",
         "passthru": null,
@@ -1235,12 +1250,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "7ab03f068b9203789c2418b54d46c412c2cae313",
-            "sha256": "sha256-+Vytd9Ez8/pzcj6ZlIOfj+CL9GzdYczZx4bKoxk1uTQ=",
+            "rev": "9b74d42d640feb31bba182626a8329e75db84081",
+            "sha256": "sha256-ns0yoFMIgpKlhf+7G5xDW1/F3nfN7i0spd9ov82AnUI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7ab03f068b9203789c2418b54d46c412c2cae313"
+        "version": "9b74d42d640feb31bba182626a8329e75db84081"
     },
     "rime-frost": {
         "cargoLock": null,

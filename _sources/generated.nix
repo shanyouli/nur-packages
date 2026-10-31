@@ -517,58 +517,66 @@
   };
   maple-mono = {
     pname = "maple-mono";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-TTF.zip";
-      sha256 = "sha256-pI4imKMCJd5A+9e+X0WIrdyrFVUhg+lY2Vs53vVdcIY=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-TTF.zip";
+      sha256 = "sha256-Bc7TgipiBWpL2squZ32W4kOs3sRXnd8VUyfsK/g6IUQ=";
     };
   };
   maple-mono-cn = {
     pname = "maple-mono-cn";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-CN.zip";
-      sha256 = "sha256-8J7UrI+fYdq5PIPykSIvvckwonfc0BoVV/6rcBupXv4=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN.zip";
+      sha256 = "sha256-B46DfwSoG3E9J/4Waz4oRMXTFl8Wox3ats9e4OFU5sY=";
     };
   };
   maple-mono-cn-vf = {
     pname = "maple-mono-cn-vf";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-CN-VF.zip";
-      sha256 = "sha256-rtzdtOnXVw/uz1O1faeENz+3P+zNBYszeWWF9TH94NM=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN-VF.zip";
+      sha256 = "sha256-2nYEd6FgydL3UC13Ww6m+q+tBD+YMpV2xuDfIhkUqpY=";
     };
   };
   maple-mono-nf = {
     pname = "maple-mono-nf";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF.zip";
-      sha256 = "sha256-2bYpX04WndnbDlPQZQllDHxpf2mMGdHFMmjU/8mm/x0=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono.zip";
+      sha256 = "sha256-fDJk+dmj7K0bTfnD/hp70YNSusNO+irGOnSbW0Wx8us=";
     };
   };
   maple-mono-nf-cn = {
     pname = "maple-mono-nf-cn";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF-CN.zip";
-      sha256 = "sha256-zPKJ0ik8NRy3dCRG2Gapaj2DJs9RurCtbbQDQLIMv8o=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN.zip";
+      sha256 = "sha256-OToda5ZP9eHH19dVTQO3kQ1a4LL/jBx4al+PqDajYGg=";
     };
   };
   maple-mono-nf-cn-vf = {
     pname = "maple-mono-nf-cn-vf";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-NF-CN-VF.zip";
-      sha256 = "sha256-638/w0qoEuHBs64QO3YU7cWSWN5PEV8dUDICF1ny2Ps=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN-VF.zip";
+      sha256 = "sha256-xuhVy+9qGNctTnOhRJMg8Us4Ffz95kaRp3HudGRNzoo=";
+    };
+  };
+  maple-mono-nf-vf = {
+    pname = "maple-mono-nf-vf";
+    version = "8-0e765c5";
+    src = fetchurl {
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-VF.zip";
+      sha256 = "sha256-msOeEjO9Kv0hA8Odtd2qTEYGoiLM+s5TEHTIUgv9T+Y=";
     };
   };
   maple-mono-vf = {
     pname = "maple-mono-vf";
-    version = "8-3fda027";
+    version = "8-0e765c5";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-3fda027/MapleMonoNR-VF.zip";
-      sha256 = "sha256-wgAXJBaOgrWRcUh3YEAqisGd7kEV6OuLOPWbz0GhVL8=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-VF.zip";
+      sha256 = "sha256-EYZUqk8k6lA/vFvjoZZ1Pajmd+1Q/NcYYjU1xjzgPbk=";
     };
   };
   mkalias = {
@@ -718,15 +726,15 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "7ab03f068b9203789c2418b54d46c412c2cae313";
+    version = "9b74d42d640feb31bba182626a8329e75db84081";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "7ab03f068b9203789c2418b54d46c412c2cae313";
+      rev = "9b74d42d640feb31bba182626a8329e75db84081";
       fetchSubmodules = false;
-      sha256 = "sha256-+Vytd9Ez8/pzcj6ZlIOfj+CL9GzdYczZx4bKoxk1uTQ=";
+      sha256 = "sha256-ns0yoFMIgpKlhf+7G5xDW1/F3nfN7i0spd9ov82AnUI=";
     };
-    date = "20261030";
+    date = "20261031";
   };
   rime-frost = {
     pname = "rime-frost";
