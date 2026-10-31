@@ -93,43 +93,49 @@ cargo_lock = ["Cargo.lock"]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-TTF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-TTF.zip"
 
 [maple-mono-cn]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-CN.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-CN.zip"
 
 [maple-mono-cn-vf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-CN-VF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-CN-VF.zip"
 
 [maple-mono-nf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono.zip"
 
 [maple-mono-nf-cn]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF-CN.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-CN.zip"
 
 [maple-mono-nf-cn-vf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-NF-CN-VF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-CN-VF.zip"
+
+[maple-mono-nf-vf]
+src.github = "shanyouli/maple-mono-action"
+src.from_pattern = "v(.*)"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-VF.zip"
 
 [maple-mono-vf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMonoNR-VF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-VF.zip"
 
 [mtranserver]
 src.github = "xxnuo/MTranServer"
