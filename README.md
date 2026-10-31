@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-10-31 06:33:24 UTC
+- LAST_MODIFY: 2026-10-31 07:16:00 UTC
 
 
 ## How to use
@@ -61,12 +61,12 @@
 
 ## packages
 
-Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **86** packages.
+Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **87** packages.
 
 ### common
 
 <details>
-<summary>Default support for <b>aarch64-linux</b>, <b>aarch64-darwin</b> and <b>x86_64-linux</b>. , Total: <b>52</b> packages </summary>
+<summary>Default support for <b>aarch64-linux</b>, <b>aarch64-darwin</b> and <b>x86_64-linux</b>. , Total: <b>53</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -97,13 +97,14 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20260926|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
-|[**maple-mono**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体)|
-|[**maple-mono-cn**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 含简体中文)|
-|[**maple-mono-cn-vf**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 含简体中文, 可变字体)|
-|[**maple-mono-nf**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 带 Nerd Font 图标)|
-|[**maple-mono-nf-cn**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 含简体中文与 Nerd Font 图标)|
-|[**maple-mono-nf-cn-vf**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 含简体中文与 Nerd Font 图标, 可变字体)|
-|[**maple-mono-vf**](https://github.com/shanyouli/maple-mono-action)||8-3fda027|我的自定义 Maple Mono (NR 窄体, 可变字体)|
+|[**maple-mono**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体)|
+|[**maple-mono-cn**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 含简体中文)|
+|[**maple-mono-cn-vf**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 含简体中文, 可变字体)|
+|[**maple-mono-nf**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 带 Nerd Font 图标)|
+|[**maple-mono-nf-cn**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 含简体中文与 Nerd Font 图标)|
+|[**maple-mono-nf-cn-vf**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 含简体中文与 Nerd Font 图标, 可变字体)|
+|[**maple-mono-nf-vf**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 可变字体)|
+|[**maple-mono-vf**](https://github.com/shanyouli/maple-mono-action)||8-0e765c5|我的自定义 Maple Mono (NR 窄体, 可变字体)|
 |[**mtranserver**](https://github.com/xxnuo/MTranServer)||5.1.0|Offline translation model server|
 |[**nix-index**](None)|||None|
 |[**nu-lint**](https://github.com/wvhulle/nu-lint)||20261025|Linter for Nu shell scripts that helpfully suggests improvements|
@@ -180,7 +181,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
 |[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20261016|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20261030|FreeProxy: Collecting free proxies from internet|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20261031|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
