@@ -8,8 +8,8 @@ on:
       - 'nvfetcher.toml'
       - 'pkgs/**/update.py'
   schedule:
-    # run this daily at 8am UTC, or roughly 4am eastern
-    - cron: '15 21 * * 5'
+    # UTC 18:00 周五 = 北京时间（UTC+8）周六 02:00
+    - cron: '0 18 * * 5'
   workflow_dispatch:
     inputs:
       lock:
