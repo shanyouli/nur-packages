@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-10-31 07:16:00 UTC
+- LAST_MODIFY: 2026-10-31 10:06:25 UTC
 
 
 ## How to use
@@ -61,7 +61,7 @@
 
 ## packages
 
-Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **87** packages.
+Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, total: **88** packages.
 
 ### common
 
