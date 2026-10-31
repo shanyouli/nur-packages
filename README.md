@@ -128,7 +128,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 ### darwin
 
 <details>
-<summary>Only support for <b>aarch64-darwin</b>. , Total: <b>11</b> packages </summary>
+<summary>Only support for <b>aarch64-darwin</b>. , Total: <b>12</b> packages </summary>
 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
@@ -142,6 +142,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**openwith**](https://github.com/ColeMei/openwith)||0.7.0|Manage macOS file extension associations from the terminal |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
+|[**yabai**](https://github.com/Christian-SC26/yabai)||7.2.0|Tiling window manager for macOS (maintained macOS 27 fork of yabai)|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
 </details>
 

@@ -273,6 +273,10 @@ fetch.github = "deweller/switchaudio-osx"
 # src.regex = "\"https://downloads.vivaldi.com/stable/Vivaldi.([0-9.]+).universal.dmg\""
 # fetch.url = "https://downloads.vivaldi.com/stable/Vivaldi.$ver.universal.dmg"
 
+[yabai]
+src.github_tag = "Christian-SC26/yabai"
+fetch.github = "Christian-SC26/yabai"
+
 [yabai-zsh-completions]
 src.git = "https://github.com/Amar1729/yabai-zsh-completions"
 git.date_format = "%Y%m%d"
