@@ -119,14 +119,34 @@ NIX_CFLAGS_COMPILE = [
 - 构建期禁止网络是 sandbox 设计；需要拉依赖的（bun/go mod）必须用固定 hash 机制
   （vendorHash / bunDeps outputHash），不要试图放开网络。
 
-## 13. 版本号异常
+## 13. `bun build --compile` 出的单文件在运行时 `ERR_DLOPEN_FAILED`
+
+报错形如：
+
+```
+error: dlopen(/var/folders/.../.xxxxxxxx.node, 0x0001): Library not loaded: @rpath/libonnxruntime.1.dylib
+  Reason: tried: '/private/var/folders/.../libonnxruntime.1.dylib' (no such file)
+ code: "ERR_DLOPEN_FAILED"
+```
+
+原因：`bun --compile` 只内联 JS，Node 原生插件（`onnxruntime-node` 之类的 `.node`）会在
+运行时被解包到临时目录，它依赖的 `@rpath/*.dylib` / `*.so` 不在旁边，`$ORIGIN`/`@loader_path`
+解析失败。靠包装脚本设 `DYLD_LIBRARY_PATH` 只是碰运气，且 TMPDIR 必须可写。
+
+处置（mtranserver 模式）：放弃 `--compile`，改走上游支持的 node 运行时打包——
+`bun build --target node --format esm --external <原生依赖>` 产出 `dist/*.js`，
+把 external 依赖按 `package.json` 的 `dependencies` 递归拷进 `$out/lib/<name>/node_modules`，
+写一份 `{"type":"module"}` 的 package.json，再用 `makeWrapper ${lib.getExe nodejs}` 调入口 js。
+安装期加冒烟检查：`node --input-type=module -e "await import('<原生依赖>')"` 和 `node <entry> --help`。
+
+## 14. 版本号异常
 
 - `source.version` 是 40 位 hash：说明 nvfetcher 走了分支跟踪但没配 `date_format`，
   检查 `src.git` + `git.date_format`；`nurSources` 会兜底转成 `9.9.<date>`。
 - 版本带 `v` 前缀：包内用 `lib.removePrefix "v" source.version` 或 nvfetcher
   `src.from_pattern`/`to_pattern` 处理。
 
-## 14. 找不到同类问题的写法
+## 15. 找不到同类问题的写法
 
 去本地 nixpkgs checkout 对比同类包：
 

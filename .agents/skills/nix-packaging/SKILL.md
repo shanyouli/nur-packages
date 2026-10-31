@@ -105,7 +105,7 @@ nix/pkgs.nix 的 callPkg' 按包文件名取同名源，注入参数：
 ├─ Fish 插件 ───────────────── buildFishPlugin
 ├─ Lua rockspec ────────────── buildLuarocksPackage + knownRockspec
 ├─ CMake/Makefile C/C++ ────── stdenv.mkDerivation + cmake/nativeBuildInputs
-└─ Bun/Node 项目 ───────────── bunDeps 固定依赖 + bun build --compile
+└─ Bun/Node 项目 ───────────── bunDeps 固定依赖 + 上游 `--node` 产物 + makeWrapper（有原生插件时禁用 `--compile`）
 ```
 
 每个类型的完整模板在 `references/templates.md`，先读它再写。

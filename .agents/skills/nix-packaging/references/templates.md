@@ -581,14 +581,23 @@ stdenv.mkDerivation rec {
 
 ## 20. Bun/Node 项目（来源：pkgs/common/mtranserver.nix）
 
-模式：`bunDeps` 固定依赖（outputHash 固定）+ 主构建 `bun build --compile`。
+模式：`bunDeps` 固定依赖（outputHash 固定）+ 上游 `--node` 产物 + 运行期依赖闭包 + `makeWrapper` 调 node。
 结构较复杂，直接参考 `pkgs/common/mtranserver.nix` 全文，关键点：
 
 - `bunDeps` 是一个独立 `stdenv.mkDerivation`，跑 `bun install --frozen-lockfile --ignore-scripts`，
   产出 node_modules 并用 `outputHash`/`outputHashMode = "recursive"` 固定。
 - 主构建 `configurePhase` 把 bunDeps 的 node_modules 拷回并 `patchShebangs`。
-- `bun build src/main.ts --compile --target=<bun 平台 target> --minify` 产出单文件可执行。
-- 按系统分平台表：`{ aarch64-darwin = { bunTarget = "bun-darwin-arm64"; ... }; ... }.${stdenv.hostPlatform.system} or (throw ...)`。
+- **不要用 `bun build --compile`**：单文件里只内联 JS，Node 原生插件（`.node`）运行时被解到临时目录，
+  依赖的 `@rpath/*.dylib` 找不到 -> `ERR_DLOPEN_FAILED`（详见 troubleshooting §13）。
+- 正确做法（对齐上游 Dockerfile）：`bun run build:node`（或 `bun build src/main.ts --target node --format esm
+  --external <原生依赖>`）产出 `dist/*.js`，把 external 依赖按 `package.json` 的 `dependencies`
+  递归拷进 `$out/lib/<name>/node_modules`，同目录写 `{"type":"module"}` 的 package.json，
+  最后 `makeWrapper ${lib.getExe nodejs} $out/bin/<name> --add-flags "<entry>.js"`。
+- 预编译二进制包往往带所有平台的原生库，安装时只留当前平台目录
+  （onnxruntime-node 的 `bin/napi-v6/<platform>/<arch>`），其余删掉省闭包。
+- 安装期冒烟检查：`node --input-type=module -e "await import('<原生依赖>')"` 与 `node <entry> --help`，
+  能提前暴露原生库/依赖闭包缺失。
+- 按系统分平台表：`{ aarch64-darwin = { bunDepsHash = ...; onnxRuntimePlatform = "darwin"; ... }; ... }.${stdenv.hostPlatform.system} or (throw ...)`。
 
 ## 21. AppleScript .app（来源：pkgs/darwin/emacsclient.nix）
 
