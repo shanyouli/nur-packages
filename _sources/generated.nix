@@ -861,6 +861,17 @@
       sha256 = "sha256-J9HGD3PSavZQwh2eZPbM6isdknZ1M2nkL5WHlYjRju8=";
     };
   };
+  yabai = {
+    pname = "yabai";
+    version = "v7.2.0";
+    src = fetchFromGitHub {
+      owner = "Christian-SC26";
+      repo = "yabai";
+      rev = "v7.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-wYK+LyrD0YnNx0PPo5gCgqTH+avq+7kCJDc1vu2c98M=";
+    };
+  };
   yabai-zsh-completions = {
     pname = "yabai-zsh-completions";
     version = "6e38681a002e13bdcd43f461f73c53b7c11fd4e5";

@@ -1481,6 +1481,27 @@
         },
         "version": "0.0.2"
     },
+    "yabai": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "yabai",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Christian-SC26",
+            "repo": "yabai",
+            "rev": "v7.2.0",
+            "sha256": "sha256-wYK+LyrD0YnNx0PPo5gCgqTH+avq+7kCJDc1vu2c98M=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v7.2.0"
+    },
     "yabai-zsh-completions": {
         "cargoLock": null,
         "date": "20231113",
