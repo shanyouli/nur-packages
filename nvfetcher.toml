@@ -367,9 +367,9 @@ fetch.git = "https://gitlab.com/technomancy/jeejah"
 
 #### emacs packages
 [emacs-reader]
-src.git = "https://codeberg.org/divyaranjan/emacs-reader"
+src.git = "https://codeberg.org/MonadicSheep/emureader"
 git.date_format = "%Y%m%d"
-fetch.git = "https://codeberg.org/divyaranjan/emacs-reader"
+fetch.git = "https://codeberg.org/MonadicSheep/emureader"
 
 [emt]
 src.git = "https://github.com/roife/emt"

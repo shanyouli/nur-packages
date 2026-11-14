@@ -8,24 +8,24 @@
 }:
 
 melpaBuild rec {
-  ename = "reader";
-  pname = "emacs-reader";
+  ename = "emureader";
+  pname = "emureader";
   inherit (source) src version;
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ mupdf-headless ];
   files = ''
-    (:defaults "render-core${stdenv.targetPlatform.extensions.sharedLibrary}")
+    (:defaults "emureader-dyn${stdenv.targetPlatform.extensions.sharedLibrary}")
   '';
   preBuild = ''
     export EMACSLOADPATH=".:$EMACSLOADPATH"
     make clean all CC=$CC USE_PKGCONFIG=yes
   '';
   postInstall = ''
-    dir=$out/share/emacs/site-lisp/elpa/reader-${version}
-    install -Dm444 render-core${stdenv.targetPlatform.extensions.sharedLibrary} $dir/
+    dir=$out/share/emacs/site-lisp/elpa/emureader-${version}
+    install -Dm444 emureader-dyn${stdenv.targetPlatform.extensions.sharedLibrary} $dir/
   '';
   meta = {
-    homepage = "https://codeberg.org/divyaranjan/emacs-reader";
+    homepage = "https://codeberg.org/MonadicSheep/emureader";
     description = "An all-in-one document reader for all formats in Emacs, backed by MuPDF";
     license = lib.licenses.gpl3Plus;
     maintainers = [ ];
