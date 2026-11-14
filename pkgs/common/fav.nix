@@ -34,6 +34,9 @@ unstable.rustPlatform.buildRustPackage rec {
   buildInputs = [
     openssl
     ffmpeg
+    # nixpkgs cargoSetupHook 现在强制 AWS_LC_SYS_USE_SYSTEM=1（PR #537108），
+    # 需要系统 aws-lc（需 nixpkgs 5.x 版本打包，含 rust bindings 与 pkg-config 模块）
+    unstable.aws-lc
   ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk ];
   doCheck = false;
