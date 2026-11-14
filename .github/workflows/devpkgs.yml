@@ -1,5 +1,8 @@
 name: "Dev build dev packages"
 
+# run-name 与 build.yml 同风格：PR 标题 / 分支名（devpkgs @ dev）
+run-name: "${{ github.event.pull_request.title || format('devpkgs @ {0}', github.ref_name) }}"
+
 # 显式声明写权限。仓库的默认 workflow 权限若被收紧为只读，GITHUB_TOKEN 推送会直接 403。
 permissions:
   contents: write

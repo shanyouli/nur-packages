@@ -3,6 +3,7 @@
   unstable,
   pkg-config,
   libgit2,
+  sqlite,
   source,
 }:
 # {pkgs ? import <nixpkgs> {} }:
@@ -22,11 +23,16 @@ unstable.rustPlatform.buildRustPackage rec {
   #   cargo update --offline
   # '';
   # cargoBuildFlags = ["--offline"];
-  # nixpkgs cargoSetupHook 现在强制 LIBGIT2_NO_VENDOR=1（PR #537108），
-  # 需要 pkg-config 探测系统 libgit2；libgit2 1.9.7 满足 libgit2-sys 0.18.8 的约束
+  # nixpkgs cargoSetupHook 现在强制 LIBGIT2_NO_VENDOR=1、LIBSQLITE3_SYS_USE_PKG_CONFIG=1
+  # （PR #537108），需要 pkg-config 探测系统 libgit2/sqlite，并把对应库加入
+  # buildInputs 使链接器能找到 -lgit2/-lsqlite3（stdenv 会自动注入 lib 路径）；
+  # libgit2 1.9.7 满足 libgit2-sys 0.18.8 的约束
   nativeBuildInputs = [ pkg-config ];
 
-  buildInputs = [ libgit2 ];
+  buildInputs = [
+    libgit2
+    sqlite
+  ];
   doCheck = false;
   meta = with lib; {
     description = "Linter for Nu shell scripts that helpfully suggests improvements";

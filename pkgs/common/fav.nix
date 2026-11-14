@@ -5,6 +5,8 @@
   pkg-config,
   openssl,
   ffmpeg,
+  libgit2,
+  sqlite,
   apple-sdk,
   source,
 }:
@@ -30,13 +32,16 @@ unstable.rustPlatform.buildRustPackage rec {
     pkg-config
     unstable.rustPlatform.bindgenHook
   ];
-
   buildInputs = [
     openssl
     ffmpeg
     # nixpkgs cargoSetupHook 现在强制 AWS_LC_SYS_USE_SYSTEM=1（PR #537108），
     # 需要系统 aws-lc（需 nixpkgs 5.x 版本打包，含 rust bindings 与 pkg-config 模块）
     unstable.aws-lc
+    # 依赖树中的 git2/libsqlite3 同样受 LIBGIT2_NO_VENDOR=1、
+    # LIBSQLITE3_SYS_USE_PKG_CONFIG=1 影响，需要系统 libgit2 与 sqlite
+    libgit2
+    sqlite
   ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [ apple-sdk ];
   doCheck = false;

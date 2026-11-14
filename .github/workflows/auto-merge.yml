@@ -1,5 +1,8 @@
 name: auto-merge
 
+# Dependabot PR 的自动合并，标题栏显示 PR 标题便于识别合并的是哪个升级
+run-name: "${{ github.event.pull_request.title || github.event_name }}"
+
 on:
   pull_request_target:
 

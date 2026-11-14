@@ -118,14 +118,16 @@ jobs:
             runLock=true
           fi
 
+          # PR 标题统一格式：Update src (执行任务)，同时作为 flakebot PR 标题
+          # 和 build.yml 的 run-name 显示（见 build.yml 顶部注释）
           if [ "$runLock" = "true" ]; then
-            prTitle='Update src and lock'
+            prTitle='Update src · flake.lock'
           elif [ "$runNvfetcher" = "true" ] && [ "$runUpdatePy" = "true" ]; then
-            prTitle='Update src by nvfetcher and python script'
+            prTitle='Update src (nvfetcher, update.py)'
           elif [ "$runNvfetcher" = "true" ]; then
-            prTitle='Update src by nvfetcher'
+            prTitle='Update src (nvfetcher)'
           else
-            prTitle='Update src by python script'
+            prTitle='Update src (update.py)'
           fi
 
           echo "runNvfetcher=$runNvfetcher" >> "$GITHUB_OUTPUT"
@@ -295,7 +297,7 @@ jobs:
             run_name="$PR_TITLE"
           fi
           if [ -z "$run_name" ]; then
-            run_name="Update src and lock (${EVENT_NAME})"
+            run_name="Update src (${EVENT_NAME})"
           fi
 
           gh api --method POST --silent \
