@@ -152,11 +152,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kRJGZzMHot4AK22Ea/T48kW39ZSEkdOHgoMlC5twuiY=",
+            "sha256": "sha256-EVVUjCSuA+8HxMNcSt2hncdZKYKjf6Hj5txh23McNQM=",
             "type": "url",
-            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.134/darkreader-firefox.xpi"
+            "url": "https://github.com/darkreader/darkreader/releases/download/v4.9.135/darkreader-firefox.xpi"
         },
-        "version": "4.9.134"
+        "version": "4.9.135"
     },
     "deeplx": {
         "cargoLock": null,
@@ -228,7 +228,7 @@
     },
     "ebox": {
         "cargoLock": null,
-        "date": "20261029",
+        "date": "20261114",
         "extract": null,
         "name": "ebox",
         "passthru": null,
@@ -240,12 +240,12 @@
             "name": null,
             "owner": "emacs-taf",
             "repo": "ebox",
-            "rev": "163702de4943a196641e56199fe3b851ede0119a",
-            "sha256": "sha256-WSZVEmKyX83E4IrbqmWD/NVuutflOUHq92oJwHxvbW0=",
+            "rev": "09f5ab30043a352dba1e15fa8022f95dcedbfc71",
+            "sha256": "sha256-7qCHIiMmtNsYpTXMVlqvVUUyN9BZF/+Inob2IEC8ySQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "163702de4943a196641e56199fe3b851ede0119a"
+        "version": "09f5ab30043a352dba1e15fa8022f95dcedbfc71"
     },
     "ecss": {
         "cargoLock": null,
@@ -312,7 +312,7 @@
     },
     "emacs-reader": {
         "cargoLock": null,
-        "date": "20261021",
+        "date": "20261109",
         "extract": null,
         "name": "emacs-reader",
         "passthru": null,
@@ -322,13 +322,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4fca3aaedddeea7f672ee97e5a91ef3002240260",
-            "sha256": "sha256-P1dFDtoioh6uPzUMvoDRVcr2Ph6UipXu2EkyOGvb3h0=",
+            "rev": "a29ee325f9ccd7ab931752f94fd4be9b4a34ffdd",
+            "sha256": "sha256-PCeJAq/SoZLjX8VFti7EBDqHQXECttW7Lu+u3y6CdA0=",
             "sparseCheckout": [],
             "type": "git",
-            "url": "https://codeberg.org/divyaranjan/emacs-reader"
+            "url": "https://codeberg.org/MonadicSheep/emureader"
         },
-        "version": "4fca3aaedddeea7f672ee97e5a91ef3002240260"
+        "version": "a29ee325f9ccd7ab931752f94fd4be9b4a34ffdd"
     },
     "emacs30.ns-mac-input-source": {
         "cargoLock": null,
@@ -347,7 +347,7 @@
     },
     "emacs30.role-patch": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs30.role-patch",
         "passthru": null,
@@ -356,13 +356,13 @@
             "name": null,
             "sha256": "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-28/fix-window-role.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-28/fix-window-role.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs30.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs30.round-undecorated-frame",
         "passthru": null,
@@ -371,13 +371,13 @@
             "name": null,
             "sha256": "sha256-fjnmlM6dylDbcsCb5ELBJ40ZANacJALyiXQq6ujqTD4=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-30/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-30/round-undecorated-frame.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs30.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs30.system-appearance",
         "passthru": null,
@@ -386,13 +386,13 @@
             "name": null,
             "sha256": "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-30/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-30/system-appearance.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs31.ns-mac-input-source": {
         "cargoLock": null,
-        "date": "2026-10-29",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs31.ns-mac-input-source",
         "passthru": null,
@@ -401,13 +401,13 @@
             "name": null,
             "sha256": "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=",
             "type": "url",
-            "url": "https://github.com/LuciusChen/.emacs.d/raw/16baf1e7bcc193234d6905c7f6fc0c84d8a75a26/scripts/macos/patches/emacs-31/ns-mac-input-source.patch"
+            "url": "https://github.com/LuciusChen/.emacs.d/raw/6dfefa6c715d530fe882518bccdcf0c5b9d08b25/scripts/macos/patches/emacs-31/ns-mac-input-source.patch"
         },
-        "version": "16baf1e7bcc193234d6905c7f6fc0c84d8a75a26"
+        "version": "6dfefa6c715d530fe882518bccdcf0c5b9d08b25"
     },
     "emacs31.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs31.round-undecorated-frame",
         "passthru": null,
@@ -416,13 +416,13 @@
             "name": null,
             "sha256": "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-31/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/round-undecorated-frame.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs31.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs31.system-appearance",
         "passthru": null,
@@ -431,13 +431,13 @@
             "name": null,
             "sha256": "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-31/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/system-appearance.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs32.ns-mac-input-source": {
         "cargoLock": null,
-        "date": "2026-10-29",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs32.ns-mac-input-source",
         "passthru": null,
@@ -446,13 +446,13 @@
             "name": null,
             "sha256": "sha256-cYtdtNFE/D73ust2oh34/8O9aA9PNvmrmvIMJiIV7gk=",
             "type": "url",
-            "url": "https://github.com/LuciusChen/.emacs.d/raw/16baf1e7bcc193234d6905c7f6fc0c84d8a75a26/scripts/macos/patches/emacs-32/ns-mac-input-source.patch"
+            "url": "https://github.com/LuciusChen/.emacs.d/raw/6dfefa6c715d530fe882518bccdcf0c5b9d08b25/scripts/macos/patches/emacs-32/ns-mac-input-source.patch"
         },
-        "version": "16baf1e7bcc193234d6905c7f6fc0c84d8a75a26"
+        "version": "6dfefa6c715d530fe882518bccdcf0c5b9d08b25"
     },
     "emacs32.round-undecorated-frame": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs32.round-undecorated-frame",
         "passthru": null,
@@ -461,13 +461,13 @@
             "name": null,
             "sha256": "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-31/round-undecorated-frame.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/round-undecorated-frame.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacs32.system-appearance": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-14",
         "extract": null,
         "name": "emacs32.system-appearance",
         "passthru": null,
@@ -476,9 +476,9 @@
             "name": null,
             "sha256": "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=",
             "type": "url",
-            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93/patches/emacs-31/system-appearance.patch"
+            "url": "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/system-appearance.patch"
         },
-        "version": "4b6ff6b458f6ebfd2e855a4568eb8ecdba393f93"
+        "version": "95c548cc40be6b34db81e7a15b4218b1ec6aaa48"
     },
     "emacsclient": {
         "cargoLock": null,
@@ -518,7 +518,7 @@
     },
     "etaf": {
         "cargoLock": null,
-        "date": "20261024",
+        "date": "20261109",
         "extract": null,
         "name": "etaf",
         "passthru": null,
@@ -530,12 +530,12 @@
             "name": null,
             "owner": "emacs-taf",
             "repo": "etaf",
-            "rev": "302d6020def44b24b4518bf0b02e8f541842e169",
-            "sha256": "sha256-7pkJa06YJUvpmHyUdSoB4HI/LdOpSMssYJC1ao+Z+gA=",
+            "rev": "59bf3c618a0a19e9b40894f390904146976c3291",
+            "sha256": "sha256-SpGJ97s/3qFWtlRo8w49FQoEmOgX94KhA6EoBs9M3c4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "302d6020def44b24b4518bf0b02e8f541842e169"
+        "version": "59bf3c618a0a19e9b40894f390904146976c3291"
     },
     "etaf-db": {
         "cargoLock": null,
@@ -581,7 +581,7 @@
     },
     "etaf-ui": {
         "cargoLock": null,
-        "date": "20261030",
+        "date": "20261106",
         "extract": null,
         "name": "etaf-ui",
         "passthru": null,
@@ -593,12 +593,12 @@
             "name": null,
             "owner": "emacs-taf",
             "repo": "etaf-ui",
-            "rev": "50e2f6d8a80806bbfa8291d4d522480a76d374db",
-            "sha256": "sha256-zJ4VB879te9QrJehUx5mKuwQnS+QXUHVK6SVmWo6Y+g=",
+            "rev": "09af2e0a0649f3672d2ed3e1a3aabbb9e9b8d73a",
+            "sha256": "sha256-mp7pv1kDdny3llmXa+xhOeF3AZNNCflAGOthrn0iRv0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "50e2f6d8a80806bbfa8291d4d522480a76d374db"
+        "version": "09af2e0a0649f3672d2ed3e1a3aabbb9e9b8d73a"
     },
     "ewt-rs": {
         "cargoLock": {
@@ -689,12 +689,12 @@
             "name": null,
             "owner": "yuuqilin",
             "repo": "FlexFox",
-            "rev": "v7.1.1",
-            "sha256": "sha256-JROPvt3XF+G55XybRMPruVo+tZO/xi+2i1sjo8p/xN4=",
+            "rev": "v7.1.2",
+            "sha256": "sha256-TUY6pfjAlEjmmYxa3tFmPkglib2FISeGNxYLx8T7Kmo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.1"
+        "version": "v7.1.2"
     },
     "go-musicfox": {
         "cargoLock": null,
@@ -873,11 +873,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Bc7TgipiBWpL2squZ32W4kOs3sRXnd8VUyfsK/g6IUQ=",
+            "sha256": "sha256-CJamiTy54ZF9cIk2MHF6Vn93dD01EoE5rf6+1D19d7Q=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-TTF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-TTF.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-cn": {
         "cargoLock": null,
@@ -888,11 +888,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-B46DfwSoG3E9J/4Waz4oRMXTFl8Wox3ats9e4OFU5sY=",
+            "sha256": "sha256-weIFtMMl+C/ihM7D1eBrJo1RKtCbWmcsSi8AMW5ZUZg=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-CN.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-cn-vf": {
         "cargoLock": null,
@@ -903,11 +903,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2nYEd6FgydL3UC13Ww6m+q+tBD+YMpV2xuDfIhkUqpY=",
+            "sha256": "sha256-ELeI7ULRNaw+HF2njZOtA6aWUbqKfHGB9S8P2Rphpa0=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-CN-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-CN-VF.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-nf": {
         "cargoLock": null,
@@ -918,11 +918,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fDJk+dmj7K0bTfnD/hp70YNSusNO+irGOnSbW0Wx8us=",
+            "sha256": "sha256-Wks2SFu0YcmcXp86n5raUMxer1JVyZPoXwWLWOfsNBs=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-nf-cn": {
         "cargoLock": null,
@@ -933,11 +933,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-OToda5ZP9eHH19dVTQO3kQ1a4LL/jBx4al+PqDajYGg=",
+            "sha256": "sha256-BcpVAIuzN5OHUKCknUqtAmun+MlcfIqVEhnKoAcA2bc=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-CN.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-nf-cn-vf": {
         "cargoLock": null,
@@ -948,11 +948,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xuhVy+9qGNctTnOhRJMg8Us4Ffz95kaRp3HudGRNzoo=",
+            "sha256": "sha256-1ZwdrvMzeCPGMtOXtRrnbowm4ChIgv3GHto21Kxgjn0=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-CN-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-CN-VF.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-nf-vf": {
         "cargoLock": null,
@@ -963,11 +963,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-msOeEjO9Kv0hA8Odtd2qTEYGoiLM+s5TEHTIUgv9T+Y=",
+            "sha256": "sha256-p1L+0Niu41fwDgdv81yakpNBe4hc1mtXsZBWv3LSvt4=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-NFMono-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-VF.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "maple-mono-vf": {
         "cargoLock": null,
@@ -978,11 +978,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EYZUqk8k6lA/vFvjoZZ1Pajmd+1Q/NcYYjU1xjzgPbk=",
+            "sha256": "sha256-wweHMovFzHi3EVSBqU+2zFlhvsLc0eh29MrkiYYc5d0=",
             "type": "url",
-            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-0e765c5/MapleMono-VF.zip"
+            "url": "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-VF.zip"
         },
-        "version": "8-0e765c5"
+        "version": "8-5f603dc"
     },
     "mkalias": {
         "cargoLock": {
@@ -1024,12 +1024,12 @@
             "name": null,
             "owner": "xxnuo",
             "repo": "MTranServer",
-            "rev": "v5.1.0",
-            "sha256": "sha256-mwybXcK8ZCJrB+8ugxYIHHo4v6RsG8Hs8SNha7dJseg=",
+            "rev": "v5.1.1",
+            "sha256": "sha256-hIb6XR8zc5FPTZc/7z+Vh8bSRzkCjldN4RszJq6ccbs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.1.0"
+        "version": "v5.1.1"
     },
     "musicdl": {
         "cargoLock": null,
@@ -1076,11 +1076,11 @@
     "nu-lint": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-pzhI2ob330S03Gff+Rj0R6DnmMbsk5c5Sb87SVlkG3Y=/Cargo.lock",
+                "sha256-ONLKdAcdmCiKjDHhf9_JmOmoVNTneua4leWWcguTkdQ=/Cargo.lock",
                 {}
             ]
         },
-        "date": "20261025",
+        "date": "20261113",
         "extract": null,
         "name": "nu-lint",
         "passthru": null,
@@ -1092,17 +1092,17 @@
             "name": null,
             "owner": "wvhulle",
             "repo": "nu-lint",
-            "rev": "15fdb10b5b2bec495103706b8f6140b10181dec5",
-            "sha256": "sha256-pzhI2ob330S03Gff+Rj0R6DnmMbsk5c5Sb87SVlkG3Y=",
+            "rev": "70a52725ef3b5a2f7b3f6cf804bc83a3eae16f4e",
+            "sha256": "sha256-ONLKdAcdmCiKjDHhf9/JmOmoVNTneua4leWWcguTkdQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "15fdb10b5b2bec495103706b8f6140b10181dec5"
+        "version": "70a52725ef3b5a2f7b3f6cf804bc83a3eae16f4e"
     },
     "openwith": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-F1aWDbR9n0uJlw0B38f62JYJIsbTiGpev41GCEMtVEU=/Cargo.lock",
+                "sha256-Gi+PUTYyiQFi6hMGHBObuvRgvxB_vPDUOC5cXl_G1NU=/Cargo.lock",
                 {}
             ]
         },
@@ -1118,12 +1118,12 @@
             "name": null,
             "owner": "ColeMei",
             "repo": "openwith",
-            "rev": "v0.7.0",
-            "sha256": "sha256-F1aWDbR9n0uJlw0B38f62JYJIsbTiGpev41GCEMtVEU=",
+            "rev": "v0.7.1",
+            "sha256": "sha256-Gi+PUTYyiQFi6hMGHBObuvRgvxB/vPDUOC5cXl/G1NU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.7.0"
+        "version": "v0.7.1"
     },
     "pngpaste": {
         "cargoLock": null,
@@ -1238,7 +1238,7 @@
     },
     "pyfreeproxy": {
         "cargoLock": null,
-        "date": "20261031",
+        "date": "20261114",
         "extract": null,
         "name": "pyfreeproxy",
         "passthru": null,
@@ -1250,12 +1250,12 @@
             "name": null,
             "owner": "CharlesPikachu",
             "repo": "freeproxy",
-            "rev": "9b74d42d640feb31bba182626a8329e75db84081",
-            "sha256": "sha256-ns0yoFMIgpKlhf+7G5xDW1/F3nfN7i0spd9ov82AnUI=",
+            "rev": "af59c6a4bfc9efb28fc1f941354b51c3cefc4898",
+            "sha256": "sha256-AfLxVWNjCpeisjS+sjBJu+QXthtfoveIimMpmsKaKWE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9b74d42d640feb31bba182626a8329e75db84081"
+        "version": "af59c6a4bfc9efb28fc1f941354b51c3cefc4898"
     },
     "rime-frost": {
         "cargoLock": null,
@@ -1280,7 +1280,7 @@
     },
     "rime-ice": {
         "cargoLock": null,
-        "date": "20261005",
+        "date": "20261111",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1292,12 +1292,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
-            "sha256": "sha256-IveGjHDllCPiRTItBl+fIlvNLnr3VRlnipnTY7e2jzM=",
+            "rev": "927e1cf1d3eeb9bf4be85e3f684dba4dd485b6f6",
+            "sha256": "sha256-laZ7u29e+F+2slf5td+rKbJuoFHCxUI928nJ+JimVNs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "da1fbe602e38f26db846fa10120ee64c2b0324c0"
+        "version": "927e1cf1d3eeb9bf4be85e3f684dba4dd485b6f6"
     },
     "sarasa-term": {
         "cargoLock": null,
@@ -1495,12 +1495,12 @@
             "name": null,
             "owner": "Christian-SC26",
             "repo": "yabai",
-            "rev": "v7.2.0",
-            "sha256": "sha256-wYK+LyrD0YnNx0PPo5gCgqTH+avq+7kCJDc1vu2c98M=",
+            "rev": "v7.3.3",
+            "sha256": "sha256-SRiK2TL8OPCiFD2A94qQyXPeh7xPQb37Es6qsrcq9NA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.2.0"
+        "version": "v7.3.3"
     },
     "yabai-zsh-completions": {
         "cargoLock": null,
