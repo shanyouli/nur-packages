@@ -4,7 +4,7 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-shanyouli-blue.svg)](https://shanyouli.cachix.org)
 
-- LAST_MODIFY: 2026-11-14 10:08:10 UTC
+- LAST_MODIFY: 2026-11-22 06:44:07 UTC
 
 
 ## How to use
@@ -72,28 +72,28 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |:---|:---|:---|:---|
 |[**aubeshim**](https://github.com/mwolson/aubeshim)||1.8.0|Replace all {bun, npm, pnpm, yarn} with aube|
 |[**bash-env-json**](https://github.com/tesujimath/bash-env-json)||0.11.0| export of Bash environment as JSON|
-|[**cc-switch**](https://github.com/saladday/cc-switch-cli)||5.11.3|CLI manager for Claude Code, Codex, Gemini, OpenCode, and OpenClaw|
+|[**cc-switch**](https://github.com/saladday/cc-switch-cli)||5.11.4|CLI manager for Claude Code, Codex, Gemini, OpenCode, and OpenClaw|
 |[**clash2singbox**](https://github.com/xmdhs/clash2singbox)||0.2.0|将 clash.meta 格式的配置文件或链接转换为 sing-box 格式|
 |[**deeplx**](https://github.com/OwO-Network/DeepLX)||1.3.1|DeepL Free API (No TOKEN required|
 |[**emacs**](https://www.gnu.org/software/emacs/)||30.2|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20261107.0|Extensible, customizable GNU text editor|
 |[**emacs**](https://www.gnu.org/software/emacs/)||20261102.0|Extensible, customizable GNU text editor|
-|[**ebox**](https://github.com/emacs-taf/ebox)||9.9.20261114|Pixel-perfect box model renderer: box/flex/grid layout and incremental buffer publication|
-|[**ecss**](https://github.com/emacs-taf/ecss)||9.9.20261022|Pure extensible CSS cascade engine: selectors, specificity, cascade and computed styles|
-|[**ekp**](https://github.com/emacs-taf/ekp)||9.9.20261022|Knuth-Plass line breaking with CJK support|
+|[**ebox**](https://github.com/emacs-taf/ebox)||9.9.20261120|Pixel-perfect box model renderer: box/flex/grid layout and incremental buffer publication|
+|[**ecss**](https://github.com/emacs-taf/ecss)||9.9.20261120|Pure extensible CSS cascade engine: selectors, specificity, cascade and computed styles|
+|[**ekp**](https://github.com/emacs-taf/ekp)||9.9.20261120|Knuth-Plass line breaking with CJK support|
 |[**elog**](https://github.com/Kinneyzhang/elog)||9.9.20251217|A powerful logging system for Emacs Lisp inspired by Log4j, Winston and loguru|
 |[**emureader**](https://codeberg.org/MonadicSheep/emureader)||9.9.20261109|An all-in-one document reader for all formats in Emacs, backed by MuPDF|
 |[**emt**](https://github.com/roife/emt)||9.9.20260616|Emacs macOS Tokenizer, tokenizing CJK words with macOS's built-in NLP tokenizer. |
-|[**etaf**](https://github.com/emacs-taf/etaf)||9.9.20261109|Text application framework facade: components, reactive state and hosts|
-|[**etaf-db**](https://github.com/emacs-taf/etaf-db)||9.9.20261022|Database backends for ETAF: SQLite|
-|[**etaf-posframe**](https://github.com/emacs-taf/etaf-posframe)||9.9.20261027|Floating ETAF panels in child frames|
-|[**etaf-ui**](https://github.com/emacs-taf/etaf-ui)||9.9.20261106|Official ETAF component catalog: buttons, forms, panels and window shells|
+|[**etaf**](https://github.com/emacs-taf/etaf)||9.9.20261120|Text application framework facade: components, reactive state and hosts|
+|[**etaf-db**](https://github.com/emacs-taf/etaf-db)||9.9.20261120|Database backends for ETAF: SQLite|
+|[**etaf-posframe**](https://github.com/emacs-taf/etaf-posframe)||9.9.20261120|Floating ETAF panels in child frames|
+|[**etaf-ui**](https://github.com/emacs-taf/etaf-ui)||9.9.20261120|Official ETAF component catalog: buttons, forms, panels and window shells|
 |[**emacs**](https://www.gnu.org/software/emacs/)||31.1|Extensible, customizable GNU text editor|
 |[**ewt-rs**](https://github.com/Master-Hash/ewt-rs)||0.5.0|A Rust implementation of Easy Web Token|
 |[**fav**](https://github.com/kingwingfly/fav)||1.3.0|Back up your favorite bilibili resources with CLI|
 |[**fisher**](https://github.com/jorgebucaran/fisher)||4.4.8|A plugin manager for Fish|
 |[**flexfox**](https://github.com/yuuqilin/FlexFox)||7.1.2|Firefox Chrome css|
-|[**jcode**](https://github.com/1jehuang/jcode)||0.99.1|Coding Agent Harness|
+|[**jcode**](https://github.com/1jehuang/jcode)||1.0.3|Coding Agent Harness|
 |[**antifennel**](https://git.sr.ht/~technomancy/antifennel)||20260926|Turn Lua code into Fennel code|
 |[**jeejah**](https://gitlab.com/technomancy/jeejah)||0.3.2-1|An nREPL server|
 |[**manix**](https://github.com/kaii-zen/manix/tree/master)||20210728|A fast CLI documentation searcher for Nix|
@@ -105,9 +105,9 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**maple-mono-nf-cn-vf**](https://github.com/shanyouli/maple-mono-action)||8-5f603dc|我的自定义 Maple Mono (NR 窄体, 含简体中文与 Nerd Font 图标, 可变字体)|
 |[**maple-mono-nf-vf**](https://github.com/shanyouli/maple-mono-action)||8-5f603dc|我的自定义 Maple Mono (NR 窄体, 可变字体)|
 |[**maple-mono-vf**](https://github.com/shanyouli/maple-mono-action)||8-5f603dc|我的自定义 Maple Mono (NR 窄体, 可变字体)|
-|[**mtranserver**](https://github.com/xxnuo/MTranServer)||5.1.1|Offline translation model server|
+|[**mtranserver**](https://github.com/xxnuo/MTranServer)||5.4.6|Offline translation model server|
 |[**nix-index**](None)|||None|
-|[**nu-lint**](https://github.com/wvhulle/nu-lint)||20261113|Linter for Nu shell scripts that helpfully suggests improvements|
+|[**nu-lint**](https://github.com/wvhulle/nu-lint)||20261115|Linter for Nu shell scripts that helpfully suggests improvements|
 |[**pragmasevka**](https://github.com/shanyouli/iosevka)||34.9.1|我的自定义 iosvake|
 |[**pragmasevka-nerd**](https://github.com/shanyouli/iosevka)||34.9.1|我的自定义 iosvake|
 |[**pragmasevka-sans**](https://github.com/shanyouli/iosevka)||34.9.1|我的自定义 iosvake|
@@ -121,7 +121,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**seam**](https://github.com/Borber/seam)||_cli.0.1.39|获取多直播平台的直播源|
 |[**singboxp**](https://sing-box.sagernet.org)||20260112|The universal proxy platform|
 |[**tmux-fastcopy**](https://github.com/abhinav/tmux-fastcopy/tree/main)||0.15.0|easymotion-style text copying for tmux.|
-|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20261016|Firefox scripts |
+|[**userChromeJS**](https://github.com/benzBrake/userChrome.js-Loader)||20261118|Firefox scripts |
 |[**zpmod**](https://github.com/z-shell/zpmod)||2.0.6|Zsh module transparently and automatically compiles sourced scripts|
 </details>
 
@@ -142,7 +142,7 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |[**openwith**](https://github.com/ColeMei/openwith)||0.7.1|Manage macOS file extension associations from the terminal |
 |[**pngpaste**](https://github.com/jcsalterego/pngpaste)||0.2.3|Paste PNG into files, much like pbpaste does for text. |
 |[**switchaudio-osx**](https://github.com/deweller/switchaudio-osx)||1.2.2|Change the audio source for Mac OS X from the command line|
-|[**yabai**](https://github.com/Christian-SC26/yabai)||7.3.3|Tiling window manager for macOS (maintained macOS 27 fork of yabai)|
+|[**yabai**](https://github.com/Christian-SC26/yabai)||7.3.5|Tiling window manager for macOS (maintained macOS 27 fork of yabai)|
 |[**yabai-zsh-completions**](https://github.com/Amar1729/yabai-zsh-completions)||20231113|zsh completions for yabai, the tiling window manager|
 </details>
 
@@ -181,8 +181,8 @@ Currently builds on **aarch64-darwin**, **aarch64-linux** and **x86_64-linux**, 
 |name|broken system|version|description|
 |:---|:---|:---|:---|
 |[**alive-progress**](None)||3.3.0|None|
-|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20261016|A lightweight music downloader written in pure python.|
-|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20261114|FreeProxy: Collecting free proxies from internet|
+|[**musicdl**](https://github.com/CharlesPikachu/musicdl)||20261120|A lightweight music downloader written in pure python.|
+|[**pyfreeproxy**](https://github.com/CharlesPikachu/freeproxy)||20261122|FreeProxy: Collecting free proxies from internet|
 |[**sd**](None)||20260710|My system command line|
 |[**websocket-bridge-python**](None)||0.0.2|None|
 </details>
