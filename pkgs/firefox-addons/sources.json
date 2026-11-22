@@ -30,9 +30,9 @@
     "pname": "auto-tab-discard"
   },
   "user-agent-string-switcher": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5081116/user_agent_string_switcher-0.7.2.xpi",
-    "version": "0.7.2",
-    "sha256": "10mnl36y406zpkq9apvs9vinfn5cql16273gw5k67cvxfcyy1l4s",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5275336/user_agent_string_switcher-0.7.3.xpi",
+    "version": "0.7.3",
+    "sha256": "0p4w00jmnj4f5g1aagrg9xvymhx84whlbxfy5yna2ca2fndgrg5j",
     "pname": "user-agent-string-switcher"
   },
   "violentmonkey": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5142667/styl_us-2.4.17.xpi",
-    "version": "2.4.17",
-    "sha256": "077vwhj8k3izih9xg06vvwglcqqdph9vnbcycdx3wph1la30z8kf",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5257053/styl_us-2.4.18.xpi",
+    "version": "2.4.18",
+    "sha256": "0m121n7zga1ynlwzrb6k4kf1xdyxp8gn6j315q4xjza5cc7ip3jc",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -54,15 +54,15 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5250345/ublock_origin-1.76.2.xpi",
-    "version": "1.76.2",
-    "sha256": "07lah0z0zqrl51n1jl6a06rg8cq2b486cl61badlz3w16m3hwcin",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5282683/ublock_origin-1.76.6.xpi",
+    "version": "1.76.6",
+    "sha256": "0xakr4fs2x6jh94g31rfzm22a4gkzmxy464j9qnvs5sigpgzmgyy",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5142743/immersive_translate-1.34.2.xpi",
-    "version": "1.34.2",
-    "sha256": "12nd2fz7vzzm05mbls1p71n64rd2wvjrb821z3l4jprl3d18lrxx",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5275933/immersive_translate-1.35.3.xpi",
+    "version": "1.35.3",
+    "sha256": "1p3igrkwnjsf96ba7lghwnwc45v317fzhzar88kvf05dr5m25hsn",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5249272/kiss_translator-2.2.3.xpi",
-    "version": "2.2.3",
-    "sha256": "1ia0sk4gmqjj4ak7am9l56b5f9gfj8sl7p1595shaid0ijqw39gb",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5278173/kiss_translator-2.2.6.xpi",
+    "version": "2.2.6",
+    "sha256": "0gaxh5kw1sp68lh7907kapg0a0qrc85wv2pyyiyy3f8v05gg480c",
     "pname": "kiss-translator"
   },
   "raindropio": {
