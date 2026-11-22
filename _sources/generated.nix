@@ -66,16 +66,16 @@
   };
   cc-switch = {
     pname = "cc-switch";
-    version = "v5.11.3";
+    version = "v5.11.4";
     src = fetchFromGitHub {
       owner = "SaladDay";
       repo = "cc-switch-cli";
-      rev = "v5.11.3";
+      rev = "v5.11.4";
       fetchSubmodules = false;
-      sha256 = "sha256-xws/t6NKnIwK651uC/IzhGLW90/VZBJtaDX8QzVBFEs=";
+      sha256 = "sha256-qrkvHhvKLQVkCfcwsHr/IPPXL9Jp7fFjR6oel65K/Do=";
     };
     cargoLock."./src-tauri/Cargo.lock" = {
-      lockFile = ./. + "/sha256-xws_t6NKnIwK651uC_IzhGLW90_VZBJtaDX8QzVBFEs=/./src-tauri/Cargo.lock";
+      lockFile = ./. + "/sha256-qrkvHhvKLQVkCfcwsHr_IPPXL9Jp7fFjR6oel65K_Do=/./src-tauri/Cargo.lock";
       outputHashes = {
         
       };
@@ -141,39 +141,39 @@
   };
   ebox = {
     pname = "ebox";
-    version = "09f5ab30043a352dba1e15fa8022f95dcedbfc71";
+    version = "6ab4c66af2d59afc80d5462e99229da098cdeba8";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "ebox";
-      rev = "09f5ab30043a352dba1e15fa8022f95dcedbfc71";
+      rev = "6ab4c66af2d59afc80d5462e99229da098cdeba8";
       fetchSubmodules = false;
-      sha256 = "sha256-7qCHIiMmtNsYpTXMVlqvVUUyN9BZF/+Inob2IEC8ySQ=";
+      sha256 = "sha256-MLni89dNrfyxmXJANshkwvO2b6SYhX441rgqkg8Z9lY=";
     };
-    date = "20261114";
+    date = "20261120";
   };
   ecss = {
     pname = "ecss";
-    version = "bfb553ae87c2cb2d385d825592c758cf77d39f44";
+    version = "4ddd6838b3e04a7ec9fc367412befbb3ee2f0b52";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "ecss";
-      rev = "bfb553ae87c2cb2d385d825592c758cf77d39f44";
+      rev = "4ddd6838b3e04a7ec9fc367412befbb3ee2f0b52";
       fetchSubmodules = false;
-      sha256 = "sha256-/9BnCoQewvUTQCFd8zhUQ+CCZrCz4Citzfx1HQqjRM0=";
+      sha256 = "sha256-TsXPavWBeou1ZB8KFNFavhmGHqSZfsTKtruIka95Fm8=";
     };
-    date = "20261022";
+    date = "20261120";
   };
   ekp = {
     pname = "ekp";
-    version = "a1bf446278ff83477e7d1fda53cfee047e8f9533";
+    version = "ecaee02061efc1e134d99af3cbe3676001629965";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "ekp";
-      rev = "a1bf446278ff83477e7d1fda53cfee047e8f9533";
+      rev = "ecaee02061efc1e134d99af3cbe3676001629965";
       fetchSubmodules = false;
-      sha256 = "sha256-dGZOCpjJsjB7G2dEBmZyNiIpC8AYx6n90btX1htpjyE=";
+      sha256 = "sha256-sFjJjR+H4qbxQ3KSQPuaS6S/qTKWMFjpXTHApUG+ZUA=";
     };
-    date = "20261022";
+    date = "20261120";
   };
   elog = {
     pname = "elog";
@@ -211,84 +211,84 @@
   };
   "emacs30.role-patch" = {
     pname = "emacs30.role-patch";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-28/fix-window-role.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-28/fix-window-role.patch";
       sha256 = "sha256-H4Qj6n5uZsmsbdjjexGZctqhJk3gAXKiSnmnEO/LgTA=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs30.round-undecorated-frame" = {
     pname = "emacs30.round-undecorated-frame";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-30/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-30/round-undecorated-frame.patch";
       sha256 = "sha256-fjnmlM6dylDbcsCb5ELBJ40ZANacJALyiXQq6ujqTD4=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs30.system-appearance" = {
     pname = "emacs30.system-appearance";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-30/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-30/system-appearance.patch";
       sha256 = "sha256-nrPOgGQAJb/5brrrWJNDARY2jWNJ9OsMtO+LPVhHfbY=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs31.ns-mac-input-source" = {
     pname = "emacs31.ns-mac-input-source";
-    version = "6dfefa6c715d530fe882518bccdcf0c5b9d08b25";
+    version = "357bd3757ccb3704f67a79f81678a295ab4ab435";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/6dfefa6c715d530fe882518bccdcf0c5b9d08b25/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/357bd3757ccb3704f67a79f81678a295ab4ab435/scripts/macos/patches/emacs-31/ns-mac-input-source.patch";
       sha256 = "sha256-mf77qesHJXQ6kBzZXg3rV1GT4dJYCUy1bMusN62g/6I=";
     };
-    date = "2026-11-14";
+    date = "2026-11-20";
   };
   "emacs31.round-undecorated-frame" = {
     pname = "emacs31.round-undecorated-frame";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs31.system-appearance" = {
     pname = "emacs31.system-appearance";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs32.ns-mac-input-source" = {
     pname = "emacs32.ns-mac-input-source";
-    version = "6dfefa6c715d530fe882518bccdcf0c5b9d08b25";
+    version = "357bd3757ccb3704f67a79f81678a295ab4ab435";
     src = fetchurl {
-      url = "https://github.com/LuciusChen/.emacs.d/raw/6dfefa6c715d530fe882518bccdcf0c5b9d08b25/scripts/macos/patches/emacs-32/ns-mac-input-source.patch";
+      url = "https://github.com/LuciusChen/.emacs.d/raw/357bd3757ccb3704f67a79f81678a295ab4ab435/scripts/macos/patches/emacs-32/ns-mac-input-source.patch";
       sha256 = "sha256-cYtdtNFE/D73ust2oh34/8O9aA9PNvmrmvIMJiIV7gk=";
     };
-    date = "2026-11-14";
+    date = "2026-11-20";
   };
   "emacs32.round-undecorated-frame" = {
     pname = "emacs32.round-undecorated-frame";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/round-undecorated-frame.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-31/round-undecorated-frame.patch";
       sha256 = "sha256-yUMKHq2B4xOz0od/9vgET7KUQe7MfMQgAFFdfI7GOA8=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   "emacs32.system-appearance" = {
     pname = "emacs32.system-appearance";
-    version = "95c548cc40be6b34db81e7a15b4218b1ec6aaa48";
+    version = "e9e104f708874e8ac4f36657aa5cfd6973ad32a3";
     src = fetchurl {
-      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/95c548cc40be6b34db81e7a15b4218b1ec6aaa48/patches/emacs-31/system-appearance.patch";
+      url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/e9e104f708874e8ac4f36657aa5cfd6973ad32a3/patches/emacs-31/system-appearance.patch";
       sha256 = "sha256-Uyg1A9te0oh+nXM7qq+A8sgQ5mjngumIvaWFWgsevrQ=";
     };
-    date = "2026-11-14";
+    date = "2026-11-22";
   };
   emacsclient = {
     pname = "emacsclient";
@@ -313,51 +313,51 @@
   };
   etaf = {
     pname = "etaf";
-    version = "59bf3c618a0a19e9b40894f390904146976c3291";
+    version = "9049df4ee1a1fb45a944ceb960295a4c084e608c";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "etaf";
-      rev = "59bf3c618a0a19e9b40894f390904146976c3291";
+      rev = "9049df4ee1a1fb45a944ceb960295a4c084e608c";
       fetchSubmodules = false;
-      sha256 = "sha256-SpGJ97s/3qFWtlRo8w49FQoEmOgX94KhA6EoBs9M3c4=";
+      sha256 = "sha256-1yyMD9NiZwwL/f7cvkEdqvUIaRdbz0n4z/xuhL/ZEpk=";
     };
-    date = "20261109";
+    date = "20261120";
   };
   etaf-db = {
     pname = "etaf-db";
-    version = "38f87245959f78b886d1d83f6b13f0ff63f5638e";
+    version = "34227e8efe52b14a7232e962bad8173b0c13f028";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "etaf-db";
-      rev = "38f87245959f78b886d1d83f6b13f0ff63f5638e";
+      rev = "34227e8efe52b14a7232e962bad8173b0c13f028";
       fetchSubmodules = false;
-      sha256 = "sha256-jrTcEGhRRvOe4sZ0lYwsJH2qnjm1efUUmCDT7rBE/YI=";
+      sha256 = "sha256-5dlkib0QhrwKiX/ry+HMMaLfgjdV5B0rPk9JqKOpp50=";
     };
-    date = "20261022";
+    date = "20261120";
   };
   etaf-posframe = {
     pname = "etaf-posframe";
-    version = "33ec208374fbd5587dff1bf0147ae0d558dfc825";
+    version = "cb426cfb117e2cee11217c68db3bfff1dc28ef17";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "etaf-posframe";
-      rev = "33ec208374fbd5587dff1bf0147ae0d558dfc825";
+      rev = "cb426cfb117e2cee11217c68db3bfff1dc28ef17";
       fetchSubmodules = false;
-      sha256 = "sha256-V7KSzLO/blQh+aXFlg7fJVF/xJhgUTTADNz6W0s67q0=";
+      sha256 = "sha256-aB9t+z9ezMpP2q5D5FYHKAjbhBxB2dzNSpzn3H5HBhs=";
     };
-    date = "20261027";
+    date = "20261120";
   };
   etaf-ui = {
     pname = "etaf-ui";
-    version = "09af2e0a0649f3672d2ed3e1a3aabbb9e9b8d73a";
+    version = "9e60fe602827463b881a4224de1a719d70f99266";
     src = fetchFromGitHub {
       owner = "emacs-taf";
       repo = "etaf-ui";
-      rev = "09af2e0a0649f3672d2ed3e1a3aabbb9e9b8d73a";
+      rev = "9e60fe602827463b881a4224de1a719d70f99266";
       fetchSubmodules = false;
-      sha256 = "sha256-mp7pv1kDdny3llmXa+xhOeF3AZNNCflAGOthrn0iRv0=";
+      sha256 = "sha256-FCIy+ZZWV5rOXsjSQUhlbwZml/nMWM1Kcz5VXn0ZmL8=";
     };
-    date = "20261106";
+    date = "20261120";
   };
   ewt-rs = {
     pname = "ewt-rs";
@@ -439,19 +439,19 @@
   };
   jcode = {
     pname = "jcode";
-    version = "v0.99.1";
+    version = "v1.0.3";
     src = fetchFromGitHub {
       owner = "1jehuang";
       repo = "jcode";
-      rev = "v0.99.1";
+      rev = "v1.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-U6M+oLfx/M0cbZ68OppBtwqg6BuSXZZn4m1shWIYPi0=";
+      sha256 = "sha256-KuOKGd3dCA8PZZxXeQqAXiqdJQK3KDTr15QFmYfo3FA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-U6M+oLfx_M0cbZ68OppBtwqg6BuSXZZn4m1shWIYPi0=/Cargo.lock";
+      lockFile = ./. + "/sha256-KuOKGd3dCA8PZZxXeQqAXiqdJQK3KDTr15QFmYfo3FA=/Cargo.lock";
       outputHashes = {
+        "agentgrep-0.2.0" = "sha256-e8g+tFbrCygxqZHhsZzo7dTdVI/rCGR0qIZp4IzouGs=";
         "mermaid-rs-renderer-0.3.1" = "sha256-uekh1vJ19dAPP7+4PiqSlJizApZLpDhBWBoyN+fgS9s=";
-        "agentgrep-0.1.7" = "sha256-9US+dqLbe1gkXKnaRbilA/suOK5vGwe4B7c+eET05yY=";
       };
     };
   };
@@ -520,7 +520,7 @@
     version = "8-5f603dc";
     src = fetchurl {
       url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-TTF.zip";
-      sha256 = "sha256-CJamiTy54ZF9cIk2MHF6Vn93dD01EoE5rf6+1D19d7Q=";
+      sha256 = "sha256-H41pFtR1QjE4mqvrpycdvtKp3n1/HehjH34h8ICUH4w=";
     };
   };
   maple-mono-cn = {
@@ -528,7 +528,7 @@
     version = "8-5f603dc";
     src = fetchurl {
       url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-CN.zip";
-      sha256 = "sha256-weIFtMMl+C/ihM7D1eBrJo1RKtCbWmcsSi8AMW5ZUZg=";
+      sha256 = "sha256-GyK2gqW6po38UZRDNQt0WTqjvGQtodkTZcQ7iTRgKyE=";
     };
   };
   maple-mono-cn-vf = {
@@ -536,39 +536,39 @@
     version = "8-5f603dc";
     src = fetchurl {
       url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-CN-VF.zip";
-      sha256 = "sha256-ELeI7ULRNaw+HF2njZOtA6aWUbqKfHGB9S8P2Rphpa0=";
+      sha256 = "sha256-7uqLw32doffVAF/jARICdh9MskISV3wH9wp/2xctO2c=";
     };
   };
   maple-mono-nf = {
     pname = "maple-mono-nf";
     version = "8-5f603dc";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono.zip";
-      sha256 = "sha256-Wks2SFu0YcmcXp86n5raUMxer1JVyZPoXwWLWOfsNBs=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NF.zip";
+      sha256 = "sha256-/FbtrKerFUOk/TgVbPGo4DbfkhhTaPEh4mk4nMNN9xc=";
     };
   };
   maple-mono-nf-cn = {
     pname = "maple-mono-nf-cn";
     version = "8-5f603dc";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-CN.zip";
-      sha256 = "sha256-BcpVAIuzN5OHUKCknUqtAmun+MlcfIqVEhnKoAcA2bc=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NF-CN.zip";
+      sha256 = "sha256-km1OnzLdkFmz7oAQwa51uunC9aOSdtQWKgNtJnYWz2c=";
     };
   };
   maple-mono-nf-cn-vf = {
     pname = "maple-mono-nf-cn-vf";
     version = "8-5f603dc";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-CN-VF.zip";
-      sha256 = "sha256-1ZwdrvMzeCPGMtOXtRrnbowm4ChIgv3GHto21Kxgjn0=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NF-CN-VF.zip";
+      sha256 = "sha256-0sAn2vLt2lg45YND1kHiZ0jgHGDxDbvGU5bvbGVyOY0=";
     };
   };
   maple-mono-nf-vf = {
     pname = "maple-mono-nf-vf";
     version = "8-5f603dc";
     src = fetchurl {
-      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NFMono-VF.zip";
-      sha256 = "sha256-p1L+0Niu41fwDgdv81yakpNBe4hc1mtXsZBWv3LSvt4=";
+      url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-NF-VF.zip";
+      sha256 = "sha256-F5v36pehtRyNrPXrpra2ZpmOnpnXhen+W74JnXvnZEo=";
     };
   };
   maple-mono-vf = {
@@ -576,7 +576,7 @@
     version = "8-5f603dc";
     src = fetchurl {
       url = "https://github.com/shanyouli/maple-mono-action/releases/download/v8-5f603dc/MapleMono-VF.zip";
-      sha256 = "sha256-wweHMovFzHi3EVSBqU+2zFlhvsLc0eh29MrkiYYc5d0=";
+      sha256 = "sha256-TtYgkmYC1q24JdqjvFzAAmoLhqGw94Aa+i2KRAzWIZI=";
     };
   };
   mkalias = {
@@ -598,26 +598,26 @@
   };
   mtranserver = {
     pname = "mtranserver";
-    version = "v5.1.1";
+    version = "v5.4.6";
     src = fetchFromGitHub {
       owner = "xxnuo";
       repo = "MTranServer";
-      rev = "v5.1.1";
+      rev = "v5.4.6";
       fetchSubmodules = false;
-      sha256 = "sha256-hIb6XR8zc5FPTZc/7z+Vh8bSRzkCjldN4RszJq6ccbs=";
+      sha256 = "sha256-CD97UaH3qgnzlreI8OW3li4/5FQXVQlI/1mnWaFntXU=";
     };
   };
   musicdl = {
     pname = "musicdl";
-    version = "dca2f0967e46a8faf8d279737535471102d74ca3";
+    version = "e204b2e2c3592d577b8e8443a407a2819dc07882";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "musicdl";
-      rev = "dca2f0967e46a8faf8d279737535471102d74ca3";
+      rev = "e204b2e2c3592d577b8e8443a407a2819dc07882";
       fetchSubmodules = false;
-      sha256 = "sha256-JwJxe1NPwDYPKjXSHbPrLal0+ubvBJF7HR2EBoxrqzw=";
+      sha256 = "sha256-kGhkdixeksDESTuMl1OiyVQJ6pg76Oo1ZC19oIs1ljc=";
     };
-    date = "20261016";
+    date = "20261120";
   };
   nowplaying-cli = {
     pname = "nowplaying-cli";
@@ -632,21 +632,21 @@
   };
   nu-lint = {
     pname = "nu-lint";
-    version = "70a52725ef3b5a2f7b3f6cf804bc83a3eae16f4e";
+    version = "d1f2968b5413f3a8052478f41d80722fd85bac03";
     src = fetchFromGitHub {
       owner = "wvhulle";
       repo = "nu-lint";
-      rev = "70a52725ef3b5a2f7b3f6cf804bc83a3eae16f4e";
+      rev = "d1f2968b5413f3a8052478f41d80722fd85bac03";
       fetchSubmodules = false;
-      sha256 = "sha256-ONLKdAcdmCiKjDHhf9/JmOmoVNTneua4leWWcguTkdQ=";
+      sha256 = "sha256-fOlB+SGVGMmVpcWlTVgeASaTEv4cYRK0kiVQEqgsTco=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-ONLKdAcdmCiKjDHhf9_JmOmoVNTneua4leWWcguTkdQ=/Cargo.lock";
+      lockFile = ./. + "/sha256-fOlB+SGVGMmVpcWlTVgeASaTEv4cYRK0kiVQEqgsTco=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "20261113";
+    date = "20261115";
   };
   openwith = {
     pname = "openwith";
@@ -726,15 +726,15 @@
   };
   pyfreeproxy = {
     pname = "pyfreeproxy";
-    version = "af59c6a4bfc9efb28fc1f941354b51c3cefc4898";
+    version = "a92a43aa1d2dc0708d9f14019f47239f940956b7";
     src = fetchFromGitHub {
       owner = "CharlesPikachu";
       repo = "freeproxy";
-      rev = "af59c6a4bfc9efb28fc1f941354b51c3cefc4898";
+      rev = "a92a43aa1d2dc0708d9f14019f47239f940956b7";
       fetchSubmodules = false;
-      sha256 = "sha256-AfLxVWNjCpeisjS+sjBJu+QXthtfoveIimMpmsKaKWE=";
+      sha256 = "sha256-CclRkPzeGen4ozwXpvGPpoDv+KVWW+to4O477nUjR8o=";
     };
-    date = "20261114";
+    date = "20261122";
   };
   rime-frost = {
     pname = "rime-frost";
@@ -843,15 +843,15 @@
   };
   userChromeJS = {
     pname = "userChromeJS";
-    version = "2adf7e7b43e37b0cb3aa19b715435cdd4cb1b70e";
+    version = "8c18853c1a6fee3ad4f9a88c36f2d5ff15042a9e";
     src = fetchFromGitHub {
       owner = "benzBrake";
       repo = "userChrome.js-Loader";
-      rev = "2adf7e7b43e37b0cb3aa19b715435cdd4cb1b70e";
+      rev = "8c18853c1a6fee3ad4f9a88c36f2d5ff15042a9e";
       fetchSubmodules = false;
-      sha256 = "sha256-CwltCG1FpFi9agMabWjzEV80QMesY75m+Kk2WOMLiy0=";
+      sha256 = "sha256-O0xYnMW+VMQyhf7vLuqo4t0dVSy2C3z1zgcEw00Li4M=";
     };
-    date = "20261016";
+    date = "20261118";
   };
   websocket-bridge-python = {
     pname = "websocket-bridge-python";
@@ -863,13 +863,13 @@
   };
   yabai = {
     pname = "yabai";
-    version = "v7.3.3";
+    version = "v7.3.5";
     src = fetchFromGitHub {
       owner = "Christian-SC26";
       repo = "yabai";
-      rev = "v7.3.3";
+      rev = "v7.3.5";
       fetchSubmodules = false;
-      sha256 = "sha256-SRiK2TL8OPCiFD2A94qQyXPeh7xPQb37Es6qsrcq9NA=";
+      sha256 = "sha256-jQsnH/vtn8V2v9pJSMDXcqHy367REzIJtuc5tizsNRI=";
     };
   };
   yabai-zsh-completions = {
