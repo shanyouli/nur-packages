@@ -111,25 +111,25 @@ fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NF.zip"
 
 [maple-mono-nf-cn]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-CN.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NF-CN.zip"
 
 [maple-mono-nf-cn-vf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-CN-VF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NF-CN-VF.zip"
 
 [maple-mono-nf-vf]
 src.github = "shanyouli/maple-mono-action"
 src.from_pattern = "v(.*)"
 src.to_pattern = "\\1"
-fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NFMono-VF.zip"
+fetch.url = "https://github.com/shanyouli/maple-mono-action/releases/download/v$ver/MapleMono-NF-VF.zip"
 
 [maple-mono-vf]
 src.github = "shanyouli/maple-mono-action"
