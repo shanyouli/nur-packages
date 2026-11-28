@@ -325,10 +325,14 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/system-appearance.patch"
 
-
 ["emacs31.ns-mac-input-source"]
 src.git = "https://github.com/LuciusChen/.emacs.d"
 fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/scripts/macos/patches/emacs-31/ns-mac-input-source.patch"
+
+["emacs31.fix-ns-x-colors"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/fix-ns-x-colors.patch"
+
 ["emacs32.round-undecorated-frame"]
 src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
 fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/round-undecorated-frame.patch"
@@ -340,6 +344,10 @@ fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/
 ["emacs32.ns-mac-input-source"]
 src.git = "https://github.com/LuciusChen/.emacs.d"
 fetch.url = "https://github.com/LuciusChen/.emacs.d/raw/$ver/scripts/macos/patches/emacs-32/ns-mac-input-source.patch"
+
+["emacs32.fix-ns-x-colors"]
+src.git = "https://github.com/d12frosted/homebrew-emacs-plus"
+fetch.url = "https://github.com/d12frosted/homebrew-emacs-plus/raw/$ver/patches/emacs-31/fix-ns-x-colors.patch"
 
 #### fish plugins
 ["fisher"]

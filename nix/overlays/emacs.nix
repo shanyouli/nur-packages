@@ -8,10 +8,7 @@
   flake.overlays.emacs =
     _final: prev:
     withSystem prev.stdenv.hostPlatform.system (
-      { config, ... }:
-      {
-        inherit (config.packages) emacs emacs-git;
-      }
+      { config, ... }: { inherit (config.packages) emacs emacs-git; }
     );
 
   perSystem =
@@ -43,6 +40,8 @@
                 [
                   srcs."emacs${version}.system-appearance".src
                   srcs."emacs${version}.round-undecorated-frame".src
+                  srcs."emacs${version}.ns-mac-input-source".src
+                  (lib.mkIf ((version == "31") || (version == "32")) srcs."emacs${version}.fix-ns-x-colors".src)
                 ]
                 ++ lib.optionals (version == "30") [ srcs."emacs${version}.role-patch".src ]
               else
