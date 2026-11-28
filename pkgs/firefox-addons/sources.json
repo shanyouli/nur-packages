@@ -1,8 +1,8 @@
 {
   "noscript": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5229642/noscript-13.6.38.xpi",
-    "version": "13.6.38",
-    "sha256": "12f2l4xnfa0a55w9fjjl2c2gglsli1lazl7pksyhlw2jajysvwb5",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5293695/noscript-13.6.39.xpi",
+    "version": "13.6.39",
+    "sha256": "0gh75ygaw08wgqy0x8z4gxcf3nkiyg3wmls017kapsi740v1mjhm",
     "pname": "noscript"
   },
   "browserpass-ce": {
@@ -42,9 +42,9 @@
     "pname": "violentmonkey"
   },
   "styl-us": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5257053/styl_us-2.4.18.xpi",
-    "version": "2.4.18",
-    "sha256": "0m121n7zga1ynlwzrb6k4kf1xdyxp8gn6j315q4xjza5cc7ip3jc",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5307848/styl_us-2.4.19.xpi",
+    "version": "2.4.19",
+    "sha256": "07wl8wzws3sa8ncwn35rvp9xicwmjjnqf4r270qphlpk5x4bfq9j",
     "pname": "styl-us"
   },
   "privacy-pass": {
@@ -54,15 +54,15 @@
     "pname": "privacy-pass"
   },
   "ublock-origin": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5282683/ublock_origin-1.76.6.xpi",
-    "version": "1.76.6",
-    "sha256": "0xakr4fs2x6jh94g31rfzm22a4gkzmxy464j9qnvs5sigpgzmgyy",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5316374/ublock_origin-1.77.4.xpi",
+    "version": "1.77.4",
+    "sha256": "0jmpqkgnj7sd1ybn1qwramn8dy57yx905s93jiijm86mcfw55zaz",
     "pname": "ublock-origin"
   },
   "immersive-translate": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5275933/immersive_translate-1.35.3.xpi",
-    "version": "1.35.3",
-    "sha256": "1p3igrkwnjsf96ba7lghwnwc45v317fzhzar88kvf05dr5m25hsn",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5281574/immersive_translate-1.35.4.xpi",
+    "version": "1.35.4",
+    "sha256": "1a0phglndq6c4ilhq6vicv7vpmw9ljqfpnmm23q677h8qsvr2bwd",
     "pname": "immersive-translate"
   },
   "darkreader": {
@@ -90,9 +90,9 @@
     "pname": "easy-image-blocker"
   },
   "kiss-translator": {
-    "url": "https://addons.mozilla.org/firefox/downloads/file/5278173/kiss_translator-2.2.6.xpi",
-    "version": "2.2.6",
-    "sha256": "0gaxh5kw1sp68lh7907kapg0a0qrc85wv2pyyiyy3f8v05gg480c",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5290056/kiss_translator-2.2.7.xpi",
+    "version": "2.2.7",
+    "sha256": "0fhha6hfjdjnj5g05np1zkxs21gkxp4mnsfdaj6a6klk1jh41hjw",
     "pname": "kiss-translator"
   },
   "raindropio": {
